@@ -1,0 +1,333 @@
+{
+    "NavbarLinks": {
+        "home": "होम",
+        "homeTitle": "होम पेज",
+        "about": "के बारे में",
+        "aboutTitle": "के बारे में पेज",
+        "profile": "प्रोफ़ाइल",
+        "profileTitle": "प्रोफ़ाइल पेज",
+        "signUp": "साइन अप करें",
+        "signIn": "लॉग इन करें"
+    },
+    "NavbarWallet": {
+        "currency": "INR",
+        "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034744/INR_jm4qvh.png"
+    },
+    "Carousel": {
+        "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036700/1_a78sud.jpg",
+        "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036700/2_hetpg2.png",
+        "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036703/3_fzqs2p.png"
+    },
+    "Notification": {
+        "title": "सूचना",
+        "close": "बंद करें",
+        "header": "खेल संग्रहित करें",
+        "description": "सभी प्रदाताओं के स्लॉट खेलें और 30,000 THB तक एकत्र करें, 10,000 रत्नों का इनाम अनलॉक करें।",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1732973195/hi_szoox3.png"
+    },
+    "HomePage": {
+        "title": "लैंडिंग पेज"
+    },
+    "AboutPage": {
+        "title": "के बारे में"
+    },
+    "ProfilePage": {
+        "title": "प्रोफ़ाइल"
+    },
+    "welcome": "हमारी वेबसाइट पर आपका स्वागत है",
+    "languageSwitch": "भाषा बदलें",
+    "slidebar": {
+        "home": "होम",
+        "slots": "स्लॉट्स",
+        "liveCasino": "लाइव कैसीनो",
+        "privileges": "विशेषाधिकार",
+        "quests": "खोज",
+        "reward": "इनाम",
+        "promo": "प्रोमो",
+        "levels": "स्तर",
+        "referral": "रेफरल",
+        "providers": "प्रदाता",
+        "rtpSlots": "आरटीपी स्लॉट्स",
+        "sports": "खेल",
+        "fishing": "मछली पकड़ना",
+        "virtual": "आभासी",
+        "languageOption": "भाषा विकल्प",
+        "contactSocialMedia": "संपर्क और सामाजिक मीडिया"
+    },
+    "MenuBar": {
+        "demo": "डेमो",
+        "allGames": "सभी खेल",
+        "popularGames": "लोकप्रिय खेल",
+        "newGames": "नए खेल",
+        "cashDrop": "कैश ड्रॉप",
+        "jackpots": "जैकपॉट",
+        "megaways": "मेगावेज़",
+        "tableGames": "टेबल खेल",
+        "providers": "प्रदाता"
+    },
+    "popularGames": {
+        "title": "लोकप्रिय खेल",
+        "seeAll": "सभी देखें",
+        "games": {
+            "jewelMania": "ज्वेल मेनिया",
+            "hotFruitsOnFire": "हॉट फ्रूट्स ऑन फायर",
+            "barsAndBells": "#बार्स एंड बेल्स",
+            "reelReelHot": "रील रील हॉट",
+            "spiritOfTheLake": "स्पिरिट ऑफ द लेक",
+            "twinWinsMystery": "द ट्विन विंस मिस्ट्री"
+        },
+        "provider": "मंकाला"
+    },
+    "newGames": {
+        "title": "नए खेल",
+        "seeAll": "सभी देखें",
+        "games": {
+            "spiritOfTheLake": "स्पिरिट ऑफ द लेक",
+            "twinWinsMystery": "द ट्विन विंस मिस्ट्री"
+        },
+        "provider": "मंकाला"
+    },
+    "promotions": {
+        "title": "प्रमोशन्स",
+        "seeAll": "सभी देखें"
+    },
+    "liveCasino": {
+        "title": "लाइव कैसीनो",
+        "seeAll": "सभी देखें",
+        "games": {
+            "pragmaticLive": "प्रैग्मैटिक लाइव",
+            "baccaratC08": "बैकारेट C08",
+            "baccarat": "बैकारेट",
+            "dreamGaming": "ड्रीम गेमिंग",
+            "topGamesLobby": "टॉप गेम्स लॉबी",
+            "liveCasino": "लाइव कैसीनो"
+        },
+        "providers": {
+            "pragmaticPlay": "प्रैग्मैटिकप्ले",
+            "sa": "एसए",
+            "aeSexy": "एई सेक्सी",
+            "dreamGaming": "ड्रीम गेमिंग",
+            "evolutionGaming": "इवोल्यूशन गेमिंग",
+            "weGaming": "वी गेमिंग"
+        }
+    },
+    "gameProviders": {
+        "title": "गेम प्रदाता",
+        "seeAll": "सभी देखें",
+        "providers": {
+            "pg": {
+                "name": "पीजी",
+                "description": "पॉकेट गेम्स सॉफ्ट",
+                "play": "खेलें"
+            },
+            "joker": {
+                "name": "जोकर",
+                "description": "जोकर",
+                "play": "खेलें"
+            },
+            "jili": {
+                "name": "जिली",
+                "description": "जिली",
+                "play": "खेलें"
+            },
+            "pragmaticPlay": {
+                "name": "प्रैग्मैटिक प्ले",
+                "description": "प्रैग्मैटिक प्ले",
+                "play": "खेलें"
+            }
+        }
+    },
+    "allGames": {
+        "title": "सभी खेल",
+        "seeAll": "सभी देखें",
+        "games": {
+            "ninjaRaccoonFrenzy": {
+                "name": "निंजा रैकून फ्रेंज़ी",
+                "provider": "पीजीसॉफ्ट"
+            },
+            "treasuresOfAztec": {
+                "name": "एज़्टेक के खजाने",
+                "provider": "पीजीसॉफ्ट"
+            },
+            "mahjongWays2": {
+                "name": "महजोंग वेज़ 2",
+                "provider": "पीजीसॉफ्ट"
+            },
+            "luckyNeko": {
+                "name": "लकी नेको",
+                "provider": "पीजीसॉफ्ट"
+            },
+            "mahjongWays": {
+                "name": "महजोंग वेज़",
+                "provider": "पीजीसॉफ्ट"
+            },
+            "wildBountyShowdown": {
+                "name": "वाइल्ड बाउंटी शोडाउन",
+                "provider": "पीजीसॉफ्ट"
+            },
+            "waysOfTheQilin": {
+                "name": "किलिन के तरीके",
+                "provider": "पीजीसॉफ्ट"
+            },
+            "wildBandito": {
+                "name": "वाइल्ड बंडिटो",
+                "provider": "पीजीसॉफ्ट"
+            },
+            "fortuneRabbit": {
+                "name": "भाग्यशाली खरगोश",
+                "provider": "पीजीसॉफ्ट"
+            },
+            "caishenWins": {
+                "name": "कैशेन जीतता है",
+                "provider": "पीजीसॉफ्ट"
+            },
+            "fortuneOx": {
+                "name": "भाग्यशाली बैल",
+                "provider": "पीजीसॉफ्ट"
+            },
+            "ganeshaFortune": {
+                "name": "गणेश भाग्य",
+                "provider": "पीजीसॉफ्ट"
+            }
+        }
+    },
+    "footer": {
+        "gameCategory": "गेम श्रेणी",
+        "categories": {
+            "demo": "डेमो",
+            "newGames": "नए खेल",
+            "popular": "लोकप्रिय",
+            "cashDrops": "कैश ड्रॉप्स",
+            "jackpots": "जैकपॉट्स",
+            "megaways": "मेगावेयस",
+            "tableGames": "टेबल गेम्स",
+            "allGames": "सभी खेल"
+        },
+        "liveCasino": "लाइव कैसीनो",
+        "allLiveCasino": "सभी लाइव कैसीनो",
+        "specials": {
+            "quests": "कार्य",
+            "reward": "इनाम",
+            "referral": "रेफरल",
+            "level": "स्तर"
+        },
+        "information": {
+            "termsAndConditions": "नियम और शर्तें",
+            "privacyPolicy": "गोपनीयता नीति",
+            "cookiesPolicy": "कुकीज़ नीति"
+        },
+        "followUs": "हमें फॉलो करें",
+        "poweredBy": "रिथ CT द्वारा संचालित"
+    },
+    "header": {
+        "signUp": "साइन अप करें",
+        "signIn": "साइन इन करें"
+    },
+    "mobieleNavbar": {
+        "menu": "मेनू",
+        "slots": "स्लॉट्स",
+        "signUp": "साइन अप करें",
+        "liveCasino": "लाइव कैसीनो",
+        "promo": "प्रोमो"
+    },
+    "RewardSection": {
+        "mainTitle": "अंतहीन लाभों को अनलॉक करें",
+        "mainSubtitle": "अभी साइन अप करें और रोमांचक लाभों की यात्रा पर निकलें। असीमित पुरस्कारों के द्वार खोलें।",
+        "joinButton": "PlayGame168 से जुड़ें",
+        "steps": {
+            "step1": "साइन अप करें और जमा करें",
+            "step2": "अपने पसंदीदा खेल खेलें",
+            "step3": "अपने पुरस्कार का आदान-प्रदान करें"
+        },
+        "enjoyOurGames": {
+            "title": "हमारे खेलों का आनंद लें!",
+            "description": "Live Casino House में, हम आपको 4,000 से अधिक रोमांचक खेलों का अनुभव प्रदान करते हैं।",
+            "button": "अपना पुरस्कार प्राप्त करें"
+        },
+        "enjoyOurPromotions": {
+            "title": "हमारे प्रचारों का आनंद लें!",
+            "description": "आज ही जमा करें और हमारी विशेष पुरस्कार योजना के साथ अनन्य लाभों की दुनिया को अनलॉक करें।",
+            "button": "अपना पुरस्कार प्राप्त करें"
+        },
+        "benefitsSection": {
+            "title": "कई मुफ्त लाभ प्राप्त करें",
+            "benefits": {
+                "questHub": {
+                    "title": "क्वेस्ट हब",
+                    "description": "अपने दैनिक और साप्ताहिक कार्यों को पूरा करके अपनी कमाई को तेजी से बढ़ाएं।",
+                    "tag": "हर दिन और सप्ताह"
+                },
+                "loyaltyVip": {
+                    "title": "निष्ठा वीआईपी",
+                    "description": "हमारे निष्ठा वीआईपी क्लब स्तरों के माध्यम से प्रगति करते हुए अनन्य लाभों को अनलॉक करें।",
+                    "tag": "हर दिन और सप्ताह"
+                },
+                "tournament": {
+                    "title": "टूर्नामेंट",
+                    "description": "प्रतिस्पर्धा करें, चुनौती को स्वीकार करें, और हमारे रोमांचक टूर्नामेंट खेलों में विजय प्राप्त करें।",
+                    "tag": "हर सप्ताह"
+                }
+            }
+        },
+        "introducingExclusive": {
+            "title": "हमारे विशेष रिबेट और कैशबैक प्रोग्राम का परिचय",
+            "description": "हमारे विशेष रिचार्ज प्रोग्राम के साथ आज ही रिबेट और कैशबैक कमाना शुरू करें। इन शानदार पुरस्कारों को न चूकें!",
+            "joinButton": "आज ही PlayGame168 से जुड़ें →",
+            "features": {
+                "activation": {
+                    "title": "सक्रियण",
+                    "description": "क्वेस्ट्स और चुनौतियों के माध्यम से प्रगति करें और उपलब्धि के उच्चतम स्तर तक पहुंचें।"
+                },
+                "bonus": {
+                    "title": "बोनस",
+                    "description": "अपने दैनिक और साप्ताहिक कार्यों को पूरा करते हुए अपना मेहनत से कमाया हुआ बोनस प्राप्त करें।"
+                },
+                "rewardTier": {
+                    "title": "पुरस्कार स्तर",
+                    "description": "हमारे पुरस्कार स्तरों के माध्यम से चढ़ते हुए अपनी स्थिति बढ़ाएं और अधिक समृद्ध पुरस्कारों का आनंद लें।"
+                }
+            }
+        },
+        "deluxeExperience": {
+            "title": "हम आपको सबसे शानदार गेमिंग अनुभव प्रदान करने के लिए उत्साहित हैं",
+            "button": "साइन अप करें"
+        }
+    },
+    "MemberLevel": {
+        "mainTitle": "अपने विशेष स्तर अनलॉक करें",
+        "mainSubtitle": "विशेष सदस्यता कार्यक्रम में शामिल हों और स्तरों में प्रगति के साथ अविश्वसनीय पुरस्कारों का आनंद लें।",
+        "joinButton": "स्तरों में शामिल हों",
+        "exclusiveBenefits": {
+            "title": "विशेष वीआईपी लाभ",
+            "benefits": {
+                "levelsRewards": {
+                    "title": "स्तर और पुरस्कार",
+                    "description": "जितना अधिक आप खेलते हैं, उतना ही अधिक आप प्राप्त करते हैं"
+                },
+                "exclusivePromotions": {
+                    "title": "विशेष प्रचार",
+                    "description": "अधिक रैंक तक पहुंचें और लाभ अनलॉक करें।"
+                },
+                "higherCashback": {
+                    "title": "उच्च कैशबैक",
+                    "description": "12% तक कैशबैक पुरस्कार प्राप्त करें"
+                },
+                "royaltyClub": {
+                    "title": "रॉयल्टी क्लब",
+                    "description": "विशेष बोनस के लिए वीआईपी क्लब में शामिल हों।"
+                }
+            }
+        },
+        "carousel": {
+            "levels": {
+                "bronze": "कांस्य",
+                "silver": "चांदी",
+                "gold": "सोना",
+                "diamond": "हीरा",
+                "platinum": "प्लैटिनम",
+                "black": "काला"
+            },
+            "cashback": "कैशबैक (%)"
+        }
+    }
+}

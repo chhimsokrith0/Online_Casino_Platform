@@ -1,0 +1,224 @@
+{
+  "NavbarLinks": {
+    "home": "Laman Utama",
+    "homeTitle": "Tema",
+    "about": "Tentang Kami",
+    "aboutTitle": "Halaman Tentang Kami",
+    "profile": "Profil",
+    "profileTitle": "Halaman Profil",
+    "signUp": "Daftar",
+    "signIn": "Log Masuk"
+  },
+  "Notification": {
+    "title": "Pemberitahuan",
+    "close": "Tutup",
+    "header": "Main Terkumpul",
+    "description": "Main slot dari semua penyedia dan kumpulkan sehingga 30,000 MYR untuk membuka ganjaran 10,000 permata.",
+    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1732973196/ma_g8cx9n.png"
+  },
+  "HomePage": {
+    "title": "Halaman Utama"
+  },
+  "AboutPage": {
+    "title": "Tentang Kami"
+  },
+  "ProfilePage": {
+    "title": "Profil"
+  },
+  "welcome": "Selamat datang ke laman web kami",
+  "languageSwitch": "Tukar Bahasa",
+  "slidebar": {
+    "home": "Laman Utama",
+    "slots": "Slot",
+    "liveCasino": "Kasino Langsung",
+    "privileges": "Keistimewaan",
+    "quests": "Cabaran",
+    "reward": "Ganjaran",
+    "promo": "Promosi",
+    "levels": "Tahap",
+    "referral": "Rujukan",
+    "providers": "Penyedia",
+    "rtpSlots": "Slot RTP",
+    "sports": "Sukan",
+    "fishing": "Memancing",
+    "virtual": "Virtual",
+    "languageOption": "Pilihan Bahasa",
+    "contactSocialMedia": "Hubungi & Media Sosial"
+  },
+  "MenuBar": {
+    "demo": "Demo",
+    "allGames": "Semua Permainan",
+    "popularGames": "Permainan Popular",
+    "newGames": "Permainan Baru",
+    "cashDrop": "Cash Drop",
+    "jackpots": "Jackpot",
+    "megaways": "Megaways",
+    "tableGames": "Permainan Meja",
+    "providers": "Penyedia"
+  },
+  "popularGames": {
+    "title": "Permainan Popular",
+    "seeAll": "Lihat Semua",
+    "games": {
+      "jewelMania": "Jewel Mania",
+      "hotFruitsOnFire": "Hot Fruits on Fire",
+      "barsAndBells": "#BarsAndBells",
+      "reelReelHot": "Reel Reel Hot",
+      "spiritOfTheLake": "Spirit of the Lake",
+      "twinWinsMystery": "The Twin Wins Mystery"
+    },
+    "provider": "Mancala"
+  },
+  "newGames": {
+    "title": "Permainan Baru",
+    "seeAll": "Lihat Semua",
+    "games": {
+      "spiritOfTheLake": "Spirit of the Lake",
+      "twinWinsMystery": "The Twin Wins Mystery"
+    },
+    "provider": "Mancala"
+  },
+  "promotions": {
+    "title": "Promosi",
+    "seeAll": "Lihat Semua"
+  },
+  "liveCasino": {
+    "title": "Kasino Langsung",
+    "seeAll": "Lihat Semua",
+    "games": {
+      "pragmaticLive": "Pragmatic Live",
+      "baccaratC08": "Baccarat C08",
+      "baccarat": "Baccarat",
+      "dreamGaming": "DreamGaming",
+      "topGamesLobby": "Lobi Permainan Terbaik",
+      "liveCasino": "Kasino Langsung"
+    },
+    "providers": {
+      "pragmaticPlay": "Pragmatic Play",
+      "sa": "SA",
+      "aeSexy": "Ae Sexy",
+      "dreamGaming": "DreamGaming",
+      "evolutionGaming": "Evolution Gaming",
+      "weGaming": "We Gaming"
+    }
+  },
+  "gameProviders": {
+    "title": "Penyedia Permainan",
+    "seeAll": "Lihat Semua",
+    "providers": {
+      "pg": {
+        "name": "PG",
+        "description": "Pocket Games Soft",
+        "play": "Main"
+      },
+      "joker": {
+        "name": "Joker",
+        "description": "Joker",
+        "play": "Main"
+      },
+      "jili": {
+        "name": "JILI",
+        "description": "JILI",
+        "play": "Main"
+      },
+      "pragmaticPlay": {
+        "name": "Pragmatic Play",
+        "description": "Pragmatic Play",
+        "play": "Main"
+      }
+    }
+  },
+  "allGames": {
+    "title": "Semua Permainan",
+    "seeAll": "Lihat Semua",
+    "games": {
+      "ninjaRaccoonFrenzy": {
+        "name": "Ninja Raccoon Frenzy",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "Treasures of Aztec",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "Mahjong Ways 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "Lucky Neko",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "Mahjong Ways",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "Wild Bounty Showdown",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "Ways of the Qilin",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "Wild Bandito",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "Fortune Rabbit",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "Caishen Wins",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "Fortune Ox",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "Ganesha Fortune",
+        "provider": "PGSoft"
+      }
+    }
+  },
+  "footer": {
+    "gameCategory": "Kategori Permainan",
+    "categories": {
+      "demo": "Demo",
+      "newGames": "Permainan Baru",
+      "popular": "Popular",
+      "cashDrops": "Cash Drops",
+      "jackpots": "Jackpot",
+      "megaways": "Megaways",
+      "tableGames": "Permainan Meja",
+      "allGames": "Semua Permainan"
+    },
+    "liveCasino": "Kasino Langsung",
+    "allLiveCasino": "Semua Kasino Langsung",
+    "specials": {
+      "quests": "Cabaran",
+      "reward": "Ganjaran",
+      "referral": "Rujukan",
+      "level": "Tahap"
+    },
+    "information": {
+      "termsAndConditions": "Terma dan Syarat",
+      "privacyPolicy": "Dasar Privasi",
+      "cookiesPolicy": "Dasar Cookie"
+    },
+    "followUs": "Ikuti Kami",
+    "poweredBy": "Dikuasakan oleh Rith CT"
+  },
+  "header": {
+    "signUp": "Daftar",
+    "signIn": "Log Masuk"
+  },
+  "mobieleNavbar": {
+    "home": "Laman Utama",
+    "slots": "Slot",
+    "signUp": "Daftar",
+    "liveCasino": "Kasino Langsung",
+    "promo": "Promosi"
+  }
+}

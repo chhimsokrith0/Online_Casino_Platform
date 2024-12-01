@@ -1,0 +1,31 @@
+{
+    "fonts": {
+        "en": {
+            "fontFamily": "Arial, sans-serif"
+        },
+        "hi": {
+            "fontFamily": "\"Mangal\", sans-serif"
+        },
+        "kh": {
+            "fontFamily": "\"Kh Battambang\", sans-serif"
+        },
+        "lo": {
+            "fontFamily": "\"Phetsarath OT\", sans-serif"
+        },
+        "mm": {
+            "fontFamily": "\"Myanmar Text\", sans-serif"
+        },
+        "zh": {
+            "fontFamily": "\"Noto Sans SC\", sans-serif"
+        },
+        "th": {
+            "fontFamily": "\"TH Sarabun New\", sans-serif"
+        },
+        "id": {
+            "fontFamily": "Arial, sans-serif"
+        },
+        "vi": {
+            "fontFamily": "Arial, sans-serif"
+        }
+    }
+}

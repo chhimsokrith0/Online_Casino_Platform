@@ -1,0 +1,333 @@
+{
+  "NavbarLinks": {
+    "home": "ទំព័រដើម",
+    "homeTitle": "ប្រធានបទ",
+    "about": "អំពីយើង",
+    "aboutTitle": "ទំព័រអំពីយើង",
+    "profile": "ប្រវត្តិរូប",
+    "profileTitle": "ទំព័រប្រវត្តិរូប",
+    "signUp": "ចុះឈ្មោះ",
+    "signIn": "ចូល"
+  },
+  "NavbarWallet": {
+    "currency": "KHR",
+    "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034743/KHR_oguoif.png"
+  },
+  "Carousel": {
+    "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036701/1_ttmgos.jpg",
+    "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036702/2_ldtfps.jpg",
+    "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036704/3_gxe0aa.jpg"
+  },
+  "Notification": {
+    "title": "ការជូនដំណឹង",
+    "close": "បិទ",
+    "header": "ការប្រមូលលេង",
+    "description": "លេងស្លុតពីអ្នកផ្តល់សេវាកម្មទាំងអស់ និងប្រមូលបានដល់ 30,000 THB ដើម្បីបើករង្វាន់មាស 10,000។",
+    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1732973196/kh_uvfwby.png"
+  },
+  "HomePage": {
+    "title": "ទំព័រចូល"
+  },
+  "AboutPage": {
+    "title": "អំពីយើង"
+  },
+  "ProfilePage": {
+    "title": "ប្រវត្តិរូប"
+  },
+  "welcome": "សូមស្វាគមន៍មកកាន់គេហទំព័ររបស់យើង",
+  "languageSwitch": "ប្ដូរភាសា",
+  "slidebar": {
+    "home": "ទំព័រដើម",
+    "slots": "ម៉ាស៊ីនស្លុត",
+    "liveCasino": "កាស៊ីណូផ្ទាល់",
+    "privileges": "សិទ្ធិពិសេស",
+    "quests": "បេសកកម្ម",
+    "reward": "រង្វាន់",
+    "promo": "ប្រូម៉ូសិន",
+    "levels": "កម្រិត",
+    "referral": "ការផ្ដល់អនុសាសន៍",
+    "providers": "អ្នកផ្គត់ផ្គង់",
+    "rtpSlots": "RTP ស្លុត",
+    "sports": "កីឡា",
+    "fishing": "ការនេសាទ",
+    "virtual": "ជាក់ស្តែង",
+    "languageOption": "ជម្រើសភាសា",
+    "contactSocialMedia": "ទំនាក់ទំនង និងប្រព័ន្ធសង្គម"
+  },
+  "MenuBar": {
+    "demo": "ការបង្ហាញ",
+    "allGames": "គ្រប់ល្បែង",
+    "popularGames": "ល្បែងពេញនិយម",
+    "newGames": "ល្បែងថ្មី",
+    "cashDrop": "ការបោះប្រាក់",
+    "jackpots": "រង្វាន់ធំ",
+    "megaways": "Megaways",
+    "tableGames": "ល្បែងតុ",
+    "providers": "អ្នកផ្គត់ផ្គង់"
+  },
+  "popularGames": {
+    "title": "ល្បែងពេញនិយម",
+    "seeAll": "មើលទាំងអស់",
+    "games": {
+      "jewelMania": "តម្លៃគ្រឿងអលង្ការ",
+      "hotFruitsOnFire": "ផ្លែឈើក្តៅ",
+      "barsAndBells": "#ដងនិងកណ្តឹង",
+      "reelReelHot": "ក្តៅលើក្តៅ",
+      "spiritOfTheLake": "វិញ្ញាណស្រព",
+      "twinWinsMystery": "ឯកសារលំអិត Twin Wins"
+    },
+    "provider": "Mancala"
+  },
+  "newGames": {
+    "title": "ល្បែងថ្មី",
+    "seeAll": "មើលទាំងអស់",
+    "games": {
+      "spiritOfTheLake": "វិញ្ញាណស្រព",
+      "twinWinsMystery": "ឯកសារលំអិត Twin Wins"
+    },
+    "provider": "Mancala"
+  },
+  "promotions": {
+    "title": "ការផ្សព្វផ្សាយ",
+    "seeAll": "មើលទាំងអស់"
+  },
+  "liveCasino": {
+    "title": "កាស៊ីណូផ្ទាល់",
+    "seeAll": "មើលទាំងអស់",
+    "games": {
+      "pragmaticLive": "Pragmatic ផ្ទាល់",
+      "baccaratC08": "បាការ៉ាត់ C08",
+      "baccarat": "បាការ៉ាត់",
+      "dreamGaming": "Dream Gaming",
+      "topGamesLobby": "សាខាល្បែងល្អបំផុត",
+      "liveCasino": "កាស៊ីណូផ្ទាល់"
+    },
+    "providers": {
+      "pragmaticPlay": "Pragmatic Play",
+      "sa": "SA",
+      "aeSexy": "Ae Sexy",
+      "dreamGaming": "Dream Gaming",
+      "evolutionGaming": "Evolution Gaming",
+      "weGaming": "We Gaming"
+    }
+  },
+  "gameProviders": {
+    "title": "អ្នកផ្គត់ផ្គង់ល្បែង",
+    "seeAll": "មើលទាំងអស់",
+    "providers": {
+      "pg": {
+        "name": "PG",
+        "description": "Pocket Games Soft",
+        "play": "លេង"
+      },
+      "joker": {
+        "name": "Joker",
+        "description": "Joker",
+        "play": "លេង"
+      },
+      "jili": {
+        "name": "JILI",
+        "description": "JILI",
+        "play": "លេង"
+      },
+      "pragmaticPlay": {
+        "name": "Pragmatic Play",
+        "description": "Pragmatic Play",
+        "play": "លេង"
+      }
+    }
+  },
+  "allGames": {
+    "title": "គ្រប់ល្បែង",
+    "seeAll": "មើលទាំងអស់",
+    "games": {
+      "ninjaRaccoonFrenzy": {
+        "name": "ស្ទ្រីដកាតា",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "ទ្រព្យសម្បត្តិរបស់ Aztec",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "មាជុងសន្លឹក 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "Lucky Neko",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "មាជុងសន្លឹក",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "សង្គ្រាមប្រភេទហ្គេម",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "ផ្លូវកិលីន",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "Bandito កំពូល",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "កញ្ចប់ទោចក្រយាន",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "Caishen ផ្តល់ជ័យជំនះ",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "សំណាងវាច",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "ទ្រព្យសម្បត្តិ Ganesha",
+        "provider": "PGSoft"
+      }
+    }
+  },
+  "footer": {
+    "gameCategory": "ប្រភេទល្បែង",
+    "categories": {
+      "demo": "ការបង្ហាញ",
+      "newGames": "ល្បែងថ្មី",
+      "popular": "ពេញនិយម",
+      "cashDrops": "ការបោះប្រាក់",
+      "jackpots": "រង្វាន់ធំ",
+      "megaways": "Megaways",
+      "tableGames": "ល្បែងតុ",
+      "allGames": "គ្រប់ល្បែង"
+    },
+    "liveCasino": "កាស៊ីណូផ្ទាល់",
+    "allLiveCasino": "គ្រប់កាស៊ីណូផ្ទាល់",
+    "specials": {
+      "quests": "បេសកកម្ម",
+      "reward": "រង្វាន់",
+      "referral": "ការផ្ដល់អនុសាសន៍",
+      "level": "កម្រិត"
+    },
+    "information": {
+      "termsAndConditions": "ល័ក្ខខ័ណ្ឌ",
+      "privacyPolicy": "គោលនយោបាយភាពឯកជន",
+      "cookiesPolicy": "គោលនយោបាយ Cookies"
+    },
+    "followUs": "តាមដានយើង",
+    "poweredBy": "គាំទ្រដោយ Rith CT"
+  },
+  "header": {
+    "signUp": "ចុះឈ្មោះ",
+    "signIn": "ចូល"
+  },
+  "mobieleNavbar": {
+    "menu": "ម៉ឺនុយ",
+    "slots": "ស្លុត",
+    "signUp": "ចុះឈ្មោះ",
+    "liveCasino": "កាស៊ីណូផ្ទាល់",
+    "promo": "ប្រូម៉ូ"
+  },
+  "RewardSection": {
+    "mainTitle": "បើកសោរ ផ្តល់ផលប្រយោជន៍គ្មានដែនកំណត់",
+    "mainSubtitle": "ចុះឈ្មោះឥឡូវនេះ ហើយចាប់ផ្តើមការធ្វើដំណើរដ៏គួរឱ្យរំភើបមួយដែលមានអត្ថប្រយោជន៍។ បើកទ្វារដើម្បីទទួលបានរង្វាន់គ្មានដែនកំណត់។",
+    "joinButton": "ចូលរួម PlayGame168",
+    "steps": {
+      "step1": "ចុះឈ្មោះ និងធ្វើការដាក់ប្រាក់",
+      "step2": "លេងហ្គេមប្រចាំប៉ុន្តែអ្វីដែលអ្នកចូលចិត្ត",
+      "step3": "ប្ដូររង្វាន់របស់អ្នក"
+    },
+    "enjoyOurGames": {
+      "title": "រីករាយជាមួយហ្គេមរបស់យើង!",
+      "description": "នៅក្នុង Live Casino House, យើងផ្តល់ជូននូវហ្គេមដែលគួរឱ្យរំភើបជាង 4,000 ប្រភេទសម្រាប់អ្នកធ្វើការស្វែងរក។",
+      "button": "ទាមទាររង្វាន់របស់អ្នក"
+    },
+    "enjoyOurPromotions": {
+      "title": "រីករាយជាមួយការផ្សព្វផ្សាយរបស់យើង!",
+      "description": "ដាក់ប្រាក់ថ្ងៃនេះ ហើយបើកពិភពលោកនៃរង្វាន់អេកឡូវសុីវយ៉ាងល្អបំផុតជាមួយកម្មវិធីរង្វាន់ផ្តាច់មុខរបស់យើង។",
+      "button": "ទាមទាររង្វាន់របស់អ្នក"
+    },
+    "benefitsSection": {
+      "title": "ទទួលបានអត្ថប្រយោជន៍ជាច្រើនដោយឥតគិតថ្លៃ",
+      "benefits": {
+        "questHub": {
+          "title": "មជ្ឈមណ្ឌលភារកិច្ច",
+          "description": "បំពេញបេសកកម្មប្រចាំថ្ងៃ និងប្រចាំសប្តាហ៍ ដើម្បីបង្កើនចំណូលរបស់អ្នកយ៉ាងឆាប់រហ័ស។",
+          "tag": "រាល់ថ្ងៃ និងសប្តាហ៍"
+        },
+        "loyaltyVip": {
+          "title": "VIP ភាពស្មោះត្រង់",
+          "description": "បើកការពិសេសរបស់អ្នកនៅពេលអ្នកឡើងកម្រិតនៅក្នុងក្លឹប VIP ភាពស្មោះត្រង់របស់យើង។",
+          "tag": "រាល់ថ្ងៃ និងសប្តាហ៍"
+        },
+        "tournament": {
+          "title": "ការប្រកួតប្រជែង",
+          "description": "ប្រកួតប្រជែង ស្វែងរកការផ្តល់សេចក្ដីរំភើប និងទទួលបានជោគជ័យក្នុងការប្រកួតរបស់យើង។",
+          "tag": "រាល់សប្តាហ៍"
+        }
+      }
+    },
+    "introducingExclusive": {
+      "title": "ណែនាំកម្មវិធី Rebate និង Cashback ផ្តាច់មុខរបស់យើង",
+      "description": "ចូលរួមជាមួយយើងក្នុងការរីករាយ ហើយចាប់ផ្តើមទទួលបាន Rebate និង Cashback ថ្ងៃនេះជាមួយកម្មវិធីបញ្ចូលលុយផ្តាច់មុខរបស់យើង។ កុំខកខានចំពោះរង្វាន់ដ៏អស្ចារ្យទាំងនេះ!",
+      "joinButton": "ចូលរួម PlayGame168 ថ្ងៃនេះ →",
+      "features": {
+        "activation": {
+          "title": "សកម្មភាព",
+          "description": "ឡើងកម្រិតដោយការបំពេញបេសកកម្ម និងបញ្ចុះតម្លៃដើម្បីសម្រេចបានកម្រិតខ្ពស់បំផុតនៃសេចក្ដីសម្រេច។"
+        },
+        "bonus": {
+          "title": "បូកសរុប",
+          "description": "ទាមទារប្រាក់បន្ថែមរបស់អ្នកប្រចាំថ្ងៃ និងប្រចាំសប្តាហ៍ នៅពេលអ្នកបំពេញការងារយ៉ាងស្មោះត្រង់។"
+        },
+        "rewardTier": {
+          "title": "កម្រិតរង្វាន់",
+          "description": "ធ្វើឱ្យស្ថានភាពរបស់អ្នកខ្ពស់ និងរីករាយជាមួយរង្វាន់ដ៏ច្រើននៅពេលអ្នកឡើងកម្រិត។"
+        }
+      }
+    },
+    "deluxeExperience": {
+      "title": "យើងរីករាយផ្តល់ជូនអ្នកនូវបទពិសោធន៍លេងហ្គេមដ៏ប្រណិតបំផុត",
+      "button": "ចុះឈ្មោះ"
+    }
+  },
+  "MemberLevel": {
+    "mainTitle": "បើកកម្រិតពិសេសរបស់អ្នក",
+    "mainSubtitle": "ចូលរួមកម្មវិធីសមាជិកពិសេស និងរីករាយជាមួយរង្វាន់ដ៏អស្ចារ្យនៅពេលអ្នកបន្តឡើងកម្រិត។",
+    "joinButton": "ចូលរួមកម្រិត",
+    "exclusiveBenefits": {
+      "title": "អត្ថប្រយោជន៍ VIP ពិសេស",
+      "benefits": {
+        "levelsRewards": {
+          "title": "កម្រិត និងរង្វាន់",
+          "description": "ការលេងច្រើនជាងនេះបង្អស់ ឡើងកម្រិតបានខ្ពស់ជាងនេះ"
+        },
+        "exclusivePromotions": {
+          "title": "ការផ្សព្វផ្សាយពិសេស",
+          "description": "ដល់កម្រិតខ្ពស់ជាងនេះដើម្បីបើកអត្ថប្រយោជន៍។"
+        },
+        "higherCashback": {
+          "title": "ការសងប្រាក់ត្រឡប់ខ្ពស់ជាង",
+          "description": "ទទួលបានការសងប្រាក់ត្រឡប់រហូតដល់ 12%"
+        },
+        "royaltyClub": {
+          "title": "ក្លឹបសេរីភាព",
+          "description": "ចូលរួមក្លឹប VIP សម្រាប់បូណូសពិសេស។"
+        }
+      }
+    },
+    "carousel": {
+      "levels": {
+        "bronze": "សំរិទ្ធ",
+        "silver": "ប្រាក់",
+        "gold": "មាស",
+        "diamond": "ពេជ្រ",
+        "platinum": "ផ្លាទីន",
+        "black": "ខ្មៅ"
+      },
+      "cashback": "ការសងប្រាក់ត្រឡប់ (%)"
+    }
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "NavbarLinks": {
+    "home": "Home",
+    "homeTitle": "Theme",
+    "about": "About Us",
+    "aboutTitle": "About Page",
+    "profile": "Profile",
+    "profileTitle": "Profile Page",
+    "signUp": "Sign Up",
+    "signIn": "Log In"
+  },
+  "Notification": {
+    "title": "Notification",
+    "close": "Close",
+    "header": "Accumulated Play",
+    "description": "Play slots from all providers and accumulate up to 30,000 SGD to unlock a reward of 10,000 gems.",
+    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1732973205/ph_qsq9ub.png"
+  },
+  "HomePage": {
+    "title": "Home Page"
+  },
+  "AboutPage": {
+    "title": "About Us"
+  },
+  "ProfilePage": {
+    "title": "Profile"
+  },
+  "welcome": "Welcome to our website",
+  "languageSwitch": "Switch Language",
+  "slidebar": {
+    "home": "Home",
+    "slots": "Slots",
+    "liveCasino": "Live Casino",
+    "privileges": "Privileges",
+    "quests": "Quests",
+    "reward": "Rewards",
+    "promo": "Promos",
+    "levels": "Levels",
+    "referral": "Referrals",
+    "providers": "Providers",
+    "rtpSlots": "RTP Slots",
+    "sports": "Sports",
+    "fishing": "Fishing",
+    "virtual": "Virtual",
+    "languageOption": "Language Option",
+    "contactSocialMedia": "Contact & Social Media"
+  },
+  "MenuBar": {
+    "demo": "Demo",
+    "allGames": "All Games",
+    "popularGames": "Popular Games",
+    "newGames": "New Games",
+    "cashDrop": "Cash Drop",
+    "jackpots": "Jackpots",
+    "megaways": "Megaways",
+    "tableGames": "Table Games",
+    "providers": "Providers"
+  },
+  "popularGames": {
+    "title": "Popular Games",
+    "seeAll": "View All",
+    "games": {
+      "jewelMania": "Jewel Mania",
+      "hotFruitsOnFire": "Hot Fruits on Fire",
+      "barsAndBells": "#BarsAndBells",
+      "reelReelHot": "Reel Reel Hot",
+      "spiritOfTheLake": "Spirit of the Lake",
+      "twinWinsMystery": "The Twin Wins Mystery"
+    },
+    "provider": "Mancala"
+  },
+  "newGames": {
+    "title": "New Games",
+    "seeAll": "View All",
+    "games": {
+      "spiritOfTheLake": "Spirit of the Lake",
+      "twinWinsMystery": "The Twin Wins Mystery"
+    },
+    "provider": "Mancala"
+  },
+  "promotions": {
+    "title": "Promotions",
+    "seeAll": "View All"
+  },
+  "liveCasino": {
+    "title": "Live Casino",
+    "seeAll": "View All",
+    "games": {
+      "pragmaticLive": "Pragmatic Live",
+      "baccaratC08": "Baccarat C08",
+      "baccarat": "Baccarat",
+      "dreamGaming": "DreamGaming",
+      "topGamesLobby": "Top Games Lobby",
+      "liveCasino": "Live Casino"
+    },
+    "providers": {
+      "pragmaticPlay": "Pragmatic Play",
+      "sa": "SA",
+      "aeSexy": "Ae Sexy",
+      "dreamGaming": "DreamGaming",
+      "evolutionGaming": "Evolution Gaming",
+      "weGaming": "We Gaming"
+    }
+  },
+  "gameProviders": {
+    "title": "Game Providers",
+    "seeAll": "View All",
+    "providers": {
+      "pg": {
+        "name": "PG",
+        "description": "Pocket Games Soft",
+        "play": "Play"
+      },
+      "joker": {
+        "name": "Joker",
+        "description": "Joker",
+        "play": "Play"
+      },
+      "jili": {
+        "name": "JILI",
+        "description": "JILI",
+        "play": "Play"
+      },
+      "pragmaticPlay": {
+        "name": "Pragmatic Play",
+        "description": "Pragmatic Play",
+        "play": "Play"
+      }
+    }
+  },
+  "allGames": {
+    "title": "All Games",
+    "seeAll": "View All",
+    "games": {
+      "ninjaRaccoonFrenzy": {
+        "name": "Ninja Raccoon Frenzy",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "Treasures of Aztec",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "Mahjong Ways 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "Lucky Neko",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "Mahjong Ways",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "Wild Bounty Showdown",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "Ways of the Qilin",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "Wild Bandito",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "Fortune Rabbit",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "Caishen Wins",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "Fortune Ox",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "Ganesha Fortune",
+        "provider": "PGSoft"
+      }
+    }
+  },
+  "footer": {
+    "gameCategory": "Game Category",
+    "categories": {
+      "demo": "Demo",
+      "newGames": "New Games",
+      "popular": "Popular",
+      "cashDrops": "Cash Drops",
+      "jackpots": "Jackpots",
+      "megaways": "Megaways",
+      "tableGames": "Table Games",
+      "allGames": "All Games"
+    },
+    "liveCasino": "Live Casino",
+    "allLiveCasino": "All Live Casino",
+    "specials": {
+      "quests": "Quests",
+      "reward": "Rewards",
+      "referral": "Referrals",
+      "level": "Level"
+    },
+    "information": {
+      "termsAndConditions": "Terms and Conditions",
+      "privacyPolicy": "Privacy Policy",
+      "cookiesPolicy": "Cookies Policy"
+    },
+    "followUs": "Follow Us",
+    "poweredBy": "Powered By Rith CT"
+  },
+  "header": {
+    "signUp": "Sign Up",
+    "signIn": "Log In"
+  }
+}

@@ -1,0 +1,328 @@
+{
+  "NavbarLinks": {
+    "home": "ໜ້າຫຼັກ",
+    "homeTitle": "ທີມ",
+    "about": "ກ່ຽວກັບ",
+    "aboutTitle": "ໜ້າກ່ຽວກັບ",
+    "profile": "ໂປຣໄຟລ໌",
+    "profileTitle": "ໜ້າໂປຣໄຟລ໌",
+    "signUp": "ລົງທະບຽນ",
+    "signIn": "ເຂົ້າລະບົບ"
+  },
+  "NavbarWallet": {
+    "currency": "LAK",
+    "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034744/LAK_jkwh5q.png"
+  },
+  "Notification": {
+    "title": "ແຈ້ງການ",
+    "close": "ປິດ",
+    "header": "ສະສົມການຫຼິ້ນ",
+    "description": "ເລີ່ມຫຼິ້ນສະລັອດຈາກທຸກຜູ້ໃຫ້ບໍລິການ ແລະສະສົມໄດ້ຮອດ 30,000 THB ສໍາລັບປົດລັອກລາງວັນ 10,000 ເມັດ.",
+    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1732973198/lo_lzbqtp.png"
+  },
+  "HomePage": {
+    "title": "ໜ້າຫຼັກ"
+  },
+  "AboutPage": {
+    "title": "ກ່ຽວກັບ"
+  },
+  "ProfilePage": {
+    "title": "ໂປຣໄຟລ໌"
+  },
+  "welcome": "ຍິນດີຕ້ອນຮັບສູ່ເວັບໄຊຂອງພວກເຮົາ",
+  "languageSwitch": "ປ່ຽນພາສາ",
+  "slidebar": {
+    "home": "ໜ້າຫຼັກ",
+    "slots": "ສລັອດ",
+    "liveCasino": "ຄາສິໂນສົດ",
+    "privileges": "ສິດທິພິເສດ",
+    "quests": "ພາລະກິດ",
+    "reward": "ລາງວັນ",
+    "promo": "ໂປຣໂມຊັ່ນ",
+    "levels": "ລະດັບ",
+    "referral": "ອ້າງອີງ",
+    "providers": "ຜູ້ໃຫ້ບໍລິການ",
+    "rtpSlots": "RTP ສລັອດ",
+    "sports": "ກິລາ",
+    "fishing": "ຫາປາ",
+    "virtual": "ເສັ້ນທາງເສມືອນຈິງ",
+    "languageOption": "ຕົວເລືອກພາສາ",
+    "contactSocialMedia": "ຕິດຕໍ່ & ສື່ສັງຄົມ"
+  },
+  "MenuBar": {
+    "demo": "ທົດລອງ",
+    "allGames": "ເກມທັງໝົດ",
+    "popularGames": "ເກມຍອດນິຍົມ",
+    "newGames": "ເກມໃໝ່",
+    "cashDrop": "ປ່ອນເງິນ",
+    "jackpots": "ແຈັກພອດ",
+    "megaways": "Megaways",
+    "tableGames": "ເກມຕາຕະລາງ",
+    "providers": "ຜູ້ໃຫ້ບໍລິການ"
+  },
+  "popularGames": {
+    "title": "ເກມຍອດນິຍົມ",
+    "seeAll": "ເບິ່ງທັງໝົດ",
+    "games": {
+      "jewelMania": "Jewel Mania",
+      "hotFruitsOnFire": "Hot Fruits on Fire",
+      "barsAndBells": "#BarsAndBells",
+      "reelReelHot": "Reel Reel Hot",
+      "spiritOfTheLake": "Spirit of the Lake",
+      "twinWinsMystery": "The Twin Wins Mystery"
+    },
+    "provider": "Mancala"
+  },
+  "newGames": {
+    "title": "ເກມໃໝ່",
+    "seeAll": "ເບິ່ງທັງໝົດ",
+    "games": {
+      "spiritOfTheLake": "Spirit of the Lake",
+      "twinWinsMystery": "The Twin Wins Mystery"
+    },
+    "provider": "Mancala"
+  },
+  "promotions": {
+    "title": "ໂປຣໂມຊັ່ນ",
+    "seeAll": "ເບິ່ງທັງໝົດ"
+  },
+  "liveCasino": {
+    "title": "ຄາສິໂນສົດ",
+    "seeAll": "ເບິ່ງທັງໝົດ",
+    "games": {
+      "pragmaticLive": "Pragmatic Live",
+      "baccaratC08": "Baccarat C08",
+      "baccarat": "Baccarat",
+      "dreamGaming": "DreamGaming",
+      "topGamesLobby": "Top Games Lobby",
+      "liveCasino": "ຄາສິໂນສົດ"
+    },
+    "providers": {
+      "pragmaticPlay": "PragmaticPlay",
+      "sa": "SA",
+      "aeSexy": "Ae Sexy",
+      "dreamGaming": "DreamGaming",
+      "evolutionGaming": "Evolution Gaming",
+      "weGaming": "We Gaming"
+    }
+  },
+  "gameProviders": {
+    "title": "ຜູ້ໃຫ້ບໍລິການເກມ",
+    "seeAll": "ເບິ່ງທັງໝົດ",
+    "providers": {
+      "pg": {
+        "name": "PG",
+        "description": "Pocket Games Soft",
+        "play": "ຫຼິ້ນ"
+      },
+      "joker": {
+        "name": "Joker",
+        "description": "Joker",
+        "play": "ຫຼິ້ນ"
+      },
+      "jili": {
+        "name": "JILI",
+        "description": "JILI",
+        "play": "ຫຼິ້ນ"
+      },
+      "pragmaticPlay": {
+        "name": "Pragmatic Play",
+        "description": "Pragmatic Play",
+        "play": "ຫຼິ້ນ"
+      }
+    }
+  },
+  "allGames": {
+    "title": "ເກມທັງໝົດ",
+    "seeAll": "ເບິ່ງທັງໝົດ",
+    "games": {
+      "ninjaRaccoonFrenzy": {
+        "name": "Ninja Raccoon Frenzy",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "Treasures of Aztec",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "Mahjong Ways 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "Lucky Neko",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "Mahjong Ways",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "Wild Bounty Showdown",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "Ways of the Qilin",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "Wild Bandito",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "Fortune Rabbit",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "Caishen Wins",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "Fortune Ox",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "Ganesha Fortune",
+        "provider": "PGSoft"
+      }
+    }
+  },
+  "footer": {
+    "gameCategory": "ປະເພດເກມ",
+    "categories": {
+      "demo": "ທົດລອງ",
+      "newGames": "ເກມໃໝ່",
+      "popular": "ຍອດນິຍົມ",
+      "cashDrops": "ປ່ອນເງິນ",
+      "jackpots": "ແຈັກພອດ",
+      "megaways": "Megaways",
+      "tableGames": "ເກມຕາຕະລາງ",
+      "allGames": "ເກມທັງໝົດ"
+    },
+    "liveCasino": "ຄາສິໂນສົດ",
+    "allLiveCasino": "ຄາສິໂນສົດທັງໝົດ",
+    "specials": {
+      "quests": "ພາລະກິດ",
+      "reward": "ລາງວັນ",
+      "referral": "ອ້າງອີງ",
+      "level": "ລະດັບ"
+    },
+    "information": {
+      "termsAndConditions": "ເງື່ອນໄຂ",
+      "privacyPolicy": "ນະໂຍບາຍຄວາມສ່ວນຕົວ",
+      "cookiesPolicy": "ນະໂຍບາຍ Cookies"
+    },
+    "followUs": "ຕິດຕາມພວກເຮົາ",
+    "poweredBy": "ດຳເນີນໂດຍ Rith CT"
+  },
+  "header": {
+    "signUp": "ລົງທະບຽນ",
+    "signIn": "ເຂົ້າລະບົບ"
+  },
+  "mobieleNavbar": {
+    "menu": "ເມນູ",
+    "slots": "ສະລັອດ",
+    "signUp": "ລົງທະບຽນ",
+    "liveCasino": "ຄາສິໂນສົດ",
+    "promo": "ໂປໂມ"
+  },
+  "RewardSection": {
+    "mainTitle": "ປົດລ໋ອກຜົນປະໂຫຍດທີ່ບໍ່ຈົບສິ້ນ",
+    "mainSubtitle": "ສະມັກດຽວນີ້ ແລະເລີ່ມຕົ້ນການຜຈົບໄປທີ່ມີຜົນປະໂຫຍດຫຼາຍຫຼາຍເຂົ້າໄປ. ປົດປະຕູໄປສູ່ລາງວັນທີ່ບໍ່ມີຂອບເຂດ.",
+    "joinButton": "ເຂົ້າຮ່ວມ PlayGame168",
+    "steps": {
+      "step1": "ສະມັກແລະເຮັດການເຝິກເງິນ",
+      "step2": "ຫຼິ້ນເກມທີ່ທ່ານມັກທີ່ສຸດ",
+      "step3": "ແລກລາງວັນຂອງທ່ານ"
+    },
+    "enjoyOurGames": {
+      "title": "ສົມຫຼຸດກັບເກມຂອງພວກເຮົາ!",
+      "description": "ໃນ Live Casino House, ພວກເຮົາສະໜອງເກມທີ່ມີຄວາມຕື່ນເຕັ້ນກວ່າ 4,000 ປະເພດສຳລັບທ່ານສືບສົນ.",
+      "button": "ຂໍລາງວັນຂອງທ່ານ"
+    },
+    "enjoyOurPromotions": {
+      "title": "ສົມຫຼຸດກັບຂ່າວສານຂອງພວກເຮົາ!",
+      "description": "ເຝິກເງິນວັນນີ້ ແລະເປີດໂລກໃຫຍ່ຂອງລາງວັນທີ່ບໍ່ເຄີຍມີຂອບເຂດຂອງພວກເຮົາ.",
+      "button": "ຂໍລາງວັນຂອງທ່ານ"
+    },
+    "benefitsSection": {
+      "title": "ຮັບຜົນປະໂຫຍດຫຼາຍຄືຫຼາຍໂດຍບໍ່ມີຄ່າໃຊ້ຈ່າຍ",
+      "benefits": {
+        "questHub": {
+          "title": "ສູນການເສັ້ນທາງ",
+          "description": "ບັນລຸຂອງວັນແລະສະປົດາທານໃນປະເທດຂອງທ່ານ.",
+          "tag": "ທຸກວັນແລະສະປົດາທານ"
+        },
+        "loyaltyVip": {
+          "title": "VIP ຄວາມຈົງຮັກ",
+          "description": "ປົດຜົນປະໂຫຍດຂອງທ່ານຂະຫຍາຍສູ່ເທີນສຸດຂອງ VIP Club.",
+          "tag": "ທຸກວັນແລະສະປົດາທານ"
+        },
+        "tournament": {
+          "title": "ທົນທອນ",
+          "description": "ປະລົງຂ່າວສານແລະສະສູ້ພາຫລອງສູ່ຂ່າວສານຂອງທ່ານ.",
+          "tag": "ສະປົດາທານທຸກວັນ"
+        }
+      }
+    },
+    "introducingExclusive": {
+      "title": "ນໍາສະເຫນີຄົນຫນຶ່ງສຸດຂອງຄວາມເຮັດເພິ່ມ & ຄືນເງິນ",
+      "description": "ຮ່ວມພວກເຮົາໃນຄວາມຕື່ນເຕັ້ນ ແລະເລີ່ມລັອງປະໂຫຍດເພິ່ມຂອງທ່ານວັນນີ້.",
+      "joinButton": "ເຂົ້າຮ່ວມ PlayGame168 ມື້ນີ້ →",
+      "features": {
+        "activation": {
+          "title": "ການປະຕິບັດງານ",
+          "description": "ປະຕິບັດຫນ້າທີ່ເພື່ອໄປສູ່ຄວາມສຳເລັດສູງສຸດ."
+        },
+        "bonus": {
+          "title": "ໂບນັດ",
+          "description": "ຮັບໂບນັດຂອງທ່ານທຸກມື້ແລະທຸກອາທິດ."
+        },
+        "rewardTier": {
+          "title": "ຊັ້ນລາງວັນ",
+          "description": "ຍົກລະດັບສະຖານະຂອງທ່ານແລະຮັບລາງວັນທີ່ຄຸ້ມຄ່າຂື້ນ."
+        }
+      }
+    },
+    "deluxeExperience": {
+      "title": "ພວກເຮົາມີຄວາມຍິນດີທີ່ຈະໄດ້ສະເຫນີຄວາມສົມຫຼຸດໃນການຫຼິ້ນເກມທີ່ດີທີ່ສຸດ",
+      "button": "ສະມັກ"
+    }
+  },
+  "MemberLevel": {
+    "mainTitle": "ເປີດໃຊ້ລະດັບສິເສດຂອງເຈົ້າ",
+    "mainSubtitle": "ເຂົ້າຮ່ວມໂຄງການສະມາຊິກສິເສດ ແລະເພີ່ມສະຫຼອງກັບລາງວັນທີ່ສຸດວຽກໃນຂະບວນຂອງເຈົ້າ.",
+    "joinButton": "ເຂົ້າຮ່ວມລະດັບ",
+    "exclusiveBenefits": {
+      "title": "ສິດປະໂຫຍດ VIP ສິເສດ",
+      "benefits": {
+        "levelsRewards": {
+          "title": "ລະດັບ ແລະ ລາງວັນ",
+          "description": "ຍິ່ງຫຼິ້ນຫຼາຍຍິ່ງໄດ້ລະດັບສູງຂື້ນ"
+        },
+        "exclusivePromotions": {
+          "title": "ໂປໂມຊັນສິເສດ",
+          "description": "ຂຶ້ນໄປລະດັບສູງກວ່າເພື່ອເປີດໃຊ້ສິດປະໂຫຍດ."
+        },
+        "higherCashback": {
+          "title": "ເງິນຄືນສູງຂື້ນ",
+          "description": "ຮັບເງິນຄືນເຖິງ 12%"
+        },
+        "royaltyClub": {
+          "title": "ສະໂມສອນ VIP",
+          "description": "ເຂົ້າຮ່ວມສະໂມສອນ VIP ສໍາລັບໂບນັສສິເສດ."
+        }
+      }
+    },
+    "carousel": {
+      "levels": {
+        "bronze": "ບຣອນ",
+        "silver": "ເງິນ",
+        "gold": "ທອງ",
+        "diamond": "ເພັດ",
+        "platinum": "ພລາດິນຳ",
+        "black": "ດໍາ"
+      },
+      "cashback": "ເງິນຄືນ (%)"
+    }
+  }
+}

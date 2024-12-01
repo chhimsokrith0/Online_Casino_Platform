@@ -1,0 +1,333 @@
+{
+  "NavbarLinks": {
+    "home": "หน้าหลัก",
+    "homeTitle": "ธีม",
+    "about": "เกี่ยวกับ",
+    "aboutTitle": "หน้าข้อมูลเกี่ยวกับ",
+    "profile": "โปรไฟล์",
+    "profileTitle": "หน้าข้อมูลส่วนตัว",
+    "signUp": "สมัครสมาชิก",
+    "signIn": "เข้าสู่ระบบ"
+  },
+  "NavbarWallet": {
+    "currency": "THB",
+    "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034744/THB_ksqghv.png"
+  },
+  "Carousel": {
+    "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036707/1_afkgtx.png",
+    "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036706/2_lk1yyn.png",
+    "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036702/3_yrzqcx.png"
+  },
+  "Notification": {
+    "title": "การแจ้งเตือน",
+    "close": "ปิด",
+    "header": "สะสมยอดเล่น",
+    "description": "เล่นเกมสล็อตจากทุกผู้ให้บริการ และสะสมยอดครบ 30,000 บาทเพื่อปลดล็อกรางวัล 10,000 เพชร",
+    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1732973205/ph_qsq9ub.png"
+  },
+  "HomePage": {
+    "title": "หน้าแรก"
+  },
+  "AboutPage": {
+    "title": "เกี่ยวกับ"
+  },
+  "ProfilePage": {
+    "title": "โปรไฟล์"
+  },
+  "welcome": "ยินดีต้อนรับสู่เว็บไซต์ของเรา",
+  "languageSwitch": "เปลี่ยนภาษา",
+  "slidebar": {
+    "home": "หน้าหลัก",
+    "slots": "สล็อต",
+    "liveCasino": "คาสิโนสด",
+    "privileges": "สิทธิพิเศษ",
+    "quests": "เควส",
+    "reward": "รางวัล",
+    "promo": "โปรโมชั่น",
+    "levels": "เลเวล",
+    "referral": "การแนะนำเพื่อน",
+    "providers": "ผู้ให้บริการ",
+    "rtpSlots": "สล็อต RTP",
+    "sports": "กีฬา",
+    "fishing": "ตกปลา",
+    "virtual": "เกมเสมือนจริง",
+    "languageOption": "ตัวเลือกภาษา",
+    "contactSocialMedia": "ติดต่อ & โซเชียลมีเดีย"
+  },
+  "MenuBar": {
+    "demo": "ทดลองเล่น",
+    "allGames": "เกมทั้งหมด",
+    "popularGames": "เกมยอดนิยม",
+    "newGames": "เกมใหม่",
+    "cashDrop": "แคชดรอป",
+    "jackpots": "แจ็คพอต",
+    "megaways": "เมก้าเวย์",
+    "tableGames": "เกมโต๊ะ",
+    "providers": "ผู้ให้บริการ"
+  },
+  "popularGames": {
+    "title": "เกมยอดนิยม",
+    "seeAll": "ดูทั้งหมด",
+    "games": {
+      "jewelMania": "จิวเวล มาเนีย",
+      "hotFruitsOnFire": "ผลไม้ร้อนแรง",
+      "barsAndBells": "บาร์ & ระฆัง",
+      "reelReelHot": "รีล รีล ฮ็อต",
+      "spiritOfTheLake": "จิตวิญญาณแห่งทะเลสาบ",
+      "twinWinsMystery": "ปริศนาคู่แฝดที่ชนะ"
+    },
+    "provider": "มันคาลา"
+  },
+  "newGames": {
+    "title": "เกมใหม่",
+    "seeAll": "ดูทั้งหมด",
+    "games": {
+      "spiritOfTheLake": "จิตวิญญาณแห่งทะเลสาบ",
+      "twinWinsMystery": "ปริศนาคู่แฝดที่ชนะ"
+    },
+    "provider": "มันคาลา"
+  },
+  "promotions": {
+    "title": "โปรโมชั่น",
+    "seeAll": "ดูทั้งหมด"
+  },
+  "liveCasino": {
+    "title": "คาสิโนสด",
+    "seeAll": "ดูทั้งหมด",
+    "games": {
+      "pragmaticLive": "แพรกเมติก ไลฟ์",
+      "baccaratC08": "บาคาร่า C08",
+      "baccarat": "บาคาร่า",
+      "dreamGaming": "ดรีม เกมมิ่ง",
+      "topGamesLobby": "ล็อบบี้เกมยอดนิยม",
+      "liveCasino": "คาสิโนสด"
+    },
+    "providers": {
+      "pragmaticPlay": "แพรกเมติก เพลย์",
+      "sa": "เอสเอ",
+      "aeSexy": "เออี เซ็กซี่",
+      "dreamGaming": "ดรีม เกมมิ่ง",
+      "evolutionGaming": "อีโวลูชัน เกมมิ่ง",
+      "weGaming": "วี เกมมิ่ง"
+    }
+  },
+  "gameProviders": {
+    "title": "ผู้ให้บริการเกม",
+    "seeAll": "ดูทั้งหมด",
+    "providers": {
+      "pg": {
+        "name": "พีจี",
+        "description": "Pocket Games Soft",
+        "play": "เล่น"
+      },
+      "joker": {
+        "name": "โจ๊กเกอร์",
+        "description": "Joker",
+        "play": "เล่น"
+      },
+      "jili": {
+        "name": "จิลิ",
+        "description": "JILI",
+        "play": "เล่น"
+      },
+      "pragmaticPlay": {
+        "name": "แพรกเมติก เพลย์",
+        "description": "Pragmatic Play",
+        "play": "เล่น"
+      }
+    }
+  },
+  "allGames": {
+    "title": "เกมทั้งหมด",
+    "seeAll": "ดูทั้งหมด",
+    "games": {
+      "ninjaRaccoonFrenzy": {
+        "name": "นินจาแรคคูนเฟรนซี่",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "สมบัติแห่งแอซเทค",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "เส้นทางไพ่นกกระจอก 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "ลัคกี้ เนโกะ",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "เส้นทางไพ่นกกระจอก",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "การประลองล่าค่าหัว",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "เส้นทางแห่งกิเลน",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "ไวลด์แบนดิโต",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "กระต่ายนำโชค",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "ชัยชนะของไฉ่สิ่ง",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "โชคดีวัวทอง",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "โชคดีของพระพิฆเนศ",
+        "provider": "PGSoft"
+      }
+    }
+  },
+  "footer": {
+    "gameCategory": "หมวดหมู่เกม",
+    "categories": {
+      "demo": "ทดลองเล่น",
+      "newGames": "เกมใหม่",
+      "popular": "ยอดนิยม",
+      "cashDrops": "แคชดรอป",
+      "jackpots": "แจ็คพอต",
+      "megaways": "เมก้าเวย์",
+      "tableGames": "เกมโต๊ะ",
+      "allGames": "เกมทั้งหมด"
+    },
+    "liveCasino": "คาสิโนสด",
+    "allLiveCasino": "คาสิโนสดทั้งหมด",
+    "specials": {
+      "quests": "เควส",
+      "reward": "รางวัล",
+      "referral": "แนะนำเพื่อน",
+      "level": "เลเวล"
+    },
+    "information": {
+      "termsAndConditions": "ข้อกำหนดและเงื่อนไข",
+      "privacyPolicy": "นโยบายความเป็นส่วนตัว",
+      "cookiesPolicy": "นโยบายคุกกี้"
+    },
+    "followUs": "ติดตามเรา",
+    "poweredBy": "ขับเคลื่อนโดย Rith CT"
+  },
+  "header": {
+    "signUp": "สมัครสมาชิก",
+    "signIn": "เข้าสู่ระบบ"
+  },
+  "mobieleNavbar": {
+    "menu": "เมนู",
+    "slots": "สล็อต",
+    "signUp": "สมัครสมาชิก",
+    "liveCasino": "คาสิโนสด",
+    "promo": "โปรโมชั่น"
+  },
+  "RewardSection": {
+    "mainTitle": "ปลดล็อกผลประโยชน์ไม่สิ้นสุด",
+    "mainSubtitle": "สมัครตอนนี้และเริ่มต้นการเดินทางที่น่าตื่นเต้นของสิทธิประโยชน์ เปิดประตูสู่รางวัลไม่จำกัด",
+    "joinButton": "เข้าร่วม PlayGame168",
+    "steps": {
+      "step1": "สมัครสมาชิกและฝากเงิน",
+      "step2": "เล่นเกมที่คุณชื่นชอบ",
+      "step3": "แลกรางวัลของคุณ"
+    },
+    "enjoyOurGames": {
+      "title": "สนุกกับเกมของเรา!",
+      "description": "ที่ Live Casino House เรามีเกมที่น่าตื่นเต้นมากกว่า 4,000 เกมให้คุณสำรวจ",
+      "button": "รับรางวัลของคุณ"
+    },
+    "enjoyOurPromotions": {
+      "title": "สนุกกับโปรโมชั่นของเรา!",
+      "description": "ฝากเงินวันนี้และปลดล็อกรางวัลพิเศษที่ไม่เคยมีมาก่อนด้วยโปรแกรมรางวัลพิเศษของเรา",
+      "button": "รับรางวัลของคุณ"
+    },
+    "benefitsSection": {
+      "title": "รับผลประโยชน์ฟรีมากมาย",
+      "benefits": {
+        "questHub": {
+          "title": "QUEST HUB",
+          "description": "พิชิตความท้าทายรายวันและรายสัปดาห์เพื่อเพิ่มรายได้ของคุณอย่างรวดเร็ว",
+          "tag": "ทุกวัน & สัปดาห์"
+        },
+        "loyaltyVip": {
+          "title": "LOYALTY VIP",
+          "description": "ปลดล็อกสิทธิพิเศษเมื่อคุณเลื่อนระดับใน Loyalty VIP Club ของเรา",
+          "tag": "ทุกวัน & สัปดาห์"
+        },
+        "tournament": {
+          "title": "TOURNAMENT",
+          "description": "แข่งขัน ชนะความท้าทาย และรับชัยชนะในเกมทัวร์นาเมนต์ที่น่าตื่นเต้นของเรา",
+          "tag": "ทุกสัปดาห์"
+        }
+      }
+    },
+    "introducingExclusive": {
+      "title": "แนะนำโปรแกรมคืนเงินและโบนัสพิเศษของเรา",
+      "description": "เข้าร่วมความตื่นเต้นและเริ่มรับโบนัสคืนเงินวันนี้ด้วยโปรแกรมรีชาร์จพิเศษของเรา อย่าพลาดรางวัลที่ยอดเยี่ยมเหล่านี้!",
+      "joinButton": "เข้าร่วม PlayGame168 วันนี้ →",
+      "features": {
+        "activation": {
+          "title": "Activation",
+          "description": "เพิ่มระดับด้วยภารกิจและความท้าทายในเส้นทางของคุณสู่ระดับความสำเร็จสูงสุด"
+        },
+        "bonus": {
+          "title": "Bonus",
+          "description": "รับโบนัสที่คุณสมควรได้รับทุกวันและทุกสัปดาห์เมื่อคุณทำภารกิจสำเร็จอย่างสม่ำเสมอ"
+        },
+        "rewardTier": {
+          "title": "Reward Tier",
+          "description": "เพิ่มสถานะของคุณและรับรางวัลที่มากขึ้นเมื่อคุณไต่ระดับผ่านขั้นตอนรางวัลของเรา"
+        }
+      }
+    },
+    "deluxeExperience": {
+      "title": "เรายินดีที่จะมอบประสบการณ์การเล่นเกมสุดหรูให้กับคุณ",
+      "button": "สมัครสมาชิก"
+    }
+  },
+  "MemberLevel": {
+    "mainTitle": "ปลดล็อคระดับสุดพิเศษของคุณ",
+    "mainSubtitle": "เข้าร่วมโปรแกรมสมาชิกสุดพิเศษและเพลิดเพลินไปกับรางวัลมากมายเมื่อคุณก้าวไปสู่ระดับที่สูงขึ้น",
+    "joinButton": "เข้าร่วมระดับ",
+    "exclusiveBenefits": {
+      "title": "สิทธิประโยชน์ VIP สุดพิเศษ",
+      "benefits": {
+        "levelsRewards": {
+          "title": "ระดับ & รางวัล",
+          "description": "ยิ่งเล่นมาก ยิ่งก้าวหน้ามาก"
+        },
+        "exclusivePromotions": {
+          "title": "โปรโมชั่นสุดพิเศษ",
+          "description": "ไปถึงระดับที่สูงขึ้นเพื่อปลดล็อกสิทธิประโยชน์"
+        },
+        "higherCashback": {
+          "title": "คืนเงินสูงขึ้น",
+          "description": "รับเงินคืนสูงสุด 12%"
+        },
+        "royaltyClub": {
+          "title": "คลับสมาชิก",
+          "description": "เข้าร่วม VIP Club เพื่อรับโบนัสสุดพิเศษ"
+        }
+      }
+    },
+    "carousel": {
+      "levels": {
+        "bronze": "บรอนซ์",
+        "silver": "เงิน",
+        "gold": "ทอง",
+        "diamond": "เพชร",
+        "platinum": "แพลตตินัม",
+        "black": "ดำ"
+      },
+      "cashback": "คืนเงิน (%)"
+    }
+  }
+}

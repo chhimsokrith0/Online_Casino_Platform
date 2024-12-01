@@ -1,0 +1,328 @@
+{
+  "NavbarLinks": {
+    "home": "Beranda",
+    "homeTitle": "Tema",
+    "about": "Tentang Kami",
+    "aboutTitle": "Halaman Tentang Kami",
+    "profile": "Profil",
+    "profileTitle": "Halaman Profil",
+    "signUp": "Daftar",
+    "signIn": "Masuk"
+  },
+  "NavbarWallet": {
+    "currency": "IDR",
+    "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034743/IDR_nosimp.png"
+  },
+  "Notification": {
+    "title": "Notifikasi",
+    "close": "Tutup",
+    "header": "Akumulasi Bermain",
+    "description": "Mainkan slot dari semua penyedia dan kumpulkan hingga 30.000 THB untuk membuka hadiah berupa 10.000 permata.",
+    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1732973196/id_tm99yj.png"
+  },
+  "HomePage": {
+    "title": "Halaman Utama"
+  },
+  "AboutPage": {
+    "title": "Tentang Kami"
+  },
+  "ProfilePage": {
+    "title": "Profil"
+  },
+  "welcome": "Selamat datang di situs kami",
+  "languageSwitch": "Ubah Bahasa",
+  "slidebar": {
+    "home": "Beranda",
+    "slots": "Slot",
+    "liveCasino": "Kasino Langsung",
+    "privileges": "Keistimewaan",
+    "quests": "Misi",
+    "reward": "Hadiah",
+    "promo": "Promo",
+    "levels": "Tingkat",
+    "referral": "Referensi",
+    "providers": "Penyedia",
+    "rtpSlots": "Slot RTP",
+    "sports": "Olahraga",
+    "fishing": "Memancing",
+    "virtual": "Virtual",
+    "languageOption": "Opsi Bahasa",
+    "contactSocialMedia": "Hubungi & Media Sosial"
+  },
+  "MenuBar": {
+    "demo": "Demo",
+    "allGames": "Semua Permainan",
+    "popularGames": "Permainan Populer",
+    "newGames": "Permainan Baru",
+    "cashDrop": "Cash Drop",
+    "jackpots": "Jackpot",
+    "megaways": "Megaways",
+    "tableGames": "Permainan Meja",
+    "providers": "Penyedia"
+  },
+  "popularGames": {
+    "title": "Permainan Populer",
+    "seeAll": "Lihat Semua",
+    "games": {
+      "jewelMania": "Jewel Mania",
+      "hotFruitsOnFire": "Hot Fruits on Fire",
+      "barsAndBells": "#BarsAndBells",
+      "reelReelHot": "Reel Reel Hot",
+      "spiritOfTheLake": "Spirit of the Lake",
+      "twinWinsMystery": "The Twin Wins Mystery"
+    },
+    "provider": "Mancala"
+  },
+  "newGames": {
+    "title": "Permainan Baru",
+    "seeAll": "Lihat Semua",
+    "games": {
+      "spiritOfTheLake": "Spirit of the Lake",
+      "twinWinsMystery": "The Twin Wins Mystery"
+    },
+    "provider": "Mancala"
+  },
+  "promotions": {
+    "title": "Promosi",
+    "seeAll": "Lihat Semua"
+  },
+  "liveCasino": {
+    "title": "Kasino Langsung",
+    "seeAll": "Lihat Semua",
+    "games": {
+      "pragmaticLive": "Pragmatic Live",
+      "baccaratC08": "Baccarat C08",
+      "baccarat": "Baccarat",
+      "dreamGaming": "DreamGaming",
+      "topGamesLobby": "Lobi Permainan Terbaik",
+      "liveCasino": "Kasino Langsung"
+    },
+    "providers": {
+      "pragmaticPlay": "Pragmatic Play",
+      "sa": "SA",
+      "aeSexy": "Ae Sexy",
+      "dreamGaming": "DreamGaming",
+      "evolutionGaming": "Evolution Gaming",
+      "weGaming": "We Gaming"
+    }
+  },
+  "gameProviders": {
+    "title": "Penyedia Permainan",
+    "seeAll": "Lihat Semua",
+    "providers": {
+      "pg": {
+        "name": "PG",
+        "description": "Pocket Games Soft",
+        "play": "Mainkan"
+      },
+      "joker": {
+        "name": "Joker",
+        "description": "Joker",
+        "play": "Mainkan"
+      },
+      "jili": {
+        "name": "JILI",
+        "description": "JILI",
+        "play": "Mainkan"
+      },
+      "pragmaticPlay": {
+        "name": "Pragmatic Play",
+        "description": "Pragmatic Play",
+        "play": "Mainkan"
+      }
+    }
+  },
+  "allGames": {
+    "title": "Semua Permainan",
+    "seeAll": "Lihat Semua",
+    "games": {
+      "ninjaRaccoonFrenzy": {
+        "name": "Ninja Raccoon Frenzy",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "Treasures of Aztec",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "Mahjong Ways 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "Lucky Neko",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "Mahjong Ways",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "Wild Bounty Showdown",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "Ways of the Qilin",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "Wild Bandito",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "Fortune Rabbit",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "Caishen Wins",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "Fortune Ox",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "Ganesha Fortune",
+        "provider": "PGSoft"
+      }
+    }
+  },
+  "footer": {
+    "gameCategory": "Kategori Permainan",
+    "categories": {
+      "demo": "Demo",
+      "newGames": "Permainan Baru",
+      "popular": "Populer",
+      "cashDrops": "Cash Drops",
+      "jackpots": "Jackpot",
+      "megaways": "Megaways",
+      "tableGames": "Permainan Meja",
+      "allGames": "Semua Permainan"
+    },
+    "liveCasino": "Kasino Langsung",
+    "allLiveCasino": "Semua Kasino Langsung",
+    "specials": {
+      "quests": "Misi",
+      "reward": "Hadiah",
+      "referral": "Referensi",
+      "level": "Tingkat"
+    },
+    "information": {
+      "termsAndConditions": "Syarat dan Ketentuan",
+      "privacyPolicy": "Kebijakan Privasi",
+      "cookiesPolicy": "Kebijakan Cookie"
+    },
+    "followUs": "Ikuti kami",
+    "poweredBy": "Didukung oleh Rith CT"
+  },
+  "header": {
+    "signUp": "Daftar",
+    "signIn": "Masuk"
+  },
+  "mobieleNavbar": {
+    "menu": "menu",
+    "slots": "Slot",
+    "signUp": "Daftar",
+    "liveCasino": "Kasino Langsung",
+    "promo": "Promo"
+  },
+  "RewardSection": {
+    "mainTitle": "BUKA MANFAAT TANPA BATAS",
+    "mainSubtitle": "Daftar sekarang dan mulailah perjalanan seru penuh keuntungan. Buka pintu menuju hadiah tak terbatas.",
+    "joinButton": "Bergabunglah dengan PlayGame168",
+    "steps": {
+      "step1": "Daftar & lakukan deposit",
+      "step2": "Mainkan game favorit Anda",
+      "step3": "Tukarkan hadiah Anda"
+    },
+    "enjoyOurGames": {
+      "title": "NIKMATI GAME KAMI!",
+      "description": "Di Live Casino House, kami menawarkan lebih dari 4.000 game seru untuk Anda jelajahi.",
+      "button": "Klaim Hadiah Anda"
+    },
+    "enjoyOurPromotions": {
+      "title": "NIKMATI PROMOSI KAMI!",
+      "description": "Deposit hari ini dan buka dunia hadiah eksklusif seperti yang belum pernah Anda rasakan sebelumnya dengan program hadiah eksklusif kami.",
+      "button": "Klaim Hadiah Anda"
+    },
+    "benefitsSection": {
+      "title": "DAPATKAN BANYAK MANFAAT GRATIS",
+      "benefits": {
+        "questHub": {
+          "title": "PUSAT MISI",
+          "description": "Selesaikan tantangan harian dan mingguan untuk meningkatkan penghasilan Anda dengan cepat.",
+          "tag": "Setiap Hari & Minggu"
+        },
+        "loyaltyVip": {
+          "title": "VIP LOYALTY",
+          "description": "Buka manfaat eksklusif saat Anda naik level di Klub Loyalitas VIP kami.",
+          "tag": "Setiap Hari & Minggu"
+        },
+        "tournament": {
+          "title": "TURNAMEN",
+          "description": "Bersaing, ambil tantangan, dan raih kemenangan di turnamen kami yang mendebarkan.",
+          "tag": "Setiap Minggu"
+        }
+      }
+    },
+    "introducingExclusive": {
+      "title": "Memperkenalkan Program Rebate & Cashback Eksklusif Kami",
+      "description": "Bergabunglah dengan kami dalam keseruan dan mulailah mendapatkan rebate & cashback hari ini dengan program isi ulang eksklusif kami. Jangan lewatkan hadiah-hadiah fantastis ini!",
+      "joinButton": "Bergabunglah dengan PlayGame168 Hari Ini →",
+      "features": {
+        "activation": {
+          "title": "Aktivasi",
+          "description": "Naik level melalui misi dan tantangan untuk mencapai tingkat pencapaian tertinggi."
+        },
+        "bonus": {
+          "title": "Bonus",
+          "description": "Klaim bonus Anda yang telah diperoleh setiap hari dan mingguan saat Anda menyelesaikan tugas dengan konsisten."
+        },
+        "rewardTier": {
+          "title": "Tingkat Hadiah",
+          "description": "Naikkan status Anda dan nikmati hadiah yang lebih besar saat Anda naik melalui tingkat hadiah kami."
+        }
+      }
+    },
+    "deluxeExperience": {
+      "title": "Kami senang menawarkan Anda pengalaman bermain game paling mewah",
+      "button": "Daftar"
+    }
+  },
+  "MemberLevel": {
+    "mainTitle": "BUKA TINGKAT EKSKLUSIF ANDA",
+    "mainSubtitle": "Bergabunglah dengan program keanggotaan eksklusif dan nikmati hadiah luar biasa saat Anda naik tingkat.",
+    "joinButton": "Bergabung dengan Tingkatan",
+    "exclusiveBenefits": {
+      "title": "Manfaat VIP Eksklusif",
+      "benefits": {
+        "levelsRewards": {
+          "title": "Tingkatan & Hadiah",
+          "description": "Semakin banyak Anda bermain, semakin tinggi yang Anda dapatkan"
+        },
+        "exclusivePromotions": {
+          "title": "Promosi Eksklusif",
+          "description": "Capai peringkat lebih tinggi untuk membuka manfaat."
+        },
+        "higherCashback": {
+          "title": "Cashback Lebih Tinggi",
+          "description": "Dapatkan hingga 12% cashback"
+        },
+        "royaltyClub": {
+          "title": "Klub Royalti",
+          "description": "Bergabunglah dengan Klub VIP untuk bonus eksklusif."
+        }
+      }
+    },
+    "carousel": {
+      "levels": {
+        "bronze": "Perunggu",
+        "silver": "Perak",
+        "gold": "Emas",
+        "diamond": "Berlian",
+        "platinum": "Platina",
+        "black": "Hitam"
+      },
+      "cashback": "Cashback (%)"
+    }
+  }
+}

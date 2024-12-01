@@ -1,0 +1,224 @@
+{
+  "NavbarLinks": {
+    "home": "Tahanan",
+    "homeTitle": "Tema",
+    "about": "Tungkol Sa Amin",
+    "aboutTitle": "Pahina Tungkol Sa Amin",
+    "profile": "Profile",
+    "profileTitle": "Pahina ng Profile",
+    "signUp": "Mag-sign Up",
+    "signIn": "Mag-sign In"
+  },
+  "Notification": {
+    "title": "Notification",
+    "close": "Close",
+    "header": "Accumulated Play",
+    "description": "Play slots from all providers and accumulate up to 30,000 PHP to unlock a reward of 10,000 gems.",
+    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1732973205/ph_qsq9ub.png"
+  },
+  "HomePage": {
+    "title": "Pahina ng Tahanan"
+  },
+  "AboutPage": {
+    "title": "Tungkol Sa Amin"
+  },
+  "ProfilePage": {
+    "title": "Profile"
+  },
+  "welcome": "Maligayang pagdating sa aming website",
+  "languageSwitch": "Baguhin ang Wika",
+  "slidebar": {
+    "home": "Tahanan",
+    "slots": "Slots",
+    "liveCasino": "Live Casino",
+    "privileges": "Mga Pribilehiyo",
+    "quests": "Mga Quest",
+    "reward": "Gantimpala",
+    "promo": "Promosyon",
+    "levels": "Mga Antas",
+    "referral": "Referral",
+    "providers": "Mga Nagbibigay",
+    "rtpSlots": "RTP Slots",
+    "sports": "Palakasan",
+    "fishing": "Pangingisda",
+    "virtual": "Virtual",
+    "languageOption": "Pagpipilian ng Wika",
+    "contactSocialMedia": "Makipag-ugnay & Social Media"
+  },
+  "MenuBar": {
+    "demo": "Demo",
+    "allGames": "Lahat ng Laro",
+    "popularGames": "Mga Sikat na Laro",
+    "newGames": "Mga Bagong Laro",
+    "cashDrop": "Cash Drop",
+    "jackpots": "Jackpot",
+    "megaways": "Megaways",
+    "tableGames": "Mga Laro sa Mesa",
+    "providers": "Mga Nagbibigay"
+  },
+  "popularGames": {
+    "title": "Mga Sikat na Laro",
+    "seeAll": "Tingnan Lahat",
+    "games": {
+      "jewelMania": "Jewel Mania",
+      "hotFruitsOnFire": "Hot Fruits on Fire",
+      "barsAndBells": "#BarsAndBells",
+      "reelReelHot": "Reel Reel Hot",
+      "spiritOfTheLake": "Spirit of the Lake",
+      "twinWinsMystery": "The Twin Wins Mystery"
+    },
+    "provider": "Mancala"
+  },
+  "newGames": {
+    "title": "Mga Bagong Laro",
+    "seeAll": "Tingnan Lahat",
+    "games": {
+      "spiritOfTheLake": "Spirit of the Lake",
+      "twinWinsMystery": "The Twin Wins Mystery"
+    },
+    "provider": "Mancala"
+  },
+  "promotions": {
+    "title": "Mga Promosyon",
+    "seeAll": "Tingnan Lahat"
+  },
+  "liveCasino": {
+    "title": "Live Casino",
+    "seeAll": "Tingnan Lahat",
+    "games": {
+      "pragmaticLive": "Pragmatic Live",
+      "baccaratC08": "Baccarat C08",
+      "baccarat": "Baccarat",
+      "dreamGaming": "DreamGaming",
+      "topGamesLobby": "Top Games Lobby",
+      "liveCasino": "Live Casino"
+    },
+    "providers": {
+      "pragmaticPlay": "PragmaticPlay",
+      "sa": "SA",
+      "aeSexy": "Ae Sexy",
+      "dreamGaming": "DreamGaming",
+      "evolutionGaming": "Evolution Gaming",
+      "weGaming": "We Gaming"
+    }
+  },
+  "gameProviders": {
+    "title": "Mga Nagbibigay ng Laro",
+    "seeAll": "Tingnan Lahat",
+    "providers": {
+      "pg": {
+        "name": "PG",
+        "description": "Pocket Games Soft",
+        "play": "Maglaro"
+      },
+      "joker": {
+        "name": "Joker",
+        "description": "Joker",
+        "play": "Maglaro"
+      },
+      "jili": {
+        "name": "JILI",
+        "description": "JILI",
+        "play": "Maglaro"
+      },
+      "pragmaticPlay": {
+        "name": "Pragmatic Play",
+        "description": "Pragmatic Play",
+        "play": "Maglaro"
+      }
+    }
+  },
+  "allGames": {
+    "title": "Lahat ng Laro",
+    "seeAll": "Tingnan Lahat",
+    "games": {
+      "ninjaRaccoonFrenzy": {
+        "name": "Ninja Raccoon Frenzy",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "Treasures of Aztec",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "Mahjong Ways 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "Lucky Neko",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "Mahjong Ways",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "Wild Bounty Showdown",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "Ways of the Qilin",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "Wild Bandito",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "Fortune Rabbit",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "Caishen Wins",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "Fortune Ox",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "Ganesha Fortune",
+        "provider": "PGSoft"
+      }
+    }
+  },
+  "footer": {
+    "gameCategory": "Kategorya ng Laro",
+    "categories": {
+      "demo": "Demo",
+      "newGames": "Mga Bagong Laro",
+      "popular": "Sikat",
+      "cashDrops": "Cash Drops",
+      "jackpots": "Jackpot",
+      "megaways": "Megaways",
+      "tableGames": "Mga Laro sa Mesa",
+      "allGames": "Lahat ng Laro"
+    },
+    "liveCasino": "Live Casino",
+    "allLiveCasino": "Lahat ng Live Casino",
+    "specials": {
+      "quests": "Mga Quest",
+      "reward": "Gantimpala",
+      "referral": "Referral",
+      "level": "Antas"
+    },
+    "information": {
+      "termsAndConditions": "Mga Tuntunin at Kundisyon",
+      "privacyPolicy": "Patakaran sa Privacy",
+      "cookiesPolicy": "Patakaran sa Cookies"
+    },
+    "followUs": "Sundan Kami",
+    "poweredBy": "Pinapatakbo ng Rith CT"
+  },
+  "header": {
+    "signUp": "Mag-sign Up",
+    "signIn": "Mag-sign In"
+  },
+  "mobieleNavbar": {
+    "home": "Bahay",
+    "slots": "Mga Slots",
+    "signUp": "Mag-sign Up",
+    "liveCasino": "Live Casino",
+    "promo": "Promo"
+  }
+}

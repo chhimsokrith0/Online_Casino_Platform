@@ -1,0 +1,333 @@
+{
+  "NavbarLinks": {
+    "home": "Accueil",
+    "homeTitle": "Theme",
+    "about": "À propos",
+    "aboutTitle": "Page d'à propos",
+    "profile": "Profil",
+    "profileTitle": "Page de profil",
+    "signUp": "Sign Up",
+    "signIn": "Sign In"
+  },
+  "Carousel": {
+    "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036799/1_neajxf.png",
+    "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036799/2_owt63j.png",
+    "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036798/3_stpjmw.png"
+  },
+  "NavbarWallet": {
+    "currency": "USD",
+    "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034744/USD_ruok8f.png"
+  },
+  "Notification": {
+    "title": "Notification",
+    "close": "Close",
+    "header": "Accumulated Play",
+    "description": "Play slots from all providers and accumulate up to 30,000 THB to unlock a reward of 10,000 gems.",
+    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1732973194/end_hgzbwq.png"
+  },
+  "HomePage": {
+    "title": "Page d'atterrissage"
+  },
+  "AboutPage": {
+    "title": "À propos"
+  },
+  "ProfilePage": {
+    "title": "Profil"
+  },
+  "welcome": "Welcome to our website",
+  "languageSwitch": "Change Language",
+  "slidebar": {
+    "home": "Home",
+    "slots": "Slots",
+    "liveCasino": "Live Casino",
+    "privileges": "Privileges",
+    "quests": "Quests",
+    "reward": "Reward",
+    "promo": "Promo",
+    "levels": "Levels",
+    "referral": "Referral",
+    "providers": "Providers",
+    "rtpSlots": "RTP Slots",
+    "sports": "Sports",
+    "fishing": "Fishing",
+    "virtual": "Virtual",
+    "languageOption": "Language Option",
+    "contactSocialMedia": "Contact & Social Media"
+  },
+  "MenuBar": {
+    "demo": "Demo",
+    "allGames": "All Games",
+    "popularGames": "Popular Games",
+    "newGames": "New Games",
+    "cashDrop": "Cash Drop",
+    "jackpots": "Jackpots",
+    "megaways": "Megaways",
+    "tableGames": "Table Games",
+    "providers": "Providers"
+  },
+  "popularGames": {
+    "title": "Popular Games",
+    "seeAll": "See All",
+    "games": {
+      "jewelMania": "Jewel Mania",
+      "hotFruitsOnFire": "Hot Fruits on Fire",
+      "barsAndBells": "#BarsAndBells",
+      "reelReelHot": "Reel Reel Hot",
+      "spiritOfTheLake": "Spirit of the Lake",
+      "twinWinsMystery": "The Twin Wins Mystery"
+    },
+    "provider": "Mancala"
+  },
+  "newGames": {
+    "title": "New Games",
+    "seeAll": "See All",
+    "games": {
+      "spiritOfTheLake": "Spirit of the Lake",
+      "twinWinsMystery": "The Twin Wins Mystery"
+    },
+    "provider": "Mancala"
+  },
+  "promotions": {
+    "title": "Promotions",
+    "seeAll": "See All"
+  },
+  "liveCasino": {
+    "title": "Live Casino",
+    "seeAll": "See All",
+    "games": {
+      "pragmaticLive": "Pragmatic Live",
+      "baccaratC08": "Baccarat C08",
+      "baccarat": "Baccarat",
+      "dreamGaming": "DreamGaming",
+      "topGamesLobby": "Top Games Lobby",
+      "liveCasino": "Live Casino"
+    },
+    "providers": {
+      "pragmaticPlay": "PragmaticPlay",
+      "sa": "SA",
+      "aeSexy": "Ae Sexy",
+      "dreamGaming": "DreamGaming",
+      "evolutionGaming": "Evolution Gaming",
+      "weGaming": "We Gaming"
+    }
+  },
+  "gameProviders": {
+    "title": "Game Providers",
+    "seeAll": "See All",
+    "providers": {
+      "pg": {
+        "name": "PG",
+        "description": "Pocket Games Soft",
+        "play": "Play"
+      },
+      "joker": {
+        "name": "Joker",
+        "description": "Joker",
+        "play": "Play"
+      },
+      "jili": {
+        "name": "JILI",
+        "description": "JILI",
+        "play": "Play"
+      },
+      "pragmaticPlay": {
+        "name": "Pragmatic Play",
+        "description": "Pragmatic Play",
+        "play": "Play"
+      }
+    }
+  },
+  "allGames": {
+    "title": "All Games",
+    "seeAll": "See All",
+    "games": {
+      "ninjaRaccoonFrenzy": {
+        "name": "Ninja Raccoon Frenzy",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "Treasures of Aztec",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "Mahjong Ways 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "Lucky Neko",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "Mahjong Ways",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "Wild Bounty Showdown",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "Ways of the Qilin",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "Wild Bandito",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "Fortune Rabbit",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "Caishen Wins",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "Fortune Ox",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "Ganesha Fortune",
+        "provider": "PGSoft"
+      }
+    }
+  },
+  "footer": {
+    "gameCategory": "Game Category",
+    "categories": {
+      "demo": "Demo",
+      "newGames": "New Games",
+      "popular": "Popular",
+      "cashDrops": "Cash Drops",
+      "jackpots": "Jackpots",
+      "megaways": "Megaways",
+      "tableGames": "Table Games",
+      "allGames": "All Games"
+    },
+    "liveCasino": "Live Casino",
+    "allLiveCasino": "All Live Casino",
+    "specials": {
+      "quests": "Quests",
+      "reward": "Reward",
+      "referral": "Referral",
+      "level": "Level"
+    },
+    "information": {
+      "termsAndConditions": "Terms and Conditions",
+      "privacyPolicy": "Privacy Policy",
+      "cookiesPolicy": "Cookies Policy"
+    },
+    "followUs": "Follow us",
+    "poweredBy": "Powered By Rith CT"
+  },
+  "header": {
+    "signUp": "Sign Up",
+    "signIn": "Sign In"
+  },
+  "mobieleNavbar": {
+    "menu": "menu",
+    "slots": "Slots",
+    "signUp": "Sign Up",
+    "liveCasino": "Live Casino",
+    "promo": "Promo"
+  },
+  "RewardSection": {
+    "mainTitle": "UNLOCK ENDLESS BENEFITS",
+    "mainSubtitle": "Sign up now and embark on an exhilarating journey of perks. Open the door to limitless rewards.",
+    "joinButton": "Join PlayGame168",
+    "steps": {
+      "step1": "Sign up & make a deposit",
+      "step2": "Play your favorite games",
+      "step3": "Exchange your reward"
+    },
+    "enjoyOurGames": {
+      "title": "ENJOY OUR GAMES!",
+      "description": "At Live Casino House, we offer over 4,000 exciting games for you to explore.",
+      "button": "Claim Your Reward"
+    },
+    "enjoyOurPromotions": {
+      "title": "ENJOY OUR PROMOTIONS!",
+      "description": "Deposit today and unlock a world of exclusive rewards like never before with our exclusive rewards program.",
+      "button": "Claim Your Reward"
+    },
+    "benefitsSection": {
+      "title": "OBTAIN NUMEROUS COMPLIMENTARY BENEFITS",
+      "benefits": {
+        "questHub": {
+          "title": "QUEST HUB",
+          "description": "Conquer daily and weekly challenges to rapidly boost your earnings.",
+          "tag": "Everyday & Week"
+        },
+        "loyaltyVip": {
+          "title": "LOYALTY VIP",
+          "description": "Unlock elite benefits as you progress through our Loyalty VIP Club levels.",
+          "tag": "Everyday & Week"
+        },
+        "tournament": {
+          "title": "TOURNAMENT",
+          "description": "Compete, rise to the challenge, and claim victory in our thrilling tournament games.",
+          "tag": "Every Week"
+        }
+      }
+    },
+    "introducingExclusive": {
+      "title": "Introducing Our Exclusive Rebate & Cashback Program",
+      "description": "Join us in the excitement and start earning rebate & cashback today with our exclusive recharge program. Don’t miss out on these fantastic rewards!",
+      "joinButton": "Join PlayGame168 Today →",
+      "features": {
+        "activation": {
+          "title": "Activation",
+          "description": "Level up by quests, and challenges on your way to the highest level of achievement."
+        },
+        "bonus": {
+          "title": "Bonus",
+          "description": "Claim your well-earned bonus daily and weekly as you complete the tasks consistently."
+        },
+        "rewardTier": {
+          "title": "Reward Tier",
+          "description": "Elevate your status and enjoy richer rewards as you climb through our reward tiers."
+        }
+      }
+    },
+    "deluxeExperience": {
+      "title": "We are delighted to offer you the most deluxe gaming experience",
+      "button": "Sign Up"
+    }
+  },
+  "MemberLevel": {
+    "mainTitle": "UNLOCK YOUR EXCLUSIVE LEVELS",
+    "mainSubtitle": "Join the exclusive membership program and enjoy incredible rewards as you progress through the levels.",
+    "joinButton": "Join the Levels",
+    "exclusiveBenefits": {
+      "title": "Exclusive VIP Benefits",
+      "benefits": {
+        "levelsRewards": {
+          "title": "Levels & Rewards",
+          "description": "The more you play, the higher you gain"
+        },
+        "exclusivePromotions": {
+          "title": "Exclusive Promotions",
+          "description": "Reached a higher rank to unlock benefits."
+        },
+        "higherCashback": {
+          "title": "Higher Cashback",
+          "description": "Get up to 12% cashback rewards"
+        },
+        "royaltyClub": {
+          "title": "Royalty Club",
+          "description": "Join the VIP Club for exclusive bonuses."
+        }
+      }
+    },
+    "carousel": {
+      "levels": {
+        "bronze": "Bronze",
+        "silver": "Silver",
+        "gold": "Gold",
+        "diamond": "Diamond",
+        "platinum": "Platinum",
+        "black": "Black"
+      },
+      "cashback": "Cashback (%)"
+    }
+  }
+}

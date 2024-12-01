@@ -1,0 +1,217 @@
+{
+  "NavbarLinks": {
+    "home": "Trang Chủ",
+    "homeTitle": "Chủ đề",
+    "about": "Về Chúng Tôi",
+    "aboutTitle": "Trang Giới Thiệu",
+    "profile": "Hồ Sơ",
+    "profileTitle": "Trang Hồ Sơ",
+    "signUp": "Đăng Ký",
+    "signIn": "Đăng Nhập"
+  },
+  "Notification": {
+    "title": "Thông báo",
+    "close": "Đóng",
+    "header": "Tích lũy chơi",
+    "description": "Chơi các trò chơi slot từ tất cả nhà cung cấp và tích lũy đến 30,000 THB để mở khóa phần thưởng 10,000 viên đá quý.",
+    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1732973202/vi_chnp2q.png"
+  },
+  "HomePage": {
+    "title": "Trang Chủ"
+  },
+  "AboutPage": {
+    "title": "Về Chúng Tôi"
+  },
+  "ProfilePage": {
+    "title": "Hồ Sơ"
+  },
+  "welcome": "Chào mừng bạn đến với trang web của chúng tôi",
+  "languageSwitch": "Thay Đổi Ngôn Ngữ",
+  "slidebar": {
+    "home": "Trang Chủ",
+    "slots": "Máy Xèng",
+    "liveCasino": "Sòng Bạc Trực Tiếp",
+    "privileges": "Quyền Lợi",
+    "quests": "Nhiệm Vụ",
+    "reward": "Phần Thưởng",
+    "promo": "Khuyến Mãi",
+    "levels": "Cấp Độ",
+    "referral": "Giới Thiệu",
+    "providers": "Nhà Cung Cấp",
+    "rtpSlots": "Máy Xèng RTP",
+    "sports": "Thể Thao",
+    "fishing": "Câu Cá",
+    "virtual": "Ảo",
+    "languageOption": "Tùy Chọn Ngôn Ngữ",
+    "contactSocialMedia": "Liên Hệ & Mạng Xã Hội"
+  },
+  "MenuBar": {
+    "demo": "Thử Nghiệm",
+    "allGames": "Tất Cả Trò Chơi",
+    "popularGames": "Trò Chơi Phổ Biến",
+    "newGames": "Trò Chơi Mới",
+    "cashDrop": "Rơi Tiền Mặt",
+    "jackpots": "Giải Độc Đắc",
+    "megaways": "Megaways",
+    "tableGames": "Trò Chơi Bàn",
+    "providers": "Nhà Cung Cấp"
+  },
+  "popularGames": {
+    "title": "Trò Chơi Phổ Biến",
+    "seeAll": "Xem Tất Cả",
+    "games": {
+      "jewelMania": "Jewel Mania",
+      "hotFruitsOnFire": "Hot Fruits on Fire",
+      "barsAndBells": "#BarsAndBells",
+      "reelReelHot": "Reel Reel Hot",
+      "spiritOfTheLake": "Spirit of the Lake",
+      "twinWinsMystery": "The Twin Wins Mystery"
+    },
+    "provider": "Mancala"
+  },
+  "newGames": {
+    "title": "Trò Chơi Mới",
+    "seeAll": "Xem Tất Cả",
+    "games": {
+      "spiritOfTheLake": "Spirit of the Lake",
+      "twinWinsMystery": "The Twin Wins Mystery"
+    },
+    "provider": "Mancala"
+  },
+  "promotions": {
+    "title": "Khuyến Mãi",
+    "seeAll": "Xem Tất Cả"
+  },
+  "liveCasino": {
+    "title": "Sòng Bạc Trực Tiếp",
+    "seeAll": "Xem Tất Cả",
+    "games": {
+      "pragmaticLive": "Pragmatic Live",
+      "baccaratC08": "Baccarat C08",
+      "baccarat": "Baccarat",
+      "dreamGaming": "DreamGaming",
+      "topGamesLobby": "Top Games Lobby",
+      "liveCasino": "Sòng Bạc Trực Tiếp"
+    },
+    "providers": {
+      "pragmaticPlay": "Pragmatic Play",
+      "sa": "SA",
+      "aeSexy": "Ae Sexy",
+      "dreamGaming": "DreamGaming",
+      "evolutionGaming": "Evolution Gaming",
+      "weGaming": "We Gaming"
+    }
+  },
+  "gameProviders": {
+    "title": "Nhà Cung Cấp Trò Chơi",
+    "seeAll": "Xem Tất Cả",
+    "providers": {
+      "pg": {
+        "name": "PG",
+        "description": "Pocket Games Soft",
+        "play": "Chơi"
+      },
+      "joker": {
+        "name": "Joker",
+        "description": "Joker",
+        "play": "Chơi"
+      },
+      "jili": {
+        "name": "JILI",
+        "description": "JILI",
+        "play": "Chơi"
+      },
+      "pragmaticPlay": {
+        "name": "Pragmatic Play",
+        "description": "Pragmatic Play",
+        "play": "Chơi"
+      }
+    }
+  },
+  "allGames": {
+    "title": "Tất Cả Trò Chơi",
+    "seeAll": "Xem Tất Cả",
+    "games": {
+      "ninjaRaccoonFrenzy": {
+        "name": "Ninja Raccoon Frenzy",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "Treasures of Aztec",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "Mahjong Ways 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "Lucky Neko",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "Mahjong Ways",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "Wild Bounty Showdown",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "Ways of the Qilin",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "Wild Bandito",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "Fortune Rabbit",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "Caishen Wins",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "Fortune Ox",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "Ganesha Fortune",
+        "provider": "PGSoft"
+      }
+    }
+  },
+  "footer": {
+    "gameCategory": "Danh Mục Trò Chơi",
+    "categories": {
+      "demo": "Thử Nghiệm",
+      "newGames": "Trò Chơi Mới",
+      "popular": "Phổ Biến",
+      "cashDrops": "Rơi Tiền Mặt",
+      "jackpots": "Giải Độc Đắc",
+      "megaways": "Megaways",
+      "tableGames": "Trò Chơi Bàn",
+      "allGames": "Tất Cả Trò Chơi"
+    },
+    "liveCasino": "Sòng Bạc Trực Tiếp",
+    "allLiveCasino": "Tất Cả Sòng Bạc Trực Tiếp",
+    "specials": {
+      "quests": "Nhiệm Vụ",
+      "reward": "Phần Thưởng",
+      "referral": "Giới Thiệu",
+      "level": "Cấp Độ"
+    },
+    "information": {
+      "termsAndConditions": "Điều Khoản & Điều Kiện",
+      "privacyPolicy": "Chính Sách Bảo Mật",
+      "cookiesPolicy": "Chính Sách Cookie"
+    },
+    "followUs": "Theo Dõi Chúng Tôi",
+    "poweredBy": "Được Cung Cấp Bởi Rith CT"
+  },
+  "header": {
+    "signUp": "Đăng Ký",
+    "signIn": "Đăng Nhập"
+  }
+}

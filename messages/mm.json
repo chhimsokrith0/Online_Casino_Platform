@@ -1,0 +1,333 @@
+{
+  "NavbarLinks": {
+    "home": "မူလစာမျက်နှာ",
+    "homeTitle": "အဓိက",
+    "about": "အကြောင်းအရာ",
+    "aboutTitle": "အကြောင်းအရာ စာမျက်နှာ",
+    "profile": "ပရိုဖိုင်",
+    "profileTitle": "ပရိုဖိုင် စာမျက်နှာ",
+    "signUp": "စာရင်းသွင်းရန်",
+    "signIn": "လော့ဂ်အင်"
+  },
+  "NavbarWallet": {
+    "currency": "MMK",
+    "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733037207/MM_xrinfh.png"
+  },
+  "Carousel": {
+    "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036702/1_t17zth.png",
+    "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036704/2_ofoq6h.png",
+    "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036699/3_ma40uh.jpg"
+  },
+  "Notification": {
+    "title": "အသိပေးချက်",
+    "close": "ပိတ်မည်",
+    "header": "ကစားမှု စုဆောင်းမှု",
+    "description": "ပေးသွင်းသူအားလုံးမှ slot များကိုကစားပြီး 30,000 THB အထိ စုဆောင်းကာ 10,000 ကျောက်များဖြင့် ဆုကို ဖွင့်ရန် အမြန်ဆုံးလုပ်ဆောင်ပါ။",
+    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1732973200/mm_xvelhj.png"
+  },
+  "HomePage": {
+    "title": "မူလစာမျက်နှာ"
+  },
+  "AboutPage": {
+    "title": "အကြောင်းအရာ"
+  },
+  "ProfilePage": {
+    "title": "ပရိုဖိုင်"
+  },
+  "welcome": "ကျွန်ုပ်တို့၏ ဝဘ်ဆိုဒ်သို့ ကြိုဆိုပါသည်",
+  "languageSwitch": "ဘာသာစကား ပြောင်းရန်",
+  "slidebar": {
+    "home": "မူလစာမျက်နှာ",
+    "slots": "စလော့များ",
+    "liveCasino": "တိုက်ရိုက် ကာစီနို",
+    "privileges": "အခွင့်အရေးများ",
+    "quests": "ရှာဖွေမှုများ",
+    "reward": "ဆုလာဘ်",
+    "promo": "ပရိုမိုးရှင်း",
+    "levels": "အဆင့်များ",
+    "referral": "ညွှန်းဆိုခြင်း",
+    "providers": "ပေးသွင်းသူများ",
+    "rtpSlots": "RTP စလော့များ",
+    "sports": "အားကစား",
+    "fishing": "ငါးဖမ်း",
+    "virtual": "မူကွဲ",
+    "languageOption": "ဘာသာစကား ရွေးချယ်မှု",
+    "contactSocialMedia": "ဆက်သွယ်ရန် & ဆိုရှယ်မီဒီယာ"
+  },
+  "MenuBar": {
+    "demo": "အစမ်း",
+    "allGames": "အားလုံး ဂိမ်းများ",
+    "popularGames": "လူကြိုက်များသော ဂိမ်းများ",
+    "newGames": "နောက်ဆုံး ဂိမ်းများ",
+    "cashDrop": "ငွေထုတ်ခြင်း",
+    "jackpots": "ဂျက်ခေါက်များ",
+    "megaways": "Megaways",
+    "tableGames": "စားပွဲပေါ် ဂိမ်းများ",
+    "providers": "ပေးသွင်းသူများ"
+  },
+  "popularGames": {
+    "title": "လူကြိုက်များသော ဂိမ်းများ",
+    "seeAll": "အားလုံးကိုကြည့်မည်",
+    "games": {
+      "jewelMania": "Jewel Mania",
+      "hotFruitsOnFire": "Hot Fruits on Fire",
+      "barsAndBells": "#BarsAndBells",
+      "reelReelHot": "Reel Reel Hot",
+      "spiritOfTheLake": "Spirit of the Lake",
+      "twinWinsMystery": "The Twin Wins Mystery"
+    },
+    "provider": "Mancala"
+  },
+  "newGames": {
+    "title": "နောက်ဆုံး ဂိမ်းများ",
+    "seeAll": "အားလုံးကိုကြည့်မည်",
+    "games": {
+      "spiritOfTheLake": "Spirit of the Lake",
+      "twinWinsMystery": "The Twin Wins Mystery"
+    },
+    "provider": "Mancala"
+  },
+  "promotions": {
+    "title": "ပရိုမိုးရှင်းများ",
+    "seeAll": "အားလုံးကိုကြည့်မည်"
+  },
+  "liveCasino": {
+    "title": "တိုက်ရိုက် ကာစီနို",
+    "seeAll": "အားလုံးကိုကြည့်မည်",
+    "games": {
+      "pragmaticLive": "Pragmatic Live",
+      "baccaratC08": "Baccarat C08",
+      "baccarat": "Baccarat",
+      "dreamGaming": "DreamGaming",
+      "topGamesLobby": "Top Games Lobby",
+      "liveCasino": "တိုက်ရိုက် ကာစီနို"
+    },
+    "providers": {
+      "pragmaticPlay": "PragmaticPlay",
+      "sa": "SA",
+      "aeSexy": "Ae Sexy",
+      "dreamGaming": "DreamGaming",
+      "evolutionGaming": "Evolution Gaming",
+      "weGaming": "We Gaming"
+    }
+  },
+  "gameProviders": {
+    "title": "ဂိမ်းပေးသွင်းသူများ",
+    "seeAll": "အားလုံးကိုကြည့်မည်",
+    "providers": {
+      "pg": {
+        "name": "PG",
+        "description": "Pocket Games Soft",
+        "play": "ဆော့ရန်"
+      },
+      "joker": {
+        "name": "Joker",
+        "description": "Joker",
+        "play": "ဆော့ရန်"
+      },
+      "jili": {
+        "name": "JILI",
+        "description": "JILI",
+        "play": "ဆော့ရန်"
+      },
+      "pragmaticPlay": {
+        "name": "Pragmatic Play",
+        "description": "Pragmatic Play",
+        "play": "ဆော့ရန်"
+      }
+    }
+  },
+  "allGames": {
+    "title": "အားလုံး ဂိမ်းများ",
+    "seeAll": "အားလုံးကိုကြည့်မည်",
+    "games": {
+      "ninjaRaccoonFrenzy": {
+        "name": "Ninja Raccoon Frenzy",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "Treasures of Aztec",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "Mahjong Ways 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "Lucky Neko",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "Mahjong Ways",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "Wild Bounty Showdown",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "Ways of the Qilin",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "Wild Bandito",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "Fortune Rabbit",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "Caishen Wins",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "Fortune Ox",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "Ganesha Fortune",
+        "provider": "PGSoft"
+      }
+    }
+  },
+  "footer": {
+    "gameCategory": "ဂိမ်းအမျိုးအစား",
+    "categories": {
+      "demo": "အစမ်း",
+      "newGames": "နောက်ဆုံး ဂိမ်းများ",
+      "popular": "လူကြိုက်များ",
+      "cashDrops": "ငွေထုတ်ခြင်း",
+      "jackpots": "ဂျက်ခေါက်",
+      "megaways": "Megaways",
+      "tableGames": "စားပွဲပေါ် ဂိမ်းများ",
+      "allGames": "အားလုံး ဂိမ်းများ"
+    },
+    "liveCasino": "တိုက်ရိုက် ကာစီနို",
+    "allLiveCasino": "အားလုံး တိုက်ရိုက် ကာစီနို",
+    "specials": {
+      "quests": "ရှာဖွေမှုများ",
+      "reward": "ဆုလာဘ်",
+      "referral": "ညွှန်းဆိုခြင်း",
+      "level": "အဆင့်"
+    },
+    "information": {
+      "termsAndConditions": "စည်းကမ်းများနှင့် အခြေအနေများ",
+      "privacyPolicy": "ကိုယ်ရေးအချက်အလက် မူဝါဒ",
+      "cookiesPolicy": "Cookies မူဝါဒ"
+    },
+    "followUs": "ကျွန်ုပ်တို့အား လိုက်နာပါ",
+    "poweredBy": "Rith CT မှ အားဖြည့်သည်"
+  },
+  "header": {
+    "signUp": "စာရင်းသွင်းရန်",
+    "signIn": "လော့ဂ်အင်"
+  },
+  "mobieleNavbar": {
+    "home": "ပင်မစာမျက်နှာ",
+    "slots": "စလော့",
+    "signUp": "စာရင်းသွင်းရန်",
+    "liveCasino": "တိုက်ရိုက်ကာစီနို",
+    "promo": "ပရိုမိုးရှင်း"
+  },
+  "RewardSection": {
+    "mainTitle": "အကန့်အသတ်မဲ့သော အကျိုးခံစားခွင့်များကို လွှတ်ပေးပါ",
+    "mainSubtitle": "ယခုတင်ပဲ စာရင်းသွင်းပြီး စိတ်လှုပ်ရှားဖွယ် အကျိုးခံစားခွင့်များမှစ၍ ဘဝင်တက်မည်။ အကန့်အသတ်မဲ့သော ဆုများဖွင့်ပါ။",
+    "joinButton": "PlayGame168 တွင် ပါဝင်ပါ",
+    "steps": {
+      "step1": "စာရင်းသွင်းပြီး ထည့်ငွေပေးချေပါ",
+      "step2": "သင့်နှစ်သက်သောဂိမ်းများကိုကစားပါ",
+      "step3": "သင့်ဆုများကိုလဲလှယ်ပါ"
+    },
+    "enjoyOurGames": {
+      "title": "ဂိမ်းများအား လေးစားပါ!",
+      "description": "Live Casino House တွင် သင့်အား စိတ်လှုပ်ရှားဖွယ်ဂိမ်း 4,000 ကျော်ကိုပေးဆောင်သည်။",
+      "button": "သင့်ဆုကိုတောင်းဆိုပါ"
+    },
+    "enjoyOurPromotions": {
+      "title": "ကျွန်ုပ်တို့၏ ကြော်ငြာများအား လေးစားပါ!",
+      "description": "ယနေ့ငွေထည့်ပြီး ကျွန်ုပ်တို့၏ အထူးဆုဖြစ်သောအကျိုးခံစားခွင့်များကို ဖွင့်ပါ။",
+      "button": "သင့်ဆုကိုတောင်းဆိုပါ"
+    },
+    "benefitsSection": {
+      "title": "အခမဲ့ အကျိုးခံစားခွင့်များစွာရယူပါ",
+      "benefits": {
+        "questHub": {
+          "title": "အခန်းစူးစမ်းမှု",
+          "description": "နေ့စဉ်နှင့် အပတ်စဉ်စိန်ခေါ်မှုများကို ကျော်ဖြတ်ပြီး သင့်ဝင်ငွေကိုမြန်မြန်တိုးပါ။",
+          "tag": "နေ့စဉ်နှင့် အပတ်စဉ်"
+        },
+        "loyaltyVip": {
+          "title": "အထူးအကျိုးစီးပွား VIP",
+          "description": "အထူးအကျိုးခံစားခွင့်များကို VIP Club တွင် မတိုးမဲ့တိုးတက်ပါ။",
+          "tag": "နေ့စဉ်နှင့် အပတ်စဉ်"
+        },
+        "tournament": {
+          "title": "ပြိုင်ပွဲ",
+          "description": "အစီအစဉ်ဂိမ်းများတွင် အောင်မြင်မှုများရယူရန်အတွက် ရင်ဆိုင်ပါ၊ ထိန်းသိမ်းပါ၊ အောင်ပွဲခံပါ။",
+          "tag": "တစ်ပတ်တစ်ကြိမ်"
+        }
+      }
+    },
+    "introducingExclusive": {
+      "title": "အထူးပြုပြင်မှုနှင့် ငွေပေးဆပ်မှုများကိုမိတ်ဆက်ပါ",
+      "description": "ကျွန်ုပ်တို့၏အထူးပြုပြင်စနစ်ဖြင့် ယနေ့တင်ပဲ ပြုပြင်မှုနှင့် ငွေပေးဆပ်မှုများကိုစတင်ရှာဖွေပါ။ ဤအံ့သြဖွယ်ဆုများကို လွတ်မခံပါနှင့်!",
+      "joinButton": "ယနေ့ PlayGame168 တွင် ပါဝင်ပါ →",
+      "features": {
+        "activation": {
+          "title": "အသက်သွင်းခြင်း",
+          "description": "အကောင်းဆုံးအောင်မြင်မှုအဆင့်ကိုရောက်ရန် စိန်ခေါ်မှုများနှင့် အခန်းများဖြတ်သန်းပါ။"
+        },
+        "bonus": {
+          "title": "ဆုလာဘ်",
+          "description": "နေ့စဉ်နှင့်အပတ်စဉ် မည်သည့်ဆုလာဘ်များကိုမဆို ခိုင်မာစွာရယူပါ။"
+        },
+        "rewardTier": {
+          "title": "ဆုအဆင့်",
+          "description": "အဆင့်အတန်းတက်ပြီး ပိုမိုချမ်းသာသောဆုများရရှိပါ။"
+        }
+      }
+    },
+    "deluxeExperience": {
+      "title": "အလွန်ခမ်းနားသောဂိမ်းများကို ကျွန်ုပ်တို့ဝန်ဆောင်မှုပေးရန် ဂုဏ်ယူပါသည်",
+      "button": "စာရင်းသွင်းပါ"
+    }
+  },
+  "MemberLevel": {
+    "mainTitle": "သင်၏အထူးအဆင့်များကိုဖွင့်ပါ",
+    "mainSubtitle": "အထူးအဆင့်များကိုရယူပြီး၊ အဆင့်တက်သင့်တာနှင့်အတူ မယုံကြည်နိုင်လောက်သောဆုများကိုခံစားပါ။",
+    "joinButton": "အဆင့်များကိုရယူပါ",
+    "exclusiveBenefits": {
+      "title": "အထူး VIP အကျိုးခံစားခွင့်များ",
+      "benefits": {
+        "levelsRewards": {
+          "title": "အဆင့်များနှင့်ဆုများ",
+          "description": "သင်ကစားလေလေ၊ အဆင့်မြင့်တင်မှုများရရှိလေလေ"
+        },
+        "exclusivePromotions": {
+          "title": "အထူးပရိုမိုးရှင်းများ",
+          "description": "အဆင့်မြင့်တက်ရောက်မှုဖြင့် အကျိုးခံစားခွင့်များကိုဖွင့်ပါ။"
+        },
+        "higherCashback": {
+          "title": "ပိုမိုမြင့်မားသောငွေပြန်အမ်း",
+          "description": "12% အထိ ငွေပြန်အမ်းဆုများရယူပါ"
+        },
+        "royaltyClub": {
+          "title": "Royalty Club",
+          "description": "အထူးဆုကြေးများအတွက် VIP Club ကိုရယူပါ။"
+        }
+      }
+    },
+    "carousel": {
+      "levels": {
+        "bronze": "Bronze",
+        "silver": "Silver",
+        "gold": "Gold",
+        "diamond": "Diamond",
+        "platinum": "Platinum",
+        "black": "Black"
+      },
+      "cashback": "ငွေပြန်အမ်း (%)"
+    }
+  }
+}

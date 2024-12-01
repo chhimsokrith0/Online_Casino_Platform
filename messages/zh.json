@@ -1,0 +1,333 @@
+{
+  "NavbarLinks": {
+    "home": "首页",
+    "homeTitle": "主题",
+    "about": "关于",
+    "aboutTitle": "关于页面",
+    "profile": "个人资料",
+    "profileTitle": "个人资料页面",
+    "signUp": "注册",
+    "signIn": "登录"
+  },
+  "NavbarWallet": {
+    "currency": "CNY",
+    "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733037207/MM_xrinfh.png"
+  },
+  "Carousel": {
+    "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036707/1_afkgtx.png",
+    "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036706/2_lk1yyn.png",
+    "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036702/3_yrzqcx.png"
+  },
+  "Notification": {
+    "title": "通知",
+    "close": "关闭",
+    "header": "累计游戏",
+    "description": "玩所有供应商的老虎机，累计达到30,000泰铢，即可解锁10,000宝石奖励。",
+    "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1732973199/zh_sth5t9.png"
+  },
+  "HomePage": {
+    "title": "登录页面"
+  },
+  "AboutPage": {
+    "title": "关于"
+  },
+  "ProfilePage": {
+    "title": "个人资料"
+  },
+  "welcome": "欢迎来到我们的网站",
+  "languageSwitch": "切换语言",
+  "slidebar": {
+    "home": "首页",
+    "slots": "老虎机",
+    "liveCasino": "真人娱乐场",
+    "privileges": "特权",
+    "quests": "任务",
+    "reward": "奖励",
+    "promo": "促销",
+    "levels": "等级",
+    "referral": "推荐",
+    "providers": "供应商",
+    "rtpSlots": "RTP 老虎机",
+    "sports": "体育",
+    "fishing": "捕鱼",
+    "virtual": "虚拟",
+    "languageOption": "语言选项",
+    "contactSocialMedia": "联系与社交媒体"
+  },
+  "MenuBar": {
+    "demo": "演示",
+    "allGames": "所有游戏",
+    "popularGames": "热门游戏",
+    "newGames": "新游戏",
+    "cashDrop": "现金掉落",
+    "jackpots": "大奖",
+    "megaways": "Megaways",
+    "tableGames": "桌面游戏",
+    "providers": "供应商"
+  },
+  "popularGames": {
+    "title": "热门游戏",
+    "seeAll": "查看全部",
+    "games": {
+      "jewelMania": "宝石狂热",
+      "hotFruitsOnFire": "火热水果",
+      "barsAndBells": "#酒吧与铃铛",
+      "reelReelHot": "滚轮热潮",
+      "spiritOfTheLake": "湖之灵",
+      "twinWinsMystery": "双子胜利之谜"
+    },
+    "provider": "Mancala"
+  },
+  "newGames": {
+    "title": "新游戏",
+    "seeAll": "查看全部",
+    "games": {
+      "spiritOfTheLake": "湖之灵",
+      "twinWinsMystery": "双子胜利之谜"
+    },
+    "provider": "Mancala"
+  },
+  "promotions": {
+    "title": "促销活动",
+    "seeAll": "查看全部"
+  },
+  "liveCasino": {
+    "title": "真人娱乐场",
+    "seeAll": "查看全部",
+    "games": {
+      "pragmaticLive": "Pragmatic 真人",
+      "baccaratC08": "百家乐 C08",
+      "baccarat": "百家乐",
+      "dreamGaming": "梦想游戏",
+      "topGamesLobby": "顶级游戏大厅",
+      "liveCasino": "真人娱乐场"
+    },
+    "providers": {
+      "pragmaticPlay": "Pragmatic 游戏",
+      "sa": "SA",
+      "aeSexy": "Ae 性感",
+      "dreamGaming": "梦想游戏",
+      "evolutionGaming": "Evolution 游戏",
+      "weGaming": "We 游戏"
+    }
+  },
+  "gameProviders": {
+    "title": "游戏供应商",
+    "seeAll": "查看全部",
+    "providers": {
+      "pg": {
+        "name": "PG",
+        "description": "Pocket Games Soft",
+        "play": "开始游戏"
+      },
+      "joker": {
+        "name": "Joker",
+        "description": "Joker",
+        "play": "开始游戏"
+      },
+      "jili": {
+        "name": "JILI",
+        "description": "JILI",
+        "play": "开始游戏"
+      },
+      "pragmaticPlay": {
+        "name": "Pragmatic Play",
+        "description": "Pragmatic Play",
+        "play": "开始游戏"
+      }
+    }
+  },
+  "allGames": {
+    "title": "所有游戏",
+    "seeAll": "查看全部",
+    "games": {
+      "ninjaRaccoonFrenzy": {
+        "name": "忍者浣熊狂热",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "阿兹特克的宝藏",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "麻将路2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "幸运猫",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "麻将路",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "狂野赏金对决",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "麒麟之路",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "狂野强盗",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "幸运兔",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "财神到",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "幸运牛",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "象神的财富",
+        "provider": "PGSoft"
+      }
+    }
+  },
+  "footer": {
+    "gameCategory": "游戏分类",
+    "categories": {
+      "demo": "演示",
+      "newGames": "新游戏",
+      "popular": "热门",
+      "cashDrops": "现金掉落",
+      "jackpots": "大奖",
+      "megaways": "Megaways",
+      "tableGames": "桌面游戏",
+      "allGames": "所有游戏"
+    },
+    "liveCasino": "真人娱乐场",
+    "allLiveCasino": "所有真人娱乐场",
+    "specials": {
+      "quests": "任务",
+      "reward": "奖励",
+      "referral": "推荐",
+      "level": "等级"
+    },
+    "information": {
+      "termsAndConditions": "条款和条件",
+      "privacyPolicy": "隐私政策",
+      "cookiesPolicy": "Cookie 政策"
+    },
+    "followUs": "关注我们",
+    "poweredBy": "由 Rith CT 提供技术支持"
+  },
+  "header": {
+    "signUp": "注册",
+    "signIn": "登录"
+  },
+  "mobieleNavbar": {
+    "menu": "菜单",
+    "slots": "老虎机",
+    "signUp": "注册",
+    "liveCasino": "真人娱乐场",
+    "promo": "促销"
+  },
+  "RewardSection": {
+    "mainTitle": "解锁无限的福利",
+    "mainSubtitle": "立即注册，开始一段令人振奋的福利之旅。打开通往无限奖励的大门。",
+    "joinButton": "加入PlayGame168",
+    "steps": {
+      "step1": "注册并存款",
+      "step2": "玩您喜欢的游戏",
+      "step3": "兑换您的奖励"
+    },
+    "enjoyOurGames": {
+      "title": "享受我们的游戏！",
+      "description": "在Live Casino House，我们为您提供超过4000种令人兴奋的游戏。",
+      "button": "领取您的奖励"
+    },
+    "enjoyOurPromotions": {
+      "title": "享受我们的促销活动！",
+      "description": "今天存款，解锁前所未有的独家奖励，参与我们的专属奖励计划。",
+      "button": "领取您的奖励"
+    },
+    "benefitsSection": {
+      "title": "获取众多免费福利",
+      "benefits": {
+        "questHub": {
+          "title": "任务中心",
+          "description": "完成每日和每周挑战，快速提升您的收入。",
+          "tag": "每日 & 每周"
+        },
+        "loyaltyVip": {
+          "title": "忠诚VIP",
+          "description": "随着您在忠诚VIP俱乐部中进阶，解锁更多独家福利。",
+          "tag": "每日 & 每周"
+        },
+        "tournament": {
+          "title": "锦标赛",
+          "description": "参加比赛，迎接挑战，在我们的刺激锦标赛中赢得胜利。",
+          "tag": "每周一次"
+        }
+      }
+    },
+    "introducingExclusive": {
+      "title": "介绍我们的独家返现与奖励计划",
+      "description": "立即加入，开始通过我们的独家充值计划赚取返现和奖励。不要错过这些精彩的奖励！",
+      "joinButton": "今天就加入PlayGame168 →",
+      "features": {
+        "activation": {
+          "title": "激活",
+          "description": "通过任务和挑战逐步提升，达到最高成就水平。"
+        },
+        "bonus": {
+          "title": "奖金",
+          "description": "通过一致完成任务，每日和每周领取您的奖金。"
+        },
+        "rewardTier": {
+          "title": "奖励层级",
+          "description": "提升您的状态，通过我们的奖励层级获取更丰富的奖励。"
+        }
+      }
+    },
+    "deluxeExperience": {
+      "title": "我们很高兴为您提供最豪华的游戏体验",
+      "button": "注册"
+    }
+  },
+  "MemberLevel": {
+    "mainTitle": "解锁您的独家等级",
+    "mainSubtitle": "加入独家会员计划，随着您的等级提升，享受令人难以置信的奖励。",
+    "joinButton": "加入等级",
+    "exclusiveBenefits": {
+      "title": "独家VIP福利",
+      "benefits": {
+        "levelsRewards": {
+          "title": "等级与奖励",
+          "description": "玩得越多，获得的越多"
+        },
+        "exclusivePromotions": {
+          "title": "独家促销",
+          "description": "达到更高等级以解锁福利。"
+        },
+        "higherCashback": {
+          "title": "更高返现",
+          "description": "享受高达12%的返现奖励"
+        },
+        "royaltyClub": {
+          "title": "尊贵俱乐部",
+          "description": "加入VIP俱乐部，享受独家奖励。"
+        }
+      }
+    },
+    "carousel": {
+      "levels": {
+        "bronze": "青铜",
+        "silver": "白银",
+        "gold": "黄金",
+        "diamond": "钻石",
+        "platinum": "铂金",
+        "black": "黑金"
+      },
+      "cashback": "返现 (%)"
+    }
+  }
+}
