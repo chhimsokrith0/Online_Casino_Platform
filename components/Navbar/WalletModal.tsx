@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faBank, faQrcode } from "@fortawesome/free-solid-svg-icons";
-
+import Link from "next/link";
 interface WalletModalProps {
   isOpen: boolean;
   onClose: () => void;

@@ -44,7 +44,7 @@ const Navbar: React.FC<NavbarProps> = ({ locale }) => {
           <NavbarMobile t={t} locale={locale} toggleModal={toggleModal} />
         ) : (
           <>
-            {isLoggedIn && <NavbarWallet />}
+            {isLoggedIn && <NavbarWallet locale={locale} />}
             {!isLoggedIn && <NavbarButtons t={t} toggleModal={toggleModal} />} {/* Hide if logged in */}
             <NavbarLanguage locale={locale} />
           </>

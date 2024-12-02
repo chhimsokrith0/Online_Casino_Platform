@@ -10,6 +10,7 @@ import GameProviders from "@/components/features/GameProviders";
 import JackpotBanner from "@/components/features/JackpotBanner";
 import AllGames from "@/components/features/AllGames";
 import Notification from "@/components/Notification";
+import MyPromotions from "@/components/MyPromotions";
 
 export async function generateMetadata({
   params: { locale },
@@ -32,6 +33,11 @@ export default function Home({ params: { locale } }: { params: { locale: string 
       <Notification />
 
       <Carousel />
+
+
+      <section className="mb-6">
+          <MyPromotions />
+        </section>
 
       <div className="px-4 sm:px-6 lg:px-8">
         <section className="mb-6">

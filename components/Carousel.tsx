@@ -24,7 +24,7 @@ const Carousel: React.FC = () => {
     { image: t("banner1"), alt: "Slide 4" },
   ];
   return (
-    <div className="relative w-full overflow-hidden rounded-xl shadow-lg">
+    <div className="relative w-full overflow-hidden rounded-xl shadow-lg z-50">
       <Swiper
         effect="coverflow"
         grabCursor
@@ -59,12 +59,12 @@ const Carousel: React.FC = () => {
             </div>
 
             {/* Desktop View */}  
-            <div className="hidden md:block relative w-[90%] h-[400px]  mx-auto">
+            <div className="hidden md:block relative w-[90%] h-[450px]  mx-auto">
               <Image
                 src={item.image}
                 alt={item.alt}
                 fill
-                className="object-cover rounded-xl shadow-lg"
+                className="object-cover w-full h-full rounded-xl shadow-lg"
               />
             </div>
           </SwiperSlide>

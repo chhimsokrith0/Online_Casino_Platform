@@ -6,37 +6,60 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faGift, faChartLine } from "@fortawesome/free-solid-svg-icons";
 import { useTranslations } from "next-intl";
 
-const NavigationMenu = ({ locale }: { locale: string }) => {
+const NavigationMenu = ({
+  locale,
+  activeItem,
+  setActiveItem,
+}: {
+  locale: string;
+  activeItem: string;
+  setActiveItem: (item: string) => void;
+}) => {
   const t = useTranslations("slidebar");
 
   return (
     <>
-      {/* Home */}
       <Link href={`/${locale}/`}>
-        <li className="flex items-center gap-3 px-4 py-2 rounded-lg bg-gradient-to-r from-yellow-500 to-yellow-600 text-black">
+        <li
+          onClick={() => setActiveItem("home")}
+          className={`flex items-center gap-3 px-4 py-2 rounded-lg ${
+            activeItem === "home"
+              ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
+              : "hover:bg-gray-800"
+          }`}
+        >
           <FontAwesomeIcon icon={faHome} />
           <span>{t("home")}</span>
         </li>
       </Link>
 
-      {/* Slots */}
       <Link href={`/${locale}/Games`}>
-        <li className="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-gray-800">
+        <li
+          onClick={() => setActiveItem("slots")}
+          className={`flex items-center gap-3 px-4 py-2 rounded-lg ${
+            activeItem === "slots"
+              ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
+              : "hover:bg-gray-800"
+          }`}
+        >
           <FontAwesomeIcon icon={faGift} />
           <span>{t("slots")}</span>
         </li>
       </Link>
 
-      {/* Live Casino */}
       <Link href={`/${locale}/Games`}>
-        <li className="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-gray-800">
+        <li
+          onClick={() => setActiveItem("liveCasino")}
+          className={`flex items-center gap-3 px-4 py-2 rounded-lg ${
+            activeItem === "liveCasino"
+              ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
+              : "hover:bg-gray-800"
+          }`}
+        >
           <FontAwesomeIcon icon={faChartLine} />
           <span>{t("liveCasino")}</span>
         </li>
       </Link>
-
-      {/* Divider */}
-      <div className="border-t border-gray-700 my-4"></div>
     </>
   );
 };

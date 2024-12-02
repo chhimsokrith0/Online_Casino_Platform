@@ -7,8 +7,9 @@ import { faWallet, faBell } from "@fortawesome/free-solid-svg-icons";
 import WalletModal from "./WalletModal";
 import ProfileModal from "./ProfileModal"; // Import the Profile modal
 import { useTranslations } from "next-intl";
+import QuestsModal from "@/app/[locale]/Quests/QuestsModal";;
 
-const NavbarWallet: React.FC = () => {
+const NavbarWallet = ( {locale}: {locale: string} ) => {
   const t = useTranslations("NavbarWallet");
   const [isWalletModalOpen, setIsWalletModalOpen] = useState(false);
   const [isProfileModalOpen, setIsProfileModalOpen] = useState(false);
@@ -19,6 +20,19 @@ const NavbarWallet: React.FC = () => {
 
   const toggleProfileModal = () => {
     setIsProfileModalOpen(!isProfileModalOpen);
+  };
+
+
+
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
   };
 
   return (
@@ -78,7 +92,7 @@ const NavbarWallet: React.FC = () => {
         </div>
 
         {/* Notification Icon */}
-        <button className="text-white text-xl hover:text-yellow-500 transition">
+        <button onClick={openModal} className="text-white text-xl hover:text-yellow-500 transition">
           <FontAwesomeIcon icon={faBell} />
         </button>
       </div>
@@ -87,7 +101,11 @@ const NavbarWallet: React.FC = () => {
       <WalletModal isOpen={isWalletModalOpen} onClose={toggleWalletModal} />
 
       {/* Profile Modal */}
-      <ProfileModal isOpen={isProfileModalOpen} onClose={toggleProfileModal} />
+      <ProfileModal isOpen={isProfileModalOpen} onClose={toggleProfileModal} locale={locale}/>
+
+
+       {/* QuestsModal */}
+       <QuestsModal isOpen={isModalOpen} onClose={closeModal} />
     </>
   );
 };

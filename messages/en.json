@@ -10,9 +10,9 @@
     "signIn": "Sign In"
   },
   "Carousel": {
-    "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036799/1_neajxf.png",
-    "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036799/2_owt63j.png",
-    "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036798/3_stpjmw.png"
+    "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733123410/Banner_01_blp2ix.jpg",
+    "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733123409/Banner_02_ytexvr.jpg",
+    "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733123409/Banner_03_po6ntx.jpg"
   },
   "NavbarWallet": {
     "currency": "USD",

@@ -10,11 +10,11 @@ const Member_Level: React.FC = () => {
   const t = useTranslations("MemberLevel");
 
   return (
-    <div className="px-6 py-4">
+    <div className="px-6 py-4 z-50">
       {/* Main Section */}
       <div className="max-w-[1200px] mx-auto bg-blue-600 text-white rounded-lg overflow-hidden relative mb-10">
         {/* Background Image */}
-        <div className="relative w-full h-[100px] block md:hidden">
+        <div className="relative w-full z-50 h-[100px] block md:hidden">
           <Image
             src="/img-member-level/banner.webp" // Replace with the actual path of the uploaded image
             alt="Member Level Background"
