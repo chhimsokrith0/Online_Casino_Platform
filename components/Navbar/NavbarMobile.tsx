@@ -8,16 +8,19 @@ interface NavbarMobileProps {
 
 const NavbarMobile: React.FC<NavbarMobileProps> = ({ t, toggleModal }) => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex gap-3 justify-end items-center w-full">
+      {/* Sign Up Button */}
       <button
         onClick={() => toggleModal("signUp")}
-        className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-semibold py-1 px-4 rounded-full hover:opacity-90 transition text-sm w-full mb-2"
+        className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-medium py-2 px-5 rounded-full hover:opacity-90 transition shadow-md text-sm"
       >
         {t("signUp")}
       </button>
+
+      {/* Sign In Button */}
       <button
         onClick={() => toggleModal("signIn")}
-        className="border border-yellow-500 text-yellow-500 font-semibold py-1 px-4 rounded-full hover:bg-yellow-500 hover:text-black transition text-sm w-full"
+        className="border border-yellow-500 text-yellow-500 font-medium py-2 px-5 rounded-full hover:bg-yellow-500 hover:text-black transition shadow-md text-sm"
       >
         {t("signIn")}
       </button>

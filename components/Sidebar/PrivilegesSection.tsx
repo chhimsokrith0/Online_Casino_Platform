@@ -1,8 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { gsap } from "gsap";
 import privilegeTexture from "@/assets/icon_Sidebar/privilege-texture.webp";
 import questIcon from "@/assets/icon_Sidebar/quests.svg";
 import rewardIcon from "@/assets/icon_Sidebar/reward.svg";
@@ -15,6 +16,7 @@ const PrivilegesSection = ({ locale }: { locale: string }) => {
   const t = useTranslations("slidebar");
 
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   const handleOpenModal = () => setIsModalOpen(true);
   const handleCloseModal = () => setIsModalOpen(false);
@@ -57,18 +59,49 @@ const PrivilegesSection = ({ locale }: { locale: string }) => {
     },
   ];
 
+  useEffect(() => {
+    // Animate privilege cards on load
+    cardRefs.current.forEach((card, index) => {
+      if (card) {
+        gsap.fromTo(
+          card,
+          { opacity: 0, y: 20 },
+          { opacity: 1, y: 0, duration: 0.5, delay: index * 0.1 }
+        );
+      }
+    });
+  }, []);
+
+  const handleCardHover = (index: number) => {
+    const card = cardRefs.current[index];
+    if (card) {
+      gsap.to(card, { scale: 1.05, duration: 0.3 });
+    }
+  };
+
+  const handleCardLeave = (index: number) => {
+    const card = cardRefs.current[index];
+    if (card) {
+      gsap.to(card, { scale: 1, duration: 0.3 });
+    }
+  };
+
   return (
     <div className="mt-6">
       <h3 className="text-gray-400 uppercase text-sm font-bold">{t("privileges")}</h3>
       <div className="grid grid-cols-2 gap-2 mt-4">
-        {privileges.map((privilege) => (
+        {privileges.map((privilege, index) => (
           <React.Fragment key={privilege.key}>
             {privilege.link ? (
               <Link href={privilege.link}>
                 <div
-                  className={`relative p-4 rounded-lg cursor-pointer ${
-                    privilege.colSpan ? "col-span-2" : ""
-                  }`}
+                  ref={(el) => {
+                    if (el) cardRefs.current[index] = el; // Assign each card's ref
+                  }} // Assign ref to each card
+                  onMouseEnter={() => handleCardHover(index)}
+                  onMouseLeave={() => handleCardLeave(index)}
+                  className={`relative p-4 rounded-lg cursor-pointer ${privilege.colSpan ? "col-span-2" : ""
+                    }`}
                   style={{
                     backgroundImage: `url(${privilegeTexture.src})`,
                     backgroundColor: privilege.bgColor,
@@ -89,10 +122,14 @@ const PrivilegesSection = ({ locale }: { locale: string }) => {
               </Link>
             ) : (
               <div
+                ref={(el) => {
+                  if (el) cardRefs.current[index] = el; // Assign each card's ref
+                }}  // Assign ref to each card
+                onMouseEnter={() => handleCardHover(index)}
+                onMouseLeave={() => handleCardLeave(index)}
                 onClick={privilege.onClick}
-                className={`relative p-4 rounded-lg cursor-pointer ${
-                  privilege.colSpan ? "col-span-2" : ""
-                }`}
+                className={`relative p-4 rounded-lg cursor-pointer ${privilege.colSpan ? "col-span-2" : ""
+                  }`}
                 style={{
                   backgroundImage: `url(${privilegeTexture.src})`,
                   backgroundColor: privilege.bgColor,

@@ -1,33 +1,45 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import Carousel from "./Carousel";
 import ExclusiveBenefits from "./ExclusiveBenefits";
 import { useTranslations } from "next-intl";
+import { gsap } from "gsap";
 
 const Member_Level: React.FC = () => {
   const t = useTranslations("MemberLevel");
+  const containerRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (containerRef.current) {
+      gsap.fromTo(
+        containerRef.current,
+        { opacity: 0, y: 50 },
+        { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+      );
+    }
+  }, []);
 
   return (
-    <div className="px-6 py-4 z-50">
+    <div className="px-6 py-4 z-50" ref={containerRef}>
       {/* Main Section */}
       <div className="max-w-[1200px] mx-auto bg-blue-600 text-white rounded-lg overflow-hidden relative mb-10">
         {/* Background Image */}
         <div className="relative w-full z-50 h-[100px] block md:hidden">
           <Image
-            src="/img-member-level/banner.webp" // Replace with the actual path of the uploaded image
+            src="/img-member-level/banner.webp"
             alt="Member Level Background"
             fill
-            className="object-cover" // Ensures the image fully covers the area
+            className="object-cover"
           />
         </div>
         <div className="relative w-full h-[300px] hidden md:block">
           <Image
-            src="/img-member-level/banner.webp" // Replace with the actual path of the uploaded image
+            src="/img-member-level/banner.webp"
             alt="Member Level Background"
             fill
-            className="object-cover" // Ensures the image fully covers the area
+            className="object-cover"
           />
         </div>
       </div>

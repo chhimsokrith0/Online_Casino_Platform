@@ -1,17 +1,62 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
+import { gsap } from "gsap";
 
 const Notification = () => {
   const t = useTranslations("Notification");
   const [isNotificationOpen, setIsNotificationOpen] = useState(true);
+  const modalRef = useRef<HTMLDivElement | null>(null);
+  const backdropRef = useRef<HTMLDivElement | null>(null);
 
   const handleClose = () => {
-    setIsNotificationOpen(false);
+    // Animate the closing of the modal
+    if (modalRef.current && backdropRef.current) {
+      const timeline = gsap.timeline({
+        onComplete: () => setIsNotificationOpen(false),
+      });
+
+      timeline
+        .to(modalRef.current, {
+          opacity: 0,
+          scale: 0.8,
+          duration: 0.3,
+          ease: "power2.inOut",
+        })
+        .to(
+          backdropRef.current,
+          {
+            opacity: 0,
+            duration: 0.3,
+            ease: "power2.inOut",
+          },
+          "<"
+        );
+    } else {
+      setIsNotificationOpen(false);
+    }
   };
 
   useEffect(() => {
+    if (isNotificationOpen && modalRef.current && backdropRef.current) {
+      // Animate modal opening
+      const timeline = gsap.timeline();
+
+      timeline
+        .fromTo(
+          modalRef.current,
+          { opacity: 0, scale: 0.8 },
+          { opacity: 1, scale: 1, duration: 0.4, ease: "power2.out" }
+        )
+        .fromTo(
+          backdropRef.current,
+          { opacity: 0 },
+          { opacity: 1, duration: 0.3, ease: "power2.out" },
+          "<"
+        );
+    }
+
     if (isNotificationOpen) {
       document.body.classList.add("overflow-hidden");
     } else {
@@ -26,17 +71,15 @@ const Notification = () => {
   return (
     <>
       {isNotificationOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-[150]">
-          {/* Background Clone */}
-          <div className="absolute inset-0 bg-no-repeat bg-cover bg-center pointer-events-none overflow-hidden">
-            <div
-              className="absolute inset-0 bg-no-repeat bg-cover bg-center blur-lg"
-              
-            ></div>
-          </div>
-
+        <div
+          ref={backdropRef}
+          className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-[150]"
+        >
           {/* Notification Modal */}
-          <div className="relative bg-gray-800 text-white rounded-lg shadow-lg w-[80%] sm:w-[50%] md:w-[40%] lg:w-[30%] animate-fade-in">
+          <div
+            ref={modalRef}
+            className="relative bg-gray-800 text-white rounded-lg shadow-lg w-[80%] sm:w-[50%] md:w-[40%] lg:w-[30%]"
+          >
             {/* Modal Header */}
             <div className="flex justify-between items-center px-4 py-3 border-b border-gray-700">
               <h2 className="text-md font-semibold">{t("title")}</h2>
@@ -51,7 +94,7 @@ const Notification = () => {
             {/* Modal Content */}
             <div className="px-4 py-3">
               <img
-                src={ t("image") }
+                src={t("image")}
                 alt="Notification Banner"
                 className="rounded-lg mb-3 w-full h-auto"
               />

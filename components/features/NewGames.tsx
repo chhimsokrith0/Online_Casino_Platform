@@ -1,14 +1,13 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 import Image from "next/image";
 import img1 from "@/assets/img-newgames/1.png";
 import img2 from "@/assets/img-newgames/2.png";
 import { useTranslations } from "next-intl";
 
-
 const NewGames: React.FC = () => {
-
     const t = useTranslations("newGames");
 
     const newGames = [
@@ -16,6 +15,30 @@ const NewGames: React.FC = () => {
         { id: 2, title: t("games.twinWinsMystery"), provider: t("provider"), image: img2 },
     ];
 
+    const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+    useEffect(() => {
+        // GSAP entrance animation for the cards
+        gsap.fromTo(
+            cardRefs.current,
+            { opacity: 0, y: 50 },
+            { opacity: 1, y: 0, duration: 0.6, stagger: 0.2, ease: "power2.out" }
+        );
+    }, []);
+
+    const handleHover = (index: number) => {
+        const card = cardRefs.current[index];
+        if (card) {
+            gsap.to(card, { scale: 1.05, duration: 0.3, ease: "power2.out" });
+        }
+    };
+
+    const handleLeave = (index: number) => {
+        const card = cardRefs.current[index];
+        if (card) {
+            gsap.to(card, { scale: 1, duration: 0.3, ease: "power2.out" });
+        }
+    };
 
     return (
         <div className="max-w-[1200px] mx-auto">
@@ -33,39 +56,16 @@ const NewGames: React.FC = () => {
                 </button>
             </div>
 
-            {/* Game Cards
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-                {newGames.map((game) => (
-                    <div
-                        key={game.id}
-                        className="bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
-                    >
-                        <div className="relative w-full h-40">
-                            <Image
-                                src={game.image}
-                                alt={game.title}
-                                layout="fill"
-                                objectFit="cover"
-                                className="rounded-t-lg"
-                            />
-                            <div className="absolute top-2 right-2 w-5 h-5 bg-red-600 rounded-full flex items-center justify-center">
-                                <span className="text-white text-xs font-bold">🎲</span>
-                            </div>
-                        </div>
-                        <div className="p-3">
-                            <h3 className="text-white text-sm font-semibold truncate">{game.title}</h3>
-                            <p className="text-gray-400 text-xs mt-1">{game.provider}</p>
-                        </div>
-                    </div>
-                ))}
-            </div> */}
-
-
             {/* Mobile & Desktop View */}
             <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
                 {newGames.map((game, index) => (
                     <div
                         key={index}
+                        ref={(el) => {
+                            if (el) cardRefs.current[index] = el;
+                        }} // Assign ref to each card
+                        onMouseEnter={() => handleHover(index)}
+                        onMouseLeave={() => handleLeave(index)}
                         className="rounded-lg shadow-lg overflow-hidden bg-gray-800 relative group hover:shadow-xl transition-shadow duration-300"
                     >
                         {/* Game Image */}

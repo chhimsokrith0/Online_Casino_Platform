@@ -1,21 +1,21 @@
 "use client";
 
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
-import "swiper/css/autoplay"; // Ensure autoplay styles are imported
+import "swiper/css/autoplay";
 import { EffectCoverflow, Navigation, Autoplay } from "swiper/modules";
 
 import Image from "next/image";
-
-
-
 import { useTranslations } from "next-intl";
+import { gsap } from "gsap";
 
 const Carousel: React.FC = () => {
   const t = useTranslations("Carousel");
+
+  const swiperRef = useRef<HTMLDivElement | null>(null);
 
   const carouselItems = [
     { image: t("banner1"), alt: "Slide 1" },
@@ -23,8 +23,23 @@ const Carousel: React.FC = () => {
     { image: t("banner3"), alt: "Slide 3" },
     { image: t("banner1"), alt: "Slide 4" },
   ];
+
+  useEffect(() => {
+    if (swiperRef.current) {
+      // GSAP animation for fade-in effect on mount
+      gsap.fromTo(
+        swiperRef.current,
+        { opacity: 0, y: 30 },
+        { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+      );
+    }
+  }, []);
+
   return (
-    <div className="relative w-full overflow-hidden rounded-xl shadow-lg z-50">
+    <div
+      ref={swiperRef} // Reference for GSAP animation
+      className="relative w-full overflow-hidden rounded-xl shadow-lg z-50"
+    >
       <Swiper
         effect="coverflow"
         grabCursor
@@ -35,7 +50,6 @@ const Carousel: React.FC = () => {
           delay: 3000,
           disableOnInteraction: false,
         }}
-        // navigation
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -49,7 +63,7 @@ const Carousel: React.FC = () => {
         {carouselItems.map((item, index) => (
           <SwiperSlide key={index} className="swiper-slide">
             {/* Mobile View */}
-            <div className="block md:hidden relative w-[90%] h-[150px]  mx-auto">
+            <div className="block md:hidden relative w-[90%] h-[150px] mx-auto">
               <Image
                 src={item.image}
                 alt={item.alt}
@@ -58,8 +72,8 @@ const Carousel: React.FC = () => {
               />
             </div>
 
-            {/* Desktop View */}  
-            <div className="hidden md:block relative w-[90%] h-[450px]  mx-auto">
+            {/* Desktop View */}
+            <div className="hidden md:block relative w-[90%] h-[450px] mx-auto">
               <Image
                 src={item.image}
                 alt={item.alt}
@@ -75,6 +89,3 @@ const Carousel: React.FC = () => {
 };
 
 export default Carousel;
-
-
-// hidden md:block

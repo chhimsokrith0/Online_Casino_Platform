@@ -11,6 +11,7 @@ import JackpotBanner from "@/components/features/JackpotBanner";
 import AllGames from "@/components/features/AllGames";
 import Notification from "@/components/Notification";
 import MyPromotions from "@/components/MyPromotions";
+import GSAPExample from "@/components/GSAPExample";
 
 export async function generateMetadata({
   params: { locale },
@@ -30,6 +31,7 @@ export default function Home({ params: { locale } }: { params: { locale: string 
 
   return (
     <>
+      {/* <GSAPExample /> */}
       <Notification />
 
       <Carousel />

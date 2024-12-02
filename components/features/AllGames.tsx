@@ -1,7 +1,8 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
+import { gsap } from "gsap";
 
 import img1 from "@/assets/img-allgames/1.png";
 import img2 from "@/assets/img-allgames/2.png";
@@ -32,6 +33,8 @@ import img37 from "@/assets/img-allgames/37.png";
 const AllGames: React.FC = () => {
 
     const t = useTranslations("allGames");
+
+    const gameCardsRef = useRef<HTMLDivElement[]>([]);
 
     const games = [
         {
@@ -156,6 +159,21 @@ const AllGames: React.FC = () => {
         },
     ];
 
+    useEffect(() => {
+        // GSAP animation for game cards on component mount
+        gsap.fromTo(
+            gameCardsRef.current,
+            { opacity: 0, y: 20 },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.5,
+                stagger: 0.1,
+                ease: "power2.out",
+            }
+        );
+    }, []);
+
     return (
         <section className="max-w-[1200px] mx-auto">
             {/* Header */}
@@ -170,28 +188,16 @@ const AllGames: React.FC = () => {
                 </button>
             </div>
 
-
-
-            {/* Desktop View */}
-            {/* <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-                {games.map((game, index) => (
-                    <div key={index} className="rounded-lg shadow-lg overflow-hidden bg-gray-800">
-                        <img src={game.image.src} alt={game.title} className="w-full h-40 object-cover" />
-                        <div className="p-4">
-                            <h3 className="text-lg font-semibold text-white">{game.title}</h3>
-                            <p className="text-sm text-gray-400">{game.provider}</p>
-                        </div>
-                    </div>
-                ))}
-            </div> */}
-
-
-
             {/* Mobile & Desktop View */}
             <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
                 {games.map((game, index) => (
                     <div
                         key={index}
+                        ref={(el) => {
+                            if (el) {
+                                gameCardsRef.current[index] = el;
+                            }
+                        }} // Assign ref for GSAP animation
                         className="rounded-lg shadow-lg overflow-hidden bg-gray-800 relative group hover:shadow-xl transition-shadow duration-300"
                     >
                         {/* Game Image */}
@@ -214,8 +220,6 @@ const AllGames: React.FC = () => {
                     </div>
                 ))}
             </div>
-
-
         </section>
     );
 };

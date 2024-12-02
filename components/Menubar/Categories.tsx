@@ -1,5 +1,7 @@
-import React from "react";
-import Link from "next/link"; // Import Link from Next.js
+"use client";
+
+import React, { useEffect, useRef } from "react";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDice,
@@ -8,8 +10,8 @@ import {
   faTable,
   faChartLine,
   faTrophy,
-  faCog,
 } from "@fortawesome/free-solid-svg-icons";
+import { gsap } from "gsap";
 
 const Categories = ({ t, locale }: { t: any; locale: string }) => {
   const categories = [
@@ -23,19 +25,58 @@ const Categories = ({ t, locale }: { t: any; locale: string }) => {
     { id: 8, name: t("tableGames"), icon: <FontAwesomeIcon icon={faTable} />, link: `/${locale}/Games`, active: false },
   ];
 
+  const categoryRefs = useRef<HTMLDivElement[]>([]); // Updated type for refs
+
+  useEffect(() => {
+    // Fade-in animation for the categories
+    gsap.fromTo(
+      categoryRefs.current,
+      { opacity: 0, y: 20 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.5,
+        stagger: 0.1,
+        ease: "power2.out",
+      }
+    );
+  }, []);
+
+  const handleHover = (index: number) => {
+    const element = categoryRefs.current[index];
+    if (element) {
+      gsap.to(element, { scale: 1.1, duration: 0.3, ease: "power2.out" });
+    }
+  };
+
+  const handleLeave = (index: number) => {
+    const element = categoryRefs.current[index];
+    if (element) {
+      gsap.to(element, { scale: 1, duration: 0.3, ease: "power2.out" });
+    }
+  };
+
   return (
     <div className="flex space-x-6 overflow-x-auto scrollbar-hide w-full md:w-auto">
-      {categories.map((category) => (
-        <Link
+      {categories.map((category, index) => (
+        <div
           key={category.id}
-          href={category.link}
-          className={`flex flex-col items-center text-center ${
-            category.active ? "text-yellow-500 font-semibold" : "text-gray-400 hover:text-yellow-500"
-          } transition duration-300`}
+          ref={(el) => {
+            if (el) categoryRefs.current[index] = el; // Assign each card's ref
+          }}
+          onMouseEnter={() => handleHover(index)}
+          onMouseLeave={() => handleLeave(index)}
         >
-          <span className="text-xl mb-1">{category.icon}</span>
-          <span className="text-sm whitespace-nowrap">{category.name}</span>
-        </Link>
+          <Link
+            href={category.link}
+            className={`flex flex-col items-center text-center ${
+              category.active ? "text-yellow-500 font-semibold" : "text-gray-400 hover:text-yellow-500"
+            } transition duration-300`}
+          >
+            <span className="text-xl mb-1">{category.icon}</span>
+            <span className="text-sm whitespace-nowrap">{category.name}</span>
+          </Link>
+        </div>
       ))}
     </div>
   );

@@ -1,4 +1,7 @@
+"use client";
+
 import React, { useState, useRef, useEffect } from "react";
+import { gsap } from "gsap";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 
@@ -9,7 +12,8 @@ interface NavbarLanguageProps {
 const NavbarLanguage: React.FC<NavbarLanguageProps> = ({ locale }) => {
     const router = useRouter();
     const pathname = usePathname();
-    const dropdownRef = useRef<HTMLDivElement>(null);
+    const dropdownRef = useRef<HTMLDivElement | null>(null);
+    const dropdownMenuRef = useRef<HTMLDivElement | null>(null); // Ref for GSAP animation
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     const languages = [
@@ -45,11 +49,21 @@ const NavbarLanguage: React.FC<NavbarLanguageProps> = ({ locale }) => {
 
     const toggleDropdown = () => {
         setIsDropdownOpen((prev) => !prev);
+        if (!isDropdownOpen && dropdownMenuRef.current) {
+            gsap.fromTo(
+                dropdownMenuRef.current,
+                { opacity: 0, y: -10 },
+                { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" }
+            );
+        }
     };
 
     useEffect(() => {
         const handleOutsideClick = (event: MouseEvent) => {
-            if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+            if (
+                dropdownRef.current &&
+                !dropdownRef.current.contains(event.target as Node)
+            ) {
                 setIsDropdownOpen(false);
             }
         };
@@ -65,6 +79,7 @@ const NavbarLanguage: React.FC<NavbarLanguageProps> = ({ locale }) => {
                 onClick={toggleDropdown}
                 className="flex items-center bg-gray-800 text-white px-4 py-2 rounded-full border border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500 hover:bg-yellow-500 hover:text-black transition"
             >
+                {/* Show only the flag on mobile */}
                 <Image
                     src={currentLanguage?.flag || "/language/en.png"}
                     alt={currentLanguage?.name || "English"}
@@ -72,11 +87,16 @@ const NavbarLanguage: React.FC<NavbarLanguageProps> = ({ locale }) => {
                     height={20}
                     className="rounded-full mr-2"
                 />
-                <span>{currentLanguage?.name || "English"}</span>
-                <span className="ml-2 text-yellow-500">▼</span>
+                {/* Hide text on small screens, show on medium+ screens */}
+                <span className="hidden md:block">{currentLanguage?.name || "English"}</span>
+                <span className="ml-2 text-yellow-500 hidden md:block">▼</span>
             </button>
+
             {isDropdownOpen && (
-                <div className="absolute right-0 mt-2 bg-gray-900 border border-yellow-500 text-white rounded-lg shadow-lg z-10 w-40">
+                <div
+                    ref={dropdownMenuRef}
+                    className="absolute right-0 mt-2 bg-gray-900 border border-yellow-500 text-white rounded-lg shadow-lg z-10 w-40"
+                >
                     <ul className="py-2">
                         {languages.map((lang) => (
                             <li key={lang.code}>
@@ -99,6 +119,7 @@ const NavbarLanguage: React.FC<NavbarLanguageProps> = ({ locale }) => {
                 </div>
             )}
         </div>
+
     );
 };
 

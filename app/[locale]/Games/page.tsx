@@ -1,7 +1,7 @@
 "use client";
 
-import React from "react";
-
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 import img1 from "@/assets/img-allgames/1.png";
 import img2 from "@/assets/img-allgames/2.png";
 import img3 from "@/assets/img-allgames/3.png";
@@ -34,6 +34,8 @@ import { useTranslations } from "next-intl";
 
 
 const GamesPage = () => {
+    const sectionRef = useRef<HTMLDivElement | null>(null);
+    const gameRefs = useRef<(HTMLDivElement | null)[]>([]);
     const t = useTranslations("allGames");
     const gamesData = [
         {
@@ -181,15 +183,46 @@ const GamesPage = () => {
             image: img37,
         },
     ];
+
+    useEffect(() => {
+        // Animate header
+        if (sectionRef.current) {
+            gsap.fromTo(
+                sectionRef.current.querySelector("h1"),
+                { opacity: 0, y: -50 },
+                { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+            );
+        }
+
+        // Animate game cards
+        if (gameRefs.current.length) {
+            gsap.fromTo(
+                gameRefs.current,
+                { opacity: 0, scale: 0.8 },
+                {
+                    opacity: 1,
+                    scale: 1,
+                    duration: 1,
+                    ease: "power2.out",
+                    stagger: 0.2,
+                }
+            );
+        }
+    }, []);
     return (
-        <div className="max-w-[1200px] mx-auto p-4">
+        <div ref={sectionRef} className="max-w-[1200px] mx-auto p-4">
             <GamesHeader />
-   
+
             {/* Mobile & Desktop View */}
             <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
                 {gamesData.map((game, index) => (
                     <div
                         key={index}
+                        ref={(el) => {
+                            if (el) {
+                                gameRefs.current[index] = el;
+                            }
+                        }} // Assign ref to each game card
                         className="rounded-lg shadow-lg overflow-hidden bg-gray-800 relative group hover:shadow-xl transition-shadow duration-300"
                     >
                         {/* Game Image */}
@@ -206,7 +239,9 @@ const GamesPage = () => {
                         </div>
                         {/* Game Details */}
                         <div className="p-2">
-                            <h3 className="text-sm font-medium text-white truncate">{game.title}</h3>
+                            <h3 className="text-sm font-medium text-white truncate">
+                                {game.title}
+                            </h3>
                             <p className="text-xs text-gray-400 truncate">{game.provider}</p>
                         </div>
                     </div>

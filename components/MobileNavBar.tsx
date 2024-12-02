@@ -4,8 +4,9 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faGift, faDice, faGem } from "@fortawesome/free-solid-svg-icons";
 import { FaUserPlus } from "react-icons/fa";
-// import Sidebar from "./Sidebar/Sidebar"; // Import the Sidebar component
+import Sidebar from "./Sidebar/Sidebar"; // Import the Sidebar component
 import { useTranslations } from "next-intl";
+
 const MobileNavBar: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const t = useTranslations("mobieleNavbar");
@@ -20,7 +21,7 @@ const MobileNavBar: React.FC = () => {
       {isSidebarOpen && (
         <div className="fixed inset-0 z-50 flex">
           {/* Sidebar Content */}
-          {/* <Sidebar /> */}
+          <Sidebar locale="en" /> {/* Replace "en" with dynamic locale if available */}
           {/* Overlay */}
           <div
             className="flex-1 bg-black bg-opacity-50"

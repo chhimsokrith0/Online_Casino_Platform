@@ -1,15 +1,19 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
+import { gsap } from "gsap";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
-import { useTranslations } from "next-intl";
 
-const LanguageSelector = ({ locale }: { locale: string }) => {
-    const pathname = usePathname();
+interface NavbarLanguageProps {
+    locale: string;
+}
+
+const LanguageSelector: React.FC<NavbarLanguageProps> = ({ locale }) => {
     const router = useRouter();
-
-    const dropdownRef = useRef<HTMLDivElement>(null);
+    const pathname = usePathname();
+    const dropdownRef = useRef<HTMLDivElement | null>(null);
+    const dropdownMenuRef = useRef<HTMLDivElement | null>(null); // Ref for GSAP animation
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     const languages = [
@@ -45,11 +49,21 @@ const LanguageSelector = ({ locale }: { locale: string }) => {
 
     const toggleDropdown = () => {
         setIsDropdownOpen((prev) => !prev);
+        if (!isDropdownOpen && dropdownMenuRef.current) {
+            gsap.fromTo(
+                dropdownMenuRef.current,
+                { opacity: 0, y: -10 },
+                { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" }
+            );
+        }
     };
 
     useEffect(() => {
         const handleOutsideClick = (event: MouseEvent) => {
-            if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+            if (
+                dropdownRef.current &&
+                !dropdownRef.current.contains(event.target as Node)
+            ) {
                 setIsDropdownOpen(false);
             }
         };
@@ -59,31 +73,30 @@ const LanguageSelector = ({ locale }: { locale: string }) => {
         };
     }, []);
 
-    const t = useTranslations();
-
     return (
         <div ref={dropdownRef} className="relative">
-            {/* Divider */}
-            <div className="border-t border-gray-700 my-4"></div>
-
-            <h3 className="text-gray-400  uppercase text-sm font-bold">{t("languageSwitch")}</h3>
-
             <button
                 onClick={toggleDropdown}
-                className="flex items-center bg-gray-800 text-white mt-4 px-4 py-2 rounded-full border border-yellow-500 hover:bg-yellow-500 hover:text-black transition"
+                className="flex items-center bg-gray-800 text-white px-4 py-2 rounded-full border border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500 hover:bg-yellow-500 hover:text-black transition"
             >
+                {/* Show only the flag on mobile */}
                 <Image
                     src={currentLanguage?.flag || "/language/en.png"}
                     alt={currentLanguage?.name || "English"}
                     width={20}
                     height={20}
-                    className="rounded-full"
+                    className="rounded-full mr-2"
                 />
-                <span className="ml-2">{currentLanguage?.name || "English"}</span>
-                <span className="ml-2">▼</span>
+                {/* Hide text on small screens, show on medium+ screens */}
+                <span className="hidden md:block">{currentLanguage?.name || "English"}</span>
+                <span className="ml-2 text-yellow-500 hidden md:block">▼</span>
             </button>
+
             {isDropdownOpen && (
-                <div className="absolute right-0 mt-2 bg-gray-900 text-white rounded-lg shadow-lg w-40">
+                <div
+                    ref={dropdownMenuRef}
+                    className="absolute right-0 mt-2 bg-gray-900 border border-yellow-500 text-white rounded-lg shadow-lg z-10 w-40"
+                >
                     <ul className="py-2">
                         {languages.map((lang) => (
                             <li key={lang.code}>
@@ -91,8 +104,14 @@ const LanguageSelector = ({ locale }: { locale: string }) => {
                                     onClick={() => handleLanguageChange(lang.code)}
                                     className="flex items-center w-full px-4 py-2 hover:bg-yellow-500 hover:text-black transition"
                                 >
-                                    <Image src={lang.flag} alt={lang.name} width={20} height={20} className="rounded-full" />
-                                    <span className="ml-2">{lang.name}</span>
+                                    <Image
+                                        src={lang.flag}
+                                        alt={lang.name}
+                                        width={20}
+                                        height={20}
+                                        className="rounded-full mr-2"
+                                    />
+                                    <span className="text-sm">{lang.name}</span>
                                 </button>
                             </li>
                         ))}
@@ -100,6 +119,7 @@ const LanguageSelector = ({ locale }: { locale: string }) => {
                 </div>
             )}
         </div>
+
     );
 };
 

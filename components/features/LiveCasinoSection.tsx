@@ -1,8 +1,7 @@
 "use client";
 
-import React from "react";
-import Image from "next/image";
-
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 import img1 from "@/assets/img-live-casino/1.png";
 import img2 from "@/assets/img-live-casino/2.jpg";
 import img3 from "@/assets/img-live-casino/3.jpg";
@@ -13,16 +12,14 @@ import img6 from "@/assets/img-live-casino/6.png";
 import { useTranslations } from "next-intl";
 
 const LiveCasinoSection: React.FC = () => {
-
     const t = useTranslations("liveCasino");
-
 
     const liveCasinoGames = [
         {
             id: 1,
             name: t("games.pragmaticLive"),
             provider: t("providers.pragmaticPlay"),
-            image: img1, // Replace with actual image paths
+            image: img1,
         },
         {
             id: 2,
@@ -56,6 +53,30 @@ const LiveCasinoSection: React.FC = () => {
         },
     ];
 
+    const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+    useEffect(() => {
+        // GSAP entrance animation
+        gsap.fromTo(
+            cardRefs.current,
+            { opacity: 0, y: 50 },
+            { opacity: 1, y: 0, duration: 0.6, stagger: 0.2, ease: "power2.out" }
+        );
+    }, []);
+
+    const handleHover = (index: number) => {
+        const card = cardRefs.current[index];
+        if (card) {
+            gsap.to(card, { scale: 1.05, duration: 0.3, ease: "power2.out" });
+        }
+    };
+
+    const handleLeave = (index: number) => {
+        const card = cardRefs.current[index];
+        if (card) {
+            gsap.to(card, { scale: 1, duration: 0.3, ease: "power2.out" });
+        }
+    };
 
     return (
         <div className="max-w-[1200px] mx-auto ">
@@ -71,38 +92,16 @@ const LiveCasinoSection: React.FC = () => {
                 </button>
             </div>
 
-            {/* Game Cards
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-                {liveCasinoGames.map((game) => (
-                    <div
-                        key={game.id}
-                        className="bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300"
-                    >
-                        <div className="relative w-full h-36 md:h-40">
-                            <Image
-                                src={game.image}
-                                alt={game.name}
-                                fill
-                                className="object-cover"
-                            />
-                        </div>
-                        <div className="p-4">
-                            <h3 className="text-white text-sm font-semibold truncate">
-                                {game.name}
-                            </h3>
-                            <p className="text-gray-400 text-xs mt-1 truncate">
-                                {game.provider}
-                            </p>
-                        </div>
-                    </div>
-                ))}
-            </div> */}
-
             {/* Mobile & Desktop View */}
             <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
                 {liveCasinoGames.map((game, index) => (
                     <div
                         key={index}
+                        ref={(el) => {
+                            if (el) cardRefs.current[index] = el;
+                        }} // Assign ref to each card
+                        onMouseEnter={() => handleHover(index)}
+                        onMouseLeave={() => handleLeave(index)}
                         className="rounded-lg shadow-lg overflow-hidden bg-gray-800 relative group hover:shadow-xl transition-shadow duration-300"
                     >
                         {/* Game Image */}
@@ -125,7 +124,6 @@ const LiveCasinoSection: React.FC = () => {
                     </div>
                 ))}
             </div>
-
         </div>
     );
 };

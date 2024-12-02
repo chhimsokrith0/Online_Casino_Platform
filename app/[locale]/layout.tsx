@@ -19,7 +19,7 @@ export default async function RootLayout({
   const selectedFont = (fonts.fonts as any)[locale]?.fontFamily || "Arial, sans-serif";
 
   return (
-    <html lang={locale} style={{fontFamily: selectedFont}}>
+    <html lang={locale} style={{ fontFamily: selectedFont }}>
       <body className="body bg-[#020617] text-white min-h-screen">
         <NextIntlClientProvider messages={messages}>
           <header className="sticky top-0 z-[100] shadow-md">
@@ -27,16 +27,19 @@ export default async function RootLayout({
           </header>
           <div className="flex flex-col lg:flex-row">
             <aside className="hidden lg:block lg:w-64 z-100">
-              <Sidebar locale={locale}/>
+              <Sidebar locale={locale} />
             </aside>
             <main className="flex-1 pt-4 lg:px-8 bg-[#020617]">
               {children}
             </main>
           </div>
-
+       
           <footer className="max-w-[1200px] mx-auto lg:ml-auto lg:mr-64 p-4">
             <Footer locale={locale} />
           </footer>
+          <br />
+          <br />
+          <br />
           <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-[#020617] z-50 shadow-lg">
             <MobileNavBar />
           </div>

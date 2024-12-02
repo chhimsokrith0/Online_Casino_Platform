@@ -1,12 +1,14 @@
 "use client";
 
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
+
+import { gsap } from "gsap";
 
 import img1 from "@/assets/img-gameprovider/PG.png";
 import img2 from "@/assets/img-gameprovider/JOKER.png";
@@ -82,6 +84,31 @@ const GameProviders: React.FC = () => {
         },
     ];
 
+    const slideRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+    useEffect(() => {
+        // GSAP entrance animation for slides
+        gsap.fromTo(
+            slideRefs.current,
+            { opacity: 0, y: 30 },
+            { opacity: 1, y: 0, duration: 1, stagger: 0.2, ease: "power2.out" }
+        );
+    }, []);
+
+    const handleHover = (index: number) => {
+        const slide = slideRefs.current[index];
+        if (slide) {
+            gsap.to(slide, { scale: 1.05, duration: 0.3, ease: "power2.out" });
+        }
+    };
+
+    const handleLeave = (index: number) => {
+        const slide = slideRefs.current[index];
+        if (slide) {
+            gsap.to(slide, { scale: 1, duration: 0.3, ease: "power2.out" });
+        }
+    };
+
     return (
         <div className="max-w-[1200px] mx-auto">
             {/* Section Header */}
@@ -107,13 +134,18 @@ const GameProviders: React.FC = () => {
                     768: { slidesPerView: 3 },
                     1024: { slidesPerView: 4 },
                 }}
-                // navigation
+                navigation
                 modules={[Navigation]}
                 className="w-full p-4"
             >
-                {gameProviders.map((provider) => (
+                {gameProviders.map((provider, index) => (
                     <SwiperSlide key={provider.id}>
                         <div
+                            ref={(el) => {
+                                if (el) slideRefs.current[index] = el;
+                            }}  // Assign ref to each slide
+                            onMouseEnter={() => handleHover(index)}
+                            onMouseLeave={() => handleLeave(index)}
                             className="relative cursor-grab flex-shrink-0 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300"
                             style={{
                                 backgroundImage: `url(${provider.bg.src})`,
@@ -123,9 +155,6 @@ const GameProviders: React.FC = () => {
                                 height: "190px",
                             }}
                         >
-                            {/* Gradient Overlay */}
-                            {/* <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-transparent"></div> */}
-
                             {/* Content Wrapper */}
                             <div className="relative flex flex-col justify-between p-4 h-full text-white">
                                 {/* Logo */}

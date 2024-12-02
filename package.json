@@ -13,6 +13,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.7.1",
     "@fortawesome/free-solid-svg-icons": "^6.7.1",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "gsap": "^3.12.5",
     "next": "15.0.0-rc.0",
     "next-intl": "^3.17.2",
     "react": "19.0.0-rc-f994737d14-20240522",
