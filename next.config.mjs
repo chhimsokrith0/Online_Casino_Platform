@@ -8,6 +8,13 @@ const nextConfig = {
     images: {
       domains: ["res.cloudinary.com"], // Add your external image domains here
     },
+    "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/assets/*": ["assets/*"],
+      "@/components/*": ["components/*"]
+    }
+  }
 };
 
 export default withNextIntl(nextConfig);
