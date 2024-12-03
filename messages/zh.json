@@ -10,13 +10,19 @@
     "signIn": "登录"
   },
   "NavbarWallet": {
-    "currency": "CNY",
-    "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733037207/MM_xrinfh.png"
+    "currency": "人民币",
+    "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733037207/MM_xrinfh.png",
+    "wallet": "钱包",
+    "points": "积分",
+    "balance": "0.00",
+    "bronze": "铜牌"
   },
   "Carousel": {
-    "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036707/1_afkgtx.png",
-    "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036706/2_lk1yyn.png",
-    "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036702/3_yrzqcx.png"
+    "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203489/1_w8yo2j.jpg",
+    "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/4_klezxe.jpg",
+    "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/5_wdyqca.jpg",
+    "banner4": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/2_iyfjbc.jpg",
+    "banner5": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/3_oauyjg.jpg"
   },
   "Notification": {
     "title": "通知",
@@ -206,12 +212,14 @@
     "liveCasino": "真人娱乐场",
     "allLiveCasino": "所有真人娱乐场",
     "specials": {
+      "title": "特别",
       "quests": "任务",
       "reward": "奖励",
       "referral": "推荐",
       "level": "等级"
     },
     "information": {
+      "title": "信息",
       "termsAndConditions": "条款和条件",
       "privacyPolicy": "隐私政策",
       "cookiesPolicy": "Cookie 政策"

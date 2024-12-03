@@ -22,7 +22,7 @@ export default async function RootLayout({
     <html lang={locale} style={{ fontFamily: selectedFont }}>
       <body className="body bg-[#020617] text-white min-h-screen">
         <NextIntlClientProvider messages={messages}>
-          <header className="sticky top-0 z-[100] shadow-md">
+          <header className="sticky top-0 z-50 shadow-md">
             <Navbar locale={locale} />
           </header>
           <div className="flex flex-col lg:flex-row">

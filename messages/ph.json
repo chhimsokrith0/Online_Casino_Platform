@@ -9,6 +9,21 @@
     "signUp": "Mag-sign Up",
     "signIn": "Mag-sign In"
   },
+  "NavbarWallet": {
+    "currency": "Peso",
+    "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034744/USD_ruok8f.png",
+    "wallet": "Pitaka",
+    "points": "Puntos",
+    "balance": "0.00",
+    "bronze": "Tanso"
+  },
+  "Carousel": {
+    "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733205226/5_fpd5mi.jpg",
+    "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733205225/2_gilvtw.jpg",
+    "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733205224/1_iluszv.jpg",
+    "banner4": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733205224/3_jkpbp8.jpg",
+    "banner5": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733205222/4_q1j344.jpg"
+  },
   "Notification": {
     "title": "Notification",
     "close": "Close",
@@ -191,24 +206,26 @@
       "cashDrops": "Cash Drops",
       "jackpots": "Jackpot",
       "megaways": "Megaways",
-      "tableGames": "Mga Laro sa Mesa",
+      "tableGames": "Mga Larong Pang-mesa",
       "allGames": "Lahat ng Laro"
     },
-    "liveCasino": "Live Casino",
-    "allLiveCasino": "Lahat ng Live Casino",
+    "liveCasino": "Live na Casino",
+    "allLiveCasino": "Lahat ng Live na Casino",
     "specials": {
-      "quests": "Mga Quest",
+      "title": "Espesyal",
+      "quests": "Mga Misyon",
       "reward": "Gantimpala",
       "referral": "Referral",
       "level": "Antas"
     },
     "information": {
-      "termsAndConditions": "Mga Tuntunin at Kundisyon",
+      "title": "Impormasyon",
+      "termsAndConditions": "Mga Tuntunin at Kondisyon",
       "privacyPolicy": "Patakaran sa Privacy",
       "cookiesPolicy": "Patakaran sa Cookies"
     },
     "followUs": "Sundan Kami",
-    "poweredBy": "Pinapatakbo ng Rith CT"
+    "poweredBy": "Pinapagana ng Rith CT"
   },
   "header": {
     "signUp": "Mag-sign Up",

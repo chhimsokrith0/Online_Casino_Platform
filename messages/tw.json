@@ -1,0 +1,341 @@
+{
+    "NavbarLinks": {
+        "home": "首頁",
+        "homeTitle": "主題",
+        "about": "關於",
+        "aboutTitle": "關於頁面",
+        "profile": "個人資料",
+        "profileTitle": "個人資料頁面",
+        "signUp": "註冊",
+        "signIn": "登入"
+    },
+    "Carousel": {
+        "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203489/1_w8yo2j.jpg",
+        "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/4_klezxe.jpg",
+        "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/5_wdyqca.jpg",
+        "banner4": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/2_iyfjbc.jpg",
+        "banner5": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/3_oauyjg.jpg"
+    },
+    "NavbarWallet": {
+        "currency": "新台幣",
+        "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034744/USD_ruok8f.png",
+        "wallet": "錢包",
+        "points": "積分",
+        "balance": "0.00",
+        "bronze": "銅牌"
+    },
+    "Notification": {
+        "title": "通知",
+        "close": "關閉",
+        "header": "累積遊戲",
+        "description": "玩所有提供商的老虎機，累積最多 30,000 THB，解鎖 10,000 寶石的獎勵。",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1732973194/end_hgzbwq.png"
+    },
+    "HomePage": {
+        "title": "登陸頁面"
+    },
+    "AboutPage": {
+        "title": "關於"
+    },
+    "ProfilePage": {
+        "title": "個人資料"
+    },
+    "welcome": "歡迎來到我們的網站",
+    "languageSwitch": "更改語言",
+    "slidebar": {
+        "home": "首頁",
+        "slots": "老虎機",
+        "liveCasino": "真人娛樂場",
+        "privileges": "特權",
+        "quests": "任務",
+        "reward": "獎勵",
+        "promo": "促銷",
+        "levels": "等級",
+        "referral": "推薦",
+        "providers": "提供商",
+        "rtpSlots": "RTP 老虎機",
+        "sports": "體育",
+        "fishing": "釣魚",
+        "virtual": "虛擬",
+        "languageOption": "語言選項",
+        "contactSocialMedia": "聯絡及社交媒體"
+    },
+    "MenuBar": {
+        "demo": "演示",
+        "allGames": "所有遊戲",
+        "popularGames": "熱門遊戲",
+        "newGames": "新遊戲",
+        "cashDrop": "現金掉落",
+        "jackpots": "獎池",
+        "megaways": "Megaways",
+        "tableGames": "桌上遊戲",
+        "providers": "提供商"
+    },
+    "popularGames": {
+        "title": "熱門遊戲",
+        "seeAll": "查看全部",
+        "games": {
+            "jewelMania": "珠寶狂熱",
+            "hotFruitsOnFire": "火焰水果",
+            "barsAndBells": "#BarsAndBells",
+            "reelReelHot": "火熱旋轉",
+            "spiritOfTheLake": "湖泊之靈",
+            "twinWinsMystery": "雙子之謎"
+        },
+        "provider": "曼卡拉"
+    },
+    "newGames": {
+        "title": "新遊戲",
+        "seeAll": "查看全部",
+        "games": {
+            "spiritOfTheLake": "湖泊之靈",
+            "twinWinsMystery": "雙子之謎"
+        },
+        "provider": "曼卡拉"
+    },
+    "promotions": {
+        "title": "促銷",
+        "seeAll": "查看全部"
+    },
+    "liveCasino": {
+        "title": "真人娛樂場",
+        "seeAll": "查看全部",
+        "games": {
+            "pragmaticLive": "Pragmatic 真人",
+            "baccaratC08": "百家樂 C08",
+            "baccarat": "百家樂",
+            "dreamGaming": "夢想娛樂",
+            "topGamesLobby": "頂級遊戲大廳",
+            "liveCasino": "真人娛樂場"
+        },
+        "providers": {
+            "pragmaticPlay": "PragmaticPlay",
+            "sa": "SA",
+            "aeSexy": "Ae Sexy",
+            "dreamGaming": "夢想娛樂",
+            "evolutionGaming": "進化娛樂",
+            "weGaming": "We Gaming"
+        }
+    },
+    "gameProviders": {
+        "title": "遊戲提供商",
+        "seeAll": "查看全部",
+        "providers": {
+            "pg": {
+                "name": "PG",
+                "description": "Pocket Games Soft",
+                "play": "遊玩"
+            },
+            "joker": {
+                "name": "Joker",
+                "description": "Joker",
+                "play": "遊玩"
+            },
+            "jili": {
+                "name": "JILI",
+                "description": "JILI",
+                "play": "遊玩"
+            },
+            "pragmaticPlay": {
+                "name": "Pragmatic Play",
+                "description": "Pragmatic Play",
+                "play": "遊玩"
+            }
+        }
+    },
+    "allGames": {
+        "title": "所有遊戲",
+        "seeAll": "查看全部",
+        "games": {
+            "ninjaRaccoonFrenzy": {
+                "name": "忍者浣熊狂熱",
+                "provider": "PGSoft"
+            },
+            "treasuresOfAztec": {
+                "name": "阿茲特克的寶藏",
+                "provider": "PGSoft"
+            },
+            "mahjongWays2": {
+                "name": "麻將之路 2",
+                "provider": "PGSoft"
+            },
+            "luckyNeko": {
+                "name": "幸運貓",
+                "provider": "PGSoft"
+            },
+            "mahjongWays": {
+                "name": "麻將之路",
+                "provider": "PGSoft"
+            },
+            "wildBountyShowdown": {
+                "name": "狂野賞金對決",
+                "provider": "PGSoft"
+            },
+            "waysOfTheQilin": {
+                "name": "麒麟之道",
+                "provider": "PGSoft"
+            },
+            "wildBandito": {
+                "name": "狂野強盜",
+                "provider": "PGSoft"
+            },
+            "fortuneRabbit": {
+                "name": "財運兔",
+                "provider": "PGSoft"
+            },
+            "caishenWins": {
+                "name": "財神大贏",
+                "provider": "PGSoft"
+            },
+            "fortuneOx": {
+                "name": "財運牛",
+                "provider": "PGSoft"
+            },
+            "ganeshaFortune": {
+                "name": "象神之財",
+                "provider": "PGSoft"
+            }
+        }
+    },
+    "footer": {
+        "gameCategory": "遊戲分類",
+        "categories": {
+            "demo": "演示",
+            "newGames": "新遊戲",
+            "popular": "熱門",
+            "cashDrops": "現金掉落",
+            "jackpots": "獎池",
+            "megaways": "Megaways",
+            "tableGames": "桌上遊戲",
+            "allGames": "所有遊戲"
+        },
+        "liveCasino": "真人娛樂場",
+        "allLiveCasino": "所有真人娛樂場",
+        "specials": {
+            "title": "特別",
+            "quests": "任務",
+            "reward": "獎勵",
+            "referral": "推薦",
+            "level": "等級"
+        },
+        "information": {
+            "title": "資訊",
+            "termsAndConditions": "條款與條件",
+            "privacyPolicy": "隱私政策",
+            "cookiesPolicy": "Cookies 政策"
+        },
+        "followUs": "追蹤我們",
+        "poweredBy": "由 Rith CT 提供技術支持"
+    },
+    "header": {
+        "signUp": "註冊",
+        "signIn": "登入"
+    },
+    "mobieleNavbar": {
+        "menu": "選單",
+        "slots": "老虎機",
+        "signUp": "註冊",
+        "liveCasino": "真人娛樂場",
+        "promo": "促銷"
+    },
+    "RewardSection": {
+        "mainTitle": "解鎖無盡的福利",
+        "mainSubtitle": "立即註冊，開啟一段充滿特權的精彩旅程。解鎖無限的獎勵大門。",
+        "joinButton": "加入 PlayGame168",
+        "steps": {
+            "step1": "註冊並存款",
+            "step2": "玩您喜愛的遊戲",
+            "step3": "兌換您的獎勵"
+        },
+        "enjoyOurGames": {
+            "title": "享受我們的遊戲！",
+            "description": "在真人娛樂場，我們提供超過 4,000 款刺激的遊戲等您探索。",
+            "button": "領取您的獎勵"
+        },
+        "enjoyOurPromotions": {
+            "title": "享受我們的促銷活動！",
+            "description": "立即存款，解鎖前所未有的專屬獎勵。",
+            "button": "領取您的獎勵"
+        },
+        "benefitsSection": {
+            "title": "獲得無數免費福利",
+            "benefits": {
+                "questHub": {
+                    "title": "任務中心",
+                    "description": "完成每日和每週挑戰，快速增加您的收益。",
+                    "tag": "每日及每週"
+                },
+                "loyaltyVip": {
+                    "title": "忠誠 VIP",
+                    "description": "隨著您在忠誠 VIP 俱樂部等級的提升，解鎖更多精英福利。",
+                    "tag": "每日及每週"
+                },
+                "tournament": {
+                    "title": "比賽",
+                    "description": "挑戰競爭，並在激動人心的比賽遊戲中取得勝利。",
+                    "tag": "每週"
+                }
+            }
+        },
+        "introducingExclusive": {
+            "title": "介紹我們的獨家返利和現金回饋計劃",
+            "description": "加入我們的行列，開始通過我們的獨家充值計劃賺取返利和現金回饋。不要錯過這些精彩的獎勵！",
+            "joinButton": "立即加入 PlayGame168 →",
+            "features": {
+                "activation": {
+                    "title": "激活",
+                    "description": "通過任務和挑戰提升您的等級，達到最高成就。"
+                },
+                "bonus": {
+                    "title": "獎金",
+                    "description": "每天和每週完成任務以穩定獲得獎金。"
+                },
+                "rewardTier": {
+                    "title": "獎勵等級",
+                    "description": "隨著等級的提升，享受更多豐厚的獎勵。"
+                }
+            }
+        },
+        "deluxeExperience": {
+            "title": "我們很高興為您提供最豪華的遊戲體驗",
+            "button": "註冊"
+        }
+    },
+    "MemberLevel": {
+        "mainTitle": "解鎖您的專屬等級",
+        "mainSubtitle": "加入我們的專屬會員計劃，隨著等級提升享受豐厚的獎勵。",
+        "joinButton": "加入等級",
+        "exclusiveBenefits": {
+            "title": "專屬 VIP 福利",
+            "benefits": {
+                "levelsRewards": {
+                    "title": "等級與獎勵",
+                    "description": "玩得越多，獲得越多"
+                },
+                "exclusivePromotions": {
+                    "title": "專屬促銷",
+                    "description": "達到更高排名以解鎖福利。"
+                },
+                "higherCashback": {
+                    "title": "更高的現金回饋",
+                    "description": "獲得高達 12% 的現金回饋獎勵"
+                },
+                "royaltyClub": {
+                    "title": "尊貴俱樂部",
+                    "description": "加入 VIP 俱樂部以獲得專屬獎金。"
+                }
+            }
+        },
+        "carousel": {
+            "levels": {
+                "bronze": "青銅",
+                "silver": "白銀",
+                "gold": "黃金",
+                "diamond": "鑽石",
+                "platinum": "白金",
+                "black": "黑金"
+            },
+            "cashback": "現金回饋 (%)"
+        }
+    }
+}

@@ -21,7 +21,8 @@ const Carousel: React.FC = () => {
     { image: t("banner1"), alt: "Slide 1" },
     { image: t("banner2"), alt: "Slide 2" },
     { image: t("banner3"), alt: "Slide 3" },
-    { image: t("banner1"), alt: "Slide 4" },
+    { image: t("banner4"), alt: "Slide 4" },
+    { image: t("banner5"), alt: "Slide 4" },
   ];
 
   useEffect(() => {
@@ -38,7 +39,7 @@ const Carousel: React.FC = () => {
   return (
     <div
       ref={swiperRef} // Reference for GSAP animation
-      className="relative w-full overflow-hidden rounded-xl shadow-lg z-50"
+      className="relative w-full overflow-hidden rounded-xl shadow-lg"
     >
       <Swiper
         effect="coverflow"

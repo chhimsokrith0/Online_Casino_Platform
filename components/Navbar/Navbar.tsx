@@ -9,6 +9,7 @@ import NavbarMobile from "./NavbarMobile";
 import SignUpModal from "./SignUpModal";
 import NavbarWallet from "./NavbarWallet";
 
+
 interface NavbarProps {
   locale: string;
 }
@@ -34,24 +35,43 @@ const Navbar: React.FC<NavbarProps> = ({ locale }) => {
   }, []);
 
   return (
-    <nav className="w-full bg-gray-900 py-3 px-4 sm:px-6 flex items-center justify-between shadow-md sticky top-0 z-50">
+    <nav className="w-full bg-gray-900 py-3 px-4 sm:px-6 flex items-center justify-between shadow-md sticky top-0 z-50"
+    style={{
+      background: "linear-gradient(90deg, #1E1E2C, #232334)",
+      boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.5)",
+    }}>
       {/* Left Section: Logo */}
-      <div className="flex items-center">
+      <div className="hidden sm:block flex items-center">
         <NavbarLogo locale={locale} />
       </div>
 
       {/* Right Section */}
       <div className="flex items-center">
         {isMobile ? (
-          <div className="flex flex-col items-end gap-4">
+          <div className="gird gird-cols-3 items-end gap-4">
             {isLoggedIn ? (
-              <>
-                {/* Show Wallet and Language for logged-in mobile users */}
-                <NavbarWallet locale={locale} />
-                <NavbarLanguage locale={locale} />
-              </>
+              <div className="grid grid-cols-3 items-center gap-4">
+                {/* Logo Section */}
+                <div className="mr-6">
+                  <NavbarLogo locale={locale} />
+                </div>
+
+                {/* Wallet Section */}
+                <div className="flex justify-center ml-4">
+                  <NavbarWallet locale={locale} />
+                </div>
+
+                {/* Language Selector Section */}
+                <div className="flex justify-end">
+                  <NavbarLanguage locale={locale} />
+                </div>
+              </div>
+
             ) : (
               <div className="flex items-center justify-between w-full">
+                <div className="pr-2">
+                  <NavbarLogo locale={locale} />
+                </div>
                 {/* Navbar Mobile */}
                 <div className="flex items-center gap-3 mr-2">
                   <NavbarMobile t={t} locale={locale} toggleModal={toggleModal} />
@@ -62,7 +82,6 @@ const Navbar: React.FC<NavbarProps> = ({ locale }) => {
                   <NavbarLanguage locale={locale} />
                 </div>
               </div>
-
             )}
           </div>
         ) : (
@@ -77,7 +96,6 @@ const Navbar: React.FC<NavbarProps> = ({ locale }) => {
           </div>
         )}
       </div>
-
 
       {/* Modal */}
       {modalType && (

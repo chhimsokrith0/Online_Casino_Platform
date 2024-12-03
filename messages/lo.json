@@ -9,9 +9,20 @@
     "signUp": "ລົງທະບຽນ",
     "signIn": "ເຂົ້າລະບົບ"
   },
+  "Carousel": {
+    "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203489/1_w8yo2j.jpg",
+    "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/4_klezxe.jpg",
+    "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/5_wdyqca.jpg",
+    "banner4": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/2_iyfjbc.jpg",
+    "banner5": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/3_oauyjg.jpg"
+  },
   "NavbarWallet": {
-    "currency": "LAK",
-    "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034744/LAK_jkwh5q.png"
+    "currency": "ກີບ",
+    "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034744/LAK_jkwh5q.png",
+    "wallet": "ກະເປົາເງິນ",
+    "points": "ແຕ້ມ",
+    "balance": "0.00",
+    "bronze": "ທອງແດງ"
   },
   "Notification": {
     "title": "ແຈ້ງການ",
@@ -189,30 +200,32 @@
   "footer": {
     "gameCategory": "ປະເພດເກມ",
     "categories": {
-      "demo": "ທົດລອງ",
+      "demo": "ສາທິດ",
       "newGames": "ເກມໃໝ່",
-      "popular": "ຍອດນິຍົມ",
-      "cashDrops": "ປ່ອນເງິນ",
+      "popular": "ນິຍົມ",
+      "cashDrops": "ການປ່ອນເງິນ",
       "jackpots": "ແຈັກພອດ",
-      "megaways": "Megaways",
-      "tableGames": "ເກມຕາຕະລາງ",
+      "megaways": "ເມກາເວ",
+      "tableGames": "ເກມໂຕະ",
       "allGames": "ເກມທັງໝົດ"
     },
     "liveCasino": "ຄາສິໂນສົດ",
     "allLiveCasino": "ຄາສິໂນສົດທັງໝົດ",
     "specials": {
+      "title": "ພິເສດ",
       "quests": "ພາລະກິດ",
       "reward": "ລາງວັນ",
-      "referral": "ອ້າງອີງ",
+      "referral": "ການອ້າງອີງ",
       "level": "ລະດັບ"
     },
     "information": {
-      "termsAndConditions": "ເງື່ອນໄຂ",
+      "title": "ຂໍ້ມູນ",
+      "termsAndConditions": "ເງື່ອນໄຂ ແລະ ຂໍ້ກໍານົດ",
       "privacyPolicy": "ນະໂຍບາຍຄວາມສ່ວນຕົວ",
-      "cookiesPolicy": "ນະໂຍບາຍ Cookies"
+      "cookiesPolicy": "ນະໂຍບາຍເຂົ້າຂໍ້ມູນ"
     },
     "followUs": "ຕິດຕາມພວກເຮົາ",
-    "poweredBy": "ດຳເນີນໂດຍ Rith CT"
+    "poweredBy": "ໃຊ້ພະລັງງານໂດຍ Rith CT"
   },
   "header": {
     "signUp": "ລົງທະບຽນ",

@@ -10,13 +10,19 @@
     "signIn": "လော့ဂ်အင်"
   },
   "NavbarWallet": {
-    "currency": "MMK",
-    "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733037207/MM_xrinfh.png"
+    "currency": "ကျပ်",
+    "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733037207/MM_xrinfh.png",
+    "wallet": "ပိုက်ဆံအိတ်",
+    "points": "အမှတ်များ",
+    "balance": "0.00",
+    "bronze": "ကြေးဝါ"
   },
   "Carousel": {
-    "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036702/1_t17zth.png",
-    "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036704/2_ofoq6h.png",
-    "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036699/3_ma40uh.jpg"
+    "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203489/1_w8yo2j.jpg",
+    "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/4_klezxe.jpg",
+    "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/5_wdyqca.jpg",
+    "banner4": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/2_iyfjbc.jpg",
+    "banner5": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/3_oauyjg.jpg"
   },
   "Notification": {
     "title": "အသိပေးချက်",
@@ -194,30 +200,32 @@
   "footer": {
     "gameCategory": "ဂိမ်းအမျိုးအစား",
     "categories": {
-      "demo": "အစမ်း",
-      "newGames": "နောက်ဆုံး ဂိမ်းများ",
-      "popular": "လူကြိုက်များ",
-      "cashDrops": "ငွေထုတ်ခြင်း",
-      "jackpots": "ဂျက်ခေါက်",
-      "megaways": "Megaways",
-      "tableGames": "စားပွဲပေါ် ဂိမ်းများ",
-      "allGames": "အားလုံး ဂိမ်းများ"
+      "demo": "နမူနာ",
+      "newGames": "ဂိမ်းအသစ်များ",
+      "popular": "လူကြိုက်များသော",
+      "cashDrops": "ငွေကြေးလွှာချမှု",
+      "jackpots": "ဂျက်ခွက်",
+      "megaways": "မီဂါဝေး",
+      "tableGames": "စားပွဲဂိမ်းများ",
+      "allGames": "အားလုံးဂိမ်းများ"
     },
-    "liveCasino": "တိုက်ရိုက် ကာစီနို",
-    "allLiveCasino": "အားလုံး တိုက်ရိုက် ကာစီနို",
+    "liveCasino": "တိုက်ရိုက်ကာစီနို",
+    "allLiveCasino": "တိုက်ရိုက်ကာစီနိုများအားလုံး",
     "specials": {
-      "quests": "ရှာဖွေမှုများ",
+      "title": "အထူး",
+      "quests": "အမိန့်ဆောင်",
       "reward": "ဆုလာဘ်",
-      "referral": "ညွှန်းဆိုခြင်း",
+      "referral": "ရင်းနှီးစပ်ဆိုင်မှု",
       "level": "အဆင့်"
     },
     "information": {
+      "title": "အချက်အလက်",
       "termsAndConditions": "စည်းကမ်းများနှင့် အခြေအနေများ",
-      "privacyPolicy": "ကိုယ်ရေးအချက်အလက် မူဝါဒ",
-      "cookiesPolicy": "Cookies မူဝါဒ"
+      "privacyPolicy": "ကိုယ်ရေးအချက်အလက်မူဝါဒ",
+      "cookiesPolicy": "ကွတ်ကီးမူဝါဒ"
     },
-    "followUs": "ကျွန်ုပ်တို့အား လိုက်နာပါ",
-    "poweredBy": "Rith CT မှ အားဖြည့်သည်"
+    "followUs": "ကျွန်ုပ်တို့ကိုလိုက်နာပါ",
+    "poweredBy": "Rith CT မှ စွမ်းဆောင်ခြင်း"
   },
   "header": {
     "signUp": "စာရင်းသွင်းရန်",

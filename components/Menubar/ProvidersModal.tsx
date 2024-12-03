@@ -18,7 +18,7 @@ const ProvidersModal = ({ setIsModalOpen }: { setIsModalOpen: Function }) => {
       gsap.fromTo(
         modalRef.current,
         { opacity: 0, scale: 0 },
-        { opacity: 1, scale: 1, duration: 0, ease: "power2.out" }
+        { opacity: 1, scale: 1, duration: 0.4, ease: "power2.out" }
       );
     }
 
@@ -68,7 +68,7 @@ const ProvidersModal = ({ setIsModalOpen }: { setIsModalOpen: Function }) => {
     <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-[200]">
       <div
         ref={modalRef}
-        className="bg-gray-800 text-gray-300 p-4 rounded-lg shadow-lg w-[95%] sm:w-[90%] md:w-[70%] lg:w-[50%] max-h-[90%] overflow-y-auto"
+        className="bg-gray-800 text-gray-300 p-4 rounded-lg shadow-lg w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[50%] max-h-[90%] overflow-y-auto"
       >
         {/* Modal Header */}
         <div className="flex justify-between items-center mb-4">
@@ -82,7 +82,7 @@ const ProvidersModal = ({ setIsModalOpen }: { setIsModalOpen: Function }) => {
         </div>
 
         {/* Providers Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
           {providers.map((provider, index) => (
             <div
               key={index}

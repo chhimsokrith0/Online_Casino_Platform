@@ -1,18 +1,20 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWallet, faBell } from "@fortawesome/free-solid-svg-icons";
-import WalletModal from "./WalletModal";
-import ProfileModal from "./ProfileModal"; // Import the Profile modal
+import WalletModal from "./WalletModal/WalletModal";
+import ProfileModal from "./ProfileModal";
 import { useTranslations } from "next-intl";
-import QuestsModal from "@/app/[locale]/Quests/QuestsModal";;
+import QuestsModal from "@/app/[locale]/Quests/QuestsModal";
 
-const NavbarWallet = ( {locale}: {locale: string} ) => {
+const NavbarWallet = ({ locale }: { locale: string }) => {
   const t = useTranslations("NavbarWallet");
   const [isWalletModalOpen, setIsWalletModalOpen] = useState(false);
   const [isProfileModalOpen, setIsProfileModalOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggleWalletModal = () => {
     setIsWalletModalOpen(!isWalletModalOpen);
@@ -22,11 +24,6 @@ const NavbarWallet = ( {locale}: {locale: string} ) => {
     setIsProfileModalOpen(!isProfileModalOpen);
   };
 
-
-
-
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   const openModal = () => {
     setIsModalOpen(true);
   };
@@ -35,44 +32,65 @@ const NavbarWallet = ( {locale}: {locale: string} ) => {
     setIsModalOpen(false);
   };
 
+  // Detect screen size for responsive design
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
       <div className="flex items-center gap-4">
         {/* Wallet Balance */}
-        <div className="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-full text-white">
+        <div
+          className={`flex items-center gap-2 ${isMobile ? "px-2 py-1 text-sm" : "px-4 py-2 text-base"
+            } bg-gray-800 rounded-full text-white`}
+        >
           <Image
-            src={t("currencyicon")} // Replace with your currency icon
+            src={t("currencyicon")}
             alt="THB"
-            width={20}
-            height={20}
+            width={isMobile ? 16 : 20} // Adjusted size for mobile
+            height={isMobile ? 16 : 20} // Adjusted size for mobile
           />
-          <span className="text-sm">{t("currency")}</span>
-          <span className="font-semibold">0.00</span>
+          <span className={`${isMobile ? "text-xs whitespace-nowrap" : "text-sm whitespace-nowrap"}`}>{t("currency")}</span>
+          <span className={`font-semibold ${isMobile ? "text-xs whitespace-nowrap" : "text-base whitespace-nowrap"}`}>
+            {t("balance")}
+          </span>
         </div>
 
         {/* Wallet Button */}
         <button
-          className="flex items-center gap-2 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-semibold px-4 py-2 rounded-full hover:opacity-90 transition"
+          className={`flex items-center gap-2 ${isMobile
+              ? "px-3 py-1 text-sm whitespace-nowrap"
+              : "px-4 py-2 text-base"
+            } bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-semibold rounded-full hover:opacity-90 transition`}
           onClick={toggleWalletModal}
         >
-          <FontAwesomeIcon icon={faWallet} />
-          <span>Wallet</span>
+          <FontAwesomeIcon icon={faWallet} size={isMobile ? "sm" : "lg"} />
+          <span className={isMobile ? "text-xs" : "text-sm"}>{t("wallet")}</span>
         </button>
 
-        {/* Points */}
-        <div
-          className="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-full text-white hover:bg-gray-700 transition"
-          onClick={toggleProfileModal}
-        >
-          <Image
-            src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034979/eec3c896-fc98-4ed7-a4b1-c0c4d6e63e42_y0p6uo.webp"
-            alt="Points"
-            width={20}
-            height={20}
-          />
-          <span className="text-sm">Points</span>
-          <span className="font-semibold">400.00</span>
-        </div>
+
+        {/* Points (Hidden on Mobile) */}
+        {!isMobile && (
+          <div className="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-full text-white hover:bg-gray-700 transition">
+            <Image
+              src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034979/eec3c896-fc98-4ed7-a4b1-c0c4d6e63e42_y0p6uo.webp"
+              alt="Points"
+              width={20}
+              height={20}
+            />
+            <span className="text-sm">{t("points")}</span>
+            <span className="font-semibold">400.00</span>
+          </div>
+        )}
 
         {/* User Level */}
         <div
@@ -85,27 +103,37 @@ const NavbarWallet = ( {locale}: {locale: string} ) => {
             width={40}
             height={40}
           />
-          <div className="flex flex-col">
-            <span className="font-semibold text-white">0964143284</span>
-            <span className="text-yellow-500 text-sm">Bronze</span>
-          </div>
+          {!isMobile && (
+            <div className="flex flex-col">
+              <span className="font-semibold text-white">0964143284</span>
+              <span className="text-yellow-500 text-sm">{t("bronze")}</span>
+            </div>
+          )}
         </div>
 
         {/* Notification Icon */}
-        <button onClick={openModal} className="text-white text-xl hover:text-yellow-500 transition">
-          <FontAwesomeIcon icon={faBell} />
-        </button>
+        {!isMobile && (
+          <button
+            onClick={openModal}
+            className="text-white text-xl hover:text-yellow-500 transition"
+          >
+            <FontAwesomeIcon icon={faBell} />
+          </button>
+        )}
       </div>
 
       {/* Wallet Modal */}
       <WalletModal isOpen={isWalletModalOpen} onClose={toggleWalletModal} />
 
       {/* Profile Modal */}
-      <ProfileModal isOpen={isProfileModalOpen} onClose={toggleProfileModal} locale={locale}/>
+      <ProfileModal
+        isOpen={isProfileModalOpen}
+        onClose={toggleProfileModal}
+        locale={locale}
+      />
 
-
-       {/* QuestsModal */}
-       <QuestsModal isOpen={isModalOpen} onClose={closeModal} />
+      {/* QuestsModal */}
+      <QuestsModal isOpen={isModalOpen} onClose={closeModal} />
     </>
   );
 };

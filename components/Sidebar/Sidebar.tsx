@@ -29,6 +29,10 @@ const Sidebar = ({ locale }: { locale: string }) => {
 
   return (
     <aside
+    style={{
+      background: "linear-gradient(90deg, #1E1E2C, #232334)",
+      boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.5)",
+    }}
       className={`bg-gray-900 text-white ${
         isMobile ? "w-64" : "w-64"
       } h-[calc(100vh-64px)] px-4 py-6 fixed ${

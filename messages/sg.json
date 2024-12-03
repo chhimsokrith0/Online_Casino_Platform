@@ -9,6 +9,21 @@
     "signUp": "Sign Up",
     "signIn": "Log In"
   },
+  "NavbarWallet": {
+    "currency": "SGD",
+    "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034744/USD_ruok8f.png",
+    "wallet": "Wallet",
+    "points": "Points",
+    "balance": "0.00",
+    "bronze": "Bronze"
+  },
+  "Carousel": {
+    "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203489/1_w8yo2j.jpg",
+    "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/4_klezxe.jpg",
+    "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/5_wdyqca.jpg",
+    "banner4": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/2_iyfjbc.jpg",
+    "banner5": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/3_oauyjg.jpg"
+  },
   "Notification": {
     "title": "Notification",
     "close": "Close",
@@ -183,32 +198,34 @@
     }
   },
   "footer": {
-    "gameCategory": "Game Category",
+    "gameCategory": "Aina ya Mchezo",
     "categories": {
-      "demo": "Demo",
-      "newGames": "New Games",
-      "popular": "Popular",
-      "cashDrops": "Cash Drops",
-      "jackpots": "Jackpots",
+      "demo": "Onyesho",
+      "newGames": "Michezo Mpya",
+      "popular": "Maarufu",
+      "cashDrops": "Matone ya Pesa",
+      "jackpots": "Jackpot",
       "megaways": "Megaways",
-      "tableGames": "Table Games",
-      "allGames": "All Games"
+      "tableGames": "Michezo ya Meza",
+      "allGames": "Michezo Yote"
     },
-    "liveCasino": "Live Casino",
-    "allLiveCasino": "All Live Casino",
+    "liveCasino": "Kasino ya Moja kwa Moja",
+    "allLiveCasino": "Kasino Zote za Moja kwa Moja",
     "specials": {
-      "quests": "Quests",
-      "reward": "Rewards",
-      "referral": "Referrals",
-      "level": "Level"
+      "title": "Maalum",
+      "quests": "Misheni",
+      "reward": "Tuzo",
+      "referral": "Marejeleo",
+      "level": "Kiwango"
     },
     "information": {
-      "termsAndConditions": "Terms and Conditions",
-      "privacyPolicy": "Privacy Policy",
-      "cookiesPolicy": "Cookies Policy"
+      "title": "Taarifa",
+      "termsAndConditions": "Sheria na Masharti",
+      "privacyPolicy": "Sera ya Faragha",
+      "cookiesPolicy": "Sera ya Vidakuzi"
     },
-    "followUs": "Follow Us",
-    "poweredBy": "Powered By Rith CT"
+    "followUs": "Tufuate",
+    "poweredBy": "Imewezeshwa na Rith CT"
   },
   "header": {
     "signUp": "Sign Up",

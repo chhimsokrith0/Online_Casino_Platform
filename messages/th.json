@@ -10,13 +10,19 @@
     "signIn": "เข้าสู่ระบบ"
   },
   "NavbarWallet": {
-    "currency": "THB",
-    "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034744/THB_ksqghv.png"
+    "currency": "บาท",
+    "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034744/THB_ksqghv.png",
+    "wallet": "กระเป๋าเงิน",
+    "points": "คะแนน",
+    "balance": "0.00",
+    "bronze": "ทองแดง"
   },
   "Carousel": {
-    "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036707/1_afkgtx.png",
-    "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036706/2_lk1yyn.png",
-    "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036702/3_yrzqcx.png"
+    "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733205049/2_etzpmd.webp",
+    "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733205049/1_pmpiks.webp",
+    "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733205048/5_ocbds3.webp",
+    "banner4": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733205048/4_qhrpdz.webp",
+    "banner5": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733205048/3_xidvra.webp"
   },
   "Notification": {
     "title": "การแจ้งเตือน",
@@ -192,12 +198,12 @@
     }
   },
   "footer": {
-    "gameCategory": "หมวดหมู่เกม",
+    "gameCategory": "ประเภทเกม",
     "categories": {
-      "demo": "ทดลองเล่น",
+      "demo": "ตัวอย่าง",
       "newGames": "เกมใหม่",
       "popular": "ยอดนิยม",
-      "cashDrops": "แคชดรอป",
+      "cashDrops": "รางวัลเงินสด",
       "jackpots": "แจ็คพอต",
       "megaways": "เมก้าเวย์",
       "tableGames": "เกมโต๊ะ",
@@ -206,12 +212,14 @@
     "liveCasino": "คาสิโนสด",
     "allLiveCasino": "คาสิโนสดทั้งหมด",
     "specials": {
-      "quests": "เควส",
+      "title": "พิเศษ",
+      "quests": "ภารกิจ",
       "reward": "รางวัล",
-      "referral": "แนะนำเพื่อน",
-      "level": "เลเวล"
+      "referral": "การแนะนำ",
+      "level": "ระดับ"
     },
     "information": {
+      "title": "ข้อมูล",
       "termsAndConditions": "ข้อกำหนดและเงื่อนไข",
       "privacyPolicy": "นโยบายความเป็นส่วนตัว",
       "cookiesPolicy": "นโยบายคุกกี้"

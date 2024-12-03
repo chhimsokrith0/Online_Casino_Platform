@@ -10,13 +10,19 @@
     "signIn": "ចូល"
   },
   "NavbarWallet": {
-    "currency": "KHR",
-    "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034743/KHR_oguoif.png"
+    "currency": "រៀល",
+    "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034743/KHR_oguoif.png",
+    "wallet": "កាបូប",
+    "points": "ពិន្ទុ",
+    "balance": "0.00",
+    "bronze": "សំរឹទ្ធិ"
   },
   "Carousel": {
-    "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036701/1_ttmgos.jpg",
-    "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036702/2_ldtfps.jpg",
-    "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036704/3_gxe0aa.jpg"
+    "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203489/1_w8yo2j.jpg",
+    "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/4_klezxe.jpg",
+    "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/5_wdyqca.jpg",
+    "banner4": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/2_iyfjbc.jpg",
+    "banner5": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/3_oauyjg.jpg"
   },
   "Notification": {
     "title": "ការជូនដំណឹង",
@@ -192,32 +198,34 @@
     }
   },
   "footer": {
-    "gameCategory": "ប្រភេទល្បែង",
+    "gameCategory": "ប្រភេទហ្គេម",
     "categories": {
-      "demo": "ការបង្ហាញ",
-      "newGames": "ល្បែងថ្មី",
+      "demo": "ដេមូ",
+      "newGames": "ហ្គេមថ្មី",
       "popular": "ពេញនិយម",
-      "cashDrops": "ការបោះប្រាក់",
-      "jackpots": "រង្វាន់ធំ",
-      "megaways": "Megaways",
-      "tableGames": "ល្បែងតុ",
-      "allGames": "គ្រប់ល្បែង"
+      "cashDrops": "ការបញ្ចេញលុយសាច់ប្រាក់",
+      "jackpots": "ចាក់ផត",
+      "megaways": "មេហ្គាវេ",
+      "tableGames": "ហ្គេមតុ",
+      "allGames": "ហ្គេមទាំងអស់"
     },
-    "liveCasino": "កាស៊ីណូផ្ទាល់",
-    "allLiveCasino": "គ្រប់កាស៊ីណូផ្ទាល់",
+    "liveCasino": "កាស៊ីណូផ្សាយផ្ទាល់",
+    "allLiveCasino": "កាស៊ីណូផ្សាយផ្ទាល់ទាំងអស់",
     "specials": {
+      "title": "ពិសេស",
       "quests": "បេសកកម្ម",
       "reward": "រង្វាន់",
-      "referral": "ការផ្ដល់អនុសាសន៍",
+      "referral": "ការណែនាំ",
       "level": "កម្រិត"
     },
     "information": {
-      "termsAndConditions": "ល័ក្ខខ័ណ្ឌ",
-      "privacyPolicy": "គោលនយោបាយភាពឯកជន",
-      "cookiesPolicy": "គោលនយោបាយ Cookies"
+      "title": "ព័ត៌មាន",
+      "termsAndConditions": "លក្ខខណ្ឌ និង សេចក្តីប្រកាស",
+      "privacyPolicy": "គោលការណ៍ភាពឯកជន",
+      "cookiesPolicy": "គោលការណ៍ខូគី"
     },
     "followUs": "តាមដានយើង",
-    "poweredBy": "គាំទ្រដោយ Rith CT"
+    "poweredBy": "ដំណើរការដោយ Rith CT"
   },
   "header": {
     "signUp": "ចុះឈ្មោះ",

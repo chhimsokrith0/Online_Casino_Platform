@@ -14,9 +14,9 @@ const NavbarLogo: React.FC<NavbarLogoProps> = ({ locale }) => {
         <Image
           src={Logo_ICG}
           alt="PlayGame168 Logo"
-          width={120}
-          height={40}
-          className="h-auto w-auto"
+          width={130}
+          height={30}
+          className="w-[80px] h-[20px] sm:w-[80px] sm:h-[20px] md:w-[150px] md:h-[30px] transition-all"
         />
       </Link>
     </div>

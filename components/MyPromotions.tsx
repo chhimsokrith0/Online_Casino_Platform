@@ -144,8 +144,17 @@ import { faGift, faChevronRight, faTimes } from "@fortawesome/free-solid-svg-ico
 import { gsap } from "gsap";
 
 // Modal Component
-const PromotionModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) => {
+
+const PromotionModal = ({
+    isOpen,
+    onClose,
+}: {
+    isOpen: boolean;
+    onClose: () => void;
+}) => {
     const modalRef = useRef<HTMLDivElement | null>(null);
+    const contentRef = useRef<HTMLDivElement | null>(null);
+    const rowRefs = useRef<HTMLTableRowElement[]>([]);
 
     useEffect(() => {
         if (isOpen && modalRef.current) {
@@ -155,6 +164,15 @@ const PromotionModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => v
                 { opacity: 0, y: -50, scale: 0.8 },
                 { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power3.out" }
             );
+
+            // Animate rows inside the table
+            if (rowRefs.current) {
+                gsap.fromTo(
+                    rowRefs.current,
+                    { opacity: 0, x: -20 },
+                    { opacity: 1, x: 0, stagger: 0.1, duration: 0.5, ease: "power2.out" }
+                );
+            }
         }
     }, [isOpen]);
 
@@ -197,7 +215,7 @@ const PromotionModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => v
                 </div>
 
                 {/* Modal Content */}
-                <div>
+                <div ref={contentRef}>
                     <img
                         src="https://storage.googleapis.com/playgame168/promotion_images/25473cba-fbcf-43c2-a71b-22bff5b1ae6d.webp" // Replace with the correct image path
                         alt="Promotion Banner"
@@ -224,7 +242,12 @@ const PromotionModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => v
                                 { bonus: "6%", level: "Platinum", limit: "2,000 บาท" },
                                 { bonus: "7%", level: "Black", limit: "2,500 บาท" },
                             ].map((row, index) => (
-                                <tr key={index}>
+                                <tr
+                                    key={index}
+                                    ref={(el) => {
+                                        if (el) rowRefs.current.push(el); // Collect refs for GSAP animation
+                                    }}
+                                >
                                     <td className="p-2 border-b border-gray-700">{row.bonus}</td>
                                     <td className="p-2 border-b border-gray-700">{row.level}</td>
                                     <td className="p-2 border-b border-gray-700">{row.limit}</td>
@@ -232,9 +255,7 @@ const PromotionModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => v
                             ))}
                         </tbody>
                     </table>
-                    <p className="text-gray-400">
-                        * คืนยอดเสียเฉพาะหลักเกณฑ์ที่ระบุไว้เท่านั้น
-                    </p>
+                    <p className="text-gray-400">* คืนยอดเสียเฉพาะหลักเกณฑ์ที่ระบุไว้เท่านั้น</p>
                 </div>
             </div>
         </div>

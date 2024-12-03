@@ -10,13 +10,19 @@
         "signIn": "लॉग इन करें"
     },
     "NavbarWallet": {
-        "currency": "INR",
-        "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034744/INR_jm4qvh.png"
+        "currency": "रुपया",
+        "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034744/INR_jm4qvh.png",
+        "wallet": "वॉलेट",
+        "points": "अंक",
+        "balance": "0.00",
+        "bronze": "कांस्य"
     },
     "Carousel": {
-        "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036700/1_a78sud.jpg",
-        "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036700/2_hetpg2.png",
-        "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733036703/3_fzqs2p.png"
+        "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203489/1_w8yo2j.jpg",
+        "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/4_klezxe.jpg",
+        "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/5_wdyqca.jpg",
+        "banner4": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/2_iyfjbc.jpg",
+        "banner5": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/3_oauyjg.jpg"
     },
     "Notification": {
         "title": "सूचना",
@@ -199,25 +205,27 @@
             "popular": "लोकप्रिय",
             "cashDrops": "कैश ड्रॉप्स",
             "jackpots": "जैकपॉट्स",
-            "megaways": "मेगावेयस",
+            "megaways": "मेगावेज़",
             "tableGames": "टेबल गेम्स",
-            "allGames": "सभी खेल"
+            "allGames": "सभी गेम्स"
         },
         "liveCasino": "लाइव कैसीनो",
         "allLiveCasino": "सभी लाइव कैसीनो",
         "specials": {
-            "quests": "कार्य",
+            "title": "विशेष",
+            "quests": "क्वेस्ट्स",
             "reward": "इनाम",
             "referral": "रेफरल",
             "level": "स्तर"
         },
         "information": {
+            "title": "जानकारी",
             "termsAndConditions": "नियम और शर्तें",
             "privacyPolicy": "गोपनीयता नीति",
-            "cookiesPolicy": "कुकीज़ नीति"
+            "cookiesPolicy": "कुकीज नीति"
         },
         "followUs": "हमें फॉलो करें",
-        "poweredBy": "रिथ CT द्वारा संचालित"
+        "poweredBy": "पावर्ड बाय रिथ सीटी"
     },
     "header": {
         "signUp": "साइन अप करें",

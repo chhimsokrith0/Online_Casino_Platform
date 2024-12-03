@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
@@ -17,17 +17,41 @@ import {
   faBolt,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import gsap from "gsap";
 
 interface ProfileModalProps {
   isOpen: boolean;
   onClose: () => void;
-  locale: string; // Add locale to props
+  locale: string;
 }
 
 const ProfileModal: React.FC<ProfileModalProps> = ({ isOpen, onClose, locale }) => {
+  const modalRef = useRef<HTMLDivElement>(null);
+  const actionRefs = useRef<HTMLButtonElement[]>([]);
+  const logoutRef = useRef<HTMLButtonElement | null>(null);
+
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden"; // Prevent scrolling
+
+      // GSAP animations
+      gsap.fromTo(
+        modalRef.current,
+        { opacity: 0, scale: 0.9 },
+        { opacity: 1, scale: 1, duration: 0.5, ease: "power4.out" }
+      );
+
+      gsap.fromTo(
+        actionRefs.current,
+        { opacity: 0, y: 20 },
+        { opacity: 1, y: 0, duration: 0, stagger: 0.1, ease: "power4.out", delay: 0.2 }
+      );
+
+      gsap.fromTo(
+        logoutRef.current,
+        { opacity: 0, scale: 0.9 },
+        { opacity: 1, scale: 1, duration: 0.5, delay: 0.8, ease: "power4.out" }
+      );
     } else {
       document.body.style.overflow = ""; // Enable scrolling
     }
@@ -40,7 +64,10 @@ const ProfileModal: React.FC<ProfileModalProps> = ({ isOpen, onClose, locale }) 
   if (!isOpen) return null;
 
   return (
-    <div className="absolute top-20 w-[500px] right-20 bg-gray-900 rounded-lg w-80 p-2 text-white shadow-lg z-50 overflow-y-auto animate-fade-in">
+    <div
+      ref={modalRef}
+      className="absolute top-20 w-[500px] right-20 bg-gray-900 rounded-lg p-2 text-white shadow-lg z-50 overflow-y-auto animate-fade-in"
+    >
       <div className="p-6 text-white rounded-lg w-full">
         <div className="bg-gray-800 p-4 rounded-lg">
           {/* Header */}
@@ -100,7 +127,12 @@ const ProfileModal: React.FC<ProfileModalProps> = ({ isOpen, onClose, locale }) 
               { icon: faBolt, label: "Quests", link: `/${locale}/quests` },
             ].map((action, index) => (
               <Link href={action.link} key={index}>
-                <button className="flex flex-col items-center gap-2 bg-gray-700 p-1 rounded-lg hover:bg-gray-600 transition w-full">
+                <button
+                  ref={(el) => {
+                    if (el) actionRefs.current.push(el);
+                  }}
+                  className="flex flex-col items-center gap-2 bg-gray-700 p-1 rounded-lg hover:bg-gray-600 transition w-full"
+                >
                   <FontAwesomeIcon icon={action.icon} className="text-xl text-white" />
                   <span className="text-sm text-gray-300">{action.label}</span>
                 </button>
@@ -110,7 +142,10 @@ const ProfileModal: React.FC<ProfileModalProps> = ({ isOpen, onClose, locale }) 
         </div>
 
         {/* Logout */}
-        <button className="flex items-center justify-center gap-2 mt-6 bg-red-500 p-4 rounded-lg w-full hover:bg-red-600 transition">
+        <button
+          ref={logoutRef}
+          className="flex items-center justify-center gap-2 mt-6 bg-red-500 p-4 rounded-lg w-full hover:bg-red-600 transition"
+        >
           <FontAwesomeIcon icon={faSignOutAlt} className="text-xl text-white" />
           <span className="text-sm text-white">Log Out</span>
         </button>

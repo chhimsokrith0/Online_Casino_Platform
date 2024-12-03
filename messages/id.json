@@ -9,9 +9,20 @@
     "signUp": "Daftar",
     "signIn": "Masuk"
   },
+  "Carousel": {
+    "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733205342/5_uteogm.jpg",
+    "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733205341/4_m5nvid.jpg",
+    "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733205340/3_slvlhe.jpg",
+    "banner4": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733205338/2_alpmxx.jpg",
+    "banner5": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733205337/1_gohqay.jpg"
+  },
   "NavbarWallet": {
-    "currency": "IDR",
-    "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034743/IDR_nosimp.png"
+    "currency": "Rupiah",
+    "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034743/IDR_nosimp.png",
+    "wallet": "Dompet",
+    "points": "Poin",
+    "balance": "0.00",
+    "bronze": "Perunggu"
   },
   "Notification": {
     "title": "Notifikasi",
@@ -201,17 +212,19 @@
     "liveCasino": "Kasino Langsung",
     "allLiveCasino": "Semua Kasino Langsung",
     "specials": {
+      "title": "Spesial",
       "quests": "Misi",
       "reward": "Hadiah",
       "referral": "Referensi",
       "level": "Tingkat"
     },
     "information": {
+      "title": "Informasi",
       "termsAndConditions": "Syarat dan Ketentuan",
       "privacyPolicy": "Kebijakan Privasi",
       "cookiesPolicy": "Kebijakan Cookie"
     },
-    "followUs": "Ikuti kami",
+    "followUs": "Ikuti Kami",
     "poweredBy": "Didukung oleh Rith CT"
   },
   "header": {

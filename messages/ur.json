@@ -1,0 +1,341 @@
+{
+    "NavbarLinks": {
+        "home": "ہوم",
+        "homeTitle": "تھیم",
+        "about": "کے بارے میں",
+        "aboutTitle": "کے بارے میں صفحہ",
+        "profile": "پروفائل",
+        "profileTitle": "پروفائل صفحہ",
+        "signUp": "رجسٹر کریں",
+        "signIn": "لاگ ان کریں"
+    },
+    "Carousel": {
+        "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203489/1_w8yo2j.jpg",
+        "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/4_klezxe.jpg",
+        "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/5_wdyqca.jpg",
+        "banner4": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/2_iyfjbc.jpg",
+        "banner5": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/3_oauyjg.jpg"
+    },
+    "NavbarWallet": {
+        "currency": "روپیہ",
+        "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034744/USD_ruok8f.png",
+        "wallet": "بٹوہ",
+        "points": "پوائنٹس",
+        "balance": "0.00",
+        "bronze": "کانسی"
+    },
+    "Notification": {
+        "title": "اطلاع",
+        "close": "بند کریں",
+        "header": "جمع کردہ کھیل",
+        "description": "تمام فراہم کنندگان کے سلاٹس کھیلیں اور 30,000 THB تک جمع کریں تاکہ 10,000 جواہرات کا انعام انلاک کیا جا سکے۔",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1732973194/end_hgzbwq.png"
+    },
+    "HomePage": {
+        "title": "لینڈنگ پیج"
+    },
+    "AboutPage": {
+        "title": "کے بارے میں"
+    },
+    "ProfilePage": {
+        "title": "پروفائل"
+    },
+    "welcome": "ہماری ویب سائٹ پر خوش آمدید",
+    "languageSwitch": "زبان تبدیل کریں",
+    "slidebar": {
+        "home": "ہوم",
+        "slots": "سلاٹس",
+        "liveCasino": "لائیو کیسینو",
+        "privileges": "مراعات",
+        "quests": "مشنز",
+        "reward": "انعام",
+        "promo": "پروموشن",
+        "levels": "سطحیں",
+        "referral": "حوالہ",
+        "providers": "فراہمی کنندگان",
+        "rtpSlots": "RTP سلاٹس",
+        "sports": "کھیل",
+        "fishing": "ماہی گیری",
+        "virtual": "ورچوئل",
+        "languageOption": "زبان کا اختیار",
+        "contactSocialMedia": "رابطہ اور سوشل میڈیا"
+    },
+    "MenuBar": {
+        "demo": "ڈیمو",
+        "allGames": "تمام کھیل",
+        "popularGames": "مشہور کھیل",
+        "newGames": "نئے کھیل",
+        "cashDrop": "نقدی گراؤ",
+        "jackpots": "جیک پاٹس",
+        "megaways": "میگا ویز",
+        "tableGames": "ٹیبل گیمز",
+        "providers": "فراہمی کنندگان"
+    },
+    "popularGames": {
+        "title": "مشہور کھیل",
+        "seeAll": "سب دیکھیں",
+        "games": {
+            "jewelMania": "جیول مینیہ",
+            "hotFruitsOnFire": "ہوٹ فروٹس آن فائر",
+            "barsAndBells": "#بارزاینڈبیلز",
+            "reelReelHot": "ریل ریل ہاٹ",
+            "spiritOfTheLake": "جھیل کی روح",
+            "twinWinsMystery": "ٹوئن ونز کی اسرار"
+        },
+        "provider": "مینکالا"
+    },
+    "newGames": {
+        "title": "نئے کھیل",
+        "seeAll": "سب دیکھیں",
+        "games": {
+            "spiritOfTheLake": "جھیل کی روح",
+            "twinWinsMystery": "ٹوئن ونز کی اسرار"
+        },
+        "provider": "مینکالا"
+    },
+    "promotions": {
+        "title": "پروموشنز",
+        "seeAll": "سب دیکھیں"
+    },
+    "liveCasino": {
+        "title": "لائیو کیسینو",
+        "seeAll": "سب دیکھیں",
+        "games": {
+            "pragmaticLive": "پرگمیٹک لائیو",
+            "baccaratC08": "باکراٹ C08",
+            "baccarat": "باکراٹ",
+            "dreamGaming": "ڈریم گیمنگ",
+            "topGamesLobby": "ٹاپ گیمز لابی",
+            "liveCasino": "لائیو کیسینو"
+        },
+        "providers": {
+            "pragmaticPlay": "پرگمیٹک پلے",
+            "sa": "SA",
+            "aeSexy": "Ae سیکسی",
+            "dreamGaming": "ڈریم گیمنگ",
+            "evolutionGaming": "ایوولیوشن گیمنگ",
+            "weGaming": "وی گیمنگ"
+        }
+    },
+    "gameProviders": {
+        "title": "گیم فراہم کنندگان",
+        "seeAll": "سب دیکھیں",
+        "providers": {
+            "pg": {
+                "name": "PG",
+                "description": "پاکٹ گیمز سافٹ",
+                "play": "کھیلیں"
+            },
+            "joker": {
+                "name": "جوکر",
+                "description": "جوکر",
+                "play": "کھیلیں"
+            },
+            "jili": {
+                "name": "جیلی",
+                "description": "جیلی",
+                "play": "کھیلیں"
+            },
+            "pragmaticPlay": {
+                "name": "پرگمیٹک پلے",
+                "description": "پرگمیٹک پلے",
+                "play": "کھیلیں"
+            }
+        }
+    },
+    "allGames": {
+        "title": "تمام کھیل",
+        "seeAll": "سب دیکھیں",
+        "games": {
+            "ninjaRaccoonFrenzy": {
+                "name": "ننجا ریکون فرینزی",
+                "provider": "PGSoft"
+            },
+            "treasuresOfAztec": {
+                "name": "ازٹیک کے خزانے",
+                "provider": "PGSoft"
+            },
+            "mahjongWays2": {
+                "name": "مہجونگ ویز 2",
+                "provider": "PGSoft"
+            },
+            "luckyNeko": {
+                "name": "لکی نیکو",
+                "provider": "PGSoft"
+            },
+            "mahjongWays": {
+                "name": "مہجونگ ویز",
+                "provider": "PGSoft"
+            },
+            "wildBountyShowdown": {
+                "name": "وائلڈ باؤنٹی شو ڈاؤن",
+                "provider": "PGSoft"
+            },
+            "waysOfTheQilin": {
+                "name": "قیلن کے راستے",
+                "provider": "PGSoft"
+            },
+            "wildBandito": {
+                "name": "وائلڈ بینڈیتو",
+                "provider": "PGSoft"
+            },
+            "fortuneRabbit": {
+                "name": "فارچون خرگوش",
+                "provider": "PGSoft"
+            },
+            "caishenWins": {
+                "name": "کیشن وِنز",
+                "provider": "PGSoft"
+            },
+            "fortuneOx": {
+                "name": "فارچون آکس",
+                "provider": "PGSoft"
+            },
+            "ganeshaFortune": {
+                "name": "گنیشا فارچون",
+                "provider": "PGSoft"
+            }
+        }
+    },
+    "footer": {
+        "gameCategory": "گیم کی قسم",
+        "categories": {
+            "demo": "ڈیمو",
+            "newGames": "نئے گیمز",
+            "popular": "مشہور",
+            "cashDrops": "نقدی ڈراپ",
+            "jackpots": "جیک پاٹس",
+            "megaways": "میگا ویز",
+            "tableGames": "ٹیبل گیمز",
+            "allGames": "تمام کھیل"
+        },
+        "liveCasino": "لائیو کیسینو",
+        "allLiveCasino": "تمام لائیو کیسینو",
+        "specials": {
+            "title": "خصوصی",
+            "quests": "مشن",
+            "reward": "انعام",
+            "referral": "حوالہ",
+            "level": "سطح"
+        },
+        "information": {
+            "title": "معلومات",
+            "termsAndConditions": "شرائط و ضوابط",
+            "privacyPolicy": "رازداری کی پالیسی",
+            "cookiesPolicy": "کوکیز کی پالیسی"
+        },
+        "followUs": "ہمیں فالو کریں",
+        "poweredBy": "Rith CT کے ذریعہ فراہم کردہ"
+    },
+    "header": {
+        "signUp": "رجسٹر کریں",
+        "signIn": "لاگ ان کریں"
+    },
+    "mobieleNavbar": {
+        "menu": "مینو",
+        "slots": "سلاٹس",
+        "signUp": "رجسٹر کریں",
+        "liveCasino": "لائیو کیسینو",
+        "promo": "پروموشن"
+    },
+    "RewardSection": {
+        "mainTitle": "بے شمار فوائد کو انلاک کریں",
+        "mainSubtitle": "ابھی رجسٹر کریں اور مراعات کے ایک شاندار سفر کا آغاز کریں۔ لا محدود انعامات کے دروازے کھولیں۔",
+        "joinButton": "PlayGame168 میں شامل ہوں",
+        "steps": {
+            "step1": "رجسٹر کریں اور رقم جمع کریں",
+            "step2": "اپنے پسندیدہ کھیل کھیلیں",
+            "step3": "اپنے انعام کا تبادلہ کریں"
+        },
+        "enjoyOurGames": {
+            "title": "ہمارے گیمز سے لطف اندوز ہوں!",
+            "description": "لائیو کیسینو ہاؤس میں، ہم آپ کو 4,000 سے زیادہ دلچسپ گیمز فراہم کرتے ہیں۔",
+            "button": "اپنا انعام حاصل کریں"
+        },
+        "enjoyOurPromotions": {
+            "title": "ہماری پروموشنز سے لطف اندوز ہوں!",
+            "description": "آج جمع کروائیں اور ایکسکلوزو انعامات کے پروگرام کے ذریعے پہلے کبھی نہ دیکھی گئی دنیا کو انلاک کریں۔",
+            "button": "اپنا انعام حاصل کریں"
+        },
+        "benefitsSection": {
+            "title": "متعدد مفت فوائد حاصل کریں",
+            "benefits": {
+                "questHub": {
+                    "title": "مشن حب",
+                    "description": "روزانہ اور ہفتہ وار چیلنجز کو مکمل کریں تاکہ اپنی آمدنی کو تیزی سے بڑھایا جا سکے۔",
+                    "tag": "روزانہ اور ہر ہفتے"
+                },
+                "loyaltyVip": {
+                    "title": "وفاداری VIP",
+                    "description": "وفاداری VIP کلب کی سطحوں کے ذریعے ترقی کرتے ہوئے اعلیٰ فوائد کو انلاک کریں۔",
+                    "tag": "روزانہ اور ہر ہفتے"
+                },
+                "tournament": {
+                    "title": "ٹورنامنٹ",
+                    "description": "مسابقت کریں، چیلنج کا سامنا کریں، اور ہمارے دلچسپ ٹورنامنٹ گیمز میں کامیابی حاصل کریں۔",
+                    "tag": "ہر ہفتے"
+                }
+            }
+        },
+        "introducingExclusive": {
+            "title": "ہمارا خصوصی ریبیٹ اور کیش بیک پروگرام متعارف کروانا",
+            "description": "ہمارے ساتھ شامل ہوں اور آج ہی ہمارے خصوصی ری چارج پروگرام کے ذریعے ریبیٹ اور کیش بیک حاصل کرنا شروع کریں۔ ان شاندار انعامات کو مت چھوڑیں!",
+            "joinButton": "آج ہی PlayGame168 میں شامل ہوں →",
+            "features": {
+                "activation": {
+                    "title": "چالو کرنا",
+                    "description": "مشنز اور چیلنجز کے ذریعے سطح بڑھائیں اور سب سے بڑی کامیابی حاصل کریں۔"
+                },
+                "bonus": {
+                    "title": "بونس",
+                    "description": "روزانہ اور ہفتہ وار بنیادوں پر کام مکمل کر کے اپنا بونس حاصل کریں۔"
+                },
+                "rewardTier": {
+                    "title": "انعام کی سطح",
+                    "description": "سطحوں کے ذریعے ترقی کرتے ہوئے مزید امیر انعامات سے لطف اندوز ہوں۔"
+                }
+            }
+        },
+        "deluxeExperience": {
+            "title": "ہمیں خوشی ہے کہ آپ کو سب سے بہترین گیمنگ تجربہ فراہم کر رہے ہیں",
+            "button": "رجسٹر کریں"
+        }
+    },
+    "MemberLevel": {
+        "mainTitle": "اپنی خصوصی سطحوں کو انلاک کریں",
+        "mainSubtitle": "خصوصی ممبرشپ پروگرام میں شامل ہوں اور سطحوں کے ذریعے ترقی کرتے ہوئے شاندار انعامات کا لطف اٹھائیں۔",
+        "joinButton": "سطحوں میں شامل ہوں",
+        "exclusiveBenefits": {
+            "title": "خصوصی VIP فوائد",
+            "benefits": {
+                "levelsRewards": {
+                    "title": "سطحیں اور انعامات",
+                    "description": "جتنا زیادہ آپ کھیلیں گے، اتنا زیادہ آپ حاصل کریں گے۔"
+                },
+                "exclusivePromotions": {
+                    "title": "خصوصی پروموشنز",
+                    "description": "اعلیٰ رینک پر پہنچیں اور فوائد کو انلاک کریں۔"
+                },
+                "higherCashback": {
+                    "title": "زیادہ کیش بیک",
+                    "description": "12% تک کیش بیک انعامات حاصل کریں۔"
+                },
+                "royaltyClub": {
+                    "title": "رائلٹی کلب",
+                    "description": "خصوصی بونس کے لیے VIP کلب میں شامل ہوں۔"
+                }
+            }
+        },
+        "carousel": {
+            "levels": {
+                "bronze": "برانز",
+                "silver": "سلور",
+                "gold": "گولڈ",
+                "diamond": "ڈائمنڈ",
+                "platinum": "پلاٹینم",
+                "black": "بلیک"
+            },
+            "cashback": "کیش بیک (%)"
+        }
+    }
+}

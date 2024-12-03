@@ -10,13 +10,19 @@
     "signIn": "Sign In"
   },
   "Carousel": {
-    "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733123410/Banner_01_blp2ix.jpg",
-    "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733123409/Banner_02_ytexvr.jpg",
-    "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733123409/Banner_03_po6ntx.jpg"
+    "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203489/1_w8yo2j.jpg",
+    "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/4_klezxe.jpg",
+    "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/5_wdyqca.jpg",
+    "banner4": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/2_iyfjbc.jpg",
+    "banner5": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/3_oauyjg.jpg"
   },
   "NavbarWallet": {
     "currency": "USD",
-    "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034744/USD_ruok8f.png"
+    "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034744/USD_ruok8f.png",
+    "wallet": "Wallet",
+    "points": "Points",
+    "balance": "0.00",
+    "bronze": "Bronze"
   },
   "Notification": {
     "title": "Notification",
@@ -206,12 +212,14 @@
     "liveCasino": "Live Casino",
     "allLiveCasino": "All Live Casino",
     "specials": {
+      "title": "Specials",
       "quests": "Quests",
       "reward": "Reward",
       "referral": "Referral",
       "level": "Level"
     },
     "information": {
+      "title": "Information",
       "termsAndConditions": "Terms and Conditions",
       "privacyPolicy": "Privacy Policy",
       "cookiesPolicy": "Cookies Policy"

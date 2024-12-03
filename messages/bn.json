@@ -1,0 +1,341 @@
+{
+    "NavbarLinks": {
+        "home": "হোম",
+        "homeTitle": "থিম",
+        "about": "সম্পর্কিত",
+        "aboutTitle": "সম্পর্কিত পৃষ্ঠা",
+        "profile": "প্রোফাইল",
+        "profileTitle": "প্রোফাইল পৃষ্ঠা",
+        "signUp": "সাইন আপ",
+        "signIn": "সাইন ইন"
+    },
+    "Carousel": {
+        "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203489/1_w8yo2j.jpg",
+        "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/4_klezxe.jpg",
+        "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/5_wdyqca.jpg",
+        "banner4": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/2_iyfjbc.jpg",
+        "banner5": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/3_oauyjg.jpg"
+    },
+    "NavbarWallet": {
+        "currency": "টাকা",
+        "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034744/USD_ruok8f.png",
+        "wallet": "ওয়ালেট",
+        "points": "পয়েন্ট",
+        "balance": "০.০০",
+        "bronze": "ব্রোঞ্জ"
+    },
+    "Notification": {
+        "title": "বিজ্ঞপ্তি",
+        "close": "বন্ধ করুন",
+        "header": "সংগ্রহকৃত খেলা",
+        "description": "সব প্রোভাইডারের স্লট খেলুন এবং ৩০,০০০ THB পর্যন্ত জমা করুন ১০,০০০ রত্ন পুরস্কার আনলক করার জন্য।",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1732973194/end_hgzbwq.png"
+    },
+    "HomePage": {
+        "title": "ল্যান্ডিং পৃষ্ঠা"
+    },
+    "AboutPage": {
+        "title": "সম্পর্কিত"
+    },
+    "ProfilePage": {
+        "title": "প্রোফাইল"
+    },
+    "welcome": "আমাদের ওয়েবসাইটে স্বাগতম",
+    "languageSwitch": "ভাষা পরিবর্তন করুন",
+    "slidebar": {
+        "home": "হোম",
+        "slots": "স্লট",
+        "liveCasino": "লাইভ ক্যাসিনো",
+        "privileges": "বিশেষ সুবিধা",
+        "quests": "মিশন",
+        "reward": "পুরস্কার",
+        "promo": "প্রচার",
+        "levels": "লেভেল",
+        "referral": "রেফারেল",
+        "providers": "প্রোভাইডার",
+        "rtpSlots": "RTP স্লট",
+        "sports": "খেলা",
+        "fishing": "মাছ ধরা",
+        "virtual": "ভার্চুয়াল",
+        "languageOption": "ভাষার বিকল্প",
+        "contactSocialMedia": "যোগাযোগ এবং সামাজিক মাধ্যম"
+    },
+    "MenuBar": {
+        "demo": "ডেমো",
+        "allGames": "সব গেম",
+        "popularGames": "জনপ্রিয় গেম",
+        "newGames": "নতুন গেম",
+        "cashDrop": "ক্যাশ ড্রপ",
+        "jackpots": "জ্যাকপট",
+        "megaways": "মেগাওয়েজ",
+        "tableGames": "টেবিল গেম",
+        "providers": "প্রোভাইডার"
+    },
+    "popularGames": {
+        "title": "জনপ্রিয় গেম",
+        "seeAll": "সব দেখুন",
+        "games": {
+            "jewelMania": "জুয়েল ম্যানিয়া",
+            "hotFruitsOnFire": "হট ফ্রুটস অন ফায়ার",
+            "barsAndBells": "#বারসএন্ডবেলস",
+            "reelReelHot": "রিল রিল হট",
+            "spiritOfTheLake": "লেকের আত্মা",
+            "twinWinsMystery": "দ্য টুইন উইন্স মিস্ট্রি"
+        },
+        "provider": "ম্যানকালা"
+    },
+    "newGames": {
+        "title": "নতুন গেম",
+        "seeAll": "সব দেখুন",
+        "games": {
+            "spiritOfTheLake": "লেকের আত্মা",
+            "twinWinsMystery": "দ্য টুইন উইন্স মিস্ট্রি"
+        },
+        "provider": "ম্যানকালা"
+    },
+    "promotions": {
+        "title": "প্রচার",
+        "seeAll": "সব দেখুন"
+    },
+    "liveCasino": {
+        "title": "লাইভ ক্যাসিনো",
+        "seeAll": "সব দেখুন",
+        "games": {
+            "pragmaticLive": "প্র্যাগমেটিক লাইভ",
+            "baccaratC08": "ব্যাকারাট C08",
+            "baccarat": "ব্যাকারাট",
+            "dreamGaming": "ড্রিম গেমিং",
+            "topGamesLobby": "টপ গেমস লবি",
+            "liveCasino": "লাইভ ক্যাসিনো"
+        },
+        "providers": {
+            "pragmaticPlay": "প্র্যাগমেটিক প্লে",
+            "sa": "SA",
+            "aeSexy": "এ সেক্সি",
+            "dreamGaming": "ড্রিম গেমিং",
+            "evolutionGaming": "ইভোলিউশন গেমিং",
+            "weGaming": "উই গেমিং"
+        }
+    },
+    "gameProviders": {
+        "title": "গেম প্রোভাইডার",
+        "seeAll": "সব দেখুন",
+        "providers": {
+            "pg": {
+                "name": "PG",
+                "description": "পকেট গেমস সফট",
+                "play": "খেলুন"
+            },
+            "joker": {
+                "name": "জোকার",
+                "description": "জোকার",
+                "play": "খেলুন"
+            },
+            "jili": {
+                "name": "জিলি",
+                "description": "জিলি",
+                "play": "খেলুন"
+            },
+            "pragmaticPlay": {
+                "name": "প্র্যাগমেটিক প্লে",
+                "description": "প্র্যাগমেটিক প্লে",
+                "play": "খেলুন"
+            }
+        }
+    },
+    "allGames": {
+        "title": "সব গেম",
+        "seeAll": "সব দেখুন",
+        "games": {
+            "ninjaRaccoonFrenzy": {
+                "name": "নিনজা র্যাকুন ফ্রেনজি",
+                "provider": "PGSoft"
+            },
+            "treasuresOfAztec": {
+                "name": "আজটেকের ধন",
+                "provider": "PGSoft"
+            },
+            "mahjongWays2": {
+                "name": "মাহজং ওয়েজ 2",
+                "provider": "PGSoft"
+            },
+            "luckyNeko": {
+                "name": "লাকি নেকো",
+                "provider": "PGSoft"
+            },
+            "mahjongWays": {
+                "name": "মাহজং ওয়েজ",
+                "provider": "PGSoft"
+            },
+            "wildBountyShowdown": {
+                "name": "ওয়াইল্ড বাউন্টি শোডাউন",
+                "provider": "PGSoft"
+            },
+            "waysOfTheQilin": {
+                "name": "কিলিনের পথ",
+                "provider": "PGSoft"
+            },
+            "wildBandito": {
+                "name": "ওয়াইল্ড ব্যান্ডিটো",
+                "provider": "PGSoft"
+            },
+            "fortuneRabbit": {
+                "name": "ফরচুন র‍্যাবিট",
+                "provider": "PGSoft"
+            },
+            "caishenWins": {
+                "name": "কাইশেন উইন্স",
+                "provider": "PGSoft"
+            },
+            "fortuneOx": {
+                "name": "ফরচুন অক্স",
+                "provider": "PGSoft"
+            },
+            "ganeshaFortune": {
+                "name": "গণেশা ফরচুন",
+                "provider": "PGSoft"
+            }
+        }
+    },
+    "footer": {
+        "gameCategory": "গেমের বিভাগ",
+        "categories": {
+            "demo": "ডেমো",
+            "newGames": "নতুন গেম",
+            "popular": "জনপ্রিয়",
+            "cashDrops": "ক্যাশ ড্রপস",
+            "jackpots": "জ্যাকপটস",
+            "megaways": "মেগাওয়েজ",
+            "tableGames": "টেবিল গেমস",
+            "allGames": "সব গেম"
+        },
+        "liveCasino": "লাইভ ক্যাসিনো",
+        "allLiveCasino": "সব লাইভ ক্যাসিনো",
+        "specials": {
+            "title": "বিশেষ",
+            "quests": "মিশন",
+            "reward": "পুরস্কার",
+            "referral": "রেফারেল",
+            "level": "লেভেল"
+        },
+        "information": {
+            "title": "তথ্য",
+            "termsAndConditions": "শর্তাবলী",
+            "privacyPolicy": "গোপনীয়তা নীতি",
+            "cookiesPolicy": "কুকিজ নীতি"
+        },
+        "followUs": "আমাদের অনুসরণ করুন",
+        "poweredBy": "Rith CT দ্বারা পরিচালিত"
+    },
+    "header": {
+        "signUp": "সাইন আপ",
+        "signIn": "সাইন ইন"
+    },
+    "mobieleNavbar": {
+        "menu": "মেনু",
+        "slots": "স্লট",
+        "signUp": "সাইন আপ",
+        "liveCasino": "লাইভ ক্যাসিনো",
+        "promo": "প্রচার"
+    },
+    "RewardSection": {
+        "mainTitle": "অসীম সুবিধা আনলক করুন",
+        "mainSubtitle": "এখনই সাইন আপ করুন এবং সুবিধা সমৃদ্ধ একটি রোমাঞ্চকর যাত্রা শুরু করুন। সীমাহীন পুরস্কারের দ্বার খুলুন।",
+        "joinButton": "PlayGame168 এ যোগ দিন",
+        "steps": {
+            "step1": "সাইন আপ করুন এবং জমা দিন",
+            "step2": "আপনার প্রিয় গেমগুলি খেলুন",
+            "step3": "আপনার পুরস্কার এক্সচেঞ্জ করুন"
+        },
+        "enjoyOurGames": {
+            "title": "আমাদের গেমগুলি উপভোগ করুন!",
+            "description": "লাইভ ক্যাসিনো হাউজে, আমরা আপনাকে ৪,০০০টিরও বেশি উত্তেজনাপূর্ণ গেম অফার করি।",
+            "button": "আপনার পুরস্কার দাবি করুন"
+        },
+        "enjoyOurPromotions": {
+            "title": "আমাদের প্রচারগুলি উপভোগ করুন!",
+            "description": "আজ জমা দিন এবং আমাদের একচেটিয়া পুরস্কার প্রোগ্রামের মাধ্যমে আগে কখনও না দেখা এক জগতের পুরস্কার আনলক করুন।",
+            "button": "আপনার পুরস্কার দাবি করুন"
+        },
+        "benefitsSection": {
+            "title": "অসংখ্য বিনামূল্যে সুবিধা পান",
+            "benefits": {
+                "questHub": {
+                    "title": "কোয়েস্ট হাব",
+                    "description": "দৈনিক এবং সাপ্তাহিক চ্যালেঞ্জগুলি সম্পন্ন করে দ্রুত উপার্জন বাড়ান।",
+                    "tag": "প্রতিদিন এবং প্রতি সপ্তাহে"
+                },
+                "loyaltyVip": {
+                    "title": "লয়ালটি ভিআইপি",
+                    "description": "আমাদের লয়ালটি ভিআইপি ক্লাব স্তরগুলির মধ্য দিয়ে অগ্রসর হওয়ার সময় বিশেষ সুবিধাগুলি আনলক করুন।",
+                    "tag": "প্রতিদিন এবং প্রতি সপ্তাহে"
+                },
+                "tournament": {
+                    "title": "টুর্নামেন্ট",
+                    "description": "প্রতিযোগিতা করুন, চ্যালেঞ্জ গ্রহণ করুন এবং আমাদের উত্তেজনাপূর্ণ টুর্নামেন্ট গেমগুলিতে জয়লাভ করুন।",
+                    "tag": "প্রতি সপ্তাহে"
+                }
+            }
+        },
+        "introducingExclusive": {
+            "title": "আমাদের এক্সক্লুসিভ রিবেট এবং ক্যাশব্যাক প্রোগ্রাম পরিচিতি",
+            "description": "উত্তেজনাপূর্ণ মুহূর্তগুলি উপভোগ করতে আমাদের সাথে যোগ দিন এবং আজই আমাদের একচেটিয়া রিচার্জ প্রোগ্রামের মাধ্যমে রিবেট এবং ক্যাশব্যাক উপার্জন শুরু করুন। এই দুর্দান্ত পুরস্কারগুলি হাতছাড়া করবেন না!",
+            "joinButton": "আজই PlayGame168 এ যোগ দিন →",
+            "features": {
+                "activation": {
+                    "title": "সক্রিয়তা",
+                    "description": "কোয়েস্ট এবং চ্যালেঞ্জের মাধ্যমে স্তর বাড়ান।"
+                },
+                "bonus": {
+                    "title": "বোনাস",
+                    "description": "দৈনিক এবং সাপ্তাহিক ভিত্তিতে ধারাবাহিকভাবে কাজগুলি সম্পন্ন করুন।"
+                },
+                "rewardTier": {
+                    "title": "পুরস্কার স্তর",
+                    "description": "আমাদের পুরস্কার স্তরগুলির মধ্য দিয়ে অগ্রসর হওয়ার সময় আরও ধনী পুরস্কার উপভোগ করুন।"
+                }
+            }
+        },
+        "deluxeExperience": {
+            "title": "আমরা আপনাকে সবচেয়ে ডিলাক্স গেমিং অভিজ্ঞতা অফার করতে পেরে আনন্দিত",
+            "button": "সাইন আপ করুন"
+        }
+    },
+    "MemberLevel": {
+        "mainTitle": "আপনার এক্সক্লুসিভ স্তর আনলক করুন",
+        "mainSubtitle": "এক্সক্লুসিভ সদস্যপদ প্রোগ্রামে যোগ দিন এবং স্তরের মধ্য দিয়ে অগ্রসর হওয়ার সময় দুর্দান্ত পুরস্কারগুলি উপভোগ করুন।",
+        "joinButton": "স্তরে যোগ দিন",
+        "exclusiveBenefits": {
+            "title": "এক্সক্লুসিভ ভিআইপি সুবিধা",
+            "benefits": {
+                "levelsRewards": {
+                    "title": "স্তর এবং পুরস্কার",
+                    "description": "আপনি যত বেশি খেলবেন, আপনার অর্জন তত বেশি।"
+                },
+                "exclusivePromotions": {
+                    "title": "এক্সক্লুসিভ প্রচার",
+                    "description": "উচ্চতর র‍্যাংকে পৌঁছান এবং সুবিধাগুলি আনলক করুন।"
+                },
+                "higherCashback": {
+                    "title": "উচ্চতর ক্যাশব্যাক",
+                    "description": "১২% পর্যন্ত ক্যাশব্যাক পুরস্কার পান।"
+                },
+                "royaltyClub": {
+                    "title": "রয়্যালটি ক্লাব",
+                    "description": "বিশেষ বোনাসের জন্য ভিআইপি ক্লাবে যোগ দিন।"
+                }
+            }
+        },
+        "carousel": {
+            "levels": {
+                "bronze": "ব্রোঞ্জ",
+                "silver": "সিলভার",
+                "gold": "গোল্ড",
+                "diamond": "ডায়মন্ড",
+                "platinum": "প্লাটিনাম",
+                "black": "ব্ল্যাক"
+            },
+            "cashback": "ক্যাশব্যাক (%)"
+        }
+    }
+}

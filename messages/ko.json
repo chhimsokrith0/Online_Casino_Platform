@@ -1,0 +1,341 @@
+{
+    "NavbarLinks": {
+        "home": "홈",
+        "homeTitle": "테마",
+        "about": "소개",
+        "aboutTitle": "소개 페이지",
+        "profile": "프로필",
+        "profileTitle": "프로필 페이지",
+        "signUp": "회원가입",
+        "signIn": "로그인"
+    },
+    "Carousel": {
+        "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733205729/4_a5cirl.webp",
+        "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733205728/2_edns6y.webp",
+        "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733205727/5_qmpd6g.webp",
+        "banner4": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733205726/1_mbpftx.webp",
+        "banner5": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733205725/3_bucyvw.webp"
+    },
+    "NavbarWallet": {
+        "currency": "원",
+        "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034744/USD_ruok8f.png",
+        "wallet": "지갑",
+        "points": "포인트",
+        "balance": "0.00",
+        "bronze": "브론즈"
+    },
+    "Notification": {
+        "title": "알림",
+        "close": "닫기",
+        "header": "누적 플레이",
+        "description": "모든 제공업체의 슬롯을 플레이하고 최대 30,000 THB를 모아 10,000개의 보석 보상을 잠금 해제하세요.",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1732973194/end_hgzbwq.png"
+    },
+    "HomePage": {
+        "title": "랜딩 페이지"
+    },
+    "AboutPage": {
+        "title": "소개"
+    },
+    "ProfilePage": {
+        "title": "프로필"
+    },
+    "welcome": "우리 웹사이트에 오신 것을 환영합니다",
+    "languageSwitch": "언어 변경",
+    "slidebar": {
+        "home": "홈",
+        "slots": "슬롯",
+        "liveCasino": "라이브 카지노",
+        "privileges": "특권",
+        "quests": "퀘스트",
+        "reward": "보상",
+        "promo": "프로모션",
+        "levels": "레벨",
+        "referral": "추천",
+        "providers": "제공업체",
+        "rtpSlots": "RTP 슬롯",
+        "sports": "스포츠",
+        "fishing": "낚시",
+        "virtual": "가상",
+        "languageOption": "언어 옵션",
+        "contactSocialMedia": "연락처 및 소셜 미디어"
+    },
+    "MenuBar": {
+        "demo": "데모",
+        "allGames": "모든 게임",
+        "popularGames": "인기 게임",
+        "newGames": "새로운 게임",
+        "cashDrop": "현금 드롭",
+        "jackpots": "잭팟",
+        "megaways": "메가웨이즈",
+        "tableGames": "테이블 게임",
+        "providers": "제공업체"
+    },
+    "popularGames": {
+        "title": "인기 게임",
+        "seeAll": "모두 보기",
+        "games": {
+            "jewelMania": "보석 매니아",
+            "hotFruitsOnFire": "핫 프루츠 온 파이어",
+            "barsAndBells": "#바와 벨",
+            "reelReelHot": "릴 릴 핫",
+            "spiritOfTheLake": "호수의 영혼",
+            "twinWinsMystery": "트윈 윈즈 미스터리"
+        },
+        "provider": "만칼라"
+    },
+    "newGames": {
+        "title": "새로운 게임",
+        "seeAll": "모두 보기",
+        "games": {
+            "spiritOfTheLake": "호수의 영혼",
+            "twinWinsMystery": "트윈 윈즈 미스터리"
+        },
+        "provider": "만칼라"
+    },
+    "promotions": {
+        "title": "프로모션",
+        "seeAll": "모두 보기"
+    },
+    "liveCasino": {
+        "title": "라이브 카지노",
+        "seeAll": "모두 보기",
+        "games": {
+            "pragmaticLive": "프래그매틱 라이브",
+            "baccaratC08": "바카라 C08",
+            "baccarat": "바카라",
+            "dreamGaming": "드림 게이밍",
+            "topGamesLobby": "톱 게임 로비",
+            "liveCasino": "라이브 카지노"
+        },
+        "providers": {
+            "pragmaticPlay": "프래그매틱 플레이",
+            "sa": "SA",
+            "aeSexy": "Ae 섹시",
+            "dreamGaming": "드림 게이밍",
+            "evolutionGaming": "에볼루션 게이밍",
+            "weGaming": "위 게이밍"
+        }
+    },
+    "gameProviders": {
+        "title": "게임 제공업체",
+        "seeAll": "모두 보기",
+        "providers": {
+            "pg": {
+                "name": "PG",
+                "description": "포켓 게임즈 소프트",
+                "play": "플레이"
+            },
+            "joker": {
+                "name": "조커",
+                "description": "조커",
+                "play": "플레이"
+            },
+            "jili": {
+                "name": "질리",
+                "description": "질리",
+                "play": "플레이"
+            },
+            "pragmaticPlay": {
+                "name": "프래그매틱 플레이",
+                "description": "프래그매틱 플레이",
+                "play": "플레이"
+            }
+        }
+    },
+    "allGames": {
+        "title": "모든 게임",
+        "seeAll": "모두 보기",
+        "games": {
+            "ninjaRaccoonFrenzy": {
+                "name": "닌자 라쿤 프렌지",
+                "provider": "PGSoft"
+            },
+            "treasuresOfAztec": {
+                "name": "아즈텍의 보물",
+                "provider": "PGSoft"
+            },
+            "mahjongWays2": {
+                "name": "마작 웨이즈 2",
+                "provider": "PGSoft"
+            },
+            "luckyNeko": {
+                "name": "럭키 네코",
+                "provider": "PGSoft"
+            },
+            "mahjongWays": {
+                "name": "마작 웨이즈",
+                "provider": "PGSoft"
+            },
+            "wildBountyShowdown": {
+                "name": "와일드 바운티 쇼다운",
+                "provider": "PGSoft"
+            },
+            "waysOfTheQilin": {
+                "name": "킬린의 길",
+                "provider": "PGSoft"
+            },
+            "wildBandito": {
+                "name": "와일드 반디토",
+                "provider": "PGSoft"
+            },
+            "fortuneRabbit": {
+                "name": "포춘 래빗",
+                "provider": "PGSoft"
+            },
+            "caishenWins": {
+                "name": "카이센 윈즈",
+                "provider": "PGSoft"
+            },
+            "fortuneOx": {
+                "name": "포춘 옥스",
+                "provider": "PGSoft"
+            },
+            "ganeshaFortune": {
+                "name": "가네샤 포춘",
+                "provider": "PGSoft"
+            }
+        }
+    },
+    "footer": {
+        "gameCategory": "게임 카테고리",
+        "categories": {
+            "demo": "데모",
+            "newGames": "새로운 게임",
+            "popular": "인기",
+            "cashDrops": "현금 드롭",
+            "jackpots": "잭팟",
+            "megaways": "메가웨이즈",
+            "tableGames": "테이블 게임",
+            "allGames": "모든 게임"
+        },
+        "liveCasino": "라이브 카지노",
+        "allLiveCasino": "모든 라이브 카지노",
+        "specials": {
+            "title": "특별",
+            "quests": "퀘스트",
+            "reward": "보상",
+            "referral": "추천",
+            "level": "레벨"
+        },
+        "information": {
+            "title": "정보",
+            "termsAndConditions": "이용 약관",
+            "privacyPolicy": "개인정보 보호정책",
+            "cookiesPolicy": "쿠키 정책"
+        },
+        "followUs": "팔로우 하기",
+        "poweredBy": "Rith CT 제공"
+    },
+    "header": {
+        "signUp": "회원가입",
+        "signIn": "로그인"
+    },
+    "mobieleNavbar": {
+        "menu": "메뉴",
+        "slots": "슬롯",
+        "signUp": "회원가입",
+        "liveCasino": "라이브 카지노",
+        "promo": "프로모션"
+    },
+    "RewardSection": {
+        "mainTitle": "무한한 혜택을 잠금 해제하세요",
+        "mainSubtitle": "지금 가입하고 다양한 혜택의 흥미진진한 여정을 시작하세요. 무한한 보상의 문을 여세요.",
+        "joinButton": "PlayGame168 가입",
+        "steps": {
+            "step1": "가입 및 입금",
+            "step2": "좋아하는 게임 플레이",
+            "step3": "보상을 교환하세요"
+        },
+        "enjoyOurGames": {
+            "title": "우리 게임을 즐기세요!",
+            "description": "라이브 카지노 하우스에서 4,000개 이상의 흥미로운 게임을 제공합니다.",
+            "button": "보상 받기"
+        },
+        "enjoyOurPromotions": {
+            "title": "우리 프로모션을 즐기세요!",
+            "description": "오늘 입금하고 이전에는 경험하지 못했던 독점적인 보상을 잠금 해제하세요.",
+            "button": "보상 받기"
+        },
+        "benefitsSection": {
+            "title": "다양한 무료 혜택 얻기",
+            "benefits": {
+                "questHub": {
+                    "title": "퀘스트 허브",
+                    "description": "일일 및 주간 도전을 완료하여 수익을 빠르게 늘리세요.",
+                    "tag": "매일 & 매주"
+                },
+                "loyaltyVip": {
+                    "title": "로열티 VIP",
+                    "description": "로열티 VIP 클럽 레벨을 진행하며 엘리트 혜택을 잠금 해제하세요.",
+                    "tag": "매일 & 매주"
+                },
+                "tournament": {
+                    "title": "토너먼트",
+                    "description": "도전에 맞서고, 경쟁하며, 흥미진진한 토너먼트 게임에서 승리하세요.",
+                    "tag": "매주"
+                }
+            }
+        },
+        "introducingExclusive": {
+            "title": "독점 리베이트 및 캐시백 프로그램 소개",
+            "description": "지금 저희와 함께 흥미로운 순간을 즐기며 독점 충전 프로그램을 통해 리베이트 및 캐시백을 시작하세요. 이 환상적인 보상을 놓치지 마세요!",
+            "joinButton": "오늘 PlayGame168 가입 →",
+            "features": {
+                "activation": {
+                    "title": "활성화",
+                    "description": "퀘스트와 도전을 통해 레벨을 올리세요."
+                },
+                "bonus": {
+                    "title": "보너스",
+                    "description": "매일과 매주 꾸준히 작업을 완료하여 보너스를 획득하세요."
+                },
+                "rewardTier": {
+                    "title": "보상 계층",
+                    "description": "보상 계층을 통해 더 풍성한 보상을 즐기세요."
+                }
+            }
+        },
+        "deluxeExperience": {
+            "title": "가장 럭셔리한 게임 경험을 제공하게 되어 기쁩니다",
+            "button": "회원가입"
+        }
+    },
+    "MemberLevel": {
+        "mainTitle": "독점 레벨을 잠금 해제하세요",
+        "mainSubtitle": "독점 회원 프로그램에 참여하고 레벨을 진행하면서 놀라운 보상을 즐기세요.",
+        "joinButton": "레벨 가입",
+        "exclusiveBenefits": {
+            "title": "독점 VIP 혜택",
+            "benefits": {
+                "levelsRewards": {
+                    "title": "레벨 & 보상",
+                    "description": "플레이할수록 더 많은 혜택을 얻을 수 있습니다."
+                },
+                "exclusivePromotions": {
+                    "title": "독점 프로모션",
+                    "description": "더 높은 순위에 도달하여 혜택을 잠금 해제하세요."
+                },
+                "higherCashback": {
+                    "title": "더 높은 캐시백",
+                    "description": "최대 12% 캐시백 보상을 받으세요."
+                },
+                "royaltyClub": {
+                    "title": "로열티 클럽",
+                    "description": "독점 보너스를 위해 VIP 클럽에 가입하세요."
+                }
+            }
+        },
+        "carousel": {
+            "levels": {
+                "bronze": "브론즈",
+                "silver": "실버",
+                "gold": "골드",
+                "diamond": "다이아몬드",
+                "platinum": "플래티넘",
+                "black": "블랙"
+            },
+            "cashback": "캐시백 (%)"
+        }
+    }
+}
