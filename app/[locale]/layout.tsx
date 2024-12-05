@@ -26,7 +26,7 @@ export default async function RootLayout({
             <Navbar locale={locale} />
           </header>
           <div className="flex flex-col lg:flex-row">
-            <aside className="hidden lg:block lg:w-64 z-100">
+            <aside className="hidden lg:block lg:w-64 z-50">
               <Sidebar locale={locale} />
             </aside>
             <main className="flex-1 pt-4 lg:px-8 bg-[#020617]">

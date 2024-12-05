@@ -337,5 +337,168 @@
             },
             "cashback": "ক্যাশব্যাক (%)"
         }
+    },
+    "games": {
+        "GamesDemo": {
+            "waysOfTheQilin": {
+                "name": "ওয়েজ অফ দ্য কিলিন",
+                "provider": "পিজি সফট"
+            },
+            "dragonHatch2": {
+                "name": "ড্রাগন হ্যাচ ২",
+                "provider": "পিজি সফট"
+            },
+            "futebolFever": {
+                "name": "ফুটবল ফিভার",
+                "provider": "পিজি সফট"
+            },
+            "wildApe": {
+                "name": "ওয়াইল্ড এপ",
+                "provider": "পিজি সফট"
+            },
+            "yakuzaHonor": {
+                "name": "ইয়াকুজা অনার",
+                "provider": "পিজি সফট"
+            },
+            "wingsOfIguazu": {
+                "name": "উইংস অফ ইগুয়াজু",
+                "provider": "পিজি সফট"
+            },
+            "mysticPotion": {
+                "name": "মিস্টিক পোষণ",
+                "provider": "পিজি সফট"
+            },
+            "museumMystery": {
+                "name": "মিউজিয়াম মিস্ট্রি",
+                "provider": "পিজি সফট"
+            },
+            "chickyRun": {
+                "name": "চিকি রান",
+                "provider": "পিজি সফট"
+            },
+            "chocolateDeluxe": {
+                "name": "চকলেট ডিলাক্স",
+                "provider": "পিজি সফট"
+            },
+            "tsarTreasures": {
+                "name": "জার ট্রেজারস",
+                "provider": "পিজি সফট"
+            },
+            "rioFantasia": {
+                "name": "রিও ফ্যান্টাসিয়া",
+                "provider": "পিজি সফট"
+            },
+            "mafiaMayhem": {
+                "name": "মাফিয়া মেহেম",
+                "provider": "পিজি সফট"
+            },
+            "zombieOutbreak": {
+                "name": "জোম্বি আউটব্রেক",
+                "provider": "পিজি সফট"
+            },
+            "fortuneDragon": {
+                "name": "ফরচুন ড্রাগন",
+                "provider": "পিজি সফট"
+            },
+            "anubisWrath": {
+                "name": "অনুবিস রথ",
+                "provider": "পিজি সফট"
+            },
+            "threeCrazyPiggies": {
+                "name": "থ্রি ক্রেজি পিগিজ",
+                "provider": "পিজি সফট"
+            },
+            "oishiDelights": {
+                "name": "ওইশি ডিলাইটস",
+                "provider": "পিজি সফট"
+            },
+            "gemstonesGold": {
+                "name": "জেমস্টোন গোল্ড",
+                "provider": "পিজি সফট"
+            },
+            "sweetieCrush": {
+                "name": "সুইটি ক্রাশ",
+                "provider": "জোকার"
+            },
+            "sourCandy": {
+                "name": "সাওয়ার ক্যান্ডি",
+                "provider": "জোকার"
+            },
+            "zodiacBingo": {
+                "name": "জোডিয়াক বিঙ্গো",
+                "provider": "জোকার"
+            },
+            "huangFeiHong": {
+                "name": "হুয়াং ফেই হং",
+                "provider": "জোকার"
+            },
+            "silverHand": {
+                "name": "সিলভার হ্যান্ড",
+                "provider": "জোকার"
+            }
+        },
+        "allGame": {
+            "ninjaRaccoonFrenzy": {
+                "name": "নিনজা র‍্যাকুন ফ্রেনজি",
+                "provider": "পিজি সফট"
+            },
+            "treasuresOfAztec": {
+                "name": "ট্রেজারস অফ অ্যাজটেক",
+                "provider": "পিজি সফট"
+            },
+            "mahjongWays2": {
+                "name": "মাহজং ওয়েজ ২",
+                "provider": "পিজি সফট"
+            },
+            "luckyNeko": {
+                "name": "লাকি নেকো",
+                "provider": "পিজি সফট"
+            },
+            "mahjongWays": {
+                "name": "মাহজং ওয়েজ",
+                "provider": "পিজি সফট"
+            },
+            "wildBountyShowdown": {
+                "name": "ওয়াইল্ড বাউন্টি শোডাউন",
+                "provider": "পিজি সফট"
+            },
+            "waysOfTheQilin": {
+                "name": "ওয়েজ অফ দ্য কিলিন",
+                "provider": "পিজি সফট"
+            },
+            "wildBandito": {
+                "name": "ওয়াইল্ড বান্দিতো",
+                "provider": "পিজি সফট"
+            },
+            "fortuneRabbit": {
+                "name": "ফরচুন র‍্যাবিট",
+                "provider": "পিজি সফট"
+            },
+            "caishenWins": {
+                "name": "কাইশেন উইন্স",
+                "provider": "পিজি সফট"
+            },
+            "fortuneOx": {
+                "name": "ফরচুন অক্স",
+                "provider": "পিজি সফট"
+            },
+            "ganeshaFortune": {
+                "name": "গণেশা ফরচুন",
+                "provider": "পিজি সফট"
+            }
+        }
+    },
+    "GamesHeader": {
+        "home": "হোম",
+        "demo": "ডেমো",
+        "allGames": "সকল গেম",
+        "popularGames": "জনপ্রিয় গেম",
+        "newGames": "নতুন গেম",
+        "cashDrop": "ক্যাশ ড্রপ",
+        "jackpots": "জ্যাকপট",
+        "megaways": "মেগাওয়েজ",
+        "tableGames": "টেবিল গেম",
+        "searchPlaceholder": "আপনার গেম খুঁজুন",
+        "gameCount": "{count} গেমস"
     }
 }

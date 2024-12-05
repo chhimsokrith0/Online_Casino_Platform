@@ -143,60 +143,6 @@
       }
     }
   },
-  "allGames": {
-    "title": "All Games",
-    "seeAll": "See All",
-    "games": {
-      "ninjaRaccoonFrenzy": {
-        "name": "Ninja Raccoon Frenzy",
-        "provider": "PGSoft"
-      },
-      "treasuresOfAztec": {
-        "name": "Treasures of Aztec",
-        "provider": "PGSoft"
-      },
-      "mahjongWays2": {
-        "name": "Mahjong Ways 2",
-        "provider": "PGSoft"
-      },
-      "luckyNeko": {
-        "name": "Lucky Neko",
-        "provider": "PGSoft"
-      },
-      "mahjongWays": {
-        "name": "Mahjong Ways",
-        "provider": "PGSoft"
-      },
-      "wildBountyShowdown": {
-        "name": "Wild Bounty Showdown",
-        "provider": "PGSoft"
-      },
-      "waysOfTheQilin": {
-        "name": "Ways of the Qilin",
-        "provider": "PGSoft"
-      },
-      "wildBandito": {
-        "name": "Wild Bandito",
-        "provider": "PGSoft"
-      },
-      "fortuneRabbit": {
-        "name": "Fortune Rabbit",
-        "provider": "PGSoft"
-      },
-      "caishenWins": {
-        "name": "Caishen Wins",
-        "provider": "PGSoft"
-      },
-      "fortuneOx": {
-        "name": "Fortune Ox",
-        "provider": "PGSoft"
-      },
-      "ganeshaFortune": {
-        "name": "Ganesha Fortune",
-        "provider": "PGSoft"
-      }
-    }
-  },
   "footer": {
     "gameCategory": "Game Category",
     "categories": {
@@ -337,5 +283,168 @@
       },
       "cashback": "Cashback (%)"
     }
+  },
+  "games": {
+    "GamesDemo": {
+      "waysOfTheQilin": {
+        "name": "Ways of the Qilin",
+        "provider": "PGSoft"
+      },
+      "dragonHatch2": {
+        "name": "Dragon Hatch 2",
+        "provider": "PGSoft"
+      },
+      "futebolFever": {
+        "name": "Futebol Fever",
+        "provider": "PGSoft"
+      },
+      "wildApe": {
+        "name": "Wild Ape",
+        "provider": "PGSoft"
+      },
+      "yakuzaHonor": {
+        "name": "Yakuza Honor",
+        "provider": "PGSoft"
+      },
+      "wingsOfIguazu": {
+        "name": "Wings of Iguazu",
+        "provider": "PGSoft"
+      },
+      "mysticPotion": {
+        "name": "Mystic Potion",
+        "provider": "PGSoft"
+      },
+      "museumMystery": {
+        "name": "Museum Mystery",
+        "provider": "PGSoft"
+      },
+      "chickyRun": {
+        "name": "Chicky Run",
+        "provider": "PGSoft"
+      },
+      "chocolateDeluxe": {
+        "name": "Chocolate Deluxe",
+        "provider": "PGSoft"
+      },
+      "tsarTreasures": {
+        "name": "Tsar Treasures",
+        "provider": "PGSoft"
+      },
+      "rioFantasia": {
+        "name": "Rio Fantasia",
+        "provider": "PGSoft"
+      },
+      "mafiaMayhem": {
+        "name": "Mafia Mayhem",
+        "provider": "PGSoft"
+      },
+      "zombieOutbreak": {
+        "name": "Zombie Outbreak",
+        "provider": "PGSoft"
+      },
+      "fortuneDragon": {
+        "name": "Fortune Dragon",
+        "provider": "PGSoft"
+      },
+      "anubisWrath": {
+        "name": "Anubis Wrath",
+        "provider": "PGSoft"
+      },
+      "threeCrazyPiggies": {
+        "name": "Three Crazy Piggies",
+        "provider": "PGSoft"
+      },
+      "oishiDelights": {
+        "name": "Oishi Delights",
+        "provider": "PGSoft"
+      },
+      "gemstonesGold": {
+        "name": "Gemstones Gold",
+        "provider": "PGSoft"
+      },
+      "sweetieCrush": {
+        "name": "Sweetie Crush",
+        "provider": "Joker"
+      },
+      "sourCandy": {
+        "name": "Sour Candy",
+        "provider": "Joker"
+      },
+      "zodiacBingo": {
+        "name": "Zodiac Bingo",
+        "provider": "Joker"
+      },
+      "huangFeiHong": {
+        "name": "Huang Fei Hong",
+        "provider": "Joker"
+      },
+      "silverHand": {
+        "name": "Silver Hand",
+        "provider": "Joker"
+      }
+    },
+    "allGame": {
+      "ninjaRaccoonFrenzy": {
+        "name": "Ninja Raccoon Frenzy",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "Treasures of Aztec",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "Mahjong Ways 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "Lucky Neko",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "Mahjong Ways",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "Wild Bounty Showdown",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "Ways of the Qilin",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "Wild Bandito",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "Fortune Rabbit",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "Caishen Wins",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "Fortune Ox",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "Ganesha Fortune",
+        "provider": "PGSoft"
+      }
+    }
+  },
+  "GamesHeader": {
+    "home": "Home",
+    "demo": "Demo",
+    "allGames": "All Games",
+    "popularGames": "Popular Games",
+    "newGames": "New Games",
+    "cashDrop": "Cash Drop",
+    "jackpots": "Jackpots",
+    "megaways": "Megaways",
+    "tableGames": "Table Games",
+    "searchPlaceholder": "Find your game",
+    "gameCount": "{count} Games"
   }
 }

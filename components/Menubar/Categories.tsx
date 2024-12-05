@@ -15,14 +15,14 @@ import { gsap } from "gsap";
 
 const Categories = ({ t, locale }: { t: any; locale: string }) => {
   const categories = [
-    { id: 1, name: t("demo"), icon: <span className="text-green-500 text-lg font-bold">▶</span>, link: `/${locale}/Games`, active: false },
-    { id: 2, name: t("allGames"), icon: <FontAwesomeIcon icon={faDice} />, link: `/${locale}/Games`, active: true },
-    { id: 3, name: t("popularGames"), icon: <FontAwesomeIcon icon={faCrown} />, link: `/${locale}/Games`, active: false },
-    { id: 4, name: t("newGames"), icon: <FontAwesomeIcon icon={faGift} />, link: `/${locale}/Games`, active: false },
-    { id: 5, name: t("cashDrop"), icon: <FontAwesomeIcon icon={faChartLine} />, link: `/${locale}/Games`, active: false },
-    { id: 6, name: t("jackpots"), icon: <FontAwesomeIcon icon={faTrophy} />, link: `/${locale}/Games`, active: false },
-    { id: 7, name: t("megaways"), icon: <span className="text-lg font-bold">M</span>, link: `/${locale}/Games`, active: false },
-    { id: 8, name: t("tableGames"), icon: <FontAwesomeIcon icon={faTable} />, link: `/${locale}/Games`, active: false },
+    { id: 1, name: t("demo"), icon: <span className="text-lg font-bold">▶</span>, link: `/${locale}/Games/all`, active: false },
+    { id: 2, name: t("allGames"), icon: <FontAwesomeIcon icon={faDice} />, link: `/${locale}/Games/all`, active: true },
+    { id: 3, name: t("popularGames"), icon: <FontAwesomeIcon icon={faCrown} />, link: `/${locale}/Games/all`, active: false },
+    { id: 4, name: t("newGames"), icon: <FontAwesomeIcon icon={faGift} />, link: `/${locale}/Games/all`, active: false },
+    { id: 5, name: t("cashDrop"), icon: <FontAwesomeIcon icon={faChartLine} />, link: `/${locale}/Games/all`, active: false },
+    { id: 6, name: t("jackpots"), icon: <FontAwesomeIcon icon={faTrophy} />, link: `/${locale}/Games/all`, active: false },
+    { id: 7, name: t("megaways"), icon: <span className="text-lg font-bold">M</span>, link: `/${locale}/Games/all`, active: false },
+    { id: 8, name: t("tableGames"), icon: <FontAwesomeIcon icon={faTable} />, link: `/${locale}/Games/all`, active: false },
   ];
 
   const categoryRefs = useRef<HTMLDivElement[]>([]); // Updated type for refs

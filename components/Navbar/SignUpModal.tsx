@@ -72,7 +72,10 @@ const SignupModal: React.FC<SignupModalProps> = ({
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Simulate login validation
     if (username === "admin" && password === "123") {
+      localStorage.setItem("isLoggedIn", "true"); // Save login state to localStorage
       setHideSignupModal(true); // Hide SignupModal
       setIsLoginModalOpen(true); // Show confirmation modal
     } else {
@@ -82,16 +85,18 @@ const SignupModal: React.FC<SignupModalProps> = ({
 
   const handleSignUp = (e: React.FormEvent) => {
     e.preventDefault();
+
     if (password !== confirmPassword) {
       setErrorMessage("Passwords do not match.");
       return;
     }
+
     setErrorMessage("");
     setIsLoginModalOpen(true);
   };
 
   const confirmLogin = () => {
-    setIsLoggedIn(true);
+    setIsLoggedIn(true); // Update parent state
     setIsLoginModalOpen(false); // Close confirmation modal
     onClose(); // Close the Signup/Login modal
   };
@@ -100,7 +105,7 @@ const SignupModal: React.FC<SignupModalProps> = ({
     <>
       {!hideSignupModal && (
         <div
-          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-70"
+          className="fixed inset-0 z-100 flex items-center justify-center bg-black bg-opacity-70"
           role="dialog"
           aria-modal="true"
         >

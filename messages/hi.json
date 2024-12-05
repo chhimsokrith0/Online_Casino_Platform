@@ -337,5 +337,168 @@
             },
             "cashback": "कैशबैक (%)"
         }
+    },
+    "games": {
+        "GamesDemo": {
+            "waysOfTheQilin": {
+                "name": "वेज़ ऑफ द किलिन",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "dragonHatch2": {
+                "name": "ड्रैगन हैच 2",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "futebolFever": {
+                "name": "फुटबॉल फीवर",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "wildApe": {
+                "name": "वाइल्ड एप",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "yakuzaHonor": {
+                "name": "याकुज़ा ऑनर",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "wingsOfIguazu": {
+                "name": "विंग्स ऑफ इगुआज़ू",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "mysticPotion": {
+                "name": "मिस्टिक पोशन",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "museumMystery": {
+                "name": "म्यूजियम मिस्ट्री",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "chickyRun": {
+                "name": "चिकी रन",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "chocolateDeluxe": {
+                "name": "चॉकलेट डीलक्स",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "tsarTreasures": {
+                "name": "त्सार ट्रेज़र्स",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "rioFantasia": {
+                "name": "रियो फैंटासिया",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "mafiaMayhem": {
+                "name": "माफिया मेहम",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "zombieOutbreak": {
+                "name": "ज़ॉम्बी आउटब्रेक",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "fortuneDragon": {
+                "name": "फॉर्च्यून ड्रैगन",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "anubisWrath": {
+                "name": "अनुबिस रथ",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "threeCrazyPiggies": {
+                "name": "थ्री क्रेज़ी पिगीज़",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "oishiDelights": {
+                "name": "ओइशी डिलाइट्स",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "gemstonesGold": {
+                "name": "जेमस्टोन्स गोल्ड",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "sweetieCrush": {
+                "name": "स्वीटी क्रश",
+                "provider": "जोकर"
+            },
+            "sourCandy": {
+                "name": "सॉर कैंडी",
+                "provider": "जोकर"
+            },
+            "zodiacBingo": {
+                "name": "ज़ोडियाक बिंगो",
+                "provider": "जोकर"
+            },
+            "huangFeiHong": {
+                "name": "हुआंग फेई हांग",
+                "provider": "जोकर"
+            },
+            "silverHand": {
+                "name": "सिल्वर हैंड",
+                "provider": "जोकर"
+            }
+        },
+        "allGame": {
+            "ninjaRaccoonFrenzy": {
+                "name": "निंजा रैकून फ्रेंज़ी",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "treasuresOfAztec": {
+                "name": "ट्रेज़र्स ऑफ एज़टेक",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "mahjongWays2": {
+                "name": "माहजोंग वेज़ 2",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "luckyNeko": {
+                "name": "लकी नेको",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "mahjongWays": {
+                "name": "माहजोंग वेज़",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "wildBountyShowdown": {
+                "name": "वाइल्ड बाउंटी शोडाउन",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "waysOfTheQilin": {
+                "name": "वेज़ ऑफ द किलिन",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "wildBandito": {
+                "name": "वाइल्ड बंडिटो",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "fortuneRabbit": {
+                "name": "फॉर्च्यून रैबिट",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "caishenWins": {
+                "name": "कैशेन विन्स",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "fortuneOx": {
+                "name": "फॉर्च्यून ऑक्स",
+                "provider": "पीजी सॉफ्ट"
+            },
+            "ganeshaFortune": {
+                "name": "गणेश फॉर्च्यून",
+                "provider": "पीजी सॉफ्ट"
+            }
+        }
+    },
+    "GamesHeader": {
+        "home": "होम",
+        "demo": "डेमो",
+        "allGames": "सभी गेम्स",
+        "popularGames": "लोकप्रिय गेम्स",
+        "newGames": "नए गेम्स",
+        "cashDrop": "कैश ड्रॉप",
+        "jackpots": "जैकपॉट्स",
+        "megaways": "मेगावेज़",
+        "tableGames": "टेबल गेम्स",
+        "searchPlaceholder": "अपना गेम खोजें",
+        "gameCount": "{count} गेम्स"
     }
 }
