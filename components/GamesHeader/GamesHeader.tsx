@@ -168,7 +168,9 @@ const GamesHeader: React.FC<GamesHeaderProps> = ({
 
       {/* Title and Game Count */}
       <div className="flex justify-between items-center mb-4">
-        <h1 className="text-white text-2xl font-bold">{pageName}</h1>
+        <div className="">
+          <h1 className="text-white text-2xl font-bold">{pageName}</h1>
+        </div>
         <span className="text-gray-400">{t("gameCount", { count: gameCount })}</span>
       </div>
 
@@ -186,11 +188,10 @@ const GamesHeader: React.FC<GamesHeaderProps> = ({
               className="cursor-pointer"
             >
               <div
-                className={`flex flex-col items-center text-center ${
-                  currentCategory === category.link
-                    ? "text-yellow-500 font-semibold"
-                    : "text-gray-400 hover:text-yellow-500"
-                } transition duration-300`}
+                className={`flex flex-col items-center text-center ${currentCategory === category.link
+                  ? "text-yellow-500 font-semibold"
+                  : "text-gray-400 hover:text-yellow-500"
+                  } transition duration-300`}
               >
                 <span className="text-xl mb-1">{category.icon}</span>
                 <span className="text-sm whitespace-nowrap">{category.name}</span>

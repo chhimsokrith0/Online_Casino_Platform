@@ -337,5 +337,168 @@
             },
             "cashback": "現金回饋 (%)"
         }
+    },
+    "games": {
+        "GamesDemo": {
+            "waysOfTheQilin": {
+                "name": "麒麟之路",
+                "provider": "PGSoft"
+            },
+            "dragonHatch2": {
+                "name": "龍之孵化2",
+                "provider": "PGSoft"
+            },
+            "futebolFever": {
+                "name": "足球狂熱",
+                "provider": "PGSoft"
+            },
+            "wildApe": {
+                "name": "狂野猿人",
+                "provider": "PGSoft"
+            },
+            "yakuzaHonor": {
+                "name": "極道榮譽",
+                "provider": "PGSoft"
+            },
+            "wingsOfIguazu": {
+                "name": "伊瓜蘇之翼",
+                "provider": "PGSoft"
+            },
+            "mysticPotion": {
+                "name": "神秘藥劑",
+                "provider": "PGSoft"
+            },
+            "museumMystery": {
+                "name": "博物館之謎",
+                "provider": "PGSoft"
+            },
+            "chickyRun": {
+                "name": "小雞快跑",
+                "provider": "PGSoft"
+            },
+            "chocolateDeluxe": {
+                "name": "巧克力豪華版",
+                "provider": "PGSoft"
+            },
+            "tsarTreasures": {
+                "name": "沙皇的珍寶",
+                "provider": "PGSoft"
+            },
+            "rioFantasia": {
+                "name": "里約奇幻",
+                "provider": "PGSoft"
+            },
+            "mafiaMayhem": {
+                "name": "黑手黨混亂",
+                "provider": "PGSoft"
+            },
+            "zombieOutbreak": {
+                "name": "殭屍暴動",
+                "provider": "PGSoft"
+            },
+            "fortuneDragon": {
+                "name": "財富龍",
+                "provider": "PGSoft"
+            },
+            "anubisWrath": {
+                "name": "阿努比斯之怒",
+                "provider": "PGSoft"
+            },
+            "threeCrazyPiggies": {
+                "name": "三隻瘋狂小豬",
+                "provider": "PGSoft"
+            },
+            "oishiDelights": {
+                "name": "美味驚喜",
+                "provider": "PGSoft"
+            },
+            "gemstonesGold": {
+                "name": "寶石黃金",
+                "provider": "PGSoft"
+            },
+            "sweetieCrush": {
+                "name": "甜心消消樂",
+                "provider": "Joker"
+            },
+            "sourCandy": {
+                "name": "酸糖",
+                "provider": "Joker"
+            },
+            "zodiacBingo": {
+                "name": "星座賓果",
+                "provider": "Joker"
+            },
+            "huangFeiHong": {
+                "name": "黃飛鴻",
+                "provider": "Joker"
+            },
+            "silverHand": {
+                "name": "銀手",
+                "provider": "Joker"
+            }
+        },
+        "allGame": {
+            "ninjaRaccoonFrenzy": {
+                "name": "忍者浣熊狂熱",
+                "provider": "PGSoft"
+            },
+            "treasuresOfAztec": {
+                "name": "阿茲特克珍寶",
+                "provider": "PGSoft"
+            },
+            "mahjongWays2": {
+                "name": "麻將之道2",
+                "provider": "PGSoft"
+            },
+            "luckyNeko": {
+                "name": "幸運貓",
+                "provider": "PGSoft"
+            },
+            "mahjongWays": {
+                "name": "麻將之道",
+                "provider": "PGSoft"
+            },
+            "wildBountyShowdown": {
+                "name": "狂野賞金對決",
+                "provider": "PGSoft"
+            },
+            "waysOfTheQilin": {
+                "name": "麒麟之路",
+                "provider": "PGSoft"
+            },
+            "wildBandito": {
+                "name": "狂野強盜",
+                "provider": "PGSoft"
+            },
+            "fortuneRabbit": {
+                "name": "財運兔",
+                "provider": "PGSoft"
+            },
+            "caishenWins": {
+                "name": "財神贏錢",
+                "provider": "PGSoft"
+            },
+            "fortuneOx": {
+                "name": "財運牛",
+                "provider": "PGSoft"
+            },
+            "ganeshaFortune": {
+                "name": "象神財運",
+                "provider": "PGSoft"
+            }
+        }
+    },
+    "GamesHeader": {
+        "home": "主頁",
+        "demo": "試玩",
+        "allGames": "全部遊戲",
+        "popularGames": "熱門遊戲",
+        "newGames": "新遊戲",
+        "cashDrop": "現金掉落",
+        "jackpots": "累積獎金",
+        "megaways": "多贏線",
+        "tableGames": "桌面遊戲",
+        "searchPlaceholder": "搜尋您的遊戲",
+        "gameCount": "{count} 遊戲"
     }
 }

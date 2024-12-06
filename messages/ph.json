@@ -237,5 +237,268 @@
     "signUp": "Mag-sign Up",
     "liveCasino": "Live Casino",
     "promo": "Promo"
+  },
+  "RewardSection": {
+    "mainTitle": "Palayain ang Walang Hanggang Gantimpala",
+    "mainSubtitle": "Magparehistro ngayon at simulan ang buhay na puno ng kasiyahan mula sa mga gantimpala. Buksan ang walang limitasyong premyo.",
+    "joinButton": "Sumali sa PlayGame168",
+    "steps": {
+      "step1": "Magrehistro at mag-deposito",
+      "step2": "Laruin ang iyong mga paboritong laro",
+      "step3": "Tubusin ang iyong mga gantimpala"
+    },
+    "enjoyOurGames": {
+      "title": "Tangkilikin ang Aming mga Laro!",
+      "description": "Sa Live Casino House, nagbibigay kami ng higit sa 4,000 nakaka-excite na mga laro para sa iyo.",
+      "button": "I-claim ang Iyong Gantimpala"
+    },
+    "enjoyOurPromotions": {
+      "title": "Tangkilikin ang Aming mga Promosyon!",
+      "description": "Magdeposito ngayon at buksan ang aming mga eksklusibong espesyal na gantimpala.",
+      "button": "I-claim ang Iyong Gantimpala"
+    },
+    "benefitsSection": {
+      "title": "Tangkilikin ang Maraming Libreng Gantimpala",
+      "benefits": {
+        "questHub": {
+          "title": "Pang-araw-araw na Hamon",
+          "description": "Tapusin ang mga pang-araw-araw at lingguhang hamon upang mabilis na palaguin ang iyong kita.",
+          "tag": "Araw-araw at Lingguhan"
+        },
+        "loyaltyVip": {
+          "title": "VIP Pribilehiyo",
+          "description": "Iangat ang iyong karanasan gamit ang eksklusibong pribilehiyo sa VIP Club.",
+          "tag": "Araw-araw at Lingguhan"
+        },
+        "tournament": {
+          "title": "Torneo",
+          "description": "Makipagkompetensya sa mga torneo upang makuha ang malalaking panalo. Lumaban, magtagumpay, manalo!",
+          "tag": "Lingguhan"
+        }
+      }
+    },
+    "introducingExclusive": {
+      "title": "Ipinapakilala ang mga Eksklusibong Gantimpala",
+      "description": "Simulan ang iyong pakikipagsapalaran gamit ang aming eksklusibong sistema at tuklasin ang kamangha-manghang mga gantimpala ngayon. Huwag palampasin ito!",
+      "joinButton": "Sumali sa PlayGame168 Ngayon →",
+      "features": {
+        "activation": {
+          "title": "Aktibasyon",
+          "description": "Tapusin ang mga hamon upang maabot ang pinakamataas na antas ng tagumpay."
+        },
+        "bonus": {
+          "title": "Bonus",
+          "description": "Kunin ang iba't ibang pang-araw-araw at lingguhang bonus nang madali."
+        },
+        "rewardTier": {
+          "title": "Antas ng Gantimpala",
+          "description": "Umakyat sa antas at makuha ang mas malaking gantimpala."
+        }
+      }
+    },
+    "deluxeExperience": {
+      "title": "Ipinagmamalaki naming Mag-alok ng Deluxe na mga Laro",
+      "button": "Magparehistro Ngayon"
+    }
+  },
+  "MemberLevel": {
+    "mainTitle": "Buksan ang Iyong Mga Espesyal na Antas",
+    "mainSubtitle": "Makamit ang espesyal na mga antas at maranasan ang hindi kapani-paniwalang mga gantimpala habang ikaw ay umaakyat.",
+    "joinButton": "Kunin ang Iyong Antas",
+    "exclusiveBenefits": {
+      "title": "Eksklusibong Mga Benepisyo ng VIP",
+      "benefits": {
+        "levelsRewards": {
+          "title": "Mga Antas at Gantimpala",
+          "description": "Mas maraming paglalaro, mas mataas ang antas na mararating."
+        },
+        "exclusivePromotions": {
+          "title": "Eksklusibong Mga Promosyon",
+          "description": "Buksan ang espesyal na mga gantimpala sa iyong pag-akyat sa antas."
+        },
+        "higherCashback": {
+          "title": "Mas Mataas na Cashback",
+          "description": "Makakuha ng cashback hanggang sa 12%."
+        },
+        "royaltyClub": {
+          "title": "Royalty Club",
+          "description": "Tangkilikin ang mga espesyal na pribilehiyo sa VIP Club para sa eksklusibong mga gantimpala."
+        }
+      }
+    },
+    "carousel": {
+      "levels": {
+        "bronze": "Bronze",
+        "silver": "Silver",
+        "gold": "Gold",
+        "diamond": "Diamond",
+        "platinum": "Platinum",
+        "black": "Black"
+      },
+      "cashback": "Cashback (%)"
+    }
+  },
+  "games": {
+    "GamesDemo": {
+      "waysOfTheQilin": {
+        "name": "Mga Daan ng Qilin",
+        "provider": "PGSoft"
+      },
+      "dragonHatch2": {
+        "name": "Pugad ng Dragon 2",
+        "provider": "PGSoft"
+      },
+      "futebolFever": {
+        "name": "Lagnat ng Football",
+        "provider": "PGSoft"
+      },
+      "wildApe": {
+        "name": "Mabangis na Unggoy",
+        "provider": "PGSoft"
+      },
+      "yakuzaHonor": {
+        "name": "Karangalan ng Yakuza",
+        "provider": "PGSoft"
+      },
+      "wingsOfIguazu": {
+        "name": "Mga Pakpak ng Iguazu",
+        "provider": "PGSoft"
+      },
+      "mysticPotion": {
+        "name": "Mahiwagang Elixir",
+        "provider": "PGSoft"
+      },
+      "museumMystery": {
+        "name": "Misteryo ng Museo",
+        "provider": "PGSoft"
+      },
+      "chickyRun": {
+        "name": "Takbo ng Sisiw",
+        "provider": "PGSoft"
+      },
+      "chocolateDeluxe": {
+        "name": "Deluxe na Tsokolate",
+        "provider": "PGSoft"
+      },
+      "tsarTreasures": {
+        "name": "Kayamanan ng Tsar",
+        "provider": "PGSoft"
+      },
+      "rioFantasia": {
+        "name": "Fantasya ng Rio",
+        "provider": "PGSoft"
+      },
+      "mafiaMayhem": {
+        "name": "Gulo ng Mafia",
+        "provider": "PGSoft"
+      },
+      "zombieOutbreak": {
+        "name": "Pagkalat ng Zombie",
+        "provider": "PGSoft"
+      },
+      "fortuneDragon": {
+        "name": "Maswerteng Dragon",
+        "provider": "PGSoft"
+      },
+      "anubisWrath": {
+        "name": "Galit ni Anubis",
+        "provider": "PGSoft"
+      },
+      "threeCrazyPiggies": {
+        "name": "Tatlong Baliw na Baboy",
+        "provider": "PGSoft"
+      },
+      "oishiDelights": {
+        "name": "Ligaya ng Oishi",
+        "provider": "PGSoft"
+      },
+      "gemstonesGold": {
+        "name": "Gintong Hiyas",
+        "provider": "PGSoft"
+      },
+      "sweetieCrush": {
+        "name": "Matamis na Laman",
+        "provider": "Joker"
+      },
+      "sourCandy": {
+        "name": "Maasim na Kendi",
+        "provider": "Joker"
+      },
+      "zodiacBingo": {
+        "name": "Bingo ng Zodiac",
+        "provider": "Joker"
+      },
+      "huangFeiHong": {
+        "name": "Huang Fei Hong",
+        "provider": "Joker"
+      },
+      "silverHand": {
+        "name": "Pilak na Kamay",
+        "provider": "Joker"
+      }
+    },
+    "allGame": {
+      "ninjaRaccoonFrenzy": {
+        "name": "Frenzy ng Ninja Raccoon",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "Kayamanan ng Aztec",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "Mga Paraan ng Mahjong 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "Maswerteng Pusa",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "Mga Paraan ng Mahjong",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "Mabangis na Bounty Showdown",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "Mga Daan ng Qilin",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "Mabangis na Bandito",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "Maswerteng Kuneho",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "Panalo ni Caishen",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "Maswerteng Baka",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "Kayamanan ni Ganesha",
+        "provider": "PGSoft"
+      }
+    }
+  },
+  "GamesHeader": {
+    "home": "Home",
+    "demo": "Demo",
+    "allGames": "Lahat ng Laro",
+    "popularGames": "Sikat na Laro",
+    "newGames": "Bagong Laro",
+    "cashDrop": "Cash Drop",
+    "jackpots": "Jackpots",
+    "megaways": "Megaways",
+    "tableGames": "Table Games",
+    "searchPlaceholder": "Hanapin ang iyong laro",
+    "gameCount": "{count} Laro"
   }
 }

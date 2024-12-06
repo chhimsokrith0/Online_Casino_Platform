@@ -337,5 +337,168 @@
             },
             "cashback": "캐시백 (%)"
         }
+    },
+    "games": {
+        "GamesDemo": {
+            "waysOfTheQilin": {
+                "name": "기린의 길",
+                "provider": "PGSoft"
+            },
+            "dragonHatch2": {
+                "name": "드래곤 해치 2",
+                "provider": "PGSoft"
+            },
+            "futebolFever": {
+                "name": "축구 열풍",
+                "provider": "PGSoft"
+            },
+            "wildApe": {
+                "name": "야생 원숭이",
+                "provider": "PGSoft"
+            },
+            "yakuzaHonor": {
+                "name": "야쿠자의 명예",
+                "provider": "PGSoft"
+            },
+            "wingsOfIguazu": {
+                "name": "이구아수의 날개",
+                "provider": "PGSoft"
+            },
+            "mysticPotion": {
+                "name": "신비한 물약",
+                "provider": "PGSoft"
+            },
+            "museumMystery": {
+                "name": "박물관의 미스터리",
+                "provider": "PGSoft"
+            },
+            "chickyRun": {
+                "name": "병아리 달리기",
+                "provider": "PGSoft"
+            },
+            "chocolateDeluxe": {
+                "name": "초콜릿 디럭스",
+                "provider": "PGSoft"
+            },
+            "tsarTreasures": {
+                "name": "차르의 보물",
+                "provider": "PGSoft"
+            },
+            "rioFantasia": {
+                "name": "리오 판타지아",
+                "provider": "PGSoft"
+            },
+            "mafiaMayhem": {
+                "name": "마피아의 혼돈",
+                "provider": "PGSoft"
+            },
+            "zombieOutbreak": {
+                "name": "좀비 발발",
+                "provider": "PGSoft"
+            },
+            "fortuneDragon": {
+                "name": "행운의 용",
+                "provider": "PGSoft"
+            },
+            "anubisWrath": {
+                "name": "아누비스의 분노",
+                "provider": "PGSoft"
+            },
+            "threeCrazyPiggies": {
+                "name": "세 마리 미친 돼지",
+                "provider": "PGSoft"
+            },
+            "oishiDelights": {
+                "name": "오이시의 기쁨",
+                "provider": "PGSoft"
+            },
+            "gemstonesGold": {
+                "name": "보석 금",
+                "provider": "PGSoft"
+            },
+            "sweetieCrush": {
+                "name": "스위티 크러쉬",
+                "provider": "Joker"
+            },
+            "sourCandy": {
+                "name": "새콤달콤 캔디",
+                "provider": "Joker"
+            },
+            "zodiacBingo": {
+                "name": "조디악 빙고",
+                "provider": "Joker"
+            },
+            "huangFeiHong": {
+                "name": "황비홍",
+                "provider": "Joker"
+            },
+            "silverHand": {
+                "name": "실버 핸드",
+                "provider": "Joker"
+            }
+        },
+        "allGame": {
+            "ninjaRaccoonFrenzy": {
+                "name": "닌자 너구리 열풍",
+                "provider": "PGSoft"
+            },
+            "treasuresOfAztec": {
+                "name": "아즈텍의 보물",
+                "provider": "PGSoft"
+            },
+            "mahjongWays2": {
+                "name": "마작의 길 2",
+                "provider": "PGSoft"
+            },
+            "luckyNeko": {
+                "name": "행운의 네코",
+                "provider": "PGSoft"
+            },
+            "mahjongWays": {
+                "name": "마작의 길",
+                "provider": "PGSoft"
+            },
+            "wildBountyShowdown": {
+                "name": "야생 현상금 대결",
+                "provider": "PGSoft"
+            },
+            "waysOfTheQilin": {
+                "name": "기린의 길",
+                "provider": "PGSoft"
+            },
+            "wildBandito": {
+                "name": "야생 반디토",
+                "provider": "PGSoft"
+            },
+            "fortuneRabbit": {
+                "name": "행운의 토끼",
+                "provider": "PGSoft"
+            },
+            "caishenWins": {
+                "name": "재신의 승리",
+                "provider": "PGSoft"
+            },
+            "fortuneOx": {
+                "name": "행운의 소",
+                "provider": "PGSoft"
+            },
+            "ganeshaFortune": {
+                "name": "가네샤의 행운",
+                "provider": "PGSoft"
+            }
+        }
+    },
+    "GamesHeader": {
+        "home": "홈",
+        "demo": "데모",
+        "allGames": "모든 게임",
+        "popularGames": "인기 게임",
+        "newGames": "새로운 게임",
+        "cashDrop": "현금 드롭",
+        "jackpots": "잭팟",
+        "megaways": "메가웨이즈",
+        "tableGames": "테이블 게임",
+        "searchPlaceholder": "게임 찾기",
+        "gameCount": "{count} 게임"
     }
 }

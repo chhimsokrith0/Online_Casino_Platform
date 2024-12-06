@@ -337,5 +337,168 @@
             },
             "cashback": "کیش بیک (%)"
         }
+    },
+    "games": {
+        "GamesDemo": {
+            "waysOfTheQilin": {
+                "name": "قیلین کے راستے",
+                "provider": "PGSoft"
+            },
+            "dragonHatch2": {
+                "name": "ڈریگن کا دوسرا انڈہ",
+                "provider": "PGSoft"
+            },
+            "futebolFever": {
+                "name": "فٹبال بخار",
+                "provider": "PGSoft"
+            },
+            "wildApe": {
+                "name": "جنگلی بندر",
+                "provider": "PGSoft"
+            },
+            "yakuzaHonor": {
+                "name": "یاکوزا کی عزت",
+                "provider": "PGSoft"
+            },
+            "wingsOfIguazu": {
+                "name": "اِگوازُو کے پر",
+                "provider": "PGSoft"
+            },
+            "mysticPotion": {
+                "name": "پراسرار دوا",
+                "provider": "PGSoft"
+            },
+            "museumMystery": {
+                "name": "عجائب گھر کا راز",
+                "provider": "PGSoft"
+            },
+            "chickyRun": {
+                "name": "چکن کی دوڑ",
+                "provider": "PGSoft"
+            },
+            "chocolateDeluxe": {
+                "name": "چاکلیٹ ڈیلکس",
+                "provider": "PGSoft"
+            },
+            "tsarTreasures": {
+                "name": "زار کے خزانے",
+                "provider": "PGSoft"
+            },
+            "rioFantasia": {
+                "name": "ریو کا خواب",
+                "provider": "PGSoft"
+            },
+            "mafiaMayhem": {
+                "name": "مافیا کی ہلچل",
+                "provider": "PGSoft"
+            },
+            "zombieOutbreak": {
+                "name": "زومبی کا پھیلاؤ",
+                "provider": "PGSoft"
+            },
+            "fortuneDragon": {
+                "name": "خوش قسمتی کا ڈریگن",
+                "provider": "PGSoft"
+            },
+            "anubisWrath": {
+                "name": "انوپس کا غضب",
+                "provider": "PGSoft"
+            },
+            "threeCrazyPiggies": {
+                "name": "تین پاگل سور",
+                "provider": "PGSoft"
+            },
+            "oishiDelights": {
+                "name": "اویشی کے لذیذ کھانے",
+                "provider": "PGSoft"
+            },
+            "gemstonesGold": {
+                "name": "قیمتی پتھر اور سونا",
+                "provider": "PGSoft"
+            },
+            "sweetieCrush": {
+                "name": "میٹھی کرش",
+                "provider": "Joker"
+            },
+            "sourCandy": {
+                "name": "کھٹی کینڈی",
+                "provider": "Joker"
+            },
+            "zodiacBingo": {
+                "name": "زودیاک بنگو",
+                "provider": "Joker"
+            },
+            "huangFeiHong": {
+                "name": "ہوانگ فی ہونگ",
+                "provider": "Joker"
+            },
+            "silverHand": {
+                "name": "چاندی کا ہاتھ",
+                "provider": "Joker"
+            }
+        },
+        "allGame": {
+            "ninjaRaccoonFrenzy": {
+                "name": "نینجا ریکون کی دھوم",
+                "provider": "PGSoft"
+            },
+            "treasuresOfAztec": {
+                "name": "ایزٹیک کے خزانے",
+                "provider": "PGSoft"
+            },
+            "mahjongWays2": {
+                "name": "ماہجونگ کے راستے 2",
+                "provider": "PGSoft"
+            },
+            "luckyNeko": {
+                "name": "خوش قسمت بلی",
+                "provider": "PGSoft"
+            },
+            "mahjongWays": {
+                "name": "ماہجونگ کے راستے",
+                "provider": "PGSoft"
+            },
+            "wildBountyShowdown": {
+                "name": "جنگلی انعامات کا مقابلہ",
+                "provider": "PGSoft"
+            },
+            "waysOfTheQilin": {
+                "name": "قیلین کے راستے",
+                "provider": "PGSoft"
+            },
+            "wildBandito": {
+                "name": "جنگلی ڈاکو",
+                "provider": "PGSoft"
+            },
+            "fortuneRabbit": {
+                "name": "خوش قسمت خرگوش",
+                "provider": "PGSoft"
+            },
+            "caishenWins": {
+                "name": "کائشن کی جیت",
+                "provider": "PGSoft"
+            },
+            "fortuneOx": {
+                "name": "خوش قسمت بیل",
+                "provider": "PGSoft"
+            },
+            "ganeshaFortune": {
+                "name": "گنیش کی خوش قسمتی",
+                "provider": "PGSoft"
+            }
+        }
+    },
+    "GamesHeader": {
+        "home": "ہوم",
+        "demo": "ڈیمو",
+        "allGames": "تمام گیمز",
+        "popularGames": "مشہور گیمز",
+        "newGames": "نئے گیمز",
+        "cashDrop": "کیش ڈراپ",
+        "jackpots": "جیک پاٹس",
+        "megaways": "میگا ویز",
+        "tableGames": "ٹیبل گیمز",
+        "searchPlaceholder": "اپنا گیم تلاش کریں",
+        "gameCount": "{count} گیمز"
     }
 }

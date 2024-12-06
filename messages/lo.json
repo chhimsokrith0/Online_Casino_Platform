@@ -337,5 +337,168 @@
       },
       "cashback": "ເງິນຄືນ (%)"
     }
+  },
+  "games": {
+    "GamesDemo": {
+      "waysOfTheQilin": {
+        "name": "ທາງຂອງ Qilin",
+        "provider": "PGSoft"
+      },
+      "dragonHatch2": {
+        "name": "ໄຂ່ມັງກອນ 2",
+        "provider": "PGSoft"
+      },
+      "futebolFever": {
+        "name": "ໄຂ້ສູບບານ",
+        "provider": "PGSoft"
+      },
+      "wildApe": {
+        "name": "ລິງປ່າ",
+        "provider": "PGSoft"
+      },
+      "yakuzaHonor": {
+        "name": "ກຽດຕິຍົດ Yakuza",
+        "provider": "PGSoft"
+      },
+      "wingsOfIguazu": {
+        "name": "ປີກຂອງ Iguazu",
+        "provider": "PGSoft"
+      },
+      "mysticPotion": {
+        "name": "ຢາປະຫວັດສາດ",
+        "provider": "PGSoft"
+      },
+      "museumMystery": {
+        "name": "ປິດສະໜາຂອງພິພິດທະພັນ",
+        "provider": "PGSoft"
+      },
+      "chickyRun": {
+        "name": "ໄກ່ນ້ອຍແລ່ນ",
+        "provider": "PGSoft"
+      },
+      "chocolateDeluxe": {
+        "name": "ຊອກໂກແລດດິລັກ",
+        "provider": "PGSoft"
+      },
+      "tsarTreasures": {
+        "name": "ສົມບັດ Tsar",
+        "provider": "PGSoft"
+      },
+      "rioFantasia": {
+        "name": "ຄວາມຝັນຂອງ Rio",
+        "provider": "PGSoft"
+      },
+      "mafiaMayhem": {
+        "name": "ຄວາມວຸ້ນວາຍຂອງ Mafia",
+        "provider": "PGSoft"
+      },
+      "zombieOutbreak": {
+        "name": "ການແຜ່ລະບາດ Zombie",
+        "provider": "PGSoft"
+      },
+      "fortuneDragon": {
+        "name": "ມັງກອນໂຊກດີ",
+        "provider": "PGSoft"
+      },
+      "anubisWrath": {
+        "name": "ຄວາມໃຈຮ້າຍ Anubis",
+        "provider": "PGSoft"
+      },
+      "threeCrazyPiggies": {
+        "name": "ຫມູບ້າສາມຕົວ",
+        "provider": "PGSoft"
+      },
+      "oishiDelights": {
+        "name": "ຄວາມສຸກ Oishi",
+        "provider": "PGSoft"
+      },
+      "gemstonesGold": {
+        "name": "ທອງຄຳອັນມີຄ່າ",
+        "provider": "PGSoft"
+      },
+      "sweetieCrush": {
+        "name": "ແທບແຫຼ່ງນ້ຳຕານ",
+        "provider": "Joker"
+      },
+      "sourCandy": {
+        "name": "ນ້ຳຕານຂົມ",
+        "provider": "Joker"
+      },
+      "zodiacBingo": {
+        "name": "ບິງໂກຣາສີ",
+        "provider": "Joker"
+      },
+      "huangFeiHong": {
+        "name": "ຫວັງເຟຍຮົງ",
+        "provider": "Joker"
+      },
+      "silverHand": {
+        "name": "ມືເງິນ",
+        "provider": "Joker"
+      }
+    },
+    "allGame": {
+      "ninjaRaccoonFrenzy": {
+        "name": "ຄວາມບ້ານິນຈາ",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "ສົມບັດ Aztec",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "ເສັ້ນທາງ Mahjong 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "ແມວໂຊກດີ",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "ເສັ້ນທາງ Mahjong",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "ການປະຊັນໂຊກດີປ່າ",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "ທາງຂອງ Qilin",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "ຄົນລ້ຽນປ່າ",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "ກະຕ່າໂຊກດີ",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "Caishen ຊະນະ",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "ໂຄໂຊກດີ",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "ໂຊກດີ Ganesha",
+        "provider": "PGSoft"
+      }
+    }
+  },
+  "GamesHeader": {
+    "home": "ໜ້າຫຼັກ",
+    "demo": "ທົດລອງ",
+    "allGames": "ເກມທັງໝົດ",
+    "popularGames": "ເກມຍອດນິຍົມ",
+    "newGames": "ເກມໃໝ່",
+    "cashDrop": "ເງິນລົ້ນ",
+    "jackpots": "ຮາງວັນທີ່ສະສົມ",
+    "megaways": "Megaways",
+    "tableGames": "ເກມໂຕະ",
+    "searchPlaceholder": "ຄົ້ນຫາເກມຂອງທ່ານ",
+    "gameCount": "{count} ເກມ"
   }
 }

@@ -21,6 +21,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} style={{ fontFamily: selectedFont }}>
       <body className="body bg-[#020617] text-white min-h-screen">
+
         <NextIntlClientProvider messages={messages}>
           <header className="sticky top-0 z-50 shadow-md">
             <Navbar locale={locale} />
@@ -30,10 +31,11 @@ export default async function RootLayout({
               <Sidebar locale={locale} />
             </aside>
             <main className="flex-1 pt-4 lg:px-8 bg-[#020617]">
+              {/* <SessionProvider>{children}</SessionProvider> */}
               {children}
             </main>
           </div>
-       
+
           <footer className="max-w-[1200px] mx-auto lg:ml-auto lg:mr-64 p-4">
             <Footer locale={locale} />
           </footer>
@@ -44,6 +46,7 @@ export default async function RootLayout({
             <MobileNavBar />
           </div>
         </NextIntlClientProvider>
+
       </body>
     </html>
   );

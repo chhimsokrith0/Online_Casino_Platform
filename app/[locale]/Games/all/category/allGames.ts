@@ -23,6 +23,9 @@ import img35 from "@/assets/img-allgames/35.png";
 import img36 from "@/assets/img-allgames/36.png";
 import img37 from "@/assets/img-allgames/37.png";
 
+// ================================================================
+
+
 export const allGames = (t: (key: string) => string) => [
     { id: 1, title: t("ninjaRaccoonFrenzy.name"), provider: t("ninjaRaccoonFrenzy.provider"), image: img1, category: "allGames" },
     { id: 2, title: t("treasuresOfAztec.name"), provider: t("treasuresOfAztec.provider"), image: img2, category: "allGames" },

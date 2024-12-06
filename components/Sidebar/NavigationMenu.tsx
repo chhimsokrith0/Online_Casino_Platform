@@ -33,7 +33,7 @@ const NavigationMenu = ({
         </li>
       </Link>
 
-      <Link href={`/${locale}/Games`}>
+      <Link href={`/${locale}/Games/slots`}>
         <li
           onClick={() => setActiveItem("slots")}
           className={`flex items-center gap-3 px-4 py-2 rounded-lg ${
@@ -47,7 +47,7 @@ const NavigationMenu = ({
         </li>
       </Link>
 
-      <Link href={`/${locale}/Games`}>
+      <Link href={`/${locale}/Games/LiveCasino`}>
         <li
           onClick={() => setActiveItem("liveCasino")}
           className={`flex items-center gap-3 px-4 py-2 rounded-lg ${

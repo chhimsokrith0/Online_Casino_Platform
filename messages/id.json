@@ -337,5 +337,168 @@
       },
       "cashback": "Cashback (%)"
     }
+  },
+  "games": {
+    "GamesDemo": {
+      "waysOfTheQilin": {
+        "name": "Jalan Qilin",
+        "provider": "PGSoft"
+      },
+      "dragonHatch2": {
+        "name": "Penetasan Naga 2",
+        "provider": "PGSoft"
+      },
+      "futebolFever": {
+        "name": "Demam Sepak Bola",
+        "provider": "PGSoft"
+      },
+      "wildApe": {
+        "name": "Kera Liar",
+        "provider": "PGSoft"
+      },
+      "yakuzaHonor": {
+        "name": "Kehormatan Yakuza",
+        "provider": "PGSoft"
+      },
+      "wingsOfIguazu": {
+        "name": "Sayap Iguazu",
+        "provider": "PGSoft"
+      },
+      "mysticPotion": {
+        "name": "Ramuan Mistik",
+        "provider": "PGSoft"
+      },
+      "museumMystery": {
+        "name": "Misteri Museum",
+        "provider": "PGSoft"
+      },
+      "chickyRun": {
+        "name": "Lari Ayam",
+        "provider": "PGSoft"
+      },
+      "chocolateDeluxe": {
+        "name": "Cokelat Deluxe",
+        "provider": "PGSoft"
+      },
+      "tsarTreasures": {
+        "name": "Harta Tsar",
+        "provider": "PGSoft"
+      },
+      "rioFantasia": {
+        "name": "Fantasi Rio",
+        "provider": "PGSoft"
+      },
+      "mafiaMayhem": {
+        "name": "Kekacauan Mafia",
+        "provider": "PGSoft"
+      },
+      "zombieOutbreak": {
+        "name": "Wabah Zombie",
+        "provider": "PGSoft"
+      },
+      "fortuneDragon": {
+        "name": "Naga Keberuntungan",
+        "provider": "PGSoft"
+      },
+      "anubisWrath": {
+        "name": "Kemarahan Anubis",
+        "provider": "PGSoft"
+      },
+      "threeCrazyPiggies": {
+        "name": "Tiga Babi Gila",
+        "provider": "PGSoft"
+      },
+      "oishiDelights": {
+        "name": "Kelezatan Oishi",
+        "provider": "PGSoft"
+      },
+      "gemstonesGold": {
+        "name": "Emas Permata",
+        "provider": "PGSoft"
+      },
+      "sweetieCrush": {
+        "name": "Hancurkan Manisan",
+        "provider": "Joker"
+      },
+      "sourCandy": {
+        "name": "Permen Asam",
+        "provider": "Joker"
+      },
+      "zodiacBingo": {
+        "name": "Bingo Zodiak",
+        "provider": "Joker"
+      },
+      "huangFeiHong": {
+        "name": "Huang Fei Hong",
+        "provider": "Joker"
+      },
+      "silverHand": {
+        "name": "Tangan Perak",
+        "provider": "Joker"
+      }
+    },
+    "allGame": {
+      "ninjaRaccoonFrenzy": {
+        "name": "Kegilaan Rakun Ninja",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "Harta Aztec",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "Cara Mahjong 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "Neko Beruntung",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "Cara Mahjong",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "Pertarungan Hadiah Liar",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "Jalan Qilin",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "Bandito Liar",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "Kelinci Keberuntungan",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "Caishen Menang",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "Sapi Keberuntungan",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "Keberuntungan Ganesha",
+        "provider": "PGSoft"
+      }
+    }
+  },
+  "GamesHeader": {
+    "home": "Beranda",
+    "demo": "Demo",
+    "allGames": "Semua Game",
+    "popularGames": "Game Populer",
+    "newGames": "Game Baru",
+    "cashDrop": "Penurunan Tunai",
+    "jackpots": "Jackpot",
+    "megaways": "Megaways",
+    "tableGames": "Permainan Meja",
+    "searchPlaceholder": "Temukan game Anda",
+    "gameCount": "{count} Game"
   }
 }

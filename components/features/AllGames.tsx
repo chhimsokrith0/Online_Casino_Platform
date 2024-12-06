@@ -32,129 +32,129 @@ import img37 from "@/assets/img-allgames/37.png";
 
 const AllGames: React.FC = () => {
 
-    const t = useTranslations("allGames");
+    const t = useTranslations("games.allGame");
 
     const gameCardsRef = useRef<HTMLDivElement[]>([]);
 
     const games = [
         {
-            title: t("games.ninjaRaccoonFrenzy.name"),
-            provider: t("games.ninjaRaccoonFrenzy.provider"),
+            title: t("ninjaRaccoonFrenzy.name"),
+            provider: t("ninjaRaccoonFrenzy.provider"),
             image: img1,
         },
         {
-            title: t("games.treasuresOfAztec.name"),
-            provider: t("games.treasuresOfAztec.provider"),
+            title: t("treasuresOfAztec.name"),
+            provider: t("treasuresOfAztec.provider"),
             image: img2,
         },
         {
-            title: t("games.mahjongWays2.name"),
-            provider: t("games.mahjongWays2.provider"),
+            title: t("mahjongWays2.name"),
+            provider: t("mahjongWays2.provider"),
             image: img3,
         },
         {
-            title: t("games.luckyNeko.name"),
-            provider: t("games.luckyNeko.provider"),
+            title: t("luckyNeko.name"),
+            provider: t("luckyNeko.provider"),
             image: img4,
         },
         {
-            title: t("games.mahjongWays.name"),
-            provider: t("games.mahjongWays.provider"),
+            title: t("mahjongWays.name"),
+            provider: t("mahjongWays.provider"),
             image: img5,
         },
         {
-            title: t("games.wildBountyShowdown.name"),
-            provider: t("games.wildBountyShowdown.provider"),
+            title: t("wildBountyShowdown.name"),
+            provider: t("wildBountyShowdown.provider"),
             image: img6,
         },
         {
-            title: t("games.waysOfTheQilin.name"),
-            provider: t("games.waysOfTheQilin.provider"),
+            title: t("waysOfTheQilin.name"),
+            provider: t("waysOfTheQilin.provider"),
             image: img7,
         },
         {
-            title: t("games.wildBandito.name"),
-            provider: t("games.wildBandito.provider"),
+            title: t("wildBandito.name"),
+            provider: t("wildBandito.provider"),
             image: img8,
         },
         {
-            title: t("games.fortuneRabbit.name"),
-            provider: t("games.fortuneRabbit.provider"),
+            title: t("fortuneRabbit.name"),
+            provider: t("fortuneRabbit.provider"),
             image: img9,
         },
         {
-            title: t("games.caishenWins.name"),
-            provider: t("games.caishenWins.provider"),
+            title: t("caishenWins.name"),
+            provider: t("caishenWins.provider"),
             image: img10,
         },
         {
-            title: t("games.fortuneOx.name"),
-            provider: t("games.fortuneOx.provider"),
+            title: t("fortuneOx.name"),
+            provider: t("fortuneOx.provider"),
             image: img11,
         },
         {
-            title: t("games.ganeshaFortune.name"),
-            provider: t("games.ganeshaFortune.provider"),
+            title: t("ganeshaFortune.name"),
+            provider: t("ganeshaFortune.provider"),
             image: img12,
         },
         {
-            title: t("games.ganeshaFortune.name"),
-            provider: t("games.ganeshaFortune.provider"),
+            title: t("ganeshaFortune.name"),
+            provider: t("ganeshaFortune.provider"),
             image: img26,
         },
         {
-            title: t("games.ganeshaFortune.name"),
-            provider: t("games.ganeshaFortune.provider"),
+            title: t("ganeshaFortune.name"),
+            provider: t("ganeshaFortune.provider"),
             image: img27,
         },
         {
-            title: t("games.ganeshaFortune.name"),
-            provider: t("games.ganeshaFortune.provider"),
+            title: t("ganeshaFortune.name"),
+            provider: t("ganeshaFortune.provider"),
             image: img28,
         },
         {
-            title: t("games.ganeshaFortune.name"),
-            provider: t("games.ganeshaFortune.provider"),
+            title: t("ganeshaFortune.name"),
+            provider: t("ganeshaFortune.provider"),
             image: img29,
         },
         {
-            title: t("games.ganeshaFortune.name"),
-            provider: t("games.ganeshaFortune.provider"),
+            title: t("ganeshaFortune.name"),
+            provider: t("ganeshaFortune.provider"),
             image: img30,
         },
         {
-            title: t("games.ganeshaFortune.name"),
-            provider: t("games.ganeshaFortune.provider"),
+            title: t("ganeshaFortune.name"),
+            provider: t("ganeshaFortune.provider"),
             image: img31,
         },
         {
-            title: t("games.ganeshaFortune.name"),
-            provider: t("games.ganeshaFortune.provider"),
+            title: t("ganeshaFortune.name"),
+            provider: t("ganeshaFortune.provider"),
             image: img32,
         },
         {
-            title: t("games.ganeshaFortune.name"),
-            provider: t("games.ganeshaFortune.provider"),
+            title: t("ganeshaFortune.name"),
+            provider: t("ganeshaFortune.provider"),
             image: img33,
         },
         {
-            title: t("games.ganeshaFortune.name"),
-            provider: t("games.ganeshaFortune.provider"),
+            title: t("ganeshaFortune.name"),
+            provider: t("ganeshaFortune.provider"),
             image: img34,
         },
         {
-            title: t("games.ganeshaFortune.name"),
-            provider: t("games.ganeshaFortune.provider"),
+            title: t("ganeshaFortune.name"),
+            provider: t("ganeshaFortune.provider"),
             image: img35,
         },
         {
-            title: t("games.ganeshaFortune.name"),
-            provider: t("games.ganeshaFortune.provider"),
+            title: t("ganeshaFortune.name"),
+            provider: t("ganeshaFortune.provider"),
             image: img36,
         },
         {
-            title: t("games.ganeshaFortune.name"),
-            provider: t("games.ganeshaFortune.provider"),
+            title: t("ganeshaFortune.name"),
+            provider: t("ganeshaFortune.provider"),
             image: img37,
         },
     ];

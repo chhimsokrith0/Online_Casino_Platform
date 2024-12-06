@@ -237,5 +237,268 @@
     "signUp": "Daftar",
     "liveCasino": "Kasino Langsung",
     "promo": "Promosi"
+  },
+  "RewardSection": {
+    "mainTitle": "Bebaskan Ganjaran Tanpa Had",
+    "mainSubtitle": "Daftar sekarang dan mulakan dengan ganjaran yang menarik untuk meningkatkan hidup anda. Buka hadiah tanpa had.",
+    "joinButton": "Sertai PlayGame168",
+    "steps": {
+      "step1": "Daftar dan buat deposit",
+      "step2": "Main permainan kegemaran anda",
+      "step3": "Tebus hadiah anda"
+    },
+    "enjoyOurGames": {
+      "title": "Nikmati Permainan Kami!",
+      "description": "Di Live Casino House, kami menawarkan lebih daripada 4,000 permainan yang menarik untuk anda.",
+      "button": "Tuntut Hadiah Anda"
+    },
+    "enjoyOurPromotions": {
+      "title": "Nikmati Promosi Kami!",
+      "description": "Deposit hari ini dan buka ganjaran eksklusif istimewa kami.",
+      "button": "Tuntut Hadiah Anda"
+    },
+    "benefitsSection": {
+      "title": "Nikmati Pelbagai Ganjaran Percuma",
+      "benefits": {
+        "questHub": {
+          "title": "Cabaran Harian",
+          "description": "Lengkapkan cabaran harian dan mingguan untuk meningkatkan pendapatan anda dengan cepat.",
+          "tag": "Harian & Mingguan"
+        },
+        "loyaltyVip": {
+          "title": "Keistimewaan VIP",
+          "description": "Tingkatkan pengalaman anda dengan keistimewaan eksklusif di Kelab VIP.",
+          "tag": "Harian & Mingguan"
+        },
+        "tournament": {
+          "title": "Kejohanan",
+          "description": "Bersaing dalam kejohanan permainan untuk meraih kemenangan besar. Bertanding, bertahan, menang!",
+          "tag": "Mingguan"
+        }
+      }
+    },
+    "introducingExclusive": {
+      "title": "Memperkenalkan Ganjaran Eksklusif",
+      "description": "Mulakan penjelajahan anda dengan sistem eksklusif kami dan dapatkan ganjaran yang mengagumkan hari ini. Jangan lepaskan peluang ini!",
+      "joinButton": "Sertai PlayGame168 Hari Ini →",
+      "features": {
+        "activation": {
+          "title": "Pengaktifan",
+          "description": "Lengkapkan cabaran untuk mencapai tahap kejayaan tertinggi."
+        },
+        "bonus": {
+          "title": "Bonus",
+          "description": "Rebut pelbagai bonus harian dan mingguan dengan mudah."
+        },
+        "rewardTier": {
+          "title": "Tahap Ganjaran",
+          "description": "Naikkan tahap dan dapatkan ganjaran yang lebih besar."
+        }
+      }
+    },
+    "deluxeExperience": {
+      "title": "Kami Bangga Menawarkan Permainan Deluxe",
+      "button": "Daftar Sekarang"
+    }
+  },
+  "MemberLevel": {
+    "mainTitle": "Buka Tahap Istimewa Anda",
+    "mainSubtitle": "Peroleh tahap istimewa dan nikmati ganjaran luar biasa semasa anda naik pangkat.",
+    "joinButton": "Dapatkan Tahap Anda",
+    "exclusiveBenefits": {
+      "title": "Keistimewaan VIP Eksklusif",
+      "benefits": {
+        "levelsRewards": {
+          "title": "Tahap dan Ganjaran",
+          "description": "Lebih banyak anda bermain, lebih tinggi tahap yang anda capai."
+        },
+        "exclusivePromotions": {
+          "title": "Promosi Eksklusif",
+          "description": "Buka ganjaran istimewa dengan kenaikan tahap anda."
+        },
+        "higherCashback": {
+          "title": "Pulangan Tunai Lebih Tinggi",
+          "description": "Dapatkan pulangan tunai sehingga 12%."
+        },
+        "royaltyClub": {
+          "title": "Kelab Royalti",
+          "description": "Nikmati keistimewaan di Kelab VIP untuk ganjaran eksklusif."
+        }
+      }
+    },
+    "carousel": {
+      "levels": {
+        "bronze": "Gangsa",
+        "silver": "Perak",
+        "gold": "Emas",
+        "diamond": "Berlian",
+        "platinum": "Platinum",
+        "black": "Hitam"
+      },
+      "cashback": "Pulangan Tunai (%)"
+    }
+  },
+  "games": {
+    "GamesDemo": {
+      "waysOfTheQilin": {
+        "name": "Jalan Qilin",
+        "provider": "PGSoft"
+      },
+      "dragonHatch2": {
+        "name": "Pengeraman Naga 2",
+        "provider": "PGSoft"
+      },
+      "futebolFever": {
+        "name": "Demam Bola Sepak",
+        "provider": "PGSoft"
+      },
+      "wildApe": {
+        "name": "Monyet Liar",
+        "provider": "PGSoft"
+      },
+      "yakuzaHonor": {
+        "name": "Kehormatan Yakuza",
+        "provider": "PGSoft"
+      },
+      "wingsOfIguazu": {
+        "name": "Sayap Iguazu",
+        "provider": "PGSoft"
+      },
+      "mysticPotion": {
+        "name": "Ramuan Mistik",
+        "provider": "PGSoft"
+      },
+      "museumMystery": {
+        "name": "Misteri Muzium",
+        "provider": "PGSoft"
+      },
+      "chickyRun": {
+        "name": "Lari Ayam",
+        "provider": "PGSoft"
+      },
+      "chocolateDeluxe": {
+        "name": "Coklat Deluxe",
+        "provider": "PGSoft"
+      },
+      "tsarTreasures": {
+        "name": "Harta Tsar",
+        "provider": "PGSoft"
+      },
+      "rioFantasia": {
+        "name": "Fantasi Rio",
+        "provider": "PGSoft"
+      },
+      "mafiaMayhem": {
+        "name": "Kekacauan Mafia",
+        "provider": "PGSoft"
+      },
+      "zombieOutbreak": {
+        "name": "Wabak Zombi",
+        "provider": "PGSoft"
+      },
+      "fortuneDragon": {
+        "name": "Naga Keberuntungan",
+        "provider": "PGSoft"
+      },
+      "anubisWrath": {
+        "name": "Kemarahan Anubis",
+        "provider": "PGSoft"
+      },
+      "threeCrazyPiggies": {
+        "name": "Tiga Babi Gila",
+        "provider": "PGSoft"
+      },
+      "oishiDelights": {
+        "name": "Kelezatan Oishi",
+        "provider": "PGSoft"
+      },
+      "gemstonesGold": {
+        "name": "Permata Emas",
+        "provider": "PGSoft"
+      },
+      "sweetieCrush": {
+        "name": "Hancuran Manis",
+        "provider": "Joker"
+      },
+      "sourCandy": {
+        "name": "Gula-Gula Masam",
+        "provider": "Joker"
+      },
+      "zodiacBingo": {
+        "name": "Bingo Zodiak",
+        "provider": "Joker"
+      },
+      "huangFeiHong": {
+        "name": "Huang Fei Hong",
+        "provider": "Joker"
+      },
+      "silverHand": {
+        "name": "Tangan Perak",
+        "provider": "Joker"
+      }
+    },
+    "allGame": {
+      "ninjaRaccoonFrenzy": {
+        "name": "Kegilaan Rakun Ninja",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "Harta Aztec",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "Jalan Mahjong 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "Neko Bertuah",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "Jalan Mahjong",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "Pertempuran Hadiah Liar",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "Jalan Qilin",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "Bandito Liar",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "Arnab Bertuah",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "Caishen Menang",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "Lembu Keberuntungan",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "Keberuntungan Ganesha",
+        "provider": "PGSoft"
+      }
+    }
+  },
+  "GamesHeader": {
+    "home": "Utama",
+    "demo": "Demo",
+    "allGames": "Semua Permainan",
+    "popularGames": "Permainan Popular",
+    "newGames": "Permainan Baru",
+    "cashDrop": "Keuntungan Wang",
+    "jackpots": "Jackpot",
+    "megaways": "Megaways",
+    "tableGames": "Permainan Meja",
+    "searchPlaceholder": "Cari permainan anda",
+    "gameCount": "{count} Permainan"
   }
 }

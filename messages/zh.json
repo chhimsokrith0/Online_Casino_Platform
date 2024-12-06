@@ -337,5 +337,168 @@
       },
       "cashback": "返现 (%)"
     }
+  },
+  "games": {
+    "GamesDemo": {
+      "waysOfTheQilin": {
+        "name": "麒麟之道",
+        "provider": "PGSoft"
+      },
+      "dragonHatch2": {
+        "name": "龙之孵化2",
+        "provider": "PGSoft"
+      },
+      "futebolFever": {
+        "name": "足球狂热",
+        "provider": "PGSoft"
+      },
+      "wildApe": {
+        "name": "狂野猩猩",
+        "provider": "PGSoft"
+      },
+      "yakuzaHonor": {
+        "name": "黑帮荣耀",
+        "provider": "PGSoft"
+      },
+      "wingsOfIguazu": {
+        "name": "伊瓜苏之翼",
+        "provider": "PGSoft"
+      },
+      "mysticPotion": {
+        "name": "神秘药水",
+        "provider": "PGSoft"
+      },
+      "museumMystery": {
+        "name": "博物馆之谜",
+        "provider": "PGSoft"
+      },
+      "chickyRun": {
+        "name": "小鸡快跑",
+        "provider": "PGSoft"
+      },
+      "chocolateDeluxe": {
+        "name": "巧克力豪华版",
+        "provider": "PGSoft"
+      },
+      "tsarTreasures": {
+        "name": "沙皇宝藏",
+        "provider": "PGSoft"
+      },
+      "rioFantasia": {
+        "name": "里约幻想",
+        "provider": "PGSoft"
+      },
+      "mafiaMayhem": {
+        "name": "黑帮混乱",
+        "provider": "PGSoft"
+      },
+      "zombieOutbreak": {
+        "name": "僵尸爆发",
+        "provider": "PGSoft"
+      },
+      "fortuneDragon": {
+        "name": "幸运龙",
+        "provider": "PGSoft"
+      },
+      "anubisWrath": {
+        "name": "阿努比斯之怒",
+        "provider": "PGSoft"
+      },
+      "threeCrazyPiggies": {
+        "name": "三只疯狂的小猪",
+        "provider": "PGSoft"
+      },
+      "oishiDelights": {
+        "name": "美味乐趣",
+        "provider": "PGSoft"
+      },
+      "gemstonesGold": {
+        "name": "宝石黄金",
+        "provider": "PGSoft"
+      },
+      "sweetieCrush": {
+        "name": "甜心粉碎",
+        "provider": "Joker"
+      },
+      "sourCandy": {
+        "name": "酸糖果",
+        "provider": "Joker"
+      },
+      "zodiacBingo": {
+        "name": "星座宾果",
+        "provider": "Joker"
+      },
+      "huangFeiHong": {
+        "name": "黄飞鸿",
+        "provider": "Joker"
+      },
+      "silverHand": {
+        "name": "银手",
+        "provider": "Joker"
+      }
+    },
+    "allGame": {
+      "ninjaRaccoonFrenzy": {
+        "name": "忍者浣熊狂热",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "阿兹特克宝藏",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "麻将之路2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "幸运猫",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "麻将之路",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "狂野赏金对决",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "麒麟之道",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "狂野强盗",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "幸运兔",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "财神赢",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "幸运牛",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "象神财富",
+        "provider": "PGSoft"
+      }
+    }
+  },
+  "GamesHeader": {
+    "home": "主页",
+    "demo": "试玩",
+    "allGames": "所有游戏",
+    "popularGames": "热门游戏",
+    "newGames": "新游戏",
+    "cashDrop": "现金掉落",
+    "jackpots": "累积奖金",
+    "megaways": "多重奖励",
+    "tableGames": "桌面游戏",
+    "searchPlaceholder": "搜索您的游戏",
+    "gameCount": "{count} 游戏"
   }
 }

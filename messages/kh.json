@@ -337,5 +337,168 @@
       },
       "cashback": "ការសងប្រាក់ត្រឡប់ (%)"
     }
+  },
+  "games": {
+    "GamesDemo": {
+      "waysOfTheQilin": {
+        "name": "ផ្លូវរបស់ Qilin",
+        "provider": "PGSoft"
+      },
+      "dragonHatch2": {
+        "name": "ពងកើតនាគ 2",
+        "provider": "PGSoft"
+      },
+      "futebolFever": {
+        "name": "គ្រុនបាល់ទាត់",
+        "provider": "PGSoft"
+      },
+      "wildApe": {
+        "name": "ស្វាភាពឆ្កួត",
+        "provider": "PGSoft"
+      },
+      "yakuzaHonor": {
+        "name": "កិត្តិយស Yakuza",
+        "provider": "PGSoft"
+      },
+      "wingsOfIguazu": {
+        "name": "ស្លាបរបស់ Iguazu",
+        "provider": "PGSoft"
+      },
+      "mysticPotion": {
+        "name": "ថ្នាំសម្ងាត់",
+        "provider": "PGSoft"
+      },
+      "museumMystery": {
+        "name": "អាថ៌កំបាំងសារមន្ទីរ",
+        "provider": "PGSoft"
+      },
+      "chickyRun": {
+        "name": "ការរត់របស់មាន់តូច",
+        "provider": "PGSoft"
+      },
+      "chocolateDeluxe": {
+        "name": "សូកូឡា ដេឡុច",
+        "provider": "PGSoft"
+      },
+      "tsarTreasures": {
+        "name": "ទ្រព្យសម្បត្តិ Tsar",
+        "provider": "PGSoft"
+      },
+      "rioFantasia": {
+        "name": "ការស្រមើលស្រមៃរបស់ Rio",
+        "provider": "PGSoft"
+      },
+      "mafiaMayhem": {
+        "name": "ភាពចលាចលរបស់ម៉ាហ្វៀ",
+        "provider": "PGSoft"
+      },
+      "zombieOutbreak": {
+        "name": "ការផ្ទុះរបស់សំបុកសំបុក",
+        "provider": "PGSoft"
+      },
+      "fortuneDragon": {
+        "name": "នាគសំណាង",
+        "provider": "PGSoft"
+      },
+      "anubisWrath": {
+        "name": "កំហឹងរបស់ Anubis",
+        "provider": "PGSoft"
+      },
+      "threeCrazyPiggies": {
+        "name": "ជ្រូកបីឆ្កួត",
+        "provider": "PGSoft"
+      },
+      "oishiDelights": {
+        "name": "ភាពរីករាយរបស់ Oishi",
+        "provider": "PGSoft"
+      },
+      "gemstonesGold": {
+        "name": "គ្រឿងអលង្ការទង់ដែង",
+        "provider": "PGSoft"
+      },
+      "sweetieCrush": {
+        "name": "ការបំផ្លាញស្ករគ្រាប់",
+        "provider": "Joker"
+      },
+      "sourCandy": {
+        "name": "ស្ករគ្រាប់ជូរ",
+        "provider": "Joker"
+      },
+      "zodiacBingo": {
+        "name": "ប៊ីងហ្គោរាសី",
+        "provider": "Joker"
+      },
+      "huangFeiHong": {
+        "name": "ហួង ហ្វេ ហុង",
+        "provider": "Joker"
+      },
+      "silverHand": {
+        "name": "ដៃប្រាក់",
+        "provider": "Joker"
+      }
+    },
+    "allGame": {
+      "ninjaRaccoonFrenzy": {
+        "name": "ភាពឆ្កួតរបស់នីនចា Raccoon",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "ទ្រព្យសម្បត្តិរបស់ Aztec",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "វិធីសាស្រ្ត Mahjong 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "Neko សំណាង",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "វិធីសាស្រ្ត Mahjong",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "ការប្រកួតប្រជែងរបស់ Bounty ឆ្កួត",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "ផ្លូវរបស់ Qilin",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "Bandito ឆ្កួត",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "ទន្សាយសំណាង",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "Caishen ឈ្នះ",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "គោសំណាង",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "សំណាងរបស់ Ganesha",
+        "provider": "PGSoft"
+      }
+    }
+  },
+  "GamesHeader": {
+    "home": "ទំព័រដើម",
+    "demo": "សាកល្បង",
+    "allGames": "គ្រប់ហ្គេម",
+    "popularGames": "ហ្គេមពេញនិយម",
+    "newGames": "ហ្គេមថ្មី",
+    "cashDrop": "ការដាក់ប្រាក់សាច់",
+    "jackpots": "រង្វាន់ធំ",
+    "megaways": "Megaways",
+    "tableGames": "ហ្គេមតុ",
+    "searchPlaceholder": "ស្វែងរកហ្គេមរបស់អ្នក",
+    "gameCount": "{count} ហ្គេម"
   }
 }

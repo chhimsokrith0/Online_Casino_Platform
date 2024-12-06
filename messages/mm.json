@@ -337,5 +337,168 @@
       },
       "cashback": "ငွေပြန်အမ်း (%)"
     }
+  },
+  "games": {
+    "GamesDemo": {
+      "waysOfTheQilin": {
+        "name": "ကျီးလင်းလျှောက်လမ်း",
+        "provider": "PGSoft"
+      },
+      "dragonHatch2": {
+        "name": "နဂါးမွေးဖွား 2",
+        "provider": "PGSoft"
+      },
+      "futebolFever": {
+        "name": "ဘောလုံးအဖျော်ယမကာ",
+        "provider": "PGSoft"
+      },
+      "wildApe": {
+        "name": "ဝက်ဝံရိုင်း",
+        "provider": "PGSoft"
+      },
+      "yakuzaHonor": {
+        "name": "ယာကူဇာဂုဏ်",
+        "provider": "PGSoft"
+      },
+      "wingsOfIguazu": {
+        "name": "အီဂွါဇူး၏တောင်ပံများ",
+        "provider": "PGSoft"
+      },
+      "mysticPotion": {
+        "name": "ထူးဆန်းသောအဆေး",
+        "provider": "PGSoft"
+      },
+      "museumMystery": {
+        "name": "ပြတိုက်ရဲ့လျှို့ဝှက်ချက်",
+        "provider": "PGSoft"
+      },
+      "chickyRun": {
+        "name": "ကြက်ငွေ့အပြေး",
+        "provider": "PGSoft"
+      },
+      "chocolateDeluxe": {
+        "name": "ချောကလက်လက်ဆန်း",
+        "provider": "PGSoft"
+      },
+      "tsarTreasures": {
+        "name": "Tsar ၏အခမ်းနားမှု",
+        "provider": "PGSoft"
+      },
+      "rioFantasia": {
+        "name": "ရီယိုစိတ်ကူး",
+        "provider": "PGSoft"
+      },
+      "mafiaMayhem": {
+        "name": "မာဖီးယားအမုန်းတရား",
+        "provider": "PGSoft"
+      },
+      "zombieOutbreak": {
+        "name": "ဇွန်ဘီပျံ့နှံ့မှု",
+        "provider": "PGSoft"
+      },
+      "fortuneDragon": {
+        "name": "ကံကောင်းသောနဂါး",
+        "provider": "PGSoft"
+      },
+      "anubisWrath": {
+        "name": "အနုဘစ်၏အမျက်",
+        "provider": "PGSoft"
+      },
+      "threeCrazyPiggies": {
+        "name": "မိုက်မိုက်သုံည",
+        "provider": "PGSoft"
+      },
+      "oishiDelights": {
+        "name": "အိုရှိအကြိုက်",
+        "provider": "PGSoft"
+      },
+      "gemstonesGold": {
+        "name": "ရတနာရွှေ",
+        "provider": "PGSoft"
+      },
+      "sweetieCrush": {
+        "name": "ချိုချဉ်ကောက်ကျွန်း",
+        "provider": "Joker"
+      },
+      "sourCandy": {
+        "name": "ချဉ်တဲ့ဆီသင်းပဲ",
+        "provider": "Joker"
+      },
+      "zodiacBingo": {
+        "name": "ဇာတာအိပ်မှင်ဂိမ်း",
+        "provider": "Joker"
+      },
+      "huangFeiHong": {
+        "name": "ဟွမ်ဖိဟုန်",
+        "provider": "Joker"
+      },
+      "silverHand": {
+        "name": "ငွေရောင်လက်မောင်း",
+        "provider": "Joker"
+      }
+    },
+    "allGame": {
+      "ninjaRaccoonFrenzy": {
+        "name": "နင်ဂျာရက်ကွန်လှုပ်ရှားမှု",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "အဇတက်ရတနာများ",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "မဟောင်းလမ်းကြောင်း 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "ကံကောင်းတဲ့နေကို",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "မဟောင်းလမ်းကြောင်း",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "ရိုင်းပြိုင်ပွဲ",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "ကျီးလင်းလျှောက်လမ်း",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "ရိုင်းရစ်ဘန်ဒစ်တို",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "ကံကောင်းသောကြွက်",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "ကေရှင်အောင်မြင်မှု",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "ကံကောင်းသောနွား",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "ဂါနီရှာ၏အောင်မြင်မှု",
+        "provider": "PGSoft"
+      }
+    }
+  },
+  "GamesHeader": {
+    "home": "မူလ",
+    "demo": "အစမ်း",
+    "allGames": "အားလုံးဂိမ်းများ",
+    "popularGames": "လူကြိုက်များဂိမ်းများ",
+    "newGames": "အသစ်ဂိမ်းများ",
+    "cashDrop": "ငွေတိမ်တွင်း",
+    "jackpots": "ဂျက်ပေါ့",
+    "megaways": "မီဂါဝေး",
+    "tableGames": "စားပွဲဂိမ်းများ",
+    "searchPlaceholder": "သင့်ဂိမ်းကိုရှာဖွေပါ",
+    "gameCount": "{count} ဂိမ်းများ"
   }
 }

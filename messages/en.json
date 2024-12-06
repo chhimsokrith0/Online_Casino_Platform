@@ -384,6 +384,8 @@
       }
     },
     "allGame": {
+      "title": "All Games",
+      "seeAll": "See All",
       "ninjaRaccoonFrenzy": {
         "name": "Ninja Raccoon Frenzy",
         "provider": "PGSoft"

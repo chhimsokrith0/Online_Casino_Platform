@@ -337,5 +337,168 @@
       },
       "cashback": "คืนเงิน (%)"
     }
+  },
+  "games": {
+    "GamesDemo": {
+      "waysOfTheQilin": {
+        "name": "เส้นทางแห่งกิเลน",
+        "provider": "PGSoft"
+      },
+      "dragonHatch2": {
+        "name": "กำเนิดมังกร 2",
+        "provider": "PGSoft"
+      },
+      "futebolFever": {
+        "name": "ไข้ฟุตบอล",
+        "provider": "PGSoft"
+      },
+      "wildApe": {
+        "name": "ลิงป่า",
+        "provider": "PGSoft"
+      },
+      "yakuzaHonor": {
+        "name": "เกียรติยศยากูซ่า",
+        "provider": "PGSoft"
+      },
+      "wingsOfIguazu": {
+        "name": "ปีกแห่งอิกวาซู",
+        "provider": "PGSoft"
+      },
+      "mysticPotion": {
+        "name": "น้ำยาลึกลับ",
+        "provider": "PGSoft"
+      },
+      "museumMystery": {
+        "name": "ปริศนาพิพิธภัณฑ์",
+        "provider": "PGSoft"
+      },
+      "chickyRun": {
+        "name": "ลูกไก่วิ่ง",
+        "provider": "PGSoft"
+      },
+      "chocolateDeluxe": {
+        "name": "ช็อกโกแลตดีลักซ์",
+        "provider": "PGSoft"
+      },
+      "tsarTreasures": {
+        "name": "สมบัติของซาร์",
+        "provider": "PGSoft"
+      },
+      "rioFantasia": {
+        "name": "แฟนตาเซียริโอ",
+        "provider": "PGSoft"
+      },
+      "mafiaMayhem": {
+        "name": "ความวุ่นวายของมาเฟีย",
+        "provider": "PGSoft"
+      },
+      "zombieOutbreak": {
+        "name": "การระบาดของซอมบี้",
+        "provider": "PGSoft"
+      },
+      "fortuneDragon": {
+        "name": "มังกรโชคลาภ",
+        "provider": "PGSoft"
+      },
+      "anubisWrath": {
+        "name": "โทสะของอนูบิส",
+        "provider": "PGSoft"
+      },
+      "threeCrazyPiggies": {
+        "name": "สามหมูสุดป่วน",
+        "provider": "PGSoft"
+      },
+      "oishiDelights": {
+        "name": "ความสุขโออิชิ",
+        "provider": "PGSoft"
+      },
+      "gemstonesGold": {
+        "name": "อัญมณีทองคำ",
+        "provider": "PGSoft"
+      },
+      "sweetieCrush": {
+        "name": "หวานใจครัช",
+        "provider": "Joker"
+      },
+      "sourCandy": {
+        "name": "ลูกอมเปรี้ยว",
+        "provider": "Joker"
+      },
+      "zodiacBingo": {
+        "name": "บิงโกจักรราศี",
+        "provider": "Joker"
+      },
+      "huangFeiHong": {
+        "name": "หวงเฟยหง",
+        "provider": "Joker"
+      },
+      "silverHand": {
+        "name": "มือเงิน",
+        "provider": "Joker"
+      }
+    },
+    "allGame": {
+      "ninjaRaccoonFrenzy": {
+        "name": "ความบ้าคลั่งของนินจาแรคคูน",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "สมบัติแห่งแอซเทค",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "เส้นทางมาจอง 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "แมวนำโชค",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "เส้นทางมาจอง",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "การเผชิญหน้ารางวัลป่า",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "เส้นทางแห่งกิเลน",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "โจรป่าสุดระทึก",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "กระต่ายโชคลาภ",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "ชัยชนะของไฉ่เซียน",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "วัวโชคลาภ",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "โชคลาภแห่งพระพิฆเนศ",
+        "provider": "PGSoft"
+      }
+    }
+  },
+  "GamesHeader": {
+    "home": "หน้าหลัก",
+    "demo": "เดโม",
+    "allGames": "เกมทั้งหมด",
+    "popularGames": "เกมยอดนิยม",
+    "newGames": "เกมใหม่",
+    "cashDrop": "รางวัลเงินสด",
+    "jackpots": "แจ็คพอต",
+    "megaways": "เมกะเวย์",
+    "tableGames": "เกมโต๊ะ",
+    "searchPlaceholder": "ค้นหาเกมของคุณ",
+    "gameCount": "{count} เกม"
   }
 }
