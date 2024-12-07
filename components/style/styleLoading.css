@@ -1,0 +1,31 @@
+@keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 0.6;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 1;
+    }
+  }
+  
+  .animate-pulse-dot {
+    animation: pulse 1.2s infinite;
+  }
+  
+  .animate-pulse-dot.delay-100 {
+    animation-delay: 0.1s;
+  }
+  
+  .animate-pulse-dot.delay-200 {
+    animation-delay: 0.2s;
+  }
+  
+  .animate-pulse-dot.delay-300 {
+    animation-delay: 0.3s;
+  }
+  
+  .animate-pulse-dot.delay-400 {
+    animation-delay: 0.4s;
+  }
+  

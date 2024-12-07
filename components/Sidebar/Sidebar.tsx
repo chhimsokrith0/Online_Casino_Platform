@@ -80,7 +80,7 @@ const Sidebar = ({ locale }: { locale: string }) => {
               locale={locale}
               activeItem={activeItem}
               setActiveItem={setActiveItem}
-              isLoggedIn={true} // Replace with actual login state
+              // isLoggedIn={true} // Replace with actual login state
             />
 
             {/* Language Selector */}

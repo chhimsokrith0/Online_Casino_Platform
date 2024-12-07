@@ -43,7 +43,8 @@ const NavbarLanguage: React.FC<NavbarLanguageProps> = ({ locale }) => {
   const currentLanguage = languages.find((lang) => lang.code === locale);
 
   const handleLanguageChange = (newLocale: string) => {
-    const path = pathname.split("/").slice(2).join("/");
+    // const path = pathname.split("/").slice(2).join("/");
+    const path = (pathname || "").split("/").slice(2).join("/");
     router.push(`/${newLocale}/${path}`);
     setIsDropdownOpen(false);
   };

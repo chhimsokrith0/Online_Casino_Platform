@@ -18,6 +18,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import gsap from "gsap";
+import { signOut } from "next-auth/react";
 
 interface ProfileModalProps {
   isOpen: boolean;
@@ -62,6 +63,13 @@ const ProfileModal: React.FC<ProfileModalProps> = ({ isOpen, onClose, locale }) 
   }, [isOpen]);
 
   if (!isOpen) return null;
+
+  const handleLogout = () => {
+    signOut({
+      redirect: true,
+      callbackUrl: "/", // Redirect to the home page or login page
+    });
+  };
 
   return (
     <div
@@ -144,6 +152,7 @@ const ProfileModal: React.FC<ProfileModalProps> = ({ isOpen, onClose, locale }) 
         {/* Logout */}
         <button
           ref={logoutRef}
+          onClick={handleLogout} // Call the logout handler
           className="flex items-center justify-center gap-2 mt-6 bg-red-500 p-4 rounded-lg w-full hover:bg-red-600 transition"
         >
           <FontAwesomeIcon icon={faSignOutAlt} className="text-xl text-white" />
