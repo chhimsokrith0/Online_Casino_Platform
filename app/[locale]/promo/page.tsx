@@ -8,19 +8,19 @@ const promotions = [
     title: "REBATE",
     description:
       "คืนยอดเดิมพัน เกมคาสิโน ( จ่าย 0.3-0.8% ) โบนัส Member Level (ลำดับขั้น)",
-    image: "/img-promo/1.webp", // Replace with your actual image path
+    image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733645516/1_eexhut.webp", // Replace with your actual image path
   },
   {
     title: "CASHBACK",
     description:
       "💸 โบนัสคืนยอดเสีย สูงสุด 7% ทุกวัน 💸 โบนัส Member Level (ลำดับขั้น) สูงสุด",
-    image: "/img-promo/2.webp", // Replace with your actual image path
+    image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733645516/2_jocwtl.webp", // Replace with your actual image path
   },
   {
     title: "REFERRAL",
     description:
       "👥 รับคอมมิชชั่น 3% ทุกวัน 💰 เงินค่าคอมสามารถถอนเข้ากระเป๋าหลัก ทำเทิร์นได้",
-    image: "/img-promo/3.webp", // Replace with your actual image path
+    image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733645517/3_l7zimp.webp", // Replace with your actual image path
   },
 ];
 
@@ -66,7 +66,7 @@ const PromotionsSection: React.FC = () => {
       ref={sectionRef}
       className="bg-cover bg-center bg-no-repeat py-12 px-4"
       style={{
-        backgroundImage: "url('/img-promo/bg.png')", // Replace with your actual background image path
+        backgroundImage: "url('https://res.cloudinary.com/dfxqagrkk/image/upload/v1733645518/bg_yauwy2.png')", // Replace with your actual background image path
       }}
     >
       <div className="max-w-[1200px] mx-auto text-center">

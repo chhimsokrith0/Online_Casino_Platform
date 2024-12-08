@@ -8,7 +8,7 @@ interface NavbarMobileProps {
 
 const NavbarMobile: React.FC<NavbarMobileProps> = ({ t, toggleModal }) => {
   return (
-    <div className="flex gap-3 justify-end items-center w-full">
+    <div className="flex gap-2 justify-end items-center w-full mr-2">
       {/* Sign Up Button */}
       <button
         onClick={() => toggleModal("signUp")}

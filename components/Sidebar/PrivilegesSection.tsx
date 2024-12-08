@@ -11,15 +11,29 @@ import promoIcon from "@/assets/icon_Sidebar/promo.svg";
 import levelsIcon from "@/assets/icon_Sidebar/levels.svg";
 import referralIcon from "@/assets/icon_Sidebar/referral.svg";
 import QuestsModal from "@/app/[locale]/Quests/QuestsModal";
+import SignupModal from "@/components/Navbar/SignUpModal";
+import { useSession } from "next-auth/react";
 
 const PrivilegesSection = ({ locale }: { locale: string }) => {
   const t = useTranslations("slidebar");
+  const { data: session } = useSession();
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isQuestsModalOpen, setIsQuestsModalOpen] = useState(false);
+  const [isSignupModalOpen, setIsSignupModalOpen] = useState(false);
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-  const handleOpenModal = () => setIsModalOpen(true);
-  const handleCloseModal = () => setIsModalOpen(false);
+  const handleOpenModal = () => {
+    if (session) {
+      // Open quests modal if user is logged in
+      setIsQuestsModalOpen(true);
+    } else {
+      // Open signup modal if user is not logged in
+      setIsSignupModalOpen(true);
+    }
+  };
+
+  const handleCloseQuestsModal = () => setIsQuestsModalOpen(false);
+  const handleCloseSignupModal = () => setIsSignupModalOpen(false);
 
   const privileges = [
     {
@@ -54,8 +68,9 @@ const PrivilegesSection = ({ locale }: { locale: string }) => {
       key: "referral",
       label: t("referral"),
       bgColor: "rgb(108, 88, 33)",
-      icon: referralIcon,
       colSpan: 2,
+      icon: referralIcon,
+      link: `/${locale}/Referral`,
     },
   ];
 
@@ -151,8 +166,12 @@ const PrivilegesSection = ({ locale }: { locale: string }) => {
           </React.Fragment>
         ))}
       </div>
+
       {/* Quests Modal */}
-      <QuestsModal isOpen={isModalOpen} onClose={handleCloseModal} />
+      {isQuestsModalOpen && <QuestsModal isOpen={isQuestsModalOpen} onClose={handleCloseQuestsModal} />}
+
+      {/* Signup Modal */}
+      {isSignupModalOpen && <SignupModal activeTab="signUp" onClose={handleCloseSignupModal} zIndex={10000} />}
     </div>
   );
 };

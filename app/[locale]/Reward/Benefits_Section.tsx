@@ -12,7 +12,7 @@ const Benefits_Section = ({t}:{t:any}) => {
             title: t("benefitsSection.benefits.questHub.title"),
             description: t("benefitsSection.benefits.questHub.description"),
             tag: t("benefitsSection.benefits.questHub.tag"),
-            image: "/img-reward/quests.DwK5Hzgb.png", // Replace with your actual image path
+            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733644739/quests.DwK5Hzgb_lch2gz.png", // Replace with your actual image path
             gradient: "bg-gradient-to-b from-[#25262c] to-[#3a1981]",
         },
         {
@@ -20,7 +20,7 @@ const Benefits_Section = ({t}:{t:any}) => {
             title: t("benefitsSection.benefits.loyaltyVip.title"),
             description: t("benefitsSection.benefits.loyaltyVip.description"),
             tag: t("benefitsSection.benefits.loyaltyVip.tag"),
-            image: "/img-reward/vip.DKryrErV.png", // Replace with your actual image path
+            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733644740/vip.DKryrErV_n18oyg.png", // Replace with your actual image path
             gradient: "bg-gradient-to-b from-[#25262c] to-[#64187e]",
         },
         {
@@ -28,7 +28,7 @@ const Benefits_Section = ({t}:{t:any}) => {
             title: t("benefitsSection.benefits.tournament.title"),
             description: t("benefitsSection.benefits.tournament.description"),
             tag: t("benefitsSection.benefits.tournament.tag"),
-            image: "/img-reward/roll.CJ25fKZ7.png", // Replace with your actual image path
+            image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733644739/roll.CJ25fKZ7_gdvqw9.png", // Replace with your actual image path
             gradient: "bg-gradient-to-b from-[#25262c] to-[#60410f]",
         },
     ];

@@ -11,6 +11,12 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        green: {
+          500: '#10B981', // Customize this value if needed
+        },
+        yellow: {
+          400: '#FBBF24', // Customize this value if needed
+        },
       },
       animation: {
         "scale-up": "scaleUp 0.3s ease-in-out forwards",

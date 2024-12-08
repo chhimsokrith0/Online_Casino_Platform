@@ -28,7 +28,7 @@ const Member_Level: React.FC = () => {
         {/* Background Image */}
         <div className="relative w-full z-50 h-[100px] block md:hidden">
           <Image
-            src="/img-member-level/banner.webp"
+            src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733645318/banner_eicvjm.webp"
             alt="Member Level Background"
             fill
             className="object-cover"
@@ -36,7 +36,7 @@ const Member_Level: React.FC = () => {
         </div>
         <div className="relative w-full h-[300px] hidden md:block">
           <Image
-            src="/img-member-level/banner.webp"
+            src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733645318/banner_eicvjm.webp"
             alt="Member Level Background"
             fill
             className="object-cover"

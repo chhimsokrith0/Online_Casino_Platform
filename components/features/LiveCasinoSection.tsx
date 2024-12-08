@@ -10,8 +10,10 @@ import img5 from "@/assets/img-live-casino/5.png";
 import img6 from "@/assets/img-live-casino/6.png";
 
 import { useTranslations } from "next-intl";
+import { useSession } from "next-auth/react";
 
 const LiveCasinoSection: React.FC = () => {
+    const { data: session } = useSession();
     const t = useTranslations("liveCasino");
 
     const liveCasinoGames = [
@@ -112,9 +114,11 @@ const LiveCasinoSection: React.FC = () => {
                         />
                         {/* Overlay for Game Details */}
                         <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <button className="px-2 py-1 bg-yellow-400 text-black text-sm font-semibold rounded-full hover:bg-yellow-500 transition">
-                                Play Now
-                            </button>
+                            {session && (
+                                <button className="px-2 py-1 bg-yellow-400 text-black text-sm font-semibold rounded-full hover:bg-yellow-500 transition">
+                                    Play Now
+                                </button>
+                            )}
                         </div>
                         {/* Game Details */}
                         <div className="p-2">

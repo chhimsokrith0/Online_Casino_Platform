@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { gsap } from "gsap";
+import { useSession } from "next-auth/react";
 
 import img1 from "@/assets/img-allgames/1.png";
 import img2 from "@/assets/img-allgames/2.png";
@@ -31,6 +32,7 @@ import img36 from "@/assets/img-allgames/36.png";
 import img37 from "@/assets/img-allgames/37.png";
 
 const AllGames: React.FC = () => {
+    const { data: session } = useSession();
 
     const t = useTranslations("games.allGame");
 
@@ -208,9 +210,13 @@ const AllGames: React.FC = () => {
                         />
                         {/* Overlay for Game Details */}
                         <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <button className="px-2 py-1 bg-yellow-400 text-black text-sm font-semibold rounded-full hover:bg-yellow-500 transition">
-                                Play Now
-                            </button>
+                            {session && (
+                                <button className="px-2 py-1 bg-yellow-400 text-black text-sm font-semibold rounded-full hover:bg-yellow-500 transition">
+                                    Play Now
+                                </button>
+                            )
+
+                            }
                         </div>
                         {/* Game Details */}
                         <div className="p-2">

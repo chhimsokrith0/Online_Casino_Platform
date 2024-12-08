@@ -149,7 +149,7 @@ const Navbar: React.FC<NavbarProps> = ({ locale }) => {
 
   return (
     <nav
-      className="w-full bg-gray-900 py-3 px-4 sm:px-6 flex items-center justify-between shadow-md sticky top-0 z-50"
+      className="w-full bg-gray-900 py-3 px-4 sm:px-6 flex items-center justify-between shadow-md sticky top-0 z-100"
       style={{
         background: "linear-gradient(90deg, #1E1E2C, #232334)",
         boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.5)",

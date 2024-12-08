@@ -6,9 +6,11 @@ import Image from "next/image";
 import img1 from "@/assets/img-newgames/1.png";
 import img2 from "@/assets/img-newgames/2.png";
 import { useTranslations } from "next-intl";
+import { useSession } from "next-auth/react";
 
 const NewGames: React.FC = () => {
     const t = useTranslations("newGames");
+    const { data: session } = useSession();
 
     const newGames = [
         { id: 1, title: t("games.spiritOfTheLake"), provider: t("provider"), image: img1 },
@@ -76,9 +78,11 @@ const NewGames: React.FC = () => {
                         />
                         {/* Overlay for Game Details */}
                         <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <button className="px-2 py-1 bg-yellow-400 text-black text-sm font-semibold rounded-full hover:bg-yellow-500 transition">
-                                Play Now
-                            </button>
+                            {session && (
+                                <button className="px-2 py-1 bg-yellow-400 text-black text-sm font-semibold rounded-full hover:bg-yellow-500 transition">
+                                    Play Now
+                                </button>
+                            )}
                         </div>
                         {/* Game Details */}
                         <div className="p-2">

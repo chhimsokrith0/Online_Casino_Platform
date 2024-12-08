@@ -67,7 +67,7 @@ const RewardSection: React.FC = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/img-reward/bg-header-sm.svg" // Replace with the correct path for your background image
+            src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733644739/bg-header-sm_z0p3ak.svg" // Replace with the correct path for your background image
             alt="Reward Background"
             layout="fill"
             objectFit="cover"

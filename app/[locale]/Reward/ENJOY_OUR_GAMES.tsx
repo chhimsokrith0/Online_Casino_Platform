@@ -10,7 +10,7 @@ const ENJOY_OUR_GAMES = ({t}: {t: any}) => {
                 {/* Image */}
                 <div className="flex-shrink-0 mb-6 md:mb-0 md:mr-8">
                     <Image
-                        src="/img-reward/step1.BO1ggvpX.svg" // Replace with the actual path to the image
+                        src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733644740/step1.BO1ggvpX_mti3xt.svg" // Replace with the actual path to the image
                         alt="Game Wallet"
                         width={500}
                         height={500}

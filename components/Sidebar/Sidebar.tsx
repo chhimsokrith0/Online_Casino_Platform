@@ -97,7 +97,6 @@ const Sidebar = ({ locale }: { locale: string }) => {
           onClick={toggleSidebar}
           className="fixed top-4 left-4 bg-yellow-500 text-black px-3 py-2 rounded-full shadow-md focus:outline-none z-50"
         >
-          ☰
         </button>
       )}
     </>

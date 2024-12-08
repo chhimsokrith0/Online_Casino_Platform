@@ -188,11 +188,10 @@ const OtherSections = ({
           {/* Invite and Benefit */}
           <li
             onClick={() => setActiveItem("inviteAndBenefit")}
-            className={`flex items-center gap-3 px-4 py-2 rounded-lg ${
-              activeItem === "inviteAndBenefit"
-                ? "bg-gray-700 text-white"
-                : "hover:bg-gray-800 text-gray-400"
-            }`}
+            className={`flex items-center gap-3 px-4 py-2 rounded-lg ${activeItem === "inviteAndBenefit"
+              ? "bg-gray-700 text-white"
+              : "hover:bg-gray-800 text-gray-400"
+              }`}
           >
             <FontAwesomeIcon icon={faUsers} />
             <span>Invite and Benefit</span>
@@ -201,11 +200,10 @@ const OtherSections = ({
           {/* Favorite Games */}
           <li
             onClick={() => setActiveItem("favoriteGames")}
-            className={`flex items-center gap-3 px-4 py-2 rounded-lg ${
-              activeItem === "favoriteGames"
-                ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
-                : "text-gray-500"
-            }`}
+            className={`flex items-center gap-3 px-4 py-2 rounded-lg ${activeItem === "favoriteGames"
+              ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
+              : "text-gray-500"
+              }`}
           >
             <FontAwesomeIcon icon={faHeart} />
             <span>Favorite Games</span>
@@ -214,11 +212,10 @@ const OtherSections = ({
           {/* Recently Played */}
           <li
             onClick={() => setActiveItem("recentlyPlayed")}
-            className={`flex items-center gap-3 px-4 py-2 rounded-lg ${
-              activeItem === "recentlyPlayed"
-                ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
-                : "text-gray-500"
-            }`}
+            className={`flex items-center gap-3 px-4 py-2 rounded-lg ${activeItem === "recentlyPlayed"
+              ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
+              : "text-gray-500"
+              }`}
           >
             <FontAwesomeIcon icon={faClock} />
             <span>Recently Played</span>
@@ -229,26 +226,27 @@ const OtherSections = ({
       )}
 
       {/* Other Sections */}
-      <li
-        onClick={() => setActiveItem("providers")}
-        className={`flex items-center gap-3 px-4 py-2 rounded-lg ${
-          activeItem === "providers"
-            ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
-            : "hover:bg-gray-800"
-        }`}
-      >
-        <FontAwesomeIcon icon={faBuilding} />
-        <span>{t("providers")}</span>
-      </li>
-
-      <Link href={`/${locale}/Games`}>
+      <Link href={`/${locale}/providers`} passHref>
         <li
-          onClick={() => setActiveItem("rtpSlots")}
-          className={`flex items-center gap-3 px-4 py-2 rounded-lg ${
-            activeItem === "rtpSlots"
+          onClick={() => setActiveItem("providers")}
+          className={`flex items-center gap-3 px-4 py-2 rounded-lg ${activeItem === "providers"
               ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
               : "hover:bg-gray-800"
-          }`}
+            }`}
+        >
+          <FontAwesomeIcon icon={faBuilding} />
+          <span>{t("providers")}</span>
+        </li>
+      </Link>
+
+
+      <Link href={`/${locale}/Games/RtpSlot`}>
+        <li
+          onClick={() => setActiveItem("rtpSlots")}
+          className={`flex items-center gap-3 px-4 py-2 rounded-lg ${activeItem === "rtpSlots"
+            ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
+            : "hover:bg-gray-800"
+            }`}
         >
           <FontAwesomeIcon icon={faChartLine} />
           <span>{t("rtpSlots")}</span>
@@ -258,11 +256,10 @@ const OtherSections = ({
       <Link href={`/${locale}/Games`}>
         <li
           onClick={() => setActiveItem("sports")}
-          className={`flex items-center gap-3 px-4 py-2 rounded-lg ${
-            activeItem === "sports"
-              ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
-              : "hover:bg-gray-800"
-          }`}
+          className={`flex items-center gap-3 px-4 py-2 rounded-lg ${activeItem === "sports"
+            ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
+            : "hover:bg-gray-800"
+            }`}
         >
           <FontAwesomeIcon icon={faFutbol} />
           <span>{t("sports")}</span>
@@ -272,11 +269,10 @@ const OtherSections = ({
       <Link href={`/${locale}/Games`}>
         <li
           onClick={() => setActiveItem("fishing")}
-          className={`flex items-center gap-3 px-4 py-2 rounded-lg ${
-            activeItem === "fishing"
-              ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
-              : "hover:bg-gray-800"
-          }`}
+          className={`flex items-center gap-3 px-4 py-2 rounded-lg ${activeItem === "fishing"
+            ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
+            : "hover:bg-gray-800"
+            }`}
         >
           <FontAwesomeIcon icon={faFish} />
           <span>{t("fishing")}</span>
@@ -286,11 +282,10 @@ const OtherSections = ({
       <Link href={`/${locale}/Games`}>
         <li
           onClick={() => setActiveItem("virtual")}
-          className={`flex items-center gap-3 px-4 py-2 rounded-lg ${
-            activeItem === "virtual"
-              ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
-              : "hover:bg-gray-800"
-          }`}
+          className={`flex items-center gap-3 px-4 py-2 rounded-lg ${activeItem === "virtual"
+            ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
+            : "hover:bg-gray-800"
+            }`}
         >
           <FontAwesomeIcon icon={faGamepad} />
           <span>{t("virtual")}</span>

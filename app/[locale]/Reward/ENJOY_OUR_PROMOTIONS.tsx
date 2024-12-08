@@ -23,7 +23,7 @@ const ENJOY_OUR_PROMOTIONS = ({ t }: { t: any }) => {
                 {/* Image */}
                 <div className="flex-shrink-0 mt-6 md:mt-0 md:ml-8">
                     <Image
-                        src="/img-reward/step2.Cae0iGKU.svg" // Replace with the correct path for your image
+                        src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733644740/step2.Cae0iGKU_aqmve6.svg" // Replace with the correct path for your image
                         alt="Promotions Illustration"
                         width={500}
                         height={500}

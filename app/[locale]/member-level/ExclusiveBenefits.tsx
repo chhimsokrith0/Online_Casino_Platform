@@ -10,22 +10,22 @@ const ExclusiveBenefits = ({ t }: { t: any }) => {
     {
       title: t("exclusiveBenefits.benefits.levelsRewards.title"),
       description: t("exclusiveBenefits.benefits.levelsRewards.description"),
-      icon: "/img-member-level/trophy-star.svg",
+      icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733645320/trophy-star_pm2btv.svg",
     },
     {
       title: t("exclusiveBenefits.benefits.exclusivePromotions.title"),
       description: t("exclusiveBenefits.benefits.exclusivePromotions.description"),
-      icon: "/img-member-level/bonus.svg",
+      icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733645318/bonus_n0npy8.svg",
     },
     {
       title: t("exclusiveBenefits.benefits.higherCashback.title"),
       description: t("exclusiveBenefits.benefits.higherCashback.description"),
-      icon: "/img-member-level/nofee.svg",
+      icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733645318/nofee_bq6pzw.svg",
     },
     {
       title: t("exclusiveBenefits.benefits.royaltyClub.title"),
       description: t("exclusiveBenefits.benefits.royaltyClub.description"),
-      icon: "/img-member-level/vip.svg",
+      icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733645321/vip_t97kk7.svg",
     },
   ];
 
