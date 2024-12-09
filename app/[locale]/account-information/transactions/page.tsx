@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 const TransactionsPage = () => {
   const [activeTab, setActiveTab] = useState("Deposit");
@@ -16,6 +17,24 @@ const TransactionsPage = () => {
     "Receive Cashback",
     "Receive Referral",
   ];
+
+  const getTableContent = () => {
+    // Add dynamic content for each tab here
+    if (activeTab === "Deposit") {
+      return (
+        <div className="grid grid-cols-6 text-gray-400 text-sm mb-4">
+          <span>Amount</span>
+          <span>Channel</span>
+          <span>Bank Account</span>
+          <span>Deposit Date - Time</span>
+          <span>Status</span>
+          <span>Success Date - Time</span>
+        </div>
+      );
+    }
+    // Placeholder for other tabs
+    return <p className="text-gray-500">No data available for {activeTab}.</p>;
+  };
 
   return (
     <div className="p-6 bg-gray-900 text-gray-300 rounded-lg">
@@ -47,21 +66,16 @@ const TransactionsPage = () => {
 
       {/* Table */}
       <div className="bg-gray-800 p-6 rounded-lg">
-        <div className="grid grid-cols-6 text-gray-400 text-sm mb-4">
-          <span>Amount</span>
-          <span>Channel</span>
-          <span>Bank Account</span>
-          <span>Deposit Date - Time</span>
-          <span>Status</span>
-          <span>Success Date - Time</span>
-        </div>
+        {getTableContent()}
         <div className="flex flex-col items-center justify-center py-16">
-          <img
+          <Image
             src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733752217/nothing_box_sn6zu5.webp"
             alt="Empty State"
-            className="w-16 h-16 mb-4"
+            width={64}
+            height={64}
+            className="mb-4"
           />
-          <p className="text-gray-500">There's nothing here yet!</p>
+          <p className="text-gray-500">There&apos;s nothing here yet!</p>
         </div>
       </div>
 
@@ -72,7 +86,9 @@ const TransactionsPage = () => {
           <span>1</span>
           <button className="px-2 py-1 bg-gray-700 rounded-lg">&gt;</button>
         </div>
-        <div>Total Deposit: <span className="text-yellow-500">0.00฿</span></div>
+        <div>
+          Total {activeTab}: <span className="text-yellow-500">0.00฿</span>
+        </div>
       </div>
     </div>
   );

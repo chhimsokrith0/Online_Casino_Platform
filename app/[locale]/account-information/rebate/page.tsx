@@ -3,6 +3,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 const RebatePage = () => {
     return (
@@ -25,12 +26,14 @@ const RebatePage = () => {
 
             {/* Empty State */}
             <div className="bg-gray-700 p-6 rounded-lg flex flex-col items-center justify-center text-gray-400">
-                <img
+                <Image
                     src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733752217/nothing_box_sn6zu5.webp"
                     alt="Empty State"
-                    className="w-12 h-12 mb-3"
+                    width={48}
+                    height={48}
+                    className="mb-3"
                 />
-                <p>There's nothing here yet!</p>
+                <p>There&apos;s nothing here yet!</p>
             </div>
 
             {/* Pagination and Total */}
