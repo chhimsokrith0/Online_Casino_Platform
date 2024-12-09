@@ -2,7 +2,12 @@
 
 import React, { useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimes, faSearch, faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faTimes,
+  faSearch,
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
 import { gsap } from "gsap";
 
 interface SearchModalProps {
@@ -58,15 +63,15 @@ const SearchModal: React.FC<SearchModalProps> = ({ onClose }) => {
     if (modalRef.current) {
       gsap.fromTo(
         modalRef.current,
-        { opacity: 0, scale: 0.8 },
-        { opacity: 1, scale: 1, duration: 0.5, ease: "power2.out" }
+        { opacity: 0, scale: 0.9 },
+        { opacity: 1, scale: 1, duration: 0.4, ease: "power2.out" }
       );
     }
 
     gsap.fromTo(
       cardRefs.current,
       { opacity: 0, y: 20 },
-      { opacity: 1, y: 0, duration: 0.5, stagger: 0.1, ease: "power2.out" }
+      { opacity: 1, y: 0, duration: 0.6, stagger: 0.1, ease: "power2.out" }
     );
 
     return () => {
@@ -79,7 +84,7 @@ const SearchModal: React.FC<SearchModalProps> = ({ onClose }) => {
       gsap.to(modalRef.current, {
         opacity: 0,
         scale: 0.8,
-        duration: 0.5,
+        duration: 0.4,
         ease: "power2.inOut",
         onComplete: onClose,
       });
@@ -115,35 +120,35 @@ const SearchModal: React.FC<SearchModalProps> = ({ onClose }) => {
     >
       <div
         ref={modalRef}
-        className="relative bg-gray-800 text-gray-300 w-full max-w-3xl md:max-w-4xl rounded-lg p-4 md:p-6 shadow-lg overflow-y-auto h-[90vh] sm:h-auto"
+        className="relative bg-gray-900 text-gray-300 w-full max-w-4xl rounded-lg p-6 shadow-xl overflow-y-auto h-[85vh] sm:h-auto"
       >
         {/* Close Button */}
         <button
-          className="absolute top-4 right-4 text-gray-400 hover:text-white"
+          className="absolute top-3 right-3 text-gray-400 hover:text-white"
           onClick={handleClose}
         >
-          <FontAwesomeIcon icon={faTimes} size="2x" />
+          <FontAwesomeIcon icon={faTimes} size="lg" />
         </button>
 
         {/* Search Input */}
-        <div className="mb-4 md:mb-6">
-          <div className="flex items-center bg-gray-700 rounded-full px-4 py-2 md:py-3">
+        <div className="mb-6">
+          <div className="flex items-center bg-gray-800 rounded-full px-4 py-3">
             <FontAwesomeIcon icon={faSearch} className="text-gray-400 mr-3" />
             <input
               type="text"
               placeholder="Search Games"
-              className="flex-1 bg-transparent text-white placeholder-gray-400 focus:outline-none text-sm md:text-base"
+              className="flex-1 bg-transparent text-white placeholder-gray-400 focus:outline-none text-sm"
             />
           </div>
-          <p className="mt-2 text-gray-500 text-xs md:text-sm">Find your games</p>
+          <p className="mt-2 text-gray-500 text-xs">Find your games</p>
         </div>
 
         {/* Recommended Games Section */}
         <div>
-          <h3 className="text-base md:text-lg text-white font-semibold mb-3 md:mb-4">
+          <h3 className="text-lg text-white font-semibold mb-4">
             Recommended for you
           </h3>
-          <div className="grid grid-cols-3 sm:grid-cols-6 md:grid-cols-6 gap-2 sm:gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
             {recommendedGames.map((game, index) => (
               <div
                 key={game.id}
@@ -152,17 +157,15 @@ const SearchModal: React.FC<SearchModalProps> = ({ onClose }) => {
                 }}
                 onMouseEnter={() => handleHover(index)}
                 onMouseLeave={() => handleLeave(index)}
-                className="bg-gray-700 rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl transition"
+                className="bg-gray-800 rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-2xl transition-transform"
               >
                 <img
                   src={game.img}
                   alt={game.name}
-                  className="object-cover w-full h-55"
+                  className="object-cover w-full h-32 sm:h-36"
                 />
-                <div className="p-2 sm:p-3">
-                  <h4 className="text-xs sm:text-sm text-white truncate">
-                    {game.name}
-                  </h4>
+                <div className="p-3">
+                  <h4 className="text-sm text-white truncate">{game.name}</h4>
                   <p className="text-xs text-gray-400">{game.provider}</p>
                 </div>
               </div>
@@ -171,7 +174,7 @@ const SearchModal: React.FC<SearchModalProps> = ({ onClose }) => {
         </div>
 
         {/* Pagination Controls */}
-        <div className="flex justify-end mt-4 sm:mt-6 space-x-4">
+        <div className="flex justify-end mt-6 space-x-4">
           <button className="text-gray-400 hover:text-yellow-500">
             <FontAwesomeIcon icon={faChevronLeft} />
           </button>

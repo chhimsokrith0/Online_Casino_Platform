@@ -70,6 +70,7 @@ import CredentialsProvider from "next-auth/providers/credentials";
 const users = [
   { id: 1, username: "admin", password: "123", name: "Admin User" },
   { id: 2, username: "testuser", password: "password", name: "Test User" },
+  { id: 3, username: "0964143284", password: "123", name: "Admin User" },
 ];
 
 export default NextAuth({

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { gsap } from "gsap";
 import GamesHeader from "@/components/GamesHeader/GamesHeader";
 import GameCard from "./GameCard";
@@ -10,25 +10,59 @@ import { generateGamesData } from "./gamesData";
 import nothing_box from "../../../../public/nothing_box.webp";
 import Loading from "@/components/Loading";
 
+interface Game {
+  id: number;
+  title: string;
+  provider: string;
+  image: string;
+  category: string;
+}
+
 interface AllGamesProps {
   locale: string;
 }
 
-const AllLiveCasinoGames: React.FC<AllGamesProps> = ({ locale }) => {
+const AllGames: React.FC<AllGamesProps> = ({ locale }) => {
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const router = useRouter();
-  const searchParams = useSearchParams();
   const initialCategory = "allGames";
-  const [category, setCategory] = useState(initialCategory);
-  const [visibleCount, setVisibleCount] = useState(24); // Number of games to display initially
-  const [loading, setLoading] = useState(true);
+
+  // State Management
+  const [category, setCategory] = useState<string>(initialCategory);
+  const [searchTerm, setSearchTerm] = useState<string>(""); // Search term state
+  const [filteredGames, setFilteredGames] = useState<Game[]>([]); // Filtered games
+  const [visibleCount, setVisibleCount] = useState<number>(24); // Number of visible games
+  const [loading, setLoading] = useState<boolean>(true); // Loading state
 
   const t = useTranslations("games.allGame");
 
-  // Simulate data loading
-  const gamesData = generateGamesData(t);
-  const filteredGames = gamesData.filter((game) => game.category === category);
+  // Load and generate games data
+  const gamesData: Game[] = generateGamesData(t);
 
+  // Filter games based on category and search term
+  useEffect(() => {
+    // Avoid unnecessary state updates
+    const filtered = gamesData.filter(
+      (game) =>
+        (category === "allGames" || game.category === category) &&
+        game.title?.toLowerCase().includes(searchTerm.toLowerCase()) // Defensive check
+    );
+
+    // Only update the state if the filtered data has actually changed
+    setFilteredGames((prev) => {
+      const isSame =
+        prev.length === filtered.length &&
+        prev.every((game, index) => game.id === filtered[index].id);
+
+      if (!isSame) {
+        return filtered;
+      }
+
+      return prev;
+    });
+  }, [category, searchTerm, gamesData]);
+
+  // Handle loading state when category changes
   useEffect(() => {
     setLoading(true);
     const timeout = setTimeout(() => {
@@ -38,10 +72,18 @@ const AllLiveCasinoGames: React.FC<AllGamesProps> = ({ locale }) => {
     return () => clearTimeout(timeout);
   }, [category]);
 
+  // Update URL when category changes (Preventing Infinite Updates)
   useEffect(() => {
-    router.push(`?category=${category}`);
+    // Only update the URL if the category is different
+    const currentQuery = new URLSearchParams(window.location.search);
+    const currentCategory = currentQuery.get("category");
+
+    if (currentCategory !== category) {
+      router.push(`?category=${category}`);
+    }
   }, [category, router]);
 
+  // Add animation on component load
   useEffect(() => {
     if (sectionRef.current) {
       gsap.fromTo(
@@ -52,20 +94,24 @@ const AllLiveCasinoGames: React.FC<AllGamesProps> = ({ locale }) => {
     }
   }, []);
 
+  // Load more games
   const loadMoreGames = () => {
-    setVisibleCount((prev) => prev + 24); // Load 24 more games on each click
+    setVisibleCount((prev) => prev + 24); // Load 24 more games
   };
 
   return (
     <div ref={sectionRef} className="max-w-[1200px] mx-auto p-4">
+      {/* Games Header */}
       <GamesHeader
-        pageName="Live Casino"
+        pageName="Live Casino "
         locale={locale}
         setCategory={setCategory}
         currentCategory={category}
         gameCount={filteredGames.length}
+        setSearchTerm={setSearchTerm} // Pass setSearchTerm to GamesHeader
       />
 
+      {/* Content */}
       {loading ? (
         <Loading />
       ) : filteredGames.length > 0 ? (
@@ -107,4 +153,4 @@ const AllLiveCasinoGames: React.FC<AllGamesProps> = ({ locale }) => {
   );
 };
 
-export default AllLiveCasinoGames;
+export default AllGames;

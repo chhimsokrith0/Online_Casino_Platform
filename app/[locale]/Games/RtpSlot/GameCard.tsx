@@ -7,7 +7,7 @@ import { useSession } from "next-auth/react";
 interface GameCardProps {
   title: string;
   provider: string;
-  image: { src: string };
+  image: string;
   percentage: string;
 }
 
@@ -65,7 +65,7 @@ const GameCard: React.FC<GameCardProps> = ({ title, provider, image, percentage 
     >
       {/* Game Image */}
       <img
-        src={image.src}
+        src={image}
         alt={title}
         className="w-full h-45 object-cover transition-transform duration-300 group-hover:scale-105"
       />

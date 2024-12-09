@@ -11,7 +11,7 @@ interface GameData {
   id: number;
   title: string;
   provider: string;
-  image: { src: string };
+  image: string;
   category: string;
 }
 

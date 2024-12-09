@@ -146,6 +146,9 @@
 // };
 
 // export default OtherSections;
+
+
+
 "use client";
 
 import React, { useEffect, useState } from "react";
@@ -253,7 +256,7 @@ const OtherSections = ({
         </li>
       </Link>
 
-      <Link href={`/${locale}/Games`}>
+      <Link href={`/${locale}/Games/Sport`}>
         <li
           onClick={() => setActiveItem("sports")}
           className={`flex items-center gap-3 px-4 py-2 rounded-lg ${activeItem === "sports"
@@ -266,7 +269,7 @@ const OtherSections = ({
         </li>
       </Link>
 
-      <Link href={`/${locale}/Games`}>
+      <Link href={`/${locale}/Games/Fishing`}>
         <li
           onClick={() => setActiveItem("fishing")}
           className={`flex items-center gap-3 px-4 py-2 rounded-lg ${activeItem === "fishing"
@@ -279,7 +282,7 @@ const OtherSections = ({
         </li>
       </Link>
 
-      <Link href={`/${locale}/Games`}>
+      <Link href={`/${locale}/Games/Virtual`}>
         <li
           onClick={() => setActiveItem("virtual")}
           className={`flex items-center gap-3 px-4 py-2 rounded-lg ${activeItem === "virtual"

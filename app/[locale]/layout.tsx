@@ -81,7 +81,7 @@ export default async function RootLayout({
       <body className="body bg-[#020617] text-white min-h-screen">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <SessionProviderWrapper>
-            <header className="sticky top-0 z-[99] shadow-md">
+            <header className="sticky top-0 z-[9] shadow-md">
               <Navbar locale={locale} />
             </header>
             <div className="flex flex-col lg:flex-row">
@@ -93,6 +93,7 @@ export default async function RootLayout({
             <footer className="max-w-[1200px] mx-auto lg:ml-auto lg:mr-64 p-4">
               <Footer locale={locale} />
             </footer>
+            <br /><br /><br />
             <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-[#020617] z-50 shadow-lg">
               <MobileNavBar />
             </div>

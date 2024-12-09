@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import React, { useEffect, useRef, useState, useMemo } from "react";
+import { useRouter } from "next/navigation";
 import { gsap } from "gsap";
 import GamesHeader from "@/components/GamesHeader/GamesHeader";
 import GameCard from "./GameCard";
@@ -10,6 +10,15 @@ import { generateGamesData } from "./gamesData";
 import nothing_box from "../../../../public/nothing_box.webp";
 import Loading from "@/components/Loading";
 
+interface Game {
+  id: number;
+  title: string;
+  provider: string;
+  image: string;
+  category: string;
+  percentage?: string; // Optional field for percentage, if needed
+}
+
 interface AllGamesProps {
   locale: string;
 }
@@ -17,18 +26,28 @@ interface AllGamesProps {
 const AllLiveCasinoGames: React.FC<AllGamesProps> = ({ locale }) => {
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const router = useRouter();
-  const searchParams = useSearchParams();
   const initialCategory = "allGames";
+
   const [category, setCategory] = useState(initialCategory);
+  const [searchTerm, setSearchTerm] = useState<string>(""); // Search term state
   const [visibleCount, setVisibleCount] = useState(24); // Number of games to display initially
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true); // Loading state
 
   const t = useTranslations("games.allGame");
 
-  // Simulate data loading
-  const gamesData = generateGamesData(t);
-  const filteredGames = gamesData.filter((game) => game.category === category);
+  // Generate game data once using useMemo for better performance
+  const gamesData = useMemo(() => generateGamesData(t), [t]);
 
+  // Filter games based on category and search term
+  const filteredGames = useMemo(() => {
+    return gamesData.filter(
+      (game) =>
+        (category === "allGames" || game.category === category) &&
+        game.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  }, [gamesData, category, searchTerm]);
+
+  // Handle loading state when category changes
   useEffect(() => {
     setLoading(true);
     const timeout = setTimeout(() => {
@@ -38,10 +57,17 @@ const AllLiveCasinoGames: React.FC<AllGamesProps> = ({ locale }) => {
     return () => clearTimeout(timeout);
   }, [category]);
 
+  // Update the URL when the category changes
   useEffect(() => {
-    router.push(`?category=${category}`);
+    const currentQuery = new URLSearchParams(window.location.search);
+    const currentCategory = currentQuery.get("category");
+
+    if (currentCategory !== category) {
+      router.push(`?category=${category}`);
+    }
   }, [category, router]);
 
+  // Add animation on component load
   useEffect(() => {
     if (sectionRef.current) {
       gsap.fromTo(
@@ -52,6 +78,7 @@ const AllLiveCasinoGames: React.FC<AllGamesProps> = ({ locale }) => {
     }
   }, []);
 
+  // Load more games
   const loadMoreGames = () => {
     setVisibleCount((prev) => prev + 24); // Load 24 more games on each click
   };
@@ -59,11 +86,12 @@ const AllLiveCasinoGames: React.FC<AllGamesProps> = ({ locale }) => {
   return (
     <div ref={sectionRef} className="max-w-[1200px] mx-auto p-4">
       <GamesHeader
-        pageName="RTP Slots"
+        pageName="RtpSlot"
         locale={locale}
         setCategory={setCategory}
         currentCategory={category}
         gameCount={filteredGames.length}
+        setSearchTerm={setSearchTerm}
       />
 
       {loading ? (

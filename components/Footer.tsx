@@ -122,20 +122,31 @@ const Footer = ({ locale }: { locale: string }) => {
         </div>
 
         {/* Follow Us */}
-        <div>
-          <h3 className="text-yellow-400 text-lg font-bold mb-4">{t("footer.followUs")}</h3>
-          <div className="flex space-x-3 mt-4">
+        <div className="rounded-lg shadow-md">
+          <h3 className="text-yellow-400 text-xl font-bold tracking-wide mb-6 text-center">
+            {t("footer.followUs")}
+          </h3>
+          <div className="flex justify-center space-x-5 mt-4">
             {/* Line Icon */}
-            <button className="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center hover:opacity-90 transition">
-              <FontAwesomeIcon icon={faLine} className="text-white text-lg" />
+            <button
+              className="w-12 h-12 rounded-full bg-gradient-to-br from-green-500 to-green-600 shadow-lg flex items-center justify-center hover:scale-110 hover:shadow-xl transition-transform"
+              aria-label="Line"
+            >
+              <FontAwesomeIcon icon={faLine} className="text-white text-2xl" />
             </button>
             {/* Telegram Icon */}
-            <button className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center hover:opacity-90 transition">
-              <FontAwesomeIcon icon={faTelegram} className="text-white text-lg" />
+            <button
+              className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 shadow-lg flex items-center justify-center hover:scale-110 hover:shadow-xl transition-transform"
+              aria-label="Telegram"
+            >
+              <FontAwesomeIcon icon={faTelegram} className="text-white text-2xl" />
             </button>
             {/* Chat Icon */}
-            <button className="w-10 h-10 rounded-full bg-red-500 flex items-center justify-center hover:opacity-90 transition">
-              <FontAwesomeIcon icon={faWeixin} className="text-white text-lg" />
+            <button
+              className="w-12 h-12 rounded-full bg-gradient-to-br from-red-500 to-red-600 shadow-lg flex items-center justify-center hover:scale-110 hover:shadow-xl transition-transform"
+              aria-label="Chat"
+            >
+              <FontAwesomeIcon icon={faWeixin} className="text-white text-2xl" />
             </button>
           </div>
         </div>
@@ -194,23 +205,35 @@ const Footer = ({ locale }: { locale: string }) => {
           </div>
 
           {/* Follow Us */}
-          <div>
-            <h3 className="text-yellow-400 text-lg font-bold mb-4">{t("footer.followUs")}</h3>
-            <div className="flex space-x-3 mt-4">
+          <div className="rounded-lg shadow-md">
+            <h3 className="text-yellow-400 text-xl font-bold tracking-wide mb-6 text-center">
+              {t("footer.followUs")}
+            </h3>
+            <div className="flex justify-center space-x-5 mt-4">
               {/* Line Icon */}
-              <button className="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center hover:opacity-90 transition">
-                <FontAwesomeIcon icon={faLine} className="text-white text-lg" />
+              <button
+                className="w-12 h-12 rounded-full bg-gradient-to-br from-green-500 to-green-600 shadow-lg flex items-center justify-center hover:scale-110 hover:shadow-xl transition-transform"
+                aria-label="Line"
+              >
+                <FontAwesomeIcon icon={faLine} className="text-white text-2xl" />
               </button>
               {/* Telegram Icon */}
-              <button className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center hover:opacity-90 transition">
-                <FontAwesomeIcon icon={faTelegram} className="text-white text-lg" />
+              <button
+                className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 shadow-lg flex items-center justify-center hover:scale-110 hover:shadow-xl transition-transform"
+                aria-label="Telegram"
+              >
+                <FontAwesomeIcon icon={faTelegram} className="text-white text-2xl" />
               </button>
               {/* Chat Icon */}
-              <button className="w-10 h-10 rounded-full bg-red-500 flex items-center justify-center hover:opacity-90 transition">
-                <FontAwesomeIcon icon={faWeixin} className="text-white text-lg" />
+              <button
+                className="w-12 h-12 rounded-full bg-gradient-to-br from-red-500 to-red-600 shadow-lg flex items-center justify-center hover:scale-110 hover:shadow-xl transition-transform"
+                aria-label="Chat"
+              >
+                <FontAwesomeIcon icon={faWeixin} className="text-white text-2xl" />
               </button>
             </div>
           </div>
+
         </div>
 
         {/* Footer Bottom */}

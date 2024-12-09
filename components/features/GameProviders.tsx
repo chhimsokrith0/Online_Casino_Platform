@@ -134,7 +134,7 @@ const GameProviders: React.FC = () => {
                     768: { slidesPerView: 3 },
                     1024: { slidesPerView: 4 },
                 }}
-                navigation
+                // navigation
                 modules={[Navigation]}
                 className="w-full p-4"
             >
