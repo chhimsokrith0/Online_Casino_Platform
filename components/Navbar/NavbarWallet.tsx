@@ -68,8 +68,8 @@ const NavbarWallet = ({ locale }: { locale: string }) => {
         {/* Wallet Button */}
         <button
           className={`flex items-center gap-2 ${isMobile
-              ? "px-3 py-1 text-sm whitespace-nowrap"
-              : "px-4 py-2 text-base"
+            ? "px-3 py-1 text-sm whitespace-nowrap"
+            : "px-4 py-2 text-base"
             } bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-semibold rounded-full hover:opacity-90 transition`}
           onClick={toggleWalletModal}
         >
@@ -97,17 +97,28 @@ const NavbarWallet = ({ locale }: { locale: string }) => {
           className="flex items-center gap-2 cursor-pointer"
           onClick={toggleProfileModal}
         >
-          <Image
-            src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733035009/bronze_fleymy.png"
-            alt="Bronze Level"
-            width={40}
-            height={40}
-          />
+           <Image
+                src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733035009/bronze_fleymy.png"
+                alt="Bronze Level"
+                width={20}
+                height={20}
+              />
+
           {!isMobile && (
-            <div className="flex flex-col">
-              <span className="font-semibold text-white">0964143284</span>
-              <span className="text-yellow-500 text-sm">{t("bronze")}</span>
-            </div>
+            <>
+              <Image
+                src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733035009/bronze_fleymy.png"
+                alt="Bronze Level"
+                width={40}
+                height={40}
+              />
+              <div className="flex flex-col">
+
+                <span className="font-semibold text-white">0964143284</span>
+                <span className="text-yellow-500 text-sm">{t("bronze")}</span>
+              </div>
+            </>
+
           )}
         </div>
 

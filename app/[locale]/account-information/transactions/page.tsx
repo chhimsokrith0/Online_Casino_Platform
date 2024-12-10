@@ -1,9 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
+import gsap from "gsap";
 
 const TransactionsPage = () => {
   const [activeTab, setActiveTab] = useState("Deposit");
@@ -36,8 +37,20 @@ const TransactionsPage = () => {
     return <p className="text-gray-500">No data available for {activeTab}.</p>;
   };
 
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (containerRef.current) {
+      gsap.fromTo(
+        containerRef.current,
+        { opacity: 0, y: 20 },
+        { opacity: 1, y: 0, duration: 0.5, ease: "power4.out" }
+      );
+    }
+  }, []);
+
   return (
-    <div className="p-6 bg-gray-900 text-gray-300 rounded-lg">
+    <div ref={containerRef} className="p-6 bg-gray-900 text-gray-300 rounded-lg">
       {/* Header */}
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-xl font-bold text-white">History</h1>

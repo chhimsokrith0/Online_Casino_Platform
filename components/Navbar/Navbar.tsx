@@ -125,6 +125,7 @@ import NavbarLanguage from "./NavbarLanguage";
 import NavbarMobile from "./NavbarMobile";
 import SignUpModal from "./SignUpModal";
 import NavbarWallet from "./NavbarWallet";
+import BottomNavbar from "./BottomNavbar";
 
 interface NavbarProps {
   locale: string;
@@ -156,15 +157,35 @@ const Navbar: React.FC<NavbarProps> = ({ locale }) => {
       }}
     >
       {/* Logo */}
-      <NavbarLogo locale={locale} />
+      <div className="hidden sm:block">
+        <NavbarLogo locale={locale} />
+      </div>
 
       {/* Right Section */}
       <div className="flex items-center">
         {isMobile ? (
           isLoggedIn ? (
             <>
-              <NavbarWallet locale={locale} />
-              <NavbarLanguage locale={locale} />
+              <div>
+                <div
+                  className="grid grid-cols-3 gap-6 items-center justify-between"
+                  style={{ display: "grid" }}
+                >
+                  <div className="flex items-start">
+                    <NavbarLogo locale={locale} />
+                  </div>
+                  <div className="flex items-center">
+                    <NavbarWallet locale={locale} />
+                  </div>
+                  <div className="flex justify-end">
+                    <NavbarLanguage locale={locale} />
+                  </div>
+                </div>
+                <br />
+                <br />
+                <br />
+                <BottomNavbar />
+              </div>
             </>
           ) : (
             <>
@@ -177,6 +198,7 @@ const Navbar: React.FC<NavbarProps> = ({ locale }) => {
             <>
               <NavbarWallet locale={locale} />
               <NavbarLanguage locale={locale} />
+
             </>
           ) : (
             <>

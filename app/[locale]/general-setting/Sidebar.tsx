@@ -7,15 +7,10 @@ const Sidebar = () => {
   const [activeItem, setActiveItem] = useState("My Profile");
 
   const menuItems = [
-    { label: "My Profile", link: "/account-information/profile" },
-    { label: "History", link: "/account-information/transactions" },
-    { label: "Rebate", link: "/account-information/rebate" },
-    { label: "Cashback", link: "/account-information/cashback" },
-    { label: "Total Bet", link: "/account-information/total-bet" },
-    { label: "Redeem History", link: "/account-information/redeem-history" },
-    { label: "Point History", link: "/account-information/point-history" },
-    { label: "Personal Message", link: "/account-information/personal-message" },
-    { label: "Referral", link: "/account-information/affiliate" },
+    { label: "General", link: "/general-setting/general" },
+    { label: "Verification", link: "/general-setting/verification" },
+    { label: "Changes Password", link: "/general-setting/change-password" },
+    { label: "Activity Log", link: "/general-setting/active-log" },
   ];
 
   const handleItemClick = (label: string) => {
@@ -23,7 +18,7 @@ const Sidebar = () => {
   };
 
   return (
-    <aside className="bg-gray-900 py-6 px-4 flex flex-col rounded-lg">
+    <aside className="bg-gray-800 py-6 px-4 flex flex-col rounded-lg">
       <ul className="space-y-1">
         {menuItems.map((item, index) => (
           <li key={index} className="flex">

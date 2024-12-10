@@ -1,13 +1,28 @@
 "use client";
 
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import gsap from "gsap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 
 const CashbackPage = () => {
+
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (containerRef.current) {
+      gsap.fromTo(
+        containerRef.current,
+        { opacity: 0, y: 20 },
+        { opacity: 1, y: 0, duration: 0.5, ease: "power4.out" }
+      );
+    }
+  }, []);
+
+
   return (
-    <div className="p-6 bg-gray-800 rounded-lg">
+    <div ref={containerRef} className="p-6 bg-gray-900 rounded-lg">
       <h2 className="text-lg font-bold text-white mb-4">Cashback</h2>
 
       {/* Date Filter */}
