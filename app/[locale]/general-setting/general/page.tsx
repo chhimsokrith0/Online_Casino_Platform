@@ -5,11 +5,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import gsap from "gsap";
 import LanguageModal from "./LanguageModal"; // Import the modal component
+import { useTranslations } from "next-intl";
 
 const SettingsGeneral = () => {
     const containerRef = useRef<HTMLDivElement>(null); // Reference to the container
     const [isModalOpen, setModalOpen] = useState(false);
     const [selectedLanguage, setSelectedLanguage] = useState("Eng");
+    const t = useTranslations("settings");
 
     const toggleModal = () => {
         setModalOpen(!isModalOpen);
@@ -39,13 +41,13 @@ const SettingsGeneral = () => {
             >
                 {/* General Section Header */}
                 <div>
-                    <h2 className="text-lg font-bold mb-4">General</h2>
+                    <h2 className="text-lg font-bold mb-4"> { t("title")} </h2>
                     <hr className="border-gray-700" />
                 </div>
 
                 {/* Language Setting */}
                 <div className="mt-6">
-                    <p className="text-sm text-gray-400 mb-2">Language</p>
+                    <p className="text-sm text-gray-400 mb-2">{ t("general.language")}</p>
                     <button
                         className="flex items-center max-w-md justify-between w-full bg-gray-700 p-4 rounded-lg hover:bg-gray-600 transition"
                         onClick={toggleModal}

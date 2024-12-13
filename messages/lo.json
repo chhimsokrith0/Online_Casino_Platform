@@ -500,5 +500,124 @@
     "tableGames": "ເກມໂຕະ",
     "searchPlaceholder": "ຄົ້ນຫາເກມຂອງທ່ານ",
     "gameCount": "{count} ເກມ"
+  },
+  "settings": {
+    "title": "ການຕັ້ງຄ່າທົ່ວໄປ",
+    "menu": {
+      "general": "ທົ່ວໄປ",
+      "verification": "ການຢືນຢັນ",
+      "changePassword": "ປ່ຽນລະຫັດຜ່ານ",
+      "activityLog": "ບັນທຶກການກະທໍາ"
+    },
+    "general": {
+      "language": "ພາສາ",
+      "eng": "ອັງກິດ"
+    },
+    "verification": {
+      "title": "ການຕັ້ງຄ່າການຢືນຢັນ",
+      "AccountDetails": "ລາຍລະອຽດບັນຊີ",
+      "PersonalInformation": "ຂໍ້ມູນສ່ວນຕົວ",
+      "Firstname": "ຊື່ *",
+      "Lastname": "ນາມສະກຸນ *",
+      "MobilePhone": "ເບີໂທລະສັບ *",
+      "BankingInformation": "ຂໍ້ມູນທະນາຄານ",
+      "Bankname": "ຊື່ທະນາຄານ *",
+      "Bankaccountnumber": "ເລກບັນຊີທະນາຄານ *",
+      "SaveChanges": "ບັນທຶກການປ່ຽນແປງ"
+    },
+    "changePassword": {
+      "title": "ປ່ຽນລະຫັດຜ່ານ",
+      "currentPassword": "ລະຫັດຜ່ານປະຈຸບັນ *",
+      "newPassword": "ລະຫັດຜ່ານໃໝ່ *",
+      "confirmPassword": "ຢືນຢັນລະຫັດຜ່ານ *",
+      "currentPasswordPlaceholder": "ປ້ອນລະຫັດຜ່ານປະຈຸບັນ",
+      "newPasswordPlaceholder": "ປ້ອນລະຫັດຜ່ານໃໝ່",
+      "confirmPasswordPlaceholder": "ຢືນຢັນລະຫັດຜ່ານ",
+      "reloginNote": "ຈະຕ້ອງລ໋ອກອິນໃໝ່ຫຼັງຈາກປ່ຽນລະຫັດຜ່ານ.",
+      "passwordStrength": "ຄວາມແຂງແຮງຂອງລະຫັດຜ່ານ",
+      "requirements": {
+        "minLength": "ຕ້ອງມີຢ່າງໜ້ອຍ 8 ຕົວອັກສອນ.",
+        "uppercase": "ຕ້ອງມີຢ່າງໜ້ອຍ 1 ຕົວອັກສອນຕົ້ນສະຫວາຍ (A-Z).",
+        "lowercase": "ຕ້ອງມີຢ່າງໜ້ອຍ 1 ຕົວອັກສອນນ້ອຍ (a-z).",
+        "numeric": "ຕ້ອງມີຢ່າງໜ້ອຍ 1 ຕົວເລກ (0-9)."
+      },
+      "saveChanges": "ບັນທຶກການປ່ຽນແປງ"
+    },
+    "activityLog": {
+      "title": "ບັນທຶກການກະທໍາ",
+      "totalActivities": "ລວມການກະທໍາ:",
+      "filters": {
+        "all": "ທັງໝົດ",
+        "login": "ເຂົ້າລະບົບ",
+        "game": "ເຂົ້າເກม",
+        "quest": "ເຊັກອິນປະຈຳວັນ"
+      },
+      "columns": {
+        "dateTime": "ວັນທີ-ເວລາ",
+        "activity": "ການກະທໍາ"
+      },
+      "activityTypes": {
+        "login": "ເຂົ້າລະບົບ",
+        "dailyCheckIn": "ເຊັກອິນປະຈຳວັນຈາກເຄື່ອງມື",
+        "enterGame": "ເຂົ້າເກม"
+      },
+      "pagination": {
+        "page": "ໜ້າ",
+        "of": "ຂອງ"
+      }
+    }
+  },
+  "accountInformation": {
+    "title": "ຂໍ້ມູນບັນຊີ",
+    "menu": {
+      "myProfile": "ໂປຣໄຟລ໌ຂອງຂ້ອຍ",
+      "history": "ປະຫວັດ",
+      "rebate": "ສ່ວນຫຼຸດ",
+      "cashback": "ເງິນຄືນ",
+      "totalBet": "ຍອດພະນັນທັງໝົດ",
+      "redeemHistory": "ປະຫວັດການແລກ",
+      "pointHistory": "ປະຫວັດຄະແນນ",
+      "personalMessage": "ຂໍ້ຄວາມສ່ວນຕົວ",
+      "referral": "ສະເໜີບັນດາໝູ່"
+    },
+    "profile": {
+      "phoneNumber": "ເບີໂທລະສັບ",
+      "joinedOn": "ເຂົ້າຮ່ວມວັນທີ",
+      "vipLevel": {
+        "current": "ລະດັບປະຈຸບັນ",
+        "upgrade": "ຍົກລະດັບ VIP ຂອງທ່ານ",
+        "progress": "ຄວາມຄືບໜ້າຂອງທ່ານ"
+      },
+      "wallet": {
+        "title": "ກະເປົາເງິນຂອງທ່ານ",
+        "balance": "ຍອດເງິນ"
+      },
+      "rebateBalance": "ຍອດສ່ວນຫຼຸດ",
+      "cashbackBalance": "ຍອດເງິນຄືນ",
+      "referralBalance": "ຍອດເງິນສະເໜີ"
+    },
+    "totalBets": {
+      "title": "ຍອດພະນັນທັງໝົດ",
+      "depositTurnover": "ຍອດຝາກເງິນ",
+      "turnover": "ຍອດລົດເລີຍ",
+      "turnWinlose": "ຍອດໄດ້/ເສຍ"
+    },
+    "promotions": {
+      "title": "ໂປໂມຊັນຂອງຂ້ອຍ",
+      "cashback": "ເງິນຄືນ",
+      "rebate": "ສ່ວນຫຼຸດ"
+    },
+    "actions": {
+      "exchangeReward": "ແລກລາງວັນ",
+      "logOut": "ອອກຈາກລະບົບ"
+    },
+    "points": {
+      "currentPoints": "ຄະແນນປະຈຸບັນ",
+      "progress": "ຄວາມຄືບໜ້າ",
+      "rank": {
+        "bronze": "ທອງແດງ",
+        "silver": "ເງິນ"
+      }
+    }
   }
 }

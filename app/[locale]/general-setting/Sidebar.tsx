@@ -1,20 +1,35 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const Sidebar = () => {
-  const [activeItem, setActiveItem] = useState("My Profile");
+  const [activeItem, setActiveItem] = useState<string>("");
+  const t = useTranslations("settings");
 
   const menuItems = [
-    { label: "General", link: "/general-setting/general" },
-    { label: "Verification", link: "/general-setting/verification" },
-    { label: "Changes Password", link: "/general-setting/change-password" },
-    { label: "Activity Log", link: "/general-setting/active-log" },
+    { label: t("menu.general"), link: "/general-setting/general" },
+    { label: t("menu.verification"), link: "/general-setting/verification" },
+    { label: t("menu.changePassword"), link: "/general-setting/change-password" },
+    { label: t("menu.activityLog"), link: "/general-setting/active-log" },
   ];
+
+  useEffect(() => {
+    // Load the active menu item from localStorage when the component mounts
+    const storedActiveItem = localStorage.getItem("activeMenuItem");
+    if (storedActiveItem) {
+      setActiveItem(storedActiveItem);
+    } else {
+      // Set default active item to "General"
+      setActiveItem("General");
+    }
+  }, []);
 
   const handleItemClick = (label: string) => {
     setActiveItem(label);
+    // Save the active menu item to localStorage
+    localStorage.setItem("activeMenuItem", label);
   };
 
   return (
@@ -36,6 +51,10 @@ const Sidebar = () => {
           </li>
         ))}
       </ul>
+      {/* Mobile-specific styling */}
+      <div className="block md:hidden mt-4 text-gray-300 text-center">
+        Use the tabs above for navigation
+      </div>
     </aside>
   );
 };

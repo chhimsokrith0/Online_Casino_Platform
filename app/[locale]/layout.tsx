@@ -63,6 +63,7 @@ import { getMessages } from "next-intl/server";
 import MobileNavBar from "@/components/MobileNavBar";
 import fonts from "../../messages/fonts.json";
 import SessionProviderWrapper from "@/components/SessionProviderWrapper";
+import "./style.css"
 
 export default async function RootLayout({
   children,

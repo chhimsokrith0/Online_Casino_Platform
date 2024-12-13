@@ -500,5 +500,124 @@
         "tableGames": "테이블 게임",
         "searchPlaceholder": "게임 찾기",
         "gameCount": "{count} 게임"
+    },
+    "settings": {
+        "title": "일반 설정",
+        "menu": {
+            "general": "일반",
+            "verification": "인증",
+            "changePassword": "비밀번호 변경",
+            "activityLog": "활동 로그"
+        },
+        "general": {
+            "language": "언어",
+            "eng": "영어"
+        },
+        "verification": {
+            "title": "인증 설정",
+            "AccountDetails": "계정 세부 정보",
+            "PersonalInformation": "개인 정보",
+            "Firstname": "이름 *",
+            "Lastname": "성 *",
+            "MobilePhone": "휴대폰 번호 *",
+            "BankingInformation": "은행 정보",
+            "Bankname": "은행 이름 *",
+            "Bankaccountnumber": "은행 계좌 번호 *",
+            "SaveChanges": "변경 사항 저장"
+        },
+        "changePassword": {
+            "title": "비밀번호 변경",
+            "currentPassword": "현재 비밀번호 *",
+            "newPassword": "새 비밀번호 *",
+            "confirmPassword": "비밀번호 확인 *",
+            "currentPasswordPlaceholder": "현재 비밀번호 입력",
+            "newPasswordPlaceholder": "새 비밀번호 입력",
+            "confirmPasswordPlaceholder": "비밀번호 확인",
+            "reloginNote": "비밀번호 변경 후 다시 로그인해야 합니다.",
+            "passwordStrength": "비밀번호 강도",
+            "requirements": {
+                "minLength": "최소 8자 이상이어야 합니다.",
+                "uppercase": "최소 1개의 대문자 (A-Z)가 포함되어야 합니다.",
+                "lowercase": "최소 1개의 소문자 (a-z)가 포함되어야 합니다.",
+                "numeric": "최소 1개의 숫자 (0-9)가 포함되어야 합니다."
+            },
+            "saveChanges": "변경 사항 저장"
+        },
+        "activityLog": {
+            "title": "활동 로그",
+            "totalActivities": "총 활동:",
+            "filters": {
+                "all": "모두",
+                "login": "로그인",
+                "game": "게임 입장",
+                "quest": "일일 체크인"
+            },
+            "columns": {
+                "dateTime": "날짜-시간",
+                "activity": "활동"
+            },
+            "activityTypes": {
+                "login": "로그인",
+                "dailyCheckIn": "퀘스트에서 일일 체크인",
+                "enterGame": "게임 입장"
+            },
+            "pagination": {
+                "page": "페이지",
+                "of": "의"
+            }
+        }
+    },
+    "accountInformation": {
+        "title": "계정 정보",
+        "menu": {
+            "myProfile": "내 프로필",
+            "history": "히스토리",
+            "rebate": "리베이트",
+            "cashback": "캐시백",
+            "totalBet": "총 베팅",
+            "redeemHistory": "교환 기록",
+            "pointHistory": "포인트 기록",
+            "personalMessage": "개인 메시지",
+            "referral": "추천"
+        },
+        "profile": {
+            "phoneNumber": "전화번호",
+            "joinedOn": "가입일",
+            "vipLevel": {
+                "current": "현재 등급",
+                "upgrade": "VIP 등급 업그레이드",
+                "progress": "진행 상태"
+            },
+            "wallet": {
+                "title": "내 지갑",
+                "balance": "잔액"
+            },
+            "rebateBalance": "리베이트 잔액",
+            "cashbackBalance": "캐시백 잔액",
+            "referralBalance": "추천 잔액"
+        },
+        "totalBets": {
+            "title": "총 베팅",
+            "depositTurnover": "예치금 회전율",
+            "turnover": "회전율",
+            "turnWinlose": "승/패"
+        },
+        "promotions": {
+            "title": "내 프로모션",
+            "cashback": "캐시백",
+            "rebate": "리베이트"
+        },
+        "actions": {
+            "exchangeReward": "보상 교환",
+            "logOut": "로그아웃"
+        },
+        "points": {
+            "currentPoints": "현재 포인트",
+            "progress": "진행",
+            "rank": {
+                "bronze": "브론즈",
+                "silver": "실버"
+            }
+        }
     }
 }

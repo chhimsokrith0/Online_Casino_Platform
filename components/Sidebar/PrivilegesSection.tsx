@@ -48,7 +48,7 @@ const PrivilegesSection = ({ locale }: { locale: string }) => {
       label: t("reward"),
       bgColor: "rgb(36, 68, 38)",
       icon: rewardIcon,
-      link: `/${locale}/Reward`,
+      link: session ? `/${locale}/Reward/random-card` :  `/${locale}/Reward` ,
     },
     {
       key: "promo",
@@ -70,7 +70,7 @@ const PrivilegesSection = ({ locale }: { locale: string }) => {
       bgColor: "rgb(108, 88, 33)",
       colSpan: 2,
       icon: referralIcon,
-      link: `/${locale}/Referral`,
+      link: session ? `/${locale}/account-information/affiliate` : `/${locale}/Referral`,
     },
   ];
 

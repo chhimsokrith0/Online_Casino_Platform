@@ -4,6 +4,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import gsap from "gsap";
+import { useTranslations } from "next-intl";
 
 const ChangePassword = () => {
     const [showCurrentPassword, setShowCurrentPassword] = useState(false);
@@ -12,14 +13,16 @@ const ChangePassword = () => {
 
     const containerRef = useRef<HTMLDivElement>(null);
 
+    const t = useTranslations("settings");
+
     useEffect(() => {
-      if (containerRef.current) {
-        gsap.fromTo(
-          containerRef.current,
-          { opacity: 0, y: 20 },
-          { opacity: 1, y: 0, duration: 0.5, ease: "power4.out" }
-        );
-      }
+        if (containerRef.current) {
+            gsap.fromTo(
+                containerRef.current,
+                { opacity: 0, y: 20 },
+                { opacity: 1, y: 0, duration: 0.5, ease: "power4.out" }
+            );
+        }
     }, []);
 
     const togglePasswordVisibility = (
@@ -31,13 +34,14 @@ const ChangePassword = () => {
     return (
         <div ref={containerRef} className="bg-gray-800 p-6 sm:p-8 rounded-lg shadow-lg text-white">
             {/* Header */}
-            <h2 className="text-2xl font-bold mb-8">Change Password</h2>
+            <h2 className="text-2xl font-bold mb-8">{t("changePassword.title")}</h2>
 
             <div className="max-w-md">
                 {/* Current Password */}
                 <div className="mb-6">
                     <label className="block text-sm text-gray-400 mb-2">
-                        Current Password <span className="text-red-500">*</span>
+                        {/* Current Password <span className="text-red-500">*</span> */}
+                        {t("changePassword.currentPassword")}
                     </label>
                     <div className="relative">
                         <input
@@ -58,12 +62,12 @@ const ChangePassword = () => {
                 {/* New Password */}
                 <div className="mb-6">
                     <label className="block text-sm text-gray-400 mb-2">
-                        New Password <span className="text-red-500">*</span>
+                        {t("changePassword.newPassword")}
                     </label>
                     <div className="relative">
                         <input
                             type={showNewPassword ? "text" : "password"}
-                            placeholder="Enter new password"
+                            placeholder={t("changePassword.newPasswordPlaceholder")}
                             className="w-full bg-gray-700 text-white p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
                         />
                         <button
@@ -79,12 +83,12 @@ const ChangePassword = () => {
                 {/* Confirm Password */}
                 <div className="mb-6">
                     <label className="block text-sm text-gray-400 mb-2">
-                        Confirm Password <span className="text-red-500">*</span>
+                        {t("changePassword.confirmPassword")}
                     </label>
                     <div className="relative">
                         <input
                             type={showConfirmPassword ? "text" : "password"}
-                            placeholder="Enter confirm password"
+                            placeholder={t("changePassword.currentPasswordPlaceholder")}
                             className="w-full bg-gray-700 text-white p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
                         />
                         <button
@@ -99,24 +103,24 @@ const ChangePassword = () => {
 
                 {/* Password Change Note */}
                 <p className="text-sm text-yellow-500 flex items-center mb-6">
-                    <span className="mr-2">⚠</span> Re-login will be required after changing the password.
+                    <span className="mr-2">⚠</span> {t("changePassword.reloginNote")}
                 </p>
 
                 {/* Password Strength */}
                 <div className="mb-8">
-                    <h3 className="text-sm font-semibold text-white mb-3">Password Strength</h3>
+                    <h3 className="text-sm font-semibold text-white mb-3">{t("changePassword.passwordStrength")}</h3>
                     <ul className="text-sm text-gray-400 space-y-2">
                         <li className="flex items-center">
-                            <span className="text-green-500 mr-2">✔</span> Must be at least 8 characters.
+                            <span className="text-green-500 mr-2">✔</span> {t("changePassword.requirements.minLength")}
                         </li>
                         <li className="flex items-center">
-                            <span className="text-green-500 mr-2">✔</span> Must contain at least 1 uppercase letter (A-Z).
+                            <span className="text-green-500 mr-2">✔</span> {t("changePassword.requirements.uppercase")}
                         </li>
                         <li className="flex items-center">
-                            <span className="text-green-500 mr-2">✔</span> Must contain at least 1 lowercase letter (a-z).
+                            <span className="text-green-500 mr-2">✔</span> {t("changePassword.requirements.lowercase")}
                         </li>
                         <li className="flex items-center">
-                            <span className="text-green-500 mr-2">✔</span> Must contain at least 1 numeric digit (0-9).
+                            <span className="text-green-500 mr-2">✔</span> {t("changePassword.requirements.numeric")}
                         </li>
                     </ul>
                 </div>
@@ -126,7 +130,7 @@ const ChangePassword = () => {
                     className="w-full bg-gray-700 text-gray-500 p-3 rounded-lg cursor-not-allowed"
                     disabled
                 >
-                    Save Changes
+                    {t("changePassword.saveChanges")}
                 </button>
             </div>
         </div>

@@ -26,6 +26,9 @@
         },
         "vi": {
             "fontFamily": "Arial, sans-serif"
+        },
+        "ur": {
+            "fontFamily": "Cairo, sans-serif"
         }
     }
 }

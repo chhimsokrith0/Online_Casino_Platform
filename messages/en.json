@@ -448,5 +448,309 @@
     "tableGames": "Table Games",
     "searchPlaceholder": "Find your game",
     "gameCount": "{count} Games"
+  },
+  "settings": {
+    "title": "General Setting",
+    "menu": {
+      "general": "General",
+      "verification": "Verification",
+      "changePassword": "Change Password",
+      "activityLog": "Activity Log"
+    },
+    "general": {
+      "language": "Language",
+      "eng": "Eng"
+    },
+    "verification": {
+      "title": "Verification Setup",
+      "AccountDetails": "Account Details",
+      "PersonalInformation": "Personal Information",
+      "Firstname": "First name *",
+      "Lastname": "Last name *",
+      "MobilePhone": "Mobile phone *",
+      "BankingInformation": "Banking Information",
+      "Bankname": "Bank name *",
+      "Bankaccountnumber": "Bank account number *",
+      "SaveChanges": "Save Changes"
+    },
+    "changePassword": {
+      "title": "Change Password",
+      "currentPassword": "Current Password *",
+      "newPassword": "New Password *",
+      "confirmPassword": "Confirm Password *",
+      "currentPasswordPlaceholder": "Enter current password",
+      "newPasswordPlaceholder": "Enter new password",
+      "confirmPasswordPlaceholder": "Enter confirm password",
+      "reloginNote": "Re-login will be required after changing the password.",
+      "passwordStrength": "Password Strength",
+      "requirements": {
+        "minLength": "Must be at least 8 characters.",
+        "uppercase": "Must contain at least 1 uppercase letter (A-Z).",
+        "lowercase": "Must contain at least 1 lowercase letter (a-z).",
+        "numeric": "Must contain at least 1 numeric digit (0-9)."
+      },
+      "saveChanges": "Save Changes"
+    },
+    "activityLog": {
+      "title": "Activity Log",
+      "totalActivities": "Total Activity:",
+      "filters": {
+        "all": "All",
+        "login": "login",
+        "game": "Enter Game",
+        "quest": "Daily Check-In"
+      },
+      "columns": {
+        "dateTime": "Date-Time",
+        "activity": "Activity"
+      },
+      "activityTypes": {
+        "login": "Login",
+        "dailyCheckIn": "Daily Check-In from Quest",
+        "enterGame": "Enter Game"
+      },
+      "pagination": {
+        "page": "Page",
+        "of": "of"
+      }
+    }
+  },
+  "accountInformation": {
+    "title": "Account Information",
+    "menu": {
+      "myProfile": "My Profile",
+      "history": "History",
+      "rebate": "Rebate",
+      "cashback": "Cashback",
+      "totalBet": "Total Bet",
+      "redeemHistory": "Redeem History",
+      "pointHistory": "Point History",
+      "personalMessage": "Personal Message",
+      "referral": "Referral"
+    },
+    "profile": {
+      "phoneNumber": "Phone Number",
+      "joinedOn": "Joined On",
+      "vipLevel": {
+        "current": "Current Level",
+        "upgrade": "Upgrade Your VIP Level",
+        "progress": "Your progress"
+      },
+      "wallet": {
+        "title": "Your Wallet",
+        "balance": "Balance"
+      },
+      "rebateBalance": "Rebate Balance",
+      "cashbackBalance": "Cashback Balance",
+      "referralBalance": "Referral Balance"
+    },
+    "totalBets": {
+      "title": "Total Bets",
+      "columns": {
+        "transactionDateTime": "Transaction Date-Time",
+        "totalWinLose": "Total Win/Lose",
+        "totalBets": "Total Bets"
+      },
+      "emptyState": {
+        "message": "There's nothing here yet!"
+      },
+      "totalBetAmount": "Total Bet Amount: "
+    },
+    "promotions": {
+      "title": "My Promotions",
+      "cashback": "Cashback",
+      "rebate": "Rebate"
+    },
+    "actions": {
+      "exchangeReward": "Exchange Reward",
+      "logOut": "Log Out"
+    },
+    "points": {
+      "currentPoints": "Current Points",
+      "progress": "Progress",
+      "rank": {
+        "bronze": "Bronze",
+        "silver": "Silver"
+      }
+    },
+    "history": {
+      "title": "History",
+      "tabs": {
+        "deposit": "Deposit",
+        "withdraw": "Withdraw",
+        "bet": "Bet",
+        "receivePromotion": "Receive Promotion",
+        "receiveRebate": "Receive Rebate",
+        "receiveCashback": "Receive Cashback",
+        "receiveReferral": "Receive Referral"
+      },
+      "columns": {
+        "amount": "Amount",
+        "channel": "Channel",
+        "bankAccount": "Bank Account",
+        "depositDateTime": "Deposit Date - Time",
+        "status": "Status",
+        "successDateTime": "Success Date - Time"
+      },
+      "emptyState": {
+        "message": "There's nothing here yet!"
+      },
+      "totalDeposit": "Total Deposit: "
+    },
+    "rebate": {
+      "title": "Rebate",
+      "columns": {
+        "transactionDateTime": "Transaction Date-Time",
+        "rebateAmount": "Rebate Amount"
+      },
+      "emptyState": {
+        "message": "There's nothing here yet!"
+      },
+      "totalRebate": "Total Rebate Amount: "
+    },
+    "cashback": {
+      "title": "Cashback",
+      "columns": {
+        "transactionDateTime": "Transaction Date-Time",
+        "cashbackAmount": "Cashback Amount"
+      },
+      "emptyState": {
+        "message": "There's nothing here yet!"
+      },
+      "totalCashback": "Total Cashback Amount: "
+    },
+    "redeemHistory": {
+      "title": "Redeem History",
+      "columns": {
+        "no": "No.",
+        "transactionDateTime": "Transaction Date-Time",
+        "typeOfReward": "Type of Reward",
+        "reward": "Reward",
+        "status": "Status",
+        "usedPoints": "Used Points",
+        "freeSpins": "Free Spins"
+      },
+      "emptyState": {
+        "message": "There's nothing here yet!"
+      },
+      "totals": {
+        "allRewards": "All Rewards:",
+        "totalUsedPoints": "Total Used Points:",
+        "totalFreeSpins": "Total Free Spins:",
+        "totalAmountPerRound": "Total Amount per Round:"
+      }
+    },
+    "pointHistory": {
+      "title": "Point History",
+      "columns": {
+        "transactionDateTime": "Transaction Date-Time",
+        "type": "Type",
+        "turnover": "Turnover",
+        "currentPoint": "Current Point"
+      },
+      "emptyState": {
+        "message": "There's nothing here yet!"
+      },
+      "totalPoints": "Total Points:"
+    },
+    "personalMessage": {
+      "title": "Personal Message",
+      "tabs": {
+        "inbox": "Inbox",
+        "send": "Send"
+      },
+      "emptyState": {
+        "message": "No Result Found"
+      },
+      "actions": {
+        "newMessage": "New Message"
+      },
+      "newMessageModal": {
+        "title": "New Message",
+        "fields": {
+          "sendTo": "Send To",
+          "admin": "Admin",
+          "title": "Title",
+          "titlePlaceholder": "Enter title",
+          "message": "Message",
+          "messagePlaceholder": "Type Something here ...",
+          "attachImage": "Attach an Image (Optional)",
+          "uploadInstructions": "Click to upload or drag and drop",
+          "allowedFileTypes": "WEBP, PNG, or JPG (3MB)."
+        },
+        "characterLimit": "0/300",
+        "sendMessageButton": "Send a Message"
+      },
+      "pagination": {
+        "previous": "<",
+        "next": ">"
+      }
+    },
+    "referral": {
+      "title": "Referral",
+      "stats": {
+        "incomeToday": "Your income today",
+        "totalReferral": "Total Referral",
+        "referralClick": "Referral Click",
+        "totalMember": "Total Member",
+        "totalTurnover": "Total Turnover",
+        "totalCashback": "Total Cashback"
+      },
+      "copy": {
+        "referralLink": "Referral Link",
+        "referralCode": "Referral Code",
+        "copyText": "Copy your referral code or link to your friends, and when they register and play the game, you get a rebate."
+      },
+      "inviteFriends": "Invite Friends",
+      "socialMedia": {
+        "facebook": "Facebook",
+        "telegram": "Telegram",
+        "skype": "Skype",
+        "whatsapp": "WhatsApp"
+      },
+      "actions": {
+        "transfer": "Transfer"
+      },
+      "dataOverview": {
+        "title": "Data Overview",
+        "tabs": {
+          "totalRevenue": "Total Revenue",
+          "members": "Members",
+          "receiveReferral": "Receive Referral"
+        },
+        "table": {
+          "columns": {
+            "date": "Date",
+            "referral": "Referral"
+          },
+          "emptyState": {
+            "message": "There's nothing here yet!"
+          },
+          "totals": {
+            "totalRevenue": "Total Revenue:"
+          }
+        },
+        "analytics": {
+          "title": "Analytics - Measure your Performance",
+          "metrics": {
+            "income": {
+              "title": "Income",
+              "today": "Income Today",
+              "yesterday": "Yesterday"
+            },
+            "turnover": {
+              "title": "Turnover",
+              "today": "Turnover Today",
+              "yesterday": "Yesterday"
+            },
+            "cashback": {
+              "title": "Cashback",
+              "today": "Cashback Today",
+              "yesterday": "Yesterday"
+            }
+          }
+        }
+      }
+    }
   }
 }

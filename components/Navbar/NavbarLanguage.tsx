@@ -76,7 +76,7 @@ const NavbarLanguage: React.FC<NavbarLanguageProps> = ({ locale }) => {
   }, []);
 
   return (
-    <div ref={dropdownRef} className="relative ml-4">
+    <div ref={dropdownRef} className="relative">
       <button
         onClick={toggleDropdown}
         className="flex items-center bg-gray-800 text-white px-4 py-2 rounded-full border border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500 hover:bg-yellow-500 hover:text-black transition"

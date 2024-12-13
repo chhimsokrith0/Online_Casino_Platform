@@ -500,5 +500,71 @@
         "tableGames": "ٹیبل گیمز",
         "searchPlaceholder": "اپنا گیم تلاش کریں",
         "gameCount": "{count} گیمز"
+    },
+    "settings": {
+        "title": "عام ترتیبات",
+        "menu": {
+            "general": "عام",
+            "verification": "تصدیق",
+            "changePassword": "پاس ورڈ تبدیل کریں",
+            "activityLog": "سرگرمی لاگ"
+        },
+        "general": {
+            "language": "زبان",
+            "eng": "انگریزی"
+        },
+        "verification": {
+            "title": "تصدیقی ترتیبات",
+            "AccountDetails": "اکاؤنٹ کی تفصیلات",
+            "PersonalInformation": "ذاتی معلومات",
+            "Firstname": "پہلا نام *",
+            "Lastname": "آخری نام *",
+            "MobilePhone": "موبائل نمبر *",
+            "BankingInformation": "بینکنگ معلومات",
+            "Bankname": "بینک کا نام *",
+            "Bankaccountnumber": "بینک اکاؤنٹ نمبر *",
+            "SaveChanges": "تبدیلیاں محفوظ کریں"
+        },
+        "changePassword": {
+            "title": "پاس ورڈ تبدیل کریں",
+            "currentPassword": "موجودہ پاس ورڈ *",
+            "newPassword": "نیا پاس ورڈ *",
+            "confirmPassword": "پاس ورڈ کی تصدیق کریں *",
+            "currentPasswordPlaceholder": "موجودہ پاس ورڈ درج کریں",
+            "newPasswordPlaceholder": "نیا پاس ورڈ درج کریں",
+            "confirmPasswordPlaceholder": "پاس ورڈ کی تصدیق کریں",
+            "reloginNote": "پاس ورڈ تبدیل کرنے کے بعد دوبارہ لاگ ان کرنا ہوگا۔",
+            "passwordStrength": "پاس ورڈ کی مضبوطی",
+            "requirements": {
+                "minLength": "کم از کم 8 حروف ہونا ضروری ہے۔",
+                "uppercase": "کم از کم 1 بڑا حرف (A-Z) ہونا ضروری ہے۔",
+                "lowercase": "کم از کم 1 چھوٹا حرف (a-z) ہونا ضروری ہے۔",
+                "numeric": "کم از کم 1 عددی (0-9) ہونا ضروری ہے۔"
+            },
+            "saveChanges": "تبدیلیاں محفوظ کریں"
+        },
+        "activityLog": {
+            "title": "سرگرمی لاگ",
+            "totalActivities": "کل سرگرمیاں:",
+            "filters": {
+                "all": "سب",
+                "login": "لاگ ان",
+                "game": "گیم میں داخل ہوں",
+                "quest": "روزانہ چیک ان"
+            },
+            "columns": {
+                "dateTime": "تاریخ-وقت",
+                "activity": "سرگرمی"
+            },
+            "activityTypes": {
+                "login": "لاگ ان",
+                "dailyCheckIn": "روزانہ چیک ان مشن سے",
+                "enterGame": "گیم میں داخل ہوں"
+            },
+            "pagination": {
+                "page": "صفحہ",
+                "of": "کا"
+            }
+        }
     }
 }

@@ -500,5 +500,71 @@
         "tableGames": "桌面遊戲",
         "searchPlaceholder": "搜尋您的遊戲",
         "gameCount": "{count} 遊戲"
+    },
+    "settings": {
+        "title": "一般設定",
+        "menu": {
+            "general": "一般",
+            "verification": "驗證",
+            "changePassword": "更改密碼",
+            "activityLog": "活動日誌"
+        },
+        "general": {
+            "language": "語言",
+            "eng": "英文"
+        },
+        "verification": {
+            "title": "驗證設定",
+            "AccountDetails": "帳戶詳情",
+            "PersonalInformation": "個人資訊",
+            "Firstname": "名字 *",
+            "Lastname": "姓氏 *",
+            "MobilePhone": "手機號碼 *",
+            "BankingInformation": "銀行資訊",
+            "Bankname": "銀行名稱 *",
+            "Bankaccountnumber": "銀行帳號 *",
+            "SaveChanges": "儲存變更"
+        },
+        "changePassword": {
+            "title": "更改密碼",
+            "currentPassword": "當前密碼 *",
+            "newPassword": "新密碼 *",
+            "confirmPassword": "確認密碼 *",
+            "currentPasswordPlaceholder": "輸入當前密碼",
+            "newPasswordPlaceholder": "輸入新密碼",
+            "confirmPasswordPlaceholder": "確認新密碼",
+            "reloginNote": "更改密碼後需要重新登入。",
+            "passwordStrength": "密碼強度",
+            "requirements": {
+                "minLength": "至少 8 個字符。",
+                "uppercase": "至少包含 1 個大寫字母 (A-Z)。",
+                "lowercase": "至少包含 1 個小寫字母 (a-z)。",
+                "numeric": "至少包含 1 個數字 (0-9)。"
+            },
+            "saveChanges": "儲存變更"
+        },
+        "activityLog": {
+            "title": "活動日誌",
+            "totalActivities": "總活動數：",
+            "filters": {
+                "all": "全部",
+                "login": "登入",
+                "game": "進入遊戲",
+                "quest": "每日簽到"
+            },
+            "columns": {
+                "dateTime": "日期-時間",
+                "activity": "活動"
+            },
+            "activityTypes": {
+                "login": "登入",
+                "dailyCheckIn": "每日簽到任務",
+                "enterGame": "進入遊戲"
+            },
+            "pagination": {
+                "page": "頁面",
+                "of": "的"
+            }
+        }
     }
 }

@@ -166,6 +166,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useTranslations } from "next-intl";
 import { useSession } from "next-auth/react";
+import InviteModal from "./InviteModal";
 
 const OtherSections = ({
   locale,
@@ -177,7 +178,8 @@ const OtherSections = ({
   setActiveItem: (item: string) => void;
 }) => {
   const t = useTranslations("slidebar");
-  const { data: session } = useSession(); // Fetch session data to determine if user is logged in
+  const { data: session } = useSession();
+  const [isModalOpen, setModalOpen] = React.useState(false);
 
   return (
     <div className="mt-6">
@@ -190,42 +192,56 @@ const OtherSections = ({
 
           {/* Invite and Benefit */}
           <li
-            onClick={() => setActiveItem("inviteAndBenefit")}
-            className={`flex items-center gap-3 px-4 py-2 rounded-lg ${activeItem === "inviteAndBenefit"
+            onClick={() => setModalOpen(true)}
+            className={`flex items-center gap-3 px-4 py-2 cursor-pointer rounded-lg ${activeItem === "inviteAndBenefit"
               ? "bg-gray-700 text-white"
               : "hover:bg-gray-800 text-gray-400"
               }`}
           >
-            <FontAwesomeIcon icon={faUsers} />
-            <span>Invite and Benefit</span>
+            <div className="flex items-center gap-2">
+              <img
+                src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1734068020/inviteAndBenefit_ycm1bw.svg" // Replace with the actual icon link
+                alt="Invite Icon"
+                className="w-5 h-5"
+              />
+              <span className="font-medium">Invite and Benefit</span>
+            </div>
           </li>
 
           {/* Favorite Games */}
           <li
             onClick={() => setActiveItem("favoriteGames")}
-            className={`flex items-center gap-3 px-4 py-2 rounded-lg ${activeItem === "favoriteGames"
-              ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
-              : "text-gray-500"
+            className={`flex items-center gap-3 px-4 py-2 cursor-pointer rounded-lg ${activeItem === "favoriteGames"
+              ? "bg-gray-700 text-white"
+              : "hover:bg-gray-800 text-gray-400"
               }`}
           >
-            <FontAwesomeIcon icon={faHeart} />
-            <span>Favorite Games</span>
+            <Link href={`/${locale}/SpecialBonus/FavouriteGames`}>
+              <div className="flex items-center gap-2">
+                <FontAwesomeIcon icon={faHeart} className="text-gray-400" />
+                <span className="font-medium">Favorite Games</span>
+              </div>
+            </Link>
+
           </li>
 
           {/* Recently Played */}
           <li
             onClick={() => setActiveItem("recentlyPlayed")}
-            className={`flex items-center gap-3 px-4 py-2 rounded-lg ${activeItem === "recentlyPlayed"
-              ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
-              : "text-gray-500"
+            className={`flex items-center gap-3 px-4 py-2 cursor-pointer rounded-lg ${activeItem === "recentlyPlayed"
+              ? "bg-gray-700 text-white"
+              : "hover:bg-gray-800 text-gray-400"
               }`}
           >
-            <FontAwesomeIcon icon={faClock} />
-            <span>Recently Played</span>
+            <div className="flex items-center gap-2">
+              <FontAwesomeIcon icon={faClock} className="text-gray-400" />
+              <span className="font-medium">Recently Played</span>
+            </div>
           </li>
 
           <div className="border-t border-gray-700 my-4"></div>
         </div>
+
       )}
 
       {/* Other Sections */}
@@ -233,8 +249,8 @@ const OtherSections = ({
         <li
           onClick={() => setActiveItem("providers")}
           className={`flex items-center gap-3 px-4 py-2 rounded-lg ${activeItem === "providers"
-              ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
-              : "hover:bg-gray-800"
+            ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
+            : "hover:bg-gray-800"
             }`}
         >
           <FontAwesomeIcon icon={faBuilding} />
@@ -294,6 +310,14 @@ const OtherSections = ({
           <span>{t("virtual")}</span>
         </li>
       </Link>
+
+
+      <InviteModal
+        isOpen={isModalOpen}
+        onClose={() => setModalOpen(false)}
+        referralLink="https://playgame168.co?ref_code=IP7MSaJ9aH"
+        referralCode="IP7MSaJ9aH"
+      />
     </div>
   );
 };

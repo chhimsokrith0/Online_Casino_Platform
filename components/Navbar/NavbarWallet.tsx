@@ -8,6 +8,7 @@ import WalletModal from "./WalletModal/WalletModal";
 import ProfileModal from "./ProfileModal";
 import { useTranslations } from "next-intl";
 import QuestsModal from "@/app/[locale]/Quests/QuestsModal";
+import Link from "next/link";
 
 const NavbarWallet = ({ locale }: { locale: string }) => {
   const t = useTranslations("NavbarWallet");
@@ -66,16 +67,31 @@ const NavbarWallet = ({ locale }: { locale: string }) => {
         </div>
 
         {/* Wallet Button */}
-        <button
-          className={`flex items-center gap-2 ${isMobile
-            ? "px-3 py-1 text-sm whitespace-nowrap"
-            : "px-4 py-2 text-base"
-            } bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-semibold rounded-full hover:opacity-90 transition`}
-          onClick={toggleWalletModal}
-        >
-          <FontAwesomeIcon icon={faWallet} size={isMobile ? "sm" : "lg"} />
-          <span className={isMobile ? "text-xs" : "text-sm"}>{t("wallet")}</span>
-        </button>
+        <div className="hidden md:block">
+          <button
+            className={`flex items-center gap-2 ${isMobile
+              ? "px-3 py-1 text-sm whitespace-nowrap"
+              : "px-4 py-2 text-base"
+              } bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-semibold rounded-full hover:opacity-90 transition`}
+            onClick={toggleWalletModal}
+          >
+            <FontAwesomeIcon icon={faWallet} size={isMobile ? "sm" : "lg"} />
+            <span className={isMobile ? "text-xs" : "text-sm"}>{t("wallet")}</span>
+          </button>
+        </div>
+
+        <div className="block md:hidden" onClick={toggleWalletModal}>
+          <button
+            className={`flex items-center gap-2 ${isMobile
+              ? "px-3 py-1 text-sm whitespace-nowrap"
+              : "px-4 py-2 text-base"
+              } bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-semibold rounded-full hover:opacity-90 transition`}
+            
+          >
+            <FontAwesomeIcon icon={faWallet} size={isMobile ? "sm" : "lg"} />
+            <span className={isMobile ? "text-xs" : "text-sm"}>{t("wallet")}</span>
+          </button>
+        </div>
 
 
         {/* Points (Hidden on Mobile) */}
@@ -97,12 +113,15 @@ const NavbarWallet = ({ locale }: { locale: string }) => {
           className="flex items-center gap-2 cursor-pointer"
           onClick={toggleProfileModal}
         >
-           <Image
-                src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733035009/bronze_fleymy.png"
-                alt="Bronze Level"
-                width={20}
-                height={20}
-              />
+          {isMobile &&
+            <Image
+              src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733035009/bronze_fleymy.png"
+              alt="Bronze Level"
+              width={20}
+              height={20}
+            />
+          }
+
 
           {!isMobile && (
             <>
@@ -124,12 +143,11 @@ const NavbarWallet = ({ locale }: { locale: string }) => {
 
         {/* Notification Icon */}
         {!isMobile && (
-          <button
-            onClick={openModal}
-            className="text-white text-xl hover:text-yellow-500 transition"
+          <Link href={`/${locale}/account-information/forum/inbox`}
+            className="text-white text-xl p-2 hover:text-yellow-500 transition"
           >
             <FontAwesomeIcon icon={faBell} />
-          </button>
+          </Link>
         )}
       </div>
 

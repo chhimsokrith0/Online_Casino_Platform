@@ -8,7 +8,7 @@ import img_bg from "@/assets/img_QuestsModal/bg.png";
 const RewardModal: React.FC<{ onClose: () => void }> = ({ onClose }) => {
   return (
     <div
-      className="fixed inset-0 z-[111111] flex items-center justify-center"
+      className="fixed bg-black inset-0 z-[1000] flex items-center justify-center"
       style={{
         backgroundImage: `url('${img_bg.src}')`,
         backgroundSize: "cover",

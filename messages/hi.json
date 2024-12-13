@@ -500,5 +500,309 @@
         "tableGames": "टेबल गेम्स",
         "searchPlaceholder": "अपना गेम खोजें",
         "gameCount": "{count} गेम्स"
+    },
+    "settings": {
+        "title": "सामान्य सेटिंग",
+        "menu": {
+            "general": "सामान्य",
+            "verification": "सत्यापन",
+            "changePassword": "पासवर्ड बदलें",
+            "activityLog": "गतिविधि लॉग"
+        },
+        "general": {
+            "language": "भाषा",
+            "eng": "अंग्रेज़ी"
+        },
+        "verification": {
+            "title": "सत्यापन सेटअप",
+            "AccountDetails": "खाता विवरण",
+            "PersonalInformation": "व्यक्तिगत जानकारी",
+            "Firstname": "पहला नाम *",
+            "Lastname": "अंतिम नाम *",
+            "MobilePhone": "मोबाइल नंबर *",
+            "BankingInformation": "बैंकिंग जानकारी",
+            "Bankname": "बैंक का नाम *",
+            "Bankaccountnumber": "बैंक खाता नंबर *",
+            "SaveChanges": "परिवर्तन सहेजें"
+        },
+        "changePassword": {
+            "title": "पासवर्ड बदलें",
+            "currentPassword": "वर्तमान पासवर्ड *",
+            "newPassword": "नया पासवर्ड *",
+            "confirmPassword": "पासवर्ड की पुष्टि करें *",
+            "currentPasswordPlaceholder": "वर्तमान पासवर्ड दर्ज करें",
+            "newPasswordPlaceholder": "नया पासवर्ड दर्ज करें",
+            "confirmPasswordPlaceholder": "पासवर्ड की पुष्टि करें",
+            "reloginNote": "पासवर्ड बदलने के बाद पुनः लॉगिन की आवश्यकता होगी।",
+            "passwordStrength": "पासवर्ड की शक्ति",
+            "requirements": {
+                "minLength": "कम से कम 8 अक्षर होने चाहिए।",
+                "uppercase": "कम से कम 1 बड़ा अक्षर (A-Z) होना चाहिए।",
+                "lowercase": "कम से कम 1 छोटा अक्षर (a-z) होना चाहिए।",
+                "numeric": "कम से कम 1 अंक (0-9) होना चाहिए।"
+            },
+            "saveChanges": "परिवर्तन सहेजें"
+        },
+        "activityLog": {
+            "title": "गतिविधि लॉग",
+            "totalActivities": "कुल गतिविधियां:",
+            "filters": {
+                "all": "सभी",
+                "login": "लॉगिन",
+                "game": "गेम में प्रवेश करें",
+                "quest": "डेली चेक-इन"
+            },
+            "columns": {
+                "dateTime": "तिथि-समय",
+                "activity": "गतिविधि"
+            },
+            "activityTypes": {
+                "login": "लॉगिन",
+                "dailyCheckIn": "क्वेस्ट से डेली चेक-इन",
+                "enterGame": "गेम में प्रवेश करें"
+            },
+            "pagination": {
+                "page": "पृष्ठ",
+                "of": "का"
+            }
+        }
+    },
+    "accountInformation": {
+        "title": "खाता जानकारी",
+        "menu": {
+            "myProfile": "मेरा प्रोफाइल",
+            "history": "इतिहास",
+            "rebate": "रिबेट",
+            "cashback": "कैशबैक",
+            "totalBet": "कुल सट्टा",
+            "redeemHistory": "रिडीम इतिहास",
+            "pointHistory": "अंक इतिहास",
+            "personalMessage": "व्यक्तिगत संदेश",
+            "referral": "रेफरल"
+        },
+        "profile": {
+            "phoneNumber": "फोन नंबर",
+            "joinedOn": "शामिल होने की तारीख",
+            "vipLevel": {
+                "current": "वर्तमान स्तर",
+                "upgrade": "अपने वीआईपी स्तर को अपग्रेड करें",
+                "progress": "आपकी प्रगति"
+            },
+            "wallet": {
+                "title": "आपका वॉलेट",
+                "balance": "शेष राशि"
+            },
+            "rebateBalance": "रिबेट बैलेंस",
+            "cashbackBalance": "कैशबैक बैलेंस",
+            "referralBalance": "रेफरल बैलेंस"
+        },
+        "totalBets": {
+            "title": "कुल सट्टा",
+            "columns": {
+                "transactionDateTime": "लेन-देन की तारीख-समय",
+                "totalWinLose": "कुल जीत/हार",
+                "totalBets": "कुल सट्टा"
+            },
+            "emptyState": {
+                "message": "यहां अभी कुछ भी नहीं है!"
+            },
+            "totalBetAmount": "कुल सट्टा राशि: "
+        },
+        "promotions": {
+            "title": "मेरे प्रचार",
+            "cashback": "कैशबैक",
+            "rebate": "रिबेट"
+        },
+        "actions": {
+            "exchangeReward": "इनाम का आदान-प्रदान करें",
+            "logOut": "लॉग आउट"
+        },
+        "points": {
+            "currentPoints": "वर्तमान अंक",
+            "progress": "प्रगति",
+            "rank": {
+                "bronze": "कांस्य",
+                "silver": "रजत"
+            }
+        },
+        "history": {
+            "title": "इतिहास",
+            "tabs": {
+                "deposit": "जमा करें",
+                "withdraw": "निकासी",
+                "bet": "सट्टा",
+                "receivePromotion": "प्रमोशन प्राप्त करें",
+                "receiveRebate": "रिबेट प्राप्त करें",
+                "receiveCashback": "कैशबैक प्राप्त करें",
+                "receiveReferral": "रेफरल प्राप्त करें"
+            },
+            "columns": {
+                "amount": "राशि",
+                "channel": "चैनल",
+                "bankAccount": "बैंक खाता",
+                "depositDateTime": "जमा तारीख - समय",
+                "status": "स्थिति",
+                "successDateTime": "सफलता की तारीख - समय"
+            },
+            "emptyState": {
+                "message": "यहां अभी कुछ भी नहीं है!"
+            },
+            "totalDeposit": "कुल जमा: "
+        },
+        "rebate": {
+            "title": "रिबेट",
+            "columns": {
+                "transactionDateTime": "लेन-देन की तारीख-समय",
+                "rebateAmount": "रिबेट राशि"
+            },
+            "emptyState": {
+                "message": "यहां अभी कुछ भी नहीं है!"
+            },
+            "totalRebate": "कुल रिबेट राशि: "
+        },
+        "cashback": {
+            "title": "कैशबैक",
+            "columns": {
+                "transactionDateTime": "लेन-देन की तारीख-समय",
+                "cashbackAmount": "कैशबैक राशि"
+            },
+            "emptyState": {
+                "message": "यहां अभी कुछ भी नहीं है!"
+            },
+            "totalCashback": "कुल कैशबैक राशि: "
+        },
+        "redeemHistory": {
+            "title": "रिडीम इतिहास",
+            "columns": {
+                "no": "क्रमांक",
+                "transactionDateTime": "लेन-देन की तारीख-समय",
+                "typeOfReward": "इनाम का प्रकार",
+                "reward": "इनाम",
+                "status": "स्थिति",
+                "usedPoints": "उपयोग किए गए अंक",
+                "freeSpins": "मुफ्त स्पिन"
+            },
+            "emptyState": {
+                "message": "यहां अभी कुछ भी नहीं है!"
+            },
+            "totals": {
+                "allRewards": "सभी इनाम:",
+                "totalUsedPoints": "कुल उपयोग किए गए अंक:",
+                "totalFreeSpins": "कुल मुफ्त स्पिन:",
+                "totalAmountPerRound": "प्रत्येक राउंड की कुल राशि:"
+            }
+        },
+        "pointHistory": {
+            "title": "अंक इतिहास",
+            "columns": {
+                "transactionDateTime": "लेन-देन की तारीख-समय",
+                "type": "प्रकार",
+                "turnover": "टर्नओवर",
+                "currentPoint": "वर्तमान अंक"
+            },
+            "emptyState": {
+                "message": "यहां अभी कुछ भी नहीं है!"
+            },
+            "totalPoints": "कुल अंक:"
+        },
+        "personalMessage": {
+            "title": "व्यक्तिगत संदेश",
+            "tabs": {
+                "inbox": "इनबॉक्स",
+                "send": "भेजें"
+            },
+            "emptyState": {
+                "message": "कोई परिणाम नहीं मिला"
+            },
+            "actions": {
+                "newMessage": "नया संदेश"
+            },
+            "newMessageModal": {
+                "title": "नया संदेश",
+                "fields": {
+                    "sendTo": "भेजें",
+                    "admin": "प्रशासक",
+                    "title": "शीर्षक",
+                    "titlePlaceholder": "शीर्षक दर्ज करें",
+                    "message": "संदेश",
+                    "messagePlaceholder": "यहां कुछ लिखें...",
+                    "attachImage": "छवि जोड़ें (वैकल्पिक)",
+                    "uploadInstructions": "अपलोड करने के लिए क्लिक करें या खींचें और छोड़ें",
+                    "allowedFileTypes": "WEBP, PNG, या JPG (3MB)।"
+                },
+                "characterLimit": "0/300",
+                "sendMessageButton": "संदेश भेजें"
+            },
+            "pagination": {
+                "previous": "<",
+                "next": ">"
+            }
+        },
+        "referral": {
+            "title": "रेफरल",
+            "stats": {
+                "incomeToday": "आज की आपकी आय",
+                "totalReferral": "कुल रेफरल",
+                "referralClick": "रेफरल क्लिक",
+                "totalMember": "कुल सदस्य",
+                "totalTurnover": "कुल टर्नओवर",
+                "totalCashback": "कुल कैशबैक"
+            },
+            "copy": {
+                "referralLink": "रेफरल लिंक",
+                "referralCode": "रेफरल कोड",
+                "copyText": "अपने रेफरल कोड या लिंक अपने दोस्तों को भेजें, और जब वे गेम खेलें, तो आपको रिबेट मिलेगा।"
+            },
+            "inviteFriends": "मित्रों को आमंत्रित करें",
+            "socialMedia": {
+                "facebook": "फेसबुक",
+                "telegram": "टेलीग्राम",
+                "skype": "स्काइप",
+                "whatsapp": "व्हाट्सएप"
+            },
+            "actions": {
+                "transfer": "स्थानांतरित करें"
+            },
+            "dataOverview": {
+                "title": "डेटा ओवरव्यू",
+                "tabs": {
+                    "totalRevenue": "कुल राजस्व",
+                    "members": "सदस्य",
+                    "receiveReferral": "रेफरल प्राप्त करें"
+                },
+                "table": {
+                    "columns": {
+                        "date": "तारीख",
+                        "referral": "रेफरल"
+                    },
+                    "emptyState": {
+                        "message": "यहां अभी कुछ भी नहीं है!"
+                    },
+                    "totals": {
+                        "totalRevenue": "कुल राजस्व:"
+                    }
+                },
+                "analytics": {
+                    "title": "विश्लेषण - अपने प्रदर्शन को मापें",
+                    "metrics": {
+                        "income": {
+                            "title": "आय",
+                            "today": "आज की आय",
+                            "yesterday": "कल की आय"
+                        },
+                        "turnover": {
+                            "title": "टर्नओवर",
+                            "today": "आज का टर्नओवर",
+                            "yesterday": "कल का टर्नओवर"
+                        },
+                        "cashback": {
+                            "title": "कैशबैक",
+                            "today": "आज का कैशबैक",
+                            "yesterday": "कल का कैशबैक"
+                        }
+                    }
+                }
+            }
+        }
     }
 }

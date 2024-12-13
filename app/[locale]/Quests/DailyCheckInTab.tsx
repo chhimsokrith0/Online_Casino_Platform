@@ -34,24 +34,27 @@ const DailyCheckInTab: React.FC = () => {
   ];
 
   return (
-    <div>
-      <div className="text-gray-400 text-sm mb-4">
-        Accumulated check-in: <span className="text-yellow-400">1 Days</span>
-      </div>
-      <div className="flex justify-between items-center gap-4">
-        {rewards.map((reward, index) => (
-          <RewardItem
-            key={index}
-            ref={(el: HTMLDivElement) => {
-              if (el) rewardRefs.current.push(el);
-            }}
-            {...reward}
-            onClaim={reward.status === "Claim" ? handleClaim : undefined}
-          />
-        ))}
+    <>
+      <div>
+        <div className="text-gray-400 text-sm mb-4">
+          Accumulated check-in: <span className="text-yellow-400">1 Days</span>
+        </div>
+        <div className="flex justify-between items-center gap-4">
+          {rewards.map((reward, index) => (
+            <RewardItem
+              key={index}
+              ref={(el: HTMLDivElement) => {
+                if (el) rewardRefs.current.push(el);
+              }}
+              {...reward}
+              onClaim={reward.status === "Claim" ? handleClaim : undefined}
+            />
+          ))}
+        </div>
+       
       </div>
       {showAlert && <RewardModal onClose={handleCloseAlert} />}
-    </div>
+    </>
   );
 };
 

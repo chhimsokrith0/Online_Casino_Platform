@@ -500,5 +500,71 @@
     "tableGames": "Table Games",
     "searchPlaceholder": "Hanapin ang iyong laro",
     "gameCount": "{count} Laro"
+  },
+  "settings": {
+    "title": "Pangkalahatang Setting",
+    "menu": {
+      "general": "Pangkalahatan",
+      "verification": "Pagpapatunay",
+      "changePassword": "Palitan ang Password",
+      "activityLog": "Log ng Aktibidad"
+    },
+    "general": {
+      "language": "Wika",
+      "eng": "Ingles"
+    },
+    "verification": {
+      "title": "Pag-setup ng Pagpapatunay",
+      "AccountDetails": "Detalye ng Account",
+      "PersonalInformation": "Personal na Impormasyon",
+      "Firstname": "Pangalan *",
+      "Lastname": "Apelyido *",
+      "MobilePhone": "Numero ng Telepono *",
+      "BankingInformation": "Impormasyon sa Bangko",
+      "Bankname": "Pangalan ng Bangko *",
+      "Bankaccountnumber": "Numero ng Bank Account *",
+      "SaveChanges": "I-save ang mga Pagbabago"
+    },
+    "changePassword": {
+      "title": "Palitan ang Password",
+      "currentPassword": "Kasalukuyang Password *",
+      "newPassword": "Bagong Password *",
+      "confirmPassword": "Kumpirmahin ang Password *",
+      "currentPasswordPlaceholder": "Ilagay ang kasalukuyang password",
+      "newPasswordPlaceholder": "Ilagay ang bagong password",
+      "confirmPasswordPlaceholder": "Kumpirmahin ang password",
+      "reloginNote": "Kailangan ng muling pag-login matapos palitan ang password.",
+      "passwordStrength": "Lakas ng Password",
+      "requirements": {
+        "minLength": "Dapat ay hindi bababa sa 8 na karakter.",
+        "uppercase": "Dapat ay may hindi bababa sa 1 malaking titik (A-Z).",
+        "lowercase": "Dapat ay may hindi bababa sa 1 maliit na titik (a-z).",
+        "numeric": "Dapat ay may hindi bababa sa 1 bilang (0-9)."
+      },
+      "saveChanges": "I-save ang mga Pagbabago"
+    },
+    "activityLog": {
+      "title": "Log ng Aktibidad",
+      "totalActivities": "Kabuuang Aktibidad:",
+      "filters": {
+        "all": "Lahat",
+        "login": "Mag-login",
+        "game": "Pumasok sa Laro",
+        "quest": "Pang-araw-araw na Check-In"
+      },
+      "columns": {
+        "dateTime": "Petsa-Oras",
+        "activity": "Aktibidad"
+      },
+      "activityTypes": {
+        "login": "Mag-login",
+        "dailyCheckIn": "Pang-araw-araw na Check-In mula sa Quest",
+        "enterGame": "Pumasok sa Laro"
+      },
+      "pagination": {
+        "page": "Pahina",
+        "of": "ng"
+      }
+    }
   }
 }

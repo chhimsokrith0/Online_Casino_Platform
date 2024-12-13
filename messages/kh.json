@@ -500,5 +500,124 @@
     "tableGames": "ហ្គេមតុ",
     "searchPlaceholder": "ស្វែងរកហ្គេមរបស់អ្នក",
     "gameCount": "{count} ហ្គេម"
+  },
+  "settings": {
+    "title": "ការកំណត់ទូទៅ",
+    "menu": {
+      "general": "ទូទៅ",
+      "verification": "ការផ្ទៀងផ្ទាត់",
+      "changePassword": "ផ្លាស់ប្តូរពាក្យសម្ងាត់",
+      "activityLog": "កំណត់ហេតុសកម្មភាព"
+    },
+    "general": {
+      "language": "ភាសា",
+      "eng": "អង់គ្លេស"
+    },
+    "verification": {
+      "title": "ការកំណត់ការផ្ទៀងផ្ទាត់",
+      "AccountDetails": "ព័ត៌មានលម្អិតអំពីគណនី",
+      "PersonalInformation": "ព័ត៌មានផ្ទាល់ខ្លួន",
+      "Firstname": "នាមខ្លួន *",
+      "Lastname": "នាមត្រកូល *",
+      "MobilePhone": "លេខទូរស័ព្ទ *",
+      "BankingInformation": "ព័ត៌មានធនាគារ",
+      "Bankname": "ឈ្មោះធនាគារ *",
+      "Bankaccountnumber": "លេខគណនីធនាគារ *",
+      "SaveChanges": "រក្សាទុកការផ្លាស់ប្តូរ"
+    },
+    "changePassword": {
+      "title": "ផ្លាស់ប្តូរពាក្យសម្ងាត់",
+      "currentPassword": "ពាក្យសម្ងាត់បច្ចុប្បន្ន *",
+      "newPassword": "ពាក្យសម្ងាត់ថ្មី *",
+      "confirmPassword": "បញ្ជាក់ពាក្យសម្ងាត់ *",
+      "currentPasswordPlaceholder": "បញ្ចូលពាក្យសម្ងាត់បច្ចុប្បន្ន",
+      "newPasswordPlaceholder": "បញ្ចូលពាក្យសម្ងាត់ថ្មី",
+      "confirmPasswordPlaceholder": "បញ្ជាក់ពាក្យសម្ងាត់",
+      "reloginNote": "ចូលប្រើឡើងវិញនឹងត្រូវការបន្ទាប់ពីផ្លាស់ប្តូរពាក្យសម្ងាត់។",
+      "passwordStrength": "សុវត្ថិភាពពាក្យសម្ងាត់",
+      "requirements": {
+        "minLength": "ត្រូវមានយ៉ាងហោចណាស់ ៨ តួអក្សរ។",
+        "uppercase": "ត្រូវមានយ៉ាងហោចណាស់ ១ តួអក្សរធំ (A-Z)។",
+        "lowercase": "ត្រូវមានយ៉ាងហោចណាស់ ១ តួអក្សរតូច (a-z)។",
+        "numeric": "ត្រូវមានយ៉ាងហោចណាស់ ១ លេខ (0-9)។"
+      },
+      "saveChanges": "រក្សាទុកការផ្លាស់ប្តូរ"
+    },
+    "activityLog": {
+      "title": "កំណត់ហេតុសកម្មភាព",
+      "totalActivities": "សកម្មភាពសរុប៖",
+      "filters": {
+        "all": "ទាំងអស់",
+        "login": "ចូល",
+        "game": "ចូលក្នុងហ្គេម",
+        "quest": "ការចូលឈ្មោះប្រចាំថ្ងៃ"
+      },
+      "columns": {
+        "dateTime": "កាលបរិច្ឆេទ-ម៉ោង",
+        "activity": "សកម្មភាព"
+      },
+      "activityTypes": {
+        "login": "ចូល",
+        "dailyCheckIn": "ការចូលឈ្មោះប្រចាំថ្ងៃ",
+        "enterGame": "ចូលក្នុងហ្គេម"
+      },
+      "pagination": {
+        "page": "ទំព័រ",
+        "of": "នៃ"
+      }
+    }
+  },
+  "accountInformation": {
+    "title": "ព័ត៌មានគណនី",
+    "menu": {
+      "myProfile": "ប្រវត្តិរូបរបស់ខ្ញុំ",
+      "history": "ប្រវត្តិ",
+      "rebate": "ប្រាក់សង",
+      "cashback": "ប្រាក់ត្រឡប់",
+      "totalBet": "ការភ្នាល់សរុប",
+      "redeemHistory": "ប្រវត្តិដោះស្រាយ",
+      "pointHistory": "ប្រវត្តិពិន្ទុ",
+      "personalMessage": "សារផ្ទាល់ខ្លួន",
+      "referral": "សេចក្តីណែនាំ"
+    },
+    "profile": {
+      "phoneNumber": "លេខទូរស័ព្ទ",
+      "joinedOn": "ចូលរួមនៅលើ",
+      "vipLevel": {
+        "current": "កម្រិតបច្ចុប្បន្ន",
+        "upgrade": "ធ្វើឱ្យកម្រិត VIP របស់អ្នកប្រសើរឡើង",
+        "progress": "ការរីកចម្រើនរបស់អ្នក"
+      },
+      "wallet": {
+        "title": "កាបូបរបស់អ្នក",
+        "balance": "សមតុល្យ"
+      },
+      "rebateBalance": "សមតុល្យប្រាក់សង",
+      "cashbackBalance": "សមតុល្យប្រាក់ត្រឡប់",
+      "referralBalance": "សមតុល្យសេចក្តីណែនាំ"
+    },
+    "totalBets": {
+      "title": "ការភ្នាល់សរុប",
+      "depositTurnover": "ការប្រាក់ដាក់ចូល",
+      "turnover": "ការប្រាក់សរុប",
+      "turnWinlose": "ឈ្នះ/ចាញ់"
+    },
+    "promotions": {
+      "title": "ការផ្សព្វផ្សាយរបស់ខ្ញុំ",
+      "cashback": "ប្រាក់ត្រឡប់",
+      "rebate": "ប្រាក់សង"
+    },
+    "actions": {
+      "exchangeReward": "ដោះស្រាយរង្វាន់",
+      "logOut": "ចាកចេញ"
+    },
+    "points": {
+      "currentPoints": "ពិន្ទុបច្ចុប្បន្ន",
+      "progress": "ការរីកចម្រើន",
+      "rank": {
+        "bronze": "សំរឹទ្ធ",
+        "silver": "ប្រាក់"
+      }
+    }
   }
 }

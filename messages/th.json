@@ -500,5 +500,71 @@
     "tableGames": "เกมโต๊ะ",
     "searchPlaceholder": "ค้นหาเกมของคุณ",
     "gameCount": "{count} เกม"
+  },
+  "settings": {
+    "title": "การตั้งค่าทั่วไป",
+    "menu": {
+      "general": "ทั่วไป",
+      "verification": "การยืนยัน",
+      "changePassword": "เปลี่ยนรหัสผ่าน",
+      "activityLog": "บันทึกกิจกรรม"
+    },
+    "general": {
+      "language": "ภาษา",
+      "eng": "อังกฤษ"
+    },
+    "verification": {
+      "title": "การตั้งค่าการยืนยัน",
+      "AccountDetails": "รายละเอียดบัญชี",
+      "PersonalInformation": "ข้อมูลส่วนตัว",
+      "Firstname": "ชื่อ *",
+      "Lastname": "นามสกุล *",
+      "MobilePhone": "เบอร์โทรศัพท์มือถือ *",
+      "BankingInformation": "ข้อมูลธนาคาร",
+      "Bankname": "ชื่อธนาคาร *",
+      "Bankaccountnumber": "เลขบัญชีธนาคาร *",
+      "SaveChanges": "บันทึกการเปลี่ยนแปลง"
+    },
+    "changePassword": {
+      "title": "เปลี่ยนรหัสผ่าน",
+      "currentPassword": "รหัสผ่านปัจจุบัน *",
+      "newPassword": "รหัสผ่านใหม่ *",
+      "confirmPassword": "ยืนยันรหัสผ่าน *",
+      "currentPasswordPlaceholder": "กรอกรหัสผ่านปัจจุบัน",
+      "newPasswordPlaceholder": "กรอกรหัสผ่านใหม่",
+      "confirmPasswordPlaceholder": "ยืนยันรหัสผ่าน",
+      "reloginNote": "จำเป็นต้องเข้าสู่ระบบใหม่หลังจากเปลี่ยนรหัสผ่าน",
+      "passwordStrength": "ความแข็งแกร่งของรหัสผ่าน",
+      "requirements": {
+        "minLength": "ต้องมีอย่างน้อย 8 ตัวอักษร",
+        "uppercase": "ต้องมีตัวอักษรพิมพ์ใหญ่ (A-Z) อย่างน้อย 1 ตัว",
+        "lowercase": "ต้องมีตัวอักษรพิมพ์เล็ก (a-z) อย่างน้อย 1 ตัว",
+        "numeric": "ต้องมีตัวเลข (0-9) อย่างน้อย 1 ตัว"
+      },
+      "saveChanges": "บันทึกการเปลี่ยนแปลง"
+    },
+    "activityLog": {
+      "title": "บันทึกกิจกรรม",
+      "totalActivities": "กิจกรรมทั้งหมด:",
+      "filters": {
+        "all": "ทั้งหมด",
+        "login": "เข้าสู่ระบบ",
+        "game": "เข้าสู่เกม",
+        "quest": "เช็คอินรายวัน"
+      },
+      "columns": {
+        "dateTime": "วัน-เวลา",
+        "activity": "กิจกรรม"
+      },
+      "activityTypes": {
+        "login": "เข้าสู่ระบบ",
+        "dailyCheckIn": "เช็คอินรายวันจากภารกิจ",
+        "enterGame": "เข้าสู่เกม"
+      },
+      "pagination": {
+        "page": "หน้า",
+        "of": "จาก"
+      }
+    }
   }
 }

@@ -500,5 +500,71 @@
     "tableGames": "Permainan Meja",
     "searchPlaceholder": "Cari permainan anda",
     "gameCount": "{count} Permainan"
+  },
+  "settings": {
+    "title": "Tetapan Umum",
+    "menu": {
+      "general": "Umum",
+      "verification": "Pengesahan",
+      "changePassword": "Tukar Kata Laluan",
+      "activityLog": "Log Aktiviti"
+    },
+    "general": {
+      "language": "Bahasa",
+      "eng": "Inggeris"
+    },
+    "verification": {
+      "title": "Tetapan Pengesahan",
+      "AccountDetails": "Maklumat Akaun",
+      "PersonalInformation": "Maklumat Peribadi",
+      "Firstname": "Nama Pertama *",
+      "Lastname": "Nama Akhir *",
+      "MobilePhone": "Nombor Telefon *",
+      "BankingInformation": "Maklumat Perbankan",
+      "Bankname": "Nama Bank *",
+      "Bankaccountnumber": "Nombor Akaun Bank *",
+      "SaveChanges": "Simpan Perubahan"
+    },
+    "changePassword": {
+      "title": "Tukar Kata Laluan",
+      "currentPassword": "Kata Laluan Semasa *",
+      "newPassword": "Kata Laluan Baru *",
+      "confirmPassword": "Sahkan Kata Laluan *",
+      "currentPasswordPlaceholder": "Masukkan kata laluan semasa",
+      "newPasswordPlaceholder": "Masukkan kata laluan baru",
+      "confirmPasswordPlaceholder": "Sahkan kata laluan",
+      "reloginNote": "Log masuk semula diperlukan selepas menukar kata laluan.",
+      "passwordStrength": "Kekuatan Kata Laluan",
+      "requirements": {
+        "minLength": "Mesti sekurang-kurangnya 8 aksara.",
+        "uppercase": "Mesti mengandungi sekurang-kurangnya 1 huruf besar (A-Z).",
+        "lowercase": "Mesti mengandungi sekurang-kurangnya 1 huruf kecil (a-z).",
+        "numeric": "Mesti mengandungi sekurang-kurangnya 1 nombor (0-9)."
+      },
+      "saveChanges": "Simpan Perubahan"
+    },
+    "activityLog": {
+      "title": "Log Aktiviti",
+      "totalActivities": "Jumlah Aktiviti:",
+      "filters": {
+        "all": "Semua",
+        "login": "Log Masuk",
+        "game": "Masuk Permainan",
+        "quest": "Daftar Harian"
+      },
+      "columns": {
+        "dateTime": "Tarikh-Masa",
+        "activity": "Aktiviti"
+      },
+      "activityTypes": {
+        "login": "Log Masuk",
+        "dailyCheckIn": "Daftar Harian dari Misi",
+        "enterGame": "Masuk Permainan"
+      },
+      "pagination": {
+        "page": "Halaman",
+        "of": "daripada"
+      }
+    }
   }
 }

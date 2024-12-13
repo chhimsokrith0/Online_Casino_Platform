@@ -500,5 +500,124 @@
     "tableGames": "Permainan Meja",
     "searchPlaceholder": "Temukan game Anda",
     "gameCount": "{count} Game"
+  },
+  "settings": {
+    "title": "Pengaturan Umum",
+    "menu": {
+      "general": "Umum",
+      "verification": "Verifikasi",
+      "changePassword": "Ubah Kata Sandi",
+      "activityLog": "Log Aktivitas"
+    },
+    "general": {
+      "language": "Bahasa",
+      "eng": "Inggris"
+    },
+    "verification": {
+      "title": "Pengaturan Verifikasi",
+      "AccountDetails": "Detail Akun",
+      "PersonalInformation": "Informasi Pribadi",
+      "Firstname": "Nama Depan *",
+      "Lastname": "Nama Belakang *",
+      "MobilePhone": "Nomor Telepon *",
+      "BankingInformation": "Informasi Perbankan",
+      "Bankname": "Nama Bank *",
+      "Bankaccountnumber": "Nomor Rekening Bank *",
+      "SaveChanges": "Simpan Perubahan"
+    },
+    "changePassword": {
+      "title": "Ubah Kata Sandi",
+      "currentPassword": "Kata Sandi Saat Ini *",
+      "newPassword": "Kata Sandi Baru *",
+      "confirmPassword": "Konfirmasi Kata Sandi *",
+      "currentPasswordPlaceholder": "Masukkan kata sandi saat ini",
+      "newPasswordPlaceholder": "Masukkan kata sandi baru",
+      "confirmPasswordPlaceholder": "Konfirmasi kata sandi",
+      "reloginNote": "Login ulang akan diperlukan setelah mengganti kata sandi.",
+      "passwordStrength": "Kekuatan Kata Sandi",
+      "requirements": {
+        "minLength": "Harus setidaknya 8 karakter.",
+        "uppercase": "Harus mengandung setidaknya 1 huruf besar (A-Z).",
+        "lowercase": "Harus mengandung setidaknya 1 huruf kecil (a-z).",
+        "numeric": "Harus mengandung setidaknya 1 angka (0-9)."
+      },
+      "saveChanges": "Simpan Perubahan"
+    },
+    "activityLog": {
+      "title": "Log Aktivitas",
+      "totalActivities": "Total Aktivitas:",
+      "filters": {
+        "all": "Semua",
+        "login": "Login",
+        "game": "Masuk Game",
+        "quest": "Check-In Harian"
+      },
+      "columns": {
+        "dateTime": "Tanggal-Waktu",
+        "activity": "Aktivitas"
+      },
+      "activityTypes": {
+        "login": "Login",
+        "dailyCheckIn": "Check-In Harian dari Misi",
+        "enterGame": "Masuk Game"
+      },
+      "pagination": {
+        "page": "Halaman",
+        "of": "dari"
+      }
+    }
+  },
+  "accountInformation": {
+    "title": "Informasi Akun",
+    "menu": {
+      "myProfile": "Profil Saya",
+      "history": "Riwayat",
+      "rebate": "Rebate",
+      "cashback": "Cashback",
+      "totalBet": "Total Taruhan",
+      "redeemHistory": "Riwayat Penukaran",
+      "pointHistory": "Riwayat Poin",
+      "personalMessage": "Pesan Pribadi",
+      "referral": "Referral"
+    },
+    "profile": {
+      "phoneNumber": "Nomor Telepon",
+      "joinedOn": "Bergabung Pada",
+      "vipLevel": {
+        "current": "Level Saat Ini",
+        "upgrade": "Tingkatkan Level VIP Anda",
+        "progress": "Kemajuan Anda"
+      },
+      "wallet": {
+        "title": "Dompet Anda",
+        "balance": "Saldo"
+      },
+      "rebateBalance": "Saldo Rebate",
+      "cashbackBalance": "Saldo Cashback",
+      "referralBalance": "Saldo Referral"
+    },
+    "totalBets": {
+      "title": "Total Taruhan",
+      "depositTurnover": "Perputaran Deposit",
+      "turnover": "Perputaran",
+      "turnWinlose": "Menang/Kalah"
+    },
+    "promotions": {
+      "title": "Promosi Saya",
+      "cashback": "Cashback",
+      "rebate": "Rebate"
+    },
+    "actions": {
+      "exchangeReward": "Tukar Hadiah",
+      "logOut": "Keluar"
+    },
+    "points": {
+      "currentPoints": "Poin Saat Ini",
+      "progress": "Kemajuan",
+      "rank": {
+        "bronze": "Perunggu",
+        "silver": "Perak"
+      }
+    }
   }
 }

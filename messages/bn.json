@@ -500,5 +500,309 @@
         "tableGames": "টেবিল গেম",
         "searchPlaceholder": "আপনার গেম খুঁজুন",
         "gameCount": "{count} গেমস"
+    },
+    "settings": {
+        "title": "সাধারণ সেটিং",
+        "menu": {
+            "general": "সাধারণ",
+            "verification": "যাচাইকরণ",
+            "changePassword": "পাসওয়ার্ড পরিবর্তন",
+            "activityLog": "ক্রিয়াকলাপ লগ"
+        },
+        "general": {
+            "language": "ভাষা",
+            "eng": "ইংরেজি"
+        },
+        "verification": {
+            "title": "যাচাইকরণ সেটআপ",
+            "AccountDetails": "অ্যাকাউন্ট বিবরণ",
+            "PersonalInformation": "ব্যক্তিগত তথ্য",
+            "Firstname": "প্রথম নাম *",
+            "Lastname": "শেষ নাম *",
+            "MobilePhone": "মোবাইল নম্বর *",
+            "BankingInformation": "ব্যাংকিং তথ্য",
+            "Bankname": "ব্যাংকের নাম *",
+            "Bankaccountnumber": "ব্যাংক অ্যাকাউন্ট নম্বর *",
+            "SaveChanges": "পরিবর্তন সংরক্ষণ করুন"
+        },
+        "changePassword": {
+            "title": "পাসওয়ার্ড পরিবর্তন",
+            "currentPassword": "বর্তমান পাসওয়ার্ড *",
+            "newPassword": "নতুন পাসওয়ার্ড *",
+            "confirmPassword": "পাসওয়ার্ড নিশ্চিত করুন *",
+            "currentPasswordPlaceholder": "বর্তমান পাসওয়ার্ড লিখুন",
+            "newPasswordPlaceholder": "নতুন পাসওয়ার্ড লিখুন",
+            "confirmPasswordPlaceholder": "পাসওয়ার্ড নিশ্চিত করুন",
+            "reloginNote": "পাসওয়ার্ড পরিবর্তনের পরে পুনরায় লগইন প্রয়োজন হবে।",
+            "passwordStrength": "পাসওয়ার্ডের শক্তি",
+            "requirements": {
+                "minLength": "অন্তত ৮ অক্ষর থাকতে হবে।",
+                "uppercase": "অন্তত ১টি বড় হাতের অক্ষর (A-Z) থাকতে হবে।",
+                "lowercase": "অন্তত ১টি ছোট হাতের অক্ষর (a-z) থাকতে হবে।",
+                "numeric": "অন্তত ১টি সংখ্যা (0-9) থাকতে হবে।"
+            },
+            "saveChanges": "পরিবর্তন সংরক্ষণ করুন"
+        },
+        "activityLog": {
+            "title": "ক্রিয়াকলাপ লগ",
+            "totalActivities": "মোট কার্যক্রম:",
+            "filters": {
+                "all": "সব",
+                "login": "লগইন",
+                "game": "গেমে প্রবেশ করুন",
+                "quest": "দৈনিক চেক-ইন"
+            },
+            "columns": {
+                "dateTime": "তারিখ-সময়",
+                "activity": "ক্রিয়াকলাপ"
+            },
+            "activityTypes": {
+                "login": "লগইন",
+                "dailyCheckIn": "কোয়েস্ট থেকে দৈনিক চেক-ইন",
+                "enterGame": "গেমে প্রবেশ করুন"
+            },
+            "pagination": {
+                "page": "পৃষ্ঠা",
+                "of": "এর মধ্যে"
+            }
+        }
+    },
+    "accountInformation": {
+        "title": "অ্যাকাউন্ট তথ্য",
+        "menu": {
+            "myProfile": "আমার প্রোফাইল",
+            "history": "ইতিহাস",
+            "rebate": "রিবেট",
+            "cashback": "ক্যাশব্যাক",
+            "totalBet": "মোট বাজি",
+            "redeemHistory": "রিডিম ইতিহাস",
+            "pointHistory": "পয়েন্ট ইতিহাস",
+            "personalMessage": "ব্যক্তিগত বার্তা",
+            "referral": "রেফারেল"
+        },
+        "profile": {
+            "phoneNumber": "ফোন নম্বর",
+            "joinedOn": "যোগদানের তারিখ",
+            "vipLevel": {
+                "current": "বর্তমান স্তর",
+                "upgrade": "আপনার ভিআইপি স্তর উন্নীত করুন",
+                "progress": "আপনার অগ্রগতি"
+            },
+            "wallet": {
+                "title": "আপনার ওয়ালেট",
+                "balance": "ব্যালেন্স"
+            },
+            "rebateBalance": "রিবেট ব্যালেন্স",
+            "cashbackBalance": "ক্যাশব্যাক ব্যালেন্স",
+            "referralBalance": "রেফারেল ব্যালেন্স"
+        },
+        "totalBets": {
+            "title": "মোট বাজি",
+            "columns": {
+                "transactionDateTime": "লেনদেনের তারিখ-সময়",
+                "totalWinLose": "মোট জয়/হার",
+                "totalBets": "মোট বাজি"
+            },
+            "emptyState": {
+                "message": "এখানে এখনও কিছু নেই!"
+            },
+            "totalBetAmount": "মোট বাজির পরিমাণ: "
+        },
+        "promotions": {
+            "title": "আমার প্রচারাভিযান",
+            "cashback": "ক্যাশব্যাক",
+            "rebate": "রিবেট"
+        },
+        "actions": {
+            "exchangeReward": "রিওয়ার্ড এক্সচেঞ্জ করুন",
+            "logOut": "লগ আউট"
+        },
+        "points": {
+            "currentPoints": "বর্তমান পয়েন্ট",
+            "progress": "অগ্রগতি",
+            "rank": {
+                "bronze": "ব্রোঞ্জ",
+                "silver": "সিলভার"
+            }
+        },
+        "history": {
+            "title": "ইতিহাস",
+            "tabs": {
+                "deposit": "ডিপোজিট",
+                "withdraw": "উত্তোলন",
+                "bet": "বাজি",
+                "receivePromotion": "প্রচার গ্রহণ করুন",
+                "receiveRebate": "রিবেট গ্রহণ করুন",
+                "receiveCashback": "ক্যাশব্যাক গ্রহণ করুন",
+                "receiveReferral": "রেফারেল গ্রহণ করুন"
+            },
+            "columns": {
+                "amount": "পরিমাণ",
+                "channel": "চ্যানেল",
+                "bankAccount": "ব্যাংক অ্যাকাউন্ট",
+                "depositDateTime": "ডিপোজিট তারিখ - সময়",
+                "status": "স্থিতি",
+                "successDateTime": "সফলতার তারিখ - সময়"
+            },
+            "emptyState": {
+                "message": "এখানে এখনও কিছু নেই!"
+            },
+            "totalDeposit": "মোট ডিপোজিট: "
+        },
+        "rebate": {
+            "title": "রিবেট",
+            "columns": {
+                "transactionDateTime": "লেনদেনের তারিখ-সময়",
+                "rebateAmount": "রিবেটের পরিমাণ"
+            },
+            "emptyState": {
+                "message": "এখানে এখনও কিছু নেই!"
+            },
+            "totalRebate": "মোট রিবেটের পরিমাণ: "
+        },
+        "cashback": {
+            "title": "ক্যাশব্যাক",
+            "columns": {
+                "transactionDateTime": "লেনদেনের তারিখ-সময়",
+                "cashbackAmount": "ক্যাশব্যাকের পরিমাণ"
+            },
+            "emptyState": {
+                "message": "এখানে এখনও কিছু নেই!"
+            },
+            "totalCashback": "মোট ক্যাশব্যাকের পরিমাণ: "
+        },
+        "redeemHistory": {
+            "title": "রিডিম ইতিহাস",
+            "columns": {
+                "no": "নং",
+                "transactionDateTime": "লেনদেনের তারিখ-সময়",
+                "typeOfReward": "রিওয়ার্ডের ধরন",
+                "reward": "রিওয়ার্ড",
+                "status": "স্থিতি",
+                "usedPoints": "ব্যবহৃত পয়েন্ট",
+                "freeSpins": "ফ্রি স্পিনস"
+            },
+            "emptyState": {
+                "message": "এখানে এখনও কিছু নেই!"
+            },
+            "totals": {
+                "allRewards": "সমস্ত রিওয়ার্ড:",
+                "totalUsedPoints": "মোট ব্যবহৃত পয়েন্ট:",
+                "totalFreeSpins": "মোট ফ্রি স্পিনস:",
+                "totalAmountPerRound": "প্রতি রাউন্ডের মোট পরিমাণ:"
+            }
+        },
+        "pointHistory": {
+            "title": "পয়েন্ট ইতিহাস",
+            "columns": {
+                "transactionDateTime": "লেনদেনের তারিখ-সময়",
+                "type": "ধরন",
+                "turnover": "টার্নওভার",
+                "currentPoint": "বর্তমান পয়েন্ট"
+            },
+            "emptyState": {
+                "message": "এখানে এখনও কিছু নেই!"
+            },
+            "totalPoints": "মোট পয়েন্ট:"
+        },
+        "personalMessage": {
+            "title": "ব্যক্তিগত বার্তা",
+            "tabs": {
+                "inbox": "ইনবক্স",
+                "send": "পাঠান"
+            },
+            "emptyState": {
+                "message": "কোনো ফলাফল পাওয়া যায়নি"
+            },
+            "actions": {
+                "newMessage": "নতুন বার্তা"
+            },
+            "newMessageModal": {
+                "title": "নতুন বার্তা",
+                "fields": {
+                    "sendTo": "পাঠাতে",
+                    "admin": "অ্যাডমিন",
+                    "title": "শিরোনাম",
+                    "titlePlaceholder": "শিরোনাম লিখুন",
+                    "message": "বার্তা",
+                    "messagePlaceholder": "এখানে কিছু লিখুন ...",
+                    "attachImage": "একটি চিত্র সংযুক্ত করুন (ঐচ্ছিক)",
+                    "uploadInstructions": "আপলোড করতে ক্লিক করুন বা টেনে এনে রাখুন",
+                    "allowedFileTypes": "WEBP, PNG, বা JPG (3MB)।"
+                },
+                "characterLimit": "0/300",
+                "sendMessageButton": "একটি বার্তা পাঠান"
+            },
+            "pagination": {
+                "previous": "<",
+                "next": ">"
+            }
+        },
+        "referral": {
+            "title": "রেফারেল",
+            "stats": {
+                "incomeToday": "আজ আপনার আয়",
+                "totalReferral": "মোট রেফারেল",
+                "referralClick": "রেফারেল ক্লিক",
+                "totalMember": "মোট সদস্য",
+                "totalTurnover": "মোট টার্নওভার",
+                "totalCashback": "মোট ক্যাশব্যাক"
+            },
+            "copy": {
+                "referralLink": "রেফারেল লিংক",
+                "referralCode": "রেফারেল কোড",
+                "copyText": "আপনার রেফারেল কোড বা লিংক আপনার বন্ধুদের পাঠান, এবং তারা গেমটি খেলার সময় আপনি একটি রিবেট পান।"
+            },
+            "inviteFriends": "বন্ধুদের আমন্ত্রণ জানান",
+            "socialMedia": {
+                "facebook": "ফেসবুক",
+                "telegram": "টেলিগ্রাম",
+                "skype": "স্কাইপ",
+                "whatsapp": "হোয়াটসঅ্যাপ"
+            },
+            "actions": {
+                "transfer": "স্থানান্তর"
+            },
+            "dataOverview": {
+                "title": "তথ্যের ওভারভিউ",
+                "tabs": {
+                    "totalRevenue": "মোট রাজস্ব",
+                    "members": "সদস্যরা",
+                    "receiveReferral": "রেফারেল গ্রহণ করুন"
+                },
+                "table": {
+                    "columns": {
+                        "date": "তারিখ",
+                        "referral": "রেফারেল"
+                    },
+                    "emptyState": {
+                        "message": "এখানে এখনও কিছু নেই!"
+                    },
+                    "totals": {
+                        "totalRevenue": "মোট রাজস্ব:"
+                    }
+                },
+                "analytics": {
+                    "title": "বিশ্লেষণ - আপনার কর্মক্ষমতা পরিমাপ করুন",
+                    "metrics": {
+                        "income": {
+                            "title": "আয়",
+                            "today": "আজকের আয়",
+                            "yesterday": "গতকালের আয়"
+                        },
+                        "turnover": {
+                            "title": "টার্নওভার",
+                            "today": "আজকের টার্নওভার",
+                            "yesterday": "গতকালের টার্নওভার"
+                        },
+                        "cashback": {
+                            "title": "ক্যাশব্যাক",
+                            "today": "আজকের ক্যাশব্যাক",
+                            "yesterday": "গতকালের ক্যাশব্যাক"
+                        }
+                    }
+                }
+            }
+        }
     }
 }

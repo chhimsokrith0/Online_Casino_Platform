@@ -1,25 +1,37 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const Sidebar = () => {
-  const [activeItem, setActiveItem] = useState("My Profile");
+  const t = useTranslations("accountInformation");
+  const [activeItem, setActiveItem] = useState<string>("");
 
   const menuItems = [
-    { label: "My Profile", link: "/account-information/profile" },
-    { label: "History", link: "/account-information/transactions" },
-    { label: "Rebate", link: "/account-information/rebate" },
-    { label: "Cashback", link: "/account-information/cashback" },
-    { label: "Total Bet", link: "/account-information/total-bet" },
-    { label: "Redeem History", link: "/account-information/redeem-history" },
-    { label: "Point History", link: "/account-information/point-history" },
-    { label: "Personal Message", link: "/account-information/personal-message" },
-    { label: "Referral", link: "/account-information/affiliate" },
+    { label: t("menu.myProfile"), link: "/account-information/profile" },
+    { label: t("menu.history"), link: "/account-information/transactions" },
+    { label: t("menu.rebate"), link: "/account-information/rebate" },
+    { label: t("menu.cashback"), link: "/account-information/cashback" },
+    { label: t("menu.totalBet"), link: "/account-information/total-bet" },
+    { label: t("menu.redeemHistory"), link: "/account-information/redeem-history" },
+    { label: t("menu.pointHistory"), link: "/account-information/current-point" },
+    { label: t("menu.personalMessage"), link: "/account-information/forum/inbox" },
+    { label: t("menu.referral"), link: "/account-information/affiliate" },
   ];
+
+  useEffect(() => {
+    const storedActiveItem = localStorage.getItem("activeMenuItem");
+    if (storedActiveItem) {
+      setActiveItem(storedActiveItem);
+    } else {
+      setActiveItem("My Profile");
+    }
+  }, []);
 
   const handleItemClick = (label: string) => {
     setActiveItem(label);
+    localStorage.setItem("activeMenuItem", label);
   };
 
   return (
@@ -32,7 +44,7 @@ const Sidebar = () => {
               onClick={() => handleItemClick(item.label)}
               className={`flex items-center px-4 py-3 w-full rounded-full transition ${
                 activeItem === item.label
-                  ? "bg-yellow-500 text-black font-bold"
+                  ? "bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-bold"
                   : "text-gray-300 hover:bg-gray-700"
               }`}
             >

@@ -500,5 +500,71 @@
     "tableGames": "桌面游戏",
     "searchPlaceholder": "搜索您的游戏",
     "gameCount": "{count} 游戏"
+  },
+  "settings": {
+    "title": "通用设置",
+    "menu": {
+      "general": "通用",
+      "verification": "验证",
+      "changePassword": "更改密码",
+      "activityLog": "活动日志"
+    },
+    "general": {
+      "language": "语言",
+      "eng": "英语"
+    },
+    "verification": {
+      "title": "验证设置",
+      "AccountDetails": "账户详情",
+      "PersonalInformation": "个人信息",
+      "Firstname": "名字 *",
+      "Lastname": "姓氏 *",
+      "MobilePhone": "手机号 *",
+      "BankingInformation": "银行信息",
+      "Bankname": "银行名称 *",
+      "Bankaccountnumber": "银行账号 *",
+      "SaveChanges": "保存更改"
+    },
+    "changePassword": {
+      "title": "更改密码",
+      "currentPassword": "当前密码 *",
+      "newPassword": "新密码 *",
+      "confirmPassword": "确认密码 *",
+      "currentPasswordPlaceholder": "输入当前密码",
+      "newPasswordPlaceholder": "输入新密码",
+      "confirmPasswordPlaceholder": "确认新密码",
+      "reloginNote": "更改密码后需要重新登录。",
+      "passwordStrength": "密码强度",
+      "requirements": {
+        "minLength": "至少包含 8 个字符。",
+        "uppercase": "至少包含 1 个大写字母 (A-Z)。",
+        "lowercase": "至少包含 1 个小写字母 (a-z)。",
+        "numeric": "至少包含 1 个数字 (0-9)。"
+      },
+      "saveChanges": "保存更改"
+    },
+    "activityLog": {
+      "title": "活动日志",
+      "totalActivities": "总活动数：",
+      "filters": {
+        "all": "全部",
+        "login": "登录",
+        "game": "进入游戏",
+        "quest": "每日签到"
+      },
+      "columns": {
+        "dateTime": "日期-时间",
+        "activity": "活动"
+      },
+      "activityTypes": {
+        "login": "登录",
+        "dailyCheckIn": "每日签到任务",
+        "enterGame": "进入游戏"
+      },
+      "pagination": {
+        "page": "页面",
+        "of": "的"
+      }
+    }
   }
 }

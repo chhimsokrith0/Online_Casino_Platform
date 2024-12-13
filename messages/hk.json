@@ -500,5 +500,309 @@
         "tableGames": "桌面遊戲",
         "searchPlaceholder": "搜尋您的遊戲",
         "gameCount": "{count} 遊戲"
+    },
+    "settings": {
+        "title": "一般設定",
+        "menu": {
+            "general": "一般",
+            "verification": "驗證",
+            "changePassword": "更改密碼",
+            "activityLog": "活動記錄"
+        },
+        "general": {
+            "language": "語言",
+            "eng": "英文"
+        },
+        "verification": {
+            "title": "驗證設定",
+            "AccountDetails": "帳戶詳情",
+            "PersonalInformation": "個人信息",
+            "Firstname": "名字 *",
+            "Lastname": "姓氏 *",
+            "MobilePhone": "手機號碼 *",
+            "BankingInformation": "銀行信息",
+            "Bankname": "銀行名稱 *",
+            "Bankaccountnumber": "銀行賬戶號碼 *",
+            "SaveChanges": "保存更改"
+        },
+        "changePassword": {
+            "title": "更改密碼",
+            "currentPassword": "當前密碼 *",
+            "newPassword": "新密碼 *",
+            "confirmPassword": "確認密碼 *",
+            "currentPasswordPlaceholder": "輸入當前密碼",
+            "newPasswordPlaceholder": "輸入新密碼",
+            "confirmPasswordPlaceholder": "確認新密碼",
+            "reloginNote": "更改密碼後需要重新登錄。",
+            "passwordStrength": "密碼強度",
+            "requirements": {
+                "minLength": "至少包含 8 個字符。",
+                "uppercase": "至少包含 1 個大寫字母 (A-Z)。",
+                "lowercase": "至少包含 1 個小寫字母 (a-z)。",
+                "numeric": "至少包含 1 個數字 (0-9)。"
+            },
+            "saveChanges": "保存更改"
+        },
+        "activityLog": {
+            "title": "活動記錄",
+            "totalActivities": "總活動:",
+            "filters": {
+                "all": "全部",
+                "login": "登錄",
+                "game": "進入遊戲",
+                "quest": "每日簽到"
+            },
+            "columns": {
+                "dateTime": "日期-時間",
+                "activity": "活動"
+            },
+            "activityTypes": {
+                "login": "登錄",
+                "dailyCheckIn": "來自任務的每日簽到",
+                "enterGame": "進入遊戲"
+            },
+            "pagination": {
+                "page": "頁面",
+                "of": "的"
+            }
+        }
+    },
+    "accountInformation": {
+        "title": "帳戶資訊",
+        "menu": {
+            "myProfile": "我的資料",
+            "history": "歷史記錄",
+            "rebate": "回扣",
+            "cashback": "現金回贈",
+            "totalBet": "總投注",
+            "redeemHistory": "兌換記錄",
+            "pointHistory": "積分記錄",
+            "personalMessage": "個人訊息",
+            "referral": "推薦"
+        },
+        "profile": {
+            "phoneNumber": "電話號碼",
+            "joinedOn": "加入日期",
+            "vipLevel": {
+                "current": "當前級別",
+                "upgrade": "升級您的VIP級別",
+                "progress": "您的進度"
+            },
+            "wallet": {
+                "title": "您的錢包",
+                "balance": "餘額"
+            },
+            "rebateBalance": "回扣餘額",
+            "cashbackBalance": "現金回贈餘額",
+            "referralBalance": "推薦餘額"
+        },
+        "totalBets": {
+            "title": "總投注",
+            "columns": {
+                "transactionDateTime": "交易日期時間",
+                "totalWinLose": "總贏/輸",
+                "totalBets": "總投注"
+            },
+            "emptyState": {
+                "message": "這裡目前沒有任何記錄！"
+            },
+            "totalBetAmount": "總投注金額："
+        },
+        "promotions": {
+            "title": "我的優惠",
+            "cashback": "現金回贈",
+            "rebate": "回扣"
+        },
+        "actions": {
+            "exchangeReward": "兌換獎勵",
+            "logOut": "登出"
+        },
+        "points": {
+            "currentPoints": "當前積分",
+            "progress": "進度",
+            "rank": {
+                "bronze": "銅牌",
+                "silver": "銀牌"
+            }
+        },
+        "history": {
+            "title": "歷史記錄",
+            "tabs": {
+                "deposit": "存款",
+                "withdraw": "提款",
+                "bet": "投注",
+                "receivePromotion": "接收優惠",
+                "receiveRebate": "接收回扣",
+                "receiveCashback": "接收現金回贈",
+                "receiveReferral": "接收推薦"
+            },
+            "columns": {
+                "amount": "金額",
+                "channel": "渠道",
+                "bankAccount": "銀行賬戶",
+                "depositDateTime": "存款日期時間",
+                "status": "狀態",
+                "successDateTime": "成功日期時間"
+            },
+            "emptyState": {
+                "message": "這裡目前沒有任何記錄！"
+            },
+            "totalDeposit": "總存款："
+        },
+        "rebate": {
+            "title": "回扣",
+            "columns": {
+                "transactionDateTime": "交易日期時間",
+                "rebateAmount": "回扣金額"
+            },
+            "emptyState": {
+                "message": "這裡目前沒有任何記錄！"
+            },
+            "totalRebate": "總回扣金額："
+        },
+        "cashback": {
+            "title": "現金回贈",
+            "columns": {
+                "transactionDateTime": "交易日期時間",
+                "cashbackAmount": "現金回贈金額"
+            },
+            "emptyState": {
+                "message": "這裡目前沒有任何記錄！"
+            },
+            "totalCashback": "總現金回贈金額："
+        },
+        "redeemHistory": {
+            "title": "兌換記錄",
+            "columns": {
+                "no": "序號",
+                "transactionDateTime": "交易日期時間",
+                "typeOfReward": "獎勵類型",
+                "reward": "獎勵",
+                "status": "狀態",
+                "usedPoints": "使用積分",
+                "freeSpins": "免費旋轉"
+            },
+            "emptyState": {
+                "message": "這裡目前沒有任何記錄！"
+            },
+            "totals": {
+                "allRewards": "所有獎勵：",
+                "totalUsedPoints": "總使用積分：",
+                "totalFreeSpins": "總免費旋轉：",
+                "totalAmountPerRound": "每輪總金額："
+            }
+        },
+        "pointHistory": {
+            "title": "積分記錄",
+            "columns": {
+                "transactionDateTime": "交易日期時間",
+                "type": "類型",
+                "turnover": "營業額",
+                "currentPoint": "當前積分"
+            },
+            "emptyState": {
+                "message": "這裡目前沒有任何記錄！"
+            },
+            "totalPoints": "總積分："
+        },
+        "personalMessage": {
+            "title": "個人訊息",
+            "tabs": {
+                "inbox": "收件箱",
+                "send": "發送"
+            },
+            "emptyState": {
+                "message": "沒有結果"
+            },
+            "actions": {
+                "newMessage": "新訊息"
+            },
+            "newMessageModal": {
+                "title": "新訊息",
+                "fields": {
+                    "sendTo": "發送給",
+                    "admin": "管理員",
+                    "title": "標題",
+                    "titlePlaceholder": "輸入標題",
+                    "message": "訊息",
+                    "messagePlaceholder": "在這裡輸入內容...",
+                    "attachImage": "附加圖片（可選）",
+                    "uploadInstructions": "點擊上傳或拖放",
+                    "allowedFileTypes": "WEBP、PNG 或 JPG（3MB）。"
+                },
+                "characterLimit": "0/300",
+                "sendMessageButton": "發送訊息"
+            },
+            "pagination": {
+                "previous": "<",
+                "next": ">"
+            }
+        },
+        "referral": {
+            "title": "推薦",
+            "stats": {
+                "incomeToday": "今日收入",
+                "totalReferral": "總推薦",
+                "referralClick": "推薦點擊",
+                "totalMember": "總會員",
+                "totalTurnover": "總營業額",
+                "totalCashback": "總現金回贈"
+            },
+            "copy": {
+                "referralLink": "推薦鏈接",
+                "referralCode": "推薦代碼",
+                "copyText": "複製您的推薦代碼或鏈接給朋友，當他們註冊並玩遊戲時，您將獲得回扣。"
+            },
+            "inviteFriends": "邀請朋友",
+            "socialMedia": {
+                "facebook": "臉書",
+                "telegram": "電報",
+                "skype": "Skype",
+                "whatsapp": "WhatsApp"
+            },
+            "actions": {
+                "transfer": "轉移"
+            },
+            "dataOverview": {
+                "title": "數據概覽",
+                "tabs": {
+                    "totalRevenue": "總收入",
+                    "members": "會員",
+                    "receiveReferral": "接收推薦"
+                },
+                "table": {
+                    "columns": {
+                        "date": "日期",
+                        "referral": "推薦"
+                    },
+                    "emptyState": {
+                        "message": "這裡目前沒有任何記錄！"
+                    },
+                    "totals": {
+                        "totalRevenue": "總收入："
+                    }
+                },
+                "analytics": {
+                    "title": "分析 - 衡量您的表現",
+                    "metrics": {
+                        "income": {
+                            "title": "收入",
+                            "today": "今日收入",
+                            "yesterday": "昨日收入"
+                        },
+                        "turnover": {
+                            "title": "營業額",
+                            "today": "今日營業額",
+                            "yesterday": "昨日營業額"
+                        },
+                        "cashback": {
+                            "title": "現金回贈",
+                            "today": "今日現金回贈",
+                            "yesterday": "昨日現金回贈"
+                        }
+                    }
+                }
+            }
+        }
     }
 }

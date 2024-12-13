@@ -39,32 +39,40 @@ const Notification = () => {
   };
 
   useEffect(() => {
-    if (isNotificationOpen && modalRef.current && backdropRef.current) {
-      // Animate modal opening
-      const timeline = gsap.timeline();
-
-      timeline
-        .fromTo(
-          modalRef.current,
-          { opacity: 0, scale: 0.8 },
-          { opacity: 1, scale: 1, duration: 0.4, ease: "power2.out" }
-        )
-        .fromTo(
-          backdropRef.current,
-          { opacity: 0 },
-          { opacity: 1, duration: 0.3, ease: "power2.out" },
-          "<"
-        );
-    }
+    const handleClickOutside = (event: MouseEvent) => {
+      if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
+        handleClose(); // Close the modal if clicked outside
+      }
+    };
 
     if (isNotificationOpen) {
-      document.body.classList.add("overflow-hidden");
+      // Animate modal opening
+      if (modalRef.current && backdropRef.current) {
+        const timeline = gsap.timeline();
+
+        timeline
+          .fromTo(
+            modalRef.current,
+            { opacity: 0, scale: 0.8 },
+            { opacity: 1, scale: 1, duration: 0.4, ease: "power2.out" }
+          )
+          .fromTo(
+            backdropRef.current,
+            { opacity: 0 },
+            { opacity: 1, duration: 0.3, ease: "power2.out" },
+            "<"
+          );
+      }
+
+      document.body.classList.add("overflow-hidden"); // Prevent scrolling
+      document.addEventListener("mousedown", handleClickOutside);
     } else {
       document.body.classList.remove("overflow-hidden");
     }
 
     return () => {
-      document.body.classList.remove("overflow-hidden");
+      document.body.classList.remove("overflow-hidden"); // Cleanup on unmount
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isNotificationOpen]);
 

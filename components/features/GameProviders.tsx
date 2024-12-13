@@ -10,6 +10,8 @@ import { Navigation } from "swiper/modules";
 
 import { gsap } from "gsap";
 
+import Link from "next/link";
+
 import img1 from "@/assets/img-gameprovider/PG.png";
 import img2 from "@/assets/img-gameprovider/JOKER.png";
 import img3 from "@/assets/img-gameprovider/JILI.png";
@@ -119,10 +121,10 @@ const GameProviders: React.FC = () => {
                         {t("title")}
                     </h2>
                 </div>
-                <button className="flex items-center space-x-2 bg-transparent border border-yellow-500 text-yellow-500 px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-500 hover:text-black transition">
+                <Link href="/providers" className="flex items-center space-x-2 bg-transparent border border-yellow-500 text-yellow-500 px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-500 hover:text-black transition">
                     <span>{t("seeAll")}</span>
                     <span className="font-bold">➤</span>
-                </button>
+                </Link>
             </div>
 
             {/* Swiper Container */}

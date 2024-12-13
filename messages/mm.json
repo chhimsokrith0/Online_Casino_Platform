@@ -500,5 +500,124 @@
     "tableGames": "စားပွဲဂိမ်းများ",
     "searchPlaceholder": "သင့်ဂိမ်းကိုရှာဖွေပါ",
     "gameCount": "{count} ဂိမ်းများ"
+  },
+  "settings": {
+    "title": "အခြေခံဆက်တင်များ",
+    "menu": {
+      "general": "အခြေခံ",
+      "verification": "အတည်ပြုခြင်း",
+      "changePassword": "စကားဝှက်ပြောင်းလဲရန်",
+      "activityLog": "လှုပ်ရှားမှုမှတ်တမ်း"
+    },
+    "general": {
+      "language": "ဘာသာစကား",
+      "eng": "အင်္ဂလိပ်"
+    },
+    "verification": {
+      "title": "အတည်ပြုဆက်တင်များ",
+      "AccountDetails": "အကောင့်အသေးစိတ်",
+      "PersonalInformation": "ပုဂ္ဂိုလ်ရေးအချက်အလက်",
+      "Firstname": "အမည် *",
+      "Lastname": "မျိုးနွယ်အမည် *",
+      "MobilePhone": "မိုဘိုင်းဖုန်းနံပါတ် *",
+      "BankingInformation": "ဘဏ်အချက်အလက်များ",
+      "Bankname": "ဘဏ်အမည် *",
+      "Bankaccountnumber": "ဘဏ်အကောင့်နံပါတ် *",
+      "SaveChanges": "ပြောင်းလဲမှုများကိုသိမ်းဆည်းပါ"
+    },
+    "changePassword": {
+      "title": "စကားဝှက်ပြောင်းလဲရန်",
+      "currentPassword": "လက်ရှိစကားဝှက် *",
+      "newPassword": "စကားဝှက်အသစ် *",
+      "confirmPassword": "စကားဝှက်အတည်ပြုရန် *",
+      "currentPasswordPlaceholder": "လက်ရှိစကားဝှက်ထည့်ပါ",
+      "newPasswordPlaceholder": "စကားဝှက်အသစ်ထည့်ပါ",
+      "confirmPasswordPlaceholder": "စကားဝှက်ကိုအတည်ပြုပါ",
+      "reloginNote": "စကားဝှက်ပြောင်းလဲပြီးနောက် ပြန်လည်ဝင်ရောက်ရန်လိုအပ်သည်။",
+      "passwordStrength": "စကားဝှက်အားကောင်းမှု",
+      "requirements": {
+        "minLength": "အနည်းဆုံး အက္ခရာ ၈ လုံးရှိရမည်။",
+        "uppercase": "အကြီးစာလုံး (A-Z) အနည်းဆုံး ၁ လုံးရှိရမည်။",
+        "lowercase": "အငယ်စာလုံး (a-z) အနည်းဆုံး ၁ လုံးရှိရမည်။",
+        "numeric": "အရေအတွက် (0-9) အနည်းဆုံး ၁ လုံးရှိရမည်။"
+      },
+      "saveChanges": "ပြောင်းလဲမှုများကိုသိမ်းဆည်းပါ"
+    },
+    "activityLog": {
+      "title": "လှုပ်ရှားမှုမှတ်တမ်း",
+      "totalActivities": "စုစုပေါင်းလှုပ်ရှားမှု:",
+      "filters": {
+        "all": "အားလုံး",
+        "login": "ဝင်ရောက်မှု",
+        "game": "ဂိမ်းထဲသို့ဝင်ရန်",
+        "quest": "နေ့စဉ် စစ်ဆေးမှု"
+      },
+      "columns": {
+        "dateTime": "ရက်စွဲ-အချိန်",
+        "activity": "လှုပ်ရှားမှု"
+      },
+      "activityTypes": {
+        "login": "ဝင်ရောက်မှု",
+        "dailyCheckIn": "နေ့စဉ်စစ်ဆေးမှု",
+        "enterGame": "ဂိမ်းထဲသို့ဝင်ရန်"
+      },
+      "pagination": {
+        "page": "စာမျက်နှာ",
+        "of": "၏"
+      }
+    }
+  },
+  "accountInformation": {
+    "title": "အကောင့်အချက်အလက်",
+    "menu": {
+      "myProfile": "အကြွေစေ့ကိုထည့်သွင်းရန်",
+      "history": "သမိုင်း",
+      "rebate": "ပြန်အမ်းငွေ",
+      "cashback": "ငွေပြန်အမ်း",
+      "totalBet": "စုစုပေါင်းတောင်းဆိုမှု",
+      "redeemHistory": "ပြန်လည်ဝယ်ယူမှုသမိုင်း",
+      "pointHistory": "မှတ်စုတင်ဖွင့်မှတ်စု",
+      "personalMessage": "ပုဂ္ဂိုလ်ရေးမက်ဆေ့",
+      "referral": "အကြံပြုချက်များ"
+    },
+    "profile": {
+      "phoneNumber": "ဖုန်းနံပါတ်",
+      "joinedOn": "မှကျင်းကူထားသော",
+      "vipLevel": {
+        "current": "လက်ရှိVIP စီရင်မှု",
+        "upgrade": "VIP စနစ်အဆင့်တစ်ခု အဆင့်မြှင့်လိုက်ပါ",
+        "progress": "ဘတ်ချက်လုပ်နေ"
+      },
+      "wallet": {
+        "title": "ဘဏ္ဍာကာကောင်",
+        "balance": "စုစုပေါင်းငွေကျန်ရှင်"
+      },
+      "rebateBalance": "ပြန်အမ်းငွေကျန်",
+      "cashbackBalance": "ပြန်အမ်းငွေအပေါ်အပြန်",
+      "referralBalance": "အကြံပြုချက်များ"
+    },
+    "totalBets": {
+      "title": "ဘောဂဗဒံငွေ",
+      "depositTurnover": "လက်ကျန်ငွေစုံအတက်",
+      "turnover": "သို့ပေးပြန်ငွေ",
+      "turnWinlose": "ဝင်ငွေ/ထံ"
+    },
+    "promotions": {
+      "title": "ရိုးရိုးဖြစ်သောစီစဉ်မှုများ",
+      "cashback": "ငွေပြန်အမ်းခြေ",
+      "rebate": "ပြန်ရငွေ"
+    },
+    "actions": {
+      "exchangeReward": "လက်ရှိအလဲအလှယ်",
+      "logOut": "စီအော့တ်"
+    },
+    "points": {
+      "currentPoints": "လက်ရှိကို",
+      "progress": "မျှတမှုလွှာ",
+      "rank": {
+        "bronze": "ချိုင်းဖြူ",
+        "silver": "ငွေ"
+      }
+    }
   }
 }

@@ -126,6 +126,8 @@ import NavbarMobile from "./NavbarMobile";
 import SignUpModal from "./SignUpModal";
 import NavbarWallet from "./NavbarWallet";
 import BottomNavbar from "./BottomNavbar";
+import Image from "next/image";
+import ProfileModal from "./ProfileModal";
 
 interface NavbarProps {
   locale: string;
@@ -136,6 +138,8 @@ const Navbar: React.FC<NavbarProps> = ({ locale }) => {
   const { data: session } = useSession();
   const [isMobile, setIsMobile] = useState(false);
   const [modalType, setModalType] = useState<"signUp" | "signIn" | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isProfileModalOpen, setIsProfileModalOpen] = useState(false);
 
   const toggleModal = (type: "signUp" | "signIn") => setModalType(type);
 
@@ -147,6 +151,10 @@ const Navbar: React.FC<NavbarProps> = ({ locale }) => {
   }, []);
 
   const isLoggedIn = !!session;
+
+  const toggleProfileModal = () => {
+    setIsProfileModalOpen(!isProfileModalOpen);
+  };
 
   return (
     <nav
@@ -168,19 +176,44 @@ const Navbar: React.FC<NavbarProps> = ({ locale }) => {
             <>
               <div>
                 <div
-                  className="grid grid-cols-3 gap-6 items-center justify-between"
-                  style={{ display: "grid" }}
+                  className="grid grid-cols-4 gap-4 items-center"
+
                 >
-                  <div className="flex items-start">
+                  {/* Logo Section */}
+                  <div className="flex items-center justify-start">
                     <NavbarLogo locale={locale} />
                   </div>
-                  <div className="flex items-center">
-                    <NavbarWallet locale={locale} />
+
+                  {/* Wallet Section */}
+                  <div className="flex items-center justify-center">
+                    <div className="ml-24">
+                      <NavbarWallet locale={locale} />
+                    </div>
                   </div>
-                  <div className="flex justify-end">
+
+                  {/* Bronze Level Icon Section */}
+                  <div className="flex items-center justify-center">
+                    <div className="mr-[-100px]" onClick={toggleProfileModal}>
+                      <Image
+                        src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733035009/bronze_fleymy.png"
+                        alt="Bronze Level"
+                        width={30}
+                        height={30}
+                        className="rounded-full"
+
+                      />
+                    </div>
+                  </div>
+
+                  {/* Language Selector Section */}
+                  <div className="flex items-center justify-end">
                     <NavbarLanguage locale={locale} />
                   </div>
                 </div>
+
+
+
+
                 <br />
                 <br />
                 <br />
@@ -216,6 +249,12 @@ const Navbar: React.FC<NavbarProps> = ({ locale }) => {
           onClose={() => setModalType(null)}
         />
       )}
+
+      <ProfileModal
+        isOpen={isProfileModalOpen}
+        onClose={toggleProfileModal}
+        locale={locale}
+      />
     </nav>
   );
 };
