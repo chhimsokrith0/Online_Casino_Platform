@@ -158,7 +158,7 @@ const Navbar: React.FC<NavbarProps> = ({ locale }) => {
 
   return (
     <nav
-      className="w-full bg-gray-900 py-3 px-4 sm:px-6 flex items-center justify-between shadow-md sticky top-0 z-100"
+      className="w-full bg-gray-900 py-3 px-4 sm:px-6 flex items-center justify-between shadow-md sticky top-0"
       style={{
         background: "linear-gradient(90deg, #1E1E2C, #232334)",
         boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.5)",
@@ -222,8 +222,32 @@ const Navbar: React.FC<NavbarProps> = ({ locale }) => {
             </>
           ) : (
             <>
-              <NavbarMobile t={t} locale={locale} toggleModal={toggleModal} />
-              <NavbarLanguage locale={locale} />
+
+              <div>
+                <div
+                  className="grid grid-cols-3 gap-4 items-center"
+
+                >
+                  {/* Logo Section */}
+                  <div className="flex items-center justify-start">
+                    <NavbarLogo locale={locale} />
+                  </div>
+
+                  {/* Wallet Section */}
+                  <div className="flex items-center justify-center">
+                    <div className="ml-16">
+                      <NavbarMobile t={t} locale={locale} toggleModal={toggleModal} />
+                    </div>
+                  </div>
+
+                  {/* Language Selector Section */}
+                  <div className="flex items-center justify-end">
+                    <NavbarLanguage locale={locale} />
+                  </div>
+                </div>
+
+              </div>
+
             </>
           )
         ) : (
@@ -235,6 +259,7 @@ const Navbar: React.FC<NavbarProps> = ({ locale }) => {
             </>
           ) : (
             <>
+
               <NavbarButtons t={t} toggleModal={toggleModal} />
               <NavbarLanguage locale={locale} />
             </>

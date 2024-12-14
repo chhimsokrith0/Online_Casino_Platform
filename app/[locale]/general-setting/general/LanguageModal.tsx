@@ -10,6 +10,7 @@ interface LanguageModalProps {
   selectedLanguage: string;
   onClose: () => void;
   onSelectLanguage: (language: string) => void;
+  languages: Array<{ code: string; name: string; flag: string }>;
 }
 
 const LanguageModal: React.FC<LanguageModalProps> = ({
@@ -17,6 +18,7 @@ const LanguageModal: React.FC<LanguageModalProps> = ({
   selectedLanguage,
   onClose,
   onSelectLanguage,
+  languages,
 }) => {
   const modalRef = useRef<HTMLDivElement>(null);
 
@@ -40,11 +42,11 @@ const LanguageModal: React.FC<LanguageModalProps> = ({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[200]">
       <div ref={modalRef} className="bg-gray-800 rounded-lg p-6 shadow-lg w-96">
         {/* Modal Header */}
         <div className="flex justify-between items-center mb-6">
-          <h3 className="text-lg font-bold text-white">Language</h3>
+          <h3 className="text-lg font-bold text-white">Select Language</h3>
           <button onClick={onClose}>
             <FontAwesomeIcon
               icon={faTimesCircle}
@@ -54,42 +56,31 @@ const LanguageModal: React.FC<LanguageModalProps> = ({
         </div>
 
         {/* Language Options */}
-        <div className="flex gap-6 items-center">
-          {/* English */}
-          <div
-            className={`flex items-center gap-3 p-4 rounded-lg cursor-pointer ${
-              selectedLanguage === "Eng" ? "bg-gray-700" : "bg-gray-600 hover:bg-gray-700"
-            }`}
-            onClick={() => onSelectLanguage("Eng")}
-          >
-            <img
-              src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
-              alt="English"
-              className="w-6 h-4 rounded-sm"
-            />
-            <span className="text-white text-sm">Eng</span>
-            {selectedLanguage === "Eng" && (
-              <FontAwesomeIcon icon={faCheckCircle} className="text-green-500 text-lg ml-2" />
-            )}
-          </div>
-
-          {/* Thai */}
-          <div
-            className={`flex items-center gap-3 p-4 rounded-lg cursor-pointer ${
-              selectedLanguage === "Thai" ? "bg-gray-700" : "bg-gray-600 hover:bg-gray-700"
-            }`}
-            onClick={() => onSelectLanguage("Thai")}
-          >
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg"
-              alt="Thai"
-              className="w-6 h-4 rounded-sm"
-            />
-            <span className="text-white text-sm">Thai</span>
-            {selectedLanguage === "Thai" && (
-              <FontAwesomeIcon icon={faCheckCircle} className="text-green-500 text-lg ml-2" />
-            )}
-          </div>
+        <div className="grid grid-cols-2 gap-4">
+          {languages.map((lang) => (
+            <div
+              key={lang.code}
+              className={`flex items-center gap-3 p-3 rounded-lg cursor-pointer ${
+                selectedLanguage === lang.code
+                  ? "bg-gray-700 border border-yellow-500"
+                  : "bg-gray-600 hover:bg-gray-700"
+              }`}
+              onClick={() => onSelectLanguage(lang.code)}
+            >
+              <img
+                src={lang.flag}
+                alt={lang.name}
+                className="w-6 h-4 rounded-sm"
+              />
+              <span className="text-white text-sm">{lang.name}</span>
+              {selectedLanguage === lang.code && (
+                <FontAwesomeIcon
+                  icon={faCheckCircle}
+                  className="text-green-500 text-lg ml-auto"
+                />
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </div>

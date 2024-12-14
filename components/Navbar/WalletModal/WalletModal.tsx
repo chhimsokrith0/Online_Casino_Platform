@@ -9,6 +9,7 @@ import TransferTab from "./TransferTab";
 import Footer from "./footer";
 import { faTimes, faClock } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ReactDOM from "react-dom";
 
 interface WalletModalProps {
   isOpen: boolean;
@@ -22,6 +23,7 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
 
   useEffect(() => {
     if (isOpen) {
+      // Animate modal entrance
       gsap.fromTo(
         modalRef.current,
         { opacity: 0, scale: 0.8 },
@@ -33,10 +35,19 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
         { opacity: 0, y: 50 },
         { opacity: 1, y: 0, duration: 0.6, ease: "power4.out", delay: 0.2 }
       );
+
+      // Prevent scrolling on body
+      document.body.style.overflow = "hidden";
     }
+
+    return () => {
+      // Restore scrolling on body when modal is closed
+      document.body.style.overflow = "";
+    };
   }, [isOpen]);
 
   const handleClose = () => {
+    // Animate modal exit
     gsap.to(modalRef.current, {
       opacity: 0,
       scale: 0.8,
@@ -48,8 +59,9 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
 
   if (!isOpen) return null;
 
-  return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70">
+  // Render modal using React Portal to avoid stacking context issues
+  return ReactDOM.createPortal(
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-70">
       <div
         ref={modalRef}
         className="bg-gray-800 rounded-lg w-full max-w-lg h-[650px] p-6 text-white relative shadow-lg flex flex-col"
@@ -85,7 +97,8 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
         {/* Footer */}
         <Footer />
       </div>
-    </div>
+    </div>,
+    document.body // Portal renders outside of any stacking context
   );
 };
 

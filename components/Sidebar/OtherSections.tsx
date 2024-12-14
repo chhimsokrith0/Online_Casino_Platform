@@ -233,10 +233,12 @@ const OtherSections = ({
               : "hover:bg-gray-800 text-gray-400"
               }`}
           >
-            <div className="flex items-center gap-2">
-              <FontAwesomeIcon icon={faClock} className="text-gray-400" />
-              <span className="font-medium">Recently Played</span>
-            </div>
+            <Link href={`/${locale}/SpecialBonus/recently`}>
+              <div className="flex items-center gap-2">
+                <FontAwesomeIcon icon={faClock} className="text-gray-400" />
+                <span className="font-medium">Recently Played</span>
+              </div>
+            </Link>
           </li>
 
           <div className="border-t border-gray-700 my-4"></div>

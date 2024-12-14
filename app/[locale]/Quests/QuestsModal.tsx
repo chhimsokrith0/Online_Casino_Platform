@@ -4,26 +4,17 @@ import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import ReactDOM from "react-dom";
+import { useScrollLock } from "@/components/useScrollLock";
 import DailyCheckInTab from "./DailyCheckInTab";
 import PlayQuestsTab from "./PlayQuestsTab";
-import "./style.css";
 
 const QuestsModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) => {
   const modalRef = useRef<HTMLDivElement | null>(null);
   const [activeTab, setActiveTab] = useState<"dailyCheckIn" | "playQuests">("dailyCheckIn");
 
-  // Disable scrolling when the modal is open
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-
-    return () => {
-      document.body.style.overflow = "auto"; // Clean up when the component unmounts
-    };
-  }, [isOpen]);
+  // Use the scroll-lock utility
+  useScrollLock(isOpen);
 
   useEffect(() => {
     if (isOpen && modalRef.current) {
@@ -51,9 +42,9 @@ const QuestsModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void
 
   if (!isOpen) return null;
 
-  return (
+  return ReactDOM.createPortal(
     <div
-      className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-[9999]"
+      className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-[200]"
       onClick={onClose}
     >
       <div
@@ -113,7 +104,8 @@ const QuestsModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void
           <button className="text-blue-400 hover:underline">Claimed Rewards History</button>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 };
 

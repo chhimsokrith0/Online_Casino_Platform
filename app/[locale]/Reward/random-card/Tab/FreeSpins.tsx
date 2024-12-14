@@ -1,6 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import ReactDOM from "react-dom";
+import { gsap } from "gsap";
 
 interface Game {
     img: string;
@@ -10,8 +12,10 @@ interface Game {
 
 const FreeSpins = () => {
     const [selectedBet, setSelectedBet] = useState<string | null>(null);
-
     const [selectedGame, setSelectedGame] = useState<Game | null>(null);
+
+    const modalBackdropRef = useRef<HTMLDivElement | null>(null);
+    const modalContentRef = useRef<HTMLDivElement | null>(null);
 
     const games = [
         {
@@ -41,14 +45,146 @@ const FreeSpins = () => {
         },
     ];
 
+    useEffect(() => {
+        if (selectedGame) {
+            // Animate backdrop and modal content
+            gsap.fromTo(
+                modalBackdropRef.current,
+                { opacity: 0 },
+                { opacity: 1, duration: 0.5, ease: "power3.out" }
+            );
+
+            gsap.fromTo(
+                modalContentRef.current,
+                { scale: 0.8, opacity: 0 },
+                { scale: 1, opacity: 1, duration: 0.5, ease: "elastic.out(1, 0.6)" }
+            );
+        }
+    }, [selectedGame]);
+
     const openModal = (game: Game) => {
         setSelectedGame(game);
     };
 
     const closeModal = () => {
-        setSelectedGame(null);
+        gsap.to(modalBackdropRef.current, { opacity: 0, duration: 0.3 });
+        gsap.to(modalContentRef.current, { scale: 0.8, opacity: 0, duration: 0.3 }).then(() => {
+            setSelectedGame(null);
+        });
         setSelectedBet(null);
     };
+
+    const renderModal = () => {
+        if (!selectedGame) return null;
+
+        // Ensure #modal-root exists
+        let modalRoot = document.getElementById("modal-root");
+        if (!modalRoot) {
+            modalRoot = document.createElement("div");
+            modalRoot.id = "modal-root";
+            document.body.appendChild(modalRoot);
+        }
+
+        return ReactDOM.createPortal(
+            <div
+                ref={modalBackdropRef}
+                className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-[200]"
+            >
+                <div
+                    ref={modalContentRef}
+                    className="bg-[#252734] rounded-2xl w-11/12 md:w-1/3 p-8 relative shadow-xl"
+                >
+                    {/* Close Button */}
+                    <button
+                        onClick={closeModal}
+                        className="absolute top-4 right-4 text-gray-400 hover:text-white focus:outline-none"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-6 w-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M6 18L18 6M6 6l12 12"
+                            />
+                        </svg>
+                    </button>
+
+                    {/* Modal Header */}
+                    <h2 className="text-2xl text-left font-semibold text-white mb-6">
+                        Choose Bet Size/Round
+                    </h2>
+
+                    <div className="grid grid-cols-12 gap-4">
+                        {/* Game Details */}
+                        <div className="col-span-4 flex items-center">
+                            <img
+                                src={selectedGame.img}
+                                alt={selectedGame.title}
+                                className="w-40 h-40 rounded-lg shadow-lg"
+                            />
+                        </div>
+
+                        {/* Details and Options */}
+                        <div className="col-span-8">
+                            <div>
+                                <h3 className="text-white font-bold text-lg">{selectedGame.spins} Free Spins</h3>
+                                <p className="text-gray-400 mt-1">
+                                    in games{" "}
+                                    <span className="text-yellow-500 font-medium">{selectedGame.title}</span>
+                                </p>
+                            </div>
+
+                            {/* Instruction */}
+                            <p className="text-gray-400 mb-4 mt-4 text-left">
+                                Choose the number of Bet Size/Round
+                            </p>
+
+                            {/* Bet Size Options with Grid */}
+                            <div className="grid grid-cols-2 gap-4 mb-6">
+                                {[
+                                    { value: "2.00", points: "2,500 Points" },
+                                    { value: "5.00", points: "5,500 Points" },
+                                ].map((option) => (
+                                    <button
+                                        key={option.value}
+                                        className={`px-6 py-3 text-center rounded-lg font-medium text-sm transition-all duration-300 ${selectedBet === option.value
+                                                ? "bg-gradient-to-r from-yellow-500 to-orange-500 text-black border-2 border-yellow-500"
+                                                : "bg-[#2c2f3f] text-white border border-transparent hover:bg-gradient-to-r hover:from-yellow-500 hover:to-orange-500 hover:text-black hover:border-yellow-500"
+                                            }`}
+                                        onClick={() => setSelectedBet(option.value)}
+                                    >
+                                        {option.value}฿ <br />
+                                        <span className="text-gray-400 text-xs">{option.points}</span>
+                                    </button>
+                                ))}
+                            </div>
+
+
+                            {/* Redeem Button */}
+                            <button
+                                className={`w-full py-3 rounded-full font-semibold text-lg ${selectedBet
+                                    ? "bg-gradient-to-r from-yellow-500 to-orange-500 text-black border-2 border-yellow-500"
+                                    : "bg-[#2c2f3f] text-gray-500 cursor-not-allowed"
+                                    }`}
+                                disabled={!selectedBet}
+                            >
+                                {selectedBet ? `Redeem for ${selectedBet}K 💎` : "Redeem"}
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>,
+            modalRoot
+        );
+    };
+
 
     return (
         <div className="mt-6">
@@ -86,12 +222,7 @@ const FreeSpins = () => {
                             viewBox="0 0 24 24"
                             stroke="currentColor"
                         >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M3 4h18M3 10h18m-9 6h9"
-                            />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4h18M3 10h18m-9 6h9" />
                         </svg>
                         Filters
                     </button>
@@ -122,11 +253,7 @@ const FreeSpins = () => {
                         key={index}
                         className="p-6 rounded-lg flex flex-row items-center justify-between shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300"
                     >
-                        <img
-                            src={game.img}
-                            alt={game.title}
-                            className="w-36 h-36 rounded-lg"
-                        />
+                        <img src={game.img} alt={game.title} className="w-36 h-36 rounded-lg" />
                         <div>
                             <h3 className="text-white font-bold text-lg">{game.spins} Free Spins</h3>
                             <p className="text-gray-400 text-sm mt-1">
@@ -143,78 +270,8 @@ const FreeSpins = () => {
                 ))}
             </div>
 
-            {/* Modal */}
-            {selectedGame && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-                    <div className="bg-gray-800 rounded-lg w-11/12 md:w-1/3 p-6 relative shadow-xl">
-                        <button
-                            onClick={closeModal}
-                            className="absolute top-4 right-4 text-gray-400 hover:text-white focus:outline-none"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-6 w-6"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M6 18L18 6M6 6l12 12"
-                                />
-                            </svg>
-                        </button>
-                        <h2 className="text-xl font-bold text-white mb-6 text-center">
-                            Choose Bet Size/Round
-                        </h2>
-                        <div className="flex items-center space-x-4 mb-6">
-                            <img
-                                src={selectedGame.img}
-                                alt={selectedGame.title}
-                                className="w-24 h-24 rounded-lg"
-                            />
-                            <div>
-                                <h3 className="text-white font-bold">{selectedGame.spins} Free Spins</h3>
-                                <p className="text-gray-400">
-                                    in games <span className="text-yellow-500">{selectedGame.title}</span>
-                                </p>
-                            </div>
-                        </div>
-                        <p className="text-gray-400 mb-4 text-center">
-                            Choose the number of Bet Size/Round
-                        </p>
-                        <div className="flex justify-center space-x-4 mb-6">
-                            {[
-                                { value: "2.00", points: "2,500 Points" },
-                                { value: "5.00", points: "5,500 Points" },
-                            ].map((option) => (
-                                <button
-                                    key={option.value}
-                                    className={`px-6 py-3 rounded-lg focus:outline-none ${selectedBet === option.value
-                                        ? "bg-yellow-500 text-black"
-                                        : "bg-gray-700 text-white hover:bg-gray-600"
-                                        }`}
-                                    onClick={() => setSelectedBet(option.value)}
-                                >
-                                    {option.value}฿ <br />
-                                    <span className="text-gray-400 text-sm">{option.points}</span>
-                                </button>
-                            ))}
-                        </div>
-                        <button
-                            className={`w-full px-6 py-3 rounded-full font-bold focus:outline-none ${selectedBet
-                                ? "bg-yellow-500 text-black hover:bg-yellow-600"
-                                : "bg-gray-700 text-gray-500 cursor-not-allowed"
-                                }`}
-                            disabled={!selectedBet}
-                        >
-                            {selectedBet ? `Redeem for ${selectedBet}K 💎` : "Redeem"}
-                        </button>
-                    </div>
-                </div>
-            )}
+            {/* Modal Rendering */}
+            {renderModal()}
         </div>
     );
 };

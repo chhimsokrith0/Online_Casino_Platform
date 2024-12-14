@@ -53,7 +53,7 @@ const TabRandomCard = () => {
                     >
                         <img
                             id={`item${index + 1}`}
-                            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 md:w-32 md:h-32 object-contain"
+                            className="w-full h-full object-cover transition-transform duration-300 ease-in-out transform hover:scale-105 hover:rotate-3"
                             src={`https://res.cloudinary.com/dfxqagrkk/image/upload/v1734009127/1_vb2tye.webp`}
                             alt={`Reward ${index + 1}`}
                         />
@@ -61,6 +61,8 @@ const TabRandomCard = () => {
                 </div>
             ))}
         </div>
+
+
     );
 };
 

@@ -98,48 +98,50 @@ export default function HomeContent({ locale }: { locale: string }) {
 
     return (
         <>
-            <Notification />
-            <Carousel />
+            <div className="z-10">
+                <Notification />
+                <Carousel />
 
-            {/* Show MyPromotions only if the user is logged in */}
-            {session && (
-                <section className="mb-6">
-                    <MyPromotions />
-                </section>
-            )}
+                {/* Show MyPromotions only if the user is logged in */}
+                {session && (
+                    <section className="mb-6">
+                        <MyPromotions />
+                    </section>
+                )}
 
-            <div className="px-4 sm:px-6 lg:px-8">
-                <section className="mb-6">
-                    <MenuBar locale={locale} />
-                </section>
+                <div className="px-4 sm:px-6 lg:px-8">
+                    <section className="mb-6">
+                        <MenuBar locale={locale} />
+                    </section>
 
-                <section className="mb-6">
-                    <PopularGames />
-                </section>
+                    <section className="mb-6">
+                        <PopularGames />
+                    </section>
 
-                <section className="mb-6">
-                    <NewGames />
-                </section>
+                    <section className="mb-6">
+                        <NewGames />
+                    </section>
 
-                <section className="mb-6">
-                    <PromotionsSection />
-                </section>
+                    <section className="mb-6">
+                        <PromotionsSection />
+                    </section>
 
-                <section className="mb-6">
-                    <LiveCasinoSection />
-                </section>
+                    <section className="mb-6">
+                        <LiveCasinoSection />
+                    </section>
 
-                <section className="mb-6">
-                    <GameProviders />
-                </section>
+                    <section className="mb-6">
+                        <GameProviders />
+                    </section>
 
-                <section className="mb-6">
-                    <JackpotBanner />
-                </section>
+                    <section className="mb-6">
+                        <JackpotBanner />
+                    </section>
 
-                <section className="mb-6">
-                    <AllGames />
-                </section>
+                    <section className="mb-6">
+                        <AllGames />
+                    </section>
+                </div>
             </div>
         </>
     );

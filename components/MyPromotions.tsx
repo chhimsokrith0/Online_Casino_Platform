@@ -196,7 +196,7 @@ const PromotionModal = ({
 
     return (
         <div
-            className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
+            className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-[200]"
             onClick={onClose} // Close modal when clicking outside the modal
         >
             <div
@@ -297,7 +297,7 @@ const MyPromotions = () => {
     ];
 
     return (
-        <div className="max-w-[1200px] mx-auto pt-2 p-4">
+        <div className="max-w-[1200px] mx-auto pt-2 p-4 ">
             {/* Section Header */}
             <h3 className="text-gray-400 text-lg font-bold flex items-center gap-2 mb-4">
                 <FontAwesomeIcon icon={faGift} className="text-yellow-400" />

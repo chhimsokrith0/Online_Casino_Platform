@@ -79,7 +79,7 @@ const NewGames: React.FC = () => {
             </div>
 
             {/* Game Cards */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
                 {newGames.map((game, index) => (
                     <div
                         key={game.id}
