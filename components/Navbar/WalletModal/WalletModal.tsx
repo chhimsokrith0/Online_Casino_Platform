@@ -10,6 +10,7 @@ import Footer from "./footer";
 import { faTimes, faClock } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ReactDOM from "react-dom";
+import Link from "next/link";
 
 interface WalletModalProps {
   isOpen: boolean;
@@ -20,9 +21,19 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
   const [activeTab, setActiveTab] = useState<"deposit" | "withdraw" | "transfer">("deposit");
   const modalRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
+  const scrollPositionRef = useRef<number>(0);
 
   useEffect(() => {
     if (isOpen) {
+      // Save the current scroll position
+      scrollPositionRef.current = window.scrollY;
+
+      // Lock the body scroll
+      document.body.style.overflow = "hidden";
+      document.body.style.position = "fixed";
+      document.body.style.top = `-${scrollPositionRef.current}px`;
+      document.body.style.width = "100%";
+
       // Animate modal entrance
       gsap.fromTo(
         modalRef.current,
@@ -35,14 +46,25 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
         { opacity: 0, y: 50 },
         { opacity: 1, y: 0, duration: 0.6, ease: "power4.out", delay: 0.2 }
       );
-
-      // Prevent scrolling on body
-      document.body.style.overflow = "hidden";
+    } else {
+      // Ensure scrolling is restored if the modal is not open
+      document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.width = "";
+      document.body.style.top = "";
     }
 
     return () => {
-      // Restore scrolling on body when modal is closed
+      if (!isOpen) return;
+
+      // Restore body scroll when modal is closed
       document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.width = "";
+      document.body.style.top = "";
+
+      // Restore the saved scroll position
+      window.scrollTo(0, scrollPositionRef.current);
     };
   }, [isOpen]);
 
@@ -53,7 +75,17 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
       scale: 0.8,
       duration: 0.5,
       ease: "power2.inOut",
-      onComplete: onClose,
+      onComplete: () => {
+        // Restore the body scroll after modal is closed
+        onClose();
+        document.body.style.overflow = "";
+        document.body.style.position = "";
+        document.body.style.width = "";
+        document.body.style.top = "";
+
+        // Restore scroll position
+        window.scrollTo(0, scrollPositionRef.current);
+      },
     });
   };
 
@@ -78,11 +110,19 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
         {/* Header */}
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-lg font-bold">Your Wallet</h2>
-          <button className="flex items-center gap-2 text-gray-400 hover:text-yellow-500 transition">
+          <Link
+            href="/account-information/transactions"
+            onClick={() => {
+              // Call onClose to hide the modal when "History" is clicked
+              onClose();
+            }}
+            className="flex items-center gap-2 text-gray-400 hover:text-yellow-500 transition"
+          >
             <FontAwesomeIcon icon={faClock} />
             <span className="text-sm">History</span>
-          </button>
+          </Link>
         </div>
+
 
         {/* Tabs */}
         <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />

@@ -5,6 +5,8 @@ import { gsap } from "gsap";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import "./style.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 interface NavbarLanguageProps {
   locale: string;
@@ -77,32 +79,34 @@ const NavbarLanguage: React.FC<NavbarLanguageProps> = ({ locale }) => {
 
   return (
     <div ref={dropdownRef} className="relative">
+      {/* Dropdown Button */}
       <button
         onClick={toggleDropdown}
-        className="flex items-center bg-gray-800 text-white px-4 py-2 rounded-full border border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500 hover:bg-yellow-500 hover:text-black transition"
+        className="flex items-center bg-gray-800 text-white px-3 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-gray-700 hover:bg-gray-700 transition"
       >
         <Image
           src={currentLanguage?.flag || "/language/en.png"}
           alt={currentLanguage?.name || "English"}
-          width={20}
-          height={20}
-          className="rounded-full mr-2"
+          width={24}
+          height={24}
+          className="rounded-full"
         />
-        <span className="hidden md:block">{currentLanguage?.name || "English"}</span>
-        <span className="ml-2 text-yellow-500 hidden md:block">▼</span>
+        <FontAwesomeIcon icon={faChevronDown} className="ml-2 text-gray-400" />
+
       </button>
 
+      {/* Dropdown Menu */}
       {isDropdownOpen && (
         <div
           ref={dropdownMenuRef}
-          className="absolute  overflow-y-auto hide-scrollbar right-0 mt-2 bg-gray-900 border border-yellow-500 text-white rounded-lg shadow-lg z-10 w-40 max-h-60 overflow-y-auto scrollbar-thin scrollbar-thumb-yellow-500 scrollbar-track-gray-800"
+          className="absolute right-0 mt-2 bg-gray-900 border border-yellow-500 text-white rounded-lg shadow-lg z-10 w-40 max-h-60 overflow-y-auto scrollbar-hide"
         >
-          <ul className="py-2">
+          <ul className="py-1">
             {languages.map((lang) => (
               <li key={lang.code}>
                 <button
                   onClick={() => handleLanguageChange(lang.code)}
-                  className="flex items-center w-full px-4 py-2 hover:bg-yellow-500 hover:text-black transition"
+                  className="flex items-center w-full px-4 py-2 hover:bg-gray-700 transition"
                 >
                   <Image
                     src={lang.flag}
@@ -119,6 +123,7 @@ const NavbarLanguage: React.FC<NavbarLanguageProps> = ({ locale }) => {
         </div>
       )}
     </div>
+
   );
 };
 

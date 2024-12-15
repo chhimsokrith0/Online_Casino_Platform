@@ -34,7 +34,7 @@ const WithdrawTab: React.FC = () => {
   }, []);
 
   return (
-    <div ref={containerRef}>
+    <div ref={containerRef} className="overflow-y-scroll h-full scrollbar-hide">
       <h3
         ref={(el) => {
           if (el) itemRefs.current.push(el);
@@ -57,7 +57,71 @@ const WithdrawTab: React.FC = () => {
           <p className="text-sm text-gray-300">Turnover:</p>
           <span className="text-yellow-400">0.00฿ / 0.00฿</span>
         </div>
+        <div className="flex justify-between mb-2">
+          <p className="text-sm text-gray-300">Turn Winlose:</p>
+          <span className="text-yellow-400">0.00฿ / 0.00฿</span>
+        </div>
       </div>
+
+      <h3
+        ref={(el) => {
+          if (el) itemRefs.current.push(el);
+        }}
+        className="text-sm text-gray-400 mb-4"
+      >
+        Withdraw Amount
+      </h3>
+      <div
+        ref={(el) => {
+          if (el) itemRefs.current.push(el);
+        }}
+        className="bg-gray-700 p-4 rounded-lg mb-4"
+      >
+        <div className="flex justify-between mb-2">
+          <p className="text-sm text-gray-300">Your wallet:</p>
+          <span className="text-gray-300">0.00฿</span>
+        </div>
+        <input
+          type="text"
+          value="0"
+          className="bg-gray-800 w-full p-2 rounded-md text-white focus:ring-2 focus:ring-yellow-500"
+          readOnly
+        />
+        <div className="flex justify-between text-xs text-gray-400 mt-2">
+          <span>Min 500.00฿ ~ Max 10.00K฿</span>
+          <span>Balance: 0.00฿</span>
+        </div>
+      </div>
+
+      <div className="flex gap-2 mb-4">
+        <button className="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-600">
+          Min
+        </button>
+        <button className="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-600">
+          25%
+        </button>
+        <button className="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-600">
+          50%
+        </button>
+        <button className="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-600">
+          Max
+        </button>
+      </div>
+
+      <div className="mt-6">
+        <h3 className="text-sm text-gray-400 mb-2">Note</h3>
+        <div className="relative bg-gray-700 p-4 rounded-lg">
+          <textarea
+            className="bg-gray-800 w-full h-24 p-3 text-sm text-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            placeholder="Type Something here ..."
+            maxLength={300}
+          ></textarea>
+          <div className="absolute bottom-2 right-3 text-xs text-gray-400">
+            <span>0</span> / 300
+          </div>
+        </div>
+      </div>
+      <br />
       <button
         ref={buttonRef}
         className="w-full py-2 bg-yellow-400 text-black font-bold rounded-lg hover:bg-yellow-500 transition text-sm"
