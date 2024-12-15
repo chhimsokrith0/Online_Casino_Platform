@@ -135,9 +135,9 @@ const Footer = ({ locale }: { locale: string }) => {
             ref={informationRef}
             className={`space-y-2 text-sm overflow-hidden ${isInformationOpen ? "block" : "hidden"}`}
           >
-            <li>{t("footer.information.termsAndConditions")}</li>
-            <li>{t("footer.information.privacyPolicy")}</li>
-            <li>{t("footer.information.cookiesPolicy")}</li>
+            <li><Link href={`/${locale}/Security-and-Policy/terms-and-conditions`}>{t("footer.information.termsAndConditions")}</Link></li>
+            <li><Link href={`/${locale}/Security-and-Policy/privacy-policy`}>{t("footer.information.privacyPolicy")}</Link></li>
+            <li><Link href={`/${locale}/Security-and-Policy/cookies-policy`}>{t("footer.information.cookiesPolicy")}</Link></li>
           </ul>
         </div>
 

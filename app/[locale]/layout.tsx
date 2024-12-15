@@ -96,7 +96,7 @@ export default async function RootLayout({
             </footer>
             <br /><br /><br />
             <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-[#020617] z-50 shadow-lg">
-              <MobileNavBar />
+              <MobileNavBar locale={locale}/>
             </div>
           </SessionProviderWrapper>
         </NextIntlClientProvider>
