@@ -234,9 +234,10 @@
     "mobieleNavbar": {
         "menu": "মেনু",
         "slots": "স্লট",
-        "signUp": "সাইন আপ",
+        "signIn": "সাইন ইন",
+        "Wallet": "ওয়ালেট",
         "liveCasino": "লাইভ ক্যাসিনো",
-        "promo": "প্রচার"
+        "promo": "প্রমো"
     },
     "RewardSection": {
         "mainTitle": "অসীম সুবিধা আনলক করুন",
@@ -438,6 +439,8 @@
             }
         },
         "allGame": {
+            "title": "সকল খেলা",
+            "seeAll": "সব দেখুন",
             "ninjaRaccoonFrenzy": {
                 "name": "নিনজা র‍্যাকুন ফ্রেনজি",
                 "provider": "পিজি সফট"

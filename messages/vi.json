@@ -143,56 +143,154 @@
       }
     }
   },
-  "allGames": {
-    "title": "Tất Cả Trò Chơi",
-    "seeAll": "Xem Tất Cả",
-    "games": {
+  "games": {
+    "GamesDemo": {
+      "waysOfTheQilin": {
+        "name": "Con Đường Kỳ Lân",
+        "provider": "PGSoft"
+      },
+      "dragonHatch2": {
+        "name": "Sự Nở Rồng 2",
+        "provider": "PGSoft"
+      },
+      "futebolFever": {
+        "name": "Cơn Sốt Bóng Đá",
+        "provider": "PGSoft"
+      },
+      "wildApe": {
+        "name": "Vượn Hoang Dã",
+        "provider": "PGSoft"
+      },
+      "yakuzaHonor": {
+        "name": "Danh Dự Yakuza",
+        "provider": "PGSoft"
+      },
+      "wingsOfIguazu": {
+        "name": "Đôi Cánh Iguazu",
+        "provider": "PGSoft"
+      },
+      "mysticPotion": {
+        "name": "Thuốc Thần Bí",
+        "provider": "PGSoft"
+      },
+      "museumMystery": {
+        "name": "Bí Ẩn Bảo Tàng",
+        "provider": "PGSoft"
+      },
+      "chickyRun": {
+        "name": "Gà Con Chạy",
+        "provider": "PGSoft"
+      },
+      "chocolateDeluxe": {
+        "name": "Sô Cô La Cao Cấp",
+        "provider": "PGSoft"
+      },
+      "tsarTreasures": {
+        "name": "Kho Báu Tsar",
+        "provider": "PGSoft"
+      },
+      "rioFantasia": {
+        "name": "Giấc Mơ Rio",
+        "provider": "PGSoft"
+      },
+      "mafiaMayhem": {
+        "name": "Hỗn Loạn Mafia",
+        "provider": "PGSoft"
+      },
+      "zombieOutbreak": {
+        "name": "Bùng Phát Xác Sống",
+        "provider": "PGSoft"
+      },
+      "fortuneDragon": {
+        "name": "Rồng May Mắn",
+        "provider": "PGSoft"
+      },
+      "anubisWrath": {
+        "name": "Cơn Thịnh Nộ Của Anubis",
+        "provider": "PGSoft"
+      },
+      "threeCrazyPiggies": {
+        "name": "Ba Chú Heo Điên",
+        "provider": "PGSoft"
+      },
+      "oishiDelights": {
+        "name": "Niềm Vui Oishi",
+        "provider": "PGSoft"
+      },
+      "gemstonesGold": {
+        "name": "Đá Quý Vàng",
+        "provider": "PGSoft"
+      },
+      "sweetieCrush": {
+        "name": "Kẹo Ngọt Đổ Vỡ",
+        "provider": "Joker"
+      },
+      "sourCandy": {
+        "name": "Kẹo Chua",
+        "provider": "Joker"
+      },
+      "zodiacBingo": {
+        "name": "Bingo Hoàng Đạo",
+        "provider": "Joker"
+      },
+      "huangFeiHong": {
+        "name": "Huang Fei Hong",
+        "provider": "Joker"
+      },
+      "silverHand": {
+        "name": "Bàn Tay Bạc",
+        "provider": "Joker"
+      }
+    },
+    "allGame": {
+      "title": "Tất Cả Trò Chơi",
+      "seeAll": "Xem Tất Cả",
       "ninjaRaccoonFrenzy": {
-        "name": "Ninja Raccoon Frenzy",
+        "name": "Cơn Điên Gấu Trúc Ninja",
         "provider": "PGSoft"
       },
       "treasuresOfAztec": {
-        "name": "Treasures of Aztec",
+        "name": "Kho Báu Aztec",
         "provider": "PGSoft"
       },
       "mahjongWays2": {
-        "name": "Mahjong Ways 2",
+        "name": "Con Đường Mahjong 2",
         "provider": "PGSoft"
       },
       "luckyNeko": {
-        "name": "Lucky Neko",
+        "name": "Neko May Mắn",
         "provider": "PGSoft"
       },
       "mahjongWays": {
-        "name": "Mahjong Ways",
+        "name": "Con Đường Mahjong",
         "provider": "PGSoft"
       },
       "wildBountyShowdown": {
-        "name": "Wild Bounty Showdown",
+        "name": "Cuộc Đối Đầu Phần Thưởng Hoang Dã",
         "provider": "PGSoft"
       },
       "waysOfTheQilin": {
-        "name": "Ways of the Qilin",
+        "name": "Con Đường Kỳ Lân",
         "provider": "PGSoft"
       },
       "wildBandito": {
-        "name": "Wild Bandito",
+        "name": "Kẻ Cướp Hoang Dã",
         "provider": "PGSoft"
       },
       "fortuneRabbit": {
-        "name": "Fortune Rabbit",
+        "name": "Thỏ May Mắn",
         "provider": "PGSoft"
       },
       "caishenWins": {
-        "name": "Caishen Wins",
+        "name": "Thần Tài Chiến Thắng",
         "provider": "PGSoft"
       },
       "fortuneOx": {
-        "name": "Fortune Ox",
+        "name": "Trâu May Mắn",
         "provider": "PGSoft"
       },
       "ganeshaFortune": {
-        "name": "Ganesha Fortune",
+        "name": "Thần Tài Ganesha",
         "provider": "PGSoft"
       }
     }
@@ -230,5 +328,13 @@
   "header": {
     "signUp": "Đăng Ký",
     "signIn": "Đăng Nhập"
+  },
+  "mobieleNavbar": {
+    "menu": "Menu",
+    "slots": "Máy Xèng",
+    "signIn": "Đăng Nhập",
+    "Wallet": "Ví",
+    "liveCasino": "Sòng Bạc Trực Tuyến",
+    "promo": "Khuyến Mãi"
   }
 }

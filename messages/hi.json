@@ -234,9 +234,10 @@
     "mobieleNavbar": {
         "menu": "मेनू",
         "slots": "स्लॉट्स",
-        "signUp": "साइन अप करें",
-        "liveCasino": "लाइव कैसीनो",
-        "promo": "प्रोमो"
+        "signIn": "लॉग इन करें",
+        "Wallet": "पर्स",
+        "liveCasino": "लाइव कसीनो",
+        "promo": "प्रमोशन"
     },
     "RewardSection": {
         "mainTitle": "अंतहीन लाभों को अनलॉक करें",
@@ -438,6 +439,8 @@
             }
         },
         "allGame": {
+            "title": "सभी खेल",
+            "seeAll": "सभी देखें",
             "ninjaRaccoonFrenzy": {
                 "name": "निंजा रैकून फ्रेंज़ी",
                 "provider": "पीजी सॉफ्ट"

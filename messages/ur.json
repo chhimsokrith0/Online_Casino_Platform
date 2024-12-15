@@ -234,9 +234,10 @@
     "mobieleNavbar": {
         "menu": "مینو",
         "slots": "سلاٹس",
-        "signUp": "رجسٹر کریں",
+        "signIn": "لاگ ان کریں",
+        "Wallet": "پرس",
         "liveCasino": "لائیو کیسینو",
-        "promo": "پروموشن"
+        "promo": "پروموشنز"
     },
     "RewardSection": {
         "mainTitle": "بے شمار فوائد کو انلاک کریں",
@@ -438,6 +439,8 @@
             }
         },
         "allGame": {
+            "title": "تمام کھیل",
+            "seeAll": "سب دیکھیں",
             "ninjaRaccoonFrenzy": {
                 "name": "نینجا ریکون کی دھوم",
                 "provider": "PGSoft"

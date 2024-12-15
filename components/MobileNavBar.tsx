@@ -14,7 +14,7 @@ import clsx from "clsx";
 
 const MobileNavBar = ({ locale }: { locale: string }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const t = useTranslations("mobileNavbar");
+  const t = useTranslations("mobieleNavbar");
   const { data: sess } = useSession();
 
   const [isSignupModalOpen, setSignupModalOpen] = useState(false);
@@ -53,7 +53,7 @@ const MobileNavBar = ({ locale }: { locale: string }) => {
               }}
             >
               <FontAwesomeIcon icon={faBars} className="text-2xl" />
-              <span className="text-[10px] font-semibold">Menu</span>
+              <span className="text-[10px] font-semibold">{ t("menu") }</span>
             </button>
 
             {/* Slots */}
@@ -66,7 +66,7 @@ const MobileNavBar = ({ locale }: { locale: string }) => {
               onClick={() => setActiveButton("slots")}
             >
               <FontAwesomeIcon icon={faGem} className="text-2xl" />
-              <span className="text-[10px] font-semibold">Slots</span>
+              <span className="text-[10px] font-semibold">{ t("slots") }</span>
             </Link>
 
             {/* Wallet / Sign Up */}
@@ -94,7 +94,7 @@ const MobileNavBar = ({ locale }: { locale: string }) => {
                   activeButton === "wallet" ? "text-yellow-500" : "text-white"
                 )}
               >
-                {sess?.user ? "Wallet" : "Sign Up"}
+                {sess?.user ? t("Wallet") : t("signIn")}
               </span>
             </div>
 
@@ -108,7 +108,7 @@ const MobileNavBar = ({ locale }: { locale: string }) => {
               onClick={() => setActiveButton("liveCasino")}
             >
               <FontAwesomeIcon icon={faDice} className="text-2xl" />
-              <span className="text-[10px] font-semibold">Live Casino</span>
+              <span className="text-[10px] font-semibold"> { t("liveCasino") } </span>
             </Link>
 
             {/* Promo */}
@@ -121,7 +121,7 @@ const MobileNavBar = ({ locale }: { locale: string }) => {
               onClick={() => setActiveButton("promo")}
             >
               <FontAwesomeIcon icon={faGift} className="text-2xl" />
-              <span className="text-[10px] font-semibold">Promo</span>
+              <span className="text-[10px] font-semibold"> { t("promo") }</span>
             </Link>
           </div>
         </div>

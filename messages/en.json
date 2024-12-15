@@ -180,7 +180,8 @@
   "mobieleNavbar": {
     "menu": "menu",
     "slots": "Slots",
-    "signUp": "Sign Up",
+    "signIn": "Sign In",
+    "Wallet": "Wallet",
     "liveCasino": "Live Casino",
     "promo": "Promo"
   },

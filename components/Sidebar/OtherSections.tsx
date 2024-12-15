@@ -155,14 +155,15 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBuilding,
-  faChartLine,
-  faFutbol,
-  faFish,
+  faBuildingColumns,
+  faChartBar,
+  faFishFins,
+  faRunning,
   faGamepad,
-  faUsers,
+  faMeteor,
   faHeart,
   faClock,
+  faDiceD20,
 } from "@fortawesome/free-solid-svg-icons";
 import { useTranslations } from "next-intl";
 import { useSession } from "next-auth/react";
@@ -251,25 +252,26 @@ const OtherSections = ({
         <li
           onClick={() => setActiveItem("providers")}
           className={`flex items-center gap-3 px-4 py-2 rounded-lg ${activeItem === "providers"
-            ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
-            : "hover:bg-gray-800"
+              ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
+              : "hover:bg-gray-800"
             }`}
         >
-          <FontAwesomeIcon icon={faBuilding} />
+          {/* Updated Icon for Providers */}
+          <FontAwesomeIcon icon={faBuildingColumns} className="text-lg text-yellow-500" />
           <span>{t("providers")}</span>
         </li>
       </Link>
-
 
       <Link href={`/${locale}/Games/RtpSlot`}>
         <li
           onClick={() => setActiveItem("rtpSlots")}
           className={`flex items-center gap-3 px-4 py-2 rounded-lg ${activeItem === "rtpSlots"
-            ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
-            : "hover:bg-gray-800"
+              ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
+              : "hover:bg-gray-800"
             }`}
         >
-          <FontAwesomeIcon icon={faChartLine} />
+          {/* Updated Icon for RTP Slots */}
+          <FontAwesomeIcon icon={faChartBar} className="text-lg text-purple-500" />
           <span>{t("rtpSlots")}</span>
         </li>
       </Link>
@@ -278,11 +280,12 @@ const OtherSections = ({
         <li
           onClick={() => setActiveItem("sports")}
           className={`flex items-center gap-3 px-4 py-2 rounded-lg ${activeItem === "sports"
-            ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
-            : "hover:bg-gray-800"
+              ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
+              : "hover:bg-gray-800"
             }`}
         >
-          <FontAwesomeIcon icon={faFutbol} />
+          {/* Updated Icon for Sports */}
+          <FontAwesomeIcon icon={faRunning} className="text-lg text-blue-500" />
           <span>{t("sports")}</span>
         </li>
       </Link>
@@ -291,11 +294,12 @@ const OtherSections = ({
         <li
           onClick={() => setActiveItem("fishing")}
           className={`flex items-center gap-3 px-4 py-2 rounded-lg ${activeItem === "fishing"
-            ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
-            : "hover:bg-gray-800"
+              ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
+              : "hover:bg-gray-800"
             }`}
         >
-          <FontAwesomeIcon icon={faFish} />
+          {/* Updated Icon for Fishing */}
+          <FontAwesomeIcon icon={faFishFins} className="text-lg text-teal-500" />
           <span>{t("fishing")}</span>
         </li>
       </Link>
@@ -304,14 +308,45 @@ const OtherSections = ({
         <li
           onClick={() => setActiveItem("virtual")}
           className={`flex items-center gap-3 px-4 py-2 rounded-lg ${activeItem === "virtual"
-            ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
-            : "hover:bg-gray-800"
+              ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
+              : "hover:bg-gray-800"
             }`}
         >
-          <FontAwesomeIcon icon={faGamepad} />
+          {/* Updated Icon for Virtual */}
+          <FontAwesomeIcon icon={faGamepad} className="text-lg text-red-500" />
           <span>{t("virtual")}</span>
         </li>
       </Link>
+
+      <Link href={`/${locale}/Games/Virtual`}>
+        <li
+          onClick={() => setActiveItem("crash")}
+          className={`flex items-center gap-3 px-4 py-2 rounded-lg ${activeItem === "crash"
+              ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
+              : "hover:bg-gray-800"
+            }`}
+        >
+          {/* Updated Icon for Crash */}
+          <FontAwesomeIcon icon={faMeteor} className="text-lg text-orange-500" />
+          <span>Crash</span>
+        </li>
+      </Link>
+
+      <Link href={`/${locale}/Games/Virtual`}>
+        <li
+          onClick={() => setActiveItem("lotto")}
+          className={`flex items-center gap-3 px-4 py-2 rounded-lg ${activeItem === "lotto"
+              ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black"
+              : "hover:bg-gray-800"
+            }`}
+        >
+          {/* Updated Icon for Lotto */}
+          <FontAwesomeIcon icon={faDiceD20} className="text-lg text-green-500" />
+          <span>Lotto</span>
+        </li>
+      </Link>
+
+
 
 
       <InviteModal

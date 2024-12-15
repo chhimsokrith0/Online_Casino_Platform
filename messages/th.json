@@ -234,7 +234,8 @@
   "mobieleNavbar": {
     "menu": "เมนู",
     "slots": "สล็อต",
-    "signUp": "สมัครสมาชิก",
+    "signIn": "เข้าสู่ระบบ",
+    "Wallet": "กระเป๋าเงิน",
     "liveCasino": "คาสิโนสด",
     "promo": "โปรโมชั่น"
   },
@@ -438,6 +439,8 @@
       }
     },
     "allGame": {
+      "title": "เกมทั้งหมด",
+      "seeAll": "ดูทั้งหมด",
       "ninjaRaccoonFrenzy": {
         "name": "ความบ้าคลั่งของนินจาแรคคูน",
         "provider": "PGSoft"

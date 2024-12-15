@@ -234,9 +234,10 @@
   "mobieleNavbar": {
     "menu": "ម៉ឺនុយ",
     "slots": "ស្លុត",
-    "signUp": "ចុះឈ្មោះ",
-    "liveCasino": "កាស៊ីណូផ្ទាល់",
-    "promo": "ប្រូម៉ូ"
+    "signIn": "ចូលគណនី",
+    "Wallet": "កាបូប",
+    "liveCasino": "កាស៊ីណូបន្តផ្ទាល់",
+    "promo": "ប្រូម៉ូសិន"
   },
   "RewardSection": {
     "mainTitle": "បើកសោរ ផ្តល់ផលប្រយោជន៍គ្មានដែនកំណត់",
@@ -438,6 +439,8 @@
       }
     },
     "allGame": {
+      "title": "ហ្គេមទាំងអស់",
+      "seeAll": "មើលទាំងអស់",
       "ninjaRaccoonFrenzy": {
         "name": "ភាពឆ្កួតរបស់នីនចា Raccoon",
         "provider": "PGSoft"

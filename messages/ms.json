@@ -232,9 +232,10 @@
     "signIn": "Log Masuk"
   },
   "mobieleNavbar": {
-    "home": "Laman Utama",
+    "menu": "Menu",
     "slots": "Slot",
-    "signUp": "Daftar",
+    "signIn": "Log Masuk",
+    "Wallet": "Dompet",
     "liveCasino": "Kasino Langsung",
     "promo": "Promosi"
   },
@@ -438,6 +439,8 @@
       }
     },
     "allGame": {
+      "title": "Semua Permainan",
+      "seeAll": "Lihat Semua",
       "ninjaRaccoonFrenzy": {
         "name": "Kegilaan Rakun Ninja",
         "provider": "PGSoft"

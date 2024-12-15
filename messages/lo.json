@@ -234,9 +234,10 @@
   "mobieleNavbar": {
     "menu": "ເມນູ",
     "slots": "ສະລັອດ",
-    "signUp": "ລົງທະບຽນ",
-    "liveCasino": "ຄາສິໂນສົດ",
-    "promo": "ໂປໂມ"
+    "signIn": "ເຂົ້າລະບົບ",
+    "Wallet": "ກະເປົາເງິນ",
+    "liveCasino": "ຄາສິໂນສົ່ງສົດ",
+    "promo": "ໂປຣໂມຊັນ"
   },
   "RewardSection": {
     "mainTitle": "ປົດລ໋ອກຜົນປະໂຫຍດທີ່ບໍ່ຈົບສິ້ນ",
@@ -438,6 +439,8 @@
       }
     },
     "allGame": {
+      "title": "ເກມທັງໝົດ",
+      "seeAll": "ເບິ່ງທັງໝົດ",
       "ninjaRaccoonFrenzy": {
         "name": "ຄວາມບ້ານິນຈາ",
         "provider": "PGSoft"

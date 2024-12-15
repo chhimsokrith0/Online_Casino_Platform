@@ -1,18 +1,21 @@
 
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSearch,
+  faPlayCircle,
+  faGamepad,
+  faFireAlt,
+  faStar,
+  faDollarSign,
+  faGem,
+  faMagic,
+  faChessBoard,
   faSlidersH,
-  faCrown,
-  faDice,
-  faGift,
-  faTable,
-  faChartLine,
-  faTrophy,
+  faTimes
 } from "@fortawesome/free-solid-svg-icons";
 import { gsap } from "gsap";
 import { useTranslations } from "next-intl";
@@ -39,14 +42,14 @@ const GamesHeader: React.FC<GamesHeaderProps> = ({
 
   // Categories configuration
   const categories = [
-    { id: 1, name: t("demo"), icon: <span className="text-lg font-bold">▶</span>, link: "demo" },
-    { id: 2, name: t("allGames"), icon: <FontAwesomeIcon icon={faDice} />, link: "allGames" },
-    { id: 3, name: t("popularGames"), icon: <FontAwesomeIcon icon={faCrown} />, link: "popularGames" },
-    { id: 4, name: t("newGames"), icon: <FontAwesomeIcon icon={faGift} />, link: "newGames" },
-    { id: 5, name: t("cashDrop"), icon: <FontAwesomeIcon icon={faChartLine} />, link: "cashDrop" },
-    { id: 6, name: t("jackpots"), icon: <FontAwesomeIcon icon={faTrophy} />, link: "jackpots" },
-    { id: 7, name: t("megaways"), icon: <span className="text-lg font-bold">M</span>, link: "megaways" },
-    { id: 8, name: t("tableGames"), icon: <FontAwesomeIcon icon={faTable} />, link: "tableGames" },
+    { id: 1, name: t("demo"), icon: <FontAwesomeIcon icon={faPlayCircle} />, link: "demo" },
+    { id: 2, name: t("allGames"), icon: <FontAwesomeIcon icon={faGamepad} />, link: "allGames" },
+    { id: 3, name: t("popularGames"), icon: <FontAwesomeIcon icon={faFireAlt} />, link: "popularGames" },
+    { id: 4, name: t("newGames"), icon: <FontAwesomeIcon icon={faStar} />, link: "newGames" },
+    { id: 5, name: t("cashDrop"), icon: <FontAwesomeIcon icon={faDollarSign} />, link: "cashDrop" },
+    { id: 6, name: t("jackpots"), icon: <FontAwesomeIcon icon={faGem} />, link: "jackpots" },
+    { id: 7, name: t("megaways"), icon: <FontAwesomeIcon icon={faMagic} />, link: "megaways" },
+    { id: 8, name: t("tableGames"), icon: <FontAwesomeIcon icon={faChessBoard} />, link: "tableGames" },
   ];
 
   // Animation for category buttons
@@ -73,6 +76,12 @@ const GamesHeader: React.FC<GamesHeaderProps> = ({
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     const term = e.target.value;
     setSearchTerm(term); // Pass the search term to the parent component
+  };
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
   };
 
   return (
@@ -107,11 +116,10 @@ const GamesHeader: React.FC<GamesHeaderProps> = ({
               className="cursor-pointer"
             >
               <div
-                className={`flex flex-col items-center text-center ${
-                  currentCategory === category.link
-                    ? "text-yellow-500 font-semibold"
-                    : "text-gray-400 hover:text-yellow-500"
-                } transition duration-300`}
+                className={`flex flex-col items-center text-center ${currentCategory === category.link
+                  ? "text-yellow-500 font-semibold"
+                  : "text-gray-400 hover:text-yellow-500"
+                  } transition duration-300`}
               >
                 <span className="text-xl mb-1">{category.icon}</span>
                 <span className="text-sm whitespace-nowrap">{category.name}</span>
@@ -122,20 +130,62 @@ const GamesHeader: React.FC<GamesHeaderProps> = ({
 
         {/* Search Bar */}
         <div className="flex items-center space-x-4 mt-4 md:mt-0">
-          <div className="relative flex items-center bg-gray-800 rounded-full px-4 py-2 w-[240px]">
+          <div className="relative flex items-center bg-gray-900 rounded-full px-4 py-2 w-[300px] shadow-md hover:shadow-xl transition-all duration-300">
             <input
               type="text"
               placeholder={t("searchPlaceholder")}
               className="w-full bg-transparent text-white placeholder-gray-400 text-sm focus:outline-none"
               onChange={handleSearch}
             />
-            <FontAwesomeIcon icon={faSearch} className="text-gray-400 text-lg cursor-pointer hover:text-white" />
+            <button className="flex items-center justify-center w-10 h-10 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full shadow-lg hover:scale-105 transition-transform duration-300 ml-2">
+              <FontAwesomeIcon icon={faSearch} className="text-white text-lg" />
+            </button>
           </div>
-          <button className="bg-gray-800 text-gray-400 px-3 py-2 rounded-full hover:text-white">
+
+          <button  onClick={toggleModal} className="bg-gray-800 text-gray-400 px-3 py-2 rounded-full hover:text-white">
             <FontAwesomeIcon icon={faSlidersH} />
           </button>
         </div>
       </div>
+      {/* Modal */}
+      {isModalOpen && (
+        <div
+          className="fixed inset-0 z-[200] flex items-center justify-center bg-black bg-opacity-50"
+          onClick={toggleModal} // Close modal when clicking outside
+        >
+          <div
+            className="bg-gray-900 rounded-lg p-6 w-[300px] shadow-lg"
+            onClick={(e) => e.stopPropagation()} // Prevent modal from closing when clicking inside
+          >
+            {/* Modal Header */}
+            <div className="flex justify-between items-center mb-4">
+              <h3 className="text-white font-bold text-lg">Filters</h3>
+              <button
+                onClick={toggleModal}
+                className="text-gray-400 hover:text-white"
+              >
+                <FontAwesomeIcon icon={faTimes} />
+              </button>
+            </div>
+
+            {/* Modal Content */}
+            <div className="space-y-4">
+              <p className="text-gray-400 text-sm font-semibold">Sort By</p>
+              <div className="flex gap-2">
+                <button className="px-4 py-2 rounded-full bg-gray-800 text-gray-400 hover:bg-gray-700 hover:text-white transition">
+                  A-Z
+                </button>
+                <button className="px-4 py-2 rounded-full bg-gray-800 text-gray-400 hover:bg-gray-700 hover:text-white transition">
+                  Z-A
+                </button>
+                <button className="px-4 py-2 rounded-full bg-gray-800 text-gray-400 hover:bg-gray-700 hover:text-white transition">
+                  Newest
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

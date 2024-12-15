@@ -234,7 +234,8 @@
   "mobieleNavbar": {
     "menu": "菜单",
     "slots": "老虎机",
-    "signUp": "注册",
+    "signIn": "登录",
+    "Wallet": "钱包",
     "liveCasino": "真人娱乐场",
     "promo": "促销"
   },
@@ -438,6 +439,8 @@
       }
     },
     "allGame": {
+      "title": "所有游戏",
+      "seeAll": "查看全部",
       "ninjaRaccoonFrenzy": {
         "name": "忍者浣熊狂热",
         "provider": "PGSoft"

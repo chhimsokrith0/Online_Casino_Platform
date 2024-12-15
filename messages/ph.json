@@ -232,9 +232,10 @@
     "signIn": "Mag-sign In"
   },
   "mobieleNavbar": {
-    "home": "Bahay",
-    "slots": "Mga Slots",
-    "signUp": "Mag-sign Up",
+    "menu": "Menu",
+    "slots": "Slot",
+    "signIn": "Mag-sign In",
+    "Wallet": "Wallet",
     "liveCasino": "Live Casino",
     "promo": "Promo"
   },
@@ -438,6 +439,8 @@
       }
     },
     "allGame": {
+      "title": "Lahat ng Laro",
+      "seeAll": "Tingnan Lahat",
       "ninjaRaccoonFrenzy": {
         "name": "Frenzy ng Ninja Raccoon",
         "provider": "PGSoft"

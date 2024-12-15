@@ -232,16 +232,17 @@
         "signIn": "登入"
     },
     "mobieleNavbar": {
-        "menu": "選單",
+        "menu": "菜單",
         "slots": "老虎機",
-        "signUp": "註冊",
-        "liveCasino": "真人娛樂場",
+        "signIn": "登入",
+        "Wallet": "錢包",
+        "liveCasino": "真人娛樂城",
         "promo": "促銷"
     },
     "RewardSection": {
         "mainTitle": "解鎖無盡的福利",
         "mainSubtitle": "立即註冊，開啟一段充滿特權的精彩旅程。解鎖無限的獎勵大門。",
-        "joinButton": "加入 PlayGame168",
+        "joinButton": "加入 ICG Gamming",
         "steps": {
             "step1": "註冊並存款",
             "step2": "玩您喜愛的遊戲",
@@ -438,6 +439,8 @@
             }
         },
         "allGame": {
+            "title": "所有遊戲",
+            "seeAll": "查看全部",
             "ninjaRaccoonFrenzy": {
                 "name": "忍者浣熊瘋狂",
                 "provider": "PGSoft"
