@@ -10,11 +10,11 @@ const Cookies_Policy = () => {
                 <div>
                     <h2 className="text-xl font-semibold text-yellow-400 mb-2">What are cookies?</h2>
                     <p>
-                        “Cookies” are small files containing information that a website sends to your computer or mobile
+                        &ldquo;Cookies&rdquo; are small files containing information that a website sends to your computer or mobile
                         while you view information on the website.
                     </p>
                     <p>
-                        Cookies help us to improve your user experience by 'remembering' you – your preferences are stored,
+                        Cookies help us to improve your user experience by &lsquo;remembering&rsquo; you &ndash; your preferences are stored,
                         allowing you to use the website more efficiently. In other words, cookies are there to help you
                         navigate between pages easier and faster.
                     </p>
@@ -45,7 +45,7 @@ const Cookies_Policy = () => {
                         </li>
                         <li>
                             <strong>Performance Cookies</strong>: Used to track the way users visit the websites, perform
-                            internal anonymous data mining, testing different design ideas, and improve our site's layout.
+                            internal anonymous data mining, testing different design ideas, and improve our site&rsquo;s layout.
                         </li>
                     </ul>
                     <p>
@@ -60,13 +60,13 @@ const Cookies_Policy = () => {
                     <p>
                         Currently, we are unable to offer you the option of enabling or disabling individual categories of
                         cookies. When you visit our website, icggmaing.com places a cookie on your device and will
-                        remember your preferences to ensure you keep enjoying our services. If you clicked “Accept” on our
+                        remember your preferences to ensure you keep enjoying our services. If you clicked &ldquo;Accept&rdquo; on our
                         Cookies Browser bar, or if you carried on using our website and services, you are deemed to have
                         accepted our use of Cookies in the way described in this policy.
                     </p>
                     <p>
                         Nonetheless, your browser settings can be modified to ensure it will not accept cookies from any
-                        website. You can find instructions on how to implement this in the 'Help' section of your chosen
+                        website. You can find instructions on how to implement this in the &lsquo;Help&rsquo; section of your chosen
                         browser. However, for security reasons, you may find that certain website content is not accessible
                         unless the use of cookies is enabled on your device.
                     </p>

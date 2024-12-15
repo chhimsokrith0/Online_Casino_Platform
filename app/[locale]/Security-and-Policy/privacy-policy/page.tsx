@@ -33,7 +33,9 @@ const PrivacyPolicy = () => {
 
                 {/* Section: What Information We Collect */}
                 <div>
-                    <h2 className="text-xl font-semibold text-yellow-400 mb-2">What Personal Information Do We Collect About You?</h2>
+                    <h2 className="text-xl font-semibold text-yellow-400 mb-2">
+                        What Personal Information Do We Collect About You?
+                    </h2>
                     <p>
                         We collect and process personal information for the following reasons:
                     </p>
