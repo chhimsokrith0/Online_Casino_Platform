@@ -622,5 +622,58 @@
         "silver": "ငွေ"
       }
     }
+  },
+  "Mypromotions": {
+    "title": "ကျွန်ုပ်၏ပရိုမိုးရှင်းများ",
+    "cashback": {
+      "title": "ငွေပြန်ပေးခြင်း",
+      "description": "သင်၏ဆုံးရှုံးမှုများ၏ရာခိုင်နှုန်းတစ်စိတ်တစ်ပိုင်းကိုပြန်လည်ရယူပါ။"
+    },
+    "rebate": {
+      "title": "ပြန်အမ်းငွေ",
+      "description": "သင်ထားသောပုံနှိပ်မှုများအပေါ်ပြန်အမ်းငွေရယူပါ။"
+    },
+    "promotionDetails": {
+      "banner": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734343549/bannerMyPromotion_rs1sai.webp",
+      "title": "ပရိုမိုးရှင်းအသေးစိတ်",
+      "cashbackTitle": "ငွေပြန်ပေးခြင်း",
+      "description": "နေ့စဉ် 7% အထိငွေပြန်ပေးချက်ရယူပါ! အောက်တွင်အသေးစိတ်ကြည့်ပါ:",
+      "bonus": "ဆုကြေးငွေ",
+      "memberLevel": "အသင်းဝင်အဆင့်",
+      "dailyLimit": "နေ့စဉ်အများဆုံး",
+      "levels": {
+        "bronze": {
+          "bonus": "2%",
+          "level": "ကြွေ",
+          "dailyLimit": "၃၅,၀၀၀ MMK"
+        },
+        "silver": {
+          "bonus": "3%",
+          "level": "ငွေ",
+          "dailyLimit": "၅၅,၀၀၀ MMK"
+        },
+        "gold": {
+          "bonus": "4%",
+          "level": "ရွှေ",
+          "dailyLimit": "၈၅,၀၀၀ MMK"
+        },
+        "diamond": {
+          "bonus": "5%",
+          "level": "စိန်",
+          "dailyLimit": "၁၂၅,၀၀၀ MMK"
+        },
+        "platinum": {
+          "bonus": "6%",
+          "level": "ပလက်တီနမ်",
+          "dailyLimit": "၁၅၀,၀၀၀ MMK"
+        },
+        "black": {
+          "bonus": "7%",
+          "level": "အနက်",
+          "dailyLimit": "၁၈၅,၀၀၀ MMK"
+        }
+      },
+      "note": "ငွေပြန်ပေးခြင်းသည်အဓိကလက်ကျန်ငွေအပေါ်တွင်သာလျှင်အသုံးပြုနိုင်သည်။"
+    }
   }
 }

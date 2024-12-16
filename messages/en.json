@@ -753,5 +753,58 @@
         }
       }
     }
+  },
+  "Mypromotions": {
+    "title": "My Promotions",
+    "cashback": {
+      "title": "Cashback",
+      "description": "Get a percentage of your losses back."
+    },
+    "rebate": {
+      "title": "Rebate",
+      "description": "Receive a rebate on your placed bets."
+    },
+    "promotionDetails": {
+      "banner": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734343549/bannerMyPromotion_rs1sai.webp",
+      "title": "Promotion Details",
+      "cashbackTitle": "Cashback",
+      "description": "Get up to 7% daily cashback! See details below:",
+      "bonus": "Bonus",
+      "memberLevel": "Member Level",
+      "dailyLimit": "Daily Maximum",
+      "levels": {
+        "bronze": {
+          "bonus": "2%",
+          "level": "Bronze",
+          "dailyLimit": "15 USD"
+        },
+        "silver": {
+          "bonus": "3%",
+          "level": "Silver",
+          "dailyLimit": "20 USD"
+        },
+        "gold": {
+          "bonus": "4%",
+          "level": "Gold",
+          "dailyLimit": "30 USD"
+        },
+        "diamond": {
+          "bonus": "5%",
+          "level": "Diamond",
+          "dailyLimit": "50 USD"
+        },
+        "platinum": {
+          "bonus": "6%",
+          "level": "Platinum",
+          "dailyLimit": "60 USD"
+        },
+        "black": {
+          "bonus": "7%",
+          "level": "Black",
+          "dailyLimit": "75 USD"
+        }
+      },
+      "note": "Cashback applies to main balance only."
+    }
   }
 }

@@ -569,5 +569,58 @@
         "of": "ng"
       }
     }
+  },
+  "Mypromotions": {
+    "title": "Aking Mga Promosyon",
+    "cashback": {
+      "title": "Cashback",
+      "description": "Kumuha ng porsyento ng iyong mga pagkatalo pabalik."
+    },
+    "rebate": {
+      "title": "Rebate",
+      "description": "Tumanggap ng rebate sa iyong mga inilagay na taya."
+    },
+    "promotionDetails": {
+      "banner": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734343549/bannerMyPromotion_rs1sai.webp",
+      "title": "Mga Detalye ng Promosyon",
+      "cashbackTitle": "Cashback",
+      "description": "Kumuha ng hanggang 7% cashback araw-araw! Tingnan ang mga detalye sa ibaba:",
+      "bonus": "Bonus",
+      "memberLevel": "Antas ng Miyembro",
+      "dailyLimit": "Pang-araw-araw na Limitasyon",
+      "levels": {
+        "bronze": {
+          "bonus": "2%",
+          "level": "Bronse",
+          "dailyLimit": "₱3,750"
+        },
+        "silver": {
+          "bonus": "3%",
+          "level": "Pilak",
+          "dailyLimit": "₱5,500"
+        },
+        "gold": {
+          "bonus": "4%",
+          "level": "Ginto",
+          "dailyLimit": "₱8,500"
+        },
+        "diamond": {
+          "bonus": "5%",
+          "level": "Diyamante",
+          "dailyLimit": "₱12,500"
+        },
+        "platinum": {
+          "bonus": "6%",
+          "level": "Platina",
+          "dailyLimit": "₱15,000"
+        },
+        "black": {
+          "bonus": "7%",
+          "level": "Itim",
+          "dailyLimit": "₱18,750"
+        }
+      },
+      "note": "Ang cashback ay nalalapat lamang sa pangunahing balanse."
+    }
   }
 }

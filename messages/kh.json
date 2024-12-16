@@ -622,5 +622,58 @@
         "silver": "ប្រាក់"
       }
     }
+  },
+  "Mypromotions": {
+    "title": "ការផ្ដល់ជូនរបស់ខ្ញុំ",
+    "cashback": {
+      "title": "ប្រាក់ត្រឡប់វិញ",
+      "description": "ទទួលបានភាគរយនៃការខាតបង់របស់អ្នកវិញ។"
+    },
+    "rebate": {
+      "title": "បញ្ចុះតម្លៃ",
+      "description": "ទទួលបានបញ្ចុះតម្លៃលើការភ្នាល់ដែលអ្នកបានដាក់។"
+    },
+    "promotionDetails": {
+      "banner": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734343549/bannerMyPromotion_rs1sai.webp",
+      "title": "ព័ត៌មានលម្អិតអំពីការផ្ដល់ជូន",
+      "cashbackTitle": "ប្រាក់ត្រឡប់វិញ",
+      "description": "ទទួលបានប្រាក់ត្រឡប់វិញរហូតដល់ 7% រាល់ថ្ងៃ! សូមមើលព័ត៌មានលម្អិតខាងក្រោម៖",
+      "bonus": "ប្រាក់បន្ថែម",
+      "memberLevel": "កម្រិតសមាជិក",
+      "dailyLimit": "ដែនកំណត់ប្រចាំថ្ងៃ",
+      "levels": {
+        "bronze": {
+          "bonus": "2%",
+          "level": "សំរិទ្ធ",
+          "dailyLimit": "500,000 KHR"
+        },
+        "silver": {
+          "bonus": "3%",
+          "level": "ប្រាក់",
+          "dailyLimit": "700,000 KHR"
+        },
+        "gold": {
+          "bonus": "4%",
+          "level": "មាស",
+          "dailyLimit": "1,000,000 KHR"
+        },
+        "diamond": {
+          "bonus": "5%",
+          "level": "ពេជ្រ",
+          "dailyLimit": "1,500,000 KHR"
+        },
+        "platinum": {
+          "bonus": "6%",
+          "level": "ផ្លាទីន",
+          "dailyLimit": "2,000,000 KHR"
+        },
+        "black": {
+          "bonus": "7%",
+          "level": "ខ្មៅ",
+          "dailyLimit": "2,500,000 KHR"
+        }
+      },
+      "note": "ប្រាក់ត្រឡប់វិញអនុវត្តលើសមតុល្យចម្បងប៉ុណ្ណោះ។"
+    }
   }
 }

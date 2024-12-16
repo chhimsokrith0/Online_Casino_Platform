@@ -569,5 +569,58 @@
                 "of": "کا"
             }
         }
+    },
+    "Mypromotions": {
+        "title": "میری پروموشنز",
+        "cashback": {
+            "title": "کیش بیک",
+            "description": "اپنے نقصانات کی ایک فیصد رقم واپس حاصل کریں۔"
+        },
+        "rebate": {
+            "title": "رعایت",
+            "description": "اپنے لگائے گئے شرطوں پر رعایت حاصل کریں۔"
+        },
+        "promotionDetails": {
+            "banner": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734343549/bannerMyPromotion_rs1sai.webp",
+            "title": "پروموشن کی تفصیلات",
+            "cashbackTitle": "کیش بیک",
+            "description": "روزانہ 7% تک کیش بیک حاصل کریں! تفصیلات نیچے دیکھیں:",
+            "bonus": "بونس",
+            "memberLevel": "ممبر کی سطح",
+            "dailyLimit": "یومیہ حد",
+            "levels": {
+                "bronze": {
+                    "bonus": "2%",
+                    "level": "برونز",
+                    "dailyLimit": "15 PKR"
+                },
+                "silver": {
+                    "bonus": "3%",
+                    "level": "سلور",
+                    "dailyLimit": "20 PKR"
+                },
+                "gold": {
+                    "bonus": "4%",
+                    "level": "گولڈ",
+                    "dailyLimit": "30 PKR"
+                },
+                "diamond": {
+                    "bonus": "5%",
+                    "level": "ڈائمنڈ",
+                    "dailyLimit": "50 PKR"
+                },
+                "platinum": {
+                    "bonus": "6%",
+                    "level": "پلاٹینم",
+                    "dailyLimit": "60 PKR"
+                },
+                "black": {
+                    "bonus": "7%",
+                    "level": "بلیک",
+                    "dailyLimit": "75 PKR"
+                }
+            },
+            "note": "کیش بیک صرف مرکزی بیلنس پر لاگو ہوتا ہے۔"
+        }
     }
 }

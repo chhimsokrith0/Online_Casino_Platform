@@ -807,5 +807,58 @@
                 }
             }
         }
+    },
+    "Mypromotions": {
+        "title": "আমার প্রচার",
+        "cashback": {
+            "title": "ক্যাশব্যাক",
+            "description": "আপনার ক্ষতির একটি শতাংশ ফিরে পান।"
+        },
+        "rebate": {
+            "title": "রিবেট",
+            "description": "আপনার স্থাপিত বাজির উপর রিবেট পান।"
+        },
+        "promotionDetails": {
+            "banner": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734343549/bannerMyPromotion_rs1sai.webp",
+            "title": "প্রচার বিবরণ",
+            "cashbackTitle": "ক্যাশব্যাক",
+            "description": "প্রতিদিন সর্বোচ্চ ৭% ক্যাশব্যাক পান! বিস্তারিত নীচে দেখুন:",
+            "bonus": "বোনাস",
+            "memberLevel": "সদস্য স্তর",
+            "dailyLimit": "দৈনিক সর্বোচ্চ",
+            "levels": {
+                "bronze": {
+                    "bonus": "২%",
+                    "level": "ব্রোঞ্জ",
+                    "dailyLimit": "১৫ USD"
+                },
+                "silver": {
+                    "bonus": "৩%",
+                    "level": "সিলভার",
+                    "dailyLimit": "২০ USD"
+                },
+                "gold": {
+                    "bonus": "৪%",
+                    "level": "গোল্ড",
+                    "dailyLimit": "৩০ USD"
+                },
+                "diamond": {
+                    "bonus": "৫%",
+                    "level": "ডায়মন্ড",
+                    "dailyLimit": "৫০ USD"
+                },
+                "platinum": {
+                    "bonus": "৬%",
+                    "level": "প্লাটিনাম",
+                    "dailyLimit": "৬০ USD"
+                },
+                "black": {
+                    "bonus": "৭%",
+                    "level": "ব্ল্যাক",
+                    "dailyLimit": "৭৫ USD"
+                }
+            },
+            "note": "ক্যাশব্যাক শুধুমাত্র মূল ব্যালেন্সে প্রযোজ্য।"
+        }
     }
 }

@@ -43,7 +43,7 @@ const NavbarButtons: React.FC<NavbarButtonsProps> = ({ t, toggleModal }) => {
       >
         {t("signIn")}
       </button>
-      <button className="text-white text-xl hover:text-yellow-500 transition-transform transform hover:scale-105">
+      <button className="text-white text-xl hover:text-yellow-500 pr-4 transition-transform transform hover:scale-105">
         <FontAwesomeIcon icon={faHeadset} />
       </button>
     </div>

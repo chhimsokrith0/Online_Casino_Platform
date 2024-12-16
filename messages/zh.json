@@ -569,5 +569,58 @@
         "of": "的"
       }
     }
+  },
+  "Mypromotions": {
+    "title": "我的促销",
+    "cashback": {
+      "title": "现金返还",
+      "description": "获得您损失的一部分返还。"
+    },
+    "rebate": {
+      "title": "回扣",
+      "description": "根据您的投注获得回扣。"
+    },
+    "promotionDetails": {
+      "banner": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734343549/bannerMyPromotion_rs1sai.webp",
+      "title": "促销详情",
+      "cashbackTitle": "现金返还",
+      "description": "每日最高可享 7% 现金返还！详情如下：",
+      "bonus": "奖金",
+      "memberLevel": "会员等级",
+      "dailyLimit": "每日最高",
+      "levels": {
+        "bronze": {
+          "bonus": "2%",
+          "level": "铜牌",
+          "dailyLimit": "15 CNY"
+        },
+        "silver": {
+          "bonus": "3%",
+          "level": "银牌",
+          "dailyLimit": "20 CNY"
+        },
+        "gold": {
+          "bonus": "4%",
+          "level": "金牌",
+          "dailyLimit": "30 CNY"
+        },
+        "diamond": {
+          "bonus": "5%",
+          "level": "钻石",
+          "dailyLimit": "50 CNY"
+        },
+        "platinum": {
+          "bonus": "6%",
+          "level": "白金",
+          "dailyLimit": "60 CNY"
+        },
+        "black": {
+          "bonus": "7%",
+          "level": "黑金",
+          "dailyLimit": "75 CNY"
+        }
+      },
+      "note": "现金返还仅适用于主账户余额。"
+    }
   }
 }

@@ -807,5 +807,58 @@
                 }
             }
         }
+    },
+    "Mypromotions": {
+        "title": "मेरे प्रमोशन",
+        "cashback": {
+            "title": "कैशबैक",
+            "description": "अपने नुकसान का एक प्रतिशत वापस पाएं।"
+        },
+        "rebate": {
+            "title": "रीबेट",
+            "description": "अपने लगाए गए दांव पर रीबेट प्राप्त करें।"
+        },
+        "promotionDetails": {
+            "banner": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734343549/bannerMyPromotion_rs1sai.webp",
+            "title": "प्रमोशन विवरण",
+            "cashbackTitle": "कैशबैक",
+            "description": "हर दिन अधिकतम 7% कैशबैक पाएं! नीचे विवरण देखें:",
+            "bonus": "बोनस",
+            "memberLevel": "सदस्य स्तर",
+            "dailyLimit": "दैनिक अधिकतम",
+            "levels": {
+                "bronze": {
+                    "bonus": "2%",
+                    "level": "ब्रॉन्ज",
+                    "dailyLimit": "15 यूएसडी"
+                },
+                "silver": {
+                    "bonus": "3%",
+                    "level": "सिल्वर",
+                    "dailyLimit": "20 यूएसडी"
+                },
+                "gold": {
+                    "bonus": "4%",
+                    "level": "गोल्ड",
+                    "dailyLimit": "30 यूएसडी"
+                },
+                "diamond": {
+                    "bonus": "5%",
+                    "level": "डायमंड",
+                    "dailyLimit": "50 यूएसडी"
+                },
+                "platinum": {
+                    "bonus": "6%",
+                    "level": "प्लैटिनम",
+                    "dailyLimit": "60 यूएसडी"
+                },
+                "black": {
+                    "bonus": "7%",
+                    "level": "ब्लैक",
+                    "dailyLimit": "75 यूएसडी"
+                }
+            },
+            "note": "कैशबैक केवल मुख्य बैलेंस पर लागू होता है।"
+        }
     }
 }

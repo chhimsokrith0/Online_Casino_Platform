@@ -569,5 +569,58 @@
         "of": "daripada"
       }
     }
+  },
+  "Mypromotions": {
+    "title": "Promosi Saya",
+    "cashback": {
+      "title": "Pulangan Tunai",
+      "description": "Dapatkan sebahagian daripada kerugian anda kembali."
+    },
+    "rebate": {
+      "title": "Rebat",
+      "description": "Terima rebat atas pertaruhan yang anda buat."
+    },
+    "promotionDetails": {
+      "banner": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734343549/bannerMyPromotion_rs1sai.webp",
+      "title": "Butiran Promosi",
+      "cashbackTitle": "Pulangan Tunai",
+      "description": "Dapatkan sehingga 7% pulangan tunai harian! Lihat butiran di bawah:",
+      "bonus": "Bonus",
+      "memberLevel": "Tahap Ahli",
+      "dailyLimit": "Had Harian",
+      "levels": {
+        "bronze": {
+          "bonus": "2%",
+          "level": "Gangsa",
+          "dailyLimit": "RM75"
+        },
+        "silver": {
+          "bonus": "3%",
+          "level": "Perak",
+          "dailyLimit": "RM110"
+        },
+        "gold": {
+          "bonus": "4%",
+          "level": "Emas",
+          "dailyLimit": "RM170"
+        },
+        "diamond": {
+          "bonus": "5%",
+          "level": "Berlian",
+          "dailyLimit": "RM250"
+        },
+        "platinum": {
+          "bonus": "6%",
+          "level": "Platinum",
+          "dailyLimit": "RM300"
+        },
+        "black": {
+          "bonus": "7%",
+          "level": "Hitam",
+          "dailyLimit": "RM375"
+        }
+      },
+      "note": "Pulangan tunai hanya terpakai kepada baki utama sahaja."
+    }
   }
 }

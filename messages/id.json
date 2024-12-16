@@ -622,5 +622,58 @@
         "silver": "Perak"
       }
     }
+  },
+  "Mypromotions": {
+    "title": "Promosi Saya",
+    "cashback": {
+      "title": "Pengembalian Tunai",
+      "description": "Dapatkan persentase dari kerugian Anda kembali."
+    },
+    "rebate": {
+      "title": "Rebat",
+      "description": "Dapatkan rebat dari taruhan yang Anda pasang."
+    },
+    "promotionDetails": {
+      "banner": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734343549/bannerMyPromotion_rs1sai.webp",
+      "title": "Detail Promosi",
+      "cashbackTitle": "Pengembalian Tunai",
+      "description": "Dapatkan pengembalian tunai hingga 7% setiap hari! Lihat detail di bawah:",
+      "bonus": "Bonus",
+      "memberLevel": "Tingkat Anggota",
+      "dailyLimit": "Batas Harian",
+      "levels": {
+        "bronze": {
+          "bonus": "2%",
+          "level": "Perunggu",
+          "dailyLimit": "250,000 IDR"
+        },
+        "silver": {
+          "bonus": "3%",
+          "level": "Perak",
+          "dailyLimit": "350,000 IDR"
+        },
+        "gold": {
+          "bonus": "4%",
+          "level": "Emas",
+          "dailyLimit": "500,000 IDR"
+        },
+        "diamond": {
+          "bonus": "5%",
+          "level": "Berlian",
+          "dailyLimit": "750,000 IDR"
+        },
+        "platinum": {
+          "bonus": "6%",
+          "level": "Platina",
+          "dailyLimit": "1,000,000 IDR"
+        },
+        "black": {
+          "bonus": "7%",
+          "level": "Hitam",
+          "dailyLimit": "1,250,000 IDR"
+        }
+      },
+      "note": "Pengembalian tunai hanya berlaku untuk saldo utama."
+    }
   }
 }

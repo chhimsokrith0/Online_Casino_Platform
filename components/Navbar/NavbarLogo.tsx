@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons"; // Import menu icon
 import Logo_ICG from "@/assets/Logo/logo-icg.png";
 
 interface NavbarLogoProps {
@@ -10,6 +12,12 @@ interface NavbarLogoProps {
 const NavbarLogo: React.FC<NavbarLogoProps> = ({ locale }) => {
   return (
     <div className="flex items-center gap-4">
+      {/* Menu Icon */}
+      <button className="hidden md:block text-white text-2xl hover:text-yellow-400 transition">
+        <FontAwesomeIcon icon={faBars} />
+      </button>
+
+      {/* Logo */}
       <Link href={`/${locale}/`}>
         <Image
           src={Logo_ICG}

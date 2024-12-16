@@ -804,5 +804,58 @@
                 }
             }
         }
+    },
+    "Mypromotions": {
+        "title": "我的優惠",
+        "cashback": {
+            "title": "現金回贈",
+            "description": "獲得您損失的一部分金額回贈。"
+        },
+        "rebate": {
+            "title": "回扣",
+            "description": "獲得您投注金額的回扣。"
+        },
+        "promotionDetails": {
+            "banner": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734343549/bannerMyPromotion_rs1sai.webp",
+            "title": "優惠詳情",
+            "cashbackTitle": "現金回贈",
+            "description": "每日可獲得高達 7% 的現金回贈！詳情如下：",
+            "bonus": "獎金",
+            "memberLevel": "會員等級",
+            "dailyLimit": "每日上限",
+            "levels": {
+                "bronze": {
+                    "bonus": "2%",
+                    "level": "銅級",
+                    "dailyLimit": "115 港幣"
+                },
+                "silver": {
+                    "bonus": "3%",
+                    "level": "銀級",
+                    "dailyLimit": "155 港幣"
+                },
+                "gold": {
+                    "bonus": "4%",
+                    "level": "金級",
+                    "dailyLimit": "235 港幣"
+                },
+                "diamond": {
+                    "bonus": "5%",
+                    "level": "鑽石級",
+                    "dailyLimit": "390 港幣"
+                },
+                "platinum": {
+                    "bonus": "6%",
+                    "level": "白金級",
+                    "dailyLimit": "470 港幣"
+                },
+                "black": {
+                    "bonus": "7%",
+                    "level": "黑金級",
+                    "dailyLimit": "590 港幣"
+                }
+            },
+            "note": "現金回贈僅適用於主要餘額。"
+        }
     }
 }

@@ -234,7 +234,8 @@
     "mobieleNavbar": {
         "menu": "메뉴",
         "slots": "슬롯",
-        "signUp": "회원가입",
+        "signIn": "로그인",
+        "Wallet": "지갑",
         "liveCasino": "라이브 카지노",
         "promo": "프로모션"
     },
@@ -438,6 +439,8 @@
             }
         },
         "allGame": {
+            "title": "모든 게임",
+            "seeAll": "모두 보기",
             "ninjaRaccoonFrenzy": {
                 "name": "닌자 너구리 열풍",
                 "provider": "PGSoft"
@@ -618,6 +621,59 @@
                 "bronze": "브론즈",
                 "silver": "실버"
             }
+        }
+    },
+    "Mypromotions": {
+        "title": "내 프로모션",
+        "cashback": {
+            "title": "캐시백",
+            "description": "손실 금액의 일부를 돌려받으세요."
+        },
+        "rebate": {
+            "title": "리베이트",
+            "description": "배팅 금액에 대한 리베이트를 받으세요."
+        },
+        "promotionDetails": {
+            "banner": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734343549/bannerMyPromotion_rs1sai.webp",
+            "title": "프로모션 세부정보",
+            "cashbackTitle": "캐시백",
+            "description": "매일 최대 7% 캐시백을 받으세요! 아래에서 자세히 확인하세요:",
+            "bonus": "보너스",
+            "memberLevel": "회원 등급",
+            "dailyLimit": "일일 한도",
+            "levels": {
+                "bronze": {
+                    "bonus": "2%",
+                    "level": "브론즈",
+                    "dailyLimit": "500,000 KRW"
+                },
+                "silver": {
+                    "bonus": "3%",
+                    "level": "실버",
+                    "dailyLimit": "700,000 KRW"
+                },
+                "gold": {
+                    "bonus": "4%",
+                    "level": "골드",
+                    "dailyLimit": "1,000,000 KRW"
+                },
+                "diamond": {
+                    "bonus": "5%",
+                    "level": "다이아몬드",
+                    "dailyLimit": "1,500,000 KRW"
+                },
+                "platinum": {
+                    "bonus": "6%",
+                    "level": "플래티넘",
+                    "dailyLimit": "2,000,000 KRW"
+                },
+                "black": {
+                    "bonus": "7%",
+                    "level": "블랙",
+                    "dailyLimit": "2,500,000 KRW"
+                }
+            },
+            "note": "캐시백은 메인 잔액에만 적용됩니다."
         }
     }
 }

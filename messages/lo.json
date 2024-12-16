@@ -622,5 +622,58 @@
         "silver": "ເງິນ"
       }
     }
+  },
+  "Mypromotions": {
+    "title": "ໂປຣໂມຊັນຂອງຂ້ອຍ",
+    "cashback": {
+      "title": "ຄືນເງິນ",
+      "description": "ຮັບເງິນຄືນສ່ວນໜຶ່ງຂອງການເສຍຂອງທ່ານ."
+    },
+    "rebate": {
+      "title": "ສ່ວນລົດ",
+      "description": "ຮັບສ່ວນລົດສໍາລັບຈໍານວນທີ່ທ່ານທໍາການພະນັນ."
+    },
+    "promotionDetails": {
+      "banner": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734343549/bannerMyPromotion_rs1sai.webp",
+      "title": "ລາຍລະອຽດໂປຣໂມຊັນ",
+      "cashbackTitle": "ຄືນເງິນ",
+      "description": "ຮັບເງິນຄືນສູງສຸດ 7% ທຸກມື້! ລາຍລະອຽດສົມບູນຢູ່ຂ້າງລຸ່ມນີ້:",
+      "bonus": "ໂບນັດ",
+      "memberLevel": "ລະດັບສະມາຊິກ",
+      "dailyLimit": "ຂີດຈໍາກັດປະຈໍາມື້",
+      "levels": {
+        "bronze": {
+          "bonus": "2%",
+          "level": "ບຣອນ",
+          "dailyLimit": "80,000 LAK"
+        },
+        "silver": {
+          "bonus": "3%",
+          "level": "ເງິນ",
+          "dailyLimit": "120,000 LAK"
+        },
+        "gold": {
+          "bonus": "4%",
+          "level": "ຄຳ",
+          "dailyLimit": "180,000 LAK"
+        },
+        "diamond": {
+          "bonus": "5%",
+          "level": "ເພັດ",
+          "dailyLimit": "250,000 LAK"
+        },
+        "platinum": {
+          "bonus": "6%",
+          "level": "ແພດຕິນັມ",
+          "dailyLimit": "300,000 LAK"
+        },
+        "black": {
+          "bonus": "7%",
+          "level": "ສີດໍາ",
+          "dailyLimit": "350,000 LAK"
+        }
+      },
+      "note": "ຄືນເງິນເພີ່ມສໍາລັບບັນຊີເງິນຫລັກທີ່ລະບຸໄວ້ເທົ່ານັ້ນ."
+    }
   }
 }

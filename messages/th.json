@@ -569,5 +569,58 @@
         "of": "จาก"
       }
     }
+  },
+  "Mypromotions": {
+    "title": "โปรโมชั่นของฉัน",
+    "cashback": {
+      "title": "เงินคืน",
+      "description": "รับเปอร์เซ็นต์จากยอดเสียของคุณกลับคืนมา"
+    },
+    "rebate": {
+      "title": "ส่วนลด",
+      "description": "รับส่วนลดจากการเดิมพันที่คุณวางไว้"
+    },
+    "promotionDetails": {
+      "banner": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734343549/bannerMyPromotion_rs1sai.webp",
+      "title": "รายละเอียดโปรโมชั่น",
+      "cashbackTitle": "เงินคืน",
+      "description": "รับเงินคืนสูงสุด 7% ทุกวัน! ดูรายละเอียดด้านล่าง:",
+      "bonus": "โบนัส",
+      "memberLevel": "ระดับสมาชิก",
+      "dailyLimit": "ขีดจำกัดรายวัน",
+      "levels": {
+        "bronze": {
+          "bonus": "2%",
+          "level": "บรอนซ์",
+          "dailyLimit": "฿500"
+        },
+        "silver": {
+          "bonus": "3%",
+          "level": "ซิลเวอร์",
+          "dailyLimit": "฿700"
+        },
+        "gold": {
+          "bonus": "4%",
+          "level": "โกลด์",
+          "dailyLimit": "฿1,000"
+        },
+        "diamond": {
+          "bonus": "5%",
+          "level": "ไดมอนด์",
+          "dailyLimit": "฿1,500"
+        },
+        "platinum": {
+          "bonus": "6%",
+          "level": "แพลทินัม",
+          "dailyLimit": "฿2,000"
+        },
+        "black": {
+          "bonus": "7%",
+          "level": "แบล็ก",
+          "dailyLimit": "฿2,500"
+        }
+      },
+      "note": "เงินคืนใช้ได้เฉพาะยอดคงเหลือหลักเท่านั้น"
+    }
   }
 }

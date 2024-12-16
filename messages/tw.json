@@ -569,5 +569,58 @@
                 "of": "的"
             }
         }
+    },
+    "Mypromotions": {
+        "title": "我的促銷活動",
+        "cashback": {
+            "title": "現金回饋",
+            "description": "獲取您損失的一部分金額作為回饋。"
+        },
+        "rebate": {
+            "title": "回扣",
+            "description": "獲取您下注金額的一部分回扣。"
+        },
+        "promotionDetails": {
+            "banner": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734343549/bannerMyPromotion_rs1sai.webp",
+            "title": "促銷詳情",
+            "cashbackTitle": "現金回饋",
+            "description": "每日可獲取高達 7% 的現金回饋！詳情如下：",
+            "bonus": "紅利",
+            "memberLevel": "會員等級",
+            "dailyLimit": "每日上限",
+            "levels": {
+                "bronze": {
+                    "bonus": "2%",
+                    "level": "青銅",
+                    "dailyLimit": "500 TWD"
+                },
+                "silver": {
+                    "bonus": "3%",
+                    "level": "白銀",
+                    "dailyLimit": "700 TWD"
+                },
+                "gold": {
+                    "bonus": "4%",
+                    "level": "黃金",
+                    "dailyLimit": "1,000 TWD"
+                },
+                "diamond": {
+                    "bonus": "5%",
+                    "level": "鑽石",
+                    "dailyLimit": "1,500 TWD"
+                },
+                "platinum": {
+                    "bonus": "6%",
+                    "level": "白金",
+                    "dailyLimit": "2,000 TWD"
+                },
+                "black": {
+                    "bonus": "7%",
+                    "level": "黑鑽",
+                    "dailyLimit": "2,500 TWD"
+                }
+            },
+            "note": "現金回饋僅適用於主錢包餘額。"
+        }
     }
 }

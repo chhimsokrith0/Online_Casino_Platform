@@ -4,22 +4,22 @@ import React, { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGift, faChevronRight, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { gsap } from "gsap";
+import { useTranslations } from "next-intl";
 
 // Modal Component
 const PromotionModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) => {
     const modalRef = useRef<HTMLDivElement | null>(null);
     const rowRefs = useRef<HTMLTableRowElement[]>([]);
+    const t = useTranslations("Mypromotions");
 
     useEffect(() => {
         if (isOpen && modalRef.current) {
-            // Animate modal opening
             gsap.fromTo(
                 modalRef.current,
                 { opacity: 0, y: -50, scale: 0.8 },
                 { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power3.out" }
             );
 
-            // Animate rows inside the table
             gsap.fromTo(
                 rowRefs.current,
                 { opacity: 0, x: -20 },
@@ -30,7 +30,6 @@ const PromotionModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => v
 
     const handleClose = () => {
         if (modalRef.current) {
-            // Animate modal closing
             gsap.to(modalRef.current, {
                 opacity: 0,
                 y: -50,
@@ -46,13 +45,13 @@ const PromotionModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => v
 
     if (!isOpen) return null;
 
-    const promotions = [
-        { bonus: "2%", level: "Bronze", limit: "500 บาท" },
-        { bonus: "3%", level: "Silver", limit: "700 บาท" },
-        { bonus: "4%", level: "Gold", limit: "1,000 บาท" },
-        { bonus: "5%", level: "Diamond", limit: "1,500 บาท" },
-        { bonus: "6%", level: "Platinum", limit: "2,000 บาท" },
-        { bonus: "7%", level: "Black", limit: "2,500 บาท" },
+    const levels = [
+        { bonus: t("promotionDetails.levels.bronze.bonus"), level: t("promotionDetails.levels.bronze.level"), dailyLimit: t("promotionDetails.levels.bronze.dailyLimit") },
+        { bonus: t("promotionDetails.levels.silver.bonus"), level: t("promotionDetails.levels.silver.level"), dailyLimit: t("promotionDetails.levels.silver.dailyLimit") },
+        { bonus: t("promotionDetails.levels.gold.bonus"), level: t("promotionDetails.levels.gold.level"), dailyLimit: t("promotionDetails.levels.gold.dailyLimit") },
+        { bonus: t("promotionDetails.levels.diamond.bonus"), level: t("promotionDetails.levels.diamond.level"), dailyLimit: t("promotionDetails.levels.diamond.dailyLimit") },
+        { bonus: t("promotionDetails.levels.platinum.bonus"), level: t("promotionDetails.levels.platinum.level"), dailyLimit: t("promotionDetails.levels.platinum.dailyLimit") },
+        { bonus: t("promotionDetails.levels.black.bonus"), level: t("promotionDetails.levels.black.level"), dailyLimit: t("promotionDetails.levels.black.dailyLimit") },
     ];
 
     return (
@@ -63,11 +62,10 @@ const PromotionModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => v
             <div
                 ref={modalRef}
                 className="bg-gray-800 w-[90%] max-w-3xl p-6 rounded-lg shadow-lg overflow-y-auto"
-                onClick={(e) => e.stopPropagation()} // Prevent modal close on inner clicks
+                onClick={(e) => e.stopPropagation()}
             >
-                {/* Modal Header */}
                 <div className="flex justify-between items-center mb-4">
-                    <h3 className="text-xl text-white font-bold">Promotion Details</h3>
+                    <h3 className="text-xl text-white font-bold">{t("promotionDetails.title")}</h3>
                     <FontAwesomeIcon
                         icon={faTimes}
                         className="text-gray-400 cursor-pointer hover:text-white"
@@ -75,44 +73,45 @@ const PromotionModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => v
                     />
                 </div>
 
-                {/* Modal Content */}
                 <div>
                     <img
-                        src="https://storage.googleapis.com/playgame168/promotion_images/25473cba-fbcf-43c2-a71b-22bff5b1ae6d.webp"
+                        src={ t("promotionDetails.banner") }
                         alt="Promotion Banner"
                         className="w-full rounded-lg mb-4"
                     />
-                    <h4 className="text-white text-lg font-bold mb-2">คืนยอดเสีย (Cashback)</h4>
-                    <p className="text-gray-300 mb-4">โบนัสคืนยอดเสีย สูงสุด 7% ทุกวัน! ดูรายละเอียดด้านล่าง:</p>
+                    <h4 className="text-white text-lg font-bold mb-2">{t("promotionDetails.cashbackTitle")}</h4>
+                    <p className="text-gray-300 mb-4">{t("promotionDetails.description")}</p>
                     <table className="w-full text-gray-400 mb-4">
                         <thead>
                             <tr>
-                                <th className="text-left p-2 border-b border-gray-700">โบนัส</th>
-                                <th className="text-left p-2 border-b border-gray-700">Member Level</th>
-                                <th className="text-left p-2 border-b border-gray-700">จ่ายสูงสุดต่อวัน</th>
+                                <th className="text-left p-2 border-b border-gray-700">{t("promotionDetails.bonus")}</th>
+                                <th className="text-left p-2 border-b border-gray-700">{t("promotionDetails.memberLevel")}</th>
+                                <th className="text-left p-2 border-b border-gray-700">{t("promotionDetails.dailyLimit")}</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {promotions.map((row, index) => (
+                            {levels.map((row, index) => (
                                 <tr
                                     key={index}
                                     ref={(el) => {
-                                        if (el) rowRefs.current.push(el);
+                                        if (el) rowRefs.current[index] = el;
                                     }}
                                 >
                                     <td className="p-2 border-b border-gray-700">{row.bonus}</td>
                                     <td className="p-2 border-b border-gray-700">{row.level}</td>
-                                    <td className="p-2 border-b border-gray-700">{row.limit}</td>
+                                    <td className="p-2 border-b border-gray-700">{row.dailyLimit}</td>
                                 </tr>
                             ))}
                         </tbody>
                     </table>
-                    <p className="text-gray-400">* คืนยอดเสียเฉพาะหลักเกณฑ์ที่ระบุไว้เท่านั้น</p>
+                    <p className="text-gray-400">{t("promotionDetails.note")}</p>
                 </div>
             </div>
         </div>
     );
 };
+
+
 
 // Main Component
 const MyPromotions = () => {
@@ -140,6 +139,8 @@ const MyPromotions = () => {
         }
     }, [isMobile]);
 
+    const t = useTranslations("Mypromotions");
+
     return (
         <div className="max-w-[1200px] mx-auto pt-4 p-4">
             {isMobile ? (
@@ -147,24 +148,24 @@ const MyPromotions = () => {
                     onClick={openModal}
                     className="w-full bg-gray-800 text-white flex items-center justify-between px-6 py-3 rounded-full border border-yellow-400 hover:bg-gray-700 transition"
                 >
-                    <span className="text-white font-semibold">My Promotions</span>
+                    <span className="text-white font-semibold">{t("title")}</span>
                     <FontAwesomeIcon icon={faChevronRight} className="text-yellow-400" />
                 </button>
             ) : (
                 <>
                     <h3 className="text-gray-400 text-lg font-bold flex items-center gap-2 mb-4">
                         <FontAwesomeIcon icon={faGift} className="text-yellow-400" />
-                        My Promotions
+                        {t("title")}
                     </h3>
                     <div className="grid grid-cols-2 gap-4">
                         {[
                             {
-                                title: "คืนยอดเสีย",
-                                subtitle: "Cashback",
+                                title: t("cashback.description"),
+                                subtitle: t("cashback.title"),
                             },
                             {
-                                title: "คืนยอดเดิมพัน",
-                                subtitle: "Rebate",
+                                title: t("rebate.description"),
+                                subtitle: t("rebate.title"),
                             },
                         ].map((promotion, index) => (
                             <div
