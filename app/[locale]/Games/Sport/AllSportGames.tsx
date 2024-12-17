@@ -9,6 +9,7 @@ import { useTranslations } from "next-intl";
 import { generateGamesData } from "./gamesData";
 import nothing_box from "../../../../public/nothing_box.webp";
 import Loading from "@/components/Loading";
+import { useSidebar } from "@/components/Sidebar/SidebarContext";
 
 interface Game {
   id: number;
@@ -38,6 +39,7 @@ const AllGames: React.FC<AllGamesProps> = ({ locale }) => {
 
   // Load and generate games data
   const gamesData: Game[] = generateGamesData(t);
+  const { isCollapsed } = useSidebar();
 
   // Filter games based on category and search term
   useEffect(() => {
@@ -100,7 +102,7 @@ const AllGames: React.FC<AllGamesProps> = ({ locale }) => {
   };
 
   return (
-    <div ref={sectionRef} className="max-w-[1200px] mx-auto p-4">
+    <div ref={sectionRef} className={`max-w-[1200px] mx-auto p-4 ${isCollapsed ? "ml-[4rem]" : ""}`}>
       {/* Games Header */}
       <GamesHeader
         pageName="Sport"

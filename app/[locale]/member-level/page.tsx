@@ -6,10 +6,12 @@ import Carousel from "./Carousel";
 import ExclusiveBenefits from "./ExclusiveBenefits";
 import { useTranslations } from "next-intl";
 import { gsap } from "gsap";
+import { useSidebar } from "@/components/Sidebar/SidebarContext"; 
 
 const Member_Level: React.FC = () => {
   const t = useTranslations("MemberLevel");
   const containerRef = useRef<HTMLDivElement | null>(null);
+  const { isCollapsed } = useSidebar(); // Access isCollapsed state
 
   useEffect(() => {
     if (containerRef.current) {
@@ -21,8 +23,10 @@ const Member_Level: React.FC = () => {
     }
   }, []);
 
+  
+
   return (
-    <div className="px-6 py-4 z-50" ref={containerRef}>
+    <div className={`px-6 py-4 z-50 ${isCollapsed ? "ml-[-12rem]" : ""}`} ref={containerRef}>
       {/* Main Section */}
       <div className="max-w-[1200px] mx-auto bg-blue-600 text-white rounded-lg overflow-hidden relative mb-10">
         {/* Background Image */}

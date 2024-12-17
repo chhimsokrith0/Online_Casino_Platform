@@ -1,7 +1,16 @@
+"use client";
+
 import React, { useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopy, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook, faTwitter, faTelegram, faWhatsapp, faSkype } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebook,
+  faTwitter,
+  faTelegram,
+  faWhatsapp,
+  faSkype,
+} from "@fortawesome/free-brands-svg-icons";
+import ReactDOM from "react-dom";
 
 interface InviteModalProps {
   isOpen: boolean;
@@ -10,7 +19,12 @@ interface InviteModalProps {
   referralCode: string;
 }
 
-const InviteModal: React.FC<InviteModalProps> = ({ isOpen, onClose, referralLink, referralCode }) => {
+const InviteModal: React.FC<InviteModalProps> = ({
+  isOpen,
+  onClose,
+  referralLink,
+  referralCode,
+}) => {
   const modalRef = useRef<HTMLDivElement>(null);
 
   // Copy to clipboard functionality
@@ -36,10 +50,12 @@ const InviteModal: React.FC<InviteModalProps> = ({ isOpen, onClose, referralLink
     };
   }, [isOpen, onClose]);
 
+  // Return null if not open
   if (!isOpen) return null;
 
-  return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+  // ReactDOM Portal
+  return ReactDOM.createPortal(
+    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-[999]">
       <div
         ref={modalRef}
         className="bg-gray-900 rounded-lg w-[90%] sm:w-[500px] p-6 shadow-lg text-white relative animate-fade-in"
@@ -55,7 +71,7 @@ const InviteModal: React.FC<InviteModalProps> = ({ isOpen, onClose, referralLink
         {/* Image Banner */}
         <div className="rounded-lg overflow-hidden mb-6">
           <img
-            src="https://storage.googleapis.com/cdn.i-gamingplatform.com/global_config/invite_and_benefits_banner.png" // Replace with the actual image link
+            src="https://storage.googleapis.com/cdn.i-gamingplatform.com/global_config/invite_and_benefits_banner.png"
             alt="Invite Benefits"
             className="w-full h-auto"
           />
@@ -71,7 +87,10 @@ const InviteModal: React.FC<InviteModalProps> = ({ isOpen, onClose, referralLink
               readOnly
               className="bg-transparent text-sm text-gray-300 w-full"
             />
-            <button onClick={() => copyToClipboard(referralLink)} className="text-gray-400 hover:text-yellow-500">
+            <button
+              onClick={() => copyToClipboard(referralLink)}
+              className="text-gray-400 hover:text-yellow-500"
+            >
               <FontAwesomeIcon icon={faCopy} />
             </button>
           </div>
@@ -87,7 +106,10 @@ const InviteModal: React.FC<InviteModalProps> = ({ isOpen, onClose, referralLink
               readOnly
               className="bg-transparent text-sm text-gray-300 w-full"
             />
-            <button onClick={() => copyToClipboard(referralCode)} className="text-gray-400 hover:text-yellow-500">
+            <button
+              onClick={() => copyToClipboard(referralCode)}
+              className="text-gray-400 hover:text-yellow-500"
+            >
               <FontAwesomeIcon icon={faCopy} />
             </button>
           </div>
@@ -95,7 +117,8 @@ const InviteModal: React.FC<InviteModalProps> = ({ isOpen, onClose, referralLink
 
         {/* Share Instructions */}
         <p className="text-sm text-gray-400 mb-4">
-          Copy your referral code or link to your friends, and when they register and play the game, you get a rebate.
+          Copy your referral code or link to your friends, and when they
+          register and play the game, you get a rebate.
         </p>
 
         {/* Social Media Sharing */}
@@ -117,7 +140,8 @@ const InviteModal: React.FC<InviteModalProps> = ({ isOpen, onClose, referralLink
           </button>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 };
 

@@ -4,11 +4,13 @@ import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import FreeSpins from "./Tab/FreeSpins";
 import TabRandomCard from "./Tab/RandomCard";
+import { useSidebar } from "@/components/Sidebar/SidebarContext";
 
 const RandomCard = () => {
-    
+
     const [activeTab, setActiveTab] = useState<"RandomCard" | "FreeSpins">("RandomCard");
     const buttonRefs = useRef<HTMLButtonElement[]>([]);
+    const { isCollapsed } = useSidebar();
 
     useEffect(() => {
 
@@ -46,86 +48,88 @@ const RandomCard = () => {
         }
     };
 
-   
+
 
     return (
         <>
-            {/* Banner Section */}
-            <div className="relative">
-                <img
-                    src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1734006354/Screenshot_2024-12-12_192536_wfxtl5.png"
-                    alt="Banner"
-                    className="w-full h-auto"
-                />
-                <div className="absolute bottom-0 left-0 w-full text-center text-white p-4 bg-gradient-to-t from-black via-transparent to-transparent">
-                    <h1 className="text-4xl font-bold">Redeem Card</h1>
-                    <p className="mt-2 text-sm">
-                        ลุ้นการ์ด รับเพชรเพิ่มเติมจากกิจกรรมสุ่มการ์ด เพื่อแลก 1,000 เพชรลุ้นได้สูงสุด 5 ครั้งต่อวัน!
-                    </p>
-                </div>
-            </div>
-
-            {/* Rewards Section */}
-            <div className="max-w-[1200px] mx-auto p-6 text-center">
-                <div className="flex justify-between items-center flex-wrap">
-                    <div className="text-left">
-                        <h2 className="text-2xl font-bold text-white">PlayGame168 Reward</h2>
-                        <p className="text-gray-400 mt-2">
-                            Experience the thrill of exclusivity with our premium selection of rewards.
+            <div className={`${isCollapsed ? "ml-[-12rem]" : ""}`}>
+                {/* Banner Section */}
+                <div className={`relative`}>
+                    <img
+                        src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1734006354/Screenshot_2024-12-12_192536_wfxtl5.png"
+                        alt="Banner"
+                        className="w-full h-auto"
+                    />
+                    <div className="absolute bottom-0 left-0 w-full text-center text-white p-4 bg-gradient-to-t from-black via-transparent to-transparent">
+                        <h1 className="text-4xl font-bold">Redeem Card</h1>
+                        <p className="mt-2 text-sm">
+                            ลุ้นการ์ด รับเพชรเพิ่มเติมจากกิจกรรมสุ่มการ์ด เพื่อแลก 1,000 เพชรลุ้นได้สูงสุด 5 ครั้งต่อวัน!
                         </p>
                     </div>
-                    {/* Current Points Section */}
-                    <div className="bg-gray-800 px-6 py-3 rounded-full flex items-center space-x-2">
-                        <p className="text-gray-300">Current Point :</p>
-                        <img
-                            src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034979/eec3c896-fc98-4ed7-a4b1-c0c4d6e63e42_y0p6uo.webp"
-                            alt="Diamond Icon"
-                            className="w-5 h-5"
-                        />
-                        <span className="text-yellow-500 font-bold">800.00</span>
+                </div>
+
+                {/* Rewards Section */}
+                <div className="max-w-[1200px] mx-auto p-6 text-center">
+                    <div className="flex justify-between items-center flex-wrap">
+                        <div className="text-left">
+                            <h2 className="text-2xl font-bold text-white">PlayGame168 Reward</h2>
+                            <p className="text-gray-400 mt-2">
+                                Experience the thrill of exclusivity with our premium selection of rewards.
+                            </p>
+                        </div>
+                        {/* Current Points Section */}
+                        <div className="bg-gray-800 px-6 py-3 rounded-full flex items-center space-x-2">
+                            <p className="text-gray-300">Current Point :</p>
+                            <img
+                                src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034979/eec3c896-fc98-4ed7-a4b1-c0c4d6e63e42_y0p6uo.webp"
+                                alt="Diamond Icon"
+                                className="w-5 h-5"
+                            />
+                            <span className="text-yellow-500 font-bold">800.00</span>
+                        </div>
                     </div>
+
+                    {/* Navigation Buttons */}
+                    <div className="mt-4 flex justify-center bg-gray-900 rounded-full p-1 w-fit">
+                        <button
+                            ref={(el) => {
+                                el && (buttonRefs.current[1] = el);
+                            }}
+                            className={`px-6 py-3 rounded-full font-bold transition focus:outline-none ${activeTab === "RandomCard"
+                                ? "bg-gradient-to-r from-purple-600 to-purple-800 text-white"
+                                : "text-white hover:bg-gray-800"
+                                }`}
+                            onClick={() => handleTabClick("RandomCard", 0)}
+                        >
+                            Random Card
+                        </button>
+                        <button
+                            ref={(el) => {
+                                el && (buttonRefs.current[1] = el);
+                            }}
+                            className={`px-6 py-3 rounded-full font-bold transition focus:outline-none ml-2 ${activeTab === "FreeSpins"
+                                ? "bg-gradient-to-r from-purple-600 to-purple-800 text-white"
+                                : "text-white hover:bg-gray-800"
+                                }`}
+                            onClick={() => handleTabClick("FreeSpins", 1)}
+                        >
+                            Free Spins
+                        </button>
+                    </div>
+
+                    <br />
+
+                    {activeTab === "RandomCard" && (
+                        <TabRandomCard />
+
+                    )}
+
+                    {activeTab === "FreeSpins" && (
+                        <FreeSpins />
+                    )}
+
+
                 </div>
-
-                {/* Navigation Buttons */}
-                <div className="mt-4 flex justify-center bg-gray-900 rounded-full p-1 w-fit">
-                    <button
-                        ref={(el) => {
-                            el && (buttonRefs.current[1] = el);
-                        }}
-                        className={`px-6 py-3 rounded-full font-bold transition focus:outline-none ${activeTab === "RandomCard"
-                            ? "bg-gradient-to-r from-purple-600 to-purple-800 text-white"
-                            : "text-white hover:bg-gray-800"
-                            }`}
-                        onClick={() => handleTabClick("RandomCard", 0)}
-                    >
-                        Random Card
-                    </button>
-                    <button
-                        ref={(el) => {
-                            el && (buttonRefs.current[1] = el);
-                        }}
-                        className={`px-6 py-3 rounded-full font-bold transition focus:outline-none ml-2 ${activeTab === "FreeSpins"
-                            ? "bg-gradient-to-r from-purple-600 to-purple-800 text-white"
-                            : "text-white hover:bg-gray-800"
-                            }`}
-                        onClick={() => handleTabClick("FreeSpins", 1)}
-                    >
-                        Free Spins
-                    </button>
-                </div>
-
-                <br />
-
-                {activeTab === "RandomCard" && (
-                    <TabRandomCard />
-
-                )}
-
-                {activeTab === "FreeSpins" && (
-                    <FreeSpins />
-                )}
-
-
             </div>
         </>
     );

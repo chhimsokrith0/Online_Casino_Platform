@@ -10,6 +10,7 @@ import Link from "next/link";
 import { useSession } from "next-auth/react";
 import QuestsModal from "@/app/[locale]/Quests/QuestsModal";
 import SignupModal from "@/components/Navbar/SignUpModal";
+import { useSidebar } from "@/components/Sidebar/SidebarContext";
 const Footer = ({ locale }: { locale: string }) => {
   const t = useTranslations();
   const { data: session } = useSession();
@@ -23,6 +24,7 @@ const Footer = ({ locale }: { locale: string }) => {
   const liveCasinoRef = useRef<HTMLUListElement | null>(null);
   const specialsRef = useRef<HTMLUListElement | null>(null);
   const informationRef = useRef<HTMLUListElement | null>(null);
+  const { isCollapsed } = useSidebar();
 
   useEffect(() => {
     const animateSection = (isOpen: boolean, ref: React.RefObject<HTMLUListElement>) => {
@@ -58,7 +60,7 @@ const Footer = ({ locale }: { locale: string }) => {
   const handleCloseSignupModal = () => setIsSignupModalOpen(false);
 
   return (
-    <footer className="text-gray-300 px-4 sm:px-8 py-6 sm:py-10">
+    <footer className={`text-gray-300 px-4 sm:px-8 py-6 sm:py-10 ${isCollapsed ? "ml-[-10rem]" : ""}`}>
       {/* Mobile View */}
       <div className="sm:hidden">
         {/* Game Category */}

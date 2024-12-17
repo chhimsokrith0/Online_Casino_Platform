@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { useSidebar } from "@/components/Sidebar/SidebarContext";
 
 const promotions = [
   {
@@ -27,6 +28,7 @@ const promotions = [
 const PromotionsSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const { isCollapsed } = useSidebar();
 
   useEffect(() => {
     // Animate the section header
@@ -64,7 +66,7 @@ const PromotionsSection: React.FC = () => {
   return (
     <div
       ref={sectionRef}
-      className="bg-cover bg-center bg-no-repeat py-12 px-4"
+      className={`bg-cover bg-center bg-no-repeat py-12 px-4 ${isCollapsed ? "ml-[-17rem]" : ""}`}
       style={{
         backgroundImage: "url('https://res.cloudinary.com/dfxqagrkk/image/upload/v1733645518/bg_yauwy2.png')", // Replace with your actual background image path
       }}

@@ -74,7 +74,6 @@
 
 
 
-
 "use client";
 
 import { useTranslations } from "next-intl";
@@ -88,17 +87,19 @@ import GameProviders from "@/components/features/GameProviders";
 import JackpotBanner from "@/components/features/JackpotBanner";
 import AllGames from "@/components/features/AllGames";
 import Notification from "@/components/Notification";
-import MyPromotions from "@/components/MyPromotions"; // Add this import
+import MyPromotions from "@/components/MyPromotions";
 import React from "react";
-import { useSession } from "next-auth/react"; // Import to check user session
+import { useSession } from "next-auth/react";
+import { useSidebar } from "@/components/Sidebar/SidebarContext"; // Import SidebarContext
 
 export default function HomeContent({ locale }: { locale: string }) {
     const t = useTranslations("HomePage");
-    const { data: session } = useSession(); // Get session data to check if the user is logged in
+    const { data: session } = useSession();
+    const { isCollapsed } = useSidebar(); // Access isCollapsed state
 
     return (
         <>
-            <div className="z-10">
+            <div className={`z-10 ${isCollapsed ? "ml-[-15rem]" : ""}`}>
                 <Notification />
                 <Carousel />
 
@@ -109,7 +110,8 @@ export default function HomeContent({ locale }: { locale: string }) {
                     </section>
                 )}
 
-                <div className="px-4 sm:px-6 lg:px-8">
+                {/* Dynamic padding adjustment */}
+                <div className={`px-4 sm:px-6 lg:px-${isCollapsed ? "2" : "8"}`}>
                     <section className="mb-6">
                         <MenuBar locale={locale} />
                     </section>

@@ -5,7 +5,7 @@ import { gsap } from "gsap";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
-
+import { useSidebar } from "@/components/Sidebar/SidebarContext";
 
 const FavouriteGames = () => {
     const games = [
@@ -43,7 +43,7 @@ const FavouriteGames = () => {
 
     const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
     const [favorites, setFavorites] = useState<number[]>([]);
-
+    const { isCollapsed } = useSidebar();
     useEffect(() => {
         // GSAP entrance animation
         gsap.fromTo(
@@ -86,7 +86,7 @@ const FavouriteGames = () => {
     };
 
     return (
-        <div className="max-w-[1200px] mx-auto p-4 sm:p-8">
+        <div className={`max-w-[1200px] mx-auto p-4 sm:p-8 ${isCollapsed ? "ml-[4rem]" : ""}`}>
             {/* Breadcrumb */}
             <nav className="text-gray-400 text-sm mb-4">
                 <Link href="/">
@@ -97,7 +97,7 @@ const FavouriteGames = () => {
 
             {/* Page Title */}
             <h1 className="text-2xl font-bold mb-6 flex items-center gap-2">
-                <FontAwesomeIcon icon={faClock} className="text-white bg-black p-1 rounded-full"  />
+                <FontAwesomeIcon icon={faClock} className="text-white bg-black p-1 rounded-full" />
                 Recently Played
             </h1>
 

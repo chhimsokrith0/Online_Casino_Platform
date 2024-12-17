@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBuilding, faSearch, faSlidersH, faGamepad } from "@fortawesome/free-solid-svg-icons";
 import { gsap } from "gsap";
 import Link from "next/link";
+import { useSidebar } from "@/components/Sidebar/SidebarContext";
 
 const providerData = [
     {
@@ -132,6 +133,7 @@ const providerData = [
 
 const Providers = () => {
     const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+    const { isCollapsed } = useSidebar();
 
     useEffect(() => {
         // GSAP animation for card entrance
@@ -157,7 +159,7 @@ const Providers = () => {
     };
 
     return (
-        <div className="max-w-[1200px] mx-auto px-4 py-8 text-white">
+        <div className={`max-w-[1200px] mx-auto px-4 py-8 text-white ${isCollapsed ? "ml-[5rem]" : ""}`}>
             {/* Breadcrumb */}
             <nav className="text-gray-400 text-sm mb-4">
                 <span>

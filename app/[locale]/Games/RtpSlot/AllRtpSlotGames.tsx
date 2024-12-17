@@ -9,7 +9,7 @@ import { useTranslations } from "next-intl";
 import { generateGamesData } from "./gamesData";
 import nothing_box from "../../../../public/nothing_box.webp";
 import Loading from "@/components/Loading";
-
+import { useSidebar } from "@/components/Sidebar/SidebarContext";
 interface Game {
   id: number;
   title: string;
@@ -34,6 +34,7 @@ const AllLiveCasinoGames: React.FC<AllGamesProps> = ({ locale }) => {
   const [loading, setLoading] = useState(true); // Loading state
 
   const t = useTranslations("games.allGame");
+  const { isCollapsed } = useSidebar();
 
   // Generate game data once using useMemo for better performance
   const gamesData = useMemo(() => generateGamesData(t), [t]);
@@ -84,7 +85,7 @@ const AllLiveCasinoGames: React.FC<AllGamesProps> = ({ locale }) => {
   };
 
   return (
-    <div ref={sectionRef} className="max-w-[1200px] mx-auto p-4">
+    <div ref={sectionRef} className={`max-w-[1200px] mx-auto p-4 ${isCollapsed ? "ml-[5rem]" : ""}`}>
       <GamesHeader
         pageName="RtpSlot"
         locale={locale}

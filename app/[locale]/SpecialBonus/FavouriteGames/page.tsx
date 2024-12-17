@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import Link from "next/link";
+import { useSidebar } from "@/components/Sidebar/SidebarContext";
 
 const FavouriteGames = () => {
     const games = [
@@ -40,6 +41,7 @@ const FavouriteGames = () => {
 
     const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
     const [favorites, setFavorites] = useState<number[]>([]);
+    const { isCollapsed } = useSidebar();
 
     useEffect(() => {
         // GSAP entrance animation
@@ -83,7 +85,7 @@ const FavouriteGames = () => {
     };
 
     return (
-        <div className="max-w-[1200px] mx-auto p-4 sm:p-8">
+        <div className={`max-w-[1200px] mx-auto p-4 sm:p-8 ${isCollapsed ? "ml-[4rem]" : ""}`}>
             {/* Breadcrumb */}
             <nav className="text-gray-400 text-sm mb-4">
                 <Link href="/">

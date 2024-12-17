@@ -7,9 +7,10 @@ import { usePathname, useRouter } from "next/navigation";
 
 interface NavbarLanguageProps {
   locale: string;
+  isCollapsed: boolean;
 }
 
-const LanguageSelector: React.FC<NavbarLanguageProps> = ({ locale }) => {
+const LanguageSelector: React.FC<NavbarLanguageProps> = ({ locale, isCollapsed }) => {
   const router = useRouter();
   const pathname = usePathname();
   const dropdownRef = useRef<HTMLDivElement | null>(null);
@@ -75,24 +76,34 @@ const LanguageSelector: React.FC<NavbarLanguageProps> = ({ locale }) => {
   }, []);
 
   return (
-    <div ref={dropdownRef} className="relative">
-      <div className="border-t border-gray-700 my-4"></div>
-      <button
-        onClick={toggleDropdown}
-        className="flex items-center bg-gray-800 text-white px-4 py-2 rounded-full border border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500 hover:bg-yellow-500 hover:text-black transition"
-      >
-        {/* Show only the flag on mobile */}
-        <Image
-          src={currentLanguage?.flag || "/language/en.png"}
-          alt={currentLanguage?.name || "English"}
-          width={20}
-          height={20}
-          className="rounded-full mr-2"
-        />
-        {/* Hide text on small screens, show on medium+ screens */}
-        <span className="hidden md:block">{currentLanguage?.name || "English"}</span>
-        <span className="ml-2 text-yellow-500 hidden md:block">▼</span>
-      </button>
+    <div ref={dropdownRef} className={`relative ${isCollapsed ? "text-center" : ""}`}>
+      {!isCollapsed &&
+        <>
+          <div className="border-t border-gray-700 my-4"></div>
+          <button
+            onClick={toggleDropdown}
+            className="flex items-center bg-gray-800 text-white px-4 py-2 rounded-full border border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500 hover:bg-yellow-500 hover:text-black transition"
+          >
+
+            < Image
+              src={currentLanguage?.flag || "/language/en.png"}
+              alt={currentLanguage?.name || "English"}
+              width={20}
+              height={20}
+              className="rounded-full mr-2"
+            />
+
+            <span className="hidden md:block">{currentLanguage?.name || "English"}</span>
+            <span className="ml-2 text-yellow-500 hidden md:block">▼</span>
+
+
+            {/* Hide text on small screens, show on medium+ screens */}
+            {/* Hide text if sidebar is collapsed */}
+
+
+          </button>
+        </>
+      }
 
       {isDropdownOpen && (
         <div
@@ -119,6 +130,7 @@ const LanguageSelector: React.FC<NavbarLanguageProps> = ({ locale }) => {
             ))}
           </ul>
         </div>
+
       )}
     </div>
   );
