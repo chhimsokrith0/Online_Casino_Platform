@@ -2,8 +2,10 @@
 
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { useTranslations } from "next-intl";
 
 const Referal = () => {
+  const t = useTranslations("referal"); // Translation namespace
   const containerRef = useRef<HTMLDivElement | null>(null);
   const imageRef = useRef<HTMLImageElement | null>(null);
   const textRef = useRef<HTMLHeadingElement | null>(null);
@@ -61,7 +63,7 @@ const Referal = () => {
         <img
           ref={imageRef}
           src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733645517/3_l7zimp.webp"
-          alt="Referal Banner"
+          alt={t("imageAlt")}
           className="w-full h-[500px] max-w-md mx-auto rounded-lg shadow-lg"
         />
       </div>
@@ -71,35 +73,25 @@ const Referal = () => {
         ref={textRef}
         className="text-2xl font-bold mb-4 text-yellow-500"
       >
-        ชวนเพื่อนรับ 3% ทุกวัน
+        {t("heading")}
       </h2>
 
       <p className="text-gray-300 text-sm sm:text-base mb-4 leading-relaxed">
-        💰 รับคอมมิชชั่น 3% ทุกวัน 💰
+        {t("subheading")}
       </p>
 
       <ul
         ref={listRef}
         className="text-left mx-auto max-w-lg text-sm sm:text-base text-gray-300 space-y-3 mb-6"
       >
-        <li>
-          ✅ เงินค่าคอมสามารถโอนเข้ากระเป๋าหลัก ทำเทิร์นโอเวอร์ 4 เท่า
-          จึงจะสามารถถอนได้
-        </li>
-        <li>
-          ✅ คอมมิชชั่นขั้นต่ำ 5 บาท ถึงถอนเข้ากระเป๋าหลักได้
-        </li>
-        <li>
-          ✅ คอมมิชชั่น แนะนำเพื่อน สูงสุด 3,000 บาท ทุกวัน
-        </li>
-        <li>
-          ✅ นับเฉพาะ ยอดฝากเพื่อน ไม่รับโปรโมชั่น เท่านั้น
-        </li>
+        <li>{t("list.item1")}</li>
+        <li>{t("list.item2")}</li>
+        <li>{t("list.item3")}</li>
+        <li>{t("list.item4")}</li>
       </ul>
 
       <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-        💵 ระบบจะคำนวณยอดเล่นเสียของเพื่อนทุกวัน ตั้งแต่ 0:00 - 23:59 น. และคำนวณรายได้
-        ทุกวัน เวลา 8:00 น.
+        {t("footer")}
       </p>
     </div>
   );

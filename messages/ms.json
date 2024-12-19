@@ -47,18 +47,25 @@
     "slots": "Slot",
     "liveCasino": "Kasino Langsung",
     "privileges": "Keistimewaan",
-    "quests": "Cabaran",
+    "quests": "Misi",
     "reward": "Ganjaran",
     "promo": "Promosi",
     "levels": "Tahap",
     "referral": "Rujukan",
     "providers": "Penyedia",
-    "rtpSlots": "Slot RTP",
-    "sports": "Sukan",
-    "fishing": "Memancing",
-    "virtual": "Virtual",
+    "RtpSlot": "Slot RTP",
+    "Sport": "Sukan",
+    "Fishing": "Memancing",
+    "Virtual": "Virtual",
+    "crash": "Kemalangan",
+    "lotto": "Lotto",
     "languageOption": "Pilihan Bahasa",
-    "contactSocialMedia": "Hubungi & Media Sosial"
+    "contactSocialMedia": "Hubungi & Media Sosial",
+    "SpecialBonus": {
+      "InviteAndBenefits": "Jemputan dan Faedah",
+      "FavoriteGames": "Permainan Kegemaran",
+      "RecentlyPlayed": "Baru Dimainkan"
+    }
   },
   "MenuBar": {
     "demo": "Demo",
@@ -622,5 +629,42 @@
       },
       "note": "Pulangan tunai hanya terpakai kepada baki utama sahaja."
     }
+  },
+  "ProfileModal": {
+    "header": {
+      "username": "rith sok",
+      "points": "800.00 Mata",
+      "generalSetting": "Tetapan Umum",
+      "progress": {
+        "label": "Kemajuan",
+        "bronze": "Gangsa",
+        "silver": "Perak"
+      }
+    },
+    "menu": {
+      "myProfile": "Profil Saya",
+      "reward": "Ganjaran",
+      "rebate": "Rebat",
+      "referral": "Rujukan",
+      "pointHistory": "Sejarah Mata",
+      "levels": "Peringkat",
+      "history": "Sejarah",
+      "cashback": "Pulangan Tunai",
+      "totalBet": "Jumlah Pertaruhan",
+      "quests": "Misi"
+    },
+    "logout": "Log Keluar"
+  },
+  "referal": {
+    "heading": "Jemput rakan dan dapatkan 3% setiap hari",
+    "subheading": "💰 Dapatkan komisen 3% setiap hari 💰",
+    "list": {
+      "item1": "✅ Komisen boleh dipindahkan ke dompet utama. Diperlukan perolehan 4x sebelum pengeluaran.",
+      "item2": "✅ Komisen minimum sebanyak 5 Ringgit diperlukan untuk memindah ke dompet utama.",
+      "item3": "✅ Komisen maksimum untuk menjemput rakan adalah 3,000 Ringgit setiap hari.",
+      "item4": "✅ Hanya deposit rakan yang tidak menggunakan promosi akan dikira."
+    },
+    "footer": "💵 Sistem akan mengira kerugian rakan anda setiap hari dari 00:00 hingga 23:59. Pendapatan akan dikira setiap hari pada pukul 8:00 pagi.",
+    "imageAlt": "Banner Rujukan"
   }
 }

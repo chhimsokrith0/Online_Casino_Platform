@@ -19,6 +19,7 @@ import {
 import Link from "next/link";
 import gsap from "gsap";
 import { signOut } from "next-auth/react";
+import { useTranslations } from "next-intl";
 
 interface ProfileModalProps {
   isOpen: boolean;
@@ -30,6 +31,8 @@ const ProfileModal: React.FC<ProfileModalProps> = ({ isOpen, onClose, locale }) 
   const modalRef = useRef<HTMLDivElement>(null);
   const actionRefs = useRef<HTMLButtonElement[]>([]);
   const logoutRef = useRef<HTMLButtonElement | null>(null);
+
+  const t = useTranslations("ProfileModal");
 
   useEffect(() => {
     if (isOpen) {
@@ -105,8 +108,8 @@ const ProfileModal: React.FC<ProfileModalProps> = ({ isOpen, onClose, locale }) 
                   className="w-10 h-10 rounded-full"
                 />
                 <div>
-                  <h2 className="text-lg font-bold">rith sok</h2>
-                  <p className="text-yellow-400 text-sm">800.00 Points</p>
+                  <h2 className="text-lg font-bold"> {t("header.username")} </h2>
+                  <p className="text-yellow-400 text-sm">{t("header.points")}</p>
                 </div>
               </div>
               {/* Settings Button */}
@@ -115,20 +118,20 @@ const ProfileModal: React.FC<ProfileModalProps> = ({ isOpen, onClose, locale }) 
                 className="text-gray-400 hover:text-yellow-500 flex items-center gap-2"
                 onClick={handleButtonClick}
               >
-                <span>General Setting</span>
+                <span>{t("header.generalSetting")}</span>
                 <FontAwesomeIcon icon={faCog} />
               </Link>
             </div>
 
             {/* Progress Section */}
             <div className="mb-4">
-              <p className="text-sm text-gray-400">Progress</p>
+              <p className="text-sm text-gray-400">{t("header.progress.label")}</p>
               <div className="bg-gray-700 rounded-full h-2 w-full overflow-hidden mt-1">
                 <div className="bg-yellow-500 h-full" style={{ width: "0%" }} />
               </div>
               <div className="flex justify-between text-xs text-gray-400 mt-2">
-                <span>Bronze</span>
-                <span>Silver</span>
+                <span>{t("header.progress.bronze")}</span>
+                <span>{t("header.progress.silver")}</span>
               </div>
             </div>
           </div>
@@ -137,16 +140,16 @@ const ProfileModal: React.FC<ProfileModalProps> = ({ isOpen, onClose, locale }) 
           <div className="bg-gray-800 p-4 rounded-lg mt-4">
             <div className="grid grid-cols-2 gap-2 sm:gap-4">
               {[
-                { icon: faUser, label: "My Profile", link: `/${locale}/account-information`, active: false },
-                { icon: faCrown, label: "Levels", link: `/${locale}/member-level`, active: false },
-                { icon: faGift, label: "Reward", link: `/${locale}/Reward/random-card`, active: false },
-                { icon: faHistory, label: "History", link: `/${locale}/account-information/transactions`, active: false },
-                { icon: faArrowCircleUp, label: "Rebate", link: `/${locale}/account-information/rebate`, active: false },
-                { icon: faDollarSign, label: "Cashback", link: `/${locale}/account-information/cashback`, active: false },
-                { icon: faBoxOpen, label: "Referral", link: `/${locale}/account-information/affiliate`, active: false },
-                { icon: faChartBar, label: "Total Bet", link: `/${locale}/account-information/total-bet`, active: false },
-                { icon: faStar, label: "Point History", link: `/${locale}/account-information/current-point`, active: false },
-                { icon: faBolt, label: "Quests", link: `/${locale}/quests`, active: false },
+                { icon: faUser, label: t("menu.myProfile"), link: `/${locale}/account-information`, active: false },
+                { icon: faCrown, label:t("menu.levels"), link: `/${locale}/member-level`, active: false },
+                { icon: faGift, label: t("menu.reward"), link: `/${locale}/Reward/random-card`, active: false },
+                { icon: faHistory, label: t("menu.history"), link: `/${locale}/account-information/transactions`, active: false },
+                { icon: faArrowCircleUp, label: t("menu.rebate"), link: `/${locale}/account-information/rebate`, active: false },
+                { icon: faDollarSign, label: t("menu.cashback"), link: `/${locale}/account-information/cashback`, active: false },
+                { icon: faBoxOpen, label: t("menu.referral"), link: `/${locale}/account-information/affiliate`, active: false },
+                { icon: faChartBar, label: t("menu.totalBet"), link: `/${locale}/account-information/total-bet`, active: false },
+                { icon: faStar, label: t("menu.pointHistory"), link: `/${locale}/account-information/current-point`, active: false },
+                { icon: faBolt, label: t("menu.quests"), link: `/${locale}/quests`, active: false },
               ].map((action, index) => (
                 <Link href={action.link} key={index}>
                   <button
@@ -175,7 +178,7 @@ const ProfileModal: React.FC<ProfileModalProps> = ({ isOpen, onClose, locale }) 
             className="flex items-center justify-start gap-2 mt-4 bg-gray-800 w-1/3 p-3 rounded-lg w-full hover:bg-red-600 transition"
           >
             <FontAwesomeIcon icon={faSignOutAlt} className="text-lg text-gray-400" />
-            <span className="text-sm text-gray-400">Log out</span>
+            <span className="text-sm text-gray-400">{t("logout")}</span>
           </button>
         </div>
       </div>
@@ -199,8 +202,8 @@ const ProfileModal: React.FC<ProfileModalProps> = ({ isOpen, onClose, locale }) 
                   className="w-10 h-10 rounded-full"
                 />
                 <div>
-                  <h2 className="text-lg font-bold">rith sok</h2>
-                  <p className="text-yellow-400 text-sm">800.00 Points</p>
+                  <h2 className="text-lg font-bold"> {t("header.username")} </h2>
+                  <p className="text-yellow-400 text-sm">{t("header.points")}</p>
                 </div>
               </div>
               {/* Settings Button */}
@@ -215,13 +218,13 @@ const ProfileModal: React.FC<ProfileModalProps> = ({ isOpen, onClose, locale }) 
 
             {/* Progress Section */}
             <div className="mb-4">
-              <p className="text-sm text-gray-400">Progress</p>
+              <p className="text-sm text-gray-400">{t("header.progress.label")}</p>
               <div className="bg-gray-700 rounded-full h-2 w-full overflow-hidden mt-1">
-                <div className="bg-yellow-500 h-full" style={{ width: "40%" }} />
+                <div className="bg-yellow-500 h-full" style={{ width: "0%" }} />
               </div>
               <div className="flex justify-between text-xs text-gray-400 mt-2">
-                <span>Bronze</span>
-                <span>Silver</span>
+                <span>{t("header.progress.bronze")}</span>
+                <span>{t("header.progress.silver")}</span>
               </div>
             </div>
           </div>
@@ -230,16 +233,16 @@ const ProfileModal: React.FC<ProfileModalProps> = ({ isOpen, onClose, locale }) 
           <div className="bg-gray-800 p-4 rounded-lg mt-4">
             <div className="grid grid-cols-2 gap-2 sm:gap-4">
               {[
-                { icon: faUser, label: "My Profile", link: `/${locale}/account-information`, active: false },
-                { icon: faCrown, label: "Levels", link: `/${locale}/member-level`, active: false },
-                { icon: faGift, label: "Reward", link: `/${locale}/Reward/random-card`, active: false },
-                { icon: faHistory, label: "History", link: `/${locale}/account-information/transactions`, active: false },
-                { icon: faArrowCircleUp, label: "Rebate", link: `/${locale}/account-information/rebate`, active: false },
-                { icon: faDollarSign, label: "Cashback", link: `/${locale}/account-information/cashback`, active: false },
-                { icon: faBoxOpen, label: "Referral", link: `/${locale}/account-information/affiliate`, active: false },
-                { icon: faChartBar, label: "Total Bet", link: `/${locale}/account-information/total-bet`, active: false },
-                { icon: faStar, label: "Point History", link: `/${locale}/account-information/current-point`, active: false },
-                { icon: faBolt, label: "Quests", link: `/${locale}/quests`, active: false },
+                { icon: faUser, label: t("menu.myProfile"), link: `/${locale}/account-information`, active: false },
+                { icon: faCrown, label:t("menu.levels"), link: `/${locale}/member-level`, active: false },
+                { icon: faGift, label: t("menu.reward"), link: `/${locale}/Reward/random-card`, active: false },
+                { icon: faHistory, label: t("menu.history"), link: `/${locale}/account-information/transactions`, active: false },
+                { icon: faArrowCircleUp, label: t("menu.rebate"), link: `/${locale}/account-information/rebate`, active: false },
+                { icon: faDollarSign, label: t("menu.cashback"), link: `/${locale}/account-information/cashback`, active: false },
+                { icon: faBoxOpen, label: t("menu.referral"), link: `/${locale}/account-information/affiliate`, active: false },
+                { icon: faChartBar, label: t("menu.totalBet"), link: `/${locale}/account-information/total-bet`, active: false },
+                { icon: faStar, label: t("menu.pointHistory"), link: `/${locale}/account-information/current-point`, active: false },
+                { icon: faBolt, label: t("menu.quests"), link: `/${locale}/quests`, active: false },
               ].map((action, index) => (
                 <Link href={action.link} key={index}>
                   <button
@@ -269,7 +272,7 @@ const ProfileModal: React.FC<ProfileModalProps> = ({ isOpen, onClose, locale }) 
             className="flex items-center justify-start gap-2 mt-4 bg-gray-800 w-1/3 p-3 rounded-lg w-full hover:bg-red-600 transition"
           >
             <FontAwesomeIcon icon={faSignOutAlt} className="text-lg text-gray-400" />
-            <span className="text-sm text-gray-400">Log out</span>
+            <span className="text-sm text-gray-400">{t("logout")}</span>
           </button>
         </div>
       </div>

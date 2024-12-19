@@ -36,7 +36,7 @@ const AllGames: React.FC<AllGamesProps> = ({ locale }) => {
   const [loading, setLoading] = useState<boolean>(true); // Loading state
 
   const t = useTranslations("games.allGame");
-   const { isCollapsed } = useSidebar(); 
+  const { isCollapsed } = useSidebar();
 
   // Load and generate games data
   const gamesData: Game[] = generateGamesData(t);

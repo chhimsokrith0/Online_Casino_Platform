@@ -22,7 +22,7 @@ export default createMiddleware({
   // List of supported locales
   locales: [
     "en", "th", "hi", "zh", "kh", "id", "ms", "sg", "vi", "ph",
-    "mm", "lo", "bn", "ko", "tw", "ur", "hk",
+    "mm", "lo", "bn", "ko", "tw", "ur", "hk","pt", "au", "ca",
   ],
   defaultLocale: "en", // Default locale
 });
@@ -32,7 +32,7 @@ export const config = {
   matcher: [
     "/",
     "/((?!api|_next|favicon.ico).*)", // Exclude API routes, assets, and favicon
-    "/(th|en|hi|zh|kh|id|ms|sg|vi|ph|mm|lo|bn|ko|tw|ur|hk)/:path*", // Include localized paths
+    "/(th|en|hi|zh|kh|id|ms|sg|vi|ph|mm|lo|bn|ko|tw|ur|hk|pt|au|ca)/:path*", // Include localized paths
   ],
 };
 

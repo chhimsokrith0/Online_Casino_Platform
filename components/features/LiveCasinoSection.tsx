@@ -14,10 +14,12 @@ import img6 from "@/assets/img-live-casino/6.png";
 import { useTranslations } from "next-intl";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
+import SignupModal from "@/components/Navbar/SignUpModal";
 
 const LiveCasinoSection: React.FC = () => {
     const { data: session } = useSession();
     const t = useTranslations("liveCasino");
+    const [showSignUpModal, setShowSignUpModal] = React.useState(false);
 
     const liveCasinoGames = [
         {
@@ -151,7 +153,7 @@ const LiveCasinoSection: React.FC = () => {
 
                         {/* Overlay for Game Details */}
                         <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            {session && (
+                            {session ? (
                                 <div
                                     className="w-16 h-16 rounded-full flex items-center justify-center hover:bg-yellow-500 transition transform hover:scale-110 cursor-pointer shadow-lg"
                                     onClick={() => handleClick(cardRefs.current[index])}
@@ -159,6 +161,17 @@ const LiveCasinoSection: React.FC = () => {
                                     <img
                                         src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733994091/play-button-svgrepo-com_n1u2ih.svg"
                                         alt="Play"
+                                        className="w-16 h-16"
+                                    />
+                                </div>
+                            ) : (
+                                <div
+                                    className="w-16 h-16 rounded-full flex items-center justify-center hover:bg-red-500 transition transform hover:scale-110 cursor-pointer shadow-lg"
+                                    onClick={() => setShowSignUpModal(true)} // Show the modal when clicked
+                                >
+                                    <img
+                                        src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733994091/play-button-svgrepo-com_n1u2ih.svg"
+                                        alt="Sign Up"
                                         className="w-16 h-16"
                                     />
                                 </div>
@@ -176,6 +189,9 @@ const LiveCasinoSection: React.FC = () => {
                     </div>
                 ))}
             </div>
+            {showSignUpModal && (
+                <SignupModal activeTab="signIn" onClose={() => setShowSignUpModal(false)} />
+            )}
         </div>
     );
 };

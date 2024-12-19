@@ -292,7 +292,7 @@ const OtherSections = ({
                 </span>
               )}
             </div>
-            {!isCollapsed && <span className="font-medium">Invite and Benefit</span>}
+            {!isCollapsed && <span className="font-medium">{ t("SpecialBonus.InviteAndBenefits") }</span>}
           </li>
 
           {/* Favorite Games */}
@@ -306,7 +306,7 @@ const OtherSections = ({
                 }`}
             >
               <FontAwesomeIcon icon={faHeart} className="text-red-500" />
-              {!isCollapsed && <span className="font-medium">Favorite Games</span>}
+              {!isCollapsed && <span className="font-medium"> { t("SpecialBonus.FavoriteGames") } </span>}
             </li>
           </Link>
 
@@ -321,7 +321,7 @@ const OtherSections = ({
                 }`}
             >
               <FontAwesomeIcon icon={faClock} className="text-yellow-400" />
-              {!isCollapsed && <span className="font-medium">Recently Played</span>}
+              {!isCollapsed && <span className="font-medium">{ t("SpecialBonus.RecentlyPlayed") }</span>}
             </li>
           </Link>
           <div className="border-t border-gray-700 my-4"></div>

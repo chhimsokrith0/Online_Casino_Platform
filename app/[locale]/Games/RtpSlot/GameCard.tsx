@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { useSession } from "next-auth/react";
+import SignupModal from "@/components/Navbar/SignUpModal";
 
 interface GameCardProps {
   title: string;
@@ -15,6 +16,7 @@ const GameCard: React.FC<GameCardProps> = ({ title, provider, image, percentage 
   const cardRef = useRef<HTMLDivElement | null>(null);
   const buttonRef = useRef<HTMLDivElement | null>(null);
   const { data: session } = useSession();
+  const [showSignUpModal, setShowSignUpModal] = React.useState(false);
 
   useEffect(() => {
     if (cardRef.current) {
@@ -72,23 +74,28 @@ const GameCard: React.FC<GameCardProps> = ({ title, provider, image, percentage 
 
       {/* Play Button */}
       <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        {session && (
+        {session ? (
           <div
             ref={buttonRef}
-            className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center hover:bg-yellow-500 transition cursor-pointer"
+            className="w-16 h-16 rounded-full flex items-center justify-center hover:bg-yellow-500 transition transform hover:scale-110 cursor-pointer shadow-lg"
             onClick={handleClick}
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 64 64"
-              className="w-8 h-8 text-black"
-            >
-              <circle cx="32" cy="32" r="30" fill="#FFCC00" /> {/* Yellow background */}
-              <path
-                fill="#000"
-                d="M26 20l20 12-20 12V20z"
-              /> {/* Play icon */}
-            </svg>
+            <img
+              src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733994091/play-button-svgrepo-com_n1u2ih.svg"
+              alt="Play"
+              className="w-16 h-16"
+            />
+          </div>
+        ) : (
+          <div
+            className="w-16 h-16 rounded-full flex items-center justify-center hover:bg-red-500 transition transform hover:scale-110 cursor-pointer shadow-lg"
+            onClick={() => setShowSignUpModal(true)} // Show the modal when clicked
+          >
+            <img
+              src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733994091/play-button-svgrepo-com_n1u2ih.svg"
+              alt="Sign Up"
+              className="w-16 h-16"
+            />
           </div>
         )}
       </div>
@@ -101,8 +108,8 @@ const GameCard: React.FC<GameCardProps> = ({ title, provider, image, percentage 
           {/* Percentage Badge */}
           <div
             className={`flex items-center text-xs font-bold rounded-full px-2 py-1 ${parseFloat(percentage) > 50
-                ? "bg-green-600 text-white"
-                : "bg-yellow-500 text-white"
+              ? "bg-green-600 text-white"
+              : "bg-yellow-500 text-white"
               }`}
           >
             {percentage}
@@ -129,6 +136,9 @@ const GameCard: React.FC<GameCardProps> = ({ title, provider, image, percentage 
         </div>
 
       </div>
+      {showSignUpModal && (
+        <SignupModal activeTab="signIn" onClose={() => setShowSignUpModal(false)} />
+      )}
     </div>
 
   );

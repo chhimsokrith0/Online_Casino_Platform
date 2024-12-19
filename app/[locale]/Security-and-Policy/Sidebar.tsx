@@ -15,20 +15,24 @@ const Sidebar = () => {
   ];
 
   useEffect(() => {
-    // Load the active menu item from localStorage when the component mounts
-    const storedActiveItem = localStorage.getItem("activeMenuItem");
-    if (storedActiveItem) {
-      setActiveItem(storedActiveItem);
-    } else {
-      // Set default active item to "General"
-      setActiveItem("General");
+    // Safely access localStorage for hydration
+    if (typeof window !== "undefined") {
+      const storedActiveItem = localStorage.getItem("activeMenuItem");
+      if (storedActiveItem) {
+        setActiveItem(storedActiveItem);
+      } else {
+        // Set default active item if none is stored
+        setActiveItem(menuItems[0].label);
+      }
     }
   }, []);
 
   const handleItemClick = (label: string) => {
     setActiveItem(label);
-    // Save the active menu item to localStorage
-    localStorage.setItem("activeMenuItem", label);
+    // Safely store the active menu item in localStorage
+    if (typeof window !== "undefined") {
+      localStorage.setItem("activeMenuItem", label);
+    }
   };
 
   return (
@@ -39,7 +43,9 @@ const Sidebar = () => {
             <Link
               href={item.link}
               onClick={() => handleItemClick(item.label)}
-              className={`flex items-center px-4 py-3 w-full hover:bg-gray-700 rounded-full transition `}
+              className={`flex items-center px-4 py-3 w-full rounded-full transition ${
+                activeItem === item.label ? "bg-gray-700 text-white" : "hover:bg-gray-700 text-gray-300"
+              }`}
             >
               {item.label}
             </Link>

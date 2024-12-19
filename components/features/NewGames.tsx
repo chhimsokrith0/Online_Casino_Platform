@@ -9,6 +9,7 @@ import { useSession } from "next-auth/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import SignupModal from "@/components/Navbar/SignUpModal";
 
 const NewGames: React.FC = () => {
     const t = useTranslations("newGames");
@@ -21,6 +22,8 @@ const NewGames: React.FC = () => {
 
     const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
     const [favorites, setFavorites] = useState<number[]>([]);
+
+    const [showSignUpModal, setShowSignUpModal] = React.useState(false);
 
     useEffect(() => {
         // GSAP entrance animation for the cards
@@ -97,9 +100,8 @@ const NewGames: React.FC = () => {
                         >
                             <FontAwesomeIcon
                                 icon={faHeart}
-                                className={`text-2xl ${
-                                    favorites.includes(game.id) ? "text-red-500" : "text-gray-400"
-                                }`}
+                                className={`text-2xl ${favorites.includes(game.id) ? "text-red-500" : "text-gray-400"
+                                    }`}
                             />
                         </div>
 
@@ -112,7 +114,7 @@ const NewGames: React.FC = () => {
 
                         {/* Overlay */}
                         <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            {session && (
+                            {session ? (
                                 <div
                                     className="w-16 h-16 rounded-full flex items-center justify-center hover:bg-yellow-500 transition transform hover:scale-110 cursor-pointer shadow-lg"
                                     onClick={() => handleClick(cardRefs.current[index])}
@@ -120,6 +122,17 @@ const NewGames: React.FC = () => {
                                     <img
                                         src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733994091/play-button-svgrepo-com_n1u2ih.svg"
                                         alt="Play"
+                                        className="w-16 h-16"
+                                    />
+                                </div>
+                            ) : (
+                                <div
+                                    className="w-16 h-16 rounded-full flex items-center justify-center hover:bg-red-500 transition transform hover:scale-110 cursor-pointer shadow-lg"
+                                    onClick={() => setShowSignUpModal(true)} // Show the modal when clicked
+                                >
+                                    <img
+                                        src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733994091/play-button-svgrepo-com_n1u2ih.svg"
+                                        alt="Sign Up"
                                         className="w-16 h-16"
                                     />
                                 </div>
@@ -134,6 +147,9 @@ const NewGames: React.FC = () => {
                     </div>
                 ))}
             </div>
+            {showSignUpModal && (
+                <SignupModal activeTab="signIn" onClose={() => setShowSignUpModal(false)} />
+            )}
         </div>
     );
 };

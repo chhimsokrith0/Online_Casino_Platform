@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'nesthubmax': '1280px', // Nest Hub Max resolution
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

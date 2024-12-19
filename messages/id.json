@@ -46,19 +46,26 @@
     "home": "Beranda",
     "slots": "Slot",
     "liveCasino": "Kasino Langsung",
-    "privileges": "Keistimewaan",
+    "privileges": "Hak Istimewa",
     "quests": "Misi",
     "reward": "Hadiah",
     "promo": "Promo",
     "levels": "Tingkat",
-    "referral": "Referensi",
+    "referral": "Rujukan",
     "providers": "Penyedia",
-    "rtpSlots": "Slot RTP",
-    "sports": "Olahraga",
-    "fishing": "Memancing",
-    "virtual": "Virtual",
-    "languageOption": "Opsi Bahasa",
-    "contactSocialMedia": "Hubungi & Media Sosial"
+    "RtpSlot": "Slot RTP",
+    "Sport": "Olahraga",
+    "Fishing": "Memancing",
+    "Virtual": "Virtual",
+    "crash": "Crash",
+    "lotto": "Lotre",
+    "languageOption": "Pilihan Bahasa",
+    "contactSocialMedia": "Kontak & Media Sosial",
+    "SpecialBonus": {
+      "InviteAndBenefits": "Undang dan Keuntungan",
+      "FavoriteGames": "Permainan Favorit",
+      "RecentlyPlayed": "Baru Dimainkan"
+    }
   },
   "MenuBar": {
     "demo": "Demo",
@@ -675,5 +682,42 @@
       },
       "note": "Pengembalian tunai hanya berlaku untuk saldo utama."
     }
+  },
+  "ProfileModal": {
+    "header": {
+      "username": "rith sok",
+      "points": "800.00 Poin",
+      "generalSetting": "Pengaturan Umum",
+      "progress": {
+        "label": "Progres",
+        "bronze": "Perunggu",
+        "silver": "Perak"
+      }
+    },
+    "menu": {
+      "myProfile": "Profil Saya",
+      "reward": "Hadiah",
+      "rebate": "Rebat",
+      "referral": "Referensi",
+      "pointHistory": "Riwayat Poin",
+      "levels": "Tingkat",
+      "history": "Riwayat",
+      "cashback": "Cashback",
+      "totalBet": "Total Taruhan",
+      "quests": "Misi"
+    },
+    "logout": "Keluar"
+  },
+  "referal": {
+    "heading": "Undang teman dan dapatkan 3% setiap hari",
+    "subheading": "💰 Dapatkan komisi 3% setiap hari 💰",
+    "list": {
+      "item1": "✅ Komisi dapat ditransfer ke dompet utama. Diperlukan 4x turnover sebelum penarikan.",
+      "item2": "✅ Komisi minimum sebesar 5 Rupiah diperlukan untuk menarik ke dompet utama.",
+      "item3": "✅ Komisi maksimal untuk mengundang teman adalah 3.000 Rupiah setiap hari.",
+      "item4": "✅ Hanya setoran teman yang tidak menggunakan promosi yang akan dihitung."
+    },
+    "footer": "💵 Sistem menghitung kerugian teman Anda setiap hari dari pukul 00:00 hingga 23:59. Pendapatan dihitung setiap hari pada pukul 08:00.",
+    "imageAlt": "Spanduk Referal"
   }
 }

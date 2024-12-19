@@ -1,0 +1,854 @@
+{
+    "NavbarLinks": {
+        "home": "Início",
+        "homeTitle": "Tema",
+        "about": "Sobre",
+        "aboutTitle": "Página Sobre",
+        "profile": "Perfil",
+        "profileTitle": "Página de Perfil",
+        "signUp": "Registrar",
+        "signIn": "Entrar"
+    },
+    "Carousel": {
+        "banner1": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203489/1_w8yo2j.jpg",
+        "banner2": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/4_klezxe.jpg",
+        "banner3": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/5_wdyqca.jpg",
+        "banner4": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/2_iyfjbc.jpg",
+        "banner5": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/3_oauyjg.jpg"
+    },
+    "NavbarWallet": {
+        "currency": "USD",
+        "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034744/USD_ruok8f.png",
+        "wallet": "Carteira",
+        "points": "Pontos",
+        "balance": "0.00",
+        "bronze": "Bronze"
+    },
+    "Notification": {
+        "title": "Notificação",
+        "close": "Fechar",
+        "header": "Jogo Acumulado",
+        "description": "Jogue slots de todos os provedores e acumule até 30.000 THB para desbloquear uma recompensa de 10.000 gemas.",
+        "image": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1732973194/end_hgzbwq.png"
+    },
+    "HomePage": {
+        "title": "Página Inicial"
+    },
+    "AboutPage": {
+        "title": "Sobre"
+    },
+    "ProfilePage": {
+        "title": "Perfil"
+    },
+    "welcome": "Bem-vindo ao nosso site",
+    "languageSwitch": "Mudar Idioma",
+    "slidebar": {
+        "home": "Início",
+        "slots": "Caça-Níqueis",
+        "liveCasino": "Cassino ao Vivo",
+        "privileges": "Privilégios",
+        "quests": "Missões",
+        "reward": "Recompensa",
+        "promo": "Promoção",
+        "levels": "Níveis",
+        "referral": "Indicação",
+        "providers": "Provedores",
+        "RtpSlot": "Caça-Níqueis RTP",
+        "Sport": "Esportes",
+        "Fishing": "Pesca",
+        "Virtual": "Virtual",
+        "crash": "Crash",
+        "lotto": "Loteria",
+        "languageOption": "Opção de Idioma",
+        "contactSocialMedia": "Contato & Redes Sociais",
+        "SpecialBonus": {
+            "InviteAndBenefits": "Convide e Ganhe Benefícios",
+            "FavoriteGames": "Jogos Favoritos",
+            "RecentlyPlayed": "Jogos Recentes"
+        }
+    },
+    "MenuBar": {
+        "demo": "Demonstração",
+        "allGames": "Todos os Jogos",
+        "popularGames": "Jogos Populares",
+        "newGames": "Novos Jogos",
+        "cashDrop": "Distribuição de Prêmios",
+        "jackpots": "Jackpots",
+        "megaways": "Megaways",
+        "tableGames": "Jogos de Mesa",
+        "providers": "Provedores"
+    },
+    "popularGames": {
+        "title": "Jogos Populares",
+        "seeAll": "Ver Todos",
+        "games": {
+            "jewelMania": "Jewel Mania",
+            "hotFruitsOnFire": "Hot Fruits on Fire",
+            "barsAndBells": "#BarrasEGuizos",
+            "reelReelHot": "Reel Reel Hot",
+            "spiritOfTheLake": "Espírito do Lago",
+            "twinWinsMystery": "O Mistério dos Gêmeos Vencedores"
+        },
+        "provider": "Mancala"
+    },
+    "newGames": {
+        "title": "Novos Jogos",
+        "seeAll": "Ver Todos",
+        "games": {
+            "spiritOfTheLake": "Espírito do Lago",
+            "twinWinsMystery": "O Mistério dos Gêmeos Vencedores"
+        },
+        "provider": "Mancala"
+    },
+    "promotions": {
+        "title": "Promoções",
+        "seeAll": "Ver Todas"
+    },
+    "liveCasino": {
+        "title": "Cassino ao Vivo",
+        "seeAll": "Ver Todos",
+        "games": {
+            "pragmaticLive": "Pragmatic Live",
+            "baccaratC08": "Bacará C08",
+            "baccarat": "Bacará",
+            "dreamGaming": "DreamGaming",
+            "topGamesLobby": "Lobby dos Melhores Jogos",
+            "liveCasino": "Cassino ao Vivo"
+        },
+        "providers": {
+            "pragmaticPlay": "PragmaticPlay",
+            "sa": "SA",
+            "aeSexy": "Ae Sexy",
+            "dreamGaming": "DreamGaming",
+            "evolutionGaming": "Evolution Gaming",
+            "weGaming": "We Gaming"
+        }
+    },
+    "gameProviders": {
+        "title": "Provedores de Jogos",
+        "seeAll": "Ver Todos",
+        "providers": {
+            "pg": {
+                "name": "PG",
+                "description": "Pocket Games Soft",
+                "play": "Jogar"
+            },
+            "joker": {
+                "name": "Joker",
+                "description": "Joker",
+                "play": "Jogar"
+            },
+            "jili": {
+                "name": "JILI",
+                "description": "JILI",
+                "play": "Jogar"
+            },
+            "pragmaticPlay": {
+                "name": "Pragmatic Play",
+                "description": "Pragmatic Play",
+                "play": "Jogar"
+            }
+        }
+    },
+    "footer": {
+        "gameCategory": "Categoria de Jogos",
+        "categories": {
+            "demo": "Demonstração",
+            "newGames": "Novos Jogos",
+            "popular": "Populares",
+            "cashDrops": "Distribuição de Prêmios",
+            "jackpots": "Jackpots",
+            "megaways": "Megaways",
+            "tableGames": "Jogos de Mesa",
+            "allGames": "Todos os Jogos"
+        },
+        "liveCasino": "Cassino ao Vivo",
+        "allLiveCasino": "Todos os Cassinos ao Vivo",
+        "specials": {
+            "title": "Especiais",
+            "quests": "Missões",
+            "reward": "Recompensa",
+            "referral": "Indicação",
+            "level": "Nível"
+        },
+        "information": {
+            "title": "Informações",
+            "termsAndConditions": "Termos e Condições",
+            "privacyPolicy": "Política de Privacidade",
+            "cookiesPolicy": "Política de Cookies"
+        },
+        "followUs": "Siga-nos",
+        "poweredBy": "Desenvolvido por Rith CT"
+    },
+    "header": {
+        "signUp": "Registrar",
+        "signIn": "Entrar"
+    },
+    "mobieleNavbar": {
+        "menu": "Menu",
+        "slots": "Caça-Níqueis",
+        "signIn": "Entrar",
+        "Wallet": "Carteira",
+        "liveCasino": "Cassino ao Vivo",
+        "promo": "Promoção"
+    },
+    "RewardSection": {
+        "mainTitle": "DESBLOQUEIE BENEFÍCIOS INFINITOS",
+        "mainSubtitle": "Registre-se agora e embarque em uma jornada emocionante de vantagens. Abra as portas para recompensas ilimitadas.",
+        "joinButton": "Junte-se ao PlayGame168",
+        "steps": {
+            "step1": "Registre-se e faça um depósito",
+            "step2": "Jogue seus jogos favoritos",
+            "step3": "Troque sua recompensa"
+        },
+        "enjoyOurGames": {
+            "title": "APROVEITE NOSSOS JOGOS!",
+            "description": "Na Live Casino House, oferecemos mais de 4.000 jogos emocionantes para você explorar.",
+            "button": "Resgate Sua Recompensa"
+        },
+        "enjoyOurPromotions": {
+            "title": "APROVEITE NOSSAS PROMOÇÕES!",
+            "description": "Deposite hoje e desbloqueie um mundo de recompensas exclusivas como nunca antes com nosso programa de recompensas.",
+            "button": "Resgate Sua Recompensa"
+        },
+        "benefitsSection": {
+            "title": "OBTENHA INÚMEROS BENEFÍCIOS GRATUITOS",
+            "benefits": {
+                "questHub": {
+                    "title": "CENTRO DE MISSÕES",
+                    "description": "Conquiste desafios diários e semanais para aumentar rapidamente seus ganhos.",
+                    "tag": "Todos os Dias & Semana"
+                },
+                "loyaltyVip": {
+                    "title": "FIDELIDADE VIP",
+                    "description": "Desbloqueie benefícios exclusivos à medida que avança nos níveis do Clube VIP de Fidelidade.",
+                    "tag": "Todos os Dias & Semana"
+                },
+                "tournament": {
+                    "title": "TORNEIO",
+                    "description": "Compita, enfrente o desafio e conquiste a vitória em nossos emocionantes torneios.",
+                    "tag": "Toda Semana"
+                }
+            }
+        },
+        "introducingExclusive": {
+            "title": "Apresentando Nosso Programa Exclusivo de Reembolso e Cashback",
+            "description": "Junte-se à emoção e comece a ganhar reembolsos e cashback hoje com nosso programa exclusivo. Não perca essas recompensas fantásticas!",
+            "joinButton": "Junte-se ao PlayGame168 Hoje →",
+            "features": {
+                "activation": {
+                    "title": "Ativação",
+                    "description": "Suba de nível através de missões e desafios a caminho do maior nível de conquista."
+                },
+                "bonus": {
+                    "title": "Bônus",
+                    "description": "Resgate seu bônus diário e semanal ao completar as tarefas consistentemente."
+                },
+                "rewardTier": {
+                    "title": "Níveis de Recompensa",
+                    "description": "Eleve seu status e desfrute de recompensas melhores conforme sobe nos níveis."
+                }
+            }
+        },
+        "deluxeExperience": {
+            "title": "Temos o prazer de oferecer a você a experiência de jogo mais luxuosa",
+            "button": "Cadastre-se"
+        }
+    },
+    "MemberLevel": {
+        "mainTitle": "DESBLOQUEIE SEUS NÍVEIS EXCLUSIVOS",
+        "mainSubtitle": "Junte-se ao programa de membros exclusivos e aproveite recompensas incríveis à medida que avança pelos níveis.",
+        "joinButton": "Junte-se aos Níveis",
+        "exclusiveBenefits": {
+            "title": "Benefícios Exclusivos VIP",
+            "benefits": {
+                "levelsRewards": {
+                    "title": "Níveis e Recompensas",
+                    "description": "Quanto mais você joga, mais você ganha"
+                },
+                "exclusivePromotions": {
+                    "title": "Promoções Exclusivas",
+                    "description": "Alcance uma classificação mais alta para desbloquear benefícios."
+                },
+                "higherCashback": {
+                    "title": "Cashback Maior",
+                    "description": "Receba até 12% em recompensas de cashback"
+                },
+                "royaltyClub": {
+                    "title": "Clube de Realeza",
+                    "description": "Junte-se ao Clube VIP para bônus exclusivos."
+                }
+            }
+        },
+        "carousel": {
+            "levels": {
+                "bronze": "Bronze",
+                "silver": "Prata",
+                "gold": "Ouro",
+                "diamond": "Diamante",
+                "platinum": "Platina",
+                "black": "Preto"
+            },
+            "cashback": "Cashback (%)"
+        }
+    },
+    "games": {
+        "GamesDemo": {
+            "waysOfTheQilin": {
+                "name": "Caminhos do Qilin",
+                "provider": "PGSoft"
+            },
+            "dragonHatch2": {
+                "name": "Chocando Dragões 2",
+                "provider": "PGSoft"
+            },
+            "futebolFever": {
+                "name": "Febre do Futebol",
+                "provider": "PGSoft"
+            },
+            "wildApe": {
+                "name": "Macaco Selvagem",
+                "provider": "PGSoft"
+            },
+            "yakuzaHonor": {
+                "name": "Honra Yakuza",
+                "provider": "PGSoft"
+            },
+            "wingsOfIguazu": {
+                "name": "Asas de Iguaçu",
+                "provider": "PGSoft"
+            },
+            "mysticPotion": {
+                "name": "Poção Mística",
+                "provider": "PGSoft"
+            },
+            "museumMystery": {
+                "name": "Mistério do Museu",
+                "provider": "PGSoft"
+            },
+            "chickyRun": {
+                "name": "Corrida do Pintinho",
+                "provider": "PGSoft"
+            },
+            "chocolateDeluxe": {
+                "name": "Chocolate Deluxe",
+                "provider": "PGSoft"
+            },
+            "tsarTreasures": {
+                "name": "Tesouros do Czar",
+                "provider": "PGSoft"
+            },
+            "rioFantasia": {
+                "name": "Fantasia no Rio",
+                "provider": "PGSoft"
+            },
+            "mafiaMayhem": {
+                "name": "Caos da Máfia",
+                "provider": "PGSoft"
+            },
+            "zombieOutbreak": {
+                "name": "Surto Zumbi",
+                "provider": "PGSoft"
+            },
+            "fortuneDragon": {
+                "name": "Dragão da Fortuna",
+                "provider": "PGSoft"
+            },
+            "anubisWrath": {
+                "name": "Ira de Anúbis",
+                "provider": "PGSoft"
+            },
+            "threeCrazyPiggies": {
+                "name": "Os Três Porquinhos Loucos",
+                "provider": "PGSoft"
+            },
+            "oishiDelights": {
+                "name": "Delícias Oishi",
+                "provider": "PGSoft"
+            },
+            "gemstonesGold": {
+                "name": "Pedras Preciosas Douradas",
+                "provider": "PGSoft"
+            },
+            "sweetieCrush": {
+                "name": "Doce Crush",
+                "provider": "Joker"
+            },
+            "sourCandy": {
+                "name": "Bala Azeda",
+                "provider": "Joker"
+            },
+            "zodiacBingo": {
+                "name": "Bingo do Zodíaco",
+                "provider": "Joker"
+            },
+            "huangFeiHong": {
+                "name": "Huang Fei Hong",
+                "provider": "Joker"
+            },
+            "silverHand": {
+                "name": "Mão de Prata",
+                "provider": "Joker"
+            }
+        },
+        "allGame": {
+            "title": "Todos os Jogos",
+            "seeAll": "Ver Todos",
+            "ninjaRaccoonFrenzy": {
+                "name": "Frenesi do Guaxinim Ninja",
+                "provider": "PGSoft"
+            },
+            "treasuresOfAztec": {
+                "name": "Tesouros dos Astecas",
+                "provider": "PGSoft"
+            },
+            "mahjongWays2": {
+                "name": "Caminhos do Mahjong 2",
+                "provider": "PGSoft"
+            },
+            "luckyNeko": {
+                "name": "Neko da Sorte",
+                "provider": "PGSoft"
+            },
+            "mahjongWays": {
+                "name": "Caminhos do Mahjong",
+                "provider": "PGSoft"
+            },
+            "wildBountyShowdown": {
+                "name": "Duelo Selvagem de Recompensas",
+                "provider": "PGSoft"
+            },
+            "waysOfTheQilin": {
+                "name": "Caminhos do Qilin",
+                "provider": "PGSoft"
+            },
+            "wildBandito": {
+                "name": "Bandido Selvagem",
+                "provider": "PGSoft"
+            },
+            "fortuneRabbit": {
+                "name": "Coelho da Fortuna",
+                "provider": "PGSoft"
+            },
+            "caishenWins": {
+                "name": "Caishen Vence",
+                "provider": "PGSoft"
+            },
+            "fortuneOx": {
+                "name": "Boi da Fortuna",
+                "provider": "PGSoft"
+            },
+            "ganeshaFortune": {
+                "name": "Fortuna de Ganesha",
+                "provider": "PGSoft"
+            }
+        }
+    },
+    "GamesHeader": {
+        "home": "Início",
+        "demo": "Demonstração",
+        "allGames": "Todos os Jogos",
+        "popularGames": "Jogos Populares",
+        "newGames": "Novos Jogos",
+        "cashDrop": "Distribuição de Prêmios",
+        "jackpots": "Jackpots",
+        "megaways": "Megaways",
+        "tableGames": "Jogos de Mesa",
+        "searchPlaceholder": "Encontre seu jogo",
+        "gameCount": "{count} Jogos"
+    },
+    "settings": {
+        "title": "Configuração Geral",
+        "menu": {
+            "general": "Geral",
+            "verification": "Verificação",
+            "changePassword": "Alterar Senha",
+            "activityLog": "Registro de Atividades"
+        },
+        "general": {
+            "language": "Idioma",
+            "eng": "Inglês"
+        },
+        "verification": {
+            "title": "Configuração de Verificação",
+            "AccountDetails": "Detalhes da Conta",
+            "PersonalInformation": "Informações Pessoais",
+            "Firstname": "Nome *",
+            "Lastname": "Sobrenome *",
+            "MobilePhone": "Celular *",
+            "BankingInformation": "Informações Bancárias",
+            "Bankname": "Nome do Banco *",
+            "Bankaccountnumber": "Número da Conta Bancária *",
+            "SaveChanges": "Salvar Alterações"
+        },
+        "changePassword": {
+            "title": "Alterar Senha",
+            "currentPassword": "Senha Atual *",
+            "newPassword": "Nova Senha *",
+            "confirmPassword": "Confirmar Senha *",
+            "currentPasswordPlaceholder": "Digite a senha atual",
+            "newPasswordPlaceholder": "Digite a nova senha",
+            "confirmPasswordPlaceholder": "Digite para confirmar a senha",
+            "reloginNote": "Será necessário fazer login novamente após alterar a senha.",
+            "passwordStrength": "Força da Senha",
+            "requirements": {
+                "minLength": "Deve ter pelo menos 8 caracteres.",
+                "uppercase": "Deve conter pelo menos 1 letra maiúscula (A-Z).",
+                "lowercase": "Deve conter pelo menos 1 letra minúscula (a-z).",
+                "numeric": "Deve conter pelo menos 1 dígito numérico (0-9)."
+            },
+            "saveChanges": "Salvar Alterações"
+        },
+        "activityLog": {
+            "title": "Registro de Atividades",
+            "totalActivities": "Total de Atividades:",
+            "filters": {
+                "all": "Todos",
+                "login": "Login",
+                "game": "Entrar no Jogo",
+                "quest": "Check-in Diário"
+            },
+            "columns": {
+                "dateTime": "Data-Hora",
+                "activity": "Atividade"
+            },
+            "activityTypes": {
+                "login": "Login",
+                "dailyCheckIn": "Check-in Diário da Missão",
+                "enterGame": "Entrar no Jogo"
+            },
+            "pagination": {
+                "page": "Página",
+                "of": "de"
+            }
+        }
+    },
+    "accountInformation": {
+        "title": "Informações da Conta",
+        "menu": {
+            "myProfile": "Meu Perfil",
+            "history": "Histórico",
+            "rebate": "Reembolso",
+            "cashback": "Cashback",
+            "totalBet": "Aposta Total",
+            "redeemHistory": "Histórico de Resgates",
+            "pointHistory": "Histórico de Pontos",
+            "personalMessage": "Mensagem Pessoal",
+            "referral": "Indicação"
+        },
+        "profile": {
+            "phoneNumber": "Número de Telefone",
+            "joinedOn": "Data de Registro",
+            "vipLevel": {
+                "current": "Nível Atual",
+                "upgrade": "Atualize Seu Nível VIP",
+                "progress": "Seu Progresso"
+            },
+            "wallet": {
+                "title": "Sua Carteira",
+                "balance": "Saldo"
+            },
+            "rebateBalance": "Saldo de Reembolso",
+            "cashbackBalance": "Saldo de Cashback",
+            "referralBalance": "Saldo de Indicação"
+        },
+        "totalBets": {
+            "title": "Apostas Totais",
+            "columns": {
+                "transactionDateTime": "Data-Hora da Transação",
+                "totalWinLose": "Total de Ganhos/Perdas",
+                "totalBets": "Apostas Totais"
+            },
+            "emptyState": {
+                "message": "Ainda não há nada aqui!"
+            },
+            "totalBetAmount": "Valor Total Apostado: "
+        },
+        "promotions": {
+            "title": "Minhas Promoções",
+            "cashback": "Cashback",
+            "rebate": "Reembolso"
+        },
+        "actions": {
+            "exchangeReward": "Trocar Recompensa",
+            "logOut": "Sair"
+        },
+        "points": {
+            "currentPoints": "Pontos Atuais",
+            "progress": "Progresso",
+            "rank": {
+                "bronze": "Bronze",
+                "silver": "Prata"
+            }
+        },
+        "history": {
+            "title": "Histórico",
+            "tabs": {
+                "deposit": "Depósito",
+                "withdraw": "Saque",
+                "bet": "Aposta",
+                "receivePromotion": "Receber Promoção",
+                "receiveRebate": "Receber Reembolso",
+                "receiveCashback": "Receber Cashback",
+                "receiveReferral": "Receber Indicação"
+            },
+            "columns": {
+                "amount": "Valor",
+                "channel": "Canal",
+                "bankAccount": "Conta Bancária",
+                "depositDateTime": "Data-Hora do Depósito",
+                "status": "Status",
+                "successDateTime": "Data-Hora da Conclusão"
+            },
+            "emptyState": {
+                "message": "Ainda não há nada aqui!"
+            },
+            "totalDeposit": "Depósito Total: "
+        },
+        "rebate": {
+            "title": "Reembolso",
+            "columns": {
+                "transactionDateTime": "Data-Hora da Transação",
+                "rebateAmount": "Valor do Reembolso"
+            },
+            "emptyState": {
+                "message": "Ainda não há nada aqui!"
+            },
+            "totalRebate": "Valor Total do Reembolso: "
+        },
+        "cashback": {
+            "title": "Cashback",
+            "columns": {
+                "transactionDateTime": "Data-Hora da Transação",
+                "cashbackAmount": "Valor do Cashback"
+            },
+            "emptyState": {
+                "message": "Ainda não há nada aqui!"
+            },
+            "totalCashback": "Valor Total do Cashback: "
+        },
+        "redeemHistory": {
+            "title": "Histórico de Resgates",
+            "columns": {
+                "no": "Nº",
+                "transactionDateTime": "Data-Hora da Transação",
+                "typeOfReward": "Tipo de Recompensa",
+                "reward": "Recompensa",
+                "status": "Status",
+                "usedPoints": "Pontos Usados",
+                "freeSpins": "Giros Grátis"
+            },
+            "emptyState": {
+                "message": "Ainda não há nada aqui!"
+            },
+            "totals": {
+                "allRewards": "Todas as Recompensas:",
+                "totalUsedPoints": "Total de Pontos Usados:",
+                "totalFreeSpins": "Total de Giros Grátis:",
+                "totalAmountPerRound": "Valor Total por Rodada:"
+            }
+        },
+        "pointHistory": {
+            "title": "Histórico de Pontos",
+            "columns": {
+                "transactionDateTime": "Data-Hora da Transação",
+                "type": "Tipo",
+                "turnover": "Volume de Jogo",
+                "currentPoint": "Pontos Atuais"
+            },
+            "emptyState": {
+                "message": "Ainda não há nada aqui!"
+            },
+            "totalPoints": "Total de Pontos:"
+        },
+        "personalMessage": {
+            "title": "Mensagem Pessoal",
+            "tabs": {
+                "inbox": "Caixa de Entrada",
+                "send": "Enviar"
+            },
+            "emptyState": {
+                "message": "Nenhum resultado encontrado"
+            },
+            "actions": {
+                "newMessage": "Nova Mensagem"
+            },
+            "newMessageModal": {
+                "title": "Nova Mensagem",
+                "fields": {
+                    "sendTo": "Enviar Para",
+                    "admin": "Admin",
+                    "title": "Título",
+                    "titlePlaceholder": "Digite o título",
+                    "message": "Mensagem",
+                    "messagePlaceholder": "Digite algo aqui ...",
+                    "attachImage": "Anexar uma Imagem (Opcional)",
+                    "uploadInstructions": "Clique para fazer upload ou arraste e solte",
+                    "allowedFileTypes": "WEBP, PNG ou JPG (3MB)."
+                },
+                "characterLimit": "0/300",
+                "sendMessageButton": "Enviar Mensagem"
+            },
+            "pagination": {
+                "previous": "<",
+                "next": ">"
+            }
+        },
+        "referral": {
+            "title": "Indicação",
+            "stats": {
+                "incomeToday": "Sua renda hoje",
+                "totalReferral": "Total de Indicações",
+                "referralClick": "Cliques de Indicação",
+                "totalMember": "Total de Membros",
+                "totalTurnover": "Volume Total de Jogo",
+                "totalCashback": "Total de Cashback"
+            },
+            "copy": {
+                "referralLink": "Link de Indicação",
+                "referralCode": "Código de Indicação",
+                "copyText": "Copie seu código ou link de indicação para seus amigos. Quando eles se registrarem e jogarem, você receberá um reembolso."
+            },
+            "inviteFriends": "Convide Amigos",
+            "socialMedia": {
+                "facebook": "Facebook",
+                "telegram": "Telegram",
+                "skype": "Skype",
+                "whatsapp": "WhatsApp"
+            },
+            "actions": {
+                "transfer": "Transferir"
+            },
+            "dataOverview": {
+                "title": "Visão Geral dos Dados",
+                "tabs": {
+                    "totalRevenue": "Receita Total",
+                    "members": "Membros",
+                    "receiveReferral": "Receber Indicação"
+                },
+                "table": {
+                    "columns": {
+                        "date": "Data",
+                        "referral": "Indicação"
+                    },
+                    "emptyState": {
+                        "message": "Ainda não há nada aqui!"
+                    },
+                    "totals": {
+                        "totalRevenue": "Receita Total:"
+                    }
+                },
+                "analytics": {
+                    "title": "Análises - Meça seu Desempenho",
+                    "metrics": {
+                        "income": {
+                            "title": "Renda",
+                            "today": "Renda de Hoje",
+                            "yesterday": "Ontem"
+                        },
+                        "turnover": {
+                            "title": "Volume",
+                            "today": "Volume de Hoje",
+                            "yesterday": "Ontem"
+                        },
+                        "cashback": {
+                            "title": "Cashback",
+                            "today": "Cashback de Hoje",
+                            "yesterday": "Ontem"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "Mypromotions": {
+        "title": "Minhas Promoções",
+        "cashback": {
+            "title": "Cashback",
+            "description": "Receba uma porcentagem das suas perdas de volta."
+        },
+        "rebate": {
+            "title": "Reembolso",
+            "description": "Receba um reembolso pelas apostas realizadas."
+        },
+        "promotionDetails": {
+            "banner": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734343549/bannerMyPromotion_rs1sai.webp",
+            "title": "Detalhes da Promoção",
+            "cashbackTitle": "Cashback",
+            "description": "Receba até 7% de cashback diário! Veja os detalhes abaixo:",
+            "bonus": "Bônus",
+            "memberLevel": "Nível de Membro",
+            "dailyLimit": "Máximo Diário",
+            "levels": {
+                "bronze": {
+                    "bonus": "2%",
+                    "level": "Bronze",
+                    "dailyLimit": "15 USD"
+                },
+                "silver": {
+                    "bonus": "3%",
+                    "level": "Prata",
+                    "dailyLimit": "20 USD"
+                },
+                "gold": {
+                    "bonus": "4%",
+                    "level": "Ouro",
+                    "dailyLimit": "30 USD"
+                },
+                "diamond": {
+                    "bonus": "5%",
+                    "level": "Diamante",
+                    "dailyLimit": "50 USD"
+                },
+                "platinum": {
+                    "bonus": "6%",
+                    "level": "Platina",
+                    "dailyLimit": "60 USD"
+                },
+                "black": {
+                    "bonus": "7%",
+                    "level": "Preto",
+                    "dailyLimit": "75 USD"
+                }
+            },
+            "note": "O cashback aplica-se apenas ao saldo principal."
+        }
+    },
+    "ProfileModal": {
+        "header": {
+            "username": "rith sok",
+            "points": "800.00 Pontos",
+            "generalSetting": "Configuração Geral",
+            "progress": {
+                "label": "Progresso",
+                "bronze": "Bronze",
+                "silver": "Prata"
+            }
+        },
+        "menu": {
+            "myProfile": "Meu Perfil",
+            "reward": "Recompensa",
+            "rebate": "Reembolso",
+            "referral": "Indicação",
+            "pointHistory": "Histórico de Pontos",
+            "levels": "Níveis",
+            "history": "Histórico",
+            "cashback": "Cashback",
+            "totalBet": "Aposta Total",
+            "quests": "Missões"
+        },
+        "logout": "Sair"
+    },
+    "referal": {
+        "heading": "Convide amigos e ganhe 3% diariamente",
+        "subheading": "💰 Ganhe uma comissão de 3% diariamente 💰",
+        "list": {
+            "item1": "✅ A comissão pode ser transferida para a carteira principal. É necessário um turnover de 4x antes do saque.",
+            "item2": "✅ A comissão mínima de 5 Reais é necessária para transferir para a carteira principal.",
+            "item3": "✅ A comissão máxima por indicar amigos é de 3.000 Reais por dia.",
+            "item4": "✅ Apenas depósitos de amigos que não utilizem promoções serão contabilizados."
+        },
+        "footer": "💵 O sistema calcula as perdas dos seus amigos diariamente, das 00:00 às 23:59. A receita é calculada todos os dias às 08:00.",
+        "imageAlt": "Banner de Referência"
+    }
+}

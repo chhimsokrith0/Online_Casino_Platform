@@ -53,12 +53,19 @@
         "levels": "레벨",
         "referral": "추천",
         "providers": "제공업체",
-        "rtpSlots": "RTP 슬롯",
-        "sports": "스포츠",
-        "fishing": "낚시",
-        "virtual": "가상",
+        "RtpSlot": "RTP 슬롯",
+        "Sport": "스포츠",
+        "Fishing": "낚시",
+        "Virtual": "가상",
+        "crash": "크래시",
+        "lotto": "로또",
         "languageOption": "언어 옵션",
-        "contactSocialMedia": "연락처 및 소셜 미디어"
+        "contactSocialMedia": "연락처 및 소셜 미디어",
+        "SpecialBonus": {
+            "InviteAndBenefits": "초대 및 혜택",
+            "FavoriteGames": "즐겨찾는 게임",
+            "RecentlyPlayed": "최근 플레이한 게임"
+        }
     },
     "MenuBar": {
         "demo": "데모",
@@ -675,5 +682,42 @@
             },
             "note": "캐시백은 메인 잔액에만 적용됩니다."
         }
+    },
+    "ProfileModal": {
+        "header": {
+            "username": "rith sok",
+            "points": "800.00 포인트",
+            "generalSetting": "일반 설정",
+            "progress": {
+                "label": "진행 상황",
+                "bronze": "브론즈",
+                "silver": "실버"
+            }
+        },
+        "menu": {
+            "myProfile": "내 프로필",
+            "reward": "보상",
+            "rebate": "리베이트",
+            "referral": "추천",
+            "pointHistory": "포인트 기록",
+            "levels": "레벨",
+            "history": "기록",
+            "cashback": "캐시백",
+            "totalBet": "총 베팅",
+            "quests": "퀘스트"
+        },
+        "logout": "로그아웃"
+    },
+    "referal": {
+        "heading": "친구를 초대하고 매일 3%를 적립하세요",
+        "subheading": "💰 매일 3% 커미션을 적립하세요 💰",
+        "list": {
+            "item1": "✅ 커미션은 메인 지갑으로 이체할 수 있습니다. 출금 전에 4배의 전환율이 필요합니다.",
+            "item2": "✅ 메인 지갑으로 출금하려면 최소 커미션 5원이 필요합니다.",
+            "item3": "✅ 친구 초대를 통해 하루 최대 3,000원을 적립할 수 있습니다.",
+            "item4": "✅ 프로모션을 받지 않은 친구의 입금만 계산됩니다."
+        },
+        "footer": "💵 시스템은 매일 00:00부터 23:59까지 친구의 손실을 계산하며, 수익은 매일 오전 8:00에 정산됩니다.",
+        "imageAlt": "추천 배너"
     }
 }

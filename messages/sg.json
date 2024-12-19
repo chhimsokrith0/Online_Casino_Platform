@@ -49,16 +49,23 @@
     "privileges": "Privileges",
     "quests": "Quests",
     "reward": "Rewards",
-    "promo": "Promos",
+    "promo": "Promotions",
     "levels": "Levels",
     "referral": "Referrals",
     "providers": "Providers",
-    "rtpSlots": "RTP Slots",
-    "sports": "Sports",
-    "fishing": "Fishing",
-    "virtual": "Virtual",
-    "languageOption": "Language Option",
-    "contactSocialMedia": "Contact & Social Media"
+    "RtpSlot": "RTP Slots",
+    "Sport": "Sports",
+    "Fishing": "Fishing",
+    "Virtual": "Virtual",
+    "crash": "Crash Games",
+    "lotto": "Lottery",
+    "languageOption": "Language Options",
+    "contactSocialMedia": "Contact & Social Media",
+    "SpecialBonus": {
+      "InviteAndBenefits": "Invite & Benefits",
+      "FavoriteGames": "Favourite Games",
+      "RecentlyPlayed": "Recently Played"
+    }
   },
   "MenuBar": {
     "demo": "Demo",

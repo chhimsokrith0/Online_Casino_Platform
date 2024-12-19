@@ -85,14 +85,14 @@ export default async function RootLayout({
           <SessionProviderWrapper>
             {/* Wrap SidebarProvider around all components */}
             <SidebarProvider>
-              <header className="sticky top-0 z-[150] shadow-md">
+              <header className="sticky top-0 z-50 shadow-md">
                 <Navbar locale={locale} />
               </header>
-              <div className="flex flex-col lg:flex-row">
-                <aside className="hidden lg:block lg:w-64 z-[100]">
+              <div className="flex flex-col lg:flex-row nesthubmax:flex-row">
+                <aside className="hidden lg:block lg:w-64 nesthubmax:w-72 z-[100]">
                   <Sidebar locale={locale} />
                 </aside>
-                <main className="flex-1 pt-4 lg:px-8 bg-[#020617]">
+                <main className="flex-1 pt-4 lg:px-8 nesthubmax:px-10 bg-[#020617]">
                   {children}
                 </main>
               </div>

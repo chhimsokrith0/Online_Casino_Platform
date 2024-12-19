@@ -45,20 +45,27 @@
   "slidebar": {
     "home": "Trang Chủ",
     "slots": "Máy Xèng",
-    "liveCasino": "Sòng Bạc Trực Tiếp",
-    "privileges": "Quyền Lợi",
+    "liveCasino": "Casino Trực Tiếp",
+    "privileges": "Đặc Quyền",
     "quests": "Nhiệm Vụ",
     "reward": "Phần Thưởng",
     "promo": "Khuyến Mãi",
     "levels": "Cấp Độ",
     "referral": "Giới Thiệu",
     "providers": "Nhà Cung Cấp",
-    "rtpSlots": "Máy Xèng RTP",
-    "sports": "Thể Thao",
-    "fishing": "Câu Cá",
-    "virtual": "Ảo",
+    "RtpSlot": "Máy Xèng RTP",
+    "Sport": "Thể Thao",
+    "Fishing": "Câu Cá",
+    "Virtual": "Ảo",
+    "crash": "Trò Chơi Crash",
+    "lotto": "Xổ Số",
     "languageOption": "Tùy Chọn Ngôn Ngữ",
-    "contactSocialMedia": "Liên Hệ & Mạng Xã Hội"
+    "contactSocialMedia": "Liên Hệ & Mạng Xã Hội",
+    "SpecialBonus": {
+      "InviteAndBenefits": "Mời Và Lợi Ích",
+      "FavoriteGames": "Trò Chơi Yêu Thích",
+      "RecentlyPlayed": "Đã Chơi Gần Đây"
+    }
   },
   "MenuBar": {
     "demo": "Thử Nghiệm",
@@ -336,5 +343,42 @@
     "Wallet": "Ví",
     "liveCasino": "Sòng Bạc Trực Tuyến",
     "promo": "Khuyến Mãi"
+  },
+  "ProfileModal": {
+    "header": {
+      "username": "rith sok",
+      "points": "800.00 Điểm",
+      "generalSetting": "Cài Đặt Chung",
+      "progress": {
+        "label": "Tiến Độ",
+        "bronze": "Đồng",
+        "silver": "Bạc"
+      }
+    },
+    "menu": {
+      "myProfile": "Hồ Sơ Của Tôi",
+      "reward": "Phần Thưởng",
+      "rebate": "Hoàn Tiền",
+      "referral": "Giới Thiệu",
+      "pointHistory": "Lịch Sử Điểm",
+      "levels": "Cấp Độ",
+      "history": "Lịch Sử",
+      "cashback": "Hoàn Tiền Mặt",
+      "totalBet": "Tổng Cược",
+      "quests": "Nhiệm Vụ"
+    },
+    "logout": "Đăng Xuất"
+  },
+  "referal": {
+    "heading": "Mời bạn bè và nhận 3% mỗi ngày",
+    "subheading": "💰 Nhận hoa hồng 3% mỗi ngày 💰",
+    "list": {
+      "item1": "✅ Hoa hồng có thể được chuyển vào ví chính. Cần hoàn thành 4 lần doanh thu trước khi rút tiền.",
+      "item2": "✅ Hoa hồng tối thiểu là 5 VND để chuyển vào ví chính.",
+      "item3": "✅ Hoa hồng tối đa cho việc mời bạn bè là 3.000 VND mỗi ngày.",
+      "item4": "✅ Chỉ tính các khoản nạp tiền của bạn bè không nhận khuyến mãi."
+    },
+    "footer": "💵 Hệ thống sẽ tính toán khoản lỗ của bạn bè bạn hàng ngày từ 00:00 đến 23:59. Thu nhập sẽ được tính hàng ngày vào lúc 8:00 sáng.",
+    "imageAlt": "Biểu ngữ giới thiệu"
   }
 }

@@ -43,22 +43,29 @@
   "welcome": "Maligayang pagdating sa aming website",
   "languageSwitch": "Baguhin ang Wika",
   "slidebar": {
-    "home": "Tahanan",
+    "home": "Home",
     "slots": "Slots",
     "liveCasino": "Live Casino",
-    "privileges": "Mga Pribilehiyo",
-    "quests": "Mga Quest",
+    "privileges": "Pribilehiyo",
+    "quests": "Misyon",
     "reward": "Gantimpala",
-    "promo": "Promosyon",
+    "promo": "Promo",
     "levels": "Mga Antas",
     "referral": "Referral",
-    "providers": "Mga Nagbibigay",
-    "rtpSlots": "RTP Slots",
-    "sports": "Palakasan",
-    "fishing": "Pangingisda",
-    "virtual": "Virtual",
+    "providers": "Mga Tagapagbigay",
+    "RtpSlot": "RTP Slots",
+    "Sport": "Palakasan",
+    "Fishing": "Pangingisda",
+    "Virtual": "Virtual",
+    "crash": "Crash",
+    "lotto": "Lotto",
     "languageOption": "Pagpipilian ng Wika",
-    "contactSocialMedia": "Makipag-ugnay & Social Media"
+    "contactSocialMedia": "Makipag-ugnayan & Social Media",
+    "SpecialBonus": {
+      "InviteAndBenefits": "Imbitasyon at Benepisyo",
+      "FavoriteGames": "Paboritong Laro",
+      "RecentlyPlayed": "Kamakailang Nilaro"
+    }
   },
   "MenuBar": {
     "demo": "Demo",
@@ -622,5 +629,42 @@
       },
       "note": "Ang cashback ay nalalapat lamang sa pangunahing balanse."
     }
+  },
+  "ProfileModal": {
+    "header": {
+      "username": "rith sok",
+      "points": "800.00 Puntos",
+      "generalSetting": "Pangkalahatang Setting",
+      "progress": {
+        "label": "Pag-unlad",
+        "bronze": "Bronse",
+        "silver": "Pilak"
+      }
+    },
+    "menu": {
+      "myProfile": "Aking Profile",
+      "reward": "Gantimpala",
+      "rebate": "Rebate",
+      "referral": "Rekomendasyon",
+      "pointHistory": "Kasaysayan ng Puntos",
+      "levels": "Mga Antas",
+      "history": "Kasaysayan",
+      "cashback": "Cashback",
+      "totalBet": "Kabuuang Pusta",
+      "quests": "Mga Misyon"
+    },
+    "logout": "Mag-logout"
+  },
+  "referal": {
+    "heading": "Mag-imbita ng mga kaibigan at kumita ng 3% araw-araw",
+    "subheading": "💰 Kumita ng 3% na komisyon araw-araw 💰",
+    "list": {
+      "item1": "✅ Ang komisyon ay maaaring ilipat sa pangunahing wallet. Kailangan ng 4x turnover bago mag-withdraw.",
+      "item2": "✅ Ang minimum na komisyon na ₱5 ay kinakailangan upang mailipat sa pangunahing wallet.",
+      "item3": "✅ Ang maximum na komisyon para sa pag-imbita ng mga kaibigan ay ₱3,000 bawat araw.",
+      "item4": "✅ Tanging ang mga deposito ng kaibigan na walang kasamang promosyon ang bibilangin."
+    },
+    "footer": "💵 Kinakalkula ng system ang pagkawala ng iyong mga kaibigan araw-araw mula 00:00 hanggang 23:59. Ang kita ay kinakalkula araw-araw sa ganap na 8:00 ng umaga.",
+    "imageAlt": "Banner ng Referal"
   }
 }
