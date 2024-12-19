@@ -442,6 +442,110 @@
                 "name": "Fortuna de Ganesha",
                 "provider": "PGSoft"
             }
+        },
+        "slots": {
+            "title": "Caça-níqueis",
+            "seeAll": "Ver Todos",
+            "ninjaRaccoonFrenzy": {
+                "name": "Frenesi do Guaxinim Ninja",
+                "provider": "PGSoft"
+            },
+            "treasuresOfAztec": {
+                "name": "Tesouros de Aztec",
+                "provider": "PGSoft"
+            },
+            "mahjongWays2": {
+                "name": "Caminhos do Mahjong 2",
+                "provider": "PGSoft"
+            },
+            "luckyNeko": {
+                "name": "Neko da Sorte",
+                "provider": "PGSoft"
+            },
+            "mahjongWays": {
+                "name": "Caminhos do Mahjong",
+                "provider": "PGSoft"
+            },
+            "wildBountyShowdown": {
+                "name": "Duelo de Recompensa Selvagem",
+                "provider": "PGSoft"
+            },
+            "waysOfTheQilin": {
+                "name": "Caminhos do Qilin",
+                "provider": "PGSoft"
+            },
+            "wildBandito": {
+                "name": "Bandito Selvagem",
+                "provider": "PGSoft"
+            },
+            "fortuneRabbit": {
+                "name": "Coelho da Fortuna",
+                "provider": "PGSoft"
+            },
+            "caishenWins": {
+                "name": "Caishen Ganha",
+                "provider": "PGSoft"
+            },
+            "fortuneOx": {
+                "name": "Boi da Fortuna",
+                "provider": "PGSoft"
+            },
+            "ganeshaFortune": {
+                "name": "Fortuna de Ganesha",
+                "provider": "PGSoft"
+            }
+        },
+        "LiveCasino": {
+            "title": "Cassino Ao Vivo",
+            "seeAll": "Ver Tudo",
+            "ninjaRaccoonFrenzy": {
+                "name": "Frenesi do Guaxinim Ninja",
+                "provider": "PGSoft"
+            },
+            "treasuresOfAztec": {
+                "name": "Tesouros de Aztec",
+                "provider": "PGSoft"
+            },
+            "mahjongWays2": {
+                "name": "Caminhos do Mahjong 2",
+                "provider": "PGSoft"
+            },
+            "luckyNeko": {
+                "name": "Neko da Sorte",
+                "provider": "PGSoft"
+            },
+            "mahjongWays": {
+                "name": "Caminhos do Mahjong",
+                "provider": "PGSoft"
+            },
+            "wildBountyShowdown": {
+                "name": "Duelo de Recompensa Selvagem",
+                "provider": "PGSoft"
+            },
+            "waysOfTheQilin": {
+                "name": "Caminhos do Qilin",
+                "provider": "PGSoft"
+            },
+            "wildBandito": {
+                "name": "Bandido Selvagem",
+                "provider": "PGSoft"
+            },
+            "fortuneRabbit": {
+                "name": "Coelho da Fortuna",
+                "provider": "PGSoft"
+            },
+            "caishenWins": {
+                "name": "Caishen Ganha",
+                "provider": "PGSoft"
+            },
+            "fortuneOx": {
+                "name": "Boi da Fortuna",
+                "provider": "PGSoft"
+            },
+            "ganeshaFortune": {
+                "name": "Fortuna de Ganesha",
+                "provider": "PGSoft"
+            }
         }
     },
     "GamesHeader": {
@@ -850,5 +954,54 @@
         },
         "footer": "💵 O sistema calcula as perdas dos seus amigos diariamente, das 00:00 às 23:59. A receita é calculada todos os dias às 08:00.",
         "imageAlt": "Banner de Referência"
+    },
+    "searchModal": {
+        "searchBar": {
+            "placeholder": "Pesquisar Jogos",
+            "description": "Encontre seus jogos"
+        },
+        "recommended": {
+            "title": "Recomendado para você",
+            "games": {
+                "game1": {
+                    "name": "Jewel Mania",
+                    "provider": "Mancala"
+                },
+                "game2": {
+                    "name": "Frutas Quentes em Chamas",
+                    "provider": "Mancala"
+                },
+                "game3": {
+                    "name": "#BarrasECampainhas",
+                    "provider": "Mancala"
+                },
+                "game4": {
+                    "name": "Reel Reel Hot",
+                    "provider": "Mancala"
+                },
+                "game5": {
+                    "name": "Espírito do Lago",
+                    "provider": "Mancala"
+                },
+                "game6": {
+                    "name": "O Mistério das Duplas Vitórias",
+                    "provider": "Mancala"
+                }
+            }
+        }
+    },
+    "signupModal": {
+        "close": "Fechar",
+        "signUpTab": "Cadastrar",
+        "signInTab": "Entrar",
+        "mobilePlaceholder": "Telefone Celular *",
+        "passwordPlaceholder": "Senha *",
+        "confirmPasswordPlaceholder": "Confirmar Senha *",
+        "passwordsMismatchError": "As senhas não coincidem.",
+        "invalidCredentialsError": "Nome de usuário ou senha inválidos.",
+        "signUpSuccess": "Cadastro realizado com sucesso!",
+        "signInSuccess": "Login realizado com sucesso!",
+        "submitSignUp": "Cadastrar",
+        "submitSignIn": "Entrar"
     }
 }

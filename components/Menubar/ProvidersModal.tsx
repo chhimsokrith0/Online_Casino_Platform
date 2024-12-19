@@ -3,8 +3,10 @@
 import React, { useEffect, useRef } from "react";
 import ProvidersIcons from "./ProvidersIcons";
 import { gsap } from "gsap";
+import { useTranslations } from "next-intl";
 
 const ProvidersModal = ({ setIsModalOpen }: { setIsModalOpen: Function }) => {
+  const t = useTranslations("providersModal");
   const providers = ProvidersIcons; // Import the array from ProvidersIcons.ts
   const modalRef = useRef<HTMLDivElement>(null);
   const gridItemsRef = useRef<HTMLDivElement[]>([]);
@@ -72,10 +74,11 @@ const ProvidersModal = ({ setIsModalOpen }: { setIsModalOpen: Function }) => {
       >
         {/* Modal Header */}
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-lg font-semibold text-white">All Providers</h2>
+          <h2 className="text-lg font-semibold text-white">{t("title")}</h2>
           <button
             onClick={handleClose}
             className="text-gray-400 hover:text-white"
+            aria-label={t("closeButton")}
           >
             ✕
           </button>
@@ -99,7 +102,7 @@ const ProvidersModal = ({ setIsModalOpen }: { setIsModalOpen: Function }) => {
                 className="w-10 h-10 object-contain rounded-full"
               />
               <span className="text-xs sm:text-sm md:text-base truncate">
-                {provider.name}
+                {t(`providers.${provider.name}`)}
               </span>
             </div>
           ))}

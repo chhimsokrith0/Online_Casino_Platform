@@ -35,7 +35,7 @@ const AllGames: React.FC<AllGamesProps> = ({ locale }) => {
   const [visibleCount, setVisibleCount] = useState<number>(24); // Number of visible games
   const [loading, setLoading] = useState<boolean>(true); // Loading state
 
-  const t = useTranslations("games.allGame");
+  const t = useTranslations("games.slots");
   const { isCollapsed } = useSidebar();
 
   // Load and generate games data
@@ -105,7 +105,7 @@ const AllGames: React.FC<AllGamesProps> = ({ locale }) => {
     <div ref={sectionRef} className={`max-w-[1200px] mx-auto p-4 ${isCollapsed ? "ml-[5rem]" : ""}`}>
       {/* Games Header */}
       <GamesHeader
-        pageName="Slots"
+        pageName={t("title")}
         locale={locale}
         setCategory={setCategory}
         currentCategory={category}

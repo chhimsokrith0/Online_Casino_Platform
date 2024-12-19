@@ -496,6 +496,110 @@
         "name": "ဂါနီရှာ၏အောင်မြင်မှု",
         "provider": "PGSoft"
       }
+    },
+    "slots": {
+      "title": "စလော့များ",
+      "seeAll": "အားလုံးကိုကြည့်ရန်",
+      "ninjaRaccoonFrenzy": {
+        "name": "နင်ဂျာ ရက်ကွန်း ဖရင်ဇီ",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "အက်ဇတက်၏ ကျိန်းစံမြေ",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "မဂျောင် လမ်းကြောင်း 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "လက်စွပ်နေကို",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "မဂျောင် လမ်းကြောင်း",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "ဝိုင်ဒ် ဘောင်တီ ရင်ဆိုင်မှု",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "ချီလင်၏ လမ်းကြောင်းများ",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "ဝိုင်ဒ် ဘန်ဒီတို",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "ဆန်စစ် ရက်ဗစ်",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "စေရှင် အောင်နိုင်သည်",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "ဆန်စစ် နွား",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "ဂဏေရှ၏ ကံကောင်းမှု",
+        "provider": "PGSoft"
+      }
+    },
+    "LiveCasino": {
+      "title": "တိုက်ရိုက်ကာစီနို",
+      "seeAll": "အားလုံးကိုကြည့်ရန်",
+      "ninjaRaccoonFrenzy": {
+        "name": "နင်ဂျာ ရက်ကွန်း ဖရင်ဇီ",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "အဇ်တက် အမှတ်တရ",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "မဂျောင်းလမ်းကြောင်း 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "ကံကောင်းသောနေကို",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "မဂျောင်းလမ်းကြောင်း",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "ဝိုင်လ် ဘောနတီ ရင်ဆိုင်မှု",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "ချီလင်လမ်းကြောင်းများ",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "ဝိုင်လ် ဘန်းဒီတို",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "ကံကောင်းသောကြွက်",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "စေရှင်အောင်မြင်သည်",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "ကံကောင်းသောနွား",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "ဂဏရှ၏ ကံကောင်းမှု",
+        "provider": "PGSoft"
+      }
     }
   },
   "GamesHeader": {
@@ -719,5 +823,54 @@
     },
     "footer": "💵 စနစ်သည် မိတ်ဆွေများ၏ အရှုံးကို နေ့စဉ် 00:00 မှ 23:59 အထိ တွက်ချက်ပြီး ဝင်ငွေကို နေ့စဉ် မနက် 8:00 နာရီတွင် တွက်ချက်ပါသည်။",
     "imageAlt": "ရည်ညွှန်းပြပွဲ"
+  },
+  "searchModal": {
+    "searchBar": {
+      "placeholder": "ဂိမ်းရှာဖွေပါ",
+      "description": "သင့်ဂိမ်းများကိုရှာဖွေပါ"
+    },
+    "recommended": {
+      "title": "သင့်အတွက်ထောက်ခံထားသော",
+      "games": {
+        "game1": {
+          "name": "ကျောက်မျက်မိုးမံနီးယား",
+          "provider": "Mancala"
+        },
+        "game2": {
+          "name": "ပူပြင်းသောအသီးများ",
+          "provider": "Mancala"
+        },
+        "game3": {
+          "name": "#ဘားနှင့်ဂေါ်铃",
+          "provider": "Mancala"
+        },
+        "game4": {
+          "name": "ရီးရီးဟော့",
+          "provider": "Mancala"
+        },
+        "game5": {
+          "name": "ရေကန်၏ဝိညာဉ်",
+          "provider": "Mancala"
+        },
+        "game6": {
+          "name": "အမွှာတောင်မီးတောင်ရဲ့လျှို့ဝှက်ချက်",
+          "provider": "Mancala"
+        }
+      }
+    }
+  },
+  "signupModal": {
+    "close": "ပိတ်ရန်",
+    "signUpTab": "အကောင့်ဖွင့်ရန်",
+    "signInTab": "အကောင့်ဝင်ရန်",
+    "mobilePlaceholder": "မိုဘိုင်းဖုန်းနံပါတ် *",
+    "passwordPlaceholder": "စကားဝှက် *",
+    "confirmPasswordPlaceholder": "စကားဝှက်အတည်ပြုပါ *",
+    "passwordsMismatchError": "စကားဝှက်များကိုအတူတူမဟုတ်ပါ။",
+    "invalidCredentialsError": "အသုံးပြုသူအမည် သို့မဟုတ် စကားဝှက် မမှန်ကန်ပါ။",
+    "signUpSuccess": "အကောင့်ဖွင့်ခြင်းအောင်မြင်သည်!",
+    "signInSuccess": "အကောင့်ဝင်ခြင်းအောင်မြင်သည်!",
+    "submitSignUp": "အကောင့်ဖွင့်ရန်",
+    "submitSignIn": "အကောင့်ဝင်ရန်"
   }
 }

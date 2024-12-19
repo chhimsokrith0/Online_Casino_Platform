@@ -7,6 +7,7 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import ReactDOM from "react-dom";
+import { useTranslations } from "next-intl";
 
 interface SignupModalProps {
   activeTab: "signIn" | "signUp";
@@ -23,6 +24,7 @@ const countries = [
 ];
 
 const SignupModal: React.FC<SignupModalProps> = ({ activeTab = "signIn", onClose, zIndex = 150 }) => {
+  const t = useTranslations("signupModal"); // Translation namespace
   const [tab, setTab] = useState(activeTab);
   const [selectedCountry, setSelectedCountry] = useState(countries[0].code);
   const [username, setUsername] = useState("");
@@ -74,9 +76,9 @@ const SignupModal: React.FC<SignupModalProps> = ({ activeTab = "signIn", onClose
     });
 
     if (result?.error) {
-      setErrorMessage("Invalid username or password.");
+      setErrorMessage(t("invalidCredentialsError"));
     } else {
-      alert("Login successful!");
+      alert(t("signInSuccess"));
       handleClose();
     }
   };
@@ -86,11 +88,11 @@ const SignupModal: React.FC<SignupModalProps> = ({ activeTab = "signIn", onClose
     setErrorMessage("");
 
     if (password !== confirmPassword) {
-      setErrorMessage("Passwords do not match.");
+      setErrorMessage(t("passwordsMismatchError"));
       return;
     }
 
-    alert("Sign-up successful!");
+    alert(t("signUpSuccess"));
     handleClose();
   };
 
@@ -120,7 +122,7 @@ const SignupModal: React.FC<SignupModalProps> = ({ activeTab = "signIn", onClose
           <button
             onClick={handleClose}
             className="absolute top-4 right-4 flex items-center justify-center w-8 h-8 rounded-full bg-gray-700 hover:bg-gray-600 text-gray-300 hover:text-white transition focus:outline-none focus:ring-2 focus:ring-yellow-500"
-            aria-label="Close"
+            aria-label={t("close")}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -146,7 +148,7 @@ const SignupModal: React.FC<SignupModalProps> = ({ activeTab = "signIn", onClose
                 : "bg-gray-900 text-gray-300"
                 }`}
             >
-              Sign Up
+              {t("signUpTab")}
             </button>
             <button
               onClick={() => setTab("signIn")}
@@ -155,7 +157,7 @@ const SignupModal: React.FC<SignupModalProps> = ({ activeTab = "signIn", onClose
                 : "bg-gray-900 text-gray-300"
                 }`}
             >
-              Sign In
+              {t("signInTab")}
             </button>
           </div>
 
@@ -188,7 +190,7 @@ const SignupModal: React.FC<SignupModalProps> = ({ activeTab = "signIn", onClose
               </div>
               <input
                 type="text"
-                placeholder="Mobile Phone *"
+                placeholder={t("mobilePlaceholder")}
                 className="flex-1 bg-gray-700 text-white rounded-full h-12 px-5 text-sm font-medium placeholder-gray-400 focus:ring-2 focus:ring-yellow-500 focus:outline-none"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
@@ -199,7 +201,7 @@ const SignupModal: React.FC<SignupModalProps> = ({ activeTab = "signIn", onClose
             <div className="relative">
               <input
                 type={showPassword ? "text" : "password"}
-                placeholder="Password *"
+                placeholder={t("passwordPlaceholder")}
                 className="w-full bg-gray-700 text-white rounded-full h-12 px-5 text-sm font-medium placeholder-gray-400 focus:ring-2 focus:ring-yellow-500 focus:outline-none"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
@@ -219,7 +221,7 @@ const SignupModal: React.FC<SignupModalProps> = ({ activeTab = "signIn", onClose
               <div className="relative">
                 <input
                   type="password"
-                  placeholder="Confirm Password *"
+                  placeholder={t("confirmPasswordPlaceholder")}
                   className="w-full bg-gray-700 text-white rounded-full h-12 px-5 text-sm font-medium placeholder-gray-400 focus:ring-2 focus:ring-yellow-500 focus:outline-none"
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
@@ -236,7 +238,7 @@ const SignupModal: React.FC<SignupModalProps> = ({ activeTab = "signIn", onClose
               type="submit"
               className="w-full h-12 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-bold rounded-full hover:opacity-90 transition"
             >
-              {tab === "signUp" ? "Sign Up" : "Sign In"}
+              {tab === "signUp" ? t("submitSignUp") : t("submitSignIn")}
             </button>
           </form>
         </div>

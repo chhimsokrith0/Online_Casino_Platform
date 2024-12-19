@@ -105,7 +105,7 @@ const AllGames: React.FC<AllGamesProps> = ({ locale }) => {
     <div ref={sectionRef} className={`max-w-[1200px] mx-auto p-4 ${isCollapsed ? "ml-[2rem]" : ""}`}>
       {/* Games Header */}
       <GamesHeader
-        pageName="All Games"
+        pageName={t("title")}
         locale={locale}
         setCategory={setCategory}
         currentCategory={category}

@@ -493,6 +493,110 @@
                 "name": "象神財運",
                 "provider": "PGSoft"
             }
+        },
+        "slots": {
+            "title": "老虎機",
+            "seeAll": "查看全部",
+            "ninjaRaccoonFrenzy": {
+                "name": "忍者浣熊狂熱",
+                "provider": "PGSoft"
+            },
+            "treasuresOfAztec": {
+                "name": "阿茲特克寶藏",
+                "provider": "PGSoft"
+            },
+            "mahjongWays2": {
+                "name": "麻雀無雙 2",
+                "provider": "PGSoft"
+            },
+            "luckyNeko": {
+                "name": "幸運貓",
+                "provider": "PGSoft"
+            },
+            "mahjongWays": {
+                "name": "麻雀無雙",
+                "provider": "PGSoft"
+            },
+            "wildBountyShowdown": {
+                "name": "狂野賞金對決",
+                "provider": "PGSoft"
+            },
+            "waysOfTheQilin": {
+                "name": "麒麟之道",
+                "provider": "PGSoft"
+            },
+            "wildBandito": {
+                "name": "狂野強盜",
+                "provider": "PGSoft"
+            },
+            "fortuneRabbit": {
+                "name": "幸運兔",
+                "provider": "PGSoft"
+            },
+            "caishenWins": {
+                "name": "財神贏了",
+                "provider": "PGSoft"
+            },
+            "fortuneOx": {
+                "name": "幸運牛",
+                "provider": "PGSoft"
+            },
+            "ganeshaFortune": {
+                "name": "象神的財富",
+                "provider": "PGSoft"
+            }
+        },
+        "LiveCasino": {
+            "title": "真人娛樂場",
+            "seeAll": "查看全部",
+            "ninjaRaccoonFrenzy": {
+                "name": "忍者浣熊狂熱",
+                "provider": "PGSoft"
+            },
+            "treasuresOfAztec": {
+                "name": "阿茲特克寶藏",
+                "provider": "PGSoft"
+            },
+            "mahjongWays2": {
+                "name": "麻雀無雙 2",
+                "provider": "PGSoft"
+            },
+            "luckyNeko": {
+                "name": "幸運貓",
+                "provider": "PGSoft"
+            },
+            "mahjongWays": {
+                "name": "麻雀無雙",
+                "provider": "PGSoft"
+            },
+            "wildBountyShowdown": {
+                "name": "狂野賞金對決",
+                "provider": "PGSoft"
+            },
+            "waysOfTheQilin": {
+                "name": "麒麟之道",
+                "provider": "PGSoft"
+            },
+            "wildBandito": {
+                "name": "狂野強盜",
+                "provider": "PGSoft"
+            },
+            "fortuneRabbit": {
+                "name": "幸運兔",
+                "provider": "PGSoft"
+            },
+            "caishenWins": {
+                "name": "財神贏了",
+                "provider": "PGSoft"
+            },
+            "fortuneOx": {
+                "name": "幸運牛",
+                "provider": "PGSoft"
+            },
+            "ganeshaFortune": {
+                "name": "象神的財富",
+                "provider": "PGSoft"
+            }
         }
     },
     "GamesHeader": {
@@ -901,5 +1005,54 @@
         },
         "footer": "💵 系統每日00:00至23:59計算朋友的損失，收入每日早上8:00結算。",
         "imageAlt": "推薦橫幅"
+    },
+    "searchModal": {
+        "searchBar": {
+            "placeholder": "搜尋遊戲",
+            "description": "尋找你的遊戲"
+        },
+        "recommended": {
+            "title": "為你推薦",
+            "games": {
+                "game1": {
+                    "name": "珠寶狂熱",
+                    "provider": "Mancala"
+                },
+                "game2": {
+                    "name": "火熱水果",
+                    "provider": "Mancala"
+                },
+                "game3": {
+                    "name": "#金條與鈴鐺",
+                    "provider": "Mancala"
+                },
+                "game4": {
+                    "name": "熱力轉盤",
+                    "provider": "Mancala"
+                },
+                "game5": {
+                    "name": "湖之靈",
+                    "provider": "Mancala"
+                },
+                "game6": {
+                    "name": "雙子贏奪之謎",
+                    "provider": "Mancala"
+                }
+            }
+        }
+    },
+    "signupModal": {
+        "close": "關閉",
+        "signUpTab": "註冊",
+        "signInTab": "登入",
+        "mobilePlaceholder": "手機號碼 *",
+        "passwordPlaceholder": "密碼 *",
+        "confirmPasswordPlaceholder": "確認密碼 *",
+        "passwordsMismatchError": "密碼不匹配。",
+        "invalidCredentialsError": "無效的用戶名或密碼。",
+        "signUpSuccess": "註冊成功！",
+        "signInSuccess": "登入成功！",
+        "submitSignUp": "註冊",
+        "submitSignIn": "登入"
     }
 }

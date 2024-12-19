@@ -496,6 +496,110 @@
                 "name": "گنیش کی خوش قسمتی",
                 "provider": "PGSoft"
             }
+        },
+        "slots": {
+            "title": "سلاٹس",
+            "seeAll": "سب دیکھیں",
+            "ninjaRaccoonFrenzy": {
+                "name": "نینجا ریکون جنون",
+                "provider": "PGSoft"
+            },
+            "treasuresOfAztec": {
+                "name": "ایزٹیک کے خزانے",
+                "provider": "PGSoft"
+            },
+            "mahjongWays2": {
+                "name": "ماہجونگ ویز 2",
+                "provider": "PGSoft"
+            },
+            "luckyNeko": {
+                "name": "لکی نیکو",
+                "provider": "PGSoft"
+            },
+            "mahjongWays": {
+                "name": "ماہجونگ ویز",
+                "provider": "PGSoft"
+            },
+            "wildBountyShowdown": {
+                "name": "وائلڈ باؤنٹی شوڈاؤن",
+                "provider": "PGSoft"
+            },
+            "waysOfTheQilin": {
+                "name": "قیلن کے راستے",
+                "provider": "PGSoft"
+            },
+            "wildBandito": {
+                "name": "وائلڈ بینڈٹو",
+                "provider": "PGSoft"
+            },
+            "fortuneRabbit": {
+                "name": "خوش قسمتی خرگوش",
+                "provider": "PGSoft"
+            },
+            "caishenWins": {
+                "name": "کائی شین کی جیت",
+                "provider": "PGSoft"
+            },
+            "fortuneOx": {
+                "name": "خوش قسمتی بیل",
+                "provider": "PGSoft"
+            },
+            "ganeshaFortune": {
+                "name": "گنیش کی خوش قسمتی",
+                "provider": "PGSoft"
+            }
+        },
+        "LiveCasino": {
+            "title": "لائیو کیسینو",
+            "seeAll": "سب دیکھیں",
+            "ninjaRaccoonFrenzy": {
+                "name": "نینجا ریکون جنون",
+                "provider": "PGSoft"
+            },
+            "treasuresOfAztec": {
+                "name": "ایزٹیک کے خزانے",
+                "provider": "PGSoft"
+            },
+            "mahjongWays2": {
+                "name": "ماہجونگ کے راستے 2",
+                "provider": "PGSoft"
+            },
+            "luckyNeko": {
+                "name": "لکی نیکو",
+                "provider": "PGSoft"
+            },
+            "mahjongWays": {
+                "name": "ماہجونگ کے راستے",
+                "provider": "PGSoft"
+            },
+            "wildBountyShowdown": {
+                "name": "وائلڈ باؤنٹی شو ڈاؤن",
+                "provider": "PGSoft"
+            },
+            "waysOfTheQilin": {
+                "name": "قیلن کے راستے",
+                "provider": "PGSoft"
+            },
+            "wildBandito": {
+                "name": "وائلڈ بندیتو",
+                "provider": "PGSoft"
+            },
+            "fortuneRabbit": {
+                "name": "خوش قسمت خرگوش",
+                "provider": "PGSoft"
+            },
+            "caishenWins": {
+                "name": "کائی شین جیتتا ہے",
+                "provider": "PGSoft"
+            },
+            "fortuneOx": {
+                "name": "خوش قسمت بیل",
+                "provider": "PGSoft"
+            },
+            "ganeshaFortune": {
+                "name": "گنیش کی خوش قسمتی",
+                "provider": "PGSoft"
+            }
         }
     },
     "GamesHeader": {
@@ -574,6 +678,244 @@
             "pagination": {
                 "page": "صفحہ",
                 "of": "کا"
+            }
+        }
+    },
+    "accountInformation": {
+        "title": "اکاؤنٹ کی معلومات",
+        "menu": {
+            "myProfile": "میرا پروفائل",
+            "history": "تاریخ",
+            "rebate": "ریبیٹ",
+            "cashback": "کیش بیک",
+            "totalBet": "کل شرط",
+            "redeemHistory": "ریڈیم کی تاریخ",
+            "pointHistory": "پوائنٹ کی تاریخ",
+            "personalMessage": "ذاتی پیغام",
+            "referral": "حوالہ"
+        },
+        "profile": {
+            "phoneNumber": "فون نمبر",
+            "joinedOn": "شمولیت کی تاریخ",
+            "vipLevel": {
+                "current": "موجودہ سطح",
+                "upgrade": "اپنے وی آئی پی لیول کو اپ گریڈ کریں",
+                "progress": "آپ کی پیشرفت"
+            },
+            "wallet": {
+                "title": "آپ کا والیٹ",
+                "balance": "بیلنس"
+            },
+            "rebateBalance": "ریبیٹ بیلنس",
+            "cashbackBalance": "کیش بیک بیلنس",
+            "referralBalance": "حوالہ بیلنس"
+        },
+        "totalBets": {
+            "title": "کل شرط",
+            "columns": {
+                "transactionDateTime": "لین دین کی تاریخ-وقت",
+                "totalWinLose": "کل جیت/ہار",
+                "totalBets": "کل شرط"
+            },
+            "emptyState": {
+                "message": "یہاں ابھی کچھ نہیں ہے!"
+            },
+            "totalBetAmount": "کل شرط کی رقم: "
+        },
+        "promotions": {
+            "title": "میری مہمات",
+            "cashback": "کیش بیک",
+            "rebate": "ریبیٹ"
+        },
+        "actions": {
+            "exchangeReward": "انعام کا تبادلہ کریں",
+            "logOut": "لاگ آؤٹ"
+        },
+        "points": {
+            "currentPoints": "موجودہ پوائنٹس",
+            "progress": "پیشرفت",
+            "rank": {
+                "bronze": "کانسی",
+                "silver": "چاندی"
+            }
+        },
+        "history": {
+            "title": "تاریخ",
+            "tabs": {
+                "deposit": "جمع",
+                "withdraw": "واپس لینا",
+                "bet": "شرط",
+                "receivePromotion": "پروموشن وصول کریں",
+                "receiveRebate": "ریبیٹ وصول کریں",
+                "receiveCashback": "کیش بیک وصول کریں",
+                "receiveReferral": "حوالہ وصول کریں"
+            },
+            "columns": {
+                "amount": "رقم",
+                "channel": "چینل",
+                "bankAccount": "بینک اکاؤنٹ",
+                "depositDateTime": "جمع کی تاریخ-وقت",
+                "status": "حالت",
+                "successDateTime": "کامیابی کی تاریخ-وقت"
+            },
+            "emptyState": {
+                "message": "یہاں ابھی کچھ نہیں ہے!"
+            },
+            "totalDeposit": "کل جمع رقم: "
+        },
+        "rebate": {
+            "title": "ریبیٹ",
+            "columns": {
+                "transactionDateTime": "لین دین کی تاریخ-وقت",
+                "rebateAmount": "ریبیٹ کی رقم"
+            },
+            "emptyState": {
+                "message": "یہاں ابھی کچھ نہیں ہے!"
+            },
+            "totalRebate": "کل ریبیٹ کی رقم: "
+        },
+        "cashback": {
+            "title": "کیش بیک",
+            "columns": {
+                "transactionDateTime": "لین دین کی تاریخ-وقت",
+                "cashbackAmount": "کیش بیک کی رقم"
+            },
+            "emptyState": {
+                "message": "یہاں ابھی کچھ نہیں ہے!"
+            },
+            "totalCashback": "کل کیش بیک کی رقم: "
+        },
+        "redeemHistory": {
+            "title": "ریڈیم کی تاریخ",
+            "columns": {
+                "no": "نمبر",
+                "transactionDateTime": "لین دین کی تاریخ-وقت",
+                "typeOfReward": "انعام کی قسم",
+                "reward": "انعام",
+                "status": "حالت",
+                "usedPoints": "استعمال شدہ پوائنٹس",
+                "freeSpins": "مفت اسپنز"
+            },
+            "emptyState": {
+                "message": "یہاں ابھی کچھ نہیں ہے!"
+            },
+            "totals": {
+                "allRewards": "تمام انعامات:",
+                "totalUsedPoints": "کل استعمال شدہ پوائنٹس:",
+                "totalFreeSpins": "کل مفت اسپنز:",
+                "totalAmountPerRound": "ہر راؤنڈ کی کل رقم:"
+            }
+        },
+        "pointHistory": {
+            "title": "پوائنٹ کی تاریخ",
+            "columns": {
+                "transactionDateTime": "لین دین کی تاریخ-وقت",
+                "type": "قسم",
+                "turnover": "ٹرن اوور",
+                "currentPoint": "موجودہ پوائنٹس"
+            },
+            "emptyState": {
+                "message": "یہاں ابھی کچھ نہیں ہے!"
+            },
+            "totalPoints": "کل پوائنٹس: "
+        },
+        "personalMessage": {
+            "title": "ذاتی پیغام",
+            "tabs": {
+                "inbox": "ان باکس",
+                "send": "بھیجیں"
+            },
+            "emptyState": {
+                "message": "کوئی نتیجہ نہیں ملا"
+            },
+            "actions": {
+                "newMessage": "نیا پیغام"
+            },
+            "newMessageModal": {
+                "title": "نیا پیغام",
+                "fields": {
+                    "sendTo": "بھیجیں",
+                    "admin": "ایڈمن",
+                    "title": "عنوان",
+                    "titlePlaceholder": "عنوان درج کریں",
+                    "message": "پیغام",
+                    "messagePlaceholder": "یہاں کچھ لکھیں...",
+                    "attachImage": "تصویر منسلک کریں (اختیاری)",
+                    "uploadInstructions": "اپ لوڈ کرنے کے لیے کلک کریں یا گھسیٹیں",
+                    "allowedFileTypes": "WEBP، PNG، یا JPG (3MB)."
+                },
+                "characterLimit": "0/300",
+                "sendMessageButton": "پیغام بھیجیں"
+            },
+            "pagination": {
+                "previous": "<",
+                "next": ">"
+            }
+        },
+        "referral": {
+            "title": "حوالہ",
+            "stats": {
+                "incomeToday": "آج کی آمدنی",
+                "totalReferral": "کل حوالہ جات",
+                "referralClick": "حوالہ کلکس",
+                "totalMember": "کل اراکین",
+                "totalTurnover": "کل ٹرن اوور",
+                "totalCashback": "کل کیش بیک"
+            },
+            "copy": {
+                "referralLink": "حوالہ لنک",
+                "referralCode": "حوالہ کوڈ",
+                "copyText": "اپنے حوالہ کوڈ یا لنک کو دوستوں کے ساتھ شیئر کریں، اور جب وہ کھیلیں تو آپ کو ریبیٹ ملے۔"
+            },
+            "inviteFriends": "دوستوں کو مدعو کریں",
+            "socialMedia": {
+                "facebook": "فیس بک",
+                "telegram": "ٹیلیگرام",
+                "skype": "اسکائپ",
+                "whatsapp": "واٹس ایپ"
+            },
+            "actions": {
+                "transfer": "منتقلی"
+            },
+            "dataOverview": {
+                "title": "ڈیٹا کا جائزہ",
+                "tabs": {
+                    "totalRevenue": "کل آمدنی",
+                    "members": "اراکین",
+                    "receiveReferral": "حوالہ وصول کریں"
+                },
+                "table": {
+                    "columns": {
+                        "date": "تاریخ",
+                        "referral": "حوالہ"
+                    },
+                    "emptyState": {
+                        "message": "یہاں ابھی کچھ نہیں ہے!"
+                    },
+                    "totals": {
+                        "totalRevenue": "کل آمدنی:"
+                    }
+                },
+                "analytics": {
+                    "title": "تجزیہ - اپنی کارکردگی کی پیمائش کریں",
+                    "metrics": {
+                        "income": {
+                            "title": "آمدنی",
+                            "today": "آج کی آمدنی",
+                            "yesterday": "گزشتہ روز کی آمدنی"
+                        },
+                        "turnover": {
+                            "title": "ٹرن اوور",
+                            "today": "آج کا ٹرن اوور",
+                            "yesterday": "گزشتہ روز کا ٹرن اوور"
+                        },
+                        "cashback": {
+                            "title": "کیش بیک",
+                            "today": "آج کا کیش بیک",
+                            "yesterday": "گزشتہ روز کا کیش بیک"
+                        }
+                    }
+                }
             }
         }
     },
@@ -666,5 +1008,54 @@
         },
         "footer": "💵 نظام آپ کے دوستوں کے نقصانات کو روزانہ 00:00 سے 23:59 تک شمار کرے گا، اور آمدنی روزانہ صبح 8:00 بجے حساب کی جائے گی۔",
         "imageAlt": "ریفرل بینر"
+    },
+    "searchModal": {
+        "searchBar": {
+            "placeholder": "گیمز تلاش کریں",
+            "description": "اپنے گیمز تلاش کریں"
+        },
+        "recommended": {
+            "title": "آپ کے لئے سفارش کردہ",
+            "games": {
+                "game1": {
+                    "name": "جیول مینیا",
+                    "provider": "مینکالا"
+                },
+                "game2": {
+                    "name": "ہاٹ فروٹس آن فائر",
+                    "provider": "مینکالا"
+                },
+                "game3": {
+                    "name": "#بارز اینڈ بیلز",
+                    "provider": "مینکالا"
+                },
+                "game4": {
+                    "name": "ریل ریل ہاٹ",
+                    "provider": "مینکالا"
+                },
+                "game5": {
+                    "name": "روحِ جھیل",
+                    "provider": "مینکالا"
+                },
+                "game6": {
+                    "name": "دی ٹوئن وِنس مسٹری",
+                    "provider": "مینکالا"
+                }
+            }
+        }
+    },
+    "signupModal": {
+        "close": "بند کریں",
+        "signUpTab": "سائن اپ کریں",
+        "signInTab": "سائن ان کریں",
+        "mobilePlaceholder": "موبائل فون *",
+        "passwordPlaceholder": "پاس ورڈ *",
+        "confirmPasswordPlaceholder": "پاس ورڈ کی تصدیق کریں *",
+        "passwordsMismatchError": "پاس ورڈ مطابقت نہیں رکھتے۔",
+        "invalidCredentialsError": "غلط صارف نام یا پاس ورڈ۔",
+        "signUpSuccess": "سائن اپ کامیاب ہوا!",
+        "signInSuccess": "لاگ ان کامیاب ہوا!",
+        "submitSignUp": "سائن اپ کریں",
+        "submitSignIn": "سائن ان کریں"
     }
 }

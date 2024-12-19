@@ -9,47 +9,49 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { gsap } from "gsap";
+import { useTranslations } from "next-intl";
 
 interface SearchModalProps {
   onClose: () => void;
 }
 
 const SearchModal: React.FC<SearchModalProps> = ({ onClose }) => {
+  const t = useTranslations("searchModal");
   const recommendedGames = [
     {
       id: 1,
-      name: "Jewel Mania",
-      provider: "Mancala",
+      name: t("recommended.games.game1.name"),
+      provider: t("recommended.games.game1.provider"),
       img: "https://storage.googleapis.com/luxino-public/game/mancala/Thumb/29001.png",
     },
     {
       id: 2,
-      name: "Hot Fruits on Fire",
-      provider: "Mancala",
+      name: t("recommended.games.game2.name"),
+      provider: t("recommended.games.game2.provider"),
       img: "https://storage.googleapis.com/luxino-public/game/mancala/Thumb/22001.png",
     },
     {
       id: 3,
-      name: "#BarsAndBells",
-      provider: "Mancala",
+      name: t("recommended.games.game3.name"),
+      provider: t("recommended.games.game3.provider"),
       img: "https://storage.googleapis.com/luxino-public/game/mancala/Thumb/28001.png",
     },
     {
       id: 4,
-      name: "Reel Reel Hot",
-      provider: "Mancala",
+      name: t("recommended.games.game4.name"),
+      provider: t("recommended.games.game4.provider"),
       img: "https://storage.googleapis.com/luxino-public/game/mancala/Thumb/24001.png",
     },
     {
       id: 5,
-      name: "Spirit of the Lake",
-      provider: "Mancala",
+      name: t("recommended.games.game5.name"),
+      provider: t("recommended.games.game5.provider"),
       img: "https://storage.googleapis.com/luxino-public/game/mancala/Thumb/20001.png",
     },
     {
       id: 6,
-      name: "The Twin Wins Mystery",
-      provider: "Mancala",
+      name: t("recommended.games.game6.name"),
+      provider: t("recommended.games.game6.provider"),
       img: "https://storage.googleapis.com/luxino-public/game/mancala/Thumb/21001.png",
     },
   ];
@@ -136,17 +138,17 @@ const SearchModal: React.FC<SearchModalProps> = ({ onClose }) => {
             <FontAwesomeIcon icon={faSearch} className="text-gray-400 mr-3" />
             <input
               type="text"
-              placeholder="Search Games"
+              placeholder={t("searchBar.placeholder")}
               className="flex-1 bg-transparent text-white placeholder-gray-400 focus:outline-none text-sm"
             />
           </div>
-          <p className="mt-2 text-gray-500 text-xs">Find your games</p>
+          <p className="mt-2 text-gray-500 text-xs">{t("searchBar.description")}</p>
         </div>
 
         {/* Recommended Games Section */}
         <div>
           <h3 className="text-lg text-white font-semibold mb-4">
-            Recommended for you
+            {t("recommended.title")}
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
             {recommendedGames.map((game, index) => (

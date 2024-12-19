@@ -496,6 +496,110 @@
         "name": "សំណាងរបស់ Ganesha",
         "provider": "PGSoft"
       }
+    },
+    "slots": {
+      "title": "ស្លុត",
+      "seeAll": "មើលទាំងអស់",
+      "ninjaRaccoonFrenzy": {
+        "name": "Ninja Raccoon Frenzy",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "ដើមទុនរបស់អាស្តិក",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "ផ្លូវ Mahjong 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "Lucky Neko",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "ផ្លូវ Mahjong",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "ការប្រកួតរបស់ព្រៃ",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "ផ្លូវរបស់ Qilin",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "ព្រៃ Bandito",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "ទន្សាយសំណាង",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "Caishen ឈ្នះ",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "ទ័រក្សសំណាង",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "សំណាង Ganesha",
+        "provider": "PGSoft"
+      }
+    },
+    "LiveCasino": {
+      "title": "កាស៊ីណូផ្ទាល់",
+      "seeAll": "មើលទាំងអស់",
+      "ninjaRaccoonFrenzy": {
+        "name": "និនចា រ៉ាកូន ភីវើរ",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "ទ្រព្យសម្បត្តិអាស្ទិក",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "មាហ្សុង វេ ២",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "ណេកូសំណាង",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "មាហ្សុង វេ",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "ការប្រកួតរបស់ព្រៃ",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "ផ្លូវរបស់ឃីឡិន",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "បន្ទីតូព្រៃ",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "ទន្សាយសំណាង",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "ឈ្នះសៃសែន",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "សំណាងគោ",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "ជោគជ័យរបស់ហ្គាណេសា",
+        "provider": "PGSoft"
+      }
     }
   },
   "GamesHeader": {
@@ -719,5 +823,54 @@
     },
     "footer": "💵 ប្រព័ន្ធនឹងគណនាការខាតបង់របស់មិត្តភក្ដិអ្នករៀងរាល់ថ្ងៃ ចាប់ពីម៉ោង 00:00 ដល់ 23:59។ ប្រាក់ចំណូលត្រូវបានគណនានៅម៉ោង 08:00 រៀងរាល់ថ្ងៃ។",
     "imageAlt": "បដាផ្សព្វផ្សាយ"
+  },
+  "searchModal": {
+    "searchBar": {
+      "placeholder": "ស្វែងរកហ្គេម",
+      "description": "ស្វែងរកហ្គេមរបស់អ្នក"
+    },
+    "recommended": {
+      "title": "បានណែនាំសម្រាប់អ្នក",
+      "games": {
+        "game1": {
+          "name": "ជូវែលម៉ានី",
+          "provider": "Mancala"
+        },
+        "game2": {
+          "name": "ផ្លែឈើក្តៅលើភ្លើង",
+          "provider": "Mancala"
+        },
+        "game3": {
+          "name": "#ខ្សែរដែកនិងកណ្ដឹង",
+          "provider": "Mancala"
+        },
+        "game4": {
+          "name": "រៀល រៀល ហត់",
+          "provider": "Mancala"
+        },
+        "game5": {
+          "name": "វិញ្ញាណស្រះទឹក",
+          "provider": "Mancala"
+        },
+        "game6": {
+          "name": "ឱកាសឈ្នះគូដំបូង",
+          "provider": "Mancala"
+        }
+      }
+    }
+  },
+  "signupModal": {
+    "close": "បិទ",
+    "signUpTab": "ចុះឈ្មោះ",
+    "signInTab": "ចូលប្រើប្រាស់",
+    "mobilePlaceholder": "លេខទូរស័ព្ទ *",
+    "passwordPlaceholder": "លេខសម្ងាត់ *",
+    "confirmPasswordPlaceholder": "បញ្ជាក់លេខសម្ងាត់ *",
+    "passwordsMismatchError": "លេខសម្ងាត់មិនដូចគ្នា។",
+    "invalidCredentialsError": "ឈ្មោះអ្នកប្រើ ឬ លេខសម្ងាត់មិនត្រឹមត្រូវ។",
+    "signUpSuccess": "ការចុះឈ្មោះបានជោគជ័យ!",
+    "signInSuccess": "ការចូលប្រើប្រាស់បានជោគជ័យ!",
+    "submitSignUp": "ចុះឈ្មោះ",
+    "submitSignIn": "ចូលប្រើប្រាស់"
   }
 }

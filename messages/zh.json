@@ -496,6 +496,110 @@
         "name": "象神财富",
         "provider": "PGSoft"
       }
+    },
+    "slots": {
+      "title": "老虎机",
+      "seeAll": "查看全部",
+      "ninjaRaccoonFrenzy": {
+        "name": "忍者浣熊狂热",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "阿兹特克的宝藏",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "麻将之路 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "幸运猫",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "麻将之路",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "狂野赏金对决",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "麒麟之道",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "狂野强盗",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "幸运兔",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "财神赢了",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "幸运牛",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "象神的财富",
+        "provider": "PGSoft"
+      }
+    },
+    "LiveCasino": {
+      "title": "真人娱乐场",
+      "seeAll": "查看全部",
+      "ninjaRaccoonFrenzy": {
+        "name": "忍者浣熊狂热",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "阿兹特克的宝藏",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "麻将之路 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "幸运猫",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "麻将之路",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "狂野赏金对决",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "麒麟之道",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "狂野强盗",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "幸运兔",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "财神赢了",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "幸运牛",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "象神的财富",
+        "provider": "PGSoft"
+      }
     }
   },
   "GamesHeader": {
@@ -574,6 +678,244 @@
       "pagination": {
         "page": "页面",
         "of": "的"
+      }
+    }
+  },
+  "accountInformation": {
+    "title": "账户信息",
+    "menu": {
+      "myProfile": "我的资料",
+      "history": "历史记录",
+      "rebate": "返利",
+      "cashback": "现金返还",
+      "totalBet": "总投注",
+      "redeemHistory": "兑换历史",
+      "pointHistory": "积分历史",
+      "personalMessage": "个人消息",
+      "referral": "推荐"
+    },
+    "profile": {
+      "phoneNumber": "电话号码",
+      "joinedOn": "加入日期",
+      "vipLevel": {
+        "current": "当前等级",
+        "upgrade": "升级您的VIP等级",
+        "progress": "您的进度"
+      },
+      "wallet": {
+        "title": "您的钱包",
+        "balance": "余额"
+      },
+      "rebateBalance": "返利余额",
+      "cashbackBalance": "现金返还余额",
+      "referralBalance": "推荐余额"
+    },
+    "totalBets": {
+      "title": "总投注",
+      "columns": {
+        "transactionDateTime": "交易日期时间",
+        "totalWinLose": "总赢/输",
+        "totalBets": "总投注"
+      },
+      "emptyState": {
+        "message": "这里还没有任何内容！"
+      },
+      "totalBetAmount": "总投注金额："
+    },
+    "promotions": {
+      "title": "我的活动",
+      "cashback": "现金返还",
+      "rebate": "返利"
+    },
+    "actions": {
+      "exchangeReward": "兑换奖励",
+      "logOut": "登出"
+    },
+    "points": {
+      "currentPoints": "当前积分",
+      "progress": "进度",
+      "rank": {
+        "bronze": "青铜",
+        "silver": "白银"
+      }
+    },
+    "history": {
+      "title": "历史记录",
+      "tabs": {
+        "deposit": "存款",
+        "withdraw": "提款",
+        "bet": "投注",
+        "receivePromotion": "领取优惠",
+        "receiveRebate": "领取返利",
+        "receiveCashback": "领取现金返还",
+        "receiveReferral": "领取推荐奖励"
+      },
+      "columns": {
+        "amount": "金额",
+        "channel": "渠道",
+        "bankAccount": "银行账户",
+        "depositDateTime": "存款日期时间",
+        "status": "状态",
+        "successDateTime": "成功日期时间"
+      },
+      "emptyState": {
+        "message": "这里还没有任何内容！"
+      },
+      "totalDeposit": "总存款金额："
+    },
+    "rebate": {
+      "title": "返利",
+      "columns": {
+        "transactionDateTime": "交易日期时间",
+        "rebateAmount": "返利金额"
+      },
+      "emptyState": {
+        "message": "这里还没有任何内容！"
+      },
+      "totalRebate": "总返利金额："
+    },
+    "cashback": {
+      "title": "现金返还",
+      "columns": {
+        "transactionDateTime": "交易日期时间",
+        "cashbackAmount": "现金返还金额"
+      },
+      "emptyState": {
+        "message": "这里还没有任何内容！"
+      },
+      "totalCashback": "总现金返还金额："
+    },
+    "redeemHistory": {
+      "title": "兑换历史",
+      "columns": {
+        "no": "编号",
+        "transactionDateTime": "交易日期时间",
+        "typeOfReward": "奖励类型",
+        "reward": "奖励",
+        "status": "状态",
+        "usedPoints": "已用积分",
+        "freeSpins": "免费旋转"
+      },
+      "emptyState": {
+        "message": "这里还没有任何内容！"
+      },
+      "totals": {
+        "allRewards": "所有奖励：",
+        "totalUsedPoints": "已用积分总数：",
+        "totalFreeSpins": "总免费旋转次数：",
+        "totalAmountPerRound": "每轮总金额："
+      }
+    },
+    "pointHistory": {
+      "title": "积分历史",
+      "columns": {
+        "transactionDateTime": "交易日期时间",
+        "type": "类型",
+        "turnover": "流水",
+        "currentPoint": "当前积分"
+      },
+      "emptyState": {
+        "message": "这里还没有任何内容！"
+      },
+      "totalPoints": "总积分："
+    },
+    "personalMessage": {
+      "title": "个人消息",
+      "tabs": {
+        "inbox": "收件箱",
+        "send": "发送"
+      },
+      "emptyState": {
+        "message": "未找到结果"
+      },
+      "actions": {
+        "newMessage": "新消息"
+      },
+      "newMessageModal": {
+        "title": "新消息",
+        "fields": {
+          "sendTo": "发送至",
+          "admin": "管理员",
+          "title": "标题",
+          "titlePlaceholder": "输入标题",
+          "message": "消息",
+          "messagePlaceholder": "在这里输入内容...",
+          "attachImage": "附加图片（可选）",
+          "uploadInstructions": "点击或拖动上传",
+          "allowedFileTypes": "WEBP、PNG 或 JPG (3MB)."
+        },
+        "characterLimit": "0/300",
+        "sendMessageButton": "发送消息"
+      },
+      "pagination": {
+        "previous": "<",
+        "next": ">"
+      }
+    },
+    "referral": {
+      "title": "推荐",
+      "stats": {
+        "incomeToday": "今日收入",
+        "totalReferral": "总推荐",
+        "referralClick": "推荐点击",
+        "totalMember": "总会员",
+        "totalTurnover": "总流水",
+        "totalCashback": "总现金返还"
+      },
+      "copy": {
+        "referralLink": "推荐链接",
+        "referralCode": "推荐码",
+        "copyText": "将您的推荐码或链接发送给朋友，当他们玩游戏时，您可获得返利。"
+      },
+      "inviteFriends": "邀请朋友",
+      "socialMedia": {
+        "facebook": "脸书",
+        "telegram": "电报",
+        "skype": "Skype",
+        "whatsapp": "WhatsApp"
+      },
+      "actions": {
+        "transfer": "转移"
+      },
+      "dataOverview": {
+        "title": "数据概览",
+        "tabs": {
+          "totalRevenue": "总收入",
+          "members": "会员",
+          "receiveReferral": "收到推荐"
+        },
+        "table": {
+          "columns": {
+            "date": "日期",
+            "referral": "推荐"
+          },
+          "emptyState": {
+            "message": "这里还没有任何内容！"
+          },
+          "totals": {
+            "totalRevenue": "总收入："
+          }
+        },
+        "analytics": {
+          "title": "分析 - 衡量您的表现",
+          "metrics": {
+            "income": {
+              "title": "收入",
+              "today": "今日收入",
+              "yesterday": "昨日收入"
+            },
+            "turnover": {
+              "title": "流水",
+              "today": "今日流水",
+              "yesterday": "昨日流水"
+            },
+            "cashback": {
+              "title": "现金返还",
+              "today": "今日现金返还",
+              "yesterday": "昨日现金返还"
+            }
+          }
+        }
       }
     }
   },
@@ -666,5 +1008,54 @@
     },
     "footer": "💵 系统每天从00:00到23:59计算朋友的损失，收入将在每天早上8:00结算。",
     "imageAlt": "推荐横幅"
+  },
+  "searchModal": {
+    "searchBar": {
+      "placeholder": "搜索游戏",
+      "description": "找到您的游戏"
+    },
+    "recommended": {
+      "title": "为您推荐",
+      "games": {
+        "game1": {
+          "name": "珠宝狂热",
+          "provider": "Mancala"
+        },
+        "game2": {
+          "name": "炙热水果",
+          "provider": "Mancala"
+        },
+        "game3": {
+          "name": "#金条和铃铛",
+          "provider": "Mancala"
+        },
+        "game4": {
+          "name": "炙热转盘",
+          "provider": "Mancala"
+        },
+        "game5": {
+          "name": "湖之灵",
+          "provider": "Mancala"
+        },
+        "game6": {
+          "name": "双子之谜",
+          "provider": "Mancala"
+        }
+      }
+    }
+  },
+  "signupModal": {
+    "close": "关闭",
+    "signUpTab": "注册",
+    "signInTab": "登录",
+    "mobilePlaceholder": "手机号码 *",
+    "passwordPlaceholder": "密码 *",
+    "confirmPasswordPlaceholder": "确认密码 *",
+    "passwordsMismatchError": "密码不匹配。",
+    "invalidCredentialsError": "用户名或密码无效。",
+    "signUpSuccess": "注册成功！",
+    "signInSuccess": "登录成功！",
+    "submitSignUp": "注册",
+    "submitSignIn": "登录"
   }
 }

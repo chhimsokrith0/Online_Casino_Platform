@@ -496,6 +496,110 @@
                 "name": "가네샤의 행운",
                 "provider": "PGSoft"
             }
+        },
+        "slots": {
+            "title": "슬롯",
+            "seeAll": "모두 보기",
+            "ninjaRaccoonFrenzy": {
+                "name": "닌자 라쿤 프렌지",
+                "provider": "PGSoft"
+            },
+            "treasuresOfAztec": {
+                "name": "아즈텍의 보물",
+                "provider": "PGSoft"
+            },
+            "mahjongWays2": {
+                "name": "마작 웨이즈 2",
+                "provider": "PGSoft"
+            },
+            "luckyNeko": {
+                "name": "럭키 네코",
+                "provider": "PGSoft"
+            },
+            "mahjongWays": {
+                "name": "마작 웨이즈",
+                "provider": "PGSoft"
+            },
+            "wildBountyShowdown": {
+                "name": "와일드 바운티 쇼다운",
+                "provider": "PGSoft"
+            },
+            "waysOfTheQilin": {
+                "name": "기린의 길",
+                "provider": "PGSoft"
+            },
+            "wildBandito": {
+                "name": "와일드 반디토",
+                "provider": "PGSoft"
+            },
+            "fortuneRabbit": {
+                "name": "행운의 토끼",
+                "provider": "PGSoft"
+            },
+            "caishenWins": {
+                "name": "차이센 윈스",
+                "provider": "PGSoft"
+            },
+            "fortuneOx": {
+                "name": "행운의 황소",
+                "provider": "PGSoft"
+            },
+            "ganeshaFortune": {
+                "name": "가네샤의 행운",
+                "provider": "PGSoft"
+            }
+        },
+        "LiveCasino": {
+            "title": "라이브 카지노",
+            "seeAll": "모두 보기",
+            "ninjaRaccoonFrenzy": {
+                "name": "닌자 라쿤 열풍",
+                "provider": "PGSoft"
+            },
+            "treasuresOfAztec": {
+                "name": "아즈텍의 보물",
+                "provider": "PGSoft"
+            },
+            "mahjongWays2": {
+                "name": "마작 웨이즈 2",
+                "provider": "PGSoft"
+            },
+            "luckyNeko": {
+                "name": "럭키 네코",
+                "provider": "PGSoft"
+            },
+            "mahjongWays": {
+                "name": "마작 웨이즈",
+                "provider": "PGSoft"
+            },
+            "wildBountyShowdown": {
+                "name": "와일드 바운티 대결",
+                "provider": "PGSoft"
+            },
+            "waysOfTheQilin": {
+                "name": "기린의 길",
+                "provider": "PGSoft"
+            },
+            "wildBandito": {
+                "name": "와일드 반디토",
+                "provider": "PGSoft"
+            },
+            "fortuneRabbit": {
+                "name": "행운의 토끼",
+                "provider": "PGSoft"
+            },
+            "caishenWins": {
+                "name": "차이신의 승리",
+                "provider": "PGSoft"
+            },
+            "fortuneOx": {
+                "name": "행운의 황소",
+                "provider": "PGSoft"
+            },
+            "ganeshaFortune": {
+                "name": "가네샤의 행운",
+                "provider": "PGSoft"
+            }
         }
     },
     "GamesHeader": {
@@ -719,5 +823,54 @@
         },
         "footer": "💵 시스템은 매일 00:00부터 23:59까지 친구의 손실을 계산하며, 수익은 매일 오전 8:00에 정산됩니다.",
         "imageAlt": "추천 배너"
+    },
+    "searchModal": {
+        "searchBar": {
+            "placeholder": "게임 검색",
+            "description": "게임을 찾아보세요"
+        },
+        "recommended": {
+            "title": "추천 게임",
+            "games": {
+                "game1": {
+                    "name": "보석 매니아",
+                    "provider": "Mancala"
+                },
+                "game2": {
+                    "name": "불타는 과일",
+                    "provider": "Mancala"
+                },
+                "game3": {
+                    "name": "#바와 벨",
+                    "provider": "Mancala"
+                },
+                "game4": {
+                    "name": "릴 릴 핫",
+                    "provider": "Mancala"
+                },
+                "game5": {
+                    "name": "호수의 영혼",
+                    "provider": "Mancala"
+                },
+                "game6": {
+                    "name": "트윈 윈 미스터리",
+                    "provider": "Mancala"
+                }
+            }
+        }
+    },
+    "signupModal": {
+        "close": "닫기",
+        "signUpTab": "회원가입",
+        "signInTab": "로그인",
+        "mobilePlaceholder": "휴대폰 번호 *",
+        "passwordPlaceholder": "비밀번호 *",
+        "confirmPasswordPlaceholder": "비밀번호 확인 *",
+        "passwordsMismatchError": "비밀번호가 일치하지 않습니다.",
+        "invalidCredentialsError": "유효하지 않은 사용자 이름 또는 비밀번호입니다.",
+        "signUpSuccess": "회원가입이 완료되었습니다!",
+        "signInSuccess": "로그인 성공!",
+        "submitSignUp": "회원가입",
+        "submitSignIn": "로그인"
     }
 }

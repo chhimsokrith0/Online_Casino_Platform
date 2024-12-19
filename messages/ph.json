@@ -496,6 +496,110 @@
         "name": "Kayamanan ni Ganesha",
         "provider": "PGSoft"
       }
+    },
+    "slots": {
+      "title": "Mga Slots",
+      "seeAll": "Tingnan Lahat",
+      "ninjaRaccoonFrenzy": {
+        "name": "Ninja Raccoon Frenzy",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "Kayamanan ng Aztec",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "Mahjong Ways 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "Lucky Neko",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "Mahjong Ways",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "Wild Bounty Showdown",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "Mga Daan ng Qilin",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "Wild Bandito",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "Fortune Rabbit",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "Mga Panalo ni Caishen",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "Fortune Ox",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "Kayamanan ni Ganesha",
+        "provider": "PGSoft"
+      }
+    },
+    "LiveCasino": {
+      "title": "Live Casino",
+      "seeAll": "Tingnan Lahat",
+      "ninjaRaccoonFrenzy": {
+        "name": "Ninja Raccoon Frenzy",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "Kayamanan ng Aztec",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "Mahjong Ways 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "Lucky Neko",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "Mahjong Ways",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "Wild Bounty Showdown",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "Mga Daan ng Qilin",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "Wild Bandito",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "Fortune Rabbit",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "Panalo ni Caishen",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "Fortune Ox",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "Kayamanan ni Ganesha",
+        "provider": "PGSoft"
+      }
     }
   },
   "GamesHeader": {
@@ -574,6 +678,244 @@
       "pagination": {
         "page": "Pahina",
         "of": "ng"
+      }
+    }
+  },
+  "accountInformation": {
+    "title": "Impormasyon ng Account",
+    "menu": {
+      "myProfile": "Aking Profile",
+      "history": "Kasaysayan",
+      "rebate": "Rebate",
+      "cashback": "Cashback",
+      "totalBet": "Kabuuang Pustahan",
+      "redeemHistory": "Kasaysayan ng Pag-redeem",
+      "pointHistory": "Kasaysayan ng Puntos",
+      "personalMessage": "Personal na Mensahe",
+      "referral": "Referral"
+    },
+    "profile": {
+      "phoneNumber": "Numero ng Telepono",
+      "joinedOn": "Sumali Noong",
+      "vipLevel": {
+        "current": "Kasalukuyang Antas",
+        "upgrade": "I-upgrade ang Iyong VIP Antas",
+        "progress": "Ang Iyong Pag-unlad"
+      },
+      "wallet": {
+        "title": "Ang Iyong Wallet",
+        "balance": "Balanse"
+      },
+      "rebateBalance": "Rebate Balanse",
+      "cashbackBalance": "Cashback Balanse",
+      "referralBalance": "Referral Balanse"
+    },
+    "totalBets": {
+      "title": "Kabuuang Pustahan",
+      "columns": {
+        "transactionDateTime": "Petsa-Oras ng Transaksyon",
+        "totalWinLose": "Kabuuang Panalo/Talo",
+        "totalBets": "Kabuuang Pustahan"
+      },
+      "emptyState": {
+        "message": "Wala pa dito!"
+      },
+      "totalBetAmount": "Kabuuang Halaga ng Pustahan: "
+    },
+    "promotions": {
+      "title": "Aking Kampanya",
+      "cashback": "Cashback",
+      "rebate": "Rebate"
+    },
+    "actions": {
+      "exchangeReward": "Ipalit ang Gantimpala",
+      "logOut": "Mag-logout"
+    },
+    "points": {
+      "currentPoints": "Kasalukuyang Puntos",
+      "progress": "Pag-unlad",
+      "rank": {
+        "bronze": "Tanso",
+        "silver": "Pilak"
+      }
+    },
+    "history": {
+      "title": "Kasaysayan",
+      "tabs": {
+        "deposit": "Deposito",
+        "withdraw": "Pag-withdraw",
+        "bet": "Pustahan",
+        "receivePromotion": "Tumanggap ng Promosyon",
+        "receiveRebate": "Tumanggap ng Rebate",
+        "receiveCashback": "Tumanggap ng Cashback",
+        "receiveReferral": "Tumanggap ng Referral"
+      },
+      "columns": {
+        "amount": "Halaga",
+        "channel": "Kanal",
+        "bankAccount": "Bank Account",
+        "depositDateTime": "Petsa-Oras ng Deposito",
+        "status": "Katayuan",
+        "successDateTime": "Petsa-Oras ng Tagumpay"
+      },
+      "emptyState": {
+        "message": "Wala pa dito!"
+      },
+      "totalDeposit": "Kabuuang Deposito: "
+    },
+    "rebate": {
+      "title": "Rebate",
+      "columns": {
+        "transactionDateTime": "Petsa-Oras ng Transaksyon",
+        "rebateAmount": "Halaga ng Rebate"
+      },
+      "emptyState": {
+        "message": "Wala pa dito!"
+      },
+      "totalRebate": "Kabuuang Halaga ng Rebate: "
+    },
+    "cashback": {
+      "title": "Cashback",
+      "columns": {
+        "transactionDateTime": "Petsa-Oras ng Transaksyon",
+        "cashbackAmount": "Halaga ng Cashback"
+      },
+      "emptyState": {
+        "message": "Wala pa dito!"
+      },
+      "totalCashback": "Kabuuang Halaga ng Cashback: "
+    },
+    "redeemHistory": {
+      "title": "Kasaysayan ng Pag-redeem",
+      "columns": {
+        "no": "Hindi.",
+        "transactionDateTime": "Petsa-Oras ng Transaksyon",
+        "typeOfReward": "Uri ng Gantimpala",
+        "reward": "Gantimpala",
+        "status": "Katayuan",
+        "usedPoints": "Ginamit na Puntos",
+        "freeSpins": "Libreng Spins"
+      },
+      "emptyState": {
+        "message": "Wala pa dito!"
+      },
+      "totals": {
+        "allRewards": "Lahat ng Gantimpala:",
+        "totalUsedPoints": "Kabuuang Ginamit na Puntos:",
+        "totalFreeSpins": "Kabuuang Libreng Spins:",
+        "totalAmountPerRound": "Kabuuang Halaga Bawat Round:"
+      }
+    },
+    "pointHistory": {
+      "title": "Kasaysayan ng Puntos",
+      "columns": {
+        "transactionDateTime": "Petsa-Oras ng Transaksyon",
+        "type": "Uri",
+        "turnover": "Turnover",
+        "currentPoint": "Kasalukuyang Puntos"
+      },
+      "emptyState": {
+        "message": "Wala pa dito!"
+      },
+      "totalPoints": "Kabuuang Puntos:"
+    },
+    "personalMessage": {
+      "title": "Personal na Mensahe",
+      "tabs": {
+        "inbox": "Inbox",
+        "send": "Magpadala"
+      },
+      "emptyState": {
+        "message": "Walang natagpuang resulta"
+      },
+      "actions": {
+        "newMessage": "Bagong Mensahe"
+      },
+      "newMessageModal": {
+        "title": "Bagong Mensahe",
+        "fields": {
+          "sendTo": "Ipadala Sa",
+          "admin": "Admin",
+          "title": "Pamagat",
+          "titlePlaceholder": "Ilagay ang Pamagat",
+          "message": "Mensahe",
+          "messagePlaceholder": "Sumulat ng isang bagay dito ...",
+          "attachImage": "Maglakip ng Imahe (Opsyonal)",
+          "uploadInstructions": "I-click o i-drag para mag-upload",
+          "allowedFileTypes": "WEBP, PNG, o JPG (3MB)."
+        },
+        "characterLimit": "0/300",
+        "sendMessageButton": "Ipadala ang Mensahe"
+      },
+      "pagination": {
+        "previous": "<",
+        "next": ">"
+      }
+    },
+    "referral": {
+      "title": "Referral",
+      "stats": {
+        "incomeToday": "Kita Ngayon",
+        "totalReferral": "Kabuuang Referral",
+        "referralClick": "Referral Click",
+        "totalMember": "Kabuuang Miyembro",
+        "totalTurnover": "Kabuuang Turnover",
+        "totalCashback": "Kabuuang Cashback"
+      },
+      "copy": {
+        "referralLink": "Referral Link",
+        "referralCode": "Referral Code",
+        "copyText": "Ipadala ang iyong referral code o link sa iyong mga kaibigan, at makakuha ng rebate kapag naglaro sila."
+      },
+      "inviteFriends": "Mag-imbita ng mga Kaibigan",
+      "socialMedia": {
+        "facebook": "Facebook",
+        "telegram": "Telegram",
+        "skype": "Skype",
+        "whatsapp": "WhatsApp"
+      },
+      "actions": {
+        "transfer": "Ilipat"
+      },
+      "dataOverview": {
+        "title": "Pangkalahatang-ideya ng Data",
+        "tabs": {
+          "totalRevenue": "Kabuuang Kita",
+          "members": "Mga Miyembro",
+          "receiveReferral": "Tumanggap ng Referral"
+        },
+        "table": {
+          "columns": {
+            "date": "Petsa",
+            "referral": "Referral"
+          },
+          "emptyState": {
+            "message": "Wala pa dito!"
+          },
+          "totals": {
+            "totalRevenue": "Kabuuang Kita:"
+          }
+        },
+        "analytics": {
+          "title": "Analytics - Sukatin ang Iyong Pagganap",
+          "metrics": {
+            "income": {
+              "title": "Kita",
+              "today": "Kita Ngayon",
+              "yesterday": "Kita Kahapon"
+            },
+            "turnover": {
+              "title": "Turnover",
+              "today": "Turnover Ngayon",
+              "yesterday": "Turnover Kahapon"
+            },
+            "cashback": {
+              "title": "Cashback",
+              "today": "Cashback Ngayon",
+              "yesterday": "Cashback Kahapon"
+            }
+          }
+        }
       }
     }
   },
@@ -666,5 +1008,54 @@
     },
     "footer": "💵 Kinakalkula ng system ang pagkawala ng iyong mga kaibigan araw-araw mula 00:00 hanggang 23:59. Ang kita ay kinakalkula araw-araw sa ganap na 8:00 ng umaga.",
     "imageAlt": "Banner ng Referal"
+  },
+  "searchModal": {
+    "searchBar": {
+      "placeholder": "Maghanap ng Laro",
+      "description": "Hanapin ang iyong mga laro"
+    },
+    "recommended": {
+      "title": "Inirerekomenda para sa iyo",
+      "games": {
+        "game1": {
+          "name": "Jewel Mania",
+          "provider": "Mancala"
+        },
+        "game2": {
+          "name": "Mainit na Prutas sa Apoy",
+          "provider": "Mancala"
+        },
+        "game3": {
+          "name": "#BarsAndBells",
+          "provider": "Mancala"
+        },
+        "game4": {
+          "name": "Reel Reel Hot",
+          "provider": "Mancala"
+        },
+        "game5": {
+          "name": "Espiritu ng Lawa",
+          "provider": "Mancala"
+        },
+        "game6": {
+          "name": "Ang Misteryo ng Kambal na Panalo",
+          "provider": "Mancala"
+        }
+      }
+    }
+  },
+  "signupModal": {
+    "close": "Isara",
+    "signUpTab": "Magrehistro",
+    "signInTab": "Mag-login",
+    "mobilePlaceholder": "Numero ng Telepono *",
+    "passwordPlaceholder": "Password *",
+    "confirmPasswordPlaceholder": "Kumpirmahin ang Password *",
+    "passwordsMismatchError": "Hindi magkatugma ang mga password.",
+    "invalidCredentialsError": "Hindi wastong username o password.",
+    "signUpSuccess": "Matagumpay na nakarehistro!",
+    "signInSuccess": "Matagumpay na pag-login!",
+    "submitSignUp": "Magrehistro",
+    "submitSignIn": "Mag-login"
   }
 }

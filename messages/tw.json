@@ -496,6 +496,110 @@
                 "name": "象神財富",
                 "provider": "PGSoft"
             }
+        },
+        "slots": {
+            "title": "老虎機",
+            "seeAll": "查看全部",
+            "ninjaRaccoonFrenzy": {
+                "name": "忍者浣熊狂熱",
+                "provider": "PGSoft"
+            },
+            "treasuresOfAztec": {
+                "name": "阿茲特克寶藏",
+                "provider": "PGSoft"
+            },
+            "mahjongWays2": {
+                "name": "麻將之路 2",
+                "provider": "PGSoft"
+            },
+            "luckyNeko": {
+                "name": "幸運貓",
+                "provider": "PGSoft"
+            },
+            "mahjongWays": {
+                "name": "麻將之路",
+                "provider": "PGSoft"
+            },
+            "wildBountyShowdown": {
+                "name": "荒野賞金對決",
+                "provider": "PGSoft"
+            },
+            "waysOfTheQilin": {
+                "name": "麒麟之道",
+                "provider": "PGSoft"
+            },
+            "wildBandito": {
+                "name": "荒野大盜",
+                "provider": "PGSoft"
+            },
+            "fortuneRabbit": {
+                "name": "幸運兔",
+                "provider": "PGSoft"
+            },
+            "caishenWins": {
+                "name": "財神贏了",
+                "provider": "PGSoft"
+            },
+            "fortuneOx": {
+                "name": "幸運牛",
+                "provider": "PGSoft"
+            },
+            "ganeshaFortune": {
+                "name": "象神的財富",
+                "provider": "PGSoft"
+            }
+        },
+        "LiveCasino": {
+            "title": "真人娛樂場",
+            "seeAll": "查看全部",
+            "ninjaRaccoonFrenzy": {
+                "name": "忍者浣熊狂熱",
+                "provider": "PGSoft"
+            },
+            "treasuresOfAztec": {
+                "name": "阿茲特克寶藏",
+                "provider": "PGSoft"
+            },
+            "mahjongWays2": {
+                "name": "麻將之路 2",
+                "provider": "PGSoft"
+            },
+            "luckyNeko": {
+                "name": "幸運貓",
+                "provider": "PGSoft"
+            },
+            "mahjongWays": {
+                "name": "麻將之路",
+                "provider": "PGSoft"
+            },
+            "wildBountyShowdown": {
+                "name": "荒野賞金對決",
+                "provider": "PGSoft"
+            },
+            "waysOfTheQilin": {
+                "name": "麒麟之道",
+                "provider": "PGSoft"
+            },
+            "wildBandito": {
+                "name": "荒野大盜",
+                "provider": "PGSoft"
+            },
+            "fortuneRabbit": {
+                "name": "幸運兔",
+                "provider": "PGSoft"
+            },
+            "caishenWins": {
+                "name": "財神贏了",
+                "provider": "PGSoft"
+            },
+            "fortuneOx": {
+                "name": "幸運牛",
+                "provider": "PGSoft"
+            },
+            "ganeshaFortune": {
+                "name": "象神的財富",
+                "provider": "PGSoft"
+            }
         }
     },
     "GamesHeader": {
@@ -574,6 +678,244 @@
             "pagination": {
                 "page": "頁面",
                 "of": "的"
+            }
+        }
+    },
+    "accountInformation": {
+        "title": "帳戶資訊",
+        "menu": {
+            "myProfile": "我的個人檔案",
+            "history": "歷史記錄",
+            "rebate": "回饋",
+            "cashback": "現金回饋",
+            "totalBet": "總投注",
+            "redeemHistory": "兌換記錄",
+            "pointHistory": "積分記錄",
+            "personalMessage": "私人訊息",
+            "referral": "推薦"
+        },
+        "profile": {
+            "phoneNumber": "電話號碼",
+            "joinedOn": "加入日期",
+            "vipLevel": {
+                "current": "目前等級",
+                "upgrade": "升級您的 VIP 等級",
+                "progress": "您的進度"
+            },
+            "wallet": {
+                "title": "您的錢包",
+                "balance": "餘額"
+            },
+            "rebateBalance": "回饋餘額",
+            "cashbackBalance": "現金回饋餘額",
+            "referralBalance": "推薦餘額"
+        },
+        "totalBets": {
+            "title": "總投注",
+            "columns": {
+                "transactionDateTime": "交易日期時間",
+                "totalWinLose": "總贏/輸",
+                "totalBets": "總投注"
+            },
+            "emptyState": {
+                "message": "這裡還沒有任何內容！"
+            },
+            "totalBetAmount": "總投注金額: "
+        },
+        "promotions": {
+            "title": "我的活動",
+            "cashback": "現金回饋",
+            "rebate": "回饋"
+        },
+        "actions": {
+            "exchangeReward": "兌換獎勵",
+            "logOut": "登出"
+        },
+        "points": {
+            "currentPoints": "目前積分",
+            "progress": "進度",
+            "rank": {
+                "bronze": "銅牌",
+                "silver": "銀牌"
+            }
+        },
+        "history": {
+            "title": "歷史記錄",
+            "tabs": {
+                "deposit": "存款",
+                "withdraw": "提款",
+                "bet": "投注",
+                "receivePromotion": "接收促銷",
+                "receiveRebate": "接收回饋",
+                "receiveCashback": "接收現金回饋",
+                "receiveReferral": "接收推薦"
+            },
+            "columns": {
+                "amount": "金額",
+                "channel": "渠道",
+                "bankAccount": "銀行帳戶",
+                "depositDateTime": "存款日期時間",
+                "status": "狀態",
+                "successDateTime": "成功日期時間"
+            },
+            "emptyState": {
+                "message": "這裡還沒有任何內容！"
+            },
+            "totalDeposit": "總存款金額: "
+        },
+        "rebate": {
+            "title": "回饋",
+            "columns": {
+                "transactionDateTime": "交易日期時間",
+                "rebateAmount": "回饋金額"
+            },
+            "emptyState": {
+                "message": "這裡還沒有任何內容！"
+            },
+            "totalRebate": "總回饋金額: "
+        },
+        "cashback": {
+            "title": "現金回饋",
+            "columns": {
+                "transactionDateTime": "交易日期時間",
+                "cashbackAmount": "現金回饋金額"
+            },
+            "emptyState": {
+                "message": "這裡還沒有任何內容！"
+            },
+            "totalCashback": "總現金回饋金額: "
+        },
+        "redeemHistory": {
+            "title": "兌換記錄",
+            "columns": {
+                "no": "編號",
+                "transactionDateTime": "交易日期時間",
+                "typeOfReward": "獎勵類型",
+                "reward": "獎勵",
+                "status": "狀態",
+                "usedPoints": "使用積分",
+                "freeSpins": "免費旋轉"
+            },
+            "emptyState": {
+                "message": "這裡還沒有任何內容！"
+            },
+            "totals": {
+                "allRewards": "所有獎勵:",
+                "totalUsedPoints": "使用積分總數:",
+                "totalFreeSpins": "總免費旋轉:",
+                "totalAmountPerRound": "每輪總金額:"
+            }
+        },
+        "pointHistory": {
+            "title": "積分記錄",
+            "columns": {
+                "transactionDateTime": "交易日期時間",
+                "type": "類型",
+                "turnover": "營業額",
+                "currentPoint": "目前積分"
+            },
+            "emptyState": {
+                "message": "這裡還沒有任何內容！"
+            },
+            "totalPoints": "總積分: "
+        },
+        "personalMessage": {
+            "title": "私人訊息",
+            "tabs": {
+                "inbox": "收件箱",
+                "send": "發送"
+            },
+            "emptyState": {
+                "message": "找不到任何結果"
+            },
+            "actions": {
+                "newMessage": "新訊息"
+            },
+            "newMessageModal": {
+                "title": "新訊息",
+                "fields": {
+                    "sendTo": "發送至",
+                    "admin": "管理員",
+                    "title": "標題",
+                    "titlePlaceholder": "輸入標題",
+                    "message": "訊息",
+                    "messagePlaceholder": "在此輸入內容...",
+                    "attachImage": "附加圖片（可選）",
+                    "uploadInstructions": "點擊或拖動以上傳",
+                    "allowedFileTypes": "WEBP, PNG 或 JPG (3MB)."
+                },
+                "characterLimit": "0/300",
+                "sendMessageButton": "發送訊息"
+            },
+            "pagination": {
+                "previous": "<",
+                "next": ">"
+            }
+        },
+        "referral": {
+            "title": "推薦",
+            "stats": {
+                "incomeToday": "今日收入",
+                "totalReferral": "總推薦",
+                "referralClick": "推薦點擊",
+                "totalMember": "總會員",
+                "totalTurnover": "總營業額",
+                "totalCashback": "總現金回饋"
+            },
+            "copy": {
+                "referralLink": "推薦連結",
+                "referralCode": "推薦碼",
+                "copyText": "將您的推薦碼或連結發送給朋友，當他們玩遊戲時，您可獲得回饋。"
+            },
+            "inviteFriends": "邀請朋友",
+            "socialMedia": {
+                "facebook": "臉書",
+                "telegram": "電報",
+                "skype": "Skype",
+                "whatsapp": "WhatsApp"
+            },
+            "actions": {
+                "transfer": "轉移"
+            },
+            "dataOverview": {
+                "title": "數據概覽",
+                "tabs": {
+                    "totalRevenue": "總收入",
+                    "members": "會員",
+                    "receiveReferral": "收到推薦"
+                },
+                "table": {
+                    "columns": {
+                        "date": "日期",
+                        "referral": "推薦"
+                    },
+                    "emptyState": {
+                        "message": "這裡還沒有任何內容！"
+                    },
+                    "totals": {
+                        "totalRevenue": "總收入:"
+                    }
+                },
+                "analytics": {
+                    "title": "分析 - 測量您的表現",
+                    "metrics": {
+                        "income": {
+                            "title": "收入",
+                            "today": "今日收入",
+                            "yesterday": "昨日收入"
+                        },
+                        "turnover": {
+                            "title": "營業額",
+                            "today": "今日營業額",
+                            "yesterday": "昨日營業額"
+                        },
+                        "cashback": {
+                            "title": "現金回饋",
+                            "today": "今日現金回饋",
+                            "yesterday": "昨日現金回饋"
+                        }
+                    }
+                }
             }
         }
     },
@@ -666,5 +1008,54 @@
         },
         "footer": "💵 系統每天從00:00到23:59計算朋友的損失，收入每天早上8:00結算。",
         "imageAlt": "推薦橫幅"
+    },
+    "searchModal": {
+        "searchBar": {
+            "placeholder": "搜尋遊戲",
+            "description": "找到你的遊戲"
+        },
+        "recommended": {
+            "title": "為你推薦",
+            "games": {
+                "game1": {
+                    "name": "珠寶狂熱",
+                    "provider": "Mancala"
+                },
+                "game2": {
+                    "name": "火熱水果",
+                    "provider": "Mancala"
+                },
+                "game3": {
+                    "name": "#金條與鈴鐺",
+                    "provider": "Mancala"
+                },
+                "game4": {
+                    "name": "炙熱轉盤",
+                    "provider": "Mancala"
+                },
+                "game5": {
+                    "name": "湖泊之靈",
+                    "provider": "Mancala"
+                },
+                "game6": {
+                    "name": "雙子贏家之謎",
+                    "provider": "Mancala"
+                }
+            }
+        }
+    },
+    "signupModal": {
+        "close": "關閉",
+        "signUpTab": "註冊",
+        "signInTab": "登入",
+        "mobilePlaceholder": "手機號碼 *",
+        "passwordPlaceholder": "密碼 *",
+        "confirmPasswordPlaceholder": "確認密碼 *",
+        "passwordsMismatchError": "密碼不一致。",
+        "invalidCredentialsError": "無效的用戶名或密碼。",
+        "signUpSuccess": "註冊成功！",
+        "signInSuccess": "登入成功！",
+        "submitSignUp": "註冊",
+        "submitSignIn": "登入"
     }
 }

@@ -5,10 +5,11 @@ import gsap from "gsap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faCoins, faGift, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import VIPLevelModal from "./VIPLevelModal";
-
+import { useTranslations } from "next-intl";
 const ProfilePage = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isModalOpen, setModalOpen] = useState(false);
+  const t = useTranslations("accountInformation");
 
   const toggleModal = () => {
     setModalOpen(!isModalOpen);

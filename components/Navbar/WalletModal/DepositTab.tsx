@@ -1,16 +1,16 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { faQrcode, faUniversity } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import gsap from "gsap";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const DepositTab: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const itemRefs = useRef<HTMLDivElement[]>([]);
   const [selectedMethod, setSelectedMethod] = useState<string | null>(null);
   const scrollPositionRef = useRef<number>(0);
+  const t = useTranslations("wallet.deposit");
 
   useEffect(() => {
     // Animate the container fade-in
@@ -68,7 +68,7 @@ const DepositTab: React.FC = () => {
       ref={containerRef}
       className="overflow-y-scroll h-full scrollbar-hide"
     >
-      <h3 className="text-sm p-2">Payment Method</h3>
+      <h3 className="text-sm p-2"> { t("paymentMethod") } </h3>
       <div className="space-y-4 p-4">
         {/* Option 1: Bank Deposit */}
         {selectedMethod === null || selectedMethod === "ABA Bank" ? (
@@ -88,7 +88,7 @@ const DepositTab: React.FC = () => {
                 height={40}
                 className="rounded-full"
               />
-              <span className="text-sm font-semibold">ABA Bank</span>
+              <span className="text-sm font-semibold">{ t("methods.abaBank") }</span>
             </div>
 
           </div>
@@ -112,7 +112,7 @@ const DepositTab: React.FC = () => {
                 height={40}
                 className="rounded-full"
               />
-              <span className="text-sm font-semibold">Acleda Bank</span>
+              <span className="text-sm font-semibold">{ t("methods.acledaBank") }</span>
             </div>
           </div>
         ) : null}
@@ -135,7 +135,7 @@ const DepositTab: React.FC = () => {
                 height={40}
                 className="rounded-full" // Optional: Add rounded-full for circular icons
               />
-              <span className="text-sm font-semibold">QR Code ABA Bank</span>
+              <span className="text-sm font-semibold">{ t("methods.qrCodeAbaBank") }</span>
             </div>
           </div>
         ) : null}

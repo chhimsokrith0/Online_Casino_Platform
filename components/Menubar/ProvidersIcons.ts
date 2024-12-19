@@ -34,6 +34,7 @@ import icon_Hacksaw from "@/assets/icon_Providers/Hacksaw.svg";
 import icon_RoyalSlot from "@/assets/icon_Providers/RoyalSlot.svg";
 import icon_Winfinity from "@/assets/icon_Providers/Winfinity.svg";
 
+
 // Updated array of provider icons
 const ProvidersIcons = [
   { name: "PGSoft", icon: icon_PG },

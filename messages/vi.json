@@ -300,6 +300,110 @@
         "name": "Thần Tài Ganesha",
         "provider": "PGSoft"
       }
+    },
+    "slots": {
+      "title": "Máy Xèng",
+      "seeAll": "Xem Tất Cả",
+      "ninjaRaccoonFrenzy": {
+        "name": "Cơn Sốt Ninja Raccoon",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "Kho Báu Aztec",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "Con Đường Mahjong 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "Mèo May Mắn",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "Con Đường Mahjong",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "Cuộc Đối Đầu Bounty Hoang Dã",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "Con Đường Của Qilin",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "Tên Cướp Hoang Dã",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "Thỏ May Mắn",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "Thần Tài Thắng Lợi",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "Trâu May Mắn",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "Vận May Của Ganesha",
+        "provider": "PGSoft"
+      }
+    },
+    "LiveCasino": {
+      "title": "Sòng Bạc Trực Tuyến",
+      "seeAll": "Xem Tất Cả",
+      "ninjaRaccoonFrenzy": {
+        "name": "Cơn Sốt Ninja Raccoon",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "Kho Báu Aztec",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "Con Đường Mahjong 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "Mèo May Mắn",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "Con Đường Mahjong",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "Cuộc Đối Đầu Bounty Hoang Dã",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "Con Đường Của Qilin",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "Tên Cướp Hoang Dã",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "Thỏ May Mắn",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "Caishen Chiến Thắng",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "Trâu May Mắn",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "Vận May Của Ganesha",
+        "provider": "PGSoft"
+      }
     }
   },
   "footer": {
@@ -380,5 +484,54 @@
     },
     "footer": "💵 Hệ thống sẽ tính toán khoản lỗ của bạn bè bạn hàng ngày từ 00:00 đến 23:59. Thu nhập sẽ được tính hàng ngày vào lúc 8:00 sáng.",
     "imageAlt": "Biểu ngữ giới thiệu"
+  },
+  "searchModal": {
+    "searchBar": {
+      "placeholder": "Tìm kiếm trò chơi",
+      "description": "Tìm trò chơi của bạn"
+    },
+    "recommended": {
+      "title": "Được đề xuất cho bạn",
+      "games": {
+        "game1": {
+          "name": "Jewel Mania",
+          "provider": "Mancala"
+        },
+        "game2": {
+          "name": "Hoa Quả Nóng Bỏng",
+          "provider": "Mancala"
+        },
+        "game3": {
+          "name": "#BarsAndBells",
+          "provider": "Mancala"
+        },
+        "game4": {
+          "name": "Reel Reel Hot",
+          "provider": "Mancala"
+        },
+        "game5": {
+          "name": "Linh Hồn Hồ Nước",
+          "provider": "Mancala"
+        },
+        "game6": {
+          "name": "Bí Ẩn Chiến Thắng Kép",
+          "provider": "Mancala"
+        }
+      }
+    }
+  },
+  "signupModal": {
+    "close": "Đóng",
+    "signUpTab": "Đăng Ký",
+    "signInTab": "Đăng Nhập",
+    "mobilePlaceholder": "Số Điện Thoại *",
+    "passwordPlaceholder": "Mật Khẩu *",
+    "confirmPasswordPlaceholder": "Xác Nhận Mật Khẩu *",
+    "passwordsMismatchError": "Mật khẩu không khớp.",
+    "invalidCredentialsError": "Tên người dùng hoặc mật khẩu không hợp lệ.",
+    "signUpSuccess": "Đăng ký thành công!",
+    "signInSuccess": "Đăng nhập thành công!",
+    "submitSignUp": "Đăng Ký",
+    "submitSignIn": "Đăng Nhập"
   }
 }

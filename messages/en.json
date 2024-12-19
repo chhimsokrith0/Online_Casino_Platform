@@ -442,6 +442,110 @@
         "name": "Ganesha Fortune",
         "provider": "PGSoft"
       }
+    },
+    "slots": {
+      "title": "Slots",
+      "seeAll": "See All",
+      "ninjaRaccoonFrenzy": {
+        "name": "Ninja Raccoon Frenzy",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "Treasures of Aztec",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "Mahjong Ways 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "Lucky Neko",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "Mahjong Ways",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "Wild Bounty Showdown",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "Ways of the Qilin",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "Wild Bandito",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "Fortune Rabbit",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "Caishen Wins",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "Fortune Ox",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "Ganesha Fortune",
+        "provider": "PGSoft"
+      }
+    },
+    "LiveCasino": {
+      "title": "Live Casino",
+      "seeAll": "See All",
+      "ninjaRaccoonFrenzy": {
+        "name": "Ninja Raccoon Frenzy",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "Treasures of Aztec",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "Mahjong Ways 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "Lucky Neko",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "Mahjong Ways",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "Wild Bounty Showdown",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "Ways of the Qilin",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "Wild Bandito",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "Fortune Rabbit",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "Caishen Wins",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "Fortune Ox",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "Ganesha Fortune",
+        "provider": "PGSoft"
+      }
     }
   },
   "GamesHeader": {
@@ -850,5 +954,138 @@
     },
     "footer": "💵 The system calculates your friends' losses daily from 00:00 to 23:59. Income is calculated every day at 8:00.",
     "imageAlt": "Referal Banner"
+  },
+  "searchModal": {
+    "searchBar": {
+      "placeholder": "Search Games",
+      "description": "Find your games"
+    },
+    "recommended": {
+      "title": "Recommended for you",
+      "games": {
+        "game1": {
+          "name": "Jewel Mania",
+          "provider": "Mancala"
+        },
+        "game2": {
+          "name": "Hot Fruits on Fire",
+          "provider": "Mancala"
+        },
+        "game3": {
+          "name": "#BarsAndBells",
+          "provider": "Mancala"
+        },
+        "game4": {
+          "name": "Reel Reel Hot",
+          "provider": "Mancala"
+        },
+        "game5": {
+          "name": "Spirit of the Lake",
+          "provider": "Mancala"
+        },
+        "game6": {
+          "name": "The Twin Wins Mystery",
+          "provider": "Mancala"
+        }
+      }
+    }
+  },
+  "providersModal": {
+    "title": "All Providers",
+    "closeButton": "Close",
+    "providers": {
+      "PGSoft": "PGSoft",
+      "Joker": "Joker",
+      "JILI": "JILI",
+      "PragmaticPlay": "PragmaticPlay",
+      "Habanero": "Habanero",
+      "Pegasus": "Pegasus",
+      "DreamGaming": "DreamGaming",
+      "Worldmatch": "Worldmatch",
+      "WMCASINO": "WMCASINO",
+      "Amigo": "Amigo",
+      "Naga": "Naga",
+      "Nolimit": "Nolimit City",
+      "SA": "SA",
+      "AeSexy": "Ae Sexy",
+      "Evoplay": "Evoplay",
+      "Spribe": "Spribe",
+      "Sbobet": "Sbobet",
+      "Evolution": "Evolution Gaming",
+      "Mancala": "Mancala",
+      "PlaynGo": "Play`n Go",
+      "Relax": "Relax Gaming",
+      "Smartsoft": "Smartsoft Gaming",
+      "3Oaks": "3 Oaks Gaming",
+      "Dragongaming": "Dragongaming",
+      "WeGaming": "We Gaming",
+      "Rich88": "Rich88",
+      "SpadeGaming": "SpadeGaming",
+      "FACHAI": "FA CHAI",
+      "FastSpin": "FastSpin",
+      "CQ9": "CQ9",
+      "Hacksaw": "Hacksaw",
+      "RoyalSlot": "Royal Slot Gaming",
+      "Winfinity": "Winfinity"
+    }
+  },
+  "signupModal": {
+    "close": "Close",
+    "signUpTab": "Sign Up",
+    "signInTab": "Sign In",
+    "mobilePlaceholder": "Mobile Phone *",
+    "passwordPlaceholder": "Password *",
+    "confirmPasswordPlaceholder": "Confirm Password *",
+    "passwordsMismatchError": "Passwords do not match.",
+    "invalidCredentialsError": "Invalid username or password.",
+    "signUpSuccess": "Sign-up successful!",
+    "signInSuccess": "Login successful!",
+    "submitSignUp": "Sign Up",
+    "submitSignIn": "Sign In"
+  },
+  "wallet": {
+    "title": "Your Wallet",
+    "history": "History",
+    "tabs": {
+      "deposit": "Deposit",
+      "withdraw": "Withdraw",
+      "transfer": "Transfer"
+    },
+    "deposit": {
+      "paymentMethod": "Payment Method",
+      "methods": {
+        "abaBank": "ABA Bank",
+        "acledaBank": "Acleda Bank",
+        "qrCodeAbaBank": "QR Code ABA Bank"
+      }
+    },
+    "withdraw": {
+      "withdrawalCondition": "Withdrawal Condition",
+      "conditions": {
+        "depositTurnover": "Deposit Turnover",
+        "turnover": "Turnover",
+        "turnWinlose": "Turn Winlose"
+      },
+      "withdrawAmount": "Withdraw Amount",
+      "yourWallet": "Your wallet",
+      "minMax": "Min 500.00฿ ~ Max 10,000.00฿",
+      "balance": "Balance",
+      "buttons": {
+        "min": "Min",
+        "25Percent": "25%",
+        "50Percent": "50%",
+        "max": "Max"
+      },
+      "note": "Note",
+      "notePlaceholder": "Type something here ...",
+      "characterLimit": "0/300",
+      "withdrawButton": "Withdraw"
+    },
+    "transfer": {
+      "transferFrom": "Transfer From",
+      "yourWallet": "Your wallet",
+      "transferButton": "Transfer to Main Wallet"
+    },
+    "line": "Line"
   }
 }

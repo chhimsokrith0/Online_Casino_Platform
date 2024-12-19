@@ -496,6 +496,110 @@
         "name": "Keberuntungan Ganesha",
         "provider": "PGSoft"
       }
+    },
+    "slots": {
+      "title": "Slot",
+      "seeAll": "Lihat Semua",
+      "ninjaRaccoonFrenzy": {
+        "name": "Kegilaan Ninja Raccoon",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "Harta Karun Aztec",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "Mahjong Ways 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "Neko Bertuah",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "Mahjong Ways",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "Pertarungan Ganjaran Liar",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "Jalan Qilin",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "Bandito Liar",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "Arnab Bertuah",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "Kemenangan Caishen",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "Lembu Bertuah",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "Keberuntungan Ganesha",
+        "provider": "PGSoft"
+      }
+    },
+    "LiveCasino": {
+      "title": "Kasino Langsung",
+      "seeAll": "Lihat Semua",
+      "ninjaRaccoonFrenzy": {
+        "name": "Kegilaan Ninja Raccoon",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "Harta Karun Aztec",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "Mahjong Ways 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "Neko Bertuah",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "Mahjong Ways",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "Pertarungan Bounty Liar",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "Jalan Qilin",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "Bandito Liar",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "Arnab Bertuah",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "Caishen Menang",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "Lembu Bertuah",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "Keberuntungan Ganesha",
+        "provider": "PGSoft"
+      }
     }
   },
   "GamesHeader": {
@@ -574,6 +678,244 @@
       "pagination": {
         "page": "Halaman",
         "of": "daripada"
+      }
+    }
+  },
+  "accountInformation": {
+    "title": "Maklumat Akaun",
+    "menu": {
+      "myProfile": "Profil Saya",
+      "history": "Sejarah",
+      "rebate": "Rebat",
+      "cashback": "Pulangan Tunai",
+      "totalBet": "Jumlah Pertaruhan",
+      "redeemHistory": "Sejarah Penebusan",
+      "pointHistory": "Sejarah Mata",
+      "personalMessage": "Mesej Peribadi",
+      "referral": "Rujukan"
+    },
+    "profile": {
+      "phoneNumber": "Nombor Telefon",
+      "joinedOn": "Tarikh Sertai",
+      "vipLevel": {
+        "current": "Tahap Semasa",
+        "upgrade": "Naik Taraf Tahap VIP Anda",
+        "progress": "Kemajuan Anda"
+      },
+      "wallet": {
+        "title": "Dompet Anda",
+        "balance": "Baki"
+      },
+      "rebateBalance": "Baki Rebat",
+      "cashbackBalance": "Baki Pulangan Tunai",
+      "referralBalance": "Baki Rujukan"
+    },
+    "totalBets": {
+      "title": "Jumlah Pertaruhan",
+      "columns": {
+        "transactionDateTime": "Tarikh-Masa Transaksi",
+        "totalWinLose": "Jumlah Menang/Kalah",
+        "totalBets": "Jumlah Pertaruhan"
+      },
+      "emptyState": {
+        "message": "Tiada apa-apa di sini lagi!"
+      },
+      "totalBetAmount": "Jumlah Pertaruhan: "
+    },
+    "promotions": {
+      "title": "Kempen Saya",
+      "cashback": "Pulangan Tunai",
+      "rebate": "Rebat"
+    },
+    "actions": {
+      "exchangeReward": "Tukar Ganjaran",
+      "logOut": "Log Keluar"
+    },
+    "points": {
+      "currentPoints": "Mata Semasa",
+      "progress": "Kemajuan",
+      "rank": {
+        "bronze": "Gangsa",
+        "silver": "Perak"
+      }
+    },
+    "history": {
+      "title": "Sejarah",
+      "tabs": {
+        "deposit": "Deposit",
+        "withdraw": "Pengeluaran",
+        "bet": "Pertaruhan",
+        "receivePromotion": "Terima Promosi",
+        "receiveRebate": "Terima Rebat",
+        "receiveCashback": "Terima Pulangan Tunai",
+        "receiveReferral": "Terima Rujukan"
+      },
+      "columns": {
+        "amount": "Jumlah",
+        "channel": "Saluran",
+        "bankAccount": "Akaun Bank",
+        "depositDateTime": "Tarikh-Masa Deposit",
+        "status": "Status",
+        "successDateTime": "Tarikh-Masa Berjaya"
+      },
+      "emptyState": {
+        "message": "Tiada apa-apa di sini lagi!"
+      },
+      "totalDeposit": "Jumlah Deposit: "
+    },
+    "rebate": {
+      "title": "Rebat",
+      "columns": {
+        "transactionDateTime": "Tarikh-Masa Transaksi",
+        "rebateAmount": "Jumlah Rebat"
+      },
+      "emptyState": {
+        "message": "Tiada apa-apa di sini lagi!"
+      },
+      "totalRebate": "Jumlah Rebat: "
+    },
+    "cashback": {
+      "title": "Pulangan Tunai",
+      "columns": {
+        "transactionDateTime": "Tarikh-Masa Transaksi",
+        "cashbackAmount": "Jumlah Pulangan Tunai"
+      },
+      "emptyState": {
+        "message": "Tiada apa-apa di sini lagi!"
+      },
+      "totalCashback": "Jumlah Pulangan Tunai: "
+    },
+    "redeemHistory": {
+      "title": "Sejarah Penebusan",
+      "columns": {
+        "no": "No",
+        "transactionDateTime": "Tarikh-Masa Transaksi",
+        "typeOfReward": "Jenis Ganjaran",
+        "reward": "Ganjaran",
+        "status": "Status",
+        "usedPoints": "Mata Digunakan",
+        "freeSpins": "Putaran Percuma"
+      },
+      "emptyState": {
+        "message": "Tiada apa-apa di sini lagi!"
+      },
+      "totals": {
+        "allRewards": "Semua Ganjaran:",
+        "totalUsedPoints": "Jumlah Mata Digunakan:",
+        "totalFreeSpins": "Jumlah Putaran Percuma:",
+        "totalAmountPerRound": "Jumlah Setiap Pusingan:"
+      }
+    },
+    "pointHistory": {
+      "title": "Sejarah Mata",
+      "columns": {
+        "transactionDateTime": "Tarikh-Masa Transaksi",
+        "type": "Jenis",
+        "turnover": "Pusing Ganti",
+        "currentPoint": "Mata Semasa"
+      },
+      "emptyState": {
+        "message": "Tiada apa-apa di sini lagi!"
+      },
+      "totalPoints": "Jumlah Mata:"
+    },
+    "personalMessage": {
+      "title": "Mesej Peribadi",
+      "tabs": {
+        "inbox": "Peti Masuk",
+        "send": "Hantar"
+      },
+      "emptyState": {
+        "message": "Tiada hasil dijumpai"
+      },
+      "actions": {
+        "newMessage": "Mesej Baru"
+      },
+      "newMessageModal": {
+        "title": "Mesej Baru",
+        "fields": {
+          "sendTo": "Hantar Kepada",
+          "admin": "Admin",
+          "title": "Tajuk",
+          "titlePlaceholder": "Masukkan Tajuk",
+          "message": "Mesej",
+          "messagePlaceholder": "Tulis sesuatu di sini ...",
+          "attachImage": "Lampirkan Imej (Pilihan)",
+          "uploadInstructions": "Klik atau seret untuk muat naik",
+          "allowedFileTypes": "WEBP, PNG, atau JPG (3MB)."
+        },
+        "characterLimit": "0/300",
+        "sendMessageButton": "Hantar Mesej"
+      },
+      "pagination": {
+        "previous": "<",
+        "next": ">"
+      }
+    },
+    "referral": {
+      "title": "Rujukan",
+      "stats": {
+        "incomeToday": "Pendapatan Hari Ini",
+        "totalReferral": "Jumlah Rujukan",
+        "referralClick": "Klik Rujukan",
+        "totalMember": "Jumlah Ahli",
+        "totalTurnover": "Jumlah Pusing Ganti",
+        "totalCashback": "Jumlah Pulangan Tunai"
+      },
+      "copy": {
+        "referralLink": "Pautan Rujukan",
+        "referralCode": "Kod Rujukan",
+        "copyText": "Hantar kod atau pautan rujukan anda kepada rakan anda, dan dapatkan rebat apabila mereka bermain."
+      },
+      "inviteFriends": "Jemput Rakan",
+      "socialMedia": {
+        "facebook": "Facebook",
+        "telegram": "Telegram",
+        "skype": "Skype",
+        "whatsapp": "WhatsApp"
+      },
+      "actions": {
+        "transfer": "Pindah"
+      },
+      "dataOverview": {
+        "title": "Tinjauan Data",
+        "tabs": {
+          "totalRevenue": "Jumlah Pendapatan",
+          "members": "Ahli",
+          "receiveReferral": "Terima Rujukan"
+        },
+        "table": {
+          "columns": {
+            "date": "Tarikh",
+            "referral": "Rujukan"
+          },
+          "emptyState": {
+            "message": "Tiada apa-apa di sini lagi!"
+          },
+          "totals": {
+            "totalRevenue": "Jumlah Pendapatan:"
+          }
+        },
+        "analytics": {
+          "title": "Analitik - Ukur Prestasi Anda",
+          "metrics": {
+            "income": {
+              "title": "Pendapatan",
+              "today": "Pendapatan Hari Ini",
+              "yesterday": "Pendapatan Semalam"
+            },
+            "turnover": {
+              "title": "Pusing Ganti",
+              "today": "Pusing Ganti Hari Ini",
+              "yesterday": "Pusing Ganti Semalam"
+            },
+            "cashback": {
+              "title": "Pulangan Tunai",
+              "today": "Pulangan Tunai Hari Ini",
+              "yesterday": "Pulangan Tunai Semalam"
+            }
+          }
+        }
       }
     }
   },
@@ -666,5 +1008,54 @@
     },
     "footer": "💵 Sistem akan mengira kerugian rakan anda setiap hari dari 00:00 hingga 23:59. Pendapatan akan dikira setiap hari pada pukul 8:00 pagi.",
     "imageAlt": "Banner Rujukan"
+  },
+  "searchModal": {
+    "searchBar": {
+      "placeholder": "Cari Permainan",
+      "description": "Cari permainan anda"
+    },
+    "recommended": {
+      "title": "Disyorkan untuk anda",
+      "games": {
+        "game1": {
+          "name": "Jewel Mania",
+          "provider": "Mancala"
+        },
+        "game2": {
+          "name": "Buah Panas Membara",
+          "provider": "Mancala"
+        },
+        "game3": {
+          "name": "#BarsAndBells",
+          "provider": "Mancala"
+        },
+        "game4": {
+          "name": "Reel Reel Hot",
+          "provider": "Mancala"
+        },
+        "game5": {
+          "name": "Semangat Tasik",
+          "provider": "Mancala"
+        },
+        "game6": {
+          "name": "Misteri Kemenangan Berkembar",
+          "provider": "Mancala"
+        }
+      }
+    }
+  },
+  "signupModal": {
+    "close": "Tutup",
+    "signUpTab": "Daftar",
+    "signInTab": "Log Masuk",
+    "mobilePlaceholder": "Telefon Bimbit *",
+    "passwordPlaceholder": "Kata Laluan *",
+    "confirmPasswordPlaceholder": "Sahkan Kata Laluan *",
+    "passwordsMismatchError": "Kata laluan tidak sepadan.",
+    "invalidCredentialsError": "Nama pengguna atau kata laluan tidak sah.",
+    "signUpSuccess": "Pendaftaran berjaya!",
+    "signInSuccess": "Log masuk berjaya!",
+    "submitSignUp": "Daftar",
+    "submitSignIn": "Log Masuk"
   }
 }

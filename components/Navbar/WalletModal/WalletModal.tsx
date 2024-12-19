@@ -11,6 +11,7 @@ import { faTimes, faClock } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ReactDOM from "react-dom";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 interface WalletModalProps {
   isOpen: boolean;
@@ -22,6 +23,7 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
   const modalRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   const scrollPositionRef = useRef<number>(0);
+  const t = useTranslations("wallet");
 
   useEffect(() => {
     if (isOpen) {
@@ -109,7 +111,7 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
 
         {/* Header */}
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-lg font-bold">Your Wallet</h2>
+          <h2 className="text-lg font-bold">{ t("title") }</h2>
           <Link
             href="/account-information/transactions"
             onClick={() => {

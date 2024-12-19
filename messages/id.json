@@ -496,6 +496,110 @@
         "name": "Keberuntungan Ganesha",
         "provider": "PGSoft"
       }
+    },
+    "slots": {
+      "title": "Slot",
+      "seeAll": "Lihat Semua",
+      "ninjaRaccoonFrenzy": {
+        "name": "Ninja Raccoon Frenzy",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "Harta Karun Aztec",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "Mahjong Ways 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "Lucky Neko",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "Mahjong Ways",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "Wild Bounty Showdown",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "Ways of the Qilin",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "Wild Bandito",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "Fortune Rabbit",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "Caishen Menang",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "Fortune Ox",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "Keberuntungan Ganesha",
+        "provider": "PGSoft"
+      }
+    },
+    "LiveCasino": {
+      "title": "Kasino Langsung",
+      "seeAll": "Lihat Semua",
+      "ninjaRaccoonFrenzy": {
+        "name": "Kegilaan Ninja Raccoon",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "Harta Karun Aztec",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "Mahjong Ways 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "Lucky Neko",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "Mahjong Ways",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "Pertarungan Bounty Liar",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "Jalan Qilin",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "Bandito Liar",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "Kelinci Keberuntungan",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "Caishen Menang",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "Sapi Keberuntungan",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "Keberuntungan Ganesha",
+        "provider": "PGSoft"
+      }
     }
   },
   "GamesHeader": {
@@ -719,5 +823,54 @@
     },
     "footer": "💵 Sistem menghitung kerugian teman Anda setiap hari dari pukul 00:00 hingga 23:59. Pendapatan dihitung setiap hari pada pukul 08:00.",
     "imageAlt": "Spanduk Referal"
+  },
+  "searchModal": {
+    "searchBar": {
+      "placeholder": "Cari Permainan",
+      "description": "Temukan permainan Anda"
+    },
+    "recommended": {
+      "title": "Direkomendasikan untuk Anda",
+      "games": {
+        "game1": {
+          "name": "Permata Mania",
+          "provider": "Mancala"
+        },
+        "game2": {
+          "name": "Buah Panas Terbakar",
+          "provider": "Mancala"
+        },
+        "game3": {
+          "name": "#BarsAndBells",
+          "provider": "Mancala"
+        },
+        "game4": {
+          "name": "Reel Reel Hot",
+          "provider": "Mancala"
+        },
+        "game5": {
+          "name": "Roh Danau",
+          "provider": "Mancala"
+        },
+        "game6": {
+          "name": "Misteri Kemenangan Kembar",
+          "provider": "Mancala"
+        }
+      }
+    }
+  },
+  "signupModal": {
+    "close": "Tutup",
+    "signUpTab": "Daftar",
+    "signInTab": "Masuk",
+    "mobilePlaceholder": "Nomor Ponsel *",
+    "passwordPlaceholder": "Kata Sandi *",
+    "confirmPasswordPlaceholder": "Konfirmasi Kata Sandi *",
+    "passwordsMismatchError": "Kata sandi tidak cocok.",
+    "invalidCredentialsError": "Nama pengguna atau kata sandi salah.",
+    "signUpSuccess": "Pendaftaran berhasil!",
+    "signInSuccess": "Masuk berhasil!",
+    "submitSignUp": "Daftar",
+    "submitSignIn": "Masuk"
   }
 }

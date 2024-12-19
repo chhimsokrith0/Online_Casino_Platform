@@ -1,11 +1,12 @@
 import React from "react";
-
+import { useTranslations } from "next-intl";
 interface TabsProps {
   activeTab: "deposit" | "withdraw" | "transfer";
   setActiveTab: (tab: "deposit" | "withdraw" | "transfer") => void;
 }
 
 const Tabs: React.FC<TabsProps> = ({ activeTab, setActiveTab }) => {
+  const t = useTranslations("wallet.tabs");
   return (
     <div className="flex items-center justify-center mb-6">
       <button
@@ -16,7 +17,7 @@ const Tabs: React.FC<TabsProps> = ({ activeTab, setActiveTab }) => {
         }`}
         onClick={() => setActiveTab("deposit")}
       >
-        Deposit
+        { t('deposit') }
       </button>
       <button
         className={`flex-1 py-2 text-sm font-bold ${
@@ -26,7 +27,7 @@ const Tabs: React.FC<TabsProps> = ({ activeTab, setActiveTab }) => {
         }`}
         onClick={() => setActiveTab("withdraw")}
       >
-        Withdraw
+        { t('withdraw') }
       </button>
       <button
         className={`flex-1 py-2 text-sm font-bold ${
@@ -36,7 +37,7 @@ const Tabs: React.FC<TabsProps> = ({ activeTab, setActiveTab }) => {
         }`}
         onClick={() => setActiveTab("transfer")}
       >
-        Transfer
+        { t('transfer') }
       </button>
     </div>
   );
