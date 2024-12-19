@@ -27,7 +27,7 @@ const Header: React.FC = () => {
       </div>
 
       {/* Modal */}
-      {isModalOpen && <NewMessageModal onClose={toggleModal} />}
+      {isModalOpen && <NewMessageModal isOpen={isModalOpen} onClose={toggleModal} />}
     </div>
   );
 };
