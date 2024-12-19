@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useRef, useState, useEffect } from "react";
 import { gsap } from "gsap";
 import RewardItem from "./RewardItem";
@@ -51,7 +49,6 @@ const DailyCheckInTab: React.FC = () => {
             />
           ))}
         </div>
-       
       </div>
       {showAlert && <RewardModal onClose={handleCloseAlert} />}
     </>

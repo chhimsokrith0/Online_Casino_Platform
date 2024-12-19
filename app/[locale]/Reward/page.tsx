@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import StepsSection from "./Steps_Section";
 import ENJOY_OUR_GAMES from "./ENJOY_OUR_GAMES";
@@ -9,6 +9,8 @@ import Benefits_Section from "./Benefits_Section";
 import Introducing_Our_Exclusive from "./Introducing_Our_Exclusive";
 import { useTranslations } from "next-intl";
 import { gsap } from "gsap";
+import { useSession } from "next-auth/react";
+import SignupModal from "@/components/Navbar/SignUpModal";
 
 const RewardSection: React.FC = () => {
   const t = useTranslations("RewardSection");
@@ -21,6 +23,12 @@ const RewardSection: React.FC = () => {
   const benefitsSectionRef = useRef<HTMLDivElement | null>(null);
   const exclusiveSectionRef = useRef<HTMLDivElement | null>(null);
   const deluxeExperienceRef = useRef<HTMLDivElement | null>(null);
+  const [isSignupModalOpen, setIsSignupModalOpen] = useState(false);
+
+  // Session hook to check if user is authenticated
+  const { data: session } = useSession();
+  const handleOpenSignupModal = () => setIsSignupModalOpen(true);
+  const handleCloseSignupModal = () => setIsSignupModalOpen(false);
 
   useEffect(() => {
     // Animate Main Section
@@ -81,9 +89,15 @@ const RewardSection: React.FC = () => {
             {t("mainTitle")}
           </h1>
           <p className="text-lg mb-6">{t("mainSubtitle")}</p>
-          <button className="bg-yellow-400 text-black font-semibold px-6 py-2 rounded-full hover:bg-yellow-500 transition">
-            {t("joinButton")}
-          </button>
+          {session ? (
+            <button className="bg-yellow-400 text-black font-semibold px-6 py-2 rounded-full hover:bg-yellow-500 transition">
+              {t("joinButton")}
+            </button>
+          ) : (
+            <button onClick={handleOpenSignupModal} className="bg-yellow-400 text-black font-semibold px-6 py-2 rounded-full hover:bg-yellow-500 transition">
+              {t("joinButton")}
+            </button>
+          )}
         </div>
       </div>
 
@@ -119,12 +133,24 @@ const RewardSection: React.FC = () => {
           <h2 className="text-2xl md:text-3xl font-bold mb-6">
             {t("deluxeExperience.title")}
           </h2>
+
           {/* Button */}
-          <button className="px-8 py-3 bg-gradient-to-r from-yellow-400 to-yellow-500 text-black font-semibold rounded-full hover:from-yellow-500 hover:to-yellow-600 transition">
-            {t("deluxeExperience.button")}
-          </button>
+
+
+          {session ? (
+            <button className="px-8 py-3 bg-gradient-to-r from-yellow-400 to-yellow-500 text-black font-semibold rounded-full hover:from-yellow-500 hover:to-yellow-600 transition">
+              {t("deluxeExperience.button")}
+            </button>
+          ) : (
+            <button onClick={handleOpenSignupModal} className="px-8 py-3 bg-gradient-to-r from-yellow-400 to-yellow-500 text-black font-semibold rounded-full hover:from-yellow-500 hover:to-yellow-600 transition">
+              {t("deluxeExperience.button")}
+            </button>
+          )}
         </div>
       </div>
+      {isSignupModalOpen && (
+        <SignupModal activeTab="signUp" onClose={handleCloseSignupModal} zIndex={10000} />
+      )}
     </div>
   );
 };

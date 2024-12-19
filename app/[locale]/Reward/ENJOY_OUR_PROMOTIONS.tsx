@@ -1,10 +1,18 @@
 "use client";
-
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-
+import SignupModal from "@/components/Navbar/SignUpModal";
+import { useSession } from "next-auth/react";
 
 const ENJOY_OUR_PROMOTIONS = ({ t }: { t: any }) => {
+
+    const [isSignupModalOpen, setIsSignupModalOpen] = useState(false);
+
+    // Session hook to check if user is authenticated
+    const { data: session } = useSession();
+    const handleOpenSignupModal = () => setIsSignupModalOpen(true);
+    const handleCloseSignupModal = () => setIsSignupModalOpen(false);
+
     return (
 
         <div className="px-6 py-10">
@@ -15,9 +23,18 @@ const ENJOY_OUR_PROMOTIONS = ({ t }: { t: any }) => {
                     <p className="text-gray-400 mb-6">
                         {t("enjoyOurPromotions.description")}
                     </p>
-                    <button className="bg-yellow-400 text-black font-semibold px-6 py-2 rounded-full hover:bg-yellow-500 transition">
-                        {t("enjoyOurPromotions.button")}
-                    </button>
+
+                    {session ? (
+                        <button className="bg-yellow-400 text-black font-semibold px-6 py-2 rounded-full hover:bg-yellow-500 transition">
+                            {t("enjoyOurPromotions.button")}
+                        </button>
+                    ) : (
+
+                        <button onClick={handleOpenSignupModal} className="bg-yellow-400 text-black font-semibold px-6 py-2 rounded-full hover:bg-yellow-500 transition">
+                            {t("enjoyOurPromotions.button")}
+                        </button>
+                    )}
+
                 </div>
 
                 {/* Image */}
@@ -31,6 +48,9 @@ const ENJOY_OUR_PROMOTIONS = ({ t }: { t: any }) => {
                     />
                 </div>
             </div>
+            {isSignupModalOpen && (
+                <SignupModal activeTab="signUp" onClose={handleCloseSignupModal} zIndex={10000} />
+            )}
         </div>
     )
 }

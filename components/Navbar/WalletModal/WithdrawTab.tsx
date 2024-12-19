@@ -1,12 +1,14 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 
 const WithdrawTab: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const itemRefs = useRef<HTMLDivElement[]>([]);
   const buttonRef = useRef<HTMLButtonElement | null>(null);
+  const [note, setNote] = useState(""); // State to track the note content
+  const maxCharacters = 300; // Set max character limit
 
   useEffect(() => {
     // Animate container fade-in
@@ -32,6 +34,14 @@ const WithdrawTab: React.FC = () => {
       );
     }
   }, []);
+
+  const handleNoteChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    if (e.target.value.length <= maxCharacters) {
+      setNote(e.target.value); // Update note content if within the character limit
+    }
+  };
+
+  const characterCount = note.length; // Current character count
 
   return (
     <div ref={containerRef} className="overflow-y-scroll h-full scrollbar-hide">
@@ -114,10 +124,11 @@ const WithdrawTab: React.FC = () => {
           <textarea
             className="bg-gray-800 w-full h-24 p-3 text-sm text-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-yellow-500"
             placeholder="Type Something here ..."
-            maxLength={300}
+            value={note}
+            onChange={handleNoteChange}
           ></textarea>
           <div className="absolute bottom-2 right-3 text-xs text-gray-400">
-            <span>0</span> / 300
+            <span>{characterCount}</span> / {maxCharacters}
           </div>
         </div>
       </div>

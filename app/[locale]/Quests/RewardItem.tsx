@@ -14,7 +14,7 @@ const RewardItem = forwardRef<HTMLDivElement, RewardItemProps>(
     return (
       <div
         ref={ref}
-        className={`w-1/5 p-4 rounded-lg flex flex-col items-center ${bg} ${text}`}
+        className={`flex flex-col items-center justify-center p-4 w-1/5 rounded-lg ${bg} ${text}`}
       >
         <span className="text-xs font-bold">{label}</span>
         <div className="text-4xl my-2">💎</div>

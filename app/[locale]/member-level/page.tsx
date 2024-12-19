@@ -1,17 +1,21 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Carousel from "./Carousel";
 import ExclusiveBenefits from "./ExclusiveBenefits";
 import { useTranslations } from "next-intl";
 import { gsap } from "gsap";
 import { useSidebar } from "@/components/Sidebar/SidebarContext"; 
+import { useSession, signIn, signOut } from "next-auth/react";
+import SignupModal from "@/components/Navbar/SignUpModal";
 
 const Member_Level: React.FC = () => {
   const t = useTranslations("MemberLevel");
   const containerRef = useRef<HTMLDivElement | null>(null);
   const { isCollapsed } = useSidebar(); // Access isCollapsed state
+  const { data: session } = useSession();
+  const [isSignupModalOpen, setIsSignupModalOpen] = useState(false);
 
   useEffect(() => {
     if (containerRef.current) {
@@ -23,7 +27,8 @@ const Member_Level: React.FC = () => {
     }
   }, []);
 
-  
+  const handleOpenSignupModal = () => setIsSignupModalOpen(true);
+  const handleCloseSignupModal = () => setIsSignupModalOpen(false);
 
   return (
     <div className={`px-6 py-4 z-50 ${isCollapsed ? "ml-[-12rem]" : ""}`} ref={containerRef}>
@@ -50,9 +55,23 @@ const Member_Level: React.FC = () => {
 
       {/* Call-to-Action Section */}
       <div className="text-center mb-8">
-        <button className="px-8 py-3 bg-yellow-400 text-black font-semibold rounded-full hover:bg-yellow-500 transition">
-          {t("mainTitle")}
-        </button>
+        {session ? (
+          <button
+            className="px-8 py-3 bg-yellow-400 text-black font-semibold rounded-full hover:bg-yellow-500 transition"
+           
+          >
+            {t("mainTitle")}
+          </button>
+        ) : (
+          <>
+            <button
+              className="px-8 py-3 bg-yellow-400 text-black font-semibold rounded-full hover:bg-yellow-500 transition"
+              onClick={handleOpenSignupModal}
+            >
+              {t("mainTitle")}
+            </button>
+          </>
+        )}
       </div>
 
       {/* Carousel Section */}
@@ -60,6 +79,11 @@ const Member_Level: React.FC = () => {
 
       {/* Exclusive Benefits Section */}
       <ExclusiveBenefits t={t} />
+
+      {/* Signup Modal */}
+      {isSignupModalOpen && (
+        <SignupModal activeTab="signUp" onClose={handleCloseSignupModal} zIndex={10000} />
+      )}
     </div>
   );
 };
