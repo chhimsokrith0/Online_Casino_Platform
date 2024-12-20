@@ -1,223 +1,208 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
-import { gsap } from "gsap";
+import React, { useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import ReactDOM from "react-dom";
+import { motion, AnimatePresence } from "framer-motion";
 import { useScrollLock } from "@/components/useScrollLock";
 import buttonG from "@/assets/img_QuestsModal/button.svg";
 import img_Dim from "@/assets/img_QuestsModal/Dim.webp";
 import img_gite from "@/assets/img_QuestsModal/gite.png";
 import img_winmore from "@/assets/img_QuestsModal/winmore.png";
 import img_bg from "@/assets/img_QuestsModal/bg.png";
+import PlayQuestsTab from "./PlayQuestsTab";
+import DailyCheckInTab from "./DailyCheckInTab";
 
 const QuestsModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) => {
   const modalRef = useRef<HTMLDivElement | null>(null);
   const [activeTab, setActiveTab] = useState<"dailyCheckIn" | "playQuests">("dailyCheckIn");
-  const rewardRefs = useRef<HTMLDivElement[]>([]);
-  const [alerts, setAlerts] = useState<number[]>([]); // To handle multiple alerts
+  const [alerts, setAlerts] = useState<number[]>([]);
 
   useScrollLock(isOpen);
 
-  useEffect(() => {
-    if (isOpen && modalRef.current) {
-      gsap.fromTo(
-        modalRef.current,
-        { opacity: 0, scale: 0.9 },
-        { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }
-      );
-    }
-  }, [isOpen]);
-
-  useEffect(() => {
-    gsap.fromTo(
-      rewardRefs.current,
-      { opacity: 0, y: 30 },
-      { opacity: 1, y: 0, duration: 0.6, stagger: 0.1, ease: "power3.out" }
-    );
-  }, []);
-
-  const handleClose = () => {
-    if (modalRef.current) {
-      gsap.to(modalRef.current, {
-        opacity: 0,
-        scale: 0.9,
-        duration: 0.4,
-        ease: "power3.in",
-        onComplete: onClose,
-      });
-    } else {
-      onClose();
-    }
+  const handleClaim = () => {
+    setAlerts((prev) => [...prev, Date.now()]);
   };
 
-  const handleClaim = () => {
-    setAlerts((prev) => [...prev, Date.now()]); // Use timestamp to create unique alert IDs
+  const handleCloneAlert = () => {
+    setAlerts((prev) => [...prev, Date.now()]);
   };
 
   const handleCloseAlert = (id: number) => {
     setAlerts((prev) => prev.filter((alertId) => alertId !== id));
   };
 
-  const rewards = [
-    { label: "Today", points: 200, status: "Claim", bg: "bg-yellow-500", text: "text-black" },
-    { label: "Tomorrow", points: 300, status: "Unclaimed", bg: "bg-gray-700", text: "text-gray-500" },
-    { label: "Day 3", points: 500, status: "Unclaimed", bg: "bg-gray-700", text: "text-gray-500" },
-    { label: "Day 4", points: 1000, status: "Unclaimed", bg: "bg-gray-700", text: "text-gray-500" },
-    { label: "Day 5", points: 3000, status: "Unclaimed", bg: "bg-gray-700", text: "text-gray-500" },
-  ];
-
   if (!isOpen) return null;
 
   return ReactDOM.createPortal(
-    <div
+    <motion.div
       className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-[200]"
       onClick={onClose}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
     >
-      <div
+      <motion.div
         ref={modalRef}
-        className="bg-gray-900 w-[95%] max-w-3xl h-[80%] overflow-auto rounded-lg shadow-lg"
+        className="bg-gray-900 w-[95%] max-w-7xl h-[80%] sm:h-[95%] overflow-auto rounded-lg shadow-lg"
         onClick={(e) => e.stopPropagation()}
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.9 }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
       >
+        {/* Header */}
         <div className="flex justify-between items-center p-4 border-b border-gray-800">
           <h2 className="text-white text-xl font-bold">Quests Hub</h2>
-          <FontAwesomeIcon
-            icon={faTimes}
-            onClick={handleClose}
-            className="text-gray-400 cursor-pointer hover:text-white"
-          />
-        </div>
-        <div className="p-6">
-          <div className="flex gap-4 mb-8">
-            <button
-              onClick={() => setActiveTab("dailyCheckIn")}
-              className={`w-40 py-4 text-white font-bold rounded-lg shadow-md ${activeTab === "dailyCheckIn" ? "border-2 border-yellow-400" : ""
-                }`}
-              style={{
-                backgroundImage: `url('https://res.cloudinary.com/dfxqagrkk/image/upload/v1733235314/btn_bg1_feqt2p.png')`,
-                backgroundSize: "cover",
-              }}
-            >
-              Daily Check-In
-            </button>
-            <button
-              onClick={() => setActiveTab("playQuests")}
-              className={`w-40 py-4 text-white font-bold rounded-lg shadow-md ${activeTab === "playQuests" ? "border-2 border-yellow-400" : ""
-                }`}
-              style={{
-                backgroundImage: `url('https://res.cloudinary.com/dfxqagrkk/image/upload/v1733235315/btn_bg2_zsb5co.png')`,
-                backgroundSize: "cover",
-              }}
-            >
-              Play Quests
-            </button>
-          </div>
-
-          {/* Daily Check-In Tab */}
-          {activeTab === "dailyCheckIn" && (
-            <div>
-              <div className="text-gray-400 text-sm mb-4">
-                Accumulated check-in: <span className="text-yellow-400">1 Days</span>
-              </div>
-              <div className="flex justify-between items-center gap-4">
-                {rewards.map((reward, index) => (
-                  <div
-                    key={index}
-                    ref={(el: HTMLDivElement) => {
-                      if (el) rewardRefs.current.push(el);
-                    }}
-                    className={`flex flex-col items-center justify-center p-4 w-1/5 rounded-lg ${reward.bg} ${reward.text}`}
-                  >
-                    <span className="text-xs font-bold">{reward.label}</span>
-                    <div className="text-4xl my-2">💎</div>
-                    <span className="text-sm">{reward.points} Points</span>
-                    <button
-                      onClick={reward.status === "Claim" ? handleClaim : undefined}
-                      disabled={reward.status !== "Claim"}
-                      className={`mt-2 px-4 py-1 text-sm rounded-lg ${reward.status === "Claim"
-                        ? "bg-black text-yellow-400 hover:bg-gray-800"
-                        : "cursor-not-allowed opacity-50"
-                        }`}
-                    >
-                      {reward.status}
-                    </button>
-                  </div>
-                ))}
-              </div>
+          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2 bg-gray-700 px-3 py-1 rounded-lg">
+              <img
+                className="w-4 h-4"
+                src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034979/eec3c896-fc98-4ed7-a4b1-c0c4d6e63e42_y0p6uo.webp"
+                alt="Diamond Icon"
+              />
+              <span className="text-yellow-400 font-bold">1.00K</span>
             </div>
-          )}
-
-          {/* Play Quests Tab Placeholder */}
-          {activeTab === "playQuests" && <div className="text-gray-400">Play Quests content goes here.</div>}
+            <div className="flex items-center gap-2 bg-gray-700 px-3 py-1 rounded-lg">
+              <span className="text-white font-bold">🎯 Quests Completed</span>
+            </div>
+            <FontAwesomeIcon
+              icon={faTimes}
+              onClick={onClose}
+              className="text-gray-400 cursor-pointer hover:text-white"
+            />
+          </div>
         </div>
-      </div>
 
-      {alerts.map((alertId) => (
-        <div
-          key={alertId}
-          className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 z-[1000]"
-          style={{
-            backgroundImage: `url('${img_bg.src}')`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-          aria-labelledby="reward-modal-title"
-          role="dialog"
-          aria-modal="true"
-        >
-          <div className="relative w-full h-full flex items-center justify-center p-6">
-            {/* Modal Content */}
-            <div className="rounded-lg p-8 text-center max-w-lg w-[90%] shadow-lg">
-              {/* Header Image */}
-              <div className="relative">
-                <img
-                  src={img_winmore.src}
-                  alt="Play More, Win More"
-                  className="w-64 mx-auto mb-6"
-                />
-              </div>
-
-              {/* Reward Image */}
-              <img
-                src={img_gite.src}
-                alt="Reward Box"
-                className="w-40 mx-auto mb-4"
-              />
-
-              {/* Reward Text */}
-              <p
-                id="reward-modal-title"
-                className="text-white text-xl mb-4 font-bold"
-              >
-                You have received 200 Points!
-              </p>
-
-              {/* Decorative Box Image */}
-              <img
-                src={img_Dim.src}
-                alt="Decorative"
-                className="w-32 mx-auto mb-6"
-              />
-
-              {/* Collect Button */}
+        <div className="p-6 flex flex-col sm:flex-row gap-6">
+          {/* Sidebar */}
+          <div className="p-4 h-full w-full sm:w-64 text-white rounded-lg">
+            <h3 className="text-lg font-bold mb-6">Challenges</h3>
+            <div className="flex flex-col gap-4">
               <button
-                onClick={() => handleCloseAlert(alertId)}
-                className="relative w-52 h-14 mx-auto flex items-center justify-center bg-transparent focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded-md"
+                onClick={() => setActiveTab("dailyCheckIn")}
+                className={`py-4 text-white font-bold rounded-lg shadow-md ${
+                  activeTab === "dailyCheckIn" ? "border-2 border-yellow-400" : ""
+                }`}
                 style={{
-                  backgroundImage: `url('${buttonG.src}')`,
+                  backgroundImage: `url('https://res.cloudinary.com/dfxqagrkk/image/upload/v1733235314/btn_bg1_feqt2p.png')`,
                   backgroundSize: "cover",
-                  backgroundRepeat: "no-repeat",
-                  height: "70px",
+                  backgroundPosition: "center",
                 }}
               >
-                <span className="text-white font-bold text-lg">Collect</span>
+                Daily Check-In
+              </button>
+              <button
+                onClick={() => setActiveTab("playQuests")}
+                className={`py-4 text-white font-bold rounded-lg shadow-md ${
+                  activeTab === "playQuests" ? "border-2 border-yellow-400" : ""
+                }`}
+                style={{
+                  backgroundImage: `url('https://res.cloudinary.com/dfxqagrkk/image/upload/v1733235315/btn_bg2_zsb5co.png')`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              >
+                Play Quests
               </button>
             </div>
           </div>
+
+          {/* Tab Content */}
+          <div className="flex-grow">
+            {activeTab === "dailyCheckIn" && <DailyCheckInTab onClaim={handleClaim} />}
+            {activeTab === "playQuests" && <PlayQuestsTab />}
+          </div>
         </div>
-      ))}
-    </div>,
+      </motion.div>
+
+      {/* Alerts */}
+      <AnimatePresence>
+        {alerts.map((alertId) => (
+          <motion.div
+            key={alertId}
+            className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 z-[1000]"
+            style={{
+              backgroundImage: `url('${img_bg.src}')`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+            aria-labelledby="reward-modal-title"
+            role="dialog"
+            aria-modal="true"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <div className="relative w-full h-full flex items-center justify-center p-6">
+              {/* Modal Content */}
+              <motion.div
+                className="rounded-lg p-8 text-center max-w-lg w-[90%] shadow-lg"
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.5 }}
+              >
+                {/* Header Image */}
+                <div className="relative">
+                  <img
+                    src={img_winmore.src}
+                    alt="Play More, Win More"
+                    className="w-64 mx-auto mb-6"
+                  />
+                </div>
+
+                {/* Reward Image */}
+                <img
+                  src={img_gite.src}
+                  alt="Reward Box"
+                  className="w-40 mx-auto mb-4"
+                />
+
+                {/* Reward Text */}
+                <p
+                  id="reward-modal-title"
+                  className="text-white text-xl mb-4 font-bold"
+                >
+                  You have received 200 Points!
+                </p>
+
+                {/* Decorative Box Image */}
+                <img
+                  src={img_Dim.src}
+                  alt="Decorative"
+                  className="w-32 mx-auto mb-6"
+                />
+
+                {/* Collect Button */}
+                <button
+                  onClick={() => handleCloneAlert()}
+                  className="relative w-52 h-14 mx-auto flex items-center justify-center bg-transparent focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded-md"
+                  style={{
+                    backgroundImage: `url('${buttonG.src}')`,
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    height: "70px",
+                  }}
+                >
+                  <span className="text-white font-bold text-lg">Collect</span>
+                </button>
+
+                {/* Close Button */}
+                <button
+                  onClick={() => handleCloseAlert(alertId)}
+                  className="mt-4 text-gray-300 hover:text-white underline"
+                >
+                  Close Alert
+                </button>
+              </motion.div>
+            </div>
+          </motion.div>
+        ))}
+      </AnimatePresence>
+    </motion.div>,
     document.body
   );
 };

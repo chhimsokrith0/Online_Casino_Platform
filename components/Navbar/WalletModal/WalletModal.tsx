@@ -95,7 +95,7 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
 
   // Render modal using React Portal to avoid stacking context issues
   return ReactDOM.createPortal(
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-70">
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-70 ">
       <div
         ref={modalRef}
         className="bg-gray-800 rounded-lg w-full max-w-lg h-[650px] p-6 text-white relative shadow-lg flex flex-col"
