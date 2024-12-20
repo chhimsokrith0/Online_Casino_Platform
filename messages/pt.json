@@ -1003,5 +1003,173 @@
         "signInSuccess": "Login realizado com sucesso!",
         "submitSignUp": "Cadastrar",
         "submitSignIn": "Entrar"
+    },
+    "questsHub": {
+        "title": "Central de Missões",
+        "challenges": "Desafios",
+        "dailyCheckIn": "Check-In Diário",
+        "playQuests": "Jogar Missões",
+        "checkInReward": {
+            "title1": "5 Dias",
+            "title2": "Check-In",
+            "title3": "Recompensa",
+            "subtext": "Não perca seus bônus diários~!",
+            "accumulatedCheckIn": "Check-ins acumulados:",
+            "Day": "Dias",
+            "days": {
+                "day1": {
+                    "day": "Hoje",
+                    "points": "200",
+                    "status": "Reivindicar",
+                    "buttonStyle": "claim"
+                },
+                "day2": {
+                    "day": "Amanhã",
+                    "points": "300",
+                    "status": "Não Reivindicado",
+                    "buttonStyle": "unclaimed"
+                },
+                "day3": {
+                    "day": "Dia 3",
+                    "points": "500",
+                    "status": "Não Reivindicado",
+                    "buttonStyle": "unclaimed"
+                },
+                "day4": {
+                    "day": "Dia 4",
+                    "points": "1000",
+                    "status": "Não Reivindicado",
+                    "buttonStyle": "unclaimed"
+                },
+                "day5": {
+                    "day": "Dia 5",
+                    "points": "3000",
+                    "status": "Não Reivindicado",
+                    "buttonStyle": "unclaimed"
+                }
+            },
+            "modal": {
+                "title": "Faça login por 5 Dias Consecutivos para Receber até 5000 Gemas",
+                "content": {
+                    "content1": {
+                        "icon": "💎",
+                        "text": "Faça login por 5 dias consecutivos para receber até 5000 gemas."
+                    },
+                    "content2": {
+                        "icon": "✅",
+                        "text": "Participe da atividade de login consecutivo para receber gemas instantaneamente."
+                    },
+                    "content3": {
+                        "icon": "💰",
+                        "text": "As gemas podem ser trocadas por giros grátis."
+                    },
+                    "content4": {
+                        "icon": "🌟",
+                        "text": "Participe da atividade para acumular gemas facilmente. Basta fazer login e reivindicar gemas todos os dias por 5 dias para receber até 5000 gemas."
+                    }
+                }
+            }
+        },
+        "stats": {
+            "points": "1.00K",
+            "questsCompleted": "Missões Completadas"
+        },
+        "actions": {
+            "close": "Fechar"
+        },
+        "adventureSection": {
+            "title": "Junte-se à",
+            "title1": " Aventura!",
+            "subtitle": "Inicie jornadas e desbloqueie recompensas abundantes enquanto avança.",
+            "promotion": {
+                "title": "Jogue jogos de todas as categorias!",
+                "description": "💎 Acumule apostas em slots de todos os provedores até 30.000 BRL. 💎 Desbloqueie instantaneamente uma recompensa de 10.000 gemas 💎. 🎯 Participe da atividade reivindicando a missão.",
+                "cta": "Participar Agora",
+                "eventPeriod": "Duração do Evento: 10 de Novembro - 10 de Janeiro de 2024"
+            },
+            "eventBanner": {
+                "image1Alt": "Banner de Promoção 1",
+                "image2Alt": "Banner de Promoção 2"
+            }
+        },
+        "questDetailsPage": {
+            "progressSection": {
+                "title": "Seu Progresso",
+                "claimButton": {
+                    "text": "Reivindicar",
+                    "status": "disabled"
+                }
+            },
+            "conditionsSection": {
+                "Turnover": "Rendimento",
+                "CompletedBet": "Aposta Completa",
+                "title": "Condições",
+                "conditionsList": {
+                    "1": "Aposta Mínima: 1.00 BRL",
+                    "2": "Número de apostas: 100 vezes",
+                    "3": "Aposta acumulada: 30.000 BRL"
+                }
+            },
+            "activityDescription": {
+                "title": "Acumule apostas em slots de todos os provedores",
+                "subtitle": "Participe da atividade e cumpra as seguintes condições:",
+                "steps": {
+                    "1": "1. Acumule apostas em slots de todos os provedores até 30.000 BRL.",
+                    "2": "2. Desbloqueie a recompensa de 10.000 gemas 💎💎 instantaneamente.",
+                    "3": "3. Participe facilmente da atividade reivindicando a missão."
+                }
+            },
+            "navigation": {
+                "slotsButton": "Slots",
+                "searchGamesPlaceholder": "Pesquisar Jogos"
+            },
+            "games": {
+                "games1": {
+                    "name": "Milagres de Natal",
+                    "provider": "SpadeGaming",
+                    "favorite": true
+                },
+                "games2": {
+                    "name": "Lutador de Muay Thai",
+                    "provider": "SpadeGaming",
+                    "favorite": true
+                },
+                "games3": {
+                    "name": "ZEUS",
+                    "provider": "SpadeGaming",
+                    "favorite": true
+                },
+                "games4": {
+                    "name": "Guerreiro Tigre",
+                    "provider": "SpadeGaming",
+                    "favorite": true
+                },
+                "games5": {
+                    "name": "Lâmpada Mágica",
+                    "provider": "SpadeGaming",
+                    "favorite": true
+                },
+                "games6": {
+                    "name": "Guerra dos Deuses Egípcios",
+                    "provider": "Rich88",
+                    "favorite": true
+                },
+                "games7": {
+                    "name": "Febre da Dança",
+                    "provider": "SpadeGaming",
+                    "favorite": true
+                },
+                "games8": {
+                    "name": "Setes Flamejantes",
+                    "provider": "SpadeGaming",
+                    "favorite": true
+                },
+                "games9": {
+                    "name": "Gemas Maia",
+                    "provider": "Rich88",
+                    "favorite": true
+                }
+            }
+        }
     }
 }

@@ -13,11 +13,13 @@ import img_winmore from "@/assets/img_QuestsModal/winmore.png";
 import img_bg from "@/assets/img_QuestsModal/bg.png";
 import PlayQuestsTab from "./PlayQuestsTab";
 import DailyCheckInTab from "./DailyCheckInTab";
+import { useTranslations } from "next-intl";
 
 const QuestsModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) => {
   const modalRef = useRef<HTMLDivElement | null>(null);
   const [activeTab, setActiveTab] = useState<"dailyCheckIn" | "playQuests">("dailyCheckIn");
   const [alerts, setAlerts] = useState<number[]>([]);
+  const t = useTranslations("questsHub");
 
   useScrollLock(isOpen);
 
@@ -60,7 +62,7 @@ const QuestsModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
           >
-            <h2 className="text-white text-xl font-bold">Quests Hub</h2>
+            <h2 className="text-white text-xl font-bold">{ t("title") }</h2>
             <div className="flex items-center gap-4">
               {/* Diamond Icon Section */}
               <div className="flex items-center gap-2 bg-gray-700 px-3 py-1 rounded-lg shadow-md">
@@ -69,11 +71,11 @@ const QuestsModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void
                   src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034979/eec3c896-fc98-4ed7-a4b1-c0c4d6e63e42_y0p6uo.webp"
                   alt="Diamond Icon"
                 />
-                <span className="text-yellow-400 font-bold">1.00K</span>
+                <span className="text-yellow-400 font-bold"> {t('stats.points')} </span>
               </div>
               {/* Quests Completed Section */}
               <div className="flex items-center gap-2 bg-gray-700 px-3 py-1 rounded-lg shadow-md">
-                <span className="text-white font-bold">🎯 Quests Completed</span>
+                <span className="text-white font-bold">🎯 {t('stats.questsCompleted')}</span>
               </div>
               {/* Close Icon */}
               <FontAwesomeIcon
@@ -98,7 +100,7 @@ const QuestsModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
             >
-              <h3 className="text-lg font-bold mb-6">Challenges</h3>
+              <h3 className="text-lg font-bold mb-6"> {t('challenges')} </h3>
               <div className="flex flex-col gap-4">
                 <button
                   onClick={() => setActiveTab("dailyCheckIn")}
@@ -110,7 +112,7 @@ const QuestsModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void
                     backgroundPosition: "center",
                   }}
                 >
-                  Daily Check-In
+                  {t('dailyCheckIn')}
                 </button>
                 <button
                   onClick={() => setActiveTab("playQuests")}
@@ -122,7 +124,7 @@ const QuestsModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void
                     backgroundPosition: "center",
                   }}
                 >
-                  Play Quests
+                  {t('playQuests')}
                 </button>
               </div>
             </motion.div>

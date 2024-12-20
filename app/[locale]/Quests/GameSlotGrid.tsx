@@ -1,21 +1,24 @@
 "use client";
 
 import React, { useState } from "react";
+import { useTranslations } from "next-intl";
 
-const games = [
-    { name: "Christmas Miracles", provider: "SpadeGaming", image: "https://storage.googleapis.com/luxino-public/game/spadegaming/S-CM02.png" },
-    { name: "Muay Thai Fighter", provider: "SpadeGaming", image: "https://storage.googleapis.com/luxino-public/game/spadegaming/S-MT01.png" },
-    { name: "ZEUS", provider: "SpadeGaming", image: "https://storage.googleapis.com/luxino-public/game/spadegaming/S-TW01.png" },
-    { name: "Tiger Warrior", provider: "SpadeGaming", image: "https://storage.googleapis.com/luxino-public/game/spadegaming/S-ZE01.png" },
-    { name: "Magical Lamp", provider: "SpadeGaming", image: "https://storage.googleapis.com/luxino-public/game/spadegaming/S-TW01.png" },
-    { name: "War of the Egyptian Gods", provider: "Rich88", image: "https://storage.googleapis.com/luxino-public/game/rich88/SlotEgyptionDeities.png" },
-    { name: "Dancing Fever", provider: "SpadeGaming", image: "https://storage.googleapis.com/luxino-public/game/spadegaming/S-DF02.png" },
-    { name: "Fiery Sevens", provider: "SpadeGaming", image: "https://storage.googleapis.com/luxino-public/game/spadegaming/S-FS01.png" },
-    { name: "Maya Gems", provider: "Rich88", image: "https://storage.googleapis.com/cdn.i-gamingplatform.com/game/rich88/SlotFortuneGems.webp" },
-];
 
 const GameSlotGrid: React.FC = () => {
     const [searchTerm, setSearchTerm] = useState("");
+    const t = useTranslations("questsHub.questDetailsPage");
+
+    const games = [
+        { name: t("games.games1.name"), provider: t("games.games1.provider"), image: "https://storage.googleapis.com/luxino-public/game/spadegaming/S-CM02.png" },
+        { name: t("games.games2.name"), provider: t("games.games2.provider"), image: "https://storage.googleapis.com/luxino-public/game/spadegaming/S-MT01.png" },
+        { name: t("games.games3.name"), provider: t("games.games3.provider"), image: "https://storage.googleapis.com/luxino-public/game/spadegaming/S-TW01.png" },
+        { name: t("games.games4.name"), provider: t("games.games4.provider"), image: "https://storage.googleapis.com/luxino-public/game/spadegaming/S-ZE01.png" },
+        { name: t("games.games5.name"), provider: t("games.games5.provider"), image: "https://storage.googleapis.com/luxino-public/game/spadegaming/S-TW01.png" },
+        { name: t("games.games6.name"), provider: t("games.games6.provider"), image: "https://storage.googleapis.com/luxino-public/game/rich88/SlotEgyptionDeities.png" },
+        { name: t("games.games7.name"), provider: t("games.games7.provider"), image: "https://storage.googleapis.com/luxino-public/game/spadegaming/S-DF02.png" },
+        { name: t("games.games8.name"), provider: t("games.games8.provider"), image: "https://storage.googleapis.com/luxino-public/game/spadegaming/S-FS01.png" },
+        { name: t("games.games9.name"), provider: t("games.games9.provider"), image: "https://storage.googleapis.com/cdn.i-gamingplatform.com/game/rich88/SlotFortuneGems.webp" },
+    ];
 
     const filteredGames = games.filter((game) =>
         game.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -25,12 +28,12 @@ const GameSlotGrid: React.FC = () => {
         <div className="p-6 bg-gray-900 text-white min-h-screen">
             <div className="flex justify-between items-center mb-4">
                 <button className="px-4 py-2 bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-bold rounded-full shadow-md hover:shadow-lg">
-                    Slots
+                    {t("navigation.slotsButton")}
                 </button>
                 <div className="flex items-center gap-2">
                     <input
                         type="text"
-                        placeholder="Search Games"
+                        placeholder={t("navigation.searchGamesPlaceholder")}
                         className="px-4 py-2 bg-gray-800 text-white rounded-full w-64 focus:outline-none focus:ring-2 focus:ring-yellow-400"
                         value={searchTerm}
                         onChange={(e) => setSearchTerm(e.target.value)}

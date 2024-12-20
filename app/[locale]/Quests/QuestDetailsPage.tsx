@@ -4,12 +4,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import CountdownTimer from "./CountdownTimer";
 import GameSlotGrid from "./GameSlotGrid";
-
+import { useTranslations } from "next-intl";
 interface QuestDetailsPageProps {
     onBack: () => void;
 }
 
 const QuestDetailsPage: React.FC<QuestDetailsPageProps> = ({ onBack }) => {
+    const t = useTranslations("questsHub.questDetailsPage");
     return (
         <div
             style={{
@@ -58,7 +59,7 @@ const QuestDetailsPage: React.FC<QuestDetailsPageProps> = ({ onBack }) => {
                         <div className="lg:w-[60%] w-full">
                             <div className="hidden lg:block">
                                 <div className="flex justify-between items-center mb-2">
-                                    <span className="text-sm font-bold text-gray-300">Your Progress</span>
+                                    <span className="text-sm font-bold text-gray-300">{t("progressSection.title")}</span>
                                     <div className="text-sm font-medium text-gray-500 flex items-center">
                                         <span className="text-yellow-400 font-bold">0</span>
                                         <span className="ml-1">/ 100%</span>
@@ -96,7 +97,7 @@ const QuestDetailsPage: React.FC<QuestDetailsPageProps> = ({ onBack }) => {
                                             d="M9 11l3 3L22 4M2 20h.01M12 20h.01M4 20h.01M9 20h.01M16 20h.01M22 20h.01"
                                         />
                                     </svg>
-                                    Claim
+                                    {t("progressSection.claimButton.text")}
                                 </span>
                             </button>
                         </div>
@@ -105,9 +106,7 @@ const QuestDetailsPage: React.FC<QuestDetailsPageProps> = ({ onBack }) => {
                     {/* Rewards Section */}
                     <div className="mt-4 flex flex-col lg:flex-row gap-4 items-center">
                         <div className="min-w-[150px] w-[150px] h-[150px] relative flex justify-center items-center">
-                            <div className="absolute top-2 text-sm font-semibold left-1/2 transform -translate-x-1/2">
-                                Rewards
-                            </div>
+
                             <div
                                 className="size-full w-full flex justify-evenly"
                                 style={{
@@ -122,28 +121,25 @@ const QuestDetailsPage: React.FC<QuestDetailsPageProps> = ({ onBack }) => {
                                     alt="Reward"
                                 />
                             </div>
-                            <div className="pointer-events-none absolute bottom-3 font-semibold left-1/2 transform -translate-x-1/2 text-xs text-yellow-400">
-                                Earn 10K Points
-                            </div>
                         </div>
 
                         {/* Conditions */}
                         <div className="text-sm font-semibold w-full flex flex-col gap-2">
                             <div className="flex justify-between w-full">
-                                <span>Turnover</span>
+                                <span>{t("conditionsSection.Turnover")}</span>
                                 <span className="text-yellow-400">0.00฿ / 30.00K฿</span>
                             </div>
                             <div className="flex justify-between w-full">
-                                <span>Completed Bet</span>
+                                <span>{t("conditionsSection.CompletedBet")}</span>
                                 <span className="text-yellow-400">0 / 100</span>
                             </div>
                             <hr className="border-gray-600 w-full my-2" />
                             <div>
-                                <span>Conditions</span>
+                                <span>{t("conditionsSection.title")}</span>
                                 <ul className="list-disc ml-4 text-gray-400">
-                                    <li>Minimum Bet 1.00</li>
-                                    <li>Number of bets 100 times</li>
-                                    <li>Accumulated bet 30.00K</li>
+                                    <li>{t("conditionsSection.conditionsList.1")}</li>
+                                    <li>{t("conditionsSection.conditionsList.2")}</li>
+                                    <li>{t("conditionsSection.conditionsList.3")}</li>
                                 </ul>
                             </div>
                         </div>
@@ -151,14 +147,14 @@ const QuestDetailsPage: React.FC<QuestDetailsPageProps> = ({ onBack }) => {
 
                     {/* Description */}
                     <div className="mt-5 text-sm font-medium text-gray-400">
-                        <p>💎 Accumulate slot bets across all providers 💎</p>
-                        <p>Simply join the activity and meet the following conditions:</p>
+                        <p>💎 {t("activityDescription.title")} 💎</p>
+                        <p>{t("activityDescription.subtitle")}</p>
                         <p>
-                            1. Accumulate slot bets across all providers up to 30,000฿
+                            {t("activityDescription.steps.1")}
                             <br />
-                            2. Unlock the reward of 10,000 gems 💎💎 instantly.
+                            {t("activityDescription.steps.2")}
                         </p>
-                        <p>Join the activity easily by claiming the quest.</p>
+                        <p>{t("activityDescription.steps.3")}</p>
                     </div>
                 </div>
 

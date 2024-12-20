@@ -1054,5 +1054,173 @@
         "signInSuccess": "登入成功！",
         "submitSignUp": "註冊",
         "submitSignIn": "登入"
+    },
+    "questsHub": {
+        "title": "任務中心",
+        "challenges": "挑戰",
+        "dailyCheckIn": "每日簽到",
+        "playQuests": "玩任務",
+        "checkInReward": {
+            "title1": "5天",
+            "title2": "簽到",
+            "title3": "獎勵",
+            "subtext": "不要錯過您的每日獎勵~！",
+            "accumulatedCheckIn": "累積簽到：",
+            "Day": "天",
+            "days": {
+                "day1": {
+                    "day": "今天",
+                    "points": "200",
+                    "status": "領取",
+                    "buttonStyle": "claim"
+                },
+                "day2": {
+                    "day": "明天",
+                    "points": "300",
+                    "status": "未領取",
+                    "buttonStyle": "unclaimed"
+                },
+                "day3": {
+                    "day": "第3天",
+                    "points": "500 ",
+                    "status": "未領取",
+                    "buttonStyle": "unclaimed"
+                },
+                "day4": {
+                    "day": "第4天",
+                    "points": "1000 ",
+                    "status": "未領取",
+                    "buttonStyle": "unclaimed"
+                },
+                "day5": {
+                    "day": "第5天",
+                    "points": "3000 ",
+                    "status": "未領取",
+                    "buttonStyle": "unclaimed"
+                }
+            },
+            "modal": {
+                "title": "連續登入5天可獲得最多5000寶石",
+                "content": {
+                    "content1": {
+                        "icon": "💎",
+                        "text": "連續登入5天即可獲得最多5000寶石。"
+                    },
+                    "content2": {
+                        "icon": "✅",
+                        "text": "只需參加連續登入活動即可立即獲得寶石。"
+                    },
+                    "content3": {
+                        "icon": "💰",
+                        "text": "寶石可以兌換免費旋轉次數。"
+                    },
+                    "content4": {
+                        "icon": "🌟",
+                        "text": "參與活動輕鬆累積寶石。只需每天連續登入5天即可獲得最多5000寶石。"
+                    }
+                }
+            }
+        },
+        "stats": {
+            "points": "1.00K",
+            "questsCompleted": "已完成任務"
+        },
+        "actions": {
+            "close": "關閉"
+        },
+        "adventureSection": {
+            "title": "加入",
+            "title1": " 冒險！",
+            "subtitle": "開始旅程，隨著進展解鎖豐富獎勵。",
+            "promotion": {
+                "title": "遊玩所有類別的遊戲！",
+                "description": "💎 累積所有供應商的老虎機投注額達至30,000港元。💎 即時解鎖10,000寶石獎勵。 🎯 只需領取任務即可參加活動。",
+                "cta": "立即參加",
+                "eventPeriod": "活動期間：11月10日 - 1月10日，2024年"
+            },
+            "eventBanner": {
+                "image1Alt": "推廣橫幅1",
+                "image2Alt": "推廣橫幅2"
+            }
+        },
+        "questDetailsPage": {
+            "progressSection": {
+                "title": "您的進度",
+                "claimButton": {
+                    "text": "領取",
+                    "status": "禁用"
+                }
+            },
+            "conditionsSection": {
+                "Turnover": "營業額",
+                "CompletedBet": "已完成投注",
+                "title": "條件",
+                "conditionsList": {
+                    "1": "最低投注額：1.00港元",
+                    "2": "投注次數：100次",
+                    "3": "累積投注額：30.00K港元"
+                }
+            },
+            "activityDescription": {
+                "title": "累積所有供應商的老虎機投注額",
+                "subtitle": "只需參與活動並滿足以下條件：",
+                "steps": {
+                    "1": "1. 累積所有供應商的老虎機投注額達至30,000港元。",
+                    "2": "2. 即時解鎖10,000寶石獎勵。",
+                    "3": "3. 只需領取任務即可參加活動。"
+                }
+            },
+            "navigation": {
+                "slotsButton": "老虎機",
+                "searchGamesPlaceholder": "搜尋遊戲"
+            },
+            "games": {
+                "games1": {
+                    "name": "聖誕奇蹟",
+                    "provider": "SpadeGaming",
+                    "favorite": true
+                },
+                "games2": {
+                    "name": "泰拳戰士",
+                    "provider": "SpadeGaming",
+                    "favorite": true
+                },
+                "games3": {
+                    "name": "宙斯",
+                    "provider": "SpadeGaming",
+                    "favorite": true
+                },
+                "games4": {
+                    "name": "虎勇士",
+                    "provider": "SpadeGaming",
+                    "favorite": true
+                },
+                "games5": {
+                    "name": "神燈魔法",
+                    "provider": "SpadeGaming",
+                    "favorite": true
+                },
+                "games6": {
+                    "name": "埃及諸神之戰",
+                    "provider": "Rich88",
+                    "favorite": true
+                },
+                "games7": {
+                    "name": "舞蹈狂熱",
+                    "provider": "SpadeGaming",
+                    "favorite": true
+                },
+                "games8": {
+                    "name": "火紅七",
+                    "provider": "SpadeGaming",
+                    "favorite": true
+                },
+                "games9": {
+                    "name": "瑪雅寶石",
+                    "provider": "Rich88",
+                    "favorite": true
+                }
+            }
+        }
     }
 }

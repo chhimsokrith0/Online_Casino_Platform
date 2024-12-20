@@ -1057,5 +1057,173 @@
     "signInSuccess": "Matagumpay na pag-login!",
     "submitSignUp": "Magrehistro",
     "submitSignIn": "Mag-login"
+  },
+  "questsHub": {
+    "title": "Sentro ng Misyon",
+    "challenges": "Mga Hamon",
+    "dailyCheckIn": "Pang-araw-araw na Check-In",
+    "playQuests": "Maglaro ng Mga Misyon",
+    "checkInReward": {
+      "title1": "5 Araw",
+      "title2": "Check-In",
+      "title3": "Gantimpala",
+      "subtext": "Huwag palampasin ang iyong pang-araw-araw na bonus~!",
+      "accumulatedCheckIn": "Naipon na check-in:",
+      "Day": "Araw",
+      "days": {
+        "day1": {
+          "day": "Ngayon",
+          "points": "200",
+          "status": "Kunin",
+          "buttonStyle": "claim"
+        },
+        "day2": {
+          "day": "Bukas",
+          "points": "300",
+          "status": "Hindi Nakuha",
+          "buttonStyle": "unclaimed"
+        },
+        "day3": {
+          "day": "Araw 3",
+          "points": "500",
+          "status": "Hindi Nakuha",
+          "buttonStyle": "unclaimed"
+        },
+        "day4": {
+          "day": "Araw 4",
+          "points": "1000",
+          "status": "Hindi Nakuha",
+          "buttonStyle": "unclaimed"
+        },
+        "day5": {
+          "day": "Araw 5",
+          "points": "3000",
+          "status": "Hindi Nakuha",
+          "buttonStyle": "unclaimed"
+        }
+      },
+      "modal": {
+        "title": "Mag-login ng 5 Sunud-sunod na Araw upang Makakuha ng Hanggang 5000 Gems",
+        "content": {
+          "content1": {
+            "icon": "💎",
+            "text": "Mag-login ng 5 sunud-sunod na araw upang makakuha ng hanggang 5000 gems."
+          },
+          "content2": {
+            "icon": "✅",
+            "text": "Sumali lang sa aktibidad ng tuloy-tuloy na pag-login upang agad na makuha ang mga gems."
+          },
+          "content3": {
+            "icon": "💰",
+            "text": "Maaaring ipalit ang mga gems para sa libreng spins."
+          },
+          "content4": {
+            "icon": "🌟",
+            "text": "Sumali sa aktibidad upang madaling makapag-ipon ng mga gems. Mag-login at kunin ang gems araw-araw sa loob ng 5 araw upang makakuha ng hanggang 5000 gems."
+          }
+        }
+      }
+    },
+    "stats": {
+      "points": "1.00K",
+      "questsCompleted": "Natapos na Mga Misyon"
+    },
+    "actions": {
+      "close": "Isara"
+    },
+    "adventureSection": {
+      "title": "Sumali sa",
+      "title1": " Pakikipagsapalaran!",
+      "subtitle": "Simulan ang iyong mga paglalakbay at buksan ang maraming gantimpala habang sumusulong ka.",
+      "promotion": {
+        "title": "Maglaro ng mga laro mula sa bawat kategorya!",
+        "description": "💎 Mag-ipon ng mga slot bets mula sa lahat ng provider hanggang 30,000 PHP. 💎 Agad na i-unlock ang gantimpalang 10,000 gems 💎. 🎯 Sumali sa aktibidad sa pamamagitan ng pag-claim ng misyon.",
+        "cta": "Sumali Ngayon",
+        "eventPeriod": "Tagal ng Kaganapan: Nobyembre 10 - Enero 10, 2024"
+      },
+      "eventBanner": {
+        "image1Alt": "Banner ng Promosyon 1",
+        "image2Alt": "Banner ng Promosyon 2"
+      }
+    },
+    "questDetailsPage": {
+      "progressSection": {
+        "title": "Ang Iyong Pag-unlad",
+        "claimButton": {
+          "text": "Kunin",
+          "status": "disabled"
+        }
+      },
+      "conditionsSection": {
+        "Turnover": "Kita",
+        "CompletedBet": "Natapos na Pusta",
+        "title": "Mga Kondisyon",
+        "conditionsList": {
+          "1": "Pinakamababang Pusta: 1.00 PHP",
+          "2": "Bilang ng pustahan: 100 beses",
+          "3": "Kabuuang Pusta: 30,000 PHP"
+        }
+      },
+      "activityDescription": {
+        "title": "Mag-ipon ng slot bets mula sa lahat ng provider",
+        "subtitle": "Sumali lang sa aktibidad at tuparin ang mga sumusunod na kondisyon:",
+        "steps": {
+          "1": "1. Mag-ipon ng slot bets mula sa lahat ng provider hanggang 30,000 PHP.",
+          "2": "2. I-unlock ang gantimpalang 10,000 gems 💎💎.",
+          "3": "3. Madaling sumali sa aktibidad sa pamamagitan ng pag-claim ng misyon."
+        }
+      },
+      "navigation": {
+        "slotsButton": "Slots",
+        "searchGamesPlaceholder": "Hanapin ang Mga Laro"
+      },
+      "games": {
+        "games1": {
+          "name": "Himala ng Pasko",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games2": {
+          "name": "Mandirigmang Muay Thai",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games3": {
+          "name": "ZEUS",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games4": {
+          "name": "Mandirigmang Tigre",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games5": {
+          "name": "Mahiwagang Lampara",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games6": {
+          "name": "Digmaan ng mga Diyos ng Ehipto",
+          "provider": "Rich88",
+          "favorite": true
+        },
+        "games7": {
+          "name": "Sayaw ng Lagnat",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games8": {
+          "name": "Pulang Pito",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games9": {
+          "name": "Mga Hiyas ng Maya",
+          "provider": "Rich88",
+          "favorite": true
+        }
+      }
+    }
   }
 }

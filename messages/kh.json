@@ -872,5 +872,173 @@
     "signInSuccess": "ការចូលប្រើប្រាស់បានជោគជ័យ!",
     "submitSignUp": "ចុះឈ្មោះ",
     "submitSignIn": "ចូលប្រើប្រាស់"
+  },
+  "questsHub": {
+    "title": "មជ្ឈមណ្ឌលបេសកកម្ម",
+    "challenges": "បញ្ហាប្រឈម",
+    "dailyCheckIn": "ការចុះឈ្មោះប្រចាំថ្ងៃ",
+    "playQuests": "លេងបេសកកម្ម",
+    "checkInReward": {
+      "title1": "5 ថ្ងៃ",
+      "title2": "ចុះឈ្មោះ",
+      "title3": "រង្វាន់",
+      "subtext": "កុំភ្លេចទទួលយកការប្រាក់ប្រចាំថ្ងៃរបស់អ្នក~!",
+      "accumulatedCheckIn": "ការចុះឈ្មោះដែលបានស្ថិតស្ថេរ:",
+      "Day": "ថ្ងៃ",
+      "days": {
+        "day1": {
+          "day": "ថ្ងៃនេះ",
+          "points": "200",
+          "status": "ទាមទារ",
+          "buttonStyle": "claim"
+        },
+        "day2": {
+          "day": "ថ្ងៃស្អែក",
+          "points": "300",
+          "status": "មិនទាន់ទាមទារ",
+          "buttonStyle": "unclaimed"
+        },
+        "day3": {
+          "day": "ថ្ងៃទី 3",
+          "points": "500",
+          "status": "មិនទាន់ទាមទារ",
+          "buttonStyle": "unclaimed"
+        },
+        "day4": {
+          "day": "ថ្ងៃទី 4",
+          "points": "1000",
+          "status": "មិនទាន់ទាមទារ",
+          "buttonStyle": "unclaimed"
+        },
+        "day5": {
+          "day": "ថ្ងៃទី 5",
+          "points": "3000",
+          "status": "មិនទាន់ទាមទារ",
+          "buttonStyle": "unclaimed"
+        }
+      },
+      "modal": {
+        "title": "Login 5 ថ្ងៃជាប់គ្នាដើម្បីទទួលបានរហូតដល់ 5000 គ្រាប់ត្បូង",
+        "content": {
+          "content1": {
+            "icon": "💎",
+            "text": "ចូលប្រើ 5 ថ្ងៃជាប់គ្នាដើម្បីទទួលបានរហូតដល់ 5000 គ្រាប់ត្បូង។"
+          },
+          "content2": {
+            "icon": "✅",
+            "text": "រួមចំណែកក្នុងសកម្មភាពចូលប្រើជាប់គ្នាដើម្បីទទួលបានគ្រាប់ត្បូងភ្លាមៗ។"
+          },
+          "content3": {
+            "icon": "💰",
+            "text": "គ្រាប់ត្បូងអាចដូរជាស៊ីលប្រើប្រាស់ឥតគិតថ្លៃ។"
+          },
+          "content4": {
+            "icon": "🌟",
+            "text": "រួមចំណែកក្នុងសកម្មភាពដើម្បីប្រមូលគ្រាប់ត្បូងបានងាយស្រួល។ ចូលប្រើនិងទាមទារគ្រាប់ត្បូងជារៀងរាល់ថ្ងៃរយៈពេល 5 ថ្ងៃដើម្បីមានសិទ្ធិទទួលបានរហូតដល់ 5000 គ្រាប់ត្បូង។"
+          }
+        }
+      }
+    },
+    "stats": {
+      "points": "1.00K",
+      "questsCompleted": "បេសកកម្មបានបញ្ចប់"
+    },
+    "actions": {
+      "close": "បិទ"
+    },
+    "adventureSection": {
+      "title": "ចូលរួមជាមួយ",
+      "title1": "ការផ្សងព្រេង!",
+      "subtitle": "ចាប់ផ្ដើមដំណើរកំសាន្តរបស់អ្នក និងបើករង្វាន់ជាច្រើននៅពេលអ្នកដំណើរការទៅមុខ។",
+      "promotion": {
+        "title": "លេងហ្គេមពីប្រភេទទាំងអស់!",
+        "description": "💎 ប្រមូលទឹកប្រាក់លើសលប់ពីអ្នកផ្គត់ផ្គង់ទាំងអស់រហូតដល់ 30,000 រៀល។ 💎 បើករង្វាន់ 10,000 គ្រាប់ត្បូងភ្លាម 💎។ 🎯 រួមចំណែកក្នុងសកម្មភាពដោយទាមទារបេសកកម្ម។",
+        "cta": "ចូលរួមឥឡូវនេះ",
+        "eventPeriod": "រយៈពេលព្រឹត្តិការណ៍: 10 ខែវិច្ឆិកា - 10 ខែមករា 2024"
+      },
+      "eventBanner": {
+        "image1Alt": "បដាផ្សព្វផ្សាយ 1",
+        "image2Alt": "បដាផ្សព្វផ្សាយ 2"
+      }
+    },
+    "questDetailsPage": {
+      "progressSection": {
+        "title": "ការរីកចម្រើនរបស់អ្នក",
+        "claimButton": {
+          "text": "ទាមទារ",
+          "status": "បានបិទ"
+        }
+      },
+      "conditionsSection": {
+        "Turnover": "ចំណូល",
+        "CompletedBet": "ការភ្នាល់បានបញ្ចប់",
+        "title": "លក្ខខណ្ឌ",
+        "conditionsList": {
+          "1": "ការភ្នាល់អប្បបរមា: 1.00 រៀល",
+          "2": "ចំនួនការភ្នាល់: 100 ដង",
+          "3": "ការភ្នាល់សរុប: 30.00K រៀល"
+        }
+      },
+      "activityDescription": {
+        "title": "ប្រមូលការភ្នាល់លើសលប់ពីអ្នកផ្គត់ផ្គង់ទាំងអស់",
+        "subtitle": "រួមចំណែកក្នុងសកម្មភាព និងបំពេញលក្ខខណ្ឌដូចខាងក្រោម:",
+        "steps": {
+          "1": "1. ប្រមូលការភ្នាល់លើសលប់ពីអ្នកផ្គត់ផ្គង់ទាំងអស់រហូតដល់ 30,000 រៀល។",
+          "2": "2. បើករង្វាន់ 10,000 គ្រាប់ត្បូង 💎💎។",
+          "3": "3. រួមចំណែកក្នុងសកម្មភាពដោយទាមទារបេសកកម្ម។"
+        }
+      },
+      "navigation": {
+        "slotsButton": "ស្លុត",
+        "searchGamesPlaceholder": "ស្វែងរកហ្គេម"
+      },
+      "games": {
+        "games1": {
+          "name": "មហាសិទ្ធិរបស់បុណ្យណូអែល",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games2": {
+          "name": "អ្នកប្រយុទ្ធម៉ួយថៃ",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games3": {
+          "name": "ZEUS",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games4": {
+          "name": "អ្នកប្រយុទ្ធសត្វខ្លា",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games5": {
+          "name": "ចានអធិការក្ស",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games6": {
+          "name": "សង្គ្រាមរបស់ព្រះជាមហាពុទ្ធ",
+          "provider": "Rich88",
+          "favorite": true
+        },
+        "games7": {
+          "name": "ការលាន់សូរនៃការរាំ",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games8": {
+          "name": "លេខ ៧ ក្តៅៗ",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games9": {
+          "name": "គ្រាប់ពេជ្រម៉ាយា",
+          "provider": "Rich88",
+          "favorite": true
+        }
+      }
+    }
   }
 }

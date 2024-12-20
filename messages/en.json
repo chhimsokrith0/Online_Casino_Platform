@@ -1087,5 +1087,173 @@
       "transferButton": "Transfer to Main Wallet"
     },
     "line": "Line"
+  },
+  "questsHub": {
+    "title": "Quests Hub",
+    "challenges": "Challenges",
+    "dailyCheckIn": "Daily Check-In",
+    "playQuests": "Play Quests",
+    "checkInReward": {
+      "title1": "5 Days",
+      "title2": "Check-In",
+      "title3": "Reward",
+      "subtext": "Don't miss out on your daily bonuses~!",
+      "accumulatedCheckIn": "Accumulated check-in:",
+      "Day": "Days",
+      "days": {
+        "day1": {
+          "day": "Today",
+          "points": "200",
+          "status": "Claim",
+          "buttonStyle": "claim"
+        },
+        "day2": {
+          "day": "Tomorrow",
+          "points": "300",
+          "status": "Unclaimed",
+          "buttonStyle": "unclaimed"
+        },
+        "day3": {
+          "day": "Day 3",
+          "points": "500 ",
+          "status": "Unclaimed",
+          "buttonStyle": "unclaimed"
+        },
+        "day4": {
+          "day": "Day 4",
+          "points": "1000 ",
+          "status": "Unclaimed",
+          "buttonStyle": "unclaimed"
+        },
+        "day5": {
+          "day": "Day 5",
+          "points": "3000 ",
+          "status": "Unclaimed",
+          "buttonStyle": "unclaimed"
+        }
+      },
+      "modal": {
+        "title": "Login for 5 Consecutive Days to Receive up to 5000 Gems",
+        "content": {
+          "content1": {
+            "icon": "💎",
+            "text": "Log in for 5 consecutive days to receive up to 5000 gems."
+          },
+          "content2": {
+            "icon": "✅",
+            "text": "Simply participate in the consecutive login activity to receive gems instantly."
+          },
+          "content3": {
+            "icon": "💰",
+            "text": "Gems can be exchanged for free spins."
+          },
+          "content4": {
+            "icon": "🌟",
+            "text": "Participate in the activity to accumulate gems easily. Just log in and claim gems every day for 5 days to be eligible to receive up to 5000 gems."
+          }
+        }
+      }
+    },
+    "stats": {
+      "points": "1.00K",
+      "questsCompleted": "Quests Completed"
+    },
+    "actions": {
+      "close": "Close"
+    },
+    "adventureSection": {
+      "title": "Join the",
+      "title1": " Adventure!",
+      "subtitle": "Begin journeys and unlock plentiful rewards as you progress.",
+      "promotion": {
+        "title": "Play games from every category!",
+        "description": "💎 Accumulate slot bets across all providers up to 30,000 THB. 💎 Instantly unlock a reward of 10,000 gems 💎. 🎯 Simply participate in the activity by claiming the quest.",
+        "cta": "Join Now",
+        "eventPeriod": "Event Duration: November 10 - January 10, 2024"
+      },
+      "eventBanner": {
+        "image1Alt": "Promotion Banner 1",
+        "image2Alt": "Promotion Banner 2"
+      }
+    },
+    "questDetailsPage": {
+      "progressSection": {
+        "title": "Your Progress",
+        "claimButton": {
+          "text": "Claim",
+          "status": "disabled"
+        }
+      },
+      "conditionsSection": {
+        "Turnover": "Turnover",
+        "CompletedBet": "Completed Bet",
+        "title": "Conditions",
+        "conditionsList": {
+          "1": "Minimum Bet: 1.00฿",
+          "2": "Number of bets: 100 times",
+          "3": "Accumulated bet: 30.00K฿"
+        }
+      },
+      "activityDescription": {
+        "title": "Accumulate slot bets across all providers",
+        "subtitle": "Simply join the activity and meet the following conditions:",
+        "steps": {
+          "1": "1. Accumulate slot bets across all providers up to 30,000฿.",
+          "2":"2. Unlock the reward of 10,000 gems 💎💎 instantly.",
+          "3":"3. Join the activity easily by claiming the quest."
+        }
+      },
+      "navigation": {
+        "slotsButton": "Slots",
+        "searchGamesPlaceholder": "Search Games"
+      },
+      "games": {
+        "games1": {
+          "name": "Christmas Miracles",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games2": {
+          "name": "Muay Thai Fighter",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games3": {
+          "name": "ZEUS",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games4": {
+          "name": "Tiger Warrior",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games5": {
+          "name": "Magical Lamp",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games6": {
+          "name": "War of the Egyptian Gods",
+          "provider": "Rich88",
+          "favorite": true
+        },
+        "games7": {
+          "name": "Dancing Fever",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games8": {
+          "name": "Fiery Sevens",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games9": {
+          "name": "Maya Gems",
+          "provider": "Rich88",
+          "favorite": true
+        }
+      }
+    }
   }
 }

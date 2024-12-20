@@ -872,5 +872,173 @@
     "signInSuccess": "အကောင့်ဝင်ခြင်းအောင်မြင်သည်!",
     "submitSignUp": "အကောင့်ဖွင့်ရန်",
     "submitSignIn": "အကောင့်ဝင်ရန်"
+  },
+  "questsHub": {
+    "title": "ရှာဖွေမှုစင်တာ",
+    "challenges": "စိန်ခေါ်မှုများ",
+    "dailyCheckIn": "နေ့စဉ်စစ်ဆေးမှု",
+    "playQuests": "ကစားပွဲများ",
+    "checkInReward": {
+      "title1": "၅ ရက်",
+      "title2": "စစ်ဆေးမှု",
+      "title3": "ဆု",
+      "subtext": "နေ့စဉ်အဆင့်မြှင့်လက်ဆောင်ကိုမဖြစ်ရစေနှင့်~!",
+      "accumulatedCheckIn": "စုစုပေါင်းစစ်ဆေးမှု:",
+      "Day": "ရက်",
+      "days": {
+        "day1": {
+          "day": "ယနေ့",
+          "points": "၂၀၀",
+          "status": "ရယူရန်",
+          "buttonStyle": "claim"
+        },
+        "day2": {
+          "day": "မနက်ဖြန်",
+          "points": "၃၀၀",
+          "status": "မရရှိသေးပါ",
+          "buttonStyle": "unclaimed"
+        },
+        "day3": {
+          "day": "တတိယနေ့",
+          "points": "၅၀၀",
+          "status": "မရရှိသေးပါ",
+          "buttonStyle": "unclaimed"
+        },
+        "day4": {
+          "day": "စတုတ္ထနေ့",
+          "points": "၁၀၀၀",
+          "status": "မရရှိသေးပါ",
+          "buttonStyle": "unclaimed"
+        },
+        "day5": {
+          "day": "ပဉ္စမနေ့",
+          "points": "၃၀၀၀",
+          "status": "မရရှိသေးပါ",
+          "buttonStyle": "unclaimed"
+        }
+      },
+      "modal": {
+        "title": "အဆက်မပြတ် ၅ ရက်ဝင်ရောက်ပြီး ၅၀၀၀ ကျောက်မျက်ရယူပါ",
+        "content": {
+          "content1": {
+            "icon": "💎",
+            "text": "အဆက်မပြတ် ၅ ရက်ဝင်ရောက်ပြီး ၅၀၀၀ ကျောက်မျက်ရယူပါ။"
+          },
+          "content2": {
+            "icon": "✅",
+            "text": "လက်နက်ရရှိရေးလုပ်ငန်းမှာ ပါဝင်ရုံဖြင့် ကျောက်မျက်ရရှိရန်အခွင့်ရှိသည်။"
+          },
+          "content3": {
+            "icon": "💰",
+            "text": "ကျောက်မျက်များကို အခမဲ့စပင်းများအဖြစ် လဲလှယ်နိုင်ပါသည်။"
+          },
+          "content4": {
+            "icon": "🌟",
+            "text": "အဆင့်မြှင့်ကျောက်မျက်များကိုရယူရန် လွယ်ကူစွာပါဝင်ပါ။ ၅ ရက်ဆက်တိုက် စစ်ဆေးပြီး ၅၀၀၀ ကျောက်မျက်ရနိုင်ပါသည်။"
+          }
+        }
+      }
+    },
+    "stats": {
+      "points": "၁.၀၀K",
+      "questsCompleted": "စစ်ဆင်ရေးအောင်မြင်စွာပြီးစီး"
+    },
+    "actions": {
+      "close": "ပိတ်မည်"
+    },
+    "adventureSection": {
+      "title": "ပါဝင်ပါ",
+      "title1": " စွန့်စားမှု!",
+      "subtitle": "ခရီးစဉ်ကိုစတင်ပြီး များစွာသောဆုများကို ဖွင့်ပါ။",
+      "promotion": {
+        "title": "အမျိုးအစားအားလုံးမှဂိမ်းများကိုကစားပါ!",
+        "description": "💎 အမျိုးအစားအားလုံးမှ ၃၀၀၀၀ ကျပ်တန် ပွဲများကို စုဆောင်းပါ။ 💎 ၁၀၀၀၀ ကျောက်မျက်ဆုကို တစ်ခါတည်းဖွင့်ပါ 💎. 🎯 လွယ်ကူစွာလုပ်ဆောင်ခြင်းဖြင့် ပြီးမြောက်ပါ။",
+        "cta": "ယခု ပါဝင်ပါ",
+        "eventPeriod": "ပွဲကာလ: ၁၀ နိုဝင်ဘာ - ၁၀ ဇန်နဝါရီ ၂၀၂၄"
+      },
+      "eventBanner": {
+        "image1Alt": "ပရိုမိုးရှင်း ၁",
+        "image2Alt": "ပရိုမိုးရှင်း ၂"
+      }
+    },
+    "questDetailsPage": {
+      "progressSection": {
+        "title": "သင်၏တိုးတက်မှု",
+        "claimButton": {
+          "text": "ရယူရန်",
+          "status": "ပိတ်ထားသည်"
+        }
+      },
+      "conditionsSection": {
+        "Turnover": "လက်ကျန်ငွေ",
+        "CompletedBet": "အောင်မြင်သောလောင်းကစား",
+        "title": "ဆောင်တာများ",
+        "conditionsList": {
+          "1": "အနည်းဆုံးလောင်းကစား: ၁.၀၀ ကျပ်",
+          "2": "လောင်းကစားအကြိမ်ရေ: ၁၀၀ ကြိမ်",
+          "3": "စုစုပေါင်းလောင်းကစား: ၃၀၀၀၀ ကျပ်"
+        }
+      },
+      "activityDescription": {
+        "title": "အမျိုးအစားအားလုံးမှဂိမ်းများကို စုဆောင်းပါ",
+        "subtitle": "အောက်ပါဆောင်တာများကို ဖြည့်စည်းပါ:",
+        "steps": {
+          "1": "၁. အမျိုးအစားအားလုံးမှ ၃၀၀၀၀ ကျပ်တန် ပြီးမြောက်ပါ။",
+          "2": "၂. ၁၀၀၀၀ ကျောက်မျက်ဆုကို ဖွင့်ပါ 💎💎.",
+          "3": "၃. လွယ်ကူစွာ ပါဝင်ပါ။"
+        }
+      },
+      "navigation": {
+        "slotsButton": "စလော့",
+        "searchGamesPlaceholder": "ဂိမ်းများကို ရှာဖွေပါ"
+      },
+      "games": {
+        "games1": {
+          "name": "ခရစ်စမတ်အံ့ဩမှုများ",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games2": {
+          "name": "မြိုင်းတိုင်းမုရ်",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games3": {
+          "name": "ဇီးယပ်စ်",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games4": {
+          "name": "ကျားစစ်သား",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games5": {
+          "name": "အံ့ဩဘူး",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games6": {
+          "name": "အီဂျစ်ဘုရားသခင်များ၏စစ်ပွဲ",
+          "provider": "Rich88",
+          "favorite": true
+        },
+        "games7": {
+          "name": "ကခုန်ခြင်းအိပ်မက်",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games8": {
+          "name": "မီးလောင်ခြင်း ၇",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games9": {
+          "name": "မာယာရတနာများ",
+          "provider": "Rich88",
+          "favorite": true
+        }
+      }
+    }
   }
 }

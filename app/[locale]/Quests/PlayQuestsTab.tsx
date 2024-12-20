@@ -3,13 +3,14 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import QuestDetailsPage from "./QuestDetailsPage";
+import { useTranslations } from "next-intl";
 const PlayQuestsTab: React.FC = () => {
   const [showDetailsPage, setShowDetailsPage] = useState(false);
+  const t = useTranslations("questsHub.adventureSection");
   const carouselItems = [
     {
-      title: "สะสมเดิมพันสล็อต",
-      description:
-        "💎 สะสมเดิมพันสล็อต ทุกค่าย 💎 เพียงลูกค้าเข้าร่วมกิจกรรม กติกา 1. สะสมเดิมพันสล็อตทุกค่าย ครบ 30,000 บาท 2. ปลดล็อครางวัล 10,000 เพชร 💎💎 ทันที ร่วมกิจกรรมง่ายๆ เพียงกดรับเควส",
+      title: t("promotion.title"),
+      description: t("promotion.description"),
       image: "https://storage.googleapis.com/playgame168/quest_images/2c305a89-8637-4de5-9a96-6481c8b653db.webp",
       backgroundImage:
         "https://storage.googleapis.com/playgame168/quest_images/82eacc57-bc0a-4ce4-b7ef-0fdc035b1a91.webp",
@@ -44,11 +45,11 @@ const PlayQuestsTab: React.FC = () => {
             alt="Ribbon"
           />
           <div className="absolute inset-0 flex justify-center items-center font-semibold text-lg sm:text-xl text-white">
-            Join the <span className="text-yellow-400 mx-2">Adventure!</span>
+            {t("title")} <span className="text-yellow-400 mx-2">{t("title1")}</span>
           </div>
         </span>
         <div className="text-sm text-gray-300 mt-2">
-          Begin journeys and unlock plentiful rewards as you progress.
+          {t("subtitle")}
         </div>
       </section>
 

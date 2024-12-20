@@ -533,5 +533,173 @@
     "signInSuccess": "Đăng nhập thành công!",
     "submitSignUp": "Đăng Ký",
     "submitSignIn": "Đăng Nhập"
+  },
+  "questsHub": {
+    "title": "Trung Tâm Nhiệm Vụ",
+    "challenges": "Thử Thách",
+    "dailyCheckIn": "Đăng Nhập Hàng Ngày",
+    "playQuests": "Chơi Nhiệm Vụ",
+    "checkInReward": {
+      "title1": "5 Ngày",
+      "title2": "Đăng Nhập",
+      "title3": "Phần Thưởng",
+      "subtext": "Đừng bỏ lỡ phần thưởng hàng ngày của bạn~!",
+      "accumulatedCheckIn": "Đăng nhập tích lũy:",
+      "Day": "Ngày",
+      "days": {
+        "day1": {
+          "day": "Hôm nay",
+          "points": "200",
+          "status": "Nhận",
+          "buttonStyle": "claim"
+        },
+        "day2": {
+          "day": "Ngày mai",
+          "points": "300",
+          "status": "Chưa nhận",
+          "buttonStyle": "unclaimed"
+        },
+        "day3": {
+          "day": "Ngày 3",
+          "points": "500",
+          "status": "Chưa nhận",
+          "buttonStyle": "unclaimed"
+        },
+        "day4": {
+          "day": "Ngày 4",
+          "points": "1000",
+          "status": "Chưa nhận",
+          "buttonStyle": "unclaimed"
+        },
+        "day5": {
+          "day": "Ngày 5",
+          "points": "3000",
+          "status": "Chưa nhận",
+          "buttonStyle": "unclaimed"
+        }
+      },
+      "modal": {
+        "title": "Đăng nhập liên tục 5 ngày để nhận tới 5000 viên đá quý",
+        "content": {
+          "content1": {
+            "icon": "💎",
+            "text": "Đăng nhập liên tục 5 ngày để nhận tới 5000 viên đá quý."
+          },
+          "content2": {
+            "icon": "✅",
+            "text": "Chỉ cần tham gia hoạt động đăng nhập liên tục để nhận ngay đá quý."
+          },
+          "content3": {
+            "icon": "💰",
+            "text": "Đá quý có thể được đổi lấy lượt quay miễn phí."
+          },
+          "content4": {
+            "icon": "🌟",
+            "text": "Tham gia hoạt động để tích lũy đá quý dễ dàng. Chỉ cần đăng nhập và nhận đá quý mỗi ngày trong 5 ngày để có cơ hội nhận tới 5000 viên đá quý."
+          }
+        }
+      }
+    },
+    "stats": {
+      "points": "1.00K",
+      "questsCompleted": "Nhiệm Vụ Hoàn Thành"
+    },
+    "actions": {
+      "close": "Đóng"
+    },
+    "adventureSection": {
+      "title": "Tham Gia",
+      "title1": " Cuộc Phiêu Lưu!",
+      "subtitle": "Bắt đầu hành trình và mở khóa nhiều phần thưởng hấp dẫn.",
+      "promotion": {
+        "title": "Chơi trò chơi từ mọi thể loại!",
+        "description": "💎 Tích lũy cược slot từ tất cả các nhà cung cấp lên tới 30.000 THB. 💎 Nhận ngay phần thưởng 10.000 viên đá quý 💎. 🎯 Chỉ cần tham gia hoạt động bằng cách nhận nhiệm vụ.",
+        "cta": "Tham gia ngay",
+        "eventPeriod": "Thời gian sự kiện: 10 tháng 11 - 10 tháng 1, 2024"
+      },
+      "eventBanner": {
+        "image1Alt": "Biểu ngữ Khuyến Mãi 1",
+        "image2Alt": "Biểu ngữ Khuyến Mãi 2"
+      }
+    },
+    "questDetailsPage": {
+      "progressSection": {
+        "title": "Tiến Độ Của Bạn",
+        "claimButton": {
+          "text": "Nhận",
+          "status": "không hoạt động"
+        }
+      },
+      "conditionsSection": {
+        "Turnover": "Doanh Thu",
+        "CompletedBet": "Cược Hoàn Thành",
+        "title": "Điều Kiện",
+        "conditionsList": {
+          "1": "Cược tối thiểu: 1.00฿",
+          "2": "Số lần cược: 100 lần",
+          "3": "Tổng cược tích lũy: 30.00K฿"
+        }
+      },
+      "activityDescription": {
+        "title": "Tích lũy cược slot từ tất cả các nhà cung cấp",
+        "subtitle": "Chỉ cần tham gia hoạt động và hoàn thành các điều kiện sau:",
+        "steps": {
+          "1": "1. Tích lũy cược slot từ tất cả các nhà cung cấp lên tới 30.000฿.",
+          "2": "2. Nhận ngay phần thưởng 10.000 viên đá quý 💎💎.",
+          "3": "3. Tham gia hoạt động dễ dàng bằng cách nhận nhiệm vụ."
+        }
+      },
+      "navigation": {
+        "slotsButton": "Slots",
+        "searchGamesPlaceholder": "Tìm kiếm trò chơi"
+      },
+      "games": {
+        "games1": {
+          "name": "Giáng Sinh Kỳ Diệu",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games2": {
+          "name": "Chiến Binh Muay Thái",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games3": {
+          "name": "ZEUS",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games4": {
+          "name": "Chiến Binh Hổ",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games5": {
+          "name": "Đèn Thần Kỳ Diệu",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games6": {
+          "name": "Cuộc Chiến Các Vị Thần Ai Cập",
+          "provider": "Rich88",
+          "favorite": true
+        },
+        "games7": {
+          "name": "Cơn Sốt Khiêu Vũ",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games8": {
+          "name": "Bảy Ngọn Lửa",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games9": {
+          "name": "Ngọc Maya",
+          "provider": "Rich88",
+          "favorite": true
+        }
+      }
+    }
   }
 }

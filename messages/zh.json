@@ -1057,5 +1057,173 @@
     "signInSuccess": "登录成功！",
     "submitSignUp": "注册",
     "submitSignIn": "登录"
+  },
+  "questsHub": {
+    "title": "任务中心",
+    "challenges": "挑战",
+    "dailyCheckIn": "每日签到",
+    "playQuests": "任务游戏",
+    "checkInReward": {
+      "title1": "5天",
+      "title2": "签到",
+      "title3": "奖励",
+      "subtext": "不要错过您的每日奖励~！",
+      "accumulatedCheckIn": "累计签到：",
+      "Day": "天",
+      "days": {
+        "day1": {
+          "day": "今天",
+          "points": "200",
+          "status": "领取",
+          "buttonStyle": "claim"
+        },
+        "day2": {
+          "day": "明天",
+          "points": "300",
+          "status": "未领取",
+          "buttonStyle": "unclaimed"
+        },
+        "day3": {
+          "day": "第3天",
+          "points": "500",
+          "status": "未领取",
+          "buttonStyle": "unclaimed"
+        },
+        "day4": {
+          "day": "第4天",
+          "points": "1000",
+          "status": "未领取",
+          "buttonStyle": "unclaimed"
+        },
+        "day5": {
+          "day": "第5天",
+          "points": "3000",
+          "status": "未领取",
+          "buttonStyle": "unclaimed"
+        }
+      },
+      "modal": {
+        "title": "连续登录5天领取最多5000宝石",
+        "content": {
+          "content1": {
+            "icon": "💎",
+            "text": "连续登录5天可领取最多5000宝石。"
+          },
+          "content2": {
+            "icon": "✅",
+            "text": "只需参加连续登录活动，即可立即获得宝石。"
+          },
+          "content3": {
+            "icon": "💰",
+            "text": "宝石可以兑换免费旋转。"
+          },
+          "content4": {
+            "icon": "🌟",
+            "text": "轻松参与活动累积宝石。只需每天登录并领取宝石，持续5天即可有资格获得最多5000宝石。"
+          }
+        }
+      }
+    },
+    "stats": {
+      "points": "1.00K",
+      "questsCompleted": "完成的任务"
+    },
+    "actions": {
+      "close": "关闭"
+    },
+    "adventureSection": {
+      "title": "加入",
+      "title1": " 冒险！",
+      "subtitle": "开始旅程并解锁丰厚奖励。",
+      "promotion": {
+        "title": "玩所有类别的游戏！",
+        "description": "💎 在所有供应商中累积最多30,000泰铢的老虎机投注。💎 立即解锁10,000宝石奖励💎。🎯 只需通过领取任务参与活动。",
+        "cta": "立即加入",
+        "eventPeriod": "活动时间：11月10日至2024年1月10日"
+      },
+      "eventBanner": {
+        "image1Alt": "促销横幅1",
+        "image2Alt": "促销横幅2"
+      }
+    },
+    "questDetailsPage": {
+      "progressSection": {
+        "title": "您的进度",
+        "claimButton": {
+          "text": "领取",
+          "status": "disabled"
+        }
+      },
+      "conditionsSection": {
+        "Turnover": "流水",
+        "CompletedBet": "完成的投注",
+        "title": "条件",
+        "conditionsList": {
+          "1": "最低投注：1.00฿",
+          "2": "投注次数：100次",
+          "3": "累计投注：30,000฿"
+        }
+      },
+      "activityDescription": {
+        "title": "在所有供应商中累积老虎机投注",
+        "subtitle": "只需参与活动并满足以下条件：",
+        "steps": {
+          "1": "1. 在所有供应商中累积最多30,000฿的老虎机投注。",
+          "2": "2. 立即解锁10,000宝石奖励💎💎。",
+          "3": "3. 通过领取任务轻松参与活动。"
+        }
+      },
+      "navigation": {
+        "slotsButton": "老虎机",
+        "searchGamesPlaceholder": "搜索游戏"
+      },
+      "games": {
+        "games1": {
+          "name": "圣诞奇迹",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games2": {
+          "name": "泰拳战士",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games3": {
+          "name": "宙斯",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games4": {
+          "name": "虎战士",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games5": {
+          "name": "神奇灯",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games6": {
+          "name": "埃及诸神之战",
+          "provider": "Rich88",
+          "favorite": true
+        },
+        "games7": {
+          "name": "舞蹈热潮",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games8": {
+          "name": "炽热七星",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games9": {
+          "name": "玛雅宝石",
+          "provider": "Rich88",
+          "favorite": true
+        }
+      }
+    }
   }
 }

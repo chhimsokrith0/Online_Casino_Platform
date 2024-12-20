@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
+import { useTranslations } from "next-intl";
 interface DailyCheckInTabProps {
   onClaim?: (index: number) => void;
 }
@@ -11,6 +11,7 @@ const DailyCheckInTab: React.FC<DailyCheckInTabProps> = ({ onClaim }) => {
   const [showAlert, setShowAlert] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [claimedIndex, setClaimedIndex] = useState<number | null>(null);
+  const t = useTranslations("questsHub.checkInReward");
 
   const handleClaim = (index: number) => {
     setClaimedIndex(index);
@@ -33,11 +34,11 @@ const DailyCheckInTab: React.FC<DailyCheckInTabProps> = ({ onClaim }) => {
   };
 
   const rewards = [
-    { label: "Today", points: 200, status: "Claim" },
-    { label: "Tomorrow", points: 300, status: "Unclaimed" },
-    { label: "Day 3", points: 500, status: "Unclaimed" },
-    { label: "Day 4", points: 1000, status: "Unclaimed" },
-    { label: "Day 5", points: 3000, status: "Unclaimed" },
+    { label: t("days.day1.day"), points: t("days.day1.points"), status: t("days.day1.status") },
+    { label: t("days.day2.day"), points: t("days.day2.points"), status: t("days.day2.status") },
+    { label: t("days.day3.day"), points: t("days.day3.points"), status: t("days.day3.status") },
+    { label: t("days.day4.day"), points: t("days.day4.points"), status: t("days.day4.status") },
+    { label: t("days.day5.day"), points: t("days.day5.points"), status: t("days.day5.status") },
   ];
 
   return (
@@ -63,18 +64,18 @@ const DailyCheckInTab: React.FC<DailyCheckInTabProps> = ({ onClaim }) => {
               alt="Ribbon"
             />
             <div className="absolute inset-0 px-12 font-semibold">
-              5 Days <span className="text-yellow-400">Check-In</span> Reward
+              {t("title1")} <span className="text-yellow-400">{t("title2")}</span> {t("title3")}
             </div>
           </span>
-          <div className="text-sm text-none-select mt-1">Don&apos;t miss out on your daily bonuses~!</div>
+          <div className="text-sm text-none-select mt-1">{t("subtext")}</div>
         </section>
 
         {/* Time Section */}
         <section id="time" className="mt-4" >
           <div className="flex justify-between items-center w-full ">
             <div className="inline-block backdrop-blur-xl bg-white/10 px-[20px] py-[8px] text-white rounded-full text-[14px]">
-              Accumulated check-in: {" "}
-              <span className="text-gradient font-semibold text-[16px]">0 Days</span>
+            {t("accumulatedCheckIn")}
+              <span className="text-gradient font-semibold text-[16px]"> 0 {t("Day")}</span>
             </div>
             <svg
               onClick={handleOpenModal}
@@ -159,7 +160,7 @@ const DailyCheckInTab: React.FC<DailyCheckInTabProps> = ({ onClaim }) => {
               transition={{ duration: 0.4 }}
             >
               <div className="flex justify-between items-center border-b border-gray-600 pb-2 mb-4">
-                <h2 className="text-lg font-bold">Login for 5 Consecutive Days to Receive up to 5000 Gems</h2>
+                <h2 className="text-lg font-bold"> {t("modal.title")} </h2>
                 <button
                   onClick={handleCloseModal}
                   className="text-gray-400 hover:text-white focus:outline-none"
@@ -169,15 +170,16 @@ const DailyCheckInTab: React.FC<DailyCheckInTabProps> = ({ onClaim }) => {
               </div>
               <div className="text-sm leading-relaxed">
                 <p>
-                  💎 Log in for 5 consecutive days to receive up to 5000 gems 💎
+                  💎 {t("modal.content.content1.text")} 💎
                   <br />
-                  Simply participate in the consecutive login activity to receive gems instantly.
+                  {t("modal.content.content2.icon")}
+                  {t("modal.content.content2.text")}
                 </p>
                 <p className="mt-2">
-                  💰 Gems can be exchanged for free spins.
+                  💰 {t("modal.content.content3.text")}
                   <br />
-                  Participate in the activity to accumulate gems easily. Just log in and claim gems every day
-                  for 5 days to be eligible to receive up to 5000 gems 💎.
+                  {t("modal.content.content4.icon")}
+                  {t("modal.content.content4.text")} 💎.
                 </p>
               </div>
             </motion.div>

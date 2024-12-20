@@ -1057,5 +1057,173 @@
     "signInSuccess": "Log masuk berjaya!",
     "submitSignUp": "Daftar",
     "submitSignIn": "Log Masuk"
+  },
+  "questsHub": {
+    "title": "Pusat Misi",
+    "challenges": "Cabaran",
+    "dailyCheckIn": "Daftar Masuk Harian",
+    "playQuests": "Main Misi",
+    "checkInReward": {
+      "title1": "5 Hari",
+      "title2": "Daftar Masuk",
+      "title3": "Ganjaran",
+      "subtext": "Jangan lepaskan bonus harian anda~!",
+      "accumulatedCheckIn": "Daftar masuk terkumpul:",
+      "Day": "Hari",
+      "days": {
+        "day1": {
+          "day": "Hari Ini",
+          "points": "200",
+          "status": "Tuntut",
+          "buttonStyle": "claim"
+        },
+        "day2": {
+          "day": "Esok",
+          "points": "300",
+          "status": "Belum Dituntut",
+          "buttonStyle": "unclaimed"
+        },
+        "day3": {
+          "day": "Hari ke-3",
+          "points": "500",
+          "status": "Belum Dituntut",
+          "buttonStyle": "unclaimed"
+        },
+        "day4": {
+          "day": "Hari ke-4",
+          "points": "1000",
+          "status": "Belum Dituntut",
+          "buttonStyle": "unclaimed"
+        },
+        "day5": {
+          "day": "Hari ke-5",
+          "points": "3000",
+          "status": "Belum Dituntut",
+          "buttonStyle": "unclaimed"
+        }
+      },
+      "modal": {
+        "title": "Daftar Masuk Selama 5 Hari Berturut-Turut untuk Mendapat 5000 Permata",
+        "content": {
+          "content1": {
+            "icon": "💎",
+            "text": "Daftar masuk selama 5 hari berturut-turut untuk mendapat sehingga 5000 permata."
+          },
+          "content2": {
+            "icon": "✅",
+            "text": "Hanya sertai aktiviti daftar masuk berturut-turut untuk menerima permata serta-merta."
+          },
+          "content3": {
+            "icon": "💰",
+            "text": "Permata boleh ditukar dengan putaran percuma."
+          },
+          "content4": {
+            "icon": "🌟",
+            "text": "Sertai aktiviti ini dengan mudah. Daftar masuk dan tuntut permata setiap hari selama 5 hari untuk layak menerima sehingga 5000 permata."
+          }
+        }
+      }
+    },
+    "stats": {
+      "points": "1.00K",
+      "questsCompleted": "Misi Diselesaikan"
+    },
+    "actions": {
+      "close": "Tutup"
+    },
+    "adventureSection": {
+      "title": "Sertai",
+      "title1": " Pengembaraan!",
+      "subtitle": "Mulakan perjalanan anda dan buka ganjaran yang banyak semasa anda maju.",
+      "promotion": {
+        "title": "Main permainan dari semua kategori!",
+        "description": "💎 Kumpulkan taruhan slot dari semua penyedia sehingga 30,000 MYR. 💎 Buka ganjaran sebanyak 10,000 permata 💎. 🎯 Sertai aktiviti dengan menuntut misi.",
+        "cta": "Sertai Sekarang",
+        "eventPeriod": "Tempoh Acara: 10 November - 10 Januari 2024"
+      },
+      "eventBanner": {
+        "image1Alt": "Sepanduk Promosi 1",
+        "image2Alt": "Sepanduk Promosi 2"
+      }
+    },
+    "questDetailsPage": {
+      "progressSection": {
+        "title": "Kemajuan Anda",
+        "claimButton": {
+          "text": "Tuntut",
+          "status": "dinonaktifkan"
+        }
+      },
+      "conditionsSection": {
+        "Turnover": "Perolehan",
+        "CompletedBet": "Taruhan Selesai",
+        "title": "Syarat",
+        "conditionsList": {
+          "1": "Taruhan Minimum: 1.00 MYR",
+          "2": "Jumlah taruhan: 100 kali",
+          "3": "Jumlah terkumpul: 30,000 MYR"
+        }
+      },
+      "activityDescription": {
+        "title": "Kumpulkan taruhan slot dari semua penyedia",
+        "subtitle": "Hanya sertai aktiviti dan penuhi syarat berikut:",
+        "steps": {
+          "1": "1. Kumpulkan taruhan slot dari semua penyedia sehingga 30,000 MYR.",
+          "2": "2. Buka ganjaran sebanyak 10,000 permata 💎💎.",
+          "3": "3. Sertai aktiviti dengan mudah dengan menuntut misi."
+        }
+      },
+      "navigation": {
+        "slotsButton": "Slot",
+        "searchGamesPlaceholder": "Cari Permainan"
+      },
+      "games": {
+        "games1": {
+          "name": "Keajaiban Krismas",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games2": {
+          "name": "Pejuang Muay Thai",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games3": {
+          "name": "ZEUS",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games4": {
+          "name": "Pahlawan Harimau",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games5": {
+          "name": "Lampu Ajaib",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games6": {
+          "name": "Perang Dewa Mesir",
+          "provider": "Rich88",
+          "favorite": true
+        },
+        "games7": {
+          "name": "Demam Menari",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games8": {
+          "name": "Tujuh Api",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games9": {
+          "name": "Permata Maya",
+          "provider": "Rich88",
+          "favorite": true
+        }
+      }
+    }
   }
 }

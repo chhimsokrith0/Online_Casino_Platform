@@ -872,5 +872,173 @@
         "signInSuccess": "로그인 성공!",
         "submitSignUp": "회원가입",
         "submitSignIn": "로그인"
+    },
+    "questsHub": {
+        "title": "퀘스트 허브",
+        "challenges": "도전 과제",
+        "dailyCheckIn": "일일 체크인",
+        "playQuests": "퀘스트 플레이",
+        "checkInReward": {
+            "title1": "5일",
+            "title2": "체크인",
+            "title3": "보상",
+            "subtext": "일일 보너스를 놓치지 마세요~!",
+            "accumulatedCheckIn": "누적 체크인:",
+            "Day": "일",
+            "days": {
+                "day1": {
+                    "day": "오늘",
+                    "points": "200",
+                    "status": "수령",
+                    "buttonStyle": "claim"
+                },
+                "day2": {
+                    "day": "내일",
+                    "points": "300",
+                    "status": "미수령",
+                    "buttonStyle": "unclaimed"
+                },
+                "day3": {
+                    "day": "3일차",
+                    "points": "500",
+                    "status": "미수령",
+                    "buttonStyle": "unclaimed"
+                },
+                "day4": {
+                    "day": "4일차",
+                    "points": "1000",
+                    "status": "미수령",
+                    "buttonStyle": "unclaimed"
+                },
+                "day5": {
+                    "day": "5일차",
+                    "points": "3000",
+                    "status": "미수령",
+                    "buttonStyle": "unclaimed"
+                }
+            },
+            "modal": {
+                "title": "5일 연속 로그인으로 최대 5000개의 보석을 받으세요",
+                "content": {
+                    "content1": {
+                        "icon": "💎",
+                        "text": "5일 연속 로그인으로 최대 5000개의 보석을 받으세요."
+                    },
+                    "content2": {
+                        "icon": "✅",
+                        "text": "연속 로그인 활동에 참여하면 즉시 보석을 받을 수 있습니다."
+                    },
+                    "content3": {
+                        "icon": "💰",
+                        "text": "보석은 무료 스핀으로 교환할 수 있습니다."
+                    },
+                    "content4": {
+                        "icon": "🌟",
+                        "text": "활동에 참여하여 쉽게 보석을 모으세요. 5일 연속 로그인하고 매일 보석을 수령하여 최대 5000개의 보석을 받을 수 있습니다."
+                    }
+                }
+            }
+        },
+        "stats": {
+            "points": "1.00K",
+            "questsCompleted": "완료된 퀘스트"
+        },
+        "actions": {
+            "close": "닫기"
+        },
+        "adventureSection": {
+            "title": "모험에",
+            "title1": "참여하세요!",
+            "subtitle": "여정을 시작하고 진행하면서 풍성한 보상을 잠금 해제하세요.",
+            "promotion": {
+                "title": "모든 카테고리의 게임을 플레이하세요!",
+                "description": "💎 모든 제공업체에서 최대 30,000원의 슬롯 베팅을 누적하세요. 💎 즉시 10,000개의 보석 보상을 잠금 해제하세요 💎. 🎯 퀘스트를 수령하여 활동에 쉽게 참여하세요.",
+                "cta": "지금 참여하기",
+                "eventPeriod": "이벤트 기간: 11월 10일 - 1월 10일, 2024"
+            },
+            "eventBanner": {
+                "image1Alt": "프로모션 배너 1",
+                "image2Alt": "프로모션 배너 2"
+            }
+        },
+        "questDetailsPage": {
+            "progressSection": {
+                "title": "귀하의 진행 상황",
+                "claimButton": {
+                    "text": "수령",
+                    "status": "비활성화됨"
+                }
+            },
+            "conditionsSection": {
+                "Turnover": "매출",
+                "CompletedBet": "완료된 베팅",
+                "title": "조건",
+                "conditionsList": {
+                    "1": "최소 베팅: 1.00₩",
+                    "2": "베팅 횟수: 100회",
+                    "3": "누적 베팅: 30.00K₩"
+                }
+            },
+            "activityDescription": {
+                "title": "모든 제공업체에서 슬롯 베팅 누적",
+                "subtitle": "다음 조건을 충족하여 활동에 참여하세요:",
+                "steps": {
+                    "1": "1. 모든 제공업체에서 슬롯 베팅을 최대 30,000₩까지 누적하세요.",
+                    "2": "2. 즉시 10,000개의 보석 💎💎 보상을 잠금 해제하세요.",
+                    "3": "3. 퀘스트를 수령하여 쉽게 활동에 참여하세요."
+                }
+            },
+            "navigation": {
+                "slotsButton": "슬롯",
+                "searchGamesPlaceholder": "게임 검색"
+            },
+            "games": {
+                "games1": {
+                    "name": "크리스마스 기적",
+                    "provider": "SpadeGaming",
+                    "favorite": true
+                },
+                "games2": {
+                    "name": "무에타이 파이터",
+                    "provider": "SpadeGaming",
+                    "favorite": true
+                },
+                "games3": {
+                    "name": "제우스",
+                    "provider": "SpadeGaming",
+                    "favorite": true
+                },
+                "games4": {
+                    "name": "호랑이 전사",
+                    "provider": "SpadeGaming",
+                    "favorite": true
+                },
+                "games5": {
+                    "name": "마법 램프",
+                    "provider": "SpadeGaming",
+                    "favorite": true
+                },
+                "games6": {
+                    "name": "이집트 신들의 전쟁",
+                    "provider": "Rich88",
+                    "favorite": true
+                },
+                "games7": {
+                    "name": "댄싱 피버",
+                    "provider": "SpadeGaming",
+                    "favorite": true
+                },
+                "games8": {
+                    "name": "불타는 세븐스",
+                    "provider": "SpadeGaming",
+                    "favorite": true
+                },
+                "games9": {
+                    "name": "마야 보석",
+                    "provider": "Rich88",
+                    "favorite": true
+                }
+            }
+        }
     }
 }
