@@ -57,7 +57,7 @@ const DailyCheckInTab: React.FC<DailyCheckInTabProps> = ({ onClaim }) => {
               5 Days <span className="text-yellow-400">Check-In</span> Reward
             </div>
           </span>
-          <div className="text-sm text-none-select mt-1">Don't miss out on your daily bonuses~!</div>
+          <div className="text-sm text-none-select mt-1">Don&apos;t miss out on your daily bonuses~!</div>
         </section>
 
         {/* Time Section */}
@@ -131,7 +131,6 @@ const DailyCheckInTab: React.FC<DailyCheckInTabProps> = ({ onClaim }) => {
           </motion.div>
         </section>
       </motion.div>
-
     </>
   );
 };
