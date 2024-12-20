@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState, useEffect } from "react";
+import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface DailyCheckInTabProps {
@@ -9,6 +9,7 @@ interface DailyCheckInTabProps {
 
 const DailyCheckInTab: React.FC<DailyCheckInTabProps> = ({ onClaim }) => {
   const [showAlert, setShowAlert] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const [claimedIndex, setClaimedIndex] = useState<number | null>(null);
 
   const handleClaim = (index: number) => {
@@ -21,6 +22,14 @@ const DailyCheckInTab: React.FC<DailyCheckInTabProps> = ({ onClaim }) => {
 
   const handleCloseAlert = () => {
     setShowAlert(false);
+  };
+
+  const handleOpenModal = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
   };
 
   const rewards = [
@@ -61,17 +70,18 @@ const DailyCheckInTab: React.FC<DailyCheckInTabProps> = ({ onClaim }) => {
         </section>
 
         {/* Time Section */}
-        <section id="time" className="mt-4">
-          <div className="flex justify-between items-center w-full">
+        <section id="time" className="mt-4" >
+          <div className="flex justify-between items-center w-full ">
             <div className="inline-block backdrop-blur-xl bg-white/10 px-[20px] py-[8px] text-white rounded-full text-[14px]">
-              Accumulated check-in:{" "}
+              Accumulated check-in: {" "}
               <span className="text-gradient font-semibold text-[16px]">0 Days</span>
             </div>
             <svg
+              onClick={handleOpenModal}
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
               role="img"
-              className="icon ml-2 text-none-select hover:text-white clickable"
+              className="cursor-pointer icon ml-2 text-none-select hover:text-white clickable"
               width="18px"
               height="18px"
               viewBox="0 0 24 24"
@@ -95,13 +105,12 @@ const DailyCheckInTab: React.FC<DailyCheckInTabProps> = ({ onClaim }) => {
             {rewards.map((reward, index) => (
               <motion.div
                 key={index}
-                className={`flex flex-col items-center justify-between p-4 rounded-lg ${
-                  claimedIndex === index
-                    ? "bg-green-500 shadow-lg"
-                    : reward.status === "Claim"
+                className={`flex flex-col items-center justify-between p-4 rounded-lg ${claimedIndex === index
+                  ? "bg-green-500 shadow-lg"
+                  : reward.status === "Claim"
                     ? "bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-600 shadow-md"
                     : "bg-[#2e2e4d]"
-                }`}
+                  }`}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4 }}
@@ -116,21 +125,66 @@ const DailyCheckInTab: React.FC<DailyCheckInTabProps> = ({ onClaim }) => {
                   <div className="text-center text-white text-sm mt-2">{reward.points} Points</div>
                 </div>
                 <button
-                  className={`px-4 py-2 w-full rounded-lg text-sm font-medium ${
-                    reward.status === "Claim" && claimedIndex !== index
-                      ? "bg-yellow-400 text-black hover:bg-yellow-500"
-                      : "bg-gray-700 text-gray-400 cursor-not-allowed"
-                  }`}
+                  className={`px-4 py-2 w-full rounded-full text-sm font-semibold shadow-md transform transition-transform duration-300 ${reward.status === "Claim" && claimedIndex !== index
+                    ? "bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-black hover:shadow-lg hover:scale-105"
+                    : "bg-gray-700 text-gray-400 cursor-not-allowed"
+                    }`}
                   disabled={reward.status !== "Claim" || claimedIndex === index}
                   onClick={() => handleClaim(index)}
                 >
-                  {claimedIndex === index ? "Claimed" : reward.status}
+                  {claimedIndex === index ? "🎉 Claimed!" : reward.status}
                 </button>
+
               </motion.div>
             ))}
           </motion.div>
         </section>
       </motion.div>
+
+      {/* Modal */}
+      <AnimatePresence>
+        {showModal && (
+          <motion.div
+            className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-[1000]"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.4 }}
+          >
+            <motion.div
+              className="bg-[#1a1a2e] text-white rounded-lg shadow-lg p-6 w-[90%] max-w-[800px]"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              transition={{ duration: 0.4 }}
+            >
+              <div className="flex justify-between items-center border-b border-gray-600 pb-2 mb-4">
+                <h2 className="text-lg font-bold">Login for 5 Consecutive Days to Receive up to 5000 Gems</h2>
+                <button
+                  onClick={handleCloseModal}
+                  className="text-gray-400 hover:text-white focus:outline-none"
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="text-sm leading-relaxed">
+                <p>
+                  💎 Log in for 5 consecutive days to receive up to 5000 gems 💎
+                  <br />
+                  Simply participate in the consecutive login activity to receive gems instantly.
+                </p>
+                <p className="mt-2">
+                  💰 Gems can be exchanged for free spins.
+                  <br />
+                  Participate in the activity to accumulate gems easily. Just log in and claim gems every day
+                  for 5 days to be eligible to receive up to 5000 gems 💎.
+                </p>
+              </div>
+            </motion.div>
+          </motion.div>
+
+        )}
+      </AnimatePresence>
     </>
   );
 };

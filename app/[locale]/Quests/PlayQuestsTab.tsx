@@ -1,12 +1,26 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-
+import QuestDetailsPage from "./QuestDetailsPage";
 const PlayQuestsTab: React.FC = () => {
+  const [showDetailsPage, setShowDetailsPage] = useState(false);
+  const carouselItems = [
+    {
+      title: "สะสมเดิมพันสล็อต",
+      description:
+        "💎 สะสมเดิมพันสล็อต ทุกค่าย 💎 เพียงลูกค้าเข้าร่วมกิจกรรม กติกา 1. สะสมเดิมพันสล็อตทุกค่าย ครบ 30,000 บาท 2. ปลดล็อครางวัล 10,000 เพชร 💎💎 ทันที ร่วมกิจกรรมง่ายๆ เพียงกดรับเควส",
+      image: "https://storage.googleapis.com/playgame168/quest_images/2c305a89-8637-4de5-9a96-6481c8b653db.webp",
+      backgroundImage:
+        "https://storage.googleapis.com/playgame168/quest_images/82eacc57-bc0a-4ce4-b7ef-0fdc035b1a91.webp",
+    },
+  ];
+  if (showDetailsPage) {
+    return <QuestDetailsPage onBack={() => setShowDetailsPage(false)} />;
+  }
   return (
     <motion.div
-      className="flex flex-col items-center"
+      className="flex flex-col items-center text-center p-6"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeInOut" }}
@@ -17,25 +31,80 @@ const PlayQuestsTab: React.FC = () => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         width: "100%",
-        height: "700px",
+        minHeight: "700px",
+        borderRadius: "10px",
       }}
     >
-      <motion.img
-        src="https://storage.googleapis.com/playgame168/promotion_images/25473cba-fbcf-43c2-a71b-22bff5b1ae6d.webp"
-        alt="Play Quests Promotion"
-        className="rounded-lg shadow-md mb-6 w-[95%] max-w-[800px] h-auto"
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1, ease: "easeInOut", delay: 0.2 }}
-      />
-      <motion.button
-        className="w-60 py-3 bg-yellow-500 text-black font-bold rounded-lg shadow-md hover:bg-yellow-600"
+      {/* Header */}
+      <section id="header" className="text-center mb-6">
+        <span className="relative">
+          <img
+            className="w-[450px] inline-block"
+            src="https://cdn.i-gamingplatform.com/member_assets/ribbon.png"
+            alt="Ribbon"
+          />
+          <div className="absolute inset-0 flex justify-center items-center font-semibold text-lg sm:text-xl text-white">
+            Join the <span className="text-yellow-400 mx-2">Adventure!</span>
+          </div>
+        </span>
+        <div className="text-sm text-gray-300 mt-2">
+          Begin journeys and unlock plentiful rewards as you progress.
+        </div>
+      </section>
+
+      {/* Carousel Section */}
+      <motion.div
+        className="scrollable bg-secondary p-4 rounded-xl h-full min-h-[350px] max-h-[450px] w-full max-w-[600px] mx-auto overflow-hidden"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeInOut", delay: 0.4 }}
+        transition={{ duration: 0.6, ease: "easeInOut" }}
       >
-        Join In
-      </motion.button>
+        <section className="carousel h-full">
+          <div className="carousel__viewport">
+            <ol className="carousel__track flex">
+              {carouselItems.map((item, index) => (
+                <li
+                  key={index}
+                  className="carousel__slide flex flex-col justify-between h-full bg-cover bg-center rounded-lg p-4 text-center w-full clickable"
+                  style={{
+                    backgroundImage: `url('${item.backgroundImage}')`,
+                  }}
+                >
+                  <div>
+                    <div className="text-sm font-bold text-white truncate">
+                      {item.title}
+                    </div>
+                    <div className="text-sm text-gray-300 line-clamp-2 mt-2 h-9">
+                      {item.description}
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <div className="max-w-[210px] max-h-[210px] w-full mx-auto">
+                      <img
+                        className="pulse infinite w-full h-full object-contain"
+                        src={item.image}
+                        alt={item.title}
+                      />
+                    </div>
+                  </div>
+                  <div className="inline-block">
+                    <motion.button
+                      onClick={() => setShowDetailsPage(true)}
+                      className="w-60 py-3 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-black font-bold rounded-full shadow-md hover:shadow-lg transform hover:scale-105 transition-transform duration-300"
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.6, ease: "easeInOut", delay: 0.4 }}
+                    >
+                      Join In
+                    </motion.button>
+                  </div>
+
+                </li>
+              ))}
+            </ol>
+          </div>
+        </section>
+      </motion.div>
     </motion.div>
   );
 };

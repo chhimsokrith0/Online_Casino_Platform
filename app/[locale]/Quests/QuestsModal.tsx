@@ -36,108 +36,130 @@ const QuestsModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void
   if (!isOpen) return null;
 
   return ReactDOM.createPortal(
-    <motion.div
-      className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-[200]"
-      onClick={onClose}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
+    <AnimatePresence>
       <motion.div
-        ref={modalRef}
-        className="bg-gray-900 w-[95%] max-w-7xl h-[80%] sm:h-[95%] overflow-auto rounded-lg shadow-lg"
-        onClick={(e) => e.stopPropagation()}
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        exit={{ opacity: 0, scale: 0.9 }}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
+        className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-[200]"
+        onClick={onClose}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
       >
-        {/* Header */}
-        <div className="flex justify-between items-center p-4 border-b border-gray-800">
-          <h2 className="text-white text-xl font-bold">Quests Hub</h2>
-          <div className="flex items-center gap-4">
-            <div className="flex items-center gap-2 bg-gray-700 px-3 py-1 rounded-lg">
-              <img
-                className="w-4 h-4"
-                src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034979/eec3c896-fc98-4ed7-a4b1-c0c4d6e63e42_y0p6uo.webp"
-                alt="Diamond Icon"
-              />
-              <span className="text-yellow-400 font-bold">1.00K</span>
-            </div>
-            <div className="flex items-center gap-2 bg-gray-700 px-3 py-1 rounded-lg">
-              <span className="text-white font-bold">🎯 Quests Completed</span>
-            </div>
-            <FontAwesomeIcon
-              icon={faTimes}
-              onClick={onClose}
-              className="text-gray-400 cursor-pointer hover:text-white"
-            />
-          </div>
-        </div>
-
-        <div className="p-6 flex flex-col sm:flex-row gap-6">
-          {/* Sidebar */}
-          <div className="p-4 h-full w-full sm:w-64 text-white rounded-lg">
-            <h3 className="text-lg font-bold mb-6">Challenges</h3>
-            <div className="flex flex-col gap-4">
-              <button
-                onClick={() => setActiveTab("dailyCheckIn")}
-                className={`py-4 text-white font-bold rounded-lg shadow-md ${
-                  activeTab === "dailyCheckIn" ? "border-2 border-yellow-400" : ""
-                }`}
-                style={{
-                  backgroundImage: `url('https://res.cloudinary.com/dfxqagrkk/image/upload/v1733235314/btn_bg1_feqt2p.png')`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
-              >
-                Daily Check-In
-              </button>
-              <button
-                onClick={() => setActiveTab("playQuests")}
-                className={`py-4 text-white font-bold rounded-lg shadow-md ${
-                  activeTab === "playQuests" ? "border-2 border-yellow-400" : ""
-                }`}
-                style={{
-                  backgroundImage: `url('https://res.cloudinary.com/dfxqagrkk/image/upload/v1733235315/btn_bg2_zsb5co.png')`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
-              >
-                Play Quests
-              </button>
-            </div>
-          </div>
-
-          {/* Tab Content */}
-          <div className="flex-grow">
-            {activeTab === "dailyCheckIn" && <DailyCheckInTab onClaim={handleClaim} />}
-            {activeTab === "playQuests" && <PlayQuestsTab />}
-          </div>
-        </div>
-      </motion.div>
-
-      {/* Alerts */}
-      <AnimatePresence>
-        {alerts.map((alertId) => (
+        <motion.div
+          ref={modalRef}
+          className="bg-gray-900 w-[95%] max-w-7xl h-[80%] sm:h-[95%] overflow-auto rounded-lg shadow-lg"
+          onClick={(e) => e.stopPropagation()}
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.9 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+        >
+          {/* Header */}
           <motion.div
-            key={alertId}
-            className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 z-[1000]"
-            style={{
-              backgroundImage: `url('${img_bg.src}')`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-            aria-labelledby="reward-modal-title"
-            role="dialog"
-            aria-modal="true"
+            className="flex justify-between items-center p-4 border-b border-gray-800 bg-gray-900 sticky top-0 z-50"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+          >
+            <h2 className="text-white text-xl font-bold">Quests Hub</h2>
+            <div className="flex items-center gap-4">
+              {/* Diamond Icon Section */}
+              <div className="flex items-center gap-2 bg-gray-700 px-3 py-1 rounded-lg shadow-md">
+                <img
+                  className="w-4 h-4"
+                  src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034979/eec3c896-fc98-4ed7-a4b1-c0c4d6e63e42_y0p6uo.webp"
+                  alt="Diamond Icon"
+                />
+                <span className="text-yellow-400 font-bold">1.00K</span>
+              </div>
+              {/* Quests Completed Section */}
+              <div className="flex items-center gap-2 bg-gray-700 px-3 py-1 rounded-lg shadow-md">
+                <span className="text-white font-bold">🎯 Quests Completed</span>
+              </div>
+              {/* Close Icon */}
+              <FontAwesomeIcon
+                icon={faTimes}
+                onClick={onClose}
+                className="text-gray-400 cursor-pointer hover:text-white transition duration-300"
+              />
+            </div>
+          </motion.div>
+
+
+          <motion.div
+            className="p-6 flex flex-col sm:flex-row gap-6"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
           >
-            <div className="relative w-full h-full flex items-center justify-center p-6">
-              {/* Modal Content */}
+            {/* Sidebar */}
+            <motion.div
+              className="p-4 h-auto sm:h-full sm:sticky sm:top-4 w-full sm:w-1/6 text-white rounded-lg shadow-md"
+              initial={{ x: -50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+            >
+              <h3 className="text-lg font-bold mb-6">Challenges</h3>
+              <div className="flex flex-col gap-4">
+                <button
+                  onClick={() => setActiveTab("dailyCheckIn")}
+                  className={`py-4 text-white font-bold rounded-lg shadow-md ${activeTab === "dailyCheckIn" ? "border-2 border-yellow-400" : ""
+                    }`}
+                  style={{
+                    backgroundImage: `url('https://res.cloudinary.com/dfxqagrkk/image/upload/v1733235314/btn_bg1_feqt2p.png')`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                >
+                  Daily Check-In
+                </button>
+                <button
+                  onClick={() => setActiveTab("playQuests")}
+                  className={`py-4 text-white font-bold rounded-lg shadow-md ${activeTab === "playQuests" ? "border-2 border-yellow-400" : ""
+                    }`}
+                  style={{
+                    backgroundImage: `url('https://res.cloudinary.com/dfxqagrkk/image/upload/v1733235315/btn_bg2_zsb5co.png')`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                >
+                  Play Quests
+                </button>
+              </div>
+            </motion.div>
+
+            {/* Tab Content */}
+            <motion.div
+              className="flex-grow"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+            >
+              {activeTab === "dailyCheckIn" && <DailyCheckInTab onClaim={handleClaim} />}
+              {activeTab === "playQuests" && <PlayQuestsTab />}
+            </motion.div>
+          </motion.div>
+
+        </motion.div>
+
+        {/* Alerts */}
+        <AnimatePresence>
+          {alerts.map((alertId) => (
+            <motion.div
+              key={alertId}
+              className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-[1000]"
+              style={{
+                backgroundImage: `url('${img_bg.src}')`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+              aria-labelledby="reward-modal-title"
+              role="dialog"
+              aria-modal="true"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5 }}
+            >
               <motion.div
                 className="rounded-lg p-8 text-center max-w-lg w-[90%] shadow-lg"
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -198,11 +220,11 @@ const QuestsModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void
                   Close Alert
                 </button>
               </motion.div>
-            </div>
-          </motion.div>
-        ))}
-      </AnimatePresence>
-    </motion.div>,
+            </motion.div>
+          ))}
+        </AnimatePresence>
+      </motion.div>
+    </AnimatePresence>,
     document.body
   );
 };
