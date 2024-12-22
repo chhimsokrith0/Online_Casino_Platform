@@ -334,12 +334,13 @@ const ProfileModal: React.FC<ProfileModalProps> = ({ isOpen, onClose, locale }) 
               {/* Text Content */}
               <div className="flex flex-col gap-3 w-full px-4">
                 <h2 className="font-bold text-lg md:text-xl">
-                  You don't want to miss today's jackpot!
+                  You don&#39;t want to miss today&#39;s jackpot!
                 </h2>
                 <p className="font-normal text-sm md:text-base text-gray-300">
                   Are you sure you want to log out?
                 </p>
               </div>
+
 
               {/* Action Buttons */}
               <div className="flex items-center justify-center gap-3 w-full text-base md:text-base">
