@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import { gsap } from "gsap";
+import Link from "next/link";
 
 interface Challenge {
     task: string;
@@ -84,7 +85,7 @@ const UpgradeVipModal = ({ onClose }: { onClose: () => void }) => {
     }, [activeTab]);
 
     return (
-        <div ref={containerRef} className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+        <div ref={containerRef} className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-[200]">
             <div className="bg-gray-900 w-4/5 max-w-4xl rounded-lg shadow-lg p-8 relative">
                 {/* Modal Header */}
                 <div className="flex justify-between items-center mb-8">
@@ -174,18 +175,31 @@ const UpgradeVipModal = ({ onClose }: { onClose: () => void }) => {
                                             </p>
                                         </td>
                                         <td className="p-4 text-right">
-                                            <button
-                                                className={`${challenge.action === "Deposit" || challenge.action === "Bet"
-                                                    ? "bg-yellow-500"
-                                                    : "bg-gray-500 cursor-not-allowed"
-                                                    } text-black px-6 py-2 rounded-full shadow hover:bg-yellow-600 relative transition-all`}
+                                            <Link
+                                                href={
+                                                    challenge.action === "Deposit"
+                                                        ? "/Games/Deposit"
+                                                        : challenge.action === "Bet"
+                                                            ? "/Games/slots"
+                                                            : "#"
+                                                }
+                                                legacyBehavior
                                             >
-                                                {challenge.action}
-                                                <span
-                                                    className="absolute top-0 right-0 -mt-2 -mr-2 w-3 h-3 bg-red-500 rounded-full"
-                                                    style={{ display: challenge.isNew ? "block" : "none" }}
-                                                ></span>
-                                            </button>
+                                                <a>
+                                                    <button
+                                                        className={`${challenge.action === "Deposit" || challenge.action === "Bet"
+                                                                ? "bg-yellow-500"
+                                                                : "bg-gray-500 cursor-not-allowed"
+                                                            } text-black px-6 py-2 rounded-full shadow hover:bg-yellow-600 relative transition-all`}
+                                                    >
+                                                        {challenge.action}
+                                                        <span
+                                                            className="absolute top-0 right-0 -mt-2 -mr-2 w-3 h-3 bg-red-500 rounded-full"
+                                                            style={{ display: challenge.isNew ? "block" : "none" }}
+                                                        ></span>
+                                                    </button>
+                                                </a>
+                                            </Link>
                                         </td>
                                     </tr>
                                 ))}

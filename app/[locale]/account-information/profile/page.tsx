@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faCoins, faGift, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import VIPLevelModal from "./VIPLevelModal";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 const ProfilePage = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isModalOpen, setModalOpen] = useState(false);
@@ -52,9 +53,9 @@ const ProfilePage = () => {
                   <p className="text-gray-400 text-sm">Joined On: 25/11/2024</p>
                 </div>
               </div>
-              <button className="px-4 py-2 text-yellow-500 font-bold border border-yellow-500 rounded-full hover:bg-yellow-500 hover:text-black transition">
+              <Link href="/Reward/random-card" className="px-4 py-2 text-yellow-500 font-bold border border-yellow-500 rounded-full hover:bg-yellow-500 hover:text-black transition">
                 Exchange Reward
-              </button>
+              </Link>
             </div>
 
             {/* Profile Card Section */}

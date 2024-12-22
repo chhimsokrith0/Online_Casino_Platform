@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
@@ -20,6 +20,7 @@ import Link from "next/link";
 import gsap from "gsap";
 import { signOut } from "next-auth/react";
 import { useTranslations } from "next-intl";
+import QuestsModal from "@/app/[locale]/Quests/QuestsModal";
 
 interface ProfileModalProps {
   isOpen: boolean;
@@ -33,6 +34,20 @@ const ProfileModal: React.FC<ProfileModalProps> = ({ isOpen, onClose, locale }) 
   const logoutRef = useRef<HTMLButtonElement | null>(null);
 
   const t = useTranslations("ProfileModal");
+  const [isQuestsModalOpen, setIsQuestsModalOpen] = useState(false)
+
+
+
+  const handleButtonClickModal = (label: string) => {
+    if (label === t("menu.quests")) {
+      setIsQuestsModalOpen(true); // Open the modal when "Quests" is clicked
+    }
+  };
+
+  const handleCloseQuestsModal = () => {
+    setIsQuestsModalOpen(false); // Close the modal
+  };
+
 
   useEffect(() => {
     if (isOpen) {
@@ -65,10 +80,6 @@ const ProfileModal: React.FC<ProfileModalProps> = ({ isOpen, onClose, locale }) 
         onClose(); // Close the modal if clicked outside
       }
     };
-
-    // if (isOpen) {
-    //   document.addEventListener("mousedown", handleClickOutside);
-    // }
 
     return () => {
       document.body.style.overflow = ""; // Cleanup on unmount
@@ -141,7 +152,7 @@ const ProfileModal: React.FC<ProfileModalProps> = ({ isOpen, onClose, locale }) 
             <div className="grid grid-cols-2 gap-2 sm:gap-4">
               {[
                 { icon: faUser, label: t("menu.myProfile"), link: `/${locale}/account-information`, active: false },
-                { icon: faCrown, label:t("menu.levels"), link: `/${locale}/member-level`, active: false },
+                { icon: faCrown, label: t("menu.levels"), link: `/${locale}/member-level`, active: false },
                 { icon: faGift, label: t("menu.reward"), link: `/${locale}/Reward/random-card`, active: false },
                 { icon: faHistory, label: t("menu.history"), link: `/${locale}/account-information/transactions`, active: false },
                 { icon: faArrowCircleUp, label: t("menu.rebate"), link: `/${locale}/account-information/rebate`, active: false },
@@ -149,23 +160,20 @@ const ProfileModal: React.FC<ProfileModalProps> = ({ isOpen, onClose, locale }) 
                 { icon: faBoxOpen, label: t("menu.referral"), link: `/${locale}/account-information/affiliate`, active: false },
                 { icon: faChartBar, label: t("menu.totalBet"), link: `/${locale}/account-information/total-bet`, active: false },
                 { icon: faStar, label: t("menu.pointHistory"), link: `/${locale}/account-information/current-point`, active: false },
-                { icon: faBolt, label: t("menu.quests"), link: `/${locale}/quests`, active: false },
+                { icon: faBolt, label: t("menu.quests"), link: "#", active: false }, // No link for Quests, handle with modal
               ].map((action, index) => (
-                <Link href={action.link} key={index}>
-                  <button
-                    className={`flex items-center gap-3 px-2 py-2 rounded-lg transition w-full ${action.active
-                      ? "text-white"
-                      : "hover:bg-gradient-to-r from-yellow-500 to-yellow-600"
-                      }`}
-                    onClick={handleButtonClick}
-                  >
-                    <FontAwesomeIcon
-                      icon={action.icon}
-                      className={`text-lg ${action.active ? "text-white" : "text-gray-300"
-                        }`}
-                    />
-                    <span className="whitespace-nowrap">{action.label}</span>
-                  </button>
+                <Link
+                  href={action.link}
+                  key={index}
+                  className={`flex items-center gap-3 px-2 py-2 rounded-lg transition w-full ${action.active ? "text-white" : "hover:bg-gradient-to-r from-yellow-500 to-yellow-600"
+                    }`}
+                  onClick={() => handleButtonClickModal(action.label)}
+                >
+                  <FontAwesomeIcon
+                    icon={action.icon}
+                    className={`text-lg ${action.active ? "text-white" : "text-gray-300"}`}
+                  />
+                  <span className="whitespace-nowrap">{action.label}</span>
                 </Link>
               ))}
             </div>
@@ -182,6 +190,10 @@ const ProfileModal: React.FC<ProfileModalProps> = ({ isOpen, onClose, locale }) 
           </button>
         </div>
       </div>
+
+      {isQuestsModalOpen && (
+        <QuestsModal isOpen={isQuestsModalOpen} onClose={handleCloseQuestsModal} />
+      )}
 
 
 
@@ -234,7 +246,7 @@ const ProfileModal: React.FC<ProfileModalProps> = ({ isOpen, onClose, locale }) 
             <div className="grid grid-cols-2 gap-2 sm:gap-4">
               {[
                 { icon: faUser, label: t("menu.myProfile"), link: `/${locale}/account-information`, active: false },
-                { icon: faCrown, label:t("menu.levels"), link: `/${locale}/member-level`, active: false },
+                { icon: faCrown, label: t("menu.levels"), link: `/${locale}/member-level`, active: false },
                 { icon: faGift, label: t("menu.reward"), link: `/${locale}/Reward/random-card`, active: false },
                 { icon: faHistory, label: t("menu.history"), link: `/${locale}/account-information/transactions`, active: false },
                 { icon: faArrowCircleUp, label: t("menu.rebate"), link: `/${locale}/account-information/rebate`, active: false },
@@ -242,23 +254,20 @@ const ProfileModal: React.FC<ProfileModalProps> = ({ isOpen, onClose, locale }) 
                 { icon: faBoxOpen, label: t("menu.referral"), link: `/${locale}/account-information/affiliate`, active: false },
                 { icon: faChartBar, label: t("menu.totalBet"), link: `/${locale}/account-information/total-bet`, active: false },
                 { icon: faStar, label: t("menu.pointHistory"), link: `/${locale}/account-information/current-point`, active: false },
-                { icon: faBolt, label: t("menu.quests"), link: `/${locale}/quests`, active: false },
+                { icon: faBolt, label: t("menu.quests"), link: "#", active: false },
               ].map((action, index) => (
-                <Link href={action.link} key={index}>
-                  <button
-                    className={`flex items-center gap-3 px-2 py-2 rounded-lg transition w-full ${action.active
-                      ? "text-white"
-                      : "hover:bg-gradient-to-r from-yellow-500 to-yellow-600"
-                      }`}
-                    onClick={handleButtonClick}
-                  >
-                    <FontAwesomeIcon
-                      icon={action.icon}
-                      className={`text-lg ${action.active ? "text-white" : "text-gray-300"
-                        }`}
-                    />
-                    <span className="whitespace-nowrap">{action.label}</span>
-                  </button>
+                <Link
+                  href={action.link}
+                  key={index}
+                  className={`flex items-center gap-3 px-2 py-2 rounded-lg transition w-full ${action.active ? "text-white" : "hover:bg-gradient-to-r from-yellow-500 to-yellow-600"
+                    }`}
+                  onClick={() => handleButtonClickModal(action.label)}
+                >
+                  <FontAwesomeIcon
+                    icon={action.icon}
+                    className={`text-lg ${action.active ? "text-white" : "text-gray-300"}`}
+                  />
+                  <span className="whitespace-nowrap">{action.label}</span>
                 </Link>
               ))}
             </div>
