@@ -1,6 +1,7 @@
-
 import AllGames from "./AllGames";
 
-export default function Page({ params }: { params: { locale: string } }) {
-  return <AllGames locale={params.locale} />;
+export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params; // Await the `params`
+
+  return <AllGames locale={locale} />;
 }
