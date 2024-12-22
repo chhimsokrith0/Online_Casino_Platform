@@ -7,11 +7,24 @@ import { faCopy } from "@fortawesome/free-solid-svg-icons";
 import DataOverview from "./DataOverview";
 import Analytics from "./Analytics";
 import gsap from "gsap";
+import Link from "next/link";
+import WalletModal from "@/components/Navbar/WalletModal/WalletModal";
+
 
 const Affiliate = () => {
     const referralLink = "https://playgame168.co?ref_code=IP7MSaJ9aH";
     const referralCode = "IP7MSaJ9aH";
     const containerRef = useRef<HTMLDivElement>(null);
+
+    const [isModalVisible, setIsModalVisible] = useState(false);
+
+    const handleOpenModal = () => {
+        setIsModalVisible(true);
+    };
+
+    const handleCloseModal = () => {
+        setIsModalVisible(false);
+    };
 
     const copyToClipboard = (text: string) => {
         navigator.clipboard.writeText(text);
@@ -53,6 +66,7 @@ const Affiliate = () => {
                                 <span className="text-3xl font-bold text-yellow-500">0.00฿</span>
                             </div>
                         </div>
+
 
                         <div>
                             <p className="text-sm text-gray-400">Total Referral</p>
@@ -121,32 +135,51 @@ const Affiliate = () => {
 
                     {/* Invite and Transfer */}
                     <div className="flex items-center justify-between">
+                        {/* Invite Friends Section */}
                         <div>
-                            <p className="text-sm text-gray-400 mb-2">Invite Friends</p>
-                            <div className="flex gap-3">
-                                <button className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition">
+                            <p className="text-sm text-gray-400 mb-3">Invite Friends</p>
+                            <div className="flex gap-4">
+                                <Link
+                                    href="https://www.facebook.com/" // Change the link to your Facebook profile
+                                    className="flex items-center justify-center w-10 h-10 bg-gray-800 rounded-full hover:bg-blue-600 transition transform hover:scale-105"
+                                >
                                     <FontAwesomeIcon icon={faFacebookF} className="text-gray-300" />
-                                </button>
-                                <button className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition">
+                                </Link>
+                                <Link
+                                    href="https://t.me/" // Telegram
+                                    className="flex items-center justify-center w-10 h-10 bg-gray-800 rounded-full hover:bg-blue-400 transition transform hover:scale-105"
+                                >
                                     <FontAwesomeIcon icon={faTelegram} className="text-gray-300" />
-                                </button>
-                                <button className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition">
+                                </Link>
+                                <Link
+                                    href="https://www.skype.com/" // Skype
+                                    className="flex items-center justify-center w-10 h-10 bg-gray-800 rounded-full hover:bg-blue-500 transition transform hover:scale-105"
+                                >
                                     <FontAwesomeIcon icon={faSkype} className="text-gray-300" />
-                                </button>
-                                <button className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition">
+                                </Link>
+                                <Link
+                                    href="https://web.whatsapp.com/" // WhatsApp
+                                    className="flex items-center justify-center w-10 h-10 bg-gray-800 rounded-full hover:bg-green-500 transition transform hover:scale-105"
+                                >
                                     <FontAwesomeIcon icon={faWhatsapp} className="text-gray-300" />
-                                </button>
+                                </Link>
                             </div>
                         </div>
-                        <button className="px-6 py-2 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600 transition">
+
+                        {/* Transfer Button */}
+                        <button onClick={handleOpenModal} className="px-6 py-2 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-semibold rounded-lg shadow hover:shadow-lg hover:from-yellow-600 hover:to-yellow-700 transition transform hover:scale-105">
                             Transfer
                         </button>
                     </div>
+
                 </div>
                 <br />
                 <DataOverview />
                 <br />
                 <Analytics />
+
+                {/* Wallet Modal */}
+                <WalletModal isOpen={isModalVisible} onClose={handleCloseModal} />
             </div>
         </>
     );

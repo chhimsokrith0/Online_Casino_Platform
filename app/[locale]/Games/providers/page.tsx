@@ -6,6 +6,7 @@ import { faBuilding, faSearch, faSlidersH, faGamepad } from "@fortawesome/free-s
 import { gsap } from "gsap";
 import Link from "next/link";
 import { useSidebar } from "@/components/Sidebar/SidebarContext";
+import Image from "next/image";
 
 const providerData = [
     {

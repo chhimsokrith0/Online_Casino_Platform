@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { useSidebar } from "@/components/Sidebar/SidebarContext";
+import Image from "next/image";
 
 const promotions = [
   {

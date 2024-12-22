@@ -6,6 +6,7 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import gsap from "gsap";
 import LanguageModal from "./LanguageModal"; // Import the modal component
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 // Language data is defined here to make it accessible to both components
 const languages = [

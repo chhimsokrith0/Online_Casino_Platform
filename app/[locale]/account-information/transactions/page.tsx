@@ -10,8 +10,8 @@ import "react-datepicker/dist/react-datepicker.css";
 
 const TransactionsPage = () => {
   const [activeTab, setActiveTab] = useState("Deposit");
-  const [startDate, setStartDate] = useState(new Date());
-  const [endDate, setEndDate] = useState(new Date());
+  const [startDate, setStartDate] = useState<Date | undefined>(undefined);
+  const [endDate, setEndDate] = useState<Date | undefined>(undefined);
   const [isDatePickerVisible, setIsDatePickerVisible] = useState(false);
 
   const tabs = [
@@ -26,6 +26,12 @@ const TransactionsPage = () => {
 
   const toggleDatePicker = () => {
     setIsDatePickerVisible((prev) => !prev);
+  };
+
+  const handleDateRangeChange = (dates: [Date | null, Date | null]) => {
+    const [start, end] = dates;
+    setStartDate(start || undefined);
+    setEndDate(end || undefined);
   };
 
   const getTableContent = () => {
@@ -68,18 +74,21 @@ const TransactionsPage = () => {
           >
             <FontAwesomeIcon icon={faCalendarAlt} />
             <span className="whitespace-nowrap">
-              {startDate.toLocaleDateString()} - {endDate.toLocaleDateString()}
+              {startDate ? startDate.toLocaleDateString() : "Start Date"} -{" "}
+              {endDate ? endDate.toLocaleDateString() : "End Date"}
             </span>
           </button>
           {isDatePickerVisible && (
             <div className="absolute right-0 mt-2 bg-gray-800 rounded-lg shadow-lg p-4 z-10">
               <DatePicker
                 selected={startDate}
-                // onChange={(date: Date) => setStartDate(date)}
+                onChange={handleDateRangeChange}
                 startDate={startDate}
                 endDate={endDate}
-                selectsStart
+                selectsRange
                 inline
+                dateFormat="dd/MM/yyyy"
+                placeholderText="Select Date Range"
               />
             </div>
           )}

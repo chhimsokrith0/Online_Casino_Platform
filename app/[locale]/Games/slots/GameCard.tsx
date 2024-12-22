@@ -4,6 +4,7 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { useSession } from "next-auth/react";
 import SignupModal from "@/components/Navbar/SignUpModal";
+import Image from "next/image";
 interface GameCardProps {
   title: string;
   provider: string;
@@ -94,6 +95,8 @@ const GameCard: React.FC<GameCardProps> = ({ title, provider, image }) => {
               alt="Sign Up"
               className="w-16 h-16"
             />
+
+
           </div>
         )}
       </div>

@@ -1,9 +1,11 @@
 "use client";
 
+
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { useSession } from "next-auth/react";
 import SignupModal from "@/components/Navbar/SignUpModal";
+import Image from "next/image";
 
 interface GameCardProps {
   title: string;

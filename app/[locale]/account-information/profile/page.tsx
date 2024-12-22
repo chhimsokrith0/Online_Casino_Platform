@@ -7,6 +7,7 @@ import { faArrowRight, faCoins, faGift, faChevronRight } from "@fortawesome/free
 import VIPLevelModal from "./VIPLevelModal";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import Image from "next/image";
 const ProfilePage = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isModalOpen, setModalOpen] = useState(false);

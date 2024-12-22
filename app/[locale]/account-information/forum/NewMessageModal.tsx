@@ -5,6 +5,7 @@ import ReactDOM from "react-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import gsap from "gsap";
+import Image from "next/image";
 
 interface NewMessageModalProps {
   isOpen: boolean; // Controls the visibility of the modal
@@ -176,7 +177,7 @@ const NewMessageModal: React.FC<NewMessageModalProps> = ({ isOpen, onClose }) =>
             >
               {selectedImage ? (
                 <div className="relative">
-                  <img
+                  <Image
                     src={selectedImage}
                     alt="Selected attachment"
                     className="w-full rounded-lg mb-4"

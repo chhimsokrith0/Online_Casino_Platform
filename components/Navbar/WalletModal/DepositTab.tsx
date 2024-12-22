@@ -68,7 +68,7 @@ const DepositTab: React.FC = () => {
       ref={containerRef}
       className="overflow-y-scroll h-full scrollbar-hide"
     >
-      <h3 className="text-sm p-2"> { t("paymentMethod") } </h3>
+      <h3 className="text-sm p-2"> {t("paymentMethod")} </h3>
       <div className="space-y-4 p-4">
         {/* Option 1: Bank Deposit */}
         {selectedMethod === null || selectedMethod === "ABA Bank" ? (
@@ -88,7 +88,7 @@ const DepositTab: React.FC = () => {
                 height={40}
                 className="rounded-full"
               />
-              <span className="text-sm font-semibold">{ t("methods.abaBank") }</span>
+              <span className="text-sm font-semibold">{t("methods.abaBank")}</span>
             </div>
 
           </div>
@@ -112,7 +112,7 @@ const DepositTab: React.FC = () => {
                 height={40}
                 className="rounded-full"
               />
-              <span className="text-sm font-semibold">{ t("methods.acledaBank") }</span>
+              <span className="text-sm font-semibold">{t("methods.acledaBank")}</span>
             </div>
           </div>
         ) : null}
@@ -135,7 +135,7 @@ const DepositTab: React.FC = () => {
                 height={40}
                 className="rounded-full" // Optional: Add rounded-full for circular icons
               />
-              <span className="text-sm font-semibold">{ t("methods.qrCodeAbaBank") }</span>
+              <span className="text-sm font-semibold">{t("methods.qrCodeAbaBank")}</span>
             </div>
           </div>
         ) : null}
@@ -177,15 +177,16 @@ const DepositTab: React.FC = () => {
             </button>
           </div>
 
-          <div className="border border-red-500 text-xs text-white p-4 rounded-lg">
-            <p>กรุณาอ่าน เพื่อความรวดเร็วของการทำรายการ</p>
+          <div className="border border-red-500 text-xs text-red-500 p-4 rounded-lg">
+            <p>Please read for faster transaction processing</p>
             <ul className="list-disc ml-4 mt-2">
-              <li>สร้างรายการใหม่ทุกครั้ง ก่อนโอนเงิน</li>
-              <li>QR Code ใช้ได้ครั้งเดียว</li>
-              <li>ห้ามใช้ QR Code ซ้ำ</li>
-              <li>ทำรายการในเวลาที่กำหนด</li>
+              <li>Create a new transaction each time before transferring money</li>
+              <li>The QR Code can only be used once</li>
+              <li>Do not reuse the QR Code</li>
+              <li>Complete the transaction within the specified time</li>
             </ul>
           </div>
+
 
 
           <div className="flex justify-between items-center mt-4">

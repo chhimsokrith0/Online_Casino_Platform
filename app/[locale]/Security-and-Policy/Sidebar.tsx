@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
@@ -8,11 +8,15 @@ const Sidebar = () => {
   const [activeItem, setActiveItem] = useState<string>("");
   const t = useTranslations("settings");
 
-  const menuItems = [
-    { label: "Term and Conditions", link: "/Security-and-Policy/terms-and-conditions" },
-    { label: "Privacy Policy", link: "/Security-and-Policy/privacy-policy" },
-    { label: "Cookies Policy", link: "/Security-and-Policy/cookies-policy" },
-  ];
+  // Memoize menuItems to prevent unnecessary re-creation
+  const menuItems = useMemo(
+    () => [
+      { label: "Term and Conditions", link: "/Security-and-Policy/terms-and-conditions" },
+      { label: "Privacy Policy", link: "/Security-and-Policy/privacy-policy" },
+      { label: "Cookies Policy", link: "/Security-and-Policy/cookies-policy" },
+    ],
+    []
+  );
 
   useEffect(() => {
     // Safely access localStorage for hydration
@@ -25,7 +29,7 @@ const Sidebar = () => {
         setActiveItem(menuItems[0].label);
       }
     }
-  }, []);
+  }, [menuItems]); // Include menuItems in the dependency array
 
   const handleItemClick = (label: string) => {
     setActiveItem(label);

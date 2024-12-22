@@ -10,6 +10,7 @@ import { generateGamesData } from "./gamesData";
 import nothing_box from "../../../../public/nothing_box.webp";
 import Loading from "@/components/Loading";
 import { useSidebar } from "@/components/Sidebar/SidebarContext";
+import Image from "next/image";
 interface Game {
   id: number;
   title: string;

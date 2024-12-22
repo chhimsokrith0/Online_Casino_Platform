@@ -3,6 +3,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import gsap from "gsap";
 import { useTranslations } from "next-intl";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 const ActivityLog = () => {
     const t = useTranslations("settings");
@@ -20,6 +22,10 @@ const ActivityLog = () => {
     ]);
 
     const containerRef = useRef<HTMLDivElement>(null);
+    const tableRef = useRef<HTMLTableSectionElement>(null);
+
+    const [startDate, setStartDate] = useState<Date | undefined>(undefined);
+    const [endDate, setEndDate] = useState<Date | undefined>(undefined);
 
     useEffect(() => {
         if (containerRef.current) {
@@ -30,6 +36,22 @@ const ActivityLog = () => {
             );
         }
     }, []);
+
+    useEffect(() => {
+        if (tableRef.current) {
+            gsap.fromTo(
+                tableRef.current.querySelectorAll("tr"),
+                { opacity: 0, y: 20 },
+                { opacity: 1, y: 0, duration: 0.5, stagger: 0.1, ease: "power4.out" }
+            );
+        }
+    }, [logs]);
+
+    const handleDateRangeChange = (dates: [Date | null, Date | null]) => {
+        const [start, end] = dates;
+        setStartDate(start || undefined); // Convert null to undefined
+        setEndDate(end || undefined); // Convert null to undefined
+    };
 
     return (
         <div ref={containerRef} className="bg-gray-800 p-4 sm:p-6 rounded-lg shadow-lg text-white">
@@ -44,11 +66,17 @@ const ActivityLog = () => {
                         <option value="game">{t("activityLog.filters.game")}</option>
                         <option value="quest">{t("activityLog.filters.quest")}</option>
                     </select>
-                    {/* Date Filter */}
-                    <div className="flex items-center bg-gray-700 text-gray-400 p-3 rounded-lg">
-                        <span className="material-icons mr-2">calendar_today</span>
-                        <span>27/10/2024 - 10/12/2024</span>
-                    </div>
+                    {/* Date Picker */}
+                    <DatePicker
+                        selected={startDate}
+                        onChange={handleDateRangeChange}
+                        startDate={startDate}
+                        endDate={endDate}
+                        selectsRange
+                        className="bg-gray-700 text-gray-400 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                        dateFormat="dd/MM/yyyy"
+                        placeholderText="Select Date Range"
+                    />
                 </div>
             </div>
 
@@ -61,7 +89,7 @@ const ActivityLog = () => {
                             <th className="p-2 sm:p-4 border-b border-gray-600">{t("activityLog.columns.activity")}</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody ref={tableRef}>
                         {logs.map((log, index) => (
                             <tr
                                 key={index}
@@ -78,24 +106,17 @@ const ActivityLog = () => {
             {/* Pagination */}
             <div className="flex flex-col sm:flex-row justify-between items-center mt-6 gap-4">
                 <div className="flex gap-2">
-                    <button className="w-8 h-8 flex justify-center items-center bg-gray-700 rounded-lg text-gray-400 hover:bg-gray-600">
-                        1
-                    </button>
-                    <button className="w-8 h-8 flex justify-center items-center bg-gray-700 rounded-lg text-gray-400 hover:bg-gray-600">
-                        2
-                    </button>
-                    <button className="w-8 h-8 flex justify-center items-center bg-gray-700 rounded-lg text-gray-400 hover:bg-gray-600">
-                        3
-                    </button>
-                    <button className="w-8 h-8 flex justify-center items-center bg-gray-700 rounded-lg text-gray-400 hover:bg-gray-600">
-                        4
-                    </button>
+                    {[1, 2, 3, 4].map((page) => (
+                        <button
+                            key={page}
+                            className="w-8 h-8 flex justify-center items-center bg-gray-700 rounded-lg text-gray-400 hover:bg-yellow-500 hover:text-gray-900 transition-all duration-200"
+                        >
+                            {page}
+                        </button>
+                    ))}
                 </div>
                 <div className="text-center sm:text-right">
-                    <span className="text-gray-400">
-                    {/* {t("activityLog.total")} */}
-                    {t("activityLog.totalActivities")} 36
-                    </span>
+                    <span className="text-gray-400">{t("activityLog.totalActivities")} 36</span>
                 </div>
             </div>
         </div>

@@ -4,6 +4,7 @@ import React, { useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimesCircle, faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import gsap from "gsap";
+import Image from "next/image";
 
 interface LanguageModalProps {
   isOpen: boolean;

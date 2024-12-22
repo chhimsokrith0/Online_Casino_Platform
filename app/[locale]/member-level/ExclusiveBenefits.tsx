@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import Image from "next/image";
 
 const ExclusiveBenefits = ({ t }: { t: any }) => {
   const benefitsRef = useRef<HTMLDivElement | null>(null);

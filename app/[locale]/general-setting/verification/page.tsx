@@ -3,6 +3,7 @@
 import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const VerificationSetup = () => {
     const containerRef = useRef<HTMLDivElement>(null);

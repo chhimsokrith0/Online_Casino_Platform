@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
 import { gsap } from "gsap";
+import Image from "next/image";
 
 const Carousel = ({ t }: { t: any }) => {
   const levels = [
