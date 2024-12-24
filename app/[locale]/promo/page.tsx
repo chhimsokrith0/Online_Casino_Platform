@@ -1,28 +1,32 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
+import { gsap, ScrollTrigger } from "gsap/all";
 import { useSidebar } from "@/components/Sidebar/SidebarContext";
-import Image from "next/image";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const promotions = [
   {
     title: "REBATE",
     description:
-      "คืนยอดเดิมพัน เกมคาสิโน ( จ่าย 0.3-0.8% ) โบนัส Member Level (ลำดับขั้น)",
-    image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733645516/1_eexhut.webp", // Replace with your actual image path
+      "Get back a percentage of your bets on casino games (0.3-0.8%) and enjoy Member Level bonuses.",
+    image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733645516/1_eexhut.webp",
+    icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734926055/download_v6ymnb.svg",
   },
   {
     title: "CASHBACK",
     description:
-      "💸 โบนัสคืนยอดเสีย สูงสุด 7% ทุกวัน 💸 โบนัส Member Level (ลำดับขั้น) สูงสุด",
-    image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733645516/2_jocwtl.webp", // Replace with your actual image path
+      "💸 Daily cashback bonus up to 7%! 💸 Maximize rewards with Member Level bonuses.",
+    image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733645516/2_jocwtl.webp",
+    icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734926055/download_v6ymnb.svg",
   },
   {
     title: "REFERRAL",
     description:
-      "👥 รับคอมมิชชั่น 3% ทุกวัน 💰 เงินค่าคอมสามารถถอนเข้ากระเป๋าหลัก ทำเทิร์นได้",
-    image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733645517/3_l7zimp.webp", // Replace with your actual image path
+      "👥 Earn 3% commission daily! 💰 Withdrawable to your main wallet with rollover requirements.",
+    image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733645517/3_l7zimp.webp",
+    icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734926055/download_v6ymnb.svg",
   },
 ];
 
@@ -32,33 +36,42 @@ const PromotionsSection: React.FC = () => {
   const { isCollapsed } = useSidebar();
 
   useEffect(() => {
-    // Animate the section header
+    // Section animation
     if (sectionRef.current) {
       gsap.fromTo(
-        sectionRef.current.querySelector("h1"),
-        { opacity: 0, y: -50 },
-        { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
-      );
-
-      gsap.fromTo(
-        sectionRef.current.querySelector("p"),
+        sectionRef.current,
         { opacity: 0, y: 50 },
-        { opacity: 1, y: 0, duration: 1, ease: "power2.out", delay: 0.2 }
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1.5,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top 80%",
+            end: "bottom 20%",
+            toggleActions: "play none none reverse",
+          },
+        }
       );
     }
 
-    // Animate each promotion card with staggered effect
+    // Cards animation
     if (cardsRef.current.length) {
       gsap.fromTo(
         cardsRef.current,
-        { opacity: 0, scale: 0.8 },
+        { opacity: 0, y: 30, scale: 0.9 },
         {
           opacity: 1,
+          y: 0,
           scale: 1,
           duration: 1,
           ease: "power2.out",
           stagger: 0.2,
-          delay: 0.5,
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top 80%",
+          },
         }
       );
     }
@@ -67,17 +80,21 @@ const PromotionsSection: React.FC = () => {
   return (
     <div
       ref={sectionRef}
-      className={`bg-cover bg-center bg-no-repeat py-12 px-4 ${isCollapsed ? "ml-[-17rem]" : ""}`}
+      className={`bg-cover bg-center bg-no-repeat py-12 px-4 transition-all ${
+        isCollapsed ? "ml-[-17rem]" : ""
+      }`}
       style={{
-        backgroundImage: "url('https://res.cloudinary.com/dfxqagrkk/image/upload/v1733645518/bg_yauwy2.png')", // Replace with your actual background image path
+        backgroundImage:
+          "url('https://res.cloudinary.com/dfxqagrkk/image/upload/v1733645518/bg_yauwy2.png')",
       }}
     >
       <div className="max-w-[1200px] mx-auto text-center">
         <h1 className="text-4xl font-bold text-white mb-4">PROMOTIONS</h1>
+        <div className="flex justify-center mb-8">
+          <button className="px-6 py-2 bg-purple-600 text-white rounded-full font-bold hover:bg-purple-700 transition">All Promos</button>
+        </div>
         <p className="text-gray-400 text-lg mb-8">
-          Experience heightened excitement and rewards through our exclusive
-          bonus at PlayGame168, ensuring that every moment is filled with
-          additional enjoyment and rewards.
+          Discover exciting rewards and bonuses at PlayGame168. Elevate your experience with exclusive promotions designed to maximize your enjoyment and earnings.
         </p>
 
         <div className="flex flex-wrap justify-center gap-6">
@@ -86,13 +103,20 @@ const PromotionsSection: React.FC = () => {
               key={index}
               ref={(el) => {
                 if (el) cardsRef.current[index] = el;
-              }} // Assign ref for animation
-              className="bg-gray-800 bg-opacity-90 rounded-lg shadow-lg overflow-hidden w-[320px] md:w-[360px]"
+              }}
+              className="bg-gray-800 bg-opacity-50 rounded-lg shadow-lg overflow-hidden w-[320px] md:w-[360px] transform transition-transform duration-500 hover:scale-105 hover:shadow-2xl relative"
             >
+              <div className="relative w-full h-[200px]">
+                <img
+                  src={promo.image}
+                  alt={promo.title}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              </div>
               <img
-                src={promo.image}
-                alt={promo.title}
-                className="w-full h-[160px] object-cover"
+                src={promo.icon}
+                alt="icon"
+                className="absolute top-4 right-4 w-6 h-6 opacity-50 hover:opacity-100 transition-opacity"
               />
               <div className="p-4">
                 <h2 className="text-xl font-bold text-yellow-400">

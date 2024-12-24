@@ -255,8 +255,8 @@ const OtherSections = ({
     { key: "Sport", icon: faRunning, color: "text-blue-500" },
     { key: "Fishing", icon: faFishFins, color: "text-teal-500" },
     { key: "Virtual", icon: faGamepad, color: "text-red-500" },
-    { key: "crash", icon: faMeteor, color: "text-orange-500" },
-    { key: "lotto", icon: faDiceD20, color: "text-green-500" },
+    { key: "Crash", icon: faMeteor, color: "text-orange-500" },
+    { key: "Lotto", icon: faDiceD20, color: "text-green-500" },
   ];
 
   return (

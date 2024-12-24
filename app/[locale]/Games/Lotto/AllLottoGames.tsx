@@ -23,7 +23,7 @@ interface AllGamesProps {
   locale: string;
 }
 
-const AllGames: React.FC<AllGamesProps> = ({ locale }) => {
+const AllCrashGames: React.FC<AllGamesProps> = ({ locale }) => {
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const router = useRouter();
   const initialCategory = "allGames";
@@ -105,7 +105,7 @@ const AllGames: React.FC<AllGamesProps> = ({ locale }) => {
     <div ref={sectionRef} className={`max-w-[1200px] mx-auto p-4 ${isCollapsed ? "ml-[2rem]" : ""}`}>
       {/* Games Header */}
       <GamesHeader
-        pageName={t("title")}
+        pageName="Lotto"
         locale={locale}
         setCategory={setCategory}
         currentCategory={category}
@@ -155,4 +155,4 @@ const AllGames: React.FC<AllGamesProps> = ({ locale }) => {
   );
 };
 
-export default AllGames;
+export default AllCrashGames;

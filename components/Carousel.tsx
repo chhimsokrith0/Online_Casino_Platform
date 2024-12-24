@@ -22,12 +22,11 @@ const Carousel: React.FC = () => {
     { image: t("banner2"), alt: "Slide 2" },
     { image: t("banner3"), alt: "Slide 3" },
     { image: t("banner4"), alt: "Slide 4" },
-    { image: t("banner5"), alt: "Slide 4" },
+    { image: t("banner5"), alt: "Slide 5" },
   ];
 
   useEffect(() => {
     if (swiperRef.current) {
-      // GSAP animation for fade-in effect on mount
       gsap.fromTo(
         swiperRef.current,
         { opacity: 0, y: 30 },
@@ -38,7 +37,7 @@ const Carousel: React.FC = () => {
 
   return (
     <div
-      ref={swiperRef} // Reference for GSAP animation
+      ref={swiperRef}
       className="relative w-full overflow-hidden rounded-xl shadow-lg"
     >
       <Swiper
@@ -64,7 +63,7 @@ const Carousel: React.FC = () => {
         {carouselItems.map((item, index) => (
           <SwiperSlide key={index} className="swiper-slide">
             {/* Mobile View */}
-            <div className="block md:hidden relative w-[90%] h-[150px] mx-auto">
+            <div className="block sm:hidden relative w-[90%] h-[160px] mx-auto">
               <Image
                 src={item.image}
                 alt={item.alt}
@@ -73,8 +72,29 @@ const Carousel: React.FC = () => {
               />
             </div>
 
+            {/* Tablet View */}
+            <div className="hidden sm:block md:hidden relative w-[90%] h-[250px] mx-auto">
+              <Image
+                src={item.image}
+                alt={item.alt}
+                fill
+                className="object-fill w-full h-full rounded-xl shadow-lg"
+              />
+            </div>
+
+
             {/* Desktop View */}
-            <div className="hidden md:block relative w-[90%] h-[450px] mx-auto">
+            <div className="hidden md:block lg:hidden relative w-[80%] h-[350px] mx-auto">
+              <Image
+                src={item.image}
+                alt={item.alt}
+                fill
+                className="object-cover w-full h-full rounded-xl shadow-lg"
+              />
+            </div>
+
+            {/* Large Desktop View */}
+            <div className="hidden lg:block relative w-[100%] h-[450px] mx-auto">
               <Image
                 src={item.image}
                 alt={item.alt}

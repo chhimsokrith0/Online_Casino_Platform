@@ -113,7 +113,7 @@ const MobileNavBar = ({ locale }: { locale: string }) => {
 
             {/* Promo */}
             <Link
-              href={`/${locale}/promotion`}
+              href={`/${locale}/promo`}
               className={clsx(
                 "flex flex-col items-center transition-colors",
                 activeButton === "promo" ? "text-yellow-500" : "text-gray-400 hover:text-white"
