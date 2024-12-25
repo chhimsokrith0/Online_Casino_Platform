@@ -47,9 +47,6 @@ const RandomCard = () => {
             );
         }
     };
-
-
-
     return (
         <>
             <div className={`${isCollapsed ? "ml-[-12rem]" : ""}`}>
@@ -60,12 +57,6 @@ const RandomCard = () => {
                         alt="Banner"
                         className="w-full h-auto"
                     />
-                    <div className="absolute bottom-0 left-0 w-full text-center text-white p-4 bg-gradient-to-t from-black via-transparent to-transparent">
-                        <h1 className="text-4xl font-bold">Redeem Card</h1>
-                        <p className="mt-2 text-sm">
-                            ลุ้นการ์ด รับเพชรเพิ่มเติมจากกิจกรรมสุ่มการ์ด เพื่อแลก 1,000 เพชรลุ้นได้สูงสุด 5 ครั้งต่อวัน!
-                        </p>
-                    </div>
                 </div>
 
                 {/* Rewards Section */}

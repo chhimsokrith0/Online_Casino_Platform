@@ -23,7 +23,6 @@ const Navbar: React.FC<NavbarProps> = ({ locale }) => {
   const { data: session } = useSession();
   const [isMobile, setIsMobile] = useState(false);
   const [modalType, setModalType] = useState<"signUp" | "signIn" | null>(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const [isProfileModalOpen, setIsProfileModalOpen] = useState(false);
 
   const toggleModal = (type: "signUp" | "signIn") => setModalType(type);
