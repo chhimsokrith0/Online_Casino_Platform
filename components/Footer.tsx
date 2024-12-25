@@ -186,7 +186,7 @@ const Footer = ({ locale }: { locale: string }) => {
           <div>
             <h3 className="text-yellow-400 text-lg font-bold mb-4">{t("footer.gameCategory")}</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href={`/${locale}/Games/all?category=demo`}>{t("footer.categories.demo")}</Link></li>
+              <li><Link href="/Games/all?category=demo">{t("footer.categories.demo")}</Link></li>
               <li><Link href={`/${locale}/Games/all?category=newGames`}>{t("footer.categories.newGames")}</Link></li>
               <li><Link href={`/${locale}/Games/all?category=popularGames`}>{t("footer.categories.popular")}</Link></li>
               <li><Link href={`/${locale}/Games/all?category=cashDrop`}>{t("footer.categories.cashDrops")}</Link></li>

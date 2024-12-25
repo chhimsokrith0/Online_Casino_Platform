@@ -10,6 +10,7 @@ import { generateGamesData } from "./gamesData";
 import nothing_box from "../../../../public/nothing_box.webp";
 import Loading from "@/components/Loading";
 import { useSidebar } from "@/components/Sidebar/SidebarContext";
+import Footer from "@/components/Footer";
 
 interface Game {
   id: number;
@@ -39,7 +40,7 @@ const AllGames: React.FC<AllGamesProps> = ({ locale }) => {
 
   // Load and generate games data
   const gamesData: Game[] = generateGamesData(t);
-  const { isCollapsed } = useSidebar(); 
+  const { isCollapsed } = useSidebar();
 
   // Filter games based on category and search term
   useEffect(() => {
@@ -101,6 +102,13 @@ const AllGames: React.FC<AllGamesProps> = ({ locale }) => {
     setVisibleCount((prev) => prev + 24); // Load 24 more games
   };
 
+  const handleCategoryChange = (newCategory: string) => {
+    console.log(`Category changed to: ${newCategory}`);
+    setCategory(newCategory);
+    router.push(`?category=${newCategory}`); // Update URL if needed
+  };
+
+
   return (
     <div ref={sectionRef} className={`max-w-[1200px] mx-auto p-4 ${isCollapsed ? "ml-[2rem]" : ""}`}>
       {/* Games Header */}
@@ -151,6 +159,7 @@ const AllGames: React.FC<AllGamesProps> = ({ locale }) => {
           <p className="text-gray-400">{"There's nothing here yet!"}</p>
         </div>
       )}
+      
     </div>
   );
 };

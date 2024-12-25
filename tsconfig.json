@@ -20,8 +20,15 @@
     ],
     "paths": {
       "@/*": ["./*"]
-    }
+    },
+    "types": ["msw", "node"] // Ensure Node types are included
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "mocks/**/*.ts" // Include all files in the `mocks` folder
+, "mocks/server.js", "mocks/index.js", "mocks/handlers.js", "mocks/browser.js"  ],
   "exclude": ["node_modules"]
 }
