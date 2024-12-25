@@ -16,11 +16,11 @@ interface SignupModalProps {
 }
 
 const countries = [
-  { code: "+66", flag: "/language/th.png", name: "Thailand" },
-  { code: "+1", flag: "/language/en.png", name: "United States" },
-  { code: "+44", flag: "/language/en.png", name: "United Kingdom" },
-  { code: "+91", flag: "/language/hindi.webp", name: "India" },
-  { code: "+86", flag: "/language/chinese.png", name: "China" },
+  { code: "+66", flag: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733640313/th_byfrmv.png", name: "Thailand" },
+  { code: "+1", flag: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1735113043/Flag-United-States-of-America_z7oztm.webp", name: "United States" },
+  { code: "+44", flag: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733640312/en_kthtlc.png", name: "United Kingdom" },
+  { code: "+91", flag: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733640312/hindi_fw5lqd.webp", name: "India" },
+  { code: "+86", flag: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733640312/chinese_dxrdpn.png", name: "China" },
 ];
 
 const SignupModal: React.FC<SignupModalProps> = ({ activeTab = "signIn", onClose, zIndex = 150 }) => {
@@ -96,6 +96,13 @@ const SignupModal: React.FC<SignupModalProps> = ({ activeTab = "signIn", onClose
     handleClose();
   };
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleSelect = (code: string) => {
+    setSelectedCountry(code);
+    setIsOpen(false);
+  };
+
   return ReactDOM.createPortal(
     <div
       className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70"
@@ -121,7 +128,7 @@ const SignupModal: React.FC<SignupModalProps> = ({ activeTab = "signIn", onClose
         <div className="flex flex-col mr-2 bg-gray-900 text-gray-300 w-full md:w-[400px] lg:w-[450px] h-full p-6 md:rounded-r-lg">
           <button
             onClick={handleClose}
-            className="absolute top-4 right-4 flex items-center justify-center w-8 h-8 rounded-full bg-gray-700 hover:bg-gray-600 text-gray-300 hover:text-white transition focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            className="absolute top-0 right-0 flex items-center justify-center w-8 h-8 rounded-full bg-gray-700 hover:bg-gray-600 text-gray-300 hover:text-white transition focus:outline-none focus:ring-2 focus:ring-yellow-500"
             aria-label={t("close")}
           >
             <svg
@@ -167,18 +174,11 @@ const SignupModal: React.FC<SignupModalProps> = ({ activeTab = "signIn", onClose
           >
             <div className="flex items-center gap-2">
               <div className="relative">
-                <select
-                  className="bg-gray-700 text-white rounded-full h-12 pl-10 pr-4 text-sm font-medium focus:ring-2 focus:ring-yellow-500 focus:outline-none appearance-none"
-                  value={selectedCountry}
-                  onChange={(e) => setSelectedCountry(e.target.value)}
+                {/* Selected Country */}
+                <div
+                  className="flex items-center bg-gray-700 text-white rounded-full h-12 pl-3 pr-4 cursor-pointer"
+                  onClick={() => setIsOpen(!isOpen)}
                 >
-                  {countries.map((country) => (
-                    <option key={country.code} value={country.code}>
-                      {country.code}
-                    </option>
-                  ))}
-                </select>
-                <div className="absolute left-3 top-1/2 transform -translate-y-1/2">
                   <Image
                     src={countries.find((c) => c.code === selectedCountry)?.flag || "/flags/thailand.png"}
                     alt="flag"
@@ -186,7 +186,30 @@ const SignupModal: React.FC<SignupModalProps> = ({ activeTab = "signIn", onClose
                     height={20}
                     className="rounded-full"
                   />
+                  <span className="ml-2 text-sm font-medium">{selectedCountry}</span>
                 </div>
+
+                {/* Dropdown Menu */}
+                {isOpen && (
+                  <div className="absolute bg-gray-800 rounded-lg shadow-lg mt-2 z-10 w-full">
+                    {countries.map((country) => (
+                      <div
+                        key={country.code}
+                        className="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-700"
+                        onClick={() => handleSelect(country.code)}
+                      >
+                        <Image
+                          src={country.flag}
+                          alt={`${country.code} flag`}
+                          width={20}
+                          height={20}
+                          className="rounded-full"
+                        />
+                        <span className="ml-2 text-sm font-medium text-white">{country.code}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
               <input
                 type="text"
