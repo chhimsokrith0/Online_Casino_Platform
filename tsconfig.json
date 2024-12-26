@@ -29,6 +29,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "mocks/**/*.ts" // Include all files in the `mocks` folder
-, "mocks/server.js", "mocks/index.js", "mocks/handlers.js", "mocks/browser.js"  ],
+, "mocks/server.js", "mocks/index.js", "mocks/handlers.js", "mocks/browser.js", "data/provider.js"  ],
   "exclude": ["node_modules"]
 }

@@ -59,7 +59,7 @@ const GameCard: React.FC<GameCardProps> = ({ title, provider, image }) => {
   return (
     <div
       ref={cardRef}
-      className="rounded-lg shadow-lg overflow-hidden bg-gray-800 relative group hover:shadow-xl transition-shadow duration-300"
+      className="rounded-lg shadow-lg overflow-hidden bg-opacity-50 bg-gray-800 relative group hover:shadow-xl transition-shadow duration-300"
       onMouseEnter={handleHover}
       onMouseLeave={handleLeave}
     >

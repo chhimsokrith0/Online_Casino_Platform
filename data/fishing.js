@@ -1,0 +1,17 @@
+export default [
+    { id: 1, title: "Ninja Raccoon Frenzy", provider: "Playtech", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1735224311/1_bb0zkc.png", category: "allGames" },
+    { id: 2, title: "Ninja Raccoon Frenzy", provider: "Playtech", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1735224311/2_qxam1y.png", category: "allGames" },
+    { id: 3, title: "Ninja Raccoon Frenzy", provider: "Playtech", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1735224312/3_mrag9a.png", category: "allGames" },
+    { id: 4, title: "Ninja Raccoon Frenzy", provider: "Playtech", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1735224314/4_yqpc3t.png", category: "allGames" },
+    { id: 5, title: "Ninja Raccoon Frenzy", provider: "Playtech", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1735224316/5_kzkksb.png", category: "allGames" },
+    { id: 6, title: "Ninja Raccoon Frenzy", provider: "Playtech", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1735224318/6_l6uadi.png", category: "allGames" },
+    { id: 7, title: "Ninja Raccoon Frenzy", provider: "Playtech", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1735224320/7_jcfo2a.png", category: "allGames" },
+    { id: 8, title: "Ninja Raccoon Frenzy", provider: "Playtech", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1735224322/8_qjk0g6.png", category: "allGames" },
+    { id: 9, title: "Ninja Raccoon Frenzy", provider: "Playtech", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1735224323/9_o7k6nw.png", category: "allGames" },
+    { id: 10, title: "Ninja Raccoon Frenzy", provider: "Playtech", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1735224325/10_bs7npz.png", category: "allGames" },
+    { id: 11, title: "Ninja Raccoon Frenzy", provider: "Playtech", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1735224327/11_xzb2nw.png", category: "allGames" },
+    { id: 12, title: "Ninja Raccoon Frenzy", provider: "Playtech", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1735224329/12_hp8dyn.png", category: "allGames" },
+    { id: 13, title: "Ninja Raccoon Frenzy", provider: "Playtech", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1735224330/13_ustvbl.png", category: "allGames" },
+    { id: 14, title: "Ninja Raccoon Frenzy", provider: "Playtech", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1735224333/14_doanie.png", category: "allGames" },
+    { id: 15, title: "Ninja Raccoon Frenzy", provider: "Playtech", image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1735224334/15_jv45qu.png", category: "allGames" },
+];

@@ -274,3 +274,85 @@ const Footer = ({ locale }: { locale: string }) => {
 };
 
 export default Footer;
+
+
+// "use client";
+
+// import React, { useState, useRef, useEffect } from "react";
+// import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+// import { useTranslations } from "next-intl";
+// import { gsap } from "gsap";
+// import { useSidebar } from "@/components/Sidebar/SidebarContext";
+
+// interface FooterProps {
+//   setCategory: (category: string) => void; // Pass down the setCategory function
+// }
+
+// const Footer: React.FC<FooterProps> = ({ setCategory }) => {
+//   const t = useTranslations();
+//   const [isGameCategoryOpen, setIsGameCategoryOpen] = useState(false);
+//   const gameCategoryRef = useRef<HTMLUListElement | null>(null);
+//   const { isCollapsed } = useSidebar();
+
+//   useEffect(() => {
+//     const animateSection = (isOpen: boolean, ref: React.RefObject<HTMLUListElement>) => {
+//       if (ref.current) {
+//         if (isOpen) {
+//           gsap.to(ref.current, { height: "auto", opacity: 1, duration: 0.3, ease: "power2.out" });
+//         } else {
+//           gsap.to(ref.current, { height: 0, opacity: 0, duration: 0.3, ease: "power2.out" });
+//         }
+//       }
+//     };
+
+//     animateSection(isGameCategoryOpen, gameCategoryRef);
+//   }, [isGameCategoryOpen]);
+
+//   return (
+//     <footer className={`text-gray-300 px-4 sm:px-8 py-6 sm:py-10 ${isCollapsed ? "ml-[-10rem]" : ""}`}>
+//       {/* Mobile View */}
+//       <div className="sm:hidden">
+//         <div>
+//           <div
+//             className="flex justify-between items-center text-yellow-400 text-lg font-bold mb-2 cursor-pointer"
+//             onClick={() => setIsGameCategoryOpen(!isGameCategoryOpen)}
+//           >
+//             {t("footer.gameCategory")}
+//             <span>{isGameCategoryOpen ? <FaChevronUp /> : <FaChevronDown />}</span>
+//           </div>
+//           <ul
+//             ref={gameCategoryRef}
+//             className={`space-y-2 text-sm overflow-hidden ${isGameCategoryOpen ? "block" : "hidden"}`}
+//           >
+//             <li>
+//               <button
+//                 onClick={() => setCategory("demo")} // Use the function
+//                 className="text-yellow-300 hover:underline"
+//               >
+//                 Demo Games
+//               </button>
+//             </li>
+//             <li>
+//               <button
+//                 onClick={() => setCategory("newGames")}
+//                 className="text-yellow-300 hover:underline"
+//               >
+//                 {t("footer.categories.newGames")}
+//               </button>
+//             </li>
+//             <li>
+//               <button
+//                 onClick={() => setCategory("popularGames")}
+//                 className="text-yellow-300 hover:underline"
+//               >
+//                 {t("footer.categories.popular")}
+//               </button>
+//             </li>
+//           </ul>
+//         </div>
+//       </div>
+//     </footer>
+//   );
+// };
+
+// export default Footer;

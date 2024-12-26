@@ -20,6 +20,8 @@ interface ApiResponse {
 
 const Providers = () => {
   const [providers, setProviders] = useState<Provider[]>([]);
+  const [filteredProviders, setFilteredProviders] = useState<Provider[]>([]);
+  const [searchTerm, setSearchTerm] = useState<string>(""); // Search term state
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -30,7 +32,7 @@ const Providers = () => {
     const fetchProviders = async () => {
       setLoading(true);
       try {
-        const response = await fetch('/api/provider');
+        const response = await fetch("/api/provider");
 
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -38,7 +40,8 @@ const Providers = () => {
 
         const result: ApiResponse = await response.json();
         setProviders(result.data); // Access the data property from the response
-        console.log('Providers data:', result.data); // Debug log
+        setFilteredProviders(result.data); // Set initial filtered providers
+        console.log("Providers data:", result.data); // Debug log
       } catch (err) {
         setError("Failed to fetch providers. Please try again later.");
         console.error("Error fetching providers:", err);
@@ -51,13 +54,21 @@ const Providers = () => {
   }, []);
 
   useEffect(() => {
+    // Filter providers based on search term
+    const filtered = providers.filter((provider) =>
+      provider.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setFilteredProviders(filtered);
+  }, [searchTerm, providers]);
+
+  useEffect(() => {
     // GSAP animation for card entrance
     gsap.fromTo(
       cardRefs.current,
       { opacity: 0, y: 20 },
       { opacity: 1, y: 0, duration: 0.6, stagger: 0.2, ease: "power2.out" }
     );
-  }, [providers]);
+  }, [filteredProviders]);
 
   const handleHover = (index: number) => {
     const card = cardRefs.current[index];
@@ -92,7 +103,7 @@ const Providers = () => {
             <FontAwesomeIcon icon={faBuilding} className="mr-2" />
             Providers
           </h1>
-          <p className="text-gray-400 text-sm mt-1">{providers.length} Providers</p>
+          <p className="text-gray-400 text-sm mt-1">{filteredProviders.length} Providers</p>
         </div>
 
         {/* Search Section */}
@@ -100,6 +111,8 @@ const Providers = () => {
           <input
             type="text"
             placeholder="Find your provider"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)} // Update search term on input
             className="flex-1 bg-transparent text-gray-300 placeholder-gray-500 outline-none"
           />
           <FontAwesomeIcon icon={faSearch} className="text-gray-400 ml-2" />
@@ -114,7 +127,7 @@ const Providers = () => {
       {/* Providers Grid */}
       {!loading && !error && (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {Array.isArray(providers) && providers.map((provider, index) => (
+          {filteredProviders.map((provider, index) => (
             <div
               key={provider.id}
               ref={(el) => {
