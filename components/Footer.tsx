@@ -11,9 +11,11 @@ import { useSession } from "next-auth/react";
 import QuestsModal from "@/app/[locale]/Quests/QuestsModal";
 import SignupModal from "@/components/Navbar/SignUpModal";
 import { useSidebar } from "@/components/Sidebar/SidebarContext";
+import { useRouter } from "next/navigation";
 const Footer = ({ locale }: { locale: string }) => {
   const t = useTranslations();
   const { data: session } = useSession();
+  const router = useRouter();
 
   const [isGameCategoryOpen, setIsGameCategoryOpen] = useState(false);
   const [isLiveCasinoOpen, setIsLiveCasinoOpen] = useState(false);
@@ -186,14 +188,14 @@ const Footer = ({ locale }: { locale: string }) => {
           <div>
             <h3 className="text-yellow-400 text-lg font-bold mb-4">{t("footer.gameCategory")}</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/Games/all?category=demo">{t("footer.categories.demo")}</Link></li>
-              <li><Link href={`/${locale}/Games/all?category=newGames`}>{t("footer.categories.newGames")}</Link></li>
-              <li><Link href={`/${locale}/Games/all?category=popularGames`}>{t("footer.categories.popular")}</Link></li>
-              <li><Link href={`/${locale}/Games/all?category=cashDrop`}>{t("footer.categories.cashDrops")}</Link></li>
-              <li><Link href={`/${locale}/Games/all?category=jackpots`}>{t("footer.categories.jackpots")}</Link></li>
-              <li><Link href={`/${locale}/Games/all?category=megaways`}>{t("footer.categories.megaways")}</Link></li>
-              <li><Link href={`/${locale}/Games/all?category=tableGames`}>{t("footer.categories.tableGames")}</Link></li>
-              <li><Link href={`/${locale}/Games/all?category=allGames`}>{t("footer.categories.allGames")}</Link></li>
+              <li><a href={`/${locale}/Games/all?category=demo`}>{t("footer.categories.demo")}</a></li>
+              <li><a href={`/${locale}/Games/all?category=newGames`}>{t("footer.categories.newGames")}</a></li>
+              <li><a href={`/${locale}/Games/all?category=popularGames`}>{t("footer.categories.popular")}</a></li>
+              <li><a href={`/${locale}/Games/all?category=cashDrop`}>{t("footer.categories.cashDrops")}</a></li>
+              <li><a href={`/${locale}/Games/all?category=jackpots`}>{t("footer.categories.jackpots")}</a></li>
+              <li><a href={`/${locale}/Games/all?category=megaways`}>{t("footer.categories.megaways")}</a></li>
+              <li><a href={`/${locale}/Games/all?category=tableGames`}>{t("footer.categories.tableGames")}</a></li>
+              <li><a href={`/${locale}/Games/all?category=allGames`}>{t("footer.categories.allGames")}</a></li>
             </ul>
           </div>
 

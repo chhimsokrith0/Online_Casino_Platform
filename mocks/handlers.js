@@ -6,6 +6,7 @@ import sport from "@/data/sport";
 import virtual from "@/data/virtual";
 import fishing from "@/data/fishing";
 import crash from "@/data/crash";
+import rtpslot from "@/data/rtpslot";
 
 export const handlers = [
   http.get("/api/provider", () => {
@@ -96,6 +97,18 @@ export const handlers = [
     console.log("[MSW] Serving crash data", crash);
     return new Response(
       JSON.stringify(crash),
+      {
+        status: 200,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      }
+    );
+  }),
+  http.get("/api/rtpslot", () => {
+    console.log("[MSW] Serving rtpslot data", rtpslot);
+    return new Response(
+      JSON.stringify(rtpslot),
       {
         status: 200,
         headers: {

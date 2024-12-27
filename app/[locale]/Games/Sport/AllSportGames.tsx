@@ -163,7 +163,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { gsap } from "gsap";
 import GamesHeader from "@/components/GamesHeader/GamesHeader";
 import GameCard from "./GameCard";
@@ -186,7 +186,9 @@ interface AllLiveCasinoGamesProps {
 const AllSportGames: React.FC<AllLiveCasinoGamesProps> = ({ locale }) => {
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const router = useRouter();
-  const [category, setCategory] = useState<string>("allGames");
+  const searchParams = useSearchParams();
+  const initialCategory = searchParams?.get("category") || "allGames";
+  const [category, setCategory] = useState(initialCategory);
   const [searchTerm, setSearchTerm] = useState<string>(""); // Search term state
   const [gamesData, setGamesData] = useState<Game[]>([]); // All fetched games
   const [visibleCount, setVisibleCount] = useState<number>(24); // Number of visible games

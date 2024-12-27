@@ -171,8 +171,8 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { useRouter } from "next/navigation";
-import { gsap } from "gsap";
+import { useRouter, useSearchParams } from "next/navigation";
+
 import GamesHeader from "@/components/GamesHeader/GamesHeader";
 
 import GameCard from "./GameCard";
@@ -195,9 +195,8 @@ interface AllGamesProps {
 const AllGames: React.FC<AllGamesProps> = ({ locale }) => {
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const router = useRouter();
-  const initialCategory = "allGames";
-
-  // State Management
+  const searchParams = useSearchParams();
+  const initialCategory = searchParams?.get("category") || "allGames";
   const [category, setCategory] = useState<string>(initialCategory);
   const [searchTerm, setSearchTerm] = useState<string>(""); // Search term state
   const [gamesData, setGamesData] = useState<Game[]>([]); // All fetched games
@@ -208,6 +207,7 @@ const AllGames: React.FC<AllGamesProps> = ({ locale }) => {
 
   // Fetch games from the API
   useEffect(() => {
+
     const fetchGames = async () => {
       setLoading(true);
       try {
