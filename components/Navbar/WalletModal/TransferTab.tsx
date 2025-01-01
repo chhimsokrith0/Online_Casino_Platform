@@ -1,70 +1,58 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
-import gsap from "gsap";
-
+import React from "react";
+import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 const TransferTab: React.FC = () => {
-    const containerRef = useRef<HTMLDivElement>(null);
-    const itemRefs = useRef<HTMLDivElement[]>([]);
-    const buttonRefs = useRef<HTMLButtonElement[]>([]);
+  const t = useTranslations("wallet.transfer");
+  const containerVariants = {
+    hidden: { opacity: 0, scale: 0.9 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.6, ease: "easeOut", staggerChildren: 0.2 },
+    },
+  };
 
-    useEffect(() => {
-        // Animate the container fade-in
-        gsap.fromTo(
-            containerRef.current,
-            { opacity: 0 },
-            { opacity: 1, duration: 0.8, ease: "power4.out" }
-        );
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
 
-        // Stagger animation for child elements
-        gsap.fromTo(
-            itemRefs.current,
-            { opacity: 0, y: 20 },
-            { opacity: 1, y: 0, duration: 0.6, stagger: 0.2, ease: "power4.out", delay: 0.3 }
-        );
+  const buttonVariants = {
+    hidden: { scale: 0.9, opacity: 0 },
+    visible: { scale: 1, opacity: 1, transition: { duration: 0.4, delay: 0.4 } },
+  };
 
-        // Animate the button if needed
-        gsap.fromTo(
-            buttonRefs.current,
-            { scale: 0.9, opacity: 0 },
-            { scale: 1, opacity: 1, duration: 0.4, delay: 0.8, ease: "power2.out" }
-        );
-    }, []);
-
-    return (
-        <div ref={containerRef}>
-            <h3
-                ref={(el) => {
-                    if (el && !itemRefs.current.includes(el)) {
-                        itemRefs.current.push(el); // Add unique refs
-                    }
-                }}
-                className="text-sm text-gray-400 mb-4"
-            >
-                Transfer From
-            </h3>
-            <div
-                ref={(el) => {
-                    if (el && !itemRefs.current.includes(el)) {
-                        itemRefs.current.push(el); // Add unique refs
-                    }
-                }}
-                className="bg-gray-700 p-4 rounded-lg mb-4 flex justify-between"
-            >
-                <span className="text-sm">Your wallet: 0.00฿</span>
-            </div>
-            <button
-                ref={(el) => {
-                    if (el && !buttonRefs.current.includes(el)) {
-                        buttonRefs.current.push(el); // Add unique refs
-                    }
-                }}
-                className="w-full py-2 bg-yellow-400 text-black font-bold rounded-lg hover:bg-yellow-500 transition text-sm"
-            >
-                Transfer to Main Wallet
-            </button>
-        </div>
-    );
+  return (
+    <motion.div
+      className="overflow-y-scroll h-full scrollbar-hide"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+    >
+      <motion.h3
+        className="text-sm text-gray-400 mb-4"
+        variants={itemVariants}
+      >
+        {t("transferFrom")}
+      </motion.h3>
+      <motion.div
+        className="bg-gray-700 p-4 rounded-lg mb-4 flex justify-between"
+        variants={itemVariants}
+      >
+        <span className="text-sm">{t("yourWallet")}: 0.00฿</span>
+      </motion.div>
+      <motion.button
+        className="w-full py-2 bg-yellow-400 text-black font-bold rounded-lg hover:bg-yellow-500 transition text-sm"
+        variants={buttonVariants}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        {t("transferButton")}
+      </motion.button>
+    </motion.div>
+  );
 };
 
 export default TransferTab;

@@ -684,59 +684,79 @@
     "accountInformation": {
         "title": "帳戶資訊",
         "menu": {
-            "myProfile": "我的個人檔案",
+            "myProfile": "我的個人資料",
             "history": "歷史記錄",
-            "rebate": "回饋",
+            "rebate": "回扣",
             "cashback": "現金回饋",
             "totalBet": "總投注",
             "redeemHistory": "兌換記錄",
-            "pointHistory": "積分記錄",
-            "personalMessage": "私人訊息",
+            "pointHistory": "點數記錄",
+            "personalMessage": "個人訊息",
             "referral": "推薦"
         },
         "profile": {
-            "phoneNumber": "電話號碼",
+            "title": "個人資料",
             "joinedOn": "加入日期",
+            "logout": "登出",
+            "BronzeCard": "銅卡",
+            "ranking": "排名：銅卡現金回饋 2%",
             "vipLevel": {
-                "current": "目前等級",
+                "current": "當前等級",
                 "upgrade": "升級您的 VIP 等級",
-                "progress": "您的進度"
+                "progress": "您的進度",
+                "bronze": "銅卡",
+                "silver": "銀卡",
+                "points": "當前點數",
+                "exchangeReward": "兌換獎勵"
             },
             "wallet": {
                 "title": "您的錢包",
                 "balance": "餘額"
             },
-            "rebateBalance": "回饋餘額",
+            "rebateBalance": "回扣餘額",
             "cashbackBalance": "現金回饋餘額",
-            "referralBalance": "推薦餘額"
-        },
-        "totalBets": {
-            "title": "總投注",
-            "columns": {
-                "transactionDateTime": "交易日期時間",
-                "totalWinLose": "總贏/輸",
-                "totalBets": "總投注"
+            "referralBalance": "推薦餘額",
+            "totalBets": {
+                "title": "總投注",
+                "depositTurnover": "存款周轉",
+                "turnover": "周轉",
+                "turnWinlose": "贏/輸"
             },
-            "emptyState": {
-                "message": "這裡還沒有任何內容！"
+            "myPromotions": {
+                "title": "我的促銷活動",
+                "cashback": "現金回饋",
+                "rebate": "回扣"
             },
-            "totalBetAmount": "總投注金額: "
-        },
-        "promotions": {
-            "title": "我的活動",
-            "cashback": "現金回饋",
-            "rebate": "回饋"
-        },
-        "actions": {
-            "exchangeReward": "兌換獎勵",
-            "logOut": "登出"
-        },
-        "points": {
-            "currentPoints": "目前積分",
-            "progress": "進度",
-            "rank": {
-                "bronze": "銅牌",
-                "silver": "銀牌"
+            "VIPLevelModal": {
+                "title": "會員等級詳情",
+                "upgradeTitle": "升級您的 ",
+                "MemberLevel": "會員等級",
+                "levels": {
+                    "bronze": "銅卡",
+                    "silver": "銀卡",
+                    "gold": "金卡",
+                    "diamond": "鑽石卡",
+                    "platinum": "白金卡",
+                    "black": "黑卡"
+                },
+                "challenges": {
+                    "title": "挑戰",
+                    "th1": "挑戰",
+                    "th2": "進度",
+                    "th3": "操作",
+                    "list": {
+                        "task1": {
+                            "description": "增加存款金額 1,000.00 升級",
+                            "progress": "50% 完成",
+                            "action": "存款"
+                        },
+                        "task2": {
+                            "description": "增加周轉金額 1,000.00 升級",
+                            "progress": "30% 完成",
+                            "action": "投注"
+                        }
+                    }
+                }
             }
         },
         "history": {
@@ -746,7 +766,7 @@
                 "withdraw": "提款",
                 "bet": "投注",
                 "receivePromotion": "接收促銷",
-                "receiveRebate": "接收回饋",
+                "receiveRebate": "接收回扣",
                 "receiveCashback": "接收現金回饋",
                 "receiveReferral": "接收推薦"
             },
@@ -754,79 +774,92 @@
                 "amount": "金額",
                 "channel": "渠道",
                 "bankAccount": "銀行帳戶",
-                "depositDateTime": "存款日期時間",
+                "depositDateTime": "存款日期 - 時間",
                 "status": "狀態",
-                "successDateTime": "成功日期時間"
+                "successDateTime": "成功日期 - 時間",
+                "nodata": "暫無資料"
             },
             "emptyState": {
                 "message": "這裡還沒有任何內容！"
             },
-            "totalDeposit": "總存款金額: "
+            "total": "總計"
         },
         "rebate": {
-            "title": "回饋",
+            "title": "回扣",
             "columns": {
-                "transactionDateTime": "交易日期時間",
-                "rebateAmount": "回饋金額"
+                "transactionDateTime": "交易日期 - 時間",
+                "rebateAmount": "回扣金額"
             },
             "emptyState": {
                 "message": "這裡還沒有任何內容！"
             },
-            "totalRebate": "總回饋金額: "
+            "totalRebate": "總回扣金額："
         },
         "cashback": {
             "title": "現金回饋",
             "columns": {
-                "transactionDateTime": "交易日期時間",
+                "transactionDateTime": "交易日期 - 時間",
                 "cashbackAmount": "現金回饋金額"
             },
             "emptyState": {
                 "message": "這裡還沒有任何內容！"
             },
-            "totalCashback": "總現金回饋金額: "
+            "totalCashback": "總現金回饋金額："
+        },
+        "totalBet": {
+            "title": "總投注",
+            "columns": {
+                "transactionDateTime": "交易日期 - 時間",
+                "totalWinLose": "總贏/輸",
+                "totalBets": "總投注"
+            },
+            "emptyState": {
+                "message": "這裡還沒有任何內容！"
+            },
+            "totalBetAmount": "總投注金額："
         },
         "redeemHistory": {
             "title": "兌換記錄",
             "columns": {
                 "no": "編號",
-                "transactionDateTime": "交易日期時間",
+                "transactionDateTime": "交易日期 - 時間",
                 "typeOfReward": "獎勵類型",
                 "reward": "獎勵",
                 "status": "狀態",
-                "usedPoints": "使用積分",
+                "usedPoints": "使用的點數",
                 "freeSpins": "免費旋轉"
             },
             "emptyState": {
                 "message": "這裡還沒有任何內容！"
             },
             "totals": {
-                "allRewards": "所有獎勵:",
-                "totalUsedPoints": "使用積分總數:",
-                "totalFreeSpins": "總免費旋轉:",
-                "totalAmountPerRound": "每輪總金額:"
+                "allRewards": "所有獎勵：",
+                "totalUsedPoints": "總使用點數：",
+                "totalFreeSpins": "總免費旋轉：",
+                "totalAmountPerRound": "每輪總金額："
             }
         },
         "pointHistory": {
-            "title": "積分記錄",
+            "title": "點數記錄",
             "columns": {
-                "transactionDateTime": "交易日期時間",
+                "transactionDateTime": "交易日期 - 時間",
                 "type": "類型",
-                "turnover": "營業額",
-                "currentPoint": "目前積分"
+                "turnover": "周轉",
+                "currentPoint": "當前點數"
             },
             "emptyState": {
                 "message": "這裡還沒有任何內容！"
             },
-            "totalPoints": "總積分: "
+            "totalPoints": "總點數："
         },
         "personalMessage": {
-            "title": "私人訊息",
+            "title": "個人訊息",
             "tabs": {
                 "inbox": "收件箱",
                 "send": "發送"
             },
             "emptyState": {
-                "message": "找不到任何結果"
+                "message": "沒有找到結果"
             },
             "actions": {
                 "newMessage": "新訊息"
@@ -841,10 +874,11 @@
                     "message": "訊息",
                     "messagePlaceholder": "在此輸入內容...",
                     "attachImage": "附加圖片（可選）",
-                    "uploadInstructions": "點擊或拖動以上傳",
-                    "allowedFileTypes": "WEBP, PNG 或 JPG (3MB)."
+                    "uploadInstructions": "點擊上傳或拖放",
+                    "allowedFileTypes": "WEBP、PNG 或 JPG (3MB)."
                 },
                 "characterLimit": "0/300",
+                "UploadImage": "上傳圖片",
                 "sendMessageButton": "發送訊息"
             },
             "pagination": {
@@ -855,17 +889,17 @@
         "referral": {
             "title": "推薦",
             "stats": {
-                "incomeToday": "今日收入",
+                "incomeToday": "您今日的收入",
                 "totalReferral": "總推薦",
                 "referralClick": "推薦點擊",
                 "totalMember": "總會員",
-                "totalTurnover": "總營業額",
+                "totalTurnover": "總周轉",
                 "totalCashback": "總現金回饋"
             },
             "copy": {
                 "referralLink": "推薦連結",
-                "referralCode": "推薦碼",
-                "copyText": "將您的推薦碼或連結發送給朋友，當他們玩遊戲時，您可獲得回饋。"
+                "referralCode": "推薦代碼",
+                "copyText": "複製您的推薦代碼或連結給您的朋友，當他們註冊並開始遊戲時，您將獲得回扣。"
             },
             "inviteFriends": "邀請朋友",
             "socialMedia": {
@@ -875,14 +909,14 @@
                 "whatsapp": "WhatsApp"
             },
             "actions": {
-                "transfer": "轉移"
+                "transfer": "轉帳"
             },
             "dataOverview": {
                 "title": "數據概覽",
                 "tabs": {
                     "totalRevenue": "總收入",
                     "members": "會員",
-                    "receiveReferral": "收到推薦"
+                    "receiveReferral": "接收推薦"
                 },
                 "table": {
                     "columns": {
@@ -893,27 +927,27 @@
                         "message": "這裡還沒有任何內容！"
                     },
                     "totals": {
-                        "totalRevenue": "總收入:"
+                        "totalRevenue": "總收入："
                     }
-                },
-                "analytics": {
-                    "title": "分析 - 測量您的表現",
-                    "metrics": {
-                        "income": {
-                            "title": "收入",
-                            "today": "今日收入",
-                            "yesterday": "昨日收入"
-                        },
-                        "turnover": {
-                            "title": "營業額",
-                            "today": "今日營業額",
-                            "yesterday": "昨日營業額"
-                        },
-                        "cashback": {
-                            "title": "現金回饋",
-                            "today": "今日現金回饋",
-                            "yesterday": "昨日現金回饋"
-                        }
+                }
+            },
+            "analytics": {
+                "title": "分析 - 衡量您的表現",
+                "metrics": {
+                    "income": {
+                        "title": "收入",
+                        "today": "今日",
+                        "yesterday": "昨日"
+                    },
+                    "turnover": {
+                        "title": "周轉",
+                        "today": "今日",
+                        "yesterday": "昨日"
+                    },
+                    "cashback": {
+                        "title": "現金回饋",
+                        "today": "今日",
+                        "yesterday": "昨日"
                     }
                 }
             }
@@ -1057,6 +1091,74 @@
         "signInSuccess": "登入成功！",
         "submitSignUp": "註冊",
         "submitSignIn": "登入"
+    },
+    "wallet": {
+        "title": "您的錢包",
+        "history": "歷史記錄",
+        "tabs": {
+            "deposit": "存款",
+            "withdraw": "提款",
+            "transfer": "轉帳"
+        },
+        "deposit": {
+            "paymentMethod": "付款方式",
+            "methods": {
+                "abaBank": "ABA 銀行",
+                "acledaBank": "Acleda 銀行",
+                "qrCodeAbaBank": "ABA 銀行 QR 碼"
+            },
+            "DepositAmount": {
+                "title": "存款金額",
+                "yourWallet": "您的錢包",
+                "minMax": "最低 100.00฿ ~ 最高 50,000.00฿",
+                "balance": "餘額",
+                "buttons": {
+                    "100": "100฿",
+                    "300": "300฿",
+                    "500": "500฿",
+                    "1000": "1000฿"
+                },
+                "instructions": {
+                    "title": "請閱讀以加速交易處理",
+                    "points": {
+                        "1": "每次轉帳前請創建新交易",
+                        "2": "QR 碼僅可使用一次",
+                        "3": "請勿重複使用 QR 碼",
+                        "4": "請在指定時間內完成交易"
+                    }
+                },
+                "backButton": "返回",
+                "nextButton": "下一步"
+            }
+        },
+        "withdraw": {
+            "withdrawalCondition": "提款條件",
+            "conditions": {
+                "depositTurnover": "存款流水",
+                "turnover": "流水",
+                "turnWinlose": "贏虧流水"
+            },
+            "withdrawAmount": "提款金額",
+            "yourWallet": "您的錢包",
+            "minMax": "最低 500.00฿ ~ 最高 10,000.00฿",
+            "balance": "餘額",
+            "buttons": {
+                "min": "最低",
+                "25Percent": "25%",
+                "50Percent": "50%",
+                "max": "最高"
+            },
+            "note": "備註",
+            "notePlaceholder": "在此輸入...",
+            "characterLimit": "0/300",
+            "withdrawButton": "提款"
+        },
+        "transfer": {
+            "transferFrom": "轉出",
+            "yourWallet": "您的錢包",
+            "transferButton": "轉入主錢包"
+        },
+        "line": "Line"
     },
     "questsHub": {
         "title": "任務中心",
@@ -1224,6 +1326,203 @@
                     "favorite": true
                 }
             }
+        }
+    },
+    "inviteAndBenefits": {
+        "title": "邀請與福利",
+        "referralLinkTitle": "推薦連結",
+        "referralLink": {
+            "label": "推薦連結",
+            "placeholder": "https://ICGGaming.co?ref_code=IP7MSaJ9aH",
+            "copyButton": "複製"
+        },
+        "referralCodeTitle": "推薦代碼",
+        "referralCode": {
+            "label": "推薦代碼",
+            "placeholder": "IP7MSaJ9aH",
+            "copyButton": "複製"
+        },
+        "description": "複製您的推薦代碼或連結給朋友，當他們註冊並遊玩遊戲時，您將獲得回扣。",
+        "socialMedia": {
+            "facebook": "分享到 Facebook",
+            "twitter": "分享到 Twitter",
+            "whatsapp": "分享到 WhatsApp",
+            "telegram": "分享到 Telegram"
+        }
+    },
+    "logoutConfirmation": {
+        "title": "您不想錯過今天的頭獎！",
+        "message": "您確定要登出嗎？",
+        "buttons": {
+            "no": "否",
+            "yes": "是"
+        }
+    },
+    "SecurityAndPolicy": {
+        "sidebar": {
+            "TermsandConditions": "條款與條件",
+            "PrivacyPolicy": "隱私政策",
+            "CookiesPolicy": "Cookies 政策",
+            "activeItemMessage": "使用上方的標籤進行導航"
+        },
+        "header": {
+            "title": "安全與政策"
+        },
+        "TermsandConditions": {
+            "title": "條款與條件",
+            "content": [
+                "本頁面包含有關您訪問和使用 icggaming.com 網站權利的信息。這些條款與條件涉及我們網站上提供的遊戲、促銷和獎金，並將不時發布並通過引用納入本文中。"
+            ],
+            "sections": [
+                {
+                    "title": "定義",
+                    "content": [
+                        "1.1 以下條款規定了您訪問和參與 PlayGame168 提供的遊戲或服務的條款與條件。這些條款應與“投注規則”、“隱私政策”以及遊戲內的條款與條件一併閱讀。",
+                        "1.2 “遊戲”指的是 PlayGame168 的互聯網遊戲系統，包括投注和賭注。“設備”指的是可以訪問我們應用程式的任何平台，包括筆記型電腦、手機和手持設備。“軟體”包括訪問網站所需的程式和文件。“體育博彩”指的是 PlayGame168 提供的互聯網遊戲系統，而“服務”則涵蓋軟體和遊戲。"
+                    ]
+                },
+                {
+                    "title": "網站使用",
+                    "content": [
+                        "2.1 您只有在以下情況下才能參與遊戲：",
+                        " 年滿 18 歲或以上。",
+                        " 在您所在的國家/地區合法有資格參與遊戲。",
+                        "2.2 如果我們發現您無權參與遊戲，我們保留以下權利：",
+                        " 立即禁止您參與遊戲。",
+                        " 向相關當局報告您。"
+                    ]
+                },
+                {
+                    "title": "修改",
+                    "content": [
+                        "3.1 我們保留自行決定修改、更新或更改條款與條件的權利。繼續使用 icggaming.com 即表示您接受這些更改。"
+                    ]
+                },
+                {
+                    "title": "知識產權",
+                    "content": [
+                        "4.1 icggaming.com 上的所有信息，包括文字、圖形和音頻內容，均屬於 icggaming.com 及其許可方，僅供個人非商業用途。"
+                    ]
+                },
+                {
+                    "title": "使用條件",
+                    "content": [
+                        "您是以個人身份行為，而非代表他人。",
+                        "您已達到合法的賭博年齡。",
+                        "您未使用非法活動所得的資金。",
+                        "您將確保您的帳戶信息安全。",
+                        "您不會上傳有害程式，例如病毒。"
+                    ]
+                },
+                {
+                    "title": "註冊與會員資格",
+                    "content": [
+                        "您必須在註冊時提供準確的信息。icggaming.com 保留拒絕申請或要求進一步身份驗證的權利。"
+                    ]
+                },
+                {
+                    "title": "投注規則",
+                    "content": [
+                        "僅通過互聯網接受投注，並且必須遵守條款與條件。如果發生錯誤或檢測到作弊行為，icggaming.com 保留取消投注的權利。"
+                    ]
+                }
+            ]
+        },
+        "PrivacyPolicy": {
+            "title": "隱私政策",
+            "sections": [
+                {
+                    "content": [
+                        "本隱私政策描述了我們如何根據 PlayGame168 網站的訪問和使用來處理您的個人信息。本政策確保您的數據符合數據保護法，並體現我們對保護您隱私的承諾。"
+                    ]
+                },
+                {
+                    "title": "電子報",
+                    "content": [
+                        "通過訂閱我們的電子報，您提供了您的電子郵件地址以接收有關促銷、遊戲和新聞的更新。除法律要求外，您的電子郵件地址不會與第三方共享。"
+                    ]
+                },
+                {
+                    "title": "通信",
+                    "content": [
+                        "當您通過電子郵件或聊天聯繫我們以進行任何詢問時，您的個人信息，包括您的姓名和聯繫方式，可能會被保留以供記錄和質量保證之用。我們將採取一切預防措施，確保您的數據安全性和機密性。"
+                    ]
+                },
+                {
+                    "title": "我們收集哪些個人信息？",
+                    "content": [
+                        "我們收集和處理個人信息的原因如下：",
+                        "您的姓名、電子郵件地址和聯繫方式。",
+                        "用於我們平臺交易的支付詳細信息。",
+                        "您的瀏覽活動和遊戲偏好。"
+                    ]
+                },
+                {
+                    "title": "我們如何使用您的個人數據？",
+                    "content": [
+                        "您的數據將僅用於與提供服務、法律合規和改善用戶體驗相關的目的，包括：",
+                        "處理您的投注和帳戶交易。",
+                        "與您溝通促銷和服務更新。",
+                        "增強網站功能和用戶體驗。"
+                    ]
+                },
+                {
+                    "title": "我們與誰共享您的數據？",
+                    "content": [
+                        "我們可能會在法律要求的情況下與授權的第三方（如支付處理方、分析提供者和監管機構）共享您的數據。"
+                    ]
+                },
+                {
+                    "title": "您的權利是什麼？",
+                    "content": [
+                        "作為用戶，您有權：",
+                        "訪問我們持有的有關您的個人數據。",
+                        "請求更正不準確的數據。",
+                        "在特定條件下請求刪除您的個人信息。",
+                        "撤回數據處理的同意（如適用）。"
+                    ]
+                },
+                {
+                    "title": "聯繫我們",
+                    "content": [
+                        "如果您對您的個人數據有任何問題或疑慮，您可以通過以下方式聯繫我們的支持團隊：",
+                        "support@icggmaing.com"
+                    ]
+                }
+            ]
+        },
+        "CookiesPolicy": {
+            "title": "Cookies 政策",
+            "sections": [
+                {
+                    "title": "什麼是 Cookies？",
+                    "content": [
+                        "Cookies 是包含信息的小文件，當您在網站上查看信息時，網站會將其發送到您的計算機或移動設備。",
+                        "Cookies 幫助我們通過記住您的偏好來改善您的用戶體驗，使您更高效地使用網站。換句話說，Cookies 幫助您更輕鬆快速地在頁面之間導航。"
+                    ]
+                },
+                {
+                    "title": "icggmaing.com 的 Cookies",
+                    "content": [
+                        "在 icggmaing.com，我們使用 Cookies 來提供基本功能並簡化網站導航。此外，Cookies 還用於增強網站功能，例如存儲您的偏好。最後，我們使用 Cookies 通過提高網站性能來為您提供更好的用戶體驗。",
+                        "以下是我們網站上使用的三種主要類型的 Cookies：",
+                        "嚴格必要的 Cookies",
+                        "：這些 Cookies 負責網站功能、語言，並確保正確的網站元素以正確的方式加載。",
+                        "功能性 Cookies",
+                        "：這些 Cookies 記住用戶選擇、跟踪關聯信息、記住是否已訪問頁面，並根據偏好顯示內容。它們還為網站語言提供地理定位功能。",
+                        "性能 Cookies",
+                        "：用於跟踪用戶訪問網站的方式，執行內部匿名數據挖掘，測試不同的設計想法，並改進我們網站的佈局。",
+                        "請注意，playgame168.com 永遠不會使用任何形式的在線行為廣告 Cookies，也不允許任何第三方在我們的網站上這樣做。"
+                    ]
+                },
+                {
+                    "title": "管理 Cookies",
+                    "content": [
+                        "目前，我們無法為您提供啟用或禁用單個類別 Cookies 的選項。當您訪問我們的網站時，icggmaing.com 會在您的設備上放置一個 Cookie，並記住您的偏好，以確保您能繼續享受我們的服務。如果您在我們的 Cookies 瀏覽器欄上點擊接受，或者繼續使用我們的網站和服務，則被視為您已接受我們以本政策中描述的方式使用 Cookies。",
+                        "儘管如此，您的瀏覽器設置可以進行修改，以確保不接受來自任何網站的 Cookies。您可以在所選瀏覽器的幫助部分找到實施方法的說明。然而，出於安全原因，您可能會發現除非在您的設備上啟用了 Cookies，否則某些網站內容無法訪問。"
+                    ]
+                }
+            ]
         }
     }
 }

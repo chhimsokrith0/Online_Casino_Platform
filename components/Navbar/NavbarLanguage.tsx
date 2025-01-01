@@ -4,7 +4,6 @@ import React, { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
-import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
@@ -18,6 +17,19 @@ const NavbarLanguage: React.FC<NavbarLanguageProps> = ({ locale }) => {
   const dropdownRef = useRef<HTMLDivElement | null>(null);
   const dropdownMenuRef = useRef<HTMLDivElement | null>(null);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const languages = [
     { code: "en", name: "English", flag: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733640312/en_kthtlc.png" },
@@ -45,7 +57,6 @@ const NavbarLanguage: React.FC<NavbarLanguageProps> = ({ locale }) => {
   const currentLanguage = languages.find((lang) => lang.code === locale);
 
   const handleLanguageChange = (newLocale: string) => {
-    // const path = pathname.split("/").slice(2).join("/");
     const path = (pathname || "").split("/").slice(2).join("/");
     router.push(`/${newLocale}/${path}`);
     setIsDropdownOpen(false);
@@ -82,7 +93,7 @@ const NavbarLanguage: React.FC<NavbarLanguageProps> = ({ locale }) => {
       {/* Dropdown Button */}
       <button
         onClick={toggleDropdown}
-        className="flex items-center bg-gray-800 text-white px-3 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-gray-700 hover:bg-gray-700 transition"
+        className="flex items-center bg-gray-800 text-white px-3 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-gray-700 hover:bg-gray-700 transition w-full md:w-auto"
       >
         <Image
           src={currentLanguage?.flag || "/language/en.png"}
@@ -91,8 +102,9 @@ const NavbarLanguage: React.FC<NavbarLanguageProps> = ({ locale }) => {
           height={24}
           className="rounded-full"
         />
-        <FontAwesomeIcon icon={faChevronDown} className="ml-2 text-gray-400" />
-
+        {!isMobile && (
+          <FontAwesomeIcon icon={faChevronDown} className="ml-2 text-gray-400 text-sm md:text-base" />
+        )}
       </button>
 
       {/* Dropdown Menu */}
@@ -106,16 +118,16 @@ const NavbarLanguage: React.FC<NavbarLanguageProps> = ({ locale }) => {
               <li key={lang.code}>
                 <button
                   onClick={() => handleLanguageChange(lang.code)}
-                  className="flex items-center w-full px-4 py-2 hover:bg-gray-700 transition"
+                  className="flex items-center w-full px-4 py-2 hover:bg-gray-700 transition text-left"
                 >
                   <Image
                     src={lang.flag}
                     alt={lang.name}
                     width={20}
                     height={20}
-                    className="rounded-full mr-2"
+                    className="rounded-full mr-3"
                   />
-                  <span className="text-sm">{lang.name}</span>
+                  <span className="text-xs md:text-sm whitespace-nowrap">{lang.name}</span>
                 </button>
               </li>
             ))}
@@ -123,7 +135,6 @@ const NavbarLanguage: React.FC<NavbarLanguageProps> = ({ locale }) => {
         </div>
       )}
     </div>
-
   );
 };
 

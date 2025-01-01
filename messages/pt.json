@@ -633,7 +633,7 @@
             "myProfile": "Meu Perfil",
             "history": "Histórico",
             "rebate": "Reembolso",
-            "cashback": "Cashback",
+            "cashback": "Dinheiro de Volta",
             "totalBet": "Aposta Total",
             "redeemHistory": "Histórico de Resgates",
             "pointHistory": "Histórico de Pontos",
@@ -641,12 +641,19 @@
             "referral": "Indicação"
         },
         "profile": {
-            "phoneNumber": "Número de Telefone",
-            "joinedOn": "Data de Registro",
+            "title": "Perfil",
+            "joinedOn": "Entrou em",
+            "logout": "Sair",
+            "BronzeCard": "Cartão Bronze",
+            "ranking": "Classificação: Cashback Bronze 2%",
             "vipLevel": {
                 "current": "Nível Atual",
-                "upgrade": "Atualize Seu Nível VIP",
-                "progress": "Seu Progresso"
+                "upgrade": "Atualize seu Nível VIP",
+                "progress": "Seu progresso",
+                "bronze": "Bronze",
+                "silver": "Prata",
+                "points": "Pontos Atuais",
+                "exchangeReward": "Trocar Recompensa"
             },
             "wallet": {
                 "title": "Sua Carteira",
@@ -654,35 +661,48 @@
             },
             "rebateBalance": "Saldo de Reembolso",
             "cashbackBalance": "Saldo de Cashback",
-            "referralBalance": "Saldo de Indicação"
-        },
-        "totalBets": {
-            "title": "Apostas Totais",
-            "columns": {
-                "transactionDateTime": "Data-Hora da Transação",
-                "totalWinLose": "Total de Ganhos/Perdas",
-                "totalBets": "Apostas Totais"
+            "referralBalance": "Saldo de Indicações",
+            "totalBets": {
+                "title": "Apostas Totais",
+                "depositTurnover": "Volume de Depósito",
+                "turnover": "Volume",
+                "turnWinlose": "Lucro/Perda"
             },
-            "emptyState": {
-                "message": "Ainda não há nada aqui!"
+            "myPromotions": {
+                "title": "Minhas Promoções",
+                "cashback": "Dinheiro de Volta",
+                "rebate": "Reembolso"
             },
-            "totalBetAmount": "Valor Total Apostado: "
-        },
-        "promotions": {
-            "title": "Minhas Promoções",
-            "cashback": "Cashback",
-            "rebate": "Reembolso"
-        },
-        "actions": {
-            "exchangeReward": "Trocar Recompensa",
-            "logOut": "Sair"
-        },
-        "points": {
-            "currentPoints": "Pontos Atuais",
-            "progress": "Progresso",
-            "rank": {
-                "bronze": "Bronze",
-                "silver": "Prata"
+            "VIPLevelModal": {
+                "title": "Detalhes do Nível de Membro",
+                "upgradeTitle": "Atualize seu ",
+                "MemberLevel": "Nível de Membro",
+                "levels": {
+                    "bronze": "Bronze",
+                    "silver": "Prata",
+                    "gold": "Ouro",
+                    "diamond": "Diamante",
+                    "platinum": "Platina",
+                    "black": "Preto"
+                },
+                "challenges": {
+                    "title": "Desafios",
+                    "th1": "Desafios",
+                    "th2": "Progresso",
+                    "th3": "Ação",
+                    "list": {
+                        "task1": {
+                            "description": "Aumente o valor do depósito em 1.000,00 para avançar de nível",
+                            "progress": "50% Concluído",
+                            "action": "Depositar"
+                        },
+                        "task2": {
+                            "description": "Aumente o volume em 1.000,00 para avançar de nível",
+                            "progress": "30% Concluído",
+                            "action": "Apostar"
+                        }
+                    }
+                }
             }
         },
         "history": {
@@ -697,17 +717,18 @@
                 "receiveReferral": "Receber Indicação"
             },
             "columns": {
-                "amount": "Valor",
+                "amount": "Quantia",
                 "channel": "Canal",
                 "bankAccount": "Conta Bancária",
-                "depositDateTime": "Data-Hora do Depósito",
+                "depositDateTime": "Data - Hora do Depósito",
                 "status": "Status",
-                "successDateTime": "Data-Hora da Conclusão"
+                "successDateTime": "Data - Hora de Sucesso",
+                "nodata": "Nenhum dado disponível para"
             },
             "emptyState": {
                 "message": "Ainda não há nada aqui!"
             },
-            "totalDeposit": "Depósito Total: "
+            "total": "Total"
         },
         "rebate": {
             "title": "Reembolso",
@@ -718,10 +739,10 @@
             "emptyState": {
                 "message": "Ainda não há nada aqui!"
             },
-            "totalRebate": "Valor Total do Reembolso: "
+            "totalRebate": "Valor Total de Reembolso: "
         },
         "cashback": {
-            "title": "Cashback",
+            "title": "Dinheiro de Volta",
             "columns": {
                 "transactionDateTime": "Data-Hora da Transação",
                 "cashbackAmount": "Valor do Cashback"
@@ -729,7 +750,19 @@
             "emptyState": {
                 "message": "Ainda não há nada aqui!"
             },
-            "totalCashback": "Valor Total do Cashback: "
+            "totalCashback": "Valor Total do Cashback:"
+        },
+        "totalBet": {
+            "title": "Apostas Totais",
+            "columns": {
+                "transactionDateTime": "Data-Hora da Transação",
+                "totalWinLose": "Total de Ganhos/Perdas",
+                "totalBets": "Total de Apostas"
+            },
+            "emptyState": {
+                "message": "Ainda não há nada aqui!"
+            },
+            "totalBetAmount": "Valor Total das Apostas:"
         },
         "redeemHistory": {
             "title": "Histórico de Resgates",
@@ -749,7 +782,7 @@
                 "allRewards": "Todas as Recompensas:",
                 "totalUsedPoints": "Total de Pontos Usados:",
                 "totalFreeSpins": "Total de Giros Grátis:",
-                "totalAmountPerRound": "Valor Total por Rodada:"
+                "totalAmountPerRound": "Total por Rodada:"
             }
         },
         "pointHistory": {
@@ -757,7 +790,7 @@
             "columns": {
                 "transactionDateTime": "Data-Hora da Transação",
                 "type": "Tipo",
-                "turnover": "Volume de Jogo",
+                "turnover": "Volume",
                 "currentPoint": "Pontos Atuais"
             },
             "emptyState": {
@@ -785,12 +818,13 @@
                     "title": "Título",
                     "titlePlaceholder": "Digite o título",
                     "message": "Mensagem",
-                    "messagePlaceholder": "Digite algo aqui ...",
+                    "messagePlaceholder": "Digite algo aqui...",
                     "attachImage": "Anexar uma Imagem (Opcional)",
-                    "uploadInstructions": "Clique para fazer upload ou arraste e solte",
+                    "uploadInstructions": "Clique para enviar ou arraste e solte",
                     "allowedFileTypes": "WEBP, PNG ou JPG (3MB)."
                 },
                 "characterLimit": "0/300",
+                "UploadImage": "Enviar Imagem",
                 "sendMessageButton": "Enviar Mensagem"
             },
             "pagination": {
@@ -805,15 +839,15 @@
                 "totalReferral": "Total de Indicações",
                 "referralClick": "Cliques de Indicação",
                 "totalMember": "Total de Membros",
-                "totalTurnover": "Volume Total de Jogo",
+                "totalTurnover": "Volume Total",
                 "totalCashback": "Total de Cashback"
             },
             "copy": {
                 "referralLink": "Link de Indicação",
                 "referralCode": "Código de Indicação",
-                "copyText": "Copie seu código ou link de indicação para seus amigos. Quando eles se registrarem e jogarem, você receberá um reembolso."
+                "copyText": "Copie seu código ou link de indicação para seus amigos, e quando eles se registrarem e jogarem, você receberá um reembolso."
             },
-            "inviteFriends": "Convide Amigos",
+            "inviteFriends": "Convidar Amigos",
             "socialMedia": {
                 "facebook": "Facebook",
                 "telegram": "Telegram",
@@ -841,25 +875,25 @@
                     "totals": {
                         "totalRevenue": "Receita Total:"
                     }
-                },
-                "analytics": {
-                    "title": "Análises - Meça seu Desempenho",
-                    "metrics": {
-                        "income": {
-                            "title": "Renda",
-                            "today": "Renda de Hoje",
-                            "yesterday": "Ontem"
-                        },
-                        "turnover": {
-                            "title": "Volume",
-                            "today": "Volume de Hoje",
-                            "yesterday": "Ontem"
-                        },
-                        "cashback": {
-                            "title": "Cashback",
-                            "today": "Cashback de Hoje",
-                            "yesterday": "Ontem"
-                        }
+                }
+            },
+            "analytics": {
+                "title": "Análise - Avalie seu Desempenho",
+                "metrics": {
+                    "income": {
+                        "title": "Renda",
+                        "today": "Hoje",
+                        "yesterday": "Ontem"
+                    },
+                    "turnover": {
+                        "title": "Volume",
+                        "today": "Hoje",
+                        "yesterday": "Ontem"
+                    },
+                    "cashback": {
+                        "title": "Cashback",
+                        "today": "Hoje",
+                        "yesterday": "Ontem"
                     }
                 }
             }
@@ -1003,6 +1037,74 @@
         "signInSuccess": "Login realizado com sucesso!",
         "submitSignUp": "Cadastrar",
         "submitSignIn": "Entrar"
+    },
+    "wallet": {
+        "title": "Sua Carteira",
+        "history": "Histórico",
+        "tabs": {
+            "deposit": "Depósito",
+            "withdraw": "Retirada",
+            "transfer": "Transferência"
+        },
+        "deposit": {
+            "paymentMethod": "Método de Pagamento",
+            "methods": {
+                "abaBank": "Banco ABA",
+                "acledaBank": "Banco Acleda",
+                "qrCodeAbaBank": "QR Code Banco ABA"
+            },
+            "DepositAmount": {
+                "title": "Valor do Depósito",
+                "yourWallet": "Sua carteira",
+                "minMax": "Mín 100,00฿ ~ Máx 50.000,00฿",
+                "balance": "Saldo",
+                "buttons": {
+                    "100": "100฿",
+                    "300": "300฿",
+                    "500": "500฿",
+                    "1000": "1000฿"
+                },
+                "instructions": {
+                    "title": "Leia para um processamento mais rápido da transação",
+                    "points": {
+                        "1": "Crie uma nova transação toda vez antes de transferir dinheiro",
+                        "2": "O QR Code pode ser usado apenas uma vez",
+                        "3": "Não reutilize o QR Code",
+                        "4": "Conclua a transação dentro do tempo especificado"
+                    }
+                },
+                "backButton": "Voltar",
+                "nextButton": "Próximo Passo"
+            }
+        },
+        "withdraw": {
+            "withdrawalCondition": "Condição de Retirada",
+            "conditions": {
+                "depositTurnover": "Volume de Depósito",
+                "turnover": "Volume",
+                "turnWinlose": "Volume de Ganhos/Perdas"
+            },
+            "withdrawAmount": "Valor da Retirada",
+            "yourWallet": "Sua carteira",
+            "minMax": "Mín 500,00฿ ~ Máx 10.000,00฿",
+            "balance": "Saldo",
+            "buttons": {
+                "min": "Mín",
+                "25Percent": "25%",
+                "50Percent": "50%",
+                "max": "Máx"
+            },
+            "note": "Nota",
+            "notePlaceholder": "Digite algo aqui ...",
+            "characterLimit": "0/300",
+            "withdrawButton": "Retirar"
+        },
+        "transfer": {
+            "transferFrom": "Transferir De",
+            "yourWallet": "Sua carteira",
+            "transferButton": "Transferir para a Carteira Principal"
+        },
+        "line": "Line"
     },
     "questsHub": {
         "title": "Central de Missões",
@@ -1170,6 +1272,203 @@
                     "favorite": true
                 }
             }
+        }
+    },
+    "inviteAndBenefits": {
+        "title": "Convide e Benefícios",
+        "referralLinkTitle": "Link de Referência",
+        "referralLink": {
+            "label": "Link de Referência",
+            "placeholder": "https://ICGGaming.co?ref_code=IP7MSaJ9aH",
+            "copyButton": "Copiar"
+        },
+        "referralCodeTitle": "Código de Referência",
+        "referralCode": {
+            "label": "Código de Referência",
+            "placeholder": "IP7MSaJ9aH",
+            "copyButton": "Copiar"
+        },
+        "description": "Copie seu código ou link de referência para seus amigos, e quando eles se registrarem e jogarem, você receberá um reembolso.",
+        "socialMedia": {
+            "facebook": "Compartilhar no Facebook",
+            "twitter": "Compartilhar no Twitter",
+            "whatsapp": "Compartilhar no WhatsApp",
+            "telegram": "Compartilhar no Telegram"
+        }
+    },
+    "logoutConfirmation": {
+        "title": "Você não quer perder o jackpot de hoje!",
+        "message": "Tem certeza de que deseja sair?",
+        "buttons": {
+            "no": "NÃO",
+            "yes": "SIM"
+        }
+    },
+    "SecurityAndPolicy": {
+        "sidebar": {
+            "TermsandConditions": "Termos e Condições",
+            "PrivacyPolicy": "Política de Privacidade",
+            "CookiesPolicy": "Política de Cookies",
+            "activeItemMessage": "Use as guias acima para navegação"
+        },
+        "header": {
+            "title": "Segurança e Política"
+        },
+        "TermsandConditions": {
+            "title": "Termos e Condições",
+            "content": [
+                "Esta página contém informações explicando seus direitos ao acessar e usar o site icggaming.com. Os termos e condições se referem a jogos, promoções e bônus disponíveis em nosso site, que serão publicados periodicamente e incorporados aqui por referência."
+            ],
+            "sections": [
+                {
+                    "title": "Definições",
+                    "content": [
+                        "1.1 As seguintes disposições definem os termos e condições que regem seu acesso e participação em jogos ou serviços fornecidos pela PlayGame168. Estas disposições devem ser lidas em conjunto com as 'Regras de Aposta', a 'Política de Privacidade' e os Termos e Condições no jogo.",
+                        "1.2 'Jogos' referem-se ao sistema de jogos na internet da PlayGame168, que inclui apostas e jogos de azar. 'Dispositivo' significa qualquer plataforma que possa acessar nosso aplicativo, incluindo laptops, telefones e dispositivos portáteis. 'Software' inclui programas e arquivos necessários para acessar o site. 'Sportsbook' refere-se ao sistema de jogos na internet oferecido pela PlayGame168, e 'Serviços' englobam o Software e os Jogos."
+                    ]
+                },
+                {
+                    "title": "Uso do Site",
+                    "content": [
+                        "2.1 Você pode jogar somente se:",
+                        " Tiver 18 anos ou mais.",
+                        " Tiver permissão legal para jogar em seu país.",
+                        "2.2 Se descobrirmos que você não tem permissão para jogar, nos reservamos o direito de:",
+                        " Impedi-lo imediatamente de participar de jogos.",
+                        " Relatar você às autoridades competentes."
+                    ]
+                },
+                {
+                    "title": "Modificação",
+                    "content": [
+                        "3.1 Reservamo-nos o direito de alterar, atualizar ou modificar os Termos e Condições a nosso critério. O uso continuado do icggaming.com após alterações constituirá sua aceitação das mudanças."
+                    ]
+                },
+                {
+                    "title": "Propriedade Intelectual",
+                    "content": [
+                        "4.1 Todas as informações no icggaming.com, incluindo texto, gráficos e conteúdo de áudio, pertencem ao icggaming.com e seus licenciadores e são para uso pessoal e não comercial."
+                    ]
+                },
+                {
+                    "title": "Condições de Uso",
+                    "content": [
+                        "Você está agindo em sua capacidade pessoal e não em nome de outra pessoa.",
+                        "Você tem idade legal para jogar.",
+                        "Você não está usando dinheiro proveniente de atividades não autorizadas.",
+                        "Você manterá as informações da sua conta seguras.",
+                        "Você não carregará programas nocivos, como vírus."
+                    ]
+                },
+                {
+                    "title": "Registro e Associação",
+                    "content": [
+                        "Você deve fornecer informações precisas durante o registro. O icggaming.com reserva-se o direito de rejeitar inscrições ou solicitar verificação adicional de identificação."
+                    ]
+                },
+                {
+                    "title": "Colocação de Apostas",
+                    "content": [
+                        "As apostas só serão aceitas pela internet e devem estar em conformidade com os termos e condições. O icggaming.com reserva-se o direito de anular apostas caso ocorram erros ou seja detectada trapaça."
+                    ]
+                }
+            ]
+        },
+        "PrivacyPolicy": {
+            "title": "Política de Privacidade",
+            "sections": [
+                {
+                    "content": [
+                        "Esta Política de Privacidade descreve como lidamos com suas informações pessoais de acordo com o acesso e uso do site PlayGame168. Esta política garante que seus dados sejam tratados em conformidade com as leis de proteção de dados e reflete nosso compromisso em proteger sua privacidade."
+                    ]
+                },
+                {
+                    "title": "Newsletter",
+                    "content": [
+                        "Ao assinar nossa newsletter, você fornece seu endereço de e-mail para receber atualizações sobre promoções, jogos e notícias. Seu endereço de e-mail não será compartilhado com terceiros, a menos que exigido por lei."
+                    ]
+                },
+                {
+                    "title": "Correspondência",
+                    "content": [
+                        "Quando você nos contata por e-mail ou chat para quaisquer dúvidas, suas informações pessoais, incluindo seu nome e dados de contato, podem ser retidas para fins de registro e garantia de qualidade. Tomaremos todas as precauções para garantir a segurança e a confidencialidade de seus dados."
+                    ]
+                },
+                {
+                    "title": "Quais Informações Pessoais Coletamos Sobre Você?",
+                    "content": [
+                        "Coletamos e processamos informações pessoais para os seguintes motivos:",
+                        "Seu nome, endereço de e-mail e detalhes de contato.",
+                        "Detalhes de pagamento para transações em nossa plataforma.",
+                        "Sua atividade de navegação e preferências de jogos."
+                    ]
+                },
+                {
+                    "title": "Como Usaremos Seus Dados Pessoais?",
+                    "content": [
+                        "Seus dados serão usados apenas para fins relacionados à prestação de serviços, conformidade legal e melhoria da experiência do usuário, incluindo:",
+                        "Processamento de suas apostas e transações de conta.",
+                        "Comunicação de promoções e atualizações de serviços.",
+                        "Aprimoramento da funcionalidade do site e da experiência do usuário."
+                    ]
+                },
+                {
+                    "title": "Com Quem Compartilhamos Seus Dados?",
+                    "content": [
+                        "Podemos compartilhar seus dados com terceiros autorizados, como processadores de pagamento, provedores de análise e autoridades reguladoras, quando exigido por lei."
+                    ]
+                },
+                {
+                    "title": "Quais São Seus Direitos?",
+                    "content": [
+                        "Como usuário, você tem o direito de:",
+                        "Acessar os dados pessoais que possuímos sobre você.",
+                        "Solicitar correções de dados imprecisos.",
+                        "Solicitar a exclusão de suas informações pessoais em condições específicas.",
+                        "Retirar o consentimento para o processamento de dados, quando aplicável."
+                    ]
+                },
+                {
+                    "title": "Contato",
+                    "content": [
+                        "Se você tiver dúvidas ou preocupações sobre seus dados pessoais, pode entrar em contato com nossa equipe de suporte em:",
+                        "support@icggmaing.com"
+                    ]
+                }
+            ]
+        },
+        "CookiesPolicy": {
+            "title": "Política de Cookies",
+            "sections": [
+                {
+                    "title": "O que são Cookies?",
+                    "content": [
+                        "Cookies são pequenos arquivos que um site envia para seu computador ou dispositivo móvel enquanto você visualiza informações no site.",
+                        "Os cookies nos ajudam a melhorar sua experiência de usuário, lembrando suas preferências, permitindo que você use o site de maneira mais eficiente. Em outras palavras, os cookies ajudam você a navegar entre as páginas de forma mais fácil e rápida."
+                    ]
+                },
+                {
+                    "title": "Cookies no icggmaing.com",
+                    "content": [
+                        "No icggmaing.com, usamos cookies que são estritamente necessários para fornecer funções básicas e facilitar a navegação no site. Além disso, os cookies são usados para melhorar a funcionalidade do site, por exemplo, armazenando suas preferências. Por fim, usamos cookies para fornecer a você uma melhor experiência de usuário, melhorando o desempenho do nosso site.",
+                        "Abaixo estão três tipos principais de Cookies que usamos em nosso site:",
+                        "Cookies Estritamente Necessários",
+                        ": Estes cookies são responsáveis pela funcionalidade do site, idioma e garantem que os elementos corretos do site sejam carregados de maneira adequada.",
+                        "Cookies Funcionais",
+                        ": Estes lembram as escolhas do usuário, rastreiam informações de afiliados, lembram se uma página foi acessada antes e exibem conteúdo com base nas preferências. Eles também fornecem geolocalização para fins de idioma do site.",
+                        "Cookies de Desempenho",
+                        ": Usados para rastrear como os usuários visitam os sites, realizar mineração de dados anônima interna, testar diferentes ideias de design e melhorar o layout do nosso site.",
+                        "Observe que o playgame168.com nunca usará nenhum tipo de cookies de publicidade comportamental online, nem permitirá que terceiros o façam em nossos sites."
+                    ]
+                },
+                {
+                    "title": "Gerenciamento de Cookies",
+                    "content": [
+                        "Atualmente, não podemos oferecer a opção de ativar ou desativar categorias individuais de cookies. Quando você visita nosso site, o icggmaing.com coloca um cookie em seu dispositivo e lembrará suas preferências para garantir que você continue aproveitando nossos serviços. Se você clicou em Aceitar na barra de cookies do nosso navegador ou se continuou usando nosso site e serviços, presume-se que você aceitou o uso de Cookies da maneira descrita nesta política.",
+                        "No entanto, as configurações do seu navegador podem ser modificadas para garantir que ele não aceite cookies de nenhum site. Você pode encontrar instruções sobre como fazer isso na seção de ajuda do navegador escolhido. No entanto, por motivos de segurança, você pode descobrir que determinados conteúdos do site não estão acessíveis a menos que o uso de cookies esteja habilitado em seu dispositivo."
+                    ]
+                }
+            ]
         }
     }
 }

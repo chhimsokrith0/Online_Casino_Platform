@@ -1,12 +1,13 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 const Sidebar = () => {
   const t = useTranslations("accountInformation");
-  const [activeItem, setActiveItem] = useState<string>("");
+  const pathname = usePathname(); // Get the current route dynamically
 
   const menuItems = [
     { label: t("menu.myProfile"), link: "/account-information/profile" },
@@ -20,18 +21,14 @@ const Sidebar = () => {
     { label: t("menu.referral"), link: "/account-information/affiliate" },
   ];
 
-  useEffect(() => {
-    const storedActiveItem = localStorage.getItem("activeMenuItem");
-    if (storedActiveItem) {
-      setActiveItem(storedActiveItem);
-    } else {
-      setActiveItem("My Profile");
-    }
-  }, []);
+  const isActiveMenuItem = (itemLink: string): boolean => {
+    if (!pathname) return false;
 
-  const handleItemClick = (label: string) => {
-    setActiveItem(label);
-    localStorage.setItem("activeMenuItem", label);
+    // Normalize both the pathname and itemLink to ensure they match accurately
+    const normalizedPathname = pathname.replace(/\/$/, ""); // Remove trailing slash
+    const normalizedItemLink = itemLink.replace(/\/$/, ""); // Remove trailing slash
+
+    return normalizedPathname === normalizedItemLink || normalizedPathname.startsWith(normalizedItemLink);
   };
 
   return (
@@ -41,11 +38,10 @@ const Sidebar = () => {
           <li key={index} className="flex">
             <Link
               href={item.link}
-              onClick={() => handleItemClick(item.label)}
               className={`flex items-center px-4 py-3 w-full rounded-full transition ${
-                activeItem === item.label
-                  ? "bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-bold"
-                  : "text-gray-300 hover:bg-gray-700"
+                isActiveMenuItem(item.link)
+                  ? "bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-bold shadow-lg"
+                  : "text-gray-300 hover:bg-gray-700 hover:text-white"
               }`}
             >
               {item.label}

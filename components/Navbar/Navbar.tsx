@@ -61,20 +61,17 @@ const Navbar: React.FC<NavbarProps> = ({ locale }) => {
               <div>
                 <div
                   className="grid grid-cols-4 gap-4 items-center"
-
                 >
                   {/* Logo Section */}
                   <div className="flex items-center justify-start">
                     <NavbarLogo locale={locale} />
                   </div>
-
                   {/* Wallet Section */}
                   <div className="flex items-center justify-center">
                     <div className="ml-24">
                       <NavbarWallet locale={locale} />
                     </div>
                   </div>
-
                   {/* Bronze Level Icon Section */}
                   <div className="flex items-center justify-center">
                     <div className="mr-[-100px]" onClick={toggleProfileModal}>
@@ -84,20 +81,14 @@ const Navbar: React.FC<NavbarProps> = ({ locale }) => {
                         width={30}
                         height={30}
                         className="rounded-full"
-
                       />
                     </div>
                   </div>
-
                   {/* Language Selector Section */}
                   <div className="flex items-center justify-end">
                     <NavbarLanguage locale={locale} />
                   </div>
                 </div>
-
-
-
-
                 <br />
                 <br />
                 <br />
@@ -106,11 +97,9 @@ const Navbar: React.FC<NavbarProps> = ({ locale }) => {
             </>
           ) : (
             <>
-
               <div>
                 <div
                   className="grid grid-cols-3 gap-4 items-center"
-
                 >
                   {/* Logo Section */}
                   <div className="flex items-center justify-start">
@@ -123,15 +112,12 @@ const Navbar: React.FC<NavbarProps> = ({ locale }) => {
                       <NavbarMobile t={t} locale={locale} toggleModal={toggleModal} />
                     </div>
                   </div>
-
                   {/* Language Selector Section */}
                   <div className="flex items-center justify-end">
                     <NavbarLanguage locale={locale} />
                   </div>
                 </div>
-
               </div>
-
             </>
           )
         ) : (
@@ -139,11 +125,9 @@ const Navbar: React.FC<NavbarProps> = ({ locale }) => {
             <>
               <NavbarWallet locale={locale} />
               <NavbarLanguage locale={locale} />
-
             </>
           ) : (
             <>
-
               <NavbarButtons t={t} toggleModal={toggleModal} />
               <NavbarLanguage locale={locale} />
             </>
@@ -169,3 +153,5 @@ const Navbar: React.FC<NavbarProps> = ({ locale }) => {
 };
 
 export default Navbar;
+
+

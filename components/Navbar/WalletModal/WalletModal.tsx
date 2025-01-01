@@ -95,14 +95,14 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
 
   // Render modal using React Portal to avoid stacking context issues
   return ReactDOM.createPortal(
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-70 ">
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-75 backdrop-blur-sm">
       <div
         ref={modalRef}
-        className="bg-gray-800 rounded-lg w-full max-w-lg h-[650px] p-6 text-white relative shadow-lg flex flex-col"
+        className="bg-gray-900 rounded-2xl w-full max-w-3xl h-[650px] p-8 text-white shadow-2xl flex flex-col relative"
       >
         {/* Close Button */}
         <button
-          className="absolute top-3 right-3 text-gray-400 hover:text-white text-xl focus:outline-none"
+          className="absolute top-4 right-4 text-gray-400 hover:text-white text-2xl focus:outline-none"
           onClick={handleClose}
           aria-label="Close"
         >
@@ -110,36 +110,44 @@ const WalletModal: React.FC<WalletModalProps> = ({ isOpen, onClose }) => {
         </button>
 
         {/* Header */}
-        <div className="flex justify-between items-center mb-4">
-          <h2 className="text-lg font-bold">{ t("title") }</h2>
+        <div className="flex justify-between items-center mb-6">
+          <h2 className="text-xl font-extrabold text-white tracking-wide">
+            {t("title")}
+          </h2>
           <Link
             href="/account-information/transactions"
             onClick={() => {
-              // Call onClose to hide the modal when "History" is clicked
               onClose();
             }}
-            className="flex items-center gap-2 text-gray-400 hover:text-yellow-500 transition"
+            className="flex items-center gap-2 text-gray-400 hover:text-yellow-500 transition duration-200"
           >
             <FontAwesomeIcon icon={faClock} />
-            <span className="text-sm">History</span>
+            <span className="text-sm font-medium">{t("history")}</span>
           </Link>
         </div>
 
-
         {/* Tabs */}
-        <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
+        <div className="mb-6">
+          <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
+        </div>
 
         {/* Tab Content */}
-        <div ref={contentRef} className="flex-1 overflow-y-auto">
+        <div
+          ref={contentRef}
+          className="flex-1 overflow-y-auto bg-gray-800 rounded-lg p-4 shadow-inner"
+        >
           {activeTab === "deposit" && <DepositTab />}
           {activeTab === "withdraw" && <WithdrawTab />}
           {activeTab === "transfer" && <TransferTab />}
         </div>
 
         {/* Footer */}
-        <Footer />
+        <div className="mt-6">
+          <Footer />
+        </div>
       </div>
-    </div>,
+    </div>
+    ,
     document.body // Portal renders outside of any stacking context
   );
 };

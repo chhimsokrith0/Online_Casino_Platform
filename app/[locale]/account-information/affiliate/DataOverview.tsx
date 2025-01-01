@@ -6,14 +6,14 @@ import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-
+import { useTranslations } from "next-intl";
 const DataOverview = () => {
   const [activeTab, setActiveTab] = useState("Total Revenue");
   const [startDate, setStartDate] = useState<Date | undefined>(undefined);
   const [endDate, setEndDate] = useState<Date | undefined>(undefined);
   const [isDatePickerVisible, setIsDatePickerVisible] = useState(false);
-
-  const tabs = ["Total Revenue", "Members", "Receive Referral"];
+  const t = useTranslations("accountInformation.referral.dataOverview");
+  const tabs = [t("tabs.totalRevenue"), t("tabs.members"), t("tabs.receiveReferral")];
 
   const handleTabClick = (tab: string) => {
     setActiveTab(tab);
@@ -30,14 +30,14 @@ const DataOverview = () => {
   };
 
   return (
-    <div className="p-6 bg-gray-900 rounded-lg shadow-lg text-white">
+    <div className="p-4 md:p-6 bg-gray-900 rounded-lg shadow-lg text-white">
       {/* Header */}
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="text-lg font-bold">Data Overview</h2>
-        <div className="relative">
+      <div className="flex flex-col md:flex-row justify-between items-center mb-4 gap-4">
+        <h2 className="text-base md:text-lg font-bold">{t("title")}</h2>
+        <div className="relative w-full md:w-auto">
           <button
             onClick={toggleDatePicker}
-            className="flex items-center gap-2 bg-gray-700 px-4 py-2 rounded-lg text-gray-300 hover:bg-gray-600 transition"
+            className="flex items-center gap-2 bg-gray-700 px-4 py-2 rounded-lg text-gray-300 hover:bg-gray-600 transition w-full md:w-auto"
           >
             <FontAwesomeIcon icon={faCalendar} />
             <span>
@@ -63,16 +63,15 @@ const DataOverview = () => {
       </div>
 
       {/* Tabs */}
-      <div className="flex gap-6 border-b border-gray-700 mb-6">
+      <div className="flex gap-2 md:gap-6 border-b border-gray-700 mb-6 overflow-x-auto">
         {tabs.map((tab) => (
           <button
             key={tab}
             onClick={() => handleTabClick(tab)}
-            className={`pb-2 font-semibold transition ${
-              activeTab === tab
+            className={`pb-2 font-semibold whitespace-nowrap transition ${activeTab === tab
                 ? "text-yellow-500 border-b-2 border-yellow-500"
                 : "text-gray-400 hover:text-gray-300"
-            }`}
+              }`}
           >
             {tab}
           </button>
@@ -83,9 +82,9 @@ const DataOverview = () => {
       <div className="overflow-x-auto bg-gray-800 rounded-lg p-4">
         <table className="min-w-full">
           <thead>
-            <tr className="text-gray-400 text-sm">
-              <th className="py-3 px-4 text-left">Date</th>
-              <th className="py-3 px-4 text-right">Referral</th>
+            <tr className="text-gray-400 text-xs md:text-sm">
+              <th className="py-3 px-4 text-left">{t("table.columns.date")}</th>
+              <th className="py-3 px-4 text-right">{t("table.columns.referral")}</th>
             </tr>
           </thead>
           <tbody>
@@ -101,7 +100,7 @@ const DataOverview = () => {
                   height={64}
                   className="mx-auto mb-4"
                 />
-                <p>There&apos;s nothing here yet!</p>
+                <p className="text-sm md:text-base">{t("table.emptyState.message")}</p>
               </td>
             </tr>
           </tbody>
@@ -109,7 +108,7 @@ const DataOverview = () => {
       </div>
 
       {/* Footer */}
-      <div className="flex justify-between items-center mt-6 text-gray-400 text-sm">
+      <div className="flex flex-col md:flex-row justify-between items-center mt-6 text-gray-400 text-xs md:text-sm gap-4">
         {/* Pagination */}
         <div className="flex items-center gap-2">
           <button className="px-3 py-1 bg-gray-700 rounded-l-lg hover:bg-gray-600 transition">
@@ -123,7 +122,7 @@ const DataOverview = () => {
 
         {/* Total Revenue */}
         <div>
-          <span>Total Revenue: </span>
+          <span>{t("table.totals.totalRevenue")}</span>
           <span className="font-bold text-yellow-500">0.00฿</span>
         </div>
       </div>

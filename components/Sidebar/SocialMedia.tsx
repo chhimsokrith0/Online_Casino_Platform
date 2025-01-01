@@ -20,7 +20,8 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ isCollapsed }) => {
 
       {/* Line Section */}
       {!isCollapsed && (
-        <Link href="https://line.me/R/ti/p/@playgame3">
+        <Link href="https://line.me" target="_blank"
+        rel="noopener noreferrer">
           <div className="flex items-center gap-3 px-4 py-2 bg-gradient-to-r from-green-500 to-green-400 rounded-lg shadow-md hover:shadow-lg transition">
             <FontAwesomeIcon icon={faLine} className="text-white text-lg" />
             <span className="text-white font-semibold">Line</span>
@@ -41,9 +42,11 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ isCollapsed }) => {
       <div className={`flex ${isCollapsed ? "flex-col items-center gap-4" : "space-x-4 mt-4 justify-center"}`}>
         {/* Line Icon */}
         <div className="relative group">
-          <Link href="https://line.me/R/ti/p/@playgame3"
+          <Link href="https://line.me"
             className="w-12 h-12 rounded-full bg-gradient-to-r from-green-500 to-green-400 shadow-md flex items-center justify-center transform hover:scale-110 transition"
             aria-label="Line"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faLine} className="text-white text-2xl" />
           </Link>
@@ -56,12 +59,14 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ isCollapsed }) => {
 
         {/* Telegram Icon */}
         <div className="relative group">
-          <Link href="https://t.me/playgame168_supportbot"
+          <a href="https://telegram.org/"
             className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-blue-400 shadow-md flex items-center justify-center transform hover:scale-110 transition"
             aria-label="Telegram"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faTelegram} className="text-white text-2xl" />
-          </Link>
+          </a>
           {isCollapsed && (
             <span className="absolute left-14 top-1/2 -translate-y-1/2 w-max px-2 py-1 bg-gray-900 text-white text-xs rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
               Telegram

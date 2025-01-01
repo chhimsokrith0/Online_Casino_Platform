@@ -1,12 +1,14 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 const Sidebar = () => {
-  const [activeItem, setActiveItem] = useState<string>("");
   const t = useTranslations("settings");
+  const pathname = usePathname(); // Dynamically get the current route
+  const [activeItem, setActiveItem] = useState<string>("");
 
   const menuItems = [
     { label: t("menu.general"), link: "/general-setting/general" },
@@ -16,20 +18,32 @@ const Sidebar = () => {
   ];
 
   useEffect(() => {
-    // Load the active menu item from localStorage when the component mounts
-    const storedActiveItem = localStorage.getItem("activeMenuItem");
-    if (storedActiveItem) {
-      setActiveItem(storedActiveItem);
-    } else {
-      // Set default active item to "General"
-      setActiveItem("General");
+    if (!pathname) return;
+
+    // Automatically set activeItem based on the current pathname
+    const matchedItem = menuItems.find((item) => {
+      const normalizedPathname = pathname.replace(/\/$/, ""); // Remove trailing slash
+      const normalizedItemLink = item.link.replace(/\/$/, ""); // Remove trailing slash
+      return normalizedPathname === normalizedItemLink || normalizedPathname.startsWith(normalizedItemLink);
+    });
+
+    if (matchedItem) {
+      setActiveItem(matchedItem.label);
+      localStorage.setItem("activeMenuItem", matchedItem.label); // Save active item to localStorage
+    }
+  }, [pathname, menuItems]);
+
+  useEffect(() => {
+    // Load active item from localStorage on mount
+    const savedActiveItem = localStorage.getItem("activeMenuItem");
+    if (savedActiveItem) {
+      setActiveItem(savedActiveItem);
     }
   }, []);
 
   const handleItemClick = (label: string) => {
-    setActiveItem(label);
-    // Save the active menu item to localStorage
-    localStorage.setItem("activeMenuItem", label);
+    setActiveItem(label); // Manually set active item when clicked
+    localStorage.setItem("activeMenuItem", label); // Save active item to localStorage
   };
 
   return (
@@ -42,7 +56,7 @@ const Sidebar = () => {
               onClick={() => handleItemClick(item.label)}
               className={`flex items-center px-4 py-3 w-full rounded-full transition ${
                 activeItem === item.label
-                  ? "bg-yellow-500 text-black font-bold"
+                  ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-bold shadow-md"
                   : "text-gray-300 hover:bg-gray-700"
               }`}
             >

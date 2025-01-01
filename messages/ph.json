@@ -688,55 +688,75 @@
       "history": "Kasaysayan",
       "rebate": "Rebate",
       "cashback": "Cashback",
-      "totalBet": "Kabuuang Pustahan",
-      "redeemHistory": "Kasaysayan ng Pag-redeem",
+      "totalBet": "Kabuuang Taya",
+      "redeemHistory": "Kasaysayan ng Pagtubos",
       "pointHistory": "Kasaysayan ng Puntos",
       "personalMessage": "Personal na Mensahe",
-      "referral": "Referral"
+      "referral": "Rekomendasyon"
     },
     "profile": {
-      "phoneNumber": "Numero ng Telepono",
+      "title": "Profile",
       "joinedOn": "Sumali Noong",
+      "logout": "Mag-Logout",
+      "BronzeCard": "Bronze Card",
+      "ranking": "Ranggo: Bronze Cashback 2%",
       "vipLevel": {
         "current": "Kasalukuyang Antas",
-        "upgrade": "I-upgrade ang Iyong VIP Antas",
-        "progress": "Ang Iyong Pag-unlad"
+        "upgrade": "I-upgrade ang Iyong VIP Level",
+        "progress": "Ang Iyong Pag-unlad",
+        "bronze": "Bronze",
+        "silver": "Silver",
+        "points": "Kasalukuyang Puntos",
+        "exchangeReward": "Palitan ng Gantimpala"
       },
       "wallet": {
         "title": "Ang Iyong Wallet",
         "balance": "Balanse"
       },
-      "rebateBalance": "Rebate Balanse",
-      "cashbackBalance": "Cashback Balanse",
-      "referralBalance": "Referral Balanse"
-    },
-    "totalBets": {
-      "title": "Kabuuang Pustahan",
-      "columns": {
-        "transactionDateTime": "Petsa-Oras ng Transaksyon",
-        "totalWinLose": "Kabuuang Panalo/Talo",
-        "totalBets": "Kabuuang Pustahan"
+      "rebateBalance": "Rebate na Balanse",
+      "cashbackBalance": "Cashback na Balanse",
+      "referralBalance": "Referral na Balanse",
+      "totalBets": {
+        "title": "Kabuuang Taya",
+        "depositTurnover": "Pag-ikot ng Deposito",
+        "turnover": "Pag-ikot",
+        "turnWinlose": "Panalo/Talo sa Pag-ikot"
       },
-      "emptyState": {
-        "message": "Wala pa dito!"
+      "myPromotions": {
+        "title": "Aking Mga Promosyon",
+        "cashback": "Cashback",
+        "rebate": "Rebate"
       },
-      "totalBetAmount": "Kabuuang Halaga ng Pustahan: "
-    },
-    "promotions": {
-      "title": "Aking Kampanya",
-      "cashback": "Cashback",
-      "rebate": "Rebate"
-    },
-    "actions": {
-      "exchangeReward": "Ipalit ang Gantimpala",
-      "logOut": "Mag-logout"
-    },
-    "points": {
-      "currentPoints": "Kasalukuyang Puntos",
-      "progress": "Pag-unlad",
-      "rank": {
-        "bronze": "Tanso",
-        "silver": "Pilak"
+      "VIPLevelModal": {
+        "title": "Mga Detalye ng Antas ng Miyembro",
+        "upgradeTitle": "I-upgrade ang Iyong ",
+        "MemberLevel": "Antas ng Miyembro",
+        "levels": {
+          "bronze": "Bronze",
+          "silver": "Silver",
+          "gold": "Gold",
+          "diamond": "Diamond",
+          "platinum": "Platinum",
+          "black": "Black"
+        },
+        "challenges": {
+          "title": "Mga Hamon",
+          "th1": "Mga Hamon",
+          "th2": "Pag-unlad",
+          "th3": "Aksyon",
+          "list": {
+            "task1": {
+              "description": "Dagdagan ang Halaga ng Deposito ng 1,000.00 upang Mag-Level Up",
+              "progress": "50% Kumpleto",
+              "action": "Magdeposito"
+            },
+            "task2": {
+              "description": "Dagdagan ang Halaga ng Pag-ikot ng 1,000.00 upang Mag-Level Up",
+              "progress": "30% Kumpleto",
+              "action": "Tumaya"
+            }
+          }
+        }
       }
     },
     "history": {
@@ -744,52 +764,65 @@
       "tabs": {
         "deposit": "Deposito",
         "withdraw": "Pag-withdraw",
-        "bet": "Pustahan",
+        "bet": "Taya",
         "receivePromotion": "Tumanggap ng Promosyon",
         "receiveRebate": "Tumanggap ng Rebate",
         "receiveCashback": "Tumanggap ng Cashback",
-        "receiveReferral": "Tumanggap ng Referral"
+        "receiveReferral": "Tumanggap ng Rekomendasyon"
       },
       "columns": {
         "amount": "Halaga",
         "channel": "Kanal",
         "bankAccount": "Bank Account",
-        "depositDateTime": "Petsa-Oras ng Deposito",
+        "depositDateTime": "Petsa - Oras ng Deposito",
         "status": "Katayuan",
-        "successDateTime": "Petsa-Oras ng Tagumpay"
+        "successDateTime": "Petsa - Oras ng Tagumpay",
+        "nodata": "Walang magagamit na data para sa"
       },
       "emptyState": {
         "message": "Wala pa dito!"
       },
-      "totalDeposit": "Kabuuang Deposito: "
+      "total": "Kabuuan"
     },
     "rebate": {
       "title": "Rebate",
       "columns": {
-        "transactionDateTime": "Petsa-Oras ng Transaksyon",
+        "transactionDateTime": "Petsa - Oras ng Transaksyon",
         "rebateAmount": "Halaga ng Rebate"
       },
       "emptyState": {
         "message": "Wala pa dito!"
       },
-      "totalRebate": "Kabuuang Halaga ng Rebate: "
+      "totalRebate": "Kabuuang Halaga ng Rebate:"
     },
     "cashback": {
       "title": "Cashback",
       "columns": {
-        "transactionDateTime": "Petsa-Oras ng Transaksyon",
+        "transactionDateTime": "Petsa - Oras ng Transaksyon",
         "cashbackAmount": "Halaga ng Cashback"
       },
       "emptyState": {
         "message": "Wala pa dito!"
       },
-      "totalCashback": "Kabuuang Halaga ng Cashback: "
+      "totalCashback": "Kabuuang Halaga ng Cashback:"
+    },
+    "totalBet": {
+      "title": "Kabuuang Taya",
+      "columns": {
+        "transactionDateTime": "Petsa - Oras ng Transaksyon",
+        "totalWinLose": "Kabuuang Panalo/Talo",
+        "totalBets": "Kabuuang Taya"
+      },
+      "emptyState": {
+        "message": "Wala pa dito!"
+      },
+      "totalBetAmount": "Kabuuang Halaga ng Taya:"
     },
     "redeemHistory": {
-      "title": "Kasaysayan ng Pag-redeem",
+      "title": "Kasaysayan ng Pagtubos",
       "columns": {
-        "no": "Hindi.",
-        "transactionDateTime": "Petsa-Oras ng Transaksyon",
+        "no": "No.",
+        "transactionDateTime": "Petsa - Oras ng Transaksyon",
         "typeOfReward": "Uri ng Gantimpala",
         "reward": "Gantimpala",
         "status": "Katayuan",
@@ -800,18 +833,18 @@
         "message": "Wala pa dito!"
       },
       "totals": {
-        "allRewards": "Lahat ng Gantimpala:",
+        "allRewards": "Kabuuang Lahat ng Gantimpala:",
         "totalUsedPoints": "Kabuuang Ginamit na Puntos:",
         "totalFreeSpins": "Kabuuang Libreng Spins:",
-        "totalAmountPerRound": "Kabuuang Halaga Bawat Round:"
+        "totalAmountPerRound": "Kabuuang Halaga sa bawat Round:"
       }
     },
     "pointHistory": {
       "title": "Kasaysayan ng Puntos",
       "columns": {
-        "transactionDateTime": "Petsa-Oras ng Transaksyon",
+        "transactionDateTime": "Petsa - Oras ng Transaksyon",
         "type": "Uri",
-        "turnover": "Turnover",
+        "turnover": "Pag-ikot",
         "currentPoint": "Kasalukuyang Puntos"
       },
       "emptyState": {
@@ -823,10 +856,10 @@
       "title": "Personal na Mensahe",
       "tabs": {
         "inbox": "Inbox",
-        "send": "Magpadala"
+        "send": "Ipadala"
       },
       "emptyState": {
-        "message": "Walang natagpuang resulta"
+        "message": "Walang Resulta Natagpuan"
       },
       "actions": {
         "newMessage": "Bagong Mensahe"
@@ -837,14 +870,15 @@
           "sendTo": "Ipadala Sa",
           "admin": "Admin",
           "title": "Pamagat",
-          "titlePlaceholder": "Ilagay ang Pamagat",
+          "titlePlaceholder": "Ilagay ang pamagat",
           "message": "Mensahe",
-          "messagePlaceholder": "Sumulat ng isang bagay dito ...",
-          "attachImage": "Maglakip ng Imahe (Opsyonal)",
-          "uploadInstructions": "I-click o i-drag para mag-upload",
+          "messagePlaceholder": "Mag-type ng isang bagay dito ...",
+          "attachImage": "Maglakip ng Larawan (Opsyonal)",
+          "uploadInstructions": "Mag-click upang mag-upload o i-drag at i-drop",
           "allowedFileTypes": "WEBP, PNG, o JPG (3MB)."
         },
         "characterLimit": "0/300",
+        "UploadImage": "I-upload ang Larawan",
         "sendMessageButton": "Ipadala ang Mensahe"
       },
       "pagination": {
@@ -853,19 +887,19 @@
       }
     },
     "referral": {
-      "title": "Referral",
+      "title": "Rekomendasyon",
       "stats": {
         "incomeToday": "Kita Ngayon",
-        "totalReferral": "Kabuuang Referral",
-        "referralClick": "Referral Click",
+        "totalReferral": "Kabuuang Rekomendasyon",
+        "referralClick": "Pag-click ng Rekomendasyon",
         "totalMember": "Kabuuang Miyembro",
-        "totalTurnover": "Kabuuang Turnover",
+        "totalTurnover": "Kabuuang Pag-ikot",
         "totalCashback": "Kabuuang Cashback"
       },
       "copy": {
-        "referralLink": "Referral Link",
-        "referralCode": "Referral Code",
-        "copyText": "Ipadala ang iyong referral code o link sa iyong mga kaibigan, at makakuha ng rebate kapag naglaro sila."
+        "referralLink": "Link ng Rekomendasyon",
+        "referralCode": "Code ng Rekomendasyon",
+        "copyText": "Kopyahin ang iyong code o link ng rekomendasyon at ibahagi ito sa iyong mga kaibigan. Kapag sila ay nagparehistro at naglaro, makakatanggap ka ng rebate."
       },
       "inviteFriends": "Mag-imbita ng mga Kaibigan",
       "socialMedia": {
@@ -875,19 +909,19 @@
         "whatsapp": "WhatsApp"
       },
       "actions": {
-        "transfer": "Ilipat"
+        "transfer": "Paglipat"
       },
       "dataOverview": {
-        "title": "Pangkalahatang-ideya ng Data",
+        "title": "Pangkalahatang Datos",
         "tabs": {
           "totalRevenue": "Kabuuang Kita",
           "members": "Mga Miyembro",
-          "receiveReferral": "Tumanggap ng Referral"
+          "receiveReferral": "Tumanggap ng Rekomendasyon"
         },
         "table": {
           "columns": {
             "date": "Petsa",
-            "referral": "Referral"
+            "referral": "Rekomendasyon"
           },
           "emptyState": {
             "message": "Wala pa dito!"
@@ -895,25 +929,25 @@
           "totals": {
             "totalRevenue": "Kabuuang Kita:"
           }
-        },
-        "analytics": {
-          "title": "Analytics - Sukatin ang Iyong Pagganap",
-          "metrics": {
-            "income": {
-              "title": "Kita",
-              "today": "Kita Ngayon",
-              "yesterday": "Kita Kahapon"
-            },
-            "turnover": {
-              "title": "Turnover",
-              "today": "Turnover Ngayon",
-              "yesterday": "Turnover Kahapon"
-            },
-            "cashback": {
-              "title": "Cashback",
-              "today": "Cashback Ngayon",
-              "yesterday": "Cashback Kahapon"
-            }
+        }
+      },
+      "analytics": {
+        "title": "Analytics - Sukatin ang Iyong Pagganap",
+        "metrics": {
+          "income": {
+            "title": "Kita",
+            "today": "Kita Ngayon",
+            "yesterday": "Kita Kahapon"
+          },
+          "turnover": {
+            "title": "Pag-ikot",
+            "today": "Pag-ikot Ngayon",
+            "yesterday": "Pag-ikot Kahapon"
+          },
+          "cashback": {
+            "title": "Cashback",
+            "today": "Cashback Ngayon",
+            "yesterday": "Cashback Kahapon"
           }
         }
       }
@@ -1057,6 +1091,74 @@
     "signInSuccess": "Matagumpay na pag-login!",
     "submitSignUp": "Magrehistro",
     "submitSignIn": "Mag-login"
+  },
+  "wallet": {
+    "title": "Ang Iyong Wallet",
+    "history": "Kasaysayan",
+    "tabs": {
+      "deposit": "Deposito",
+      "withdraw": "Pag-withdraw",
+      "transfer": "Paglipat"
+    },
+    "deposit": {
+      "paymentMethod": "Paraan ng Pagbabayad",
+      "methods": {
+        "abaBank": "ABA Bank",
+        "acledaBank": "Acleda Bank",
+        "qrCodeAbaBank": "QR Code ABA Bank"
+      },
+      "DepositAmount": {
+        "title": "Halaga ng Deposito",
+        "yourWallet": "Ang iyong wallet",
+        "minMax": "Min 100.00฿ ~ Max 50,000.00฿",
+        "balance": "Balanse",
+        "buttons": {
+          "100": "100฿",
+          "300": "300฿",
+          "500": "500฿",
+          "1000": "1000฿"
+        },
+        "instructions": {
+          "title": "Mangyaring basahin para sa mas mabilis na pagproseso ng transaksyon",
+          "points": {
+            "1": "Gumawa ng bagong transaksyon sa bawat oras bago maglipat ng pera",
+            "2": "Ang QR Code ay maaaring magamit nang isang beses lamang",
+            "3": "Huwag gamitin muli ang QR Code",
+            "4": "Tapusin ang transaksyon sa loob ng itinakdang oras"
+          }
+        },
+        "backButton": "Bumalik",
+        "nextButton": "Susunod na Hakbang"
+      }
+    },
+    "withdraw": {
+      "withdrawalCondition": "Kundisyon sa Pag-withdraw",
+      "conditions": {
+        "depositTurnover": "Paggalaw ng Deposito",
+        "turnover": "Paggalaw",
+        "turnWinlose": "Kita at Pagkatalo"
+      },
+      "withdrawAmount": "Halaga ng Pag-withdraw",
+      "yourWallet": "Ang iyong wallet",
+      "minMax": "Min 500.00฿ ~ Max 10,000.00฿",
+      "balance": "Balanse",
+      "buttons": {
+        "min": "Min",
+        "25Percent": "25%",
+        "50Percent": "50%",
+        "max": "Max"
+      },
+      "note": "Tala",
+      "notePlaceholder": "Maglagay ng mensahe dito ...",
+      "characterLimit": "0/300",
+      "withdrawButton": "I-withdraw"
+    },
+    "transfer": {
+      "transferFrom": "Ilipat Mula sa",
+      "yourWallet": "Ang iyong wallet",
+      "transferButton": "Ilipat sa Pangunahing Wallet"
+    },
+    "line": "Line"
   },
   "questsHub": {
     "title": "Sentro ng Misyon",
@@ -1224,6 +1326,203 @@
           "favorite": true
         }
       }
+    }
+  },
+  "inviteAndBenefits": {
+    "title": "Mag-imbita at Mga Benepisyo",
+    "referralLinkTitle": "Link ng Referral",
+    "referralLink": {
+      "label": "Link ng Referral",
+      "placeholder": "https://ICGGaming.co?ref_code=IP7MSaJ9aH",
+      "copyButton": "Kopyahin"
+    },
+    "referralCodeTitle": "Code ng Referral",
+    "referralCode": {
+      "label": "Code ng Referral",
+      "placeholder": "IP7MSaJ9aH",
+      "copyButton": "Kopyahin"
+    },
+    "description": "Kopyahin ang iyong referral code o link sa iyong mga kaibigan, at kapag sila ay nagrehistro at naglaro ng laro, makakakuha ka ng rebate.",
+    "socialMedia": {
+      "facebook": "Ibahagi sa Facebook",
+      "twitter": "Ibahagi sa Twitter",
+      "whatsapp": "Ibahagi sa WhatsApp",
+      "telegram": "Ibahagi sa Telegram"
+    }
+  },
+  "logoutConfirmation": {
+    "title": "Ayaw mong ma-miss ang jackpot ngayon!",
+    "message": "Sigurado ka bang gusto mong mag-log out?",
+    "buttons": {
+      "no": "HINDI",
+      "yes": "OO"
+    }
+  },
+  "SecurityAndPolicy": {
+    "sidebar": {
+      "TermsandConditions": "Mga Tuntunin at Kundisyon",
+      "PrivacyPolicy": "Patakaran sa Privacy",
+      "CookiesPolicy": "Patakaran sa Cookies",
+      "activeItemMessage": "Gamitin ang mga tab sa itaas para sa nabigasyon"
+    },
+    "header": {
+      "title": "Seguridad at Patakaran"
+    },
+    "TermsandConditions": {
+      "title": "Mga Tuntunin at Kundisyon",
+      "content": [
+        "Ang pahinang ito ay naglalaman ng impormasyon na nagpapaliwanag ng iyong mga karapatan sa pag-access at paggamit ng website ng icggaming.com. Ang mga tuntunin at kundisyon ay nauugnay sa mga laro, promosyon, at bonus na magagamit sa aming site, na ipo-post paminsan-minsan at isasama dito sa pamamagitan ng reperensya."
+      ],
+      "sections": [
+        {
+          "title": "Kahulugan",
+          "content": [
+            "1.1 Ang mga sumusunod na probisyon ay nagtatakda ng mga tuntunin at kundisyon na namamahala sa iyong pag-access at pakikilahok sa mga laro o serbisyong ibinigay ng PlayGame168. Ang mga probisyong ito ay dapat basahin kasabay ng 'Mga Panuntunan sa Pagtaya,' 'Patakaran sa Privacy,' at mga Tuntunin at Kundisyon sa laro.",
+            "1.2 Ang 'Mga Laro' ay tumutukoy sa internet gaming system sa PlayGame168, kabilang ang pagtaya at pustahan. Ang 'Device' ay tumutukoy sa anumang platform na maaaring mag-access sa aming aplikasyon, kabilang ang mga laptop, telepono, at mga handheld device. Ang 'Software' ay kasama ang mga programa at file na kinakailangan upang ma-access ang website. Ang 'Sportsbook' ay tumutukoy sa internet gaming system na inaalok sa PlayGame168, at ang 'Mga Serbisyo' ay sumasaklaw sa Software at Mga Laro."
+          ]
+        },
+        {
+          "title": "Paggamit ng Site",
+          "content": [
+            "2.1 Pinapayagan kang maglaro ng mga laro lamang kung:",
+            " Ikaw ay 18 taong gulang pataas.",
+            " May karapatang legal na maglaro sa iyong bansa.",
+            "2.2 Kung matuklasan naming wala kang karapatang maglaro, pinapanatili namin ang karapatang:",
+            " Agad na pigilan ka sa pakikilahok sa mga laro.",
+            " Iulat ka sa mga kaukulang awtoridad."
+          ]
+        },
+        {
+          "title": "Pagbabago",
+          "content": [
+            "3.1 Inilalaan namin ang karapatang baguhin, i-update, o baguhin ang Mga Tuntunin at Kundisyon sa aming sariling paghuhusga. Ang patuloy na paggamit ng icggaming.com pagkatapos ng mga pagbabago ay magiging tanda ng iyong pagtanggap sa mga pagbabagong ito."
+          ]
+        },
+        {
+          "title": "Mga Karapatang Intelektwal",
+          "content": [
+            "4.1 Ang lahat ng impormasyon sa icggaming.com, kabilang ang teksto, mga graphics, at nilalaman ng audio, ay pag-aari ng icggaming.com at ng mga tagapaglisensya nito at para lamang sa personal at hindi pangkomersyal na paggamit."
+          ]
+        },
+        {
+          "title": "Mga Kondisyon ng Paggamit",
+          "content": [
+            "Kumilos ka sa iyong personal na kapasidad at hindi sa ngalan ng ibang tao.",
+            "Ikaw ay nasa wastong edad upang magsugal.",
+            "Hindi ka gumagamit ng pera mula sa mga hindi awtorisadong aktibidad.",
+            "Panatilihin mong ligtas ang impormasyon ng iyong account.",
+            "Hindi ka mag-a-upload ng mga nakakapinsalang programa, tulad ng mga virus."
+          ]
+        },
+        {
+          "title": "Pagpaparehistro at Membership",
+          "content": [
+            "Dapat kang magbigay ng tumpak na impormasyon sa panahon ng pagpaparehistro. Inilalaan ng icggaming.com ang karapatang tanggihan ang mga aplikasyon o humiling ng karagdagang pag-verify ng pagkakakilanlan."
+          ]
+        },
+        {
+          "title": "Paglalagay ng Pusta",
+          "content": [
+            "Ang mga pusta ay tatanggapin lamang sa pamamagitan ng internet at dapat sumunod sa mga tuntunin at kundisyon. Inilalaan ng icggaming.com ang karapatang pawalang-bisa ang mga pusta kung may mga pagkakamali o matukoy ang pandaraya."
+          ]
+        }
+      ]
+    },
+    "PrivacyPolicy": {
+      "title": "Patakaran sa Privacy",
+      "sections": [
+        {
+          "content": [
+            "Inilalarawan ng Patakaran sa Privacy na ito kung paano namin pinangangasiwaan ang iyong personal na impormasyon alinsunod sa pag-access at paggamit ng website ng PlayGame168. Tinitiyak ng patakarang ito na ang iyong data ay pinangangasiwaan alinsunod sa mga batas sa proteksyon ng data at sumasalamin sa aming pangako na protektahan ang iyong privacy."
+          ]
+        },
+        {
+          "title": "Newsletter",
+          "content": [
+            "Sa pamamagitan ng pag-subscribe sa aming newsletter, ibinibigay mo ang iyong email address upang makatanggap ng mga update tungkol sa mga promosyon, laro, at balita. Ang iyong email address ay hindi ibabahagi sa mga third party maliban kung kinakailangan ng batas."
+          ]
+        },
+        {
+          "title": "Pakikipag-ugnayan",
+          "content": [
+            "Kapag nakipag-ugnayan ka sa amin sa pamamagitan ng email o chat para sa anumang mga katanungan, ang iyong personal na impormasyon, kabilang ang iyong pangalan at mga detalye sa pakikipag-ugnayan, ay maaaring itago para sa pag-iingat ng mga tala at mga layunin sa kalidad. Gumagamit kami ng lahat ng mga pag-iingat upang matiyak ang seguridad at pagiging kumpidensyal ng iyong data."
+          ]
+        },
+        {
+          "title": "Anong Personal na Impormasyon ang Kinokolekta Namin Tungkol sa Iyo?",
+          "content": [
+            "Kinokolekta at pinoproseso namin ang personal na impormasyon para sa mga sumusunod na dahilan:",
+            "Ang iyong pangalan, email address, at mga detalye sa pakikipag-ugnayan.",
+            "Mga detalye ng pagbabayad para sa mga transaksyon sa aming platform.",
+            "Ang iyong aktibidad sa pagba-browse at mga kagustuhan sa laro."
+          ]
+        },
+        {
+          "title": "Paano Namin Gagamitin ang Iyong Personal na Data?",
+          "content": [
+            "Ang iyong data ay gagamitin lamang para sa mga layunin na may kaugnayan sa pagbibigay ng mga serbisyo, pagsunod sa batas, at pagpapabuti ng karanasan ng gumagamit, kabilang ang:",
+            "Pagproseso ng iyong mga pusta at mga transaksyon sa account.",
+            "Pagpapadala ng mga update tungkol sa promosyon at serbisyo.",
+            "Pagpapahusay ng functionality ng website at karanasan ng gumagamit."
+          ]
+        },
+        {
+          "title": "Kanino Namin Ibinabahagi ang Iyong Data?",
+          "content": [
+            "Maaari naming ibahagi ang iyong data sa mga awtorisadong third party tulad ng mga tagaproseso ng pagbabayad, mga tagapagbigay ng analytics, at mga regulatory authority kapag kinakailangan ng batas."
+          ]
+        },
+        {
+          "title": "Ano ang Iyong Mga Karapatan?",
+          "content": [
+            "Bilang isang gumagamit, mayroon kang karapatang:",
+            "I-access ang personal na data na hawak namin tungkol sa iyo.",
+            "Humiling ng mga pagwawasto sa mga maling datos.",
+            "Humiling ng pagtanggal ng iyong personal na impormasyon sa ilalim ng mga tiyak na kundisyon.",
+            "Bawiin ang pahintulot para sa pagproseso ng data kung naaangkop."
+          ]
+        },
+        {
+          "title": "Makipag-ugnayan sa Amin",
+          "content": [
+            "Kung mayroon kang anumang mga tanong o alalahanin tungkol sa iyong personal na data, maaari kang makipag-ugnayan sa aming support team sa:",
+            "support@icggmaing.com"
+          ]
+        }
+      ]
+    },
+    "CookiesPolicy": {
+      "title": "Patakaran sa Cookies",
+      "sections": [
+        {
+          "title": "Ano ang Cookies?",
+          "content": [
+            "Ang Cookies ay maliliit na file na naglalaman ng impormasyon na ipinapadala ng isang website sa iyong computer o mobile device habang tinitingnan mo ang impormasyon sa website.",
+            "Ang Cookies ay tumutulong sa amin na mapabuti ang iyong karanasan bilang isang gumagamit sa pamamagitan ng pag-alala sa iyong mga kagustuhan, na nagpapahintulot sa iyo na gamitin ang website nang mas mahusay. Sa madaling salita, ang Cookies ay nandiyan upang tulungan kang mag-navigate sa pagitan ng mga pahina nang mas madali at mas mabilis."
+          ]
+        },
+        {
+          "title": "Cookies sa icggmaing.com",
+          "content": [
+            "Sa icggmaing.com, gumagamit kami ng Cookies na mahigpit na kinakailangan upang magbigay ng mga pangunahing pag-andar at mapadali ang pag-navigate sa paligid ng aming website. Bukod dito, ginagamit ang Cookies upang mapahusay ang functionality ng site, halimbawa, upang i-save ang iyong mga kagustuhan. Sa wakas, gumagamit kami ng Cookies upang magbigay sa iyo ng mas mahusay na karanasan ng gumagamit sa pamamagitan ng pagpapabuti ng pagganap ng aming site.",
+            "Narito ang tatlong pangunahing uri ng Cookies na ginagamit namin sa aming website:",
+            "Mahigpit na Kinakailangang Cookies",
+            ": Ang mga Cookies na ito ay responsable para sa functionality ng website, wika, at tinitiyak na ang mga tamang elemento ng website ay na-load nang maayos.",
+            "Cookies ng Functionality",
+            ": Ang mga ito ay nagtatala ng mga pinili ng gumagamit, nagta-track ng impormasyon ng affiliate, nagtatala kung na-access na ang isang pahina, at nagpapakita ng nilalaman batay sa mga kagustuhan. Nagbibigay din ang mga ito ng geolocation para sa mga layunin ng wika ng site.",
+            "Cookies ng Pagganap",
+            ": Ginagamit upang subaybayan kung paano binibisita ng mga gumagamit ang mga website, magsagawa ng panloob na hindi nagpapakilalang pagmimina ng data, subukan ang iba't ibang ideya sa disenyo, at pagbutihin ang layout ng aming site.",
+            "Pakitingnan na ang playgame168.com ay hindi kailanman gagamit ng anumang anyo ng online na advertising na cookies na nakabatay sa pag-uugali, o payagan ang anumang mga third party na gawin ito sa aming mga site."
+          ]
+        },
+        {
+          "title": "Pamamahala ng Cookies",
+          "content": [
+            "Sa kasalukuyan, hindi namin maibigay ang opsyon na paganahin o huwag paganahin ang mga indibidwal na kategorya ng cookies. Kapag binisita mo ang aming website, ang icggmaing.com ay naglalagay ng isang cookie sa iyong device at maaalala ang iyong mga kagustuhan upang matiyak na magpapatuloy kang masiyahan sa aming mga serbisyo. Kung na-click mo ang Tanggapin sa aming Cookies Browser bar, o kung ipinagpatuloy mo ang paggamit ng aming website at mga serbisyo, inaakala na tinanggap mo ang aming paggamit ng Cookies sa paraang inilarawan sa patakarang ito.",
+            "Gayunpaman, ang mga setting ng iyong browser ay maaaring baguhin upang matiyak na hindi ito tumatanggap ng cookies mula sa anumang website. Maaari mong mahanap ang mga tagubilin kung paano ipatupad ito sa seksyon ng Tulong ng napiling browser. Gayunpaman, para sa mga layunin ng seguridad, maaaring matuklasan mo na ang ilang nilalaman ng website ay hindi ma-access maliban kung ang paggamit ng cookies ay pinagana sa iyong device."
+          ]
+        }
+      ]
     }
   }
 }

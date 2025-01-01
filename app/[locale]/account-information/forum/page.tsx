@@ -5,10 +5,12 @@ import Image from "next/image";
 import TabButton from "./Tab";
 import Header from "./header";
 import gsap from "gsap";
+import { useTranslations } from "next-intl";
 
 const PersonalMessagePage = () => {
   const [activeTab, setActiveTab] = useState("Inbox");
   const containerRef = useRef<HTMLDivElement>(null);
+  const t = useTranslations("accountInformation.personalMessage");
 
   useEffect(() => {
     if (containerRef.current) {
@@ -41,7 +43,7 @@ const PersonalMessagePage = () => {
             height={64}
             className="mx-auto mb-4"
           />
-          <p>No Result Found</p>
+          <p>{t("emptyState.message")}</p>
         </div>
       </div>
 

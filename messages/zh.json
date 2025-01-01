@@ -686,57 +686,77 @@
     "menu": {
       "myProfile": "我的资料",
       "history": "历史记录",
-      "rebate": "返利",
+      "rebate": "回扣",
       "cashback": "现金返还",
       "totalBet": "总投注",
       "redeemHistory": "兑换历史",
       "pointHistory": "积分历史",
-      "personalMessage": "个人消息",
+      "personalMessage": "私人消息",
       "referral": "推荐"
     },
     "profile": {
-      "phoneNumber": "电话号码",
+      "title": "资料",
       "joinedOn": "加入日期",
+      "logout": "登出",
+      "BronzeCard": "青铜卡",
+      "ranking": "等级：青铜返现 2%",
       "vipLevel": {
         "current": "当前等级",
-        "upgrade": "升级您的VIP等级",
-        "progress": "您的进度"
+        "upgrade": "升级您的 VIP 等级",
+        "progress": "您的进度",
+        "bronze": "青铜",
+        "silver": "白银",
+        "points": "当前积分",
+        "exchangeReward": "兑换奖励"
       },
       "wallet": {
         "title": "您的钱包",
         "balance": "余额"
       },
-      "rebateBalance": "返利余额",
+      "rebateBalance": "回扣余额",
       "cashbackBalance": "现金返还余额",
-      "referralBalance": "推荐余额"
-    },
-    "totalBets": {
-      "title": "总投注",
-      "columns": {
-        "transactionDateTime": "交易日期时间",
-        "totalWinLose": "总赢/输",
-        "totalBets": "总投注"
+      "referralBalance": "推荐余额",
+      "totalBets": {
+        "title": "总投注",
+        "depositTurnover": "存款周转",
+        "turnover": "周转",
+        "turnWinlose": "盈亏周转"
       },
-      "emptyState": {
-        "message": "这里还没有任何内容！"
+      "myPromotions": {
+        "title": "我的促销",
+        "cashback": "现金返还",
+        "rebate": "回扣"
       },
-      "totalBetAmount": "总投注金额："
-    },
-    "promotions": {
-      "title": "我的活动",
-      "cashback": "现金返还",
-      "rebate": "返利"
-    },
-    "actions": {
-      "exchangeReward": "兑换奖励",
-      "logOut": "登出"
-    },
-    "points": {
-      "currentPoints": "当前积分",
-      "progress": "进度",
-      "rank": {
-        "bronze": "青铜",
-        "silver": "白银"
+      "VIPLevelModal": {
+        "title": "会员等级详情",
+        "upgradeTitle": "升级您的",
+        "MemberLevel": "会员等级",
+        "levels": {
+          "bronze": "青铜",
+          "silver": "白银",
+          "gold": "黄金",
+          "diamond": "钻石",
+          "platinum": "铂金",
+          "black": "黑金"
+        },
+        "challenges": {
+          "title": "挑战",
+          "th1": "挑战",
+          "th2": "进度",
+          "th3": "操作",
+          "list": {
+            "task1": {
+              "description": "增加存款金额 1,000.00 以升级",
+              "progress": "完成 50%",
+              "action": "存款"
+            },
+            "task2": {
+              "description": "增加周转金额 1,000.00 以升级",
+              "progress": "完成 30%",
+              "action": "投注"
+            }
+          }
+        }
       }
     },
     "history": {
@@ -745,51 +765,64 @@
         "deposit": "存款",
         "withdraw": "提款",
         "bet": "投注",
-        "receivePromotion": "领取优惠",
-        "receiveRebate": "领取返利",
+        "receivePromotion": "领取促销",
+        "receiveRebate": "领取回扣",
         "receiveCashback": "领取现金返还",
-        "receiveReferral": "领取推荐奖励"
+        "receiveReferral": "领取推荐"
       },
       "columns": {
         "amount": "金额",
         "channel": "渠道",
         "bankAccount": "银行账户",
-        "depositDateTime": "存款日期时间",
+        "depositDateTime": "存款日期 - 时间",
         "status": "状态",
-        "successDateTime": "成功日期时间"
+        "successDateTime": "成功日期 - 时间",
+        "nodata": "暂无数据"
       },
       "emptyState": {
         "message": "这里还没有任何内容！"
       },
-      "totalDeposit": "总存款金额："
+      "total": "总计"
     },
     "rebate": {
-      "title": "返利",
+      "title": "回扣",
       "columns": {
-        "transactionDateTime": "交易日期时间",
-        "rebateAmount": "返利金额"
+        "transactionDateTime": "交易日期 - 时间",
+        "rebateAmount": "回扣金额"
       },
       "emptyState": {
         "message": "这里还没有任何内容！"
       },
-      "totalRebate": "总返利金额："
+      "totalRebate": "回扣总金额："
     },
     "cashback": {
       "title": "现金返还",
       "columns": {
-        "transactionDateTime": "交易日期时间",
+        "transactionDateTime": "交易日期 - 时间",
         "cashbackAmount": "现金返还金额"
       },
       "emptyState": {
         "message": "这里还没有任何内容！"
       },
-      "totalCashback": "总现金返还金额："
+      "totalCashback": "现金返还总金额："
+    },
+    "totalBet": {
+      "title": "总投注",
+      "columns": {
+        "transactionDateTime": "交易日期 - 时间",
+        "totalWinLose": "总盈亏",
+        "totalBets": "总投注"
+      },
+      "emptyState": {
+        "message": "这里还没有任何内容！"
+      },
+      "totalBetAmount": "总投注金额："
     },
     "redeemHistory": {
       "title": "兑换历史",
       "columns": {
         "no": "编号",
-        "transactionDateTime": "交易日期时间",
+        "transactionDateTime": "交易日期 - 时间",
         "typeOfReward": "奖励类型",
         "reward": "奖励",
         "status": "状态",
@@ -801,17 +834,17 @@
       },
       "totals": {
         "allRewards": "所有奖励：",
-        "totalUsedPoints": "已用积分总数：",
-        "totalFreeSpins": "总免费旋转次数：",
+        "totalUsedPoints": "已用积分总计：",
+        "totalFreeSpins": "免费旋转总计：",
         "totalAmountPerRound": "每轮总金额："
       }
     },
     "pointHistory": {
       "title": "积分历史",
       "columns": {
-        "transactionDateTime": "交易日期时间",
+        "transactionDateTime": "交易日期 - 时间",
         "type": "类型",
-        "turnover": "流水",
+        "turnover": "周转",
         "currentPoint": "当前积分"
       },
       "emptyState": {
@@ -820,7 +853,7 @@
       "totalPoints": "总积分："
     },
     "personalMessage": {
-      "title": "个人消息",
+      "title": "私人消息",
       "tabs": {
         "inbox": "收件箱",
         "send": "发送"
@@ -834,17 +867,18 @@
       "newMessageModal": {
         "title": "新消息",
         "fields": {
-          "sendTo": "发送至",
+          "sendTo": "发送给",
           "admin": "管理员",
           "title": "标题",
           "titlePlaceholder": "输入标题",
           "message": "消息",
           "messagePlaceholder": "在这里输入内容...",
           "attachImage": "附加图片（可选）",
-          "uploadInstructions": "点击或拖动上传",
-          "allowedFileTypes": "WEBP、PNG 或 JPG (3MB)."
+          "uploadInstructions": "点击上传或拖放",
+          "allowedFileTypes": "WEBP, PNG 或 JPG (3MB)."
         },
         "characterLimit": "0/300",
+        "UploadImage": "上传图片",
         "sendMessageButton": "发送消息"
       },
       "pagination": {
@@ -855,17 +889,17 @@
     "referral": {
       "title": "推荐",
       "stats": {
-        "incomeToday": "今日收入",
+        "incomeToday": "您今天的收入",
         "totalReferral": "总推荐",
         "referralClick": "推荐点击",
         "totalMember": "总会员",
-        "totalTurnover": "总流水",
+        "totalTurnover": "总周转",
         "totalCashback": "总现金返还"
       },
       "copy": {
         "referralLink": "推荐链接",
-        "referralCode": "推荐码",
-        "copyText": "将您的推荐码或链接发送给朋友，当他们玩游戏时，您可获得返利。"
+        "referralCode": "推荐代码",
+        "copyText": "将您的推荐代码或链接发送给朋友，他们注册并参与游戏后，您将获得回扣。"
       },
       "inviteFriends": "邀请朋友",
       "socialMedia": {
@@ -895,25 +929,25 @@
           "totals": {
             "totalRevenue": "总收入："
           }
-        },
-        "analytics": {
-          "title": "分析 - 衡量您的表现",
-          "metrics": {
-            "income": {
-              "title": "收入",
-              "today": "今日收入",
-              "yesterday": "昨日收入"
-            },
-            "turnover": {
-              "title": "流水",
-              "today": "今日流水",
-              "yesterday": "昨日流水"
-            },
-            "cashback": {
-              "title": "现金返还",
-              "today": "今日现金返还",
-              "yesterday": "昨日现金返还"
-            }
+        }
+      },
+      "analytics": {
+        "title": "分析 - 衡量您的表现",
+        "metrics": {
+          "income": {
+            "title": "收入",
+            "today": "今天收入",
+            "yesterday": "昨天收入"
+          },
+          "turnover": {
+            "title": "周转",
+            "today": "今天周转",
+            "yesterday": "昨天周转"
+          },
+          "cashback": {
+            "title": "现金返还",
+            "today": "今天现金返还",
+            "yesterday": "昨天现金返还"
           }
         }
       }
@@ -1057,6 +1091,74 @@
     "signInSuccess": "登录成功！",
     "submitSignUp": "注册",
     "submitSignIn": "登录"
+  },
+  "wallet": {
+    "title": "您的钱包",
+    "history": "历史记录",
+    "tabs": {
+      "deposit": "存款",
+      "withdraw": "取款",
+      "transfer": "转账"
+    },
+    "deposit": {
+      "paymentMethod": "付款方式",
+      "methods": {
+        "abaBank": "ABA 银行",
+        "acledaBank": "Acleda 银行",
+        "qrCodeAbaBank": "QR 码 ABA 银行"
+      },
+      "DepositAmount": {
+        "title": "存款金额",
+        "yourWallet": "您的钱包",
+        "minMax": "最低 100.00฿ ~ 最高 50,000.00฿",
+        "balance": "余额",
+        "buttons": {
+          "100": "100฿",
+          "300": "300฿",
+          "500": "500฿",
+          "1000": "1000฿"
+        },
+        "instructions": {
+          "title": "请阅读以下内容以加快交易处理",
+          "points": {
+            "1": "每次转账前请创建一个新交易",
+            "2": "二维码只能使用一次",
+            "3": "请勿重复使用二维码",
+            "4": "在指定时间内完成交易"
+          }
+        },
+        "backButton": "返回",
+        "nextButton": "下一步"
+      }
+    },
+    "withdraw": {
+      "withdrawalCondition": "取款条件",
+      "conditions": {
+        "depositTurnover": "存款流水",
+        "turnover": "流水",
+        "turnWinlose": "输赢流水"
+      },
+      "withdrawAmount": "取款金额",
+      "yourWallet": "您的钱包",
+      "minMax": "最低 500.00฿ ~ 最高 10,000.00฿",
+      "balance": "余额",
+      "buttons": {
+        "min": "最小",
+        "25Percent": "25%",
+        "50Percent": "50%",
+        "max": "最大"
+      },
+      "note": "备注",
+      "notePlaceholder": "在此输入内容...",
+      "characterLimit": "0/300",
+      "withdrawButton": "取款"
+    },
+    "transfer": {
+      "transferFrom": "转账自",
+      "yourWallet": "您的钱包",
+      "transferButton": "转账至主钱包"
+    },
+    "line": "Line"
   },
   "questsHub": {
     "title": "任务中心",
@@ -1224,6 +1326,203 @@
           "favorite": true
         }
       }
+    }
+  },
+  "inviteAndBenefits": {
+    "title": "邀请和福利",
+    "referralLinkTitle": "推荐链接",
+    "referralLink": {
+      "label": "推荐链接",
+      "placeholder": "https://ICGGaming.co?ref_code=IP7MSaJ9aH",
+      "copyButton": "复制"
+    },
+    "referralCodeTitle": "推荐码",
+    "referralCode": {
+      "label": "推荐码",
+      "placeholder": "IP7MSaJ9aH",
+      "copyButton": "复制"
+    },
+    "description": "复制您的推荐码或链接发送给朋友，当他们注册并玩游戏时，您将获得返利。",
+    "socialMedia": {
+      "facebook": "分享到 Facebook",
+      "twitter": "分享到 Twitter",
+      "whatsapp": "分享到 WhatsApp",
+      "telegram": "分享到 Telegram"
+    }
+  },
+  "logoutConfirmation": {
+    "title": "您不想错过今天的大奖！",
+    "message": "您确定要注销吗？",
+    "buttons": {
+      "no": "否",
+      "yes": "是"
+    }
+  },
+  "SecurityAndPolicy": {
+    "sidebar": {
+      "TermsandConditions": "条款和条件",
+      "PrivacyPolicy": "隐私政策",
+      "CookiesPolicy": "Cookies 政策",
+      "activeItemMessage": "使用上方的选项卡进行导航"
+    },
+    "header": {
+      "title": "安全和政策"
+    },
+    "TermsandConditions": {
+      "title": "条款和条件",
+      "content": [
+        "本页面包含解释您访问和使用 icggaming.com 网站的权利的信息。这些条款和条件涉及我们网站上提供的游戏、促销和奖金，并将不时发布并通过引用纳入本文中。"
+      ],
+      "sections": [
+        {
+          "title": "定义",
+          "content": [
+            "1.1 以下条款规定了您访问和参与 PlayGame168 提供的游戏或服务的条款和条件。这些条款应与 '投注规则'、'隐私政策' 和游戏内的条款和条件一起阅读。",
+            "1.2 '游戏' 指的是 PlayGame168 的互联网游戏系统，其中包括投注和赌注。'设备' 指的是可以访问我们应用程序的任何平台，包括笔记本电脑、手机和手持设备。'软件' 包括访问网站所需的程序和文件。'体育博彩' 指的是 PlayGame168 提供的互联网游戏系统，而 '服务' 总括软件和游戏。"
+          ]
+        },
+        {
+          "title": "网站使用",
+          "content": [
+            "2.1 您只有在以下情况下才能玩游戏：",
+            " 年满 18 周岁或以上。",
+            " 在您的国家/地区具有合法的游戏资格。",
+            "2.2 如果我们发现您无权进行游戏，我们保留以下权利：",
+            " 立即禁止您参与游戏。",
+            " 向相关当局报告您。"
+          ]
+        },
+        {
+          "title": "修改",
+          "content": [
+            "3.1 我们保留自行决定修改、更新或更改条款和条件的权利。继续使用 icggaming.com 即表示您接受这些更改。"
+          ]
+        },
+        {
+          "title": "知识产权",
+          "content": [
+            "4.1 icggaming.com 上的所有信息，包括文本、图形和音频内容，均属于 icggaming.com 及其许可方，并仅供个人、非商业用途。"
+          ]
+        },
+        {
+          "title": "使用条件",
+          "content": [
+            "您是以个人身份行事，而不是代表他人。",
+            "您已达到合法赌博年龄。",
+            "您未使用未经授权的资金。",
+            "您将确保您的账户信息安全。",
+            "您不会上传有害程序，例如病毒。"
+          ]
+        },
+        {
+          "title": "注册和会员资格",
+          "content": [
+            "您必须在注册时提供准确的信息。icggaming.com 保留拒绝申请或要求进一步身份验证的权利。"
+          ]
+        },
+        {
+          "title": "投注规则",
+          "content": [
+            "仅通过互联网接受投注，并且必须遵守条款和条件。如果发生错误或检测到作弊行为，icggaming.com 保留取消投注的权利。"
+          ]
+        }
+      ]
+    },
+    "PrivacyPolicy": {
+      "title": "隐私政策",
+      "sections": [
+        {
+          "content": [
+            "本隐私政策描述了我们如何根据 PlayGame168 网站的访问和使用处理您的个人信息。本政策确保您的数据符合数据保护法，并体现了我们对保护您隐私的承诺。"
+          ]
+        },
+        {
+          "title": "新闻通讯",
+          "content": [
+            "通过订阅我们的新闻通讯，您提供了您的电子邮件地址以接收有关促销、游戏和新闻的更新。除法律要求外，您的电子邮件地址不会与第三方共享。"
+          ]
+        },
+        {
+          "title": "通信",
+          "content": [
+            "当您通过电子邮件或聊天联系我们提出任何询问时，您的个人信息，包括您的姓名和联系方式，可能会被保留以供记录和质量保证之用。我们会采取一切预防措施确保您的数据的安全性和机密性。"
+          ]
+        },
+        {
+          "title": "我们收集哪些个人信息？",
+          "content": [
+            "我们收集和处理个人信息的原因如下：",
+            "您的姓名、电子邮件地址和联系方式。",
+            "用于我们平台交易的支付详细信息。",
+            "您的浏览活动和游戏偏好。"
+          ]
+        },
+        {
+          "title": "我们将如何使用您的个人数据？",
+          "content": [
+            "您的数据将仅用于提供服务、法律合规和改善用户体验的相关用途。这些用途包括：",
+            "处理您的投注和账户交易。",
+            "沟通促销和服务更新。",
+            "增强网站功能和用户体验。"
+          ]
+        },
+        {
+          "title": "我们与谁共享您的数据？",
+          "content": [
+            "我们可能会在法律要求的情况下与授权的第三方（如支付处理方、分析提供商和监管机构）共享您的数据。"
+          ]
+        },
+        {
+          "title": "您的权利是什么？",
+          "content": [
+            "作为用户，您有权：",
+            "访问我们持有的关于您的个人数据。",
+            "请求更正不准确的数据。",
+            "在特定条件下请求删除您的个人信息。",
+            "撤回数据处理的同意（如适用）。"
+          ]
+        },
+        {
+          "title": "联系我们",
+          "content": [
+            "如果您对您的个人数据有任何问题或疑虑，可以通过以下方式联系到我们的支持团队：",
+            "support@icggmaing.com"
+          ]
+        }
+      ]
+    },
+    "CookiesPolicy": {
+      "title": "Cookies 政策",
+      "sections": [
+        {
+          "title": "什么是 Cookies？",
+          "content": [
+            "Cookies 是包含信息的小文件，当您在网站上查看信息时，网站会将其发送到您的计算机或移动设备。",
+            "Cookies 帮助我们通过记住您的偏好来改善您的用户体验，使您更高效地使用网站。换句话说，Cookies 可以帮助您更轻松快捷地在页面之间导航。"
+          ]
+        },
+        {
+          "title": "icggmaing.com 的 Cookies",
+          "content": [
+            "在 icggmaing.com，我们使用 Cookies 来提供基本功能和简化网站导航。此外，Cookies 还用于增强网站功能，例如存储您的偏好。最后，我们使用 Cookies 通过提高网站性能来为您提供更好的用户体验。",
+            "以下是我们网站上使用的三种主要类型的 Cookies：",
+            "严格必要的 Cookies",
+            "：这些 Cookies 负责网站功能、语言，并确保网站的正确元素以正确的方式加载。",
+            "功能性 Cookies",
+            "：这些 Cookies 记住用户选择、跟踪关联信息、记住页面是否已访问过，并根据偏好显示内容。它们还为网站语言目的提供地理定位功能。",
+            "性能 Cookies",
+            "：用于跟踪用户访问网站的方式，执行内部匿名数据挖掘，测试不同的设计想法，并改进我们网站的布局。",
+            "请注意，playgame168.com 永远不会使用任何形式的在线行为广告 Cookies，也不会允许任何第三方在我们的网站上这样做。"
+          ]
+        },
+        {
+          "title": "管理 Cookies",
+          "content": [
+            "目前，我们无法为您提供启用或禁用单个类别 Cookies 的选项。当您访问我们的网站时，icggmaing.com 会在您的设备上放置一个 Cookie 并记住您的偏好，以确保您能够继续享受我们的服务。如果您点击了我们的 Cookies 浏览器栏上的接受，或者继续使用我们的网站和服务，则被视为您已接受我们以本政策中描述的方式使用 Cookies。",
+            "尽管如此，您的浏览器设置可以修改以确保它不会接受来自任何网站的 Cookies。您可以在所选浏览器的帮助部分找到有关如何实施的说明。但是，出于安全原因，您可能会发现除非在您的设备上启用了 Cookies，否则某些网站内容无法访问。"
+          ]
+        }
+      ]
     }
   }
 }

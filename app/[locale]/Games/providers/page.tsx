@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useRef, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBuilding, faSearch, faSlidersH, faGamepad } from "@fortawesome/free-solid-svg-icons";
-import { gsap } from "gsap";
+import { faSearch, faSlidersH, faGamepad, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { useSidebar } from "@/components/Sidebar/SidebarContext";
 
@@ -21,14 +21,14 @@ interface ApiResponse {
 const Providers = () => {
   const [providers, setProviders] = useState<Provider[]>([]);
   const [filteredProviders, setFilteredProviders] = useState<Provider[]>([]);
-  const [searchTerm, setSearchTerm] = useState<string>(""); // Search term state
+  const [searchTerm, setSearchTerm] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
-  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const [isFilterOpen, setIsFilterOpen] = useState<boolean>(false);
+  const [selectedFilter, setSelectedFilter] = useState<string>(""); // State for active filter
   const { isCollapsed } = useSidebar();
 
   useEffect(() => {
-    // Fetch data from the mocked API
     const fetchProviders = async () => {
       setLoading(true);
       try {
@@ -39,9 +39,8 @@ const Providers = () => {
         }
 
         const result: ApiResponse = await response.json();
-        setProviders(result.data); // Access the data property from the response
-        setFilteredProviders(result.data); // Set initial filtered providers
-        console.log("Providers data:", result.data); // Debug log
+        setProviders(result.data);
+        setFilteredProviders(result.data);
       } catch (err) {
         setError("Failed to fetch providers. Please try again later.");
         console.error("Error fetching providers:", err);
@@ -54,38 +53,52 @@ const Providers = () => {
   }, []);
 
   useEffect(() => {
-    // Filter providers based on search term
     const filtered = providers.filter((provider) =>
       provider.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setFilteredProviders(filtered);
   }, [searchTerm, providers]);
 
-  useEffect(() => {
-    // GSAP animation for card entrance
-    gsap.fromTo(
-      cardRefs.current,
-      { opacity: 0, y: 20 },
-      { opacity: 1, y: 0, duration: 0.6, stagger: 0.2, ease: "power2.out" }
-    );
-  }, [filteredProviders]);
-
-  const handleHover = (index: number) => {
-    const card = cardRefs.current[index];
-    if (card) {
-      gsap.to(card, { scale: 1.05, duration: 0.3, ease: "power2.out" });
+  const handleSort = (type: string) => {
+    setSelectedFilter(type); // Set the active filter
+    let sortedProviders = [...providers];
+    if (type === "A-Z") {
+      sortedProviders.sort((a, b) => a.name.localeCompare(b.name));
+    } else if (type === "Z-A") {
+      sortedProviders.sort((a, b) => b.name.localeCompare(a.name));
+    } else if (type === "Hot") {
+      sortedProviders = providers.filter((provider) => provider.name.includes("Hot"));
+    } else if (type === "New") {
+      sortedProviders = providers.filter((provider) => provider.name.includes("New"));
     }
+    setFilteredProviders(sortedProviders);
+    setIsFilterOpen(false);
   };
 
-  const handleLeave = (index: number) => {
-    const card = cardRefs.current[index];
-    if (card) {
-      gsap.to(card, { scale: 1, duration: 0.3, ease: "power2.out" });
-    }
+  const containerVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        staggerChildren: 0.2,
+        duration: 0.6,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+    hover: { scale: 1.05 },
   };
 
   return (
-    <div className={`max-w-[1200px] mx-auto px-4 py-8 text-white ${isCollapsed ? "ml-[5rem]" : ""}`}>
+    <div
+      className={`max-w-[1200px] mx-auto px-4 py-8 text-white ${isCollapsed ? "ml-[5rem]" : ""
+        }`}
+    >
       {/* Breadcrumb */}
       <nav className="text-gray-400 text-sm mb-4">
         <span>
@@ -96,79 +109,151 @@ const Providers = () => {
       </nav>
 
       {/* Header Section */}
-      <div className="flex justify-between items-center mb-8">
-        {/* Title Section */}
+      <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-8 gap-4">
+        {/* Title */}
         <div>
-          <h1 className="text-3xl font-bold flex items-center">
-            <FontAwesomeIcon icon={faBuilding} className="mr-2" />
+          <h1 className="text-2xl lg:text-3xl font-bold flex items-center">
+            <div
+              className="w-10 h-10 mr-2 flex items-center justify-center bg-white rounded-full"
+              style={{ backgroundColor: "#ffffff" }} // Ensure the background is white
+            >
+              <img
+                src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1735306186/book_dwfhg9.png"
+                alt="Providers Icon"
+                className="w-8 h-8"
+              />
+            </div>
             Providers
           </h1>
-          <p className="text-gray-400 text-sm mt-1">{filteredProviders.length} Providers</p>
+
+          <p className="text-gray-400 text-sm mt-1">
+            {filteredProviders.length} Providers
+          </p>
         </div>
 
         {/* Search Section */}
-        <div className="flex items-center bg-gray-800 rounded-full px-4 py-2 w-full max-w-[300px]">
-          <input
-            type="text"
-            placeholder="Find your provider"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)} // Update search term on input
-            className="flex-1 bg-transparent text-gray-300 placeholder-gray-500 outline-none"
+        <div className="flex items-center gap-4 w-full lg:w-auto">
+          <div className="flex items-center bg-gray-800 rounded-full px-4 py-2 w-full max-w-[300px]">
+            <input
+              type="text"
+              placeholder="Find your provider"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="flex-1 bg-transparent text-gray-300 placeholder-gray-500 outline-none"
+            />
+            <FontAwesomeIcon icon={faSearch} className="text-gray-400 ml-2" />
+          </div>
+          <FontAwesomeIcon
+            icon={faSlidersH}
+            className="text-gray-400 cursor-pointer"
+            onClick={() => setIsFilterOpen(!isFilterOpen)}
           />
-          <FontAwesomeIcon icon={faSearch} className="text-gray-400 ml-2" />
-          <FontAwesomeIcon icon={faSlidersH} className="text-gray-400 ml-4 cursor-pointer" />
         </div>
       </div>
 
-      {/* Loading and Error Handling */}
-      {loading && <p className="text-center text-gray-400">Loading providers...</p>}
-      {error && <p className="text-center text-red-500">{error}</p>}
+      {/* Filter Panel */}
+      {isFilterOpen && (
+        <motion.div
+          className="absolute top-[205px] right-4 lg:right-60 bg-gray-900 text-white p-6 rounded-lg shadow-lg w-full lg:w-64 z-50"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.9 }}
+        >
+          <div className="flex justify-between items-center mb-4">
+            <h3 className="text-lg font-semibold">Filters</h3>
+            <FontAwesomeIcon
+              icon={faTimes}
+              className="text-gray-400 cursor-pointer"
+              onClick={() => setIsFilterOpen(false)}
+            />
+          </div>
+          <h4 className="text-sm font-medium mb-2">Sort By</h4>
+          <div className="flex flex-wrap gap-2">
+            {["A-Z", "Z-A", "Hot", "New"].map((type) => (
+              <button
+                key={type}
+                className={`text-sm px-4 py-2 rounded-lg transition ${selectedFilter === type
+                  ? "bg-yellow-500 text-black"
+                  : "bg-gray-700 hover:bg-gray-600"
+                  }`}
+                onClick={() => handleSort(type)}
+              >
+                {type}
+              </button>
+            ))}
+          </div>
+        </motion.div>
+      )}
+
+      {/* Loading and Error Messages */}
+      {loading && (
+        <motion.p
+          className="text-center text-gray-400"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1 }}
+        >
+          Loading providers...
+        </motion.p>
+      )}
+      {error && (
+        <motion.p
+          className="text-center text-red-500"
+          initial={{ x: -10, opacity: 0 }}
+          animate={{ x: [0, -5, 5, -5, 0], opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{
+            x: { duration: 0.5, ease: "easeInOut" },
+            opacity: { duration: 0.5 }
+          }}
+        >
+          {error}
+        </motion.p>
+      )}
 
       {/* Providers Grid */}
       {!loading && !error && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {filteredProviders.map((provider, index) => (
-            <div
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3   gap-6"
+          initial="hidden"
+          animate="visible"
+          variants={containerVariants}
+        >
+          {filteredProviders.map((provider) => (
+            <motion.div
               key={provider.id}
-              ref={(el) => {
-                if (el) cardRefs.current[index] = el;
-              }}
-              onMouseEnter={() => handleHover(index)}
-              onMouseLeave={() => handleLeave(index)}
               className="relative p-6 rounded-lg shadow-lg transition-transform flex flex-col justify-between items-start overflow-hidden"
               style={{
                 backgroundImage: `url(${provider.bgImage})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
-                width: "340px",
+                width: "100%",
                 height: "190px",
               }}
+              variants={cardVariants}
+              whileHover="hover"
             >
-              {/* Top Section: Logo & Labels */}
+              {/* Provider Details */}
               <div className="absolute top-4 left-4 flex flex-col items-start space-y-2">
-                <img src={provider.logo} alt={provider.name} className="w-[150px] h-auto" />
-                <div className="flex space-x-2">
-                  <span className="px-2 py-1 bg-red-500 text-white text-xs font-bold rounded-full">
-                    NEW
-                  </span>
-                  <span className="px-2 py-1 bg-orange-500 text-white text-xs font-bold rounded-full">
-                    HOT
-                  </span>
-                </div>
+                <img
+                  src={provider.logo}
+                  alt={provider.name}
+                  className="w-[100px] lg:w-[150px] h-auto"
+                />
               </div>
-
-              {/* Bottom Section: Button */}
               <div className="w-full absolute bottom-4 left-4 flex items-center justify-start">
-                <button className="flex items-center gap-2 bg-white text-black font-bold py-2 px-6 rounded-full transition hover:bg-yellow-500 hover:text-black">
+                <button className="flex items-center gap-2 bg-white text-black font-bold py-2 px-4 lg:px-6 rounded-full transition hover:bg-yellow-500 hover:text-black">
                   <FontAwesomeIcon icon={faGamepad} />
                   PLAY
                 </button>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       )}
     </div>
+
   );
 };
 

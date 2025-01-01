@@ -6,14 +6,14 @@ import { useTranslations } from "next-intl";
 
 const Sidebar = () => {
   const [activeItem, setActiveItem] = useState<string>("");
-  const t = useTranslations("settings");
+  const t = useTranslations("SecurityAndPolicy.sidebar");
 
   // Memoize menuItems to prevent unnecessary re-creation
   const menuItems = useMemo(
     () => [
-      { label: "Term and Conditions", link: "/Security-and-Policy/terms-and-conditions" },
-      { label: "Privacy Policy", link: "/Security-and-Policy/privacy-policy" },
-      { label: "Cookies Policy", link: "/Security-and-Policy/cookies-policy" },
+      { label: t('TermsandConditions'), link: "/Security-and-Policy/terms-and-conditions" },
+      { label: t('PrivacyPolicy'), link: "/Security-and-Policy/privacy-policy" },
+      { label: t('CookiesPolicy'), link: "/Security-and-Policy/cookies-policy" },
     ],
     []
   );
@@ -58,7 +58,7 @@ const Sidebar = () => {
       </ul>
       {/* Mobile-specific styling */}
       <div className="block md:hidden mt-4 text-gray-300 text-center">
-        Use the tabs above for navigation
+        {t('activeItemMessage')}
       </div>
     </aside>
   );

@@ -534,6 +534,74 @@
     "submitSignUp": "Đăng Ký",
     "submitSignIn": "Đăng Nhập"
   },
+  "wallet": {
+    "title": "Ví của bạn",
+    "history": "Lịch sử",
+    "tabs": {
+      "deposit": "Nạp tiền",
+      "withdraw": "Rút tiền",
+      "transfer": "Chuyển khoản"
+    },
+    "deposit": {
+      "paymentMethod": "Phương thức thanh toán",
+      "methods": {
+        "abaBank": "Ngân hàng ABA",
+        "acledaBank": "Ngân hàng Acleda",
+        "qrCodeAbaBank": "Mã QR Ngân hàng ABA"
+      },
+      "DepositAmount": {
+        "title": "Số tiền nạp",
+        "yourWallet": "Ví của bạn",
+        "minMax": "Tối thiểu 100.00฿ ~ Tối đa 50,000.00฿",
+        "balance": "Số dư",
+        "buttons": {
+          "100": "100฿",
+          "300": "300฿",
+          "500": "500฿",
+          "1000": "1000฿"
+        },
+        "instructions": {
+          "title": "Vui lòng đọc để xử lý giao dịch nhanh hơn",
+          "points": {
+            "1": "Tạo một giao dịch mới mỗi lần trước khi chuyển tiền",
+            "2": "Mã QR chỉ có thể sử dụng một lần",
+            "3": "Không sử dụng lại mã QR",
+            "4": "Hoàn thành giao dịch trong thời gian quy định"
+          }
+        },
+        "backButton": "Quay lại",
+        "nextButton": "Bước tiếp theo"
+      }
+    },
+    "withdraw": {
+      "withdrawalCondition": "Điều kiện rút tiền",
+      "conditions": {
+        "depositTurnover": "Doanh số nạp tiền",
+        "turnover": "Doanh số",
+        "turnWinlose": "Doanh số thắng thua"
+      },
+      "withdrawAmount": "Số tiền rút",
+      "yourWallet": "Ví của bạn",
+      "minMax": "Tối thiểu 500.00฿ ~ Tối đa 10,000.00฿",
+      "balance": "Số dư",
+      "buttons": {
+        "min": "Tối thiểu",
+        "25Percent": "25%",
+        "50Percent": "50%",
+        "max": "Tối đa"
+      },
+      "note": "Ghi chú",
+      "notePlaceholder": "Nhập gì đó ở đây...",
+      "characterLimit": "0/300",
+      "withdrawButton": "Rút tiền"
+    },
+    "transfer": {
+      "transferFrom": "Chuyển từ",
+      "yourWallet": "Ví của bạn",
+      "transferButton": "Chuyển đến Ví Chính"
+    },
+    "line": "Line"
+  },
   "questsHub": {
     "title": "Trung Tâm Nhiệm Vụ",
     "challenges": "Thử Thách",
@@ -700,6 +768,475 @@
           "favorite": true
         }
       }
+    }
+  },
+  "inviteAndBenefits": {
+    "title": "Mời và Nhận Lợi Ích",
+    "referralLinkTitle": "Liên Kết Giới Thiệu",
+    "referralLink": {
+      "label": "Liên Kết Giới Thiệu",
+      "placeholder": "https://ICGGaming.co?ref_code=IP7MSaJ9aH",
+      "copyButton": "Sao Chép"
+    },
+    "referralCodeTitle": "Mã Giới Thiệu",
+    "referralCode": {
+      "label": "Mã Giới Thiệu",
+      "placeholder": "IP7MSaJ9aH",
+      "copyButton": "Sao Chép"
+    },
+    "description": "Sao chép mã hoặc liên kết giới thiệu của bạn để gửi đến bạn bè. Khi họ đăng ký và chơi game, bạn sẽ nhận được hoàn tiền.",
+    "socialMedia": {
+      "facebook": "Chia sẻ trên Facebook",
+      "twitter": "Chia sẻ trên Twitter",
+      "whatsapp": "Chia sẻ trên WhatsApp",
+      "telegram": "Chia sẻ trên Telegram"
+    }
+  },
+  "logoutConfirmation": {
+    "title": "Bạn không muốn bỏ lỡ giải độc đắc hôm nay!",
+    "message": "Bạn có chắc chắn muốn đăng xuất không?",
+    "buttons": {
+      "no": "KHÔNG",
+      "yes": "CÓ"
+    }
+  },
+  "accountInformation": {
+    "title": "Thông Tin Tài Khoản",
+    "menu": {
+      "myProfile": "Hồ Sơ Của Tôi",
+      "history": "Lịch Sử",
+      "rebate": "Hoàn Tiền",
+      "cashback": "Hoàn Lại Tiền",
+      "totalBet": "Tổng Cược",
+      "redeemHistory": "Lịch Sử Đổi Thưởng",
+      "pointHistory": "Lịch Sử Điểm",
+      "personalMessage": "Tin Nhắn Cá Nhân",
+      "referral": "Giới Thiệu"
+    },
+    "profile": {
+      "title": "Hồ Sơ",
+      "joinedOn": "Tham Gia Ngày",
+      "logout": "Đăng Xuất",
+      "BronzeCard": "Thẻ Đồng",
+      "ranking": "Xếp Hạng: Hoàn Tiền Đồng 2%",
+      "vipLevel": {
+        "current": "Cấp Độ Hiện Tại",
+        "upgrade": "Nâng Cấp VIP Của Bạn",
+        "progress": "Tiến Trình Của Bạn",
+        "bronze": "Đồng",
+        "silver": "Bạc",
+        "points": "Điểm Hiện Tại",
+        "exchangeReward": "Đổi Thưởng"
+      },
+      "wallet": {
+        "title": "Ví Của Bạn",
+        "balance": "Số Dư"
+      },
+      "rebateBalance": "Số Dư Hoàn Tiền",
+      "cashbackBalance": "Số Dư Hoàn Lại Tiền",
+      "referralBalance": "Số Dư Giới Thiệu",
+      "totalBets": {
+        "title": "Tổng Cược",
+        "depositTurnover": "Doanh Thu Gửi Tiền",
+        "turnover": "Doanh Thu",
+        "turnWinlose": "Doanh Thu Thắng/Thua"
+      },
+      "myPromotions": {
+        "title": "Khuyến Mãi Của Tôi",
+        "cashback": "Hoàn Lại Tiền",
+        "rebate": "Hoàn Tiền"
+      },
+      "VIPLevelModal": {
+        "title": "Chi Tiết Thành Viên",
+        "upgradeTitle": "Nâng Cấp ",
+        "MemberLevel": "Cấp Độ Thành Viên",
+        "levels": {
+          "bronze": "Đồng",
+          "silver": "Bạc",
+          "gold": "Vàng",
+          "diamond": "Kim Cương",
+          "platinum": "Bạch Kim",
+          "black": "Đen"
+        },
+        "challenges": {
+          "title": "Thử Thách",
+          "th1": "Thử Thách",
+          "th2": "Tiến Trình",
+          "th3": "Hành Động",
+          "list": {
+            "task1": {
+              "description": "Tăng Số Tiền Gửi 1,000.00 Để Nâng Cấp",
+              "progress": "Hoàn Thành 50%",
+              "action": "Gửi Tiền"
+            },
+            "task2": {
+              "description": "Tăng Doanh Thu 1,000.00 Để Nâng Cấp",
+              "progress": "Hoàn Thành 30%",
+              "action": "Đặt Cược"
+            }
+          }
+        }
+      }
+    },
+    "history": {
+      "title": "Lịch Sử",
+      "tabs": {
+        "deposit": "Gửi Tiền",
+        "withdraw": "Rút Tiền",
+        "bet": "Cược",
+        "receivePromotion": "Nhận Khuyến Mãi",
+        "receiveRebate": "Nhận Hoàn Tiền",
+        "receiveCashback": "Nhận Hoàn Lại Tiền",
+        "receiveReferral": "Nhận Giới Thiệu"
+      },
+      "columns": {
+        "amount": "Số Tiền",
+        "channel": "Kênh",
+        "bankAccount": "Tài Khoản Ngân Hàng",
+        "depositDateTime": "Ngày - Giờ Gửi Tiền",
+        "status": "Trạng Thái",
+        "successDateTime": "Ngày - Giờ Thành Công",
+        "nodata": "Không Có Dữ Liệu"
+      },
+      "emptyState": {
+        "message": "Hiện tại không có gì ở đây!"
+      },
+      "total": "Tổng Cộng"
+    },
+    "rebate": {
+      "title": "Hoàn Tiền",
+      "columns": {
+        "transactionDateTime": "Ngày - Giờ Giao Dịch",
+        "rebateAmount": "Số Tiền Hoàn"
+      },
+      "emptyState": {
+        "message": "Hiện tại không có gì ở đây!"
+      },
+      "totalRebate": "Tổng Số Tiền Hoàn: "
+    },
+    "cashback": {
+      "title": "Hoàn Lại Tiền",
+      "columns": {
+        "transactionDateTime": "Ngày - Giờ Giao Dịch",
+        "cashbackAmount": "Số Tiền Hoàn Lại"
+      },
+      "emptyState": {
+        "message": "Hiện tại không có gì ở đây!"
+      },
+      "totalCashback": "Tổng Số Tiền Hoàn Lại:"
+    },
+    "totalBet": {
+      "title": "Tổng Cược",
+      "columns": {
+        "transactionDateTime": "Ngày - Giờ Giao Dịch",
+        "totalWinLose": "Tổng Thắng/Thua",
+        "totalBets": "Tổng Cược"
+      },
+      "emptyState": {
+        "message": "Hiện tại không có gì ở đây!"
+      },
+      "totalBetAmount": "Tổng Số Tiền Cược:"
+    },
+    "redeemHistory": {
+      "title": "Lịch Sử Đổi Thưởng",
+      "columns": {
+        "no": "STT",
+        "transactionDateTime": "Ngày - Giờ Giao Dịch",
+        "typeOfReward": "Loại Phần Thưởng",
+        "reward": "Phần Thưởng",
+        "status": "Trạng Thái",
+        "usedPoints": "Điểm Đã Dùng",
+        "freeSpins": "Vòng Quay Miễn Phí"
+      },
+      "emptyState": {
+        "message": "Hiện tại không có gì ở đây!"
+      },
+      "totals": {
+        "allRewards": "Tất Cả Phần Thưởng:",
+        "totalUsedPoints": "Tổng Điểm Đã Dùng:",
+        "totalFreeSpins": "Tổng Vòng Quay Miễn Phí:",
+        "totalAmountPerRound": "Tổng Số Tiền Mỗi Vòng:"
+      }
+    },
+    "pointHistory": {
+      "title": "Lịch Sử Điểm",
+      "columns": {
+        "transactionDateTime": "Ngày - Giờ Giao Dịch",
+        "type": "Loại",
+        "turnover": "Doanh Thu",
+        "currentPoint": "Điểm Hiện Tại"
+      },
+      "emptyState": {
+        "message": "Hiện tại không có gì ở đây!"
+      },
+      "totalPoints": "Tổng Điểm:"
+    },
+    "personalMessage": {
+      "title": "Tin Nhắn Cá Nhân",
+      "tabs": {
+        "inbox": "Hộp Thư",
+        "send": "Gửi"
+      },
+      "emptyState": {
+        "message": "Không tìm thấy kết quả"
+      },
+      "actions": {
+        "newMessage": "Tin Nhắn Mới"
+      },
+      "newMessageModal": {
+        "title": "Tin Nhắn Mới",
+        "fields": {
+          "sendTo": "Gửi Đến",
+          "admin": "Quản Trị Viên",
+          "title": "Tiêu Đề",
+          "titlePlaceholder": "Nhập tiêu đề",
+          "message": "Tin Nhắn",
+          "messagePlaceholder": "Nhập nội dung ở đây...",
+          "attachImage": "Đính Kèm Hình Ảnh (Tùy Chọn)",
+          "uploadInstructions": "Nhấp để tải lên hoặc kéo thả",
+          "allowedFileTypes": "WEBP, PNG hoặc JPG (3MB)."
+        },
+        "characterLimit": "0/300",
+        "UploadImage": "Tải Ảnh Lên",
+        "sendMessageButton": "Gửi Tin Nhắn"
+      },
+      "pagination": {
+        "previous": "<",
+        "next": ">"
+      }
+    },
+    "referral": {
+      "title": "Giới Thiệu",
+      "stats": {
+        "incomeToday": "Thu Nhập Hôm Nay",
+        "totalReferral": "Tổng Số Giới Thiệu",
+        "referralClick": "Lượt Nhấp Giới Thiệu",
+        "totalMember": "Tổng Số Thành Viên",
+        "totalTurnover": "Tổng Doanh Thu",
+        "totalCashback": "Tổng Hoàn Lại Tiền"
+      },
+      "copy": {
+        "referralLink": "Liên Kết Giới Thiệu",
+        "referralCode": "Mã Giới Thiệu",
+        "copyText": "Sao chép mã hoặc liên kết giới thiệu của bạn để gửi cho bạn bè, khi họ đăng ký và chơi, bạn sẽ nhận được hoàn tiền."
+      },
+      "inviteFriends": "Mời Bạn Bè",
+      "socialMedia": {
+        "facebook": "Facebook",
+        "telegram": "Telegram",
+        "skype": "Skype",
+        "whatsapp": "WhatsApp"
+      },
+      "actions": {
+        "transfer": "Chuyển"
+      },
+      "dataOverview": {
+        "title": "Tổng Quan Dữ Liệu",
+        "tabs": {
+          "totalRevenue": "Tổng Doanh Thu",
+          "members": "Thành Viên",
+          "receiveReferral": "Nhận Giới Thiệu"
+        },
+        "table": {
+          "columns": {
+            "date": "Ngày",
+            "referral": "Giới Thiệu"
+          },
+          "emptyState": {
+            "message": "Hiện tại không có gì ở đây!"
+          },
+          "totals": {
+            "totalRevenue": "Tổng Doanh Thu:"
+          }
+        }
+      },
+      "analytics": {
+        "title": "Phân Tích - Đo Lường Hiệu Suất",
+        "metrics": {
+          "income": {
+            "title": "Thu Nhập",
+            "today": "Hôm Nay",
+            "yesterday": "Hôm Qua"
+          },
+          "turnover": {
+            "title": "Doanh Thu",
+            "today": "Hôm Nay",
+            "yesterday": "Hôm Qua"
+          },
+          "cashback": {
+            "title": "Hoàn Lại Tiền",
+            "today": "Hôm Nay",
+            "yesterday": "Hôm Qua"
+          }
+        }
+      }
+    }
+  },
+  "SecurityAndPolicy": {
+    "sidebar": {
+      "TermsandConditions": "Điều khoản và Điều kiện",
+      "PrivacyPolicy": "Chính sách Bảo mật",
+      "CookiesPolicy": "Chính sách Cookies",
+      "activeItemMessage": "Sử dụng các tab phía trên để điều hướng"
+    },
+    "header": {
+      "title": "Bảo mật và Chính sách"
+    },
+    "TermsandConditions": {
+      "title": "Điều khoản và Điều kiện",
+      "content": [
+        "Trang này chứa thông tin giải thích về quyền của bạn khi truy cập và sử dụng trang web icggaming.com. Các điều khoản và điều kiện này liên quan đến trò chơi, khuyến mãi và tiền thưởng có sẵn trên trang web của chúng tôi, và sẽ được đăng tải theo thời gian và được tích hợp tại đây bằng cách tham chiếu."
+      ],
+      "sections": [
+        {
+          "title": "Định nghĩa",
+          "content": [
+            "1.1 Các điều khoản sau đây quy định các điều khoản và điều kiện điều chỉnh quyền truy cập và tham gia của bạn vào các trò chơi hoặc dịch vụ do PlayGame168 cung cấp. Các điều khoản này nên được đọc cùng với 'Quy tắc Cược', 'Chính sách Bảo mật' và các Điều khoản & Điều kiện trong trò chơi.",
+            "1.2 'Trò chơi' đề cập đến hệ thống trò chơi trực tuyến trên PlayGame168, bao gồm cược và đặt cược. 'Thiết bị' đề cập đến bất kỳ nền tảng nào có thể truy cập ứng dụng của chúng tôi, bao gồm máy tính xách tay, điện thoại và thiết bị cầm tay. 'Phần mềm' bao gồm các chương trình và tệp cần thiết để truy cập trang web. 'Thể thao điện tử' đề cập đến hệ thống trò chơi trực tuyến được cung cấp trên PlayGame168, và 'Dịch vụ' bao gồm Phần mềm và Trò chơi."
+          ]
+        },
+        {
+          "title": "Sử dụng trang web",
+          "content": [
+            "2.1 Bạn chỉ được phép chơi trò chơi nếu:",
+            " Từ 18 tuổi trở lên.",
+            " Được pháp luật tại quốc gia của bạn cho phép chơi trò chơi.",
+            "2.2 Nếu chúng tôi phát hiện bạn không được phép chơi, chúng tôi có quyền:",
+            " Ngăn cản bạn tham gia trò chơi ngay lập tức.",
+            " Báo cáo bạn cho các cơ quan có thẩm quyền."
+          ]
+        },
+        {
+          "title": "Sửa đổi",
+          "content": [
+            "3.1 Chúng tôi bảo lưu quyền sửa đổi, cập nhật hoặc thay đổi các Điều khoản và Điều kiện theo quyết định riêng của chúng tôi. Tiếp tục sử dụng icggaming.com sẽ đồng nghĩa với việc bạn chấp nhận các thay đổi này."
+          ]
+        },
+        {
+          "title": "Quyền sở hữu trí tuệ",
+          "content": [
+            "4.1 Tất cả thông tin trên icggaming.com, bao gồm văn bản, hình ảnh và nội dung âm thanh, đều thuộc sở hữu của icggaming.com và các bên cấp phép của nó, và chỉ được sử dụng cho mục đích cá nhân, phi thương mại."
+          ]
+        },
+        {
+          "title": "Điều kiện sử dụng",
+          "content": [
+            "Bạn đang hành động với tư cách cá nhân chứ không phải thay mặt người khác.",
+            "Bạn đã đủ tuổi hợp pháp để đánh bạc.",
+            "Bạn không sử dụng tiền từ các hoạt động trái phép.",
+            "Bạn sẽ giữ an toàn cho thông tin tài khoản của mình.",
+            "Bạn sẽ không tải lên các chương trình có hại, chẳng hạn như vi-rút."
+          ]
+        },
+        {
+          "title": "Đăng ký và thành viên",
+          "content": [
+            "Bạn phải cung cấp thông tin chính xác khi đăng ký. icggaming.com bảo lưu quyền từ chối đơn đăng ký hoặc yêu cầu xác minh thêm danh tính."
+          ]
+        },
+        {
+          "title": "Đặt cược",
+          "content": [
+            "Chỉ chấp nhận đặt cược qua internet và phải tuân thủ các điều khoản và điều kiện. icggaming.com bảo lưu quyền hủy cược nếu phát hiện lỗi hoặc gian lận."
+          ]
+        }
+      ]
+    },
+    "PrivacyPolicy": {
+      "title": "Chính sách Bảo mật",
+      "sections": [
+        {
+          "content": [
+            "Chính sách Bảo mật này mô tả cách chúng tôi xử lý thông tin cá nhân của bạn theo việc truy cập và sử dụng trang web PlayGame168. Chính sách này đảm bảo rằng dữ liệu của bạn được xử lý tuân thủ các luật bảo vệ dữ liệu và cam kết của chúng tôi trong việc bảo vệ quyền riêng tư của bạn."
+          ]
+        },
+        {
+          "title": "Bản tin",
+          "content": [
+            "Khi đăng ký nhận bản tin của chúng tôi, bạn cung cấp địa chỉ email của mình để nhận cập nhật về khuyến mãi, trò chơi và tin tức. Địa chỉ email của bạn sẽ không được chia sẻ với bên thứ ba trừ khi luật pháp yêu cầu."
+          ]
+        },
+        {
+          "title": "Liên lạc",
+          "content": [
+            "Khi bạn liên hệ với chúng tôi qua email hoặc trò chuyện để đặt câu hỏi, thông tin cá nhân của bạn, bao gồm tên và chi tiết liên hệ của bạn, có thể được lưu giữ cho mục đích lưu trữ và đảm bảo chất lượng. Chúng tôi thực hiện mọi biện pháp phòng ngừa để đảm bảo an toàn và bảo mật cho dữ liệu của bạn."
+          ]
+        },
+        {
+          "title": "Chúng tôi thu thập thông tin cá nhân nào?",
+          "content": [
+            "Chúng tôi thu thập và xử lý thông tin cá nhân vì những lý do sau:",
+            "Tên, địa chỉ email và thông tin liên hệ của bạn.",
+            "Chi tiết thanh toán để thực hiện giao dịch trên nền tảng của chúng tôi.",
+            "Hoạt động duyệt web và sở thích trò chơi của bạn."
+          ]
+        },
+        {
+          "title": "Chúng tôi sẽ sử dụng dữ liệu cá nhân của bạn như thế nào?",
+          "content": [
+            "Dữ liệu của bạn sẽ chỉ được sử dụng cho các mục đích liên quan đến việc cung cấp dịch vụ, tuân thủ pháp luật và cải thiện trải nghiệm người dùng. Các mục đích này bao gồm:",
+            "Xử lý các cược và giao dịch tài khoản của bạn.",
+            "Liên lạc về khuyến mãi và cập nhật dịch vụ.",
+            "Cải thiện chức năng và trải nghiệm người dùng của trang web."
+          ]
+        },
+        {
+          "title": "Chúng tôi chia sẻ dữ liệu của bạn với ai?",
+          "content": [
+            "Chúng tôi có thể chia sẻ dữ liệu của bạn với các bên thứ ba được ủy quyền như nhà cung cấp xử lý thanh toán, nhà cung cấp phân tích và cơ quan quản lý khi có yêu cầu pháp lý."
+          ]
+        },
+        {
+          "title": "Quyền của bạn là gì?",
+          "content": [
+            "Là người dùng, bạn có quyền:",
+            "Truy cập dữ liệu cá nhân mà chúng tôi lưu giữ về bạn.",
+            "Yêu cầu sửa chữa dữ liệu không chính xác.",
+            "Yêu cầu xóa thông tin cá nhân của bạn trong một số điều kiện cụ thể.",
+            "Rút lại sự đồng ý xử lý dữ liệu (nếu áp dụng)."
+          ]
+        },
+        {
+          "title": "Liên hệ",
+          "content": [
+            "Nếu bạn có bất kỳ câu hỏi hoặc lo ngại nào về dữ liệu cá nhân của mình, bạn có thể liên hệ với đội hỗ trợ của chúng tôi tại",
+            "support@icggmaing.com"
+          ]
+        }
+      ]
+    },
+    "CookiesPolicy": {
+      "title": "Chính sách Cookies",
+      "sections": [
+        {
+          "title": "Cookies là gì?",
+          "content": [
+            "Cookies là các tệp nhỏ chứa thông tin mà một trang web gửi đến máy tính hoặc thiết bị di động của bạn khi bạn xem thông tin trên trang web.",
+            "Cookies giúp chúng tôi cải thiện trải nghiệm người dùng của bạn bằng cách ghi nhớ các tùy chọn của bạn, giúp bạn sử dụng trang web một cách hiệu quả hơn. Nói cách khác, Cookies giúp bạn điều hướng giữa các trang dễ dàng và nhanh chóng hơn."
+          ]
+        },
+        {
+          "title": "Cookies trên icggmaing.com",
+          "content": [
+            "Tại icggmaing.com, chúng tôi sử dụng Cookies cần thiết để cung cấp các chức năng cơ bản và đơn giản hóa việc điều hướng trên trang web của chúng tôi. Ngoài ra, Cookies còn được sử dụng để tăng cường chức năng của trang web, ví dụ, để lưu trữ các tùy chọn của bạn. Cuối cùng, chúng tôi sử dụng Cookies để cải thiện hiệu suất của trang web nhằm mang lại trải nghiệm người dùng tốt hơn.",
+            "Dưới đây là ba loại Cookies chính chúng tôi sử dụng trên trang web của mình:",
+            "Cookies Cần Thiết",
+            ": Các Cookies này chịu trách nhiệm về chức năng trang web, ngôn ngữ và đảm bảo các thành phần trang web được tải đúng cách.",
+            "Cookies Chức Năng",
+            ": Cookies này ghi nhớ các lựa chọn của người dùng, theo dõi thông tin liên kết, ghi nhớ liệu một trang đã được truy cập hay chưa và hiển thị nội dung dựa trên tùy chọn. Chúng cũng cung cấp tính năng định vị địa lý cho mục đích ngôn ngữ của trang web.",
+            "Cookies Hiệu Suất",
+            ": Được sử dụng để theo dõi cách người dùng truy cập trang web, thực hiện khai thác dữ liệu ẩn danh nội bộ, thử nghiệm các ý tưởng thiết kế khác nhau và cải thiện bố cục trang web.",
+            "Xin lưu ý rằng playgame168.com sẽ không bao giờ sử dụng bất kỳ hình thức Cookies quảng cáo hành vi trực tuyến nào, cũng như không cho phép bất kỳ bên thứ ba nào làm như vậy trên các trang web của chúng tôi."
+          ]
+        },
+        {
+          "title": "Quản lý Cookies",
+          "content": [
+            "Hiện tại, chúng tôi không thể cung cấp cho bạn tùy chọn bật hoặc tắt các danh mục Cookies riêng lẻ. Khi bạn truy cập trang web của chúng tôi, icggmaing.com sẽ đặt một Cookie trên thiết bị của bạn và sẽ ghi nhớ các tùy chọn của bạn để đảm bảo bạn tiếp tục sử dụng các dịch vụ của chúng tôi. Nếu bạn đã nhấp vào Chấp nhận trên thanh Cookies trình duyệt của chúng tôi hoặc tiếp tục sử dụng trang web và dịch vụ của chúng tôi, bạn sẽ được coi là đã chấp nhận việc chúng tôi sử dụng Cookies như được mô tả trong chính sách này.",
+            "Tuy nhiên, cài đặt trình duyệt của bạn có thể được sửa đổi để đảm bảo rằng nó không chấp nhận Cookies từ bất kỳ trang web nào. Bạn có thể tìm thấy hướng dẫn về cách thực hiện điều này trong phần Trợ giúp của trình duyệt bạn chọn. Tuy nhiên, vì lý do bảo mật, bạn có thể thấy rằng một số nội dung trang web không thể truy cập trừ khi việc sử dụng Cookies được bật trên thiết bị của bạn."
+          ]
+        }
+      ]
     }
   }
 }

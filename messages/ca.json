@@ -17,7 +17,7 @@
     "banner5": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733203488/3_oauyjg.jpg"
   },
   "NavbarWallet": {
-    "currency": "CAD",
+    "currency": "USD",
     "currencyicon": "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034744/USD_ruok8f.png",
     "wallet": "Wallet",
     "points": "Points",
@@ -494,6 +494,58 @@
         "name": "Ganesha Fortune",
         "provider": "PGSoft"
       }
+    },
+    "LiveCasino": {
+      "title": "Live Casino",
+      "seeAll": "See All",
+      "ninjaRaccoonFrenzy": {
+        "name": "Ninja Raccoon Frenzy",
+        "provider": "PGSoft"
+      },
+      "treasuresOfAztec": {
+        "name": "Treasures of Aztec",
+        "provider": "PGSoft"
+      },
+      "mahjongWays2": {
+        "name": "Mahjong Ways 2",
+        "provider": "PGSoft"
+      },
+      "luckyNeko": {
+        "name": "Lucky Neko",
+        "provider": "PGSoft"
+      },
+      "mahjongWays": {
+        "name": "Mahjong Ways",
+        "provider": "PGSoft"
+      },
+      "wildBountyShowdown": {
+        "name": "Wild Bounty Showdown",
+        "provider": "PGSoft"
+      },
+      "waysOfTheQilin": {
+        "name": "Ways of the Qilin",
+        "provider": "PGSoft"
+      },
+      "wildBandito": {
+        "name": "Wild Bandito",
+        "provider": "PGSoft"
+      },
+      "fortuneRabbit": {
+        "name": "Fortune Rabbit",
+        "provider": "PGSoft"
+      },
+      "caishenWins": {
+        "name": "Caishen Wins",
+        "provider": "PGSoft"
+      },
+      "fortuneOx": {
+        "name": "Fortune Ox",
+        "provider": "PGSoft"
+      },
+      "ganeshaFortune": {
+        "name": "Ganesha Fortune",
+        "provider": "PGSoft"
+      }
     }
   },
   "GamesHeader": {
@@ -902,5 +954,527 @@
     },
     "footer": "💵 The system calculates your friends' losses daily from 00:00 to 23:59. Income is calculated every day at 8:00.",
     "imageAlt": "Referal Banner"
+  },
+  "searchModal": {
+    "searchBar": {
+      "placeholder": "Search Games",
+      "description": "Find your games"
+    },
+    "recommended": {
+      "title": "Recommended for you",
+      "games": {
+        "game1": {
+          "name": "Jewel Mania",
+          "provider": "Mancala"
+        },
+        "game2": {
+          "name": "Hot Fruits on Fire",
+          "provider": "Mancala"
+        },
+        "game3": {
+          "name": "#BarsAndBells",
+          "provider": "Mancala"
+        },
+        "game4": {
+          "name": "Reel Reel Hot",
+          "provider": "Mancala"
+        },
+        "game5": {
+          "name": "Spirit of the Lake",
+          "provider": "Mancala"
+        },
+        "game6": {
+          "name": "The Twin Wins Mystery",
+          "provider": "Mancala"
+        }
+      }
+    }
+  },
+  "providersModal": {
+    "title": "All Providers",
+    "closeButton": "Close",
+    "providers": {
+      "PGSoft": "PGSoft",
+      "Joker": "Joker",
+      "JILI": "JILI",
+      "PragmaticPlay": "PragmaticPlay",
+      "Habanero": "Habanero",
+      "Pegasus": "Pegasus",
+      "DreamGaming": "DreamGaming",
+      "Worldmatch": "Worldmatch",
+      "WMCASINO": "WMCASINO",
+      "Amigo": "Amigo",
+      "Naga": "Naga",
+      "Nolimit": "Nolimit City",
+      "SA": "SA",
+      "AeSexy": "Ae Sexy",
+      "Evoplay": "Evoplay",
+      "Spribe": "Spribe",
+      "Sbobet": "Sbobet",
+      "Evolution": "Evolution Gaming",
+      "Mancala": "Mancala",
+      "PlaynGo": "Play`n Go",
+      "Relax": "Relax Gaming",
+      "Smartsoft": "Smartsoft Gaming",
+      "3Oaks": "3 Oaks Gaming",
+      "Dragongaming": "Dragongaming",
+      "WeGaming": "We Gaming",
+      "Rich88": "Rich88",
+      "SpadeGaming": "SpadeGaming",
+      "FACHAI": "FA CHAI",
+      "FastSpin": "FastSpin",
+      "CQ9": "CQ9",
+      "Hacksaw": "Hacksaw",
+      "RoyalSlot": "Royal Slot Gaming",
+      "Winfinity": "Winfinity"
+    }
+  },
+  "signupModal": {
+    "close": "Close",
+    "signUpTab": "Sign Up",
+    "signInTab": "Sign In",
+    "mobilePlaceholder": "Mobile Phone *",
+    "passwordPlaceholder": "Password *",
+    "confirmPasswordPlaceholder": "Confirm Password *",
+    "passwordsMismatchError": "Passwords do not match.",
+    "invalidCredentialsError": "Invalid username or password.",
+    "signUpSuccess": "Sign-up successful!",
+    "signInSuccess": "Login successful!",
+    "submitSignUp": "Sign Up",
+    "submitSignIn": "Sign In"
+  },
+  "wallet": {
+    "title": "Your Wallet",
+    "history": "History",
+    "tabs": {
+      "deposit": "Deposit",
+      "withdraw": "Withdraw",
+      "transfer": "Transfer"
+    },
+    "deposit": {
+      "paymentMethod": "Payment Method",
+      "methods": {
+        "abaBank": "ABA Bank",
+        "acledaBank": "Acleda Bank",
+        "qrCodeAbaBank": "QR Code ABA Bank"
+      },
+      "DepositAmount": {
+        "title": "Deposit Amount",
+        "yourWallet": "Your wallet",
+        "minMax": "Min 100.00฿ ~ Max 50,000.00฿",
+        "balance": "Balance",
+        "buttons": {
+          "100": "100฿",
+          "300": "300฿",
+          "500": "500฿",
+          "1000": "1000฿"
+        },
+        "instructions": {
+          "title": "Please read for faster transaction processing",
+          "points": {
+            "1": "Create a new transaction each time before transferring money",
+            "2": "The QR Code can only be used once",
+            "3": "Do not reuse the QR Code",
+            "4": "Complete the transaction within the specified time"
+          }
+        },
+        "backButton": "Back",
+        "nextButton": "Next Step"
+      }
+    },
+    "withdraw": {
+      "withdrawalCondition": "Withdrawal Condition",
+      
+      "conditions": {
+        "depositTurnover": "Deposit Turnover",
+        "turnover": "Turnover",
+        "turnWinlose": "Turn Winlose"
+      },
+      "withdrawAmount": "Withdraw Amount",
+      "yourWallet": "Your wallet",
+      "minMax": "Min 500.00฿ ~ Max 10,000.00฿",
+      "balance": "Balance",
+      "buttons": {
+        "min": "Min",
+        "25Percent": "25%",
+        "50Percent": "50%",
+        "max": "Max"
+      },
+      "note": "Note",
+      "notePlaceholder": "Type something here ...",
+      "characterLimit": "0/300",
+      "withdrawButton": "Withdraw"
+    },
+    "transfer": {
+      "transferFrom": "Transfer From",
+      "yourWallet": "Your wallet",
+      "transferButton": "Transfer to Main Wallet"
+    },
+    "line": "Line"
+  },
+  "questsHub": {
+    "title": "Quests Hub",
+    "challenges": "Challenges",
+    "dailyCheckIn": "Daily Check-In",
+    "playQuests": "Play Quests",
+    "checkInReward": {
+      "title1": "5 Days",
+      "title2": "Check-In",
+      "title3": "Reward",
+      "subtext": "Don't miss out on your daily bonuses~!",
+      "accumulatedCheckIn": "Accumulated check-in:",
+      "Day": "Days",
+      "days": {
+        "day1": {
+          "day": "Today",
+          "points": "200",
+          "status": "Claim",
+          "buttonStyle": "claim"
+        },
+        "day2": {
+          "day": "Tomorrow",
+          "points": "300",
+          "status": "Unclaimed",
+          "buttonStyle": "unclaimed"
+        },
+        "day3": {
+          "day": "Day 3",
+          "points": "500 ",
+          "status": "Unclaimed",
+          "buttonStyle": "unclaimed"
+        },
+        "day4": {
+          "day": "Day 4",
+          "points": "1000 ",
+          "status": "Unclaimed",
+          "buttonStyle": "unclaimed"
+        },
+        "day5": {
+          "day": "Day 5",
+          "points": "3000 ",
+          "status": "Unclaimed",
+          "buttonStyle": "unclaimed"
+        }
+      },
+      "modal": {
+        "title": "Login for 5 Consecutive Days to Receive up to 5000 Gems",
+        "content": {
+          "content1": {
+            "icon": "💎",
+            "text": "Log in for 5 consecutive days to receive up to 5000 gems."
+          },
+          "content2": {
+            "icon": "✅",
+            "text": "Simply participate in the consecutive login activity to receive gems instantly."
+          },
+          "content3": {
+            "icon": "💰",
+            "text": "Gems can be exchanged for free spins."
+          },
+          "content4": {
+            "icon": "🌟",
+            "text": "Participate in the activity to accumulate gems easily. Just log in and claim gems every day for 5 days to be eligible to receive up to 5000 gems."
+          }
+        }
+      }
+    },
+    "stats": {
+      "points": "1.00K",
+      "questsCompleted": "Quests Completed"
+    },
+    "actions": {
+      "close": "Close"
+    },
+    "adventureSection": {
+      "title": "Join the",
+      "title1": " Adventure!",
+      "subtitle": "Begin journeys and unlock plentiful rewards as you progress.",
+      "promotion": {
+        "title": "Play games from every category!",
+        "description": "💎 Accumulate slot bets across all providers up to 30,000 THB. 💎 Instantly unlock a reward of 10,000 gems 💎. 🎯 Simply participate in the activity by claiming the quest.",
+        "cta": "Join Now",
+        "eventPeriod": "Event Duration: November 10 - January 10, 2024"
+      },
+      "eventBanner": {
+        "image1Alt": "Promotion Banner 1",
+        "image2Alt": "Promotion Banner 2"
+      }
+    },
+    "questDetailsPage": {
+      "progressSection": {
+        "title": "Your Progress",
+        "claimButton": {
+          "text": "Claim",
+          "status": "disabled"
+        }
+      },
+      "conditionsSection": {
+        "Turnover": "Turnover",
+        "CompletedBet": "Completed Bet",
+        "title": "Conditions",
+        "conditionsList": {
+          "1": "Minimum Bet: 1.00฿",
+          "2": "Number of bets: 100 times",
+          "3": "Accumulated bet: 30.00K฿"
+        }
+      },
+      "activityDescription": {
+        "title": "Accumulate slot bets across all providers",
+        "subtitle": "Simply join the activity and meet the following conditions:",
+        "steps": {
+          "1": "1. Accumulate slot bets across all providers up to 30,000฿.",
+          "2": "2. Unlock the reward of 10,000 gems 💎💎 instantly.",
+          "3": "3. Join the activity easily by claiming the quest."
+        }
+      },
+      "navigation": {
+        "slotsButton": "Slots",
+        "searchGamesPlaceholder": "Search Games"
+      },
+      "games": {
+        "games1": {
+          "name": "Christmas Miracles",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games2": {
+          "name": "Muay Thai Fighter",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games3": {
+          "name": "ZEUS",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games4": {
+          "name": "Tiger Warrior",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games5": {
+          "name": "Magical Lamp",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games6": {
+          "name": "War of the Egyptian Gods",
+          "provider": "Rich88",
+          "favorite": true
+        },
+        "games7": {
+          "name": "Dancing Fever",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games8": {
+          "name": "Fiery Sevens",
+          "provider": "SpadeGaming",
+          "favorite": true
+        },
+        "games9": {
+          "name": "Maya Gems",
+          "provider": "Rich88",
+          "favorite": true
+        }
+      }
+    }
+  },
+  "inviteAndBenefits": {
+    "title": "Invite and Benefits",
+    "referralLinkTitle": "Referral Link",
+    "referralLink": {
+      "label": "Referral Link",
+      "placeholder": "https://ICGGaming.co?ref_code=IP7MSaJ9aH",
+      "copyButton": "Copy"
+    },
+    "referralCodeTitle": "Referral Code",
+    "referralCode": {
+      "label": "Referral Code",
+      "placeholder": "IP7MSaJ9aH",
+      "copyButton": "Copy"
+    },
+    "description": "Copy your referral code or link to your friends, and when they register and play the game, you get a rebate.",
+    "socialMedia": {
+      "facebook": "Share on Facebook",
+      "twitter": "Share on Twitter",
+      "whatsapp": "Share on WhatsApp",
+      "telegram": "Share on Telegram"
+    }
+  },
+  "logoutConfirmation": {
+    "title": "You don't want to miss today's jackpot!",
+    "message": "Are you sure you want to log out?",
+    "buttons": {
+      "no": "NO",
+      "yes": "YES"
+    }
+  },
+  "SecurityAndPolicy": {
+    "sidebar": {
+      "TermsandConditions": "Terms and Conditions",
+      "PrivacyPolicy": "Privacy Policy",
+      "CookiesPolicy": "Cookies Policy",
+      "activeItemMessage": "Use the tabs above for navigation"
+    },
+    "header": {
+      "title": "Security and Policy"
+    },
+    "TermsandConditions": {
+      "title": "Terms and Conditions",
+      "content": [
+        "This page contains information explaining your rights in accessing and using icggaming.com website. The terms and conditions relate to games, promotions, and bonuses available on our site, which will be posted from time to time and incorporated herein by reference."
+      ],
+      "sections": [
+        {
+          "title": "Definition",
+          "content": [
+            "1.1 The following provisions define the terms and conditions that govern your access and participation in games or services provided by PlayGame168. These provisions should be read in conjunction with the 'Betting Rules,' 'Privacy Policy,' and in-game Terms & Conditions.",
+            "1.2 'Games' refer to the internet gaming system on PlayGame168, which includes betting and wagers. 'Device' means any platform that can access our application, including laptops, phones, and handheld devices. 'Software' includes programs and files needed to access the website. 'Sportsbook' refers to the internet gaming system offered on PlayGame168, and 'Services' encompasses the Software and Games altogether."
+          ]
+        },
+        {
+          "title": "Use of Site",
+          "content": [
+            "2.1 You are allowed to play games only if you:",
+            " Are 18 years old or older.",
+            " Are legally entitled to play games in your country.",
+            "2.2 If we find that you are not entitled to play, we reserve the right to:",
+            " Immediately prevent you from participating in games.",
+            " Report you to relevant authorities."
+          ]
+        },
+        {
+          "title": "Modification",
+          "content": [
+            "3.1 We reserve the right to amend, update, or modify the Terms and Conditions at our sole discretion. Continued use of icggaming.com after amendments will constitute your acceptance of the changes."
+          ]
+        },
+        {
+          "title": "Intellectual Property",
+          "content": [
+            "4.1 All information on icggaming.com, including text, graphics, and audio content, belongs to icggaming.com and its licensors and is for personal, non-commercial use only."
+          ]
+        },
+        {
+          "title": "Conditions of Use",
+          "content": [
+            "You are acting in your personal capacity and not on behalf of another person.",
+            "You are of legal age to gamble.",
+            "You are not using money from unauthorized activities.",
+            "You will keep your account information secure.",
+            "You will not upload harmful programs, such as viruses."
+          ]
+        },
+        {
+          "title": "Registration and Membership",
+          "content": [
+            "You must provide accurate information during registration. icggaming.com reserves the right to reject applications or request further identification verification."
+          ]
+        },
+        {
+          "title": "Placement of Bets",
+          "content": [
+            "Bets will be accepted only through the internet and must comply with the terms and conditions. icggaming.com reserves the right to void bets if errors occur or cheating is detected."
+          ]
+        }
+      ]
+    },
+    "PrivacyPolicy": {
+      "title": "Privacy Policy",
+      "sections": [
+        {
+          "content": [
+            "This Privacy Policy describes how we handle your personal information in accordance with accessing and using the PlayGame168 website. This policy ensures that your data is handled in compliance with data protection laws and our commitment to protecting your privacy."
+          ]
+        },
+        {
+          "title": "Newsletter",
+          "content": [
+            "By subscribing to our newsletter, you provide your email address for updates on promotions, games, and news. Your email address will not be shared with third parties unless required by law."
+          ]
+        },
+        {
+          "title": "Correspondence",
+          "content": [
+            "When you contact us via email or chat for any inquiries, your personal information, including your name and contact details, may be retained for record-keeping and quality assurance purposes. We take every precaution to ensure the security and confidentiality of your data."
+          ]
+        },
+        {
+          "title": "What Personal Information Do We Collect About You?",
+          "content": [
+            " We collect and process personal information for the following reasons:",
+            "Your name, email address, and contact details.",
+            "Payment details for transactions on our platform.",
+            "Your browsing activity and game preferences."
+          ]
+        },
+        {
+          "title": "How Will We Use Your Personal Data?",
+          "content": [
+            "Your data will only be used for purposes related to providing services, legal compliance, and improving the user experience. These include:",
+            "Processing your bets and account transactions.",
+            "Communicating promotions and service updates.",
+            "Enhancing website functionality and user experience."
+          ]
+        },
+        {
+          "title": "Who Do We Share Your Data With?",
+          "content": [
+            "We may share your data with authorized third parties such as payment processors, analytics providers, and regulatory authorities when legally required."
+          ]
+        },
+        {
+          "title": "What Are Your Rights?",
+          "content": [
+            "As a user, you have the right to:",
+            "Access the personal data we hold about you.",
+            "Request corrections to inaccurate data.",
+            "Request the deletion of your personal information under specific conditions.",
+            "Withdraw consent for data processing where applicable."
+          ]
+        },
+        {
+          "title": "Contact",
+          "content": [
+            "If you have any questions or concerns regarding your personal data, you may contact our support team at",
+            "support@icggmaing.com"
+          ]
+        }
+      ]
+    },
+    "CookiesPolicy": {
+      "title": "Cookies Policy",
+      "sections": [
+        {
+          "title": "What are cookies?",
+          "content": [
+            "Cookies are small files containing information that a website sends to your computer or mobile while you view information on the website.",
+            "Cookies help us to improve your user experience by remembering you your preferences are stored, allowing you to use the website more efficiently. In other words, cookies are there to help you navigate between pages easier and faster."
+          ]
+        },
+        {
+          "title": "Cookies at icggmaing.com",
+          "content": [
+            "At icggmaing.com, we use cookies that are strictly necessary to provide basic functions and ease of navigation around our website. Further, cookies are used to enhance the functionality of the site, for example, to store your preferences. Lastly, we use cookies to provide you with a better user experience by improving the performance of our site.",
+            "Below are three main types of Cookies we use on our website:",
+            "Strictly Necessary Cookies",
+            ": These Cookies are in charge of the website functionality, language, and make sure correct elements of the website are loaded in a proper way.",
+            "Functionality Cookies",
+            ": These remember user choices, track affiliate information, remember whether a page has been accessed before, and display content based on preferences. They also provide geo-targeting for site language purposes.",
+            "Performance Cookies",
+            ": Used to track the way users visit the websites, perform internal anonymous data mining, testing different design ideas, and improve our sites layout.",
+            "Please note that playgame168.com will never use any form of online behavioural advertising cookies, nor allow any third parties to do so on our sites."
+          ]
+        },
+        {
+          "title": "Managing Cookies",
+          "content": [
+            "Currently, we are unable to offer you the option of enabling or disabling individual categories of cookies. When you visit our website, icggmaing.com places a cookie on your device and will remember your preferences to ensure you keep enjoying our services. If you clicked Accept on our Cookies Browser bar, or if you carried on using our website and services, you are deemed to have accepted our use of Cookies in the way described in this policy.",
+            "Nonetheless, your browser settings can be modified to ensure it will not accept cookies from any website. You can find instructions on how to implement this in the Help section of your chosen browser. However, for security reasons, you may find that certain website content is not accessible unless the use of cookies is enabled on your device."
+          ]
+        }
+      ]
+    }
   }
 }

@@ -1,40 +1,12 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
-import gsap from "gsap";
-
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 const WithdrawTab: React.FC = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const itemRefs = useRef<HTMLDivElement[]>([]);
-  const buttonRef = useRef<HTMLButtonElement | null>(null);
   const [note, setNote] = useState(""); // State to track the note content
   const maxCharacters = 300; // Set max character limit
-
-  useEffect(() => {
-    // Animate container fade-in
-    gsap.fromTo(
-      containerRef.current,
-      { opacity: 0 },
-      { opacity: 1, duration: 0.8, ease: "power4.out" }
-    );
-
-    // Animate child elements staggered
-    gsap.fromTo(
-      itemRefs.current,
-      { opacity: 0, y: 20 },
-      { opacity: 1, y: 0, duration: 0.6, stagger: 0.2, ease: "power4.out", delay: 0.3 }
-    );
-
-    // Animate button
-    if (buttonRef.current) {
-      gsap.fromTo(
-        buttonRef.current,
-        { scale: 0.9, opacity: 0 },
-        { scale: 1, opacity: 1, duration: 0.4, delay: 0.8, ease: "power2.out" }
-      );
-    }
-  }, []);
-
+  const t = useTranslations("wallet.withdraw");
   const handleNoteChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     if (e.target.value.length <= maxCharacters) {
       setNote(e.target.value); // Update note content if within the character limit
@@ -43,52 +15,68 @@ const WithdrawTab: React.FC = () => {
 
   const characterCount = note.length; // Current character count
 
-  return (
-    <div ref={containerRef} className="overflow-y-scroll h-full scrollbar-hide">
-      <h3
-        ref={(el) => {
-          if (el) itemRefs.current.push(el);
-        }}
-        className="text-sm text-gray-400 mb-4"
-      >
-        Withdrawal Condition
-      </h3>
-      <div
-        ref={(el) => {
-          if (el) itemRefs.current.push(el);
-        }}
-        className="bg-gray-700 p-4 rounded-lg mb-4"
-      >
-        <div className="flex justify-between mb-2">
-          <p className="text-sm text-gray-300">Deposit Turnover:</p>
-          <span className="text-yellow-400">0.00฿ / 0.00฿</span>
-        </div>
-        <div className="flex justify-between mb-2">
-          <p className="text-sm text-gray-300">Turnover:</p>
-          <span className="text-yellow-400">0.00฿ / 0.00฿</span>
-        </div>
-        <div className="flex justify-between mb-2">
-          <p className="text-sm text-gray-300">Turn Winlose:</p>
-          <span className="text-yellow-400">0.00฿ / 0.00฿</span>
-        </div>
-      </div>
+  const containerVariants = {
+    hidden: { opacity: 0, scale: 0.9 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.6, ease: "easeOut", staggerChildren: 0.2 },
+    },
+  };
 
-      <h3
-        ref={(el) => {
-          if (el) itemRefs.current.push(el);
-        }}
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
+
+  const buttonVariants = {
+    hidden: { scale: 0.9, opacity: 0 },
+    visible: { scale: 1, opacity: 1, transition: { duration: 0.4, delay: 0.6 } },
+  };
+
+  return (
+    <motion.div
+      className="overflow-y-scroll h-full scrollbar-hide"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+    >
+      <motion.h3
         className="text-sm text-gray-400 mb-4"
+        variants={itemVariants}
       >
-        Withdraw Amount
-      </h3>
-      <div
-        ref={(el) => {
-          if (el) itemRefs.current.push(el);
-        }}
+        {t("withdrawAmount")}
+      </motion.h3>
+      <motion.div
         className="bg-gray-700 p-4 rounded-lg mb-4"
+        variants={itemVariants}
       >
         <div className="flex justify-between mb-2">
-          <p className="text-sm text-gray-300">Your wallet:</p>
+          <p className="text-sm text-gray-300">{t("conditions.depositTurnover")}:</p>
+          <span className="text-yellow-400">0.00฿ / 0.00฿</span>
+        </div>
+        <div className="flex justify-between mb-2">
+          <p className="text-sm text-gray-300">{t("conditions.turnover")}:</p>
+          <span className="text-yellow-400">0.00฿ / 0.00฿</span>
+        </div>
+        <div className="flex justify-between mb-2">
+          <p className="text-sm text-gray-300">{t("conditions.turnWinlose")}:</p>
+          <span className="text-yellow-400">0.00฿ / 0.00฿</span>
+        </div>
+      </motion.div>
+
+      <motion.h3
+        className="text-sm text-gray-400 mb-4"
+        variants={itemVariants}
+      >
+        {t("withdrawAmount")}
+      </motion.h3>
+      <motion.div
+        className="bg-gray-700 p-4 rounded-lg mb-4"
+        variants={itemVariants}
+      >
+        <div className="flex justify-between mb-2">
+          <p className="text-sm text-gray-300">{t("yourWallet")}:</p>
           <span className="text-gray-300">0.00฿</span>
         </div>
         <input
@@ -98,32 +86,34 @@ const WithdrawTab: React.FC = () => {
           readOnly
         />
         <div className="flex justify-between text-xs text-gray-400 mt-2">
-          <span>Min 500.00฿ ~ Max 10.00K฿</span>
-          <span>Balance: 0.00฿</span>
+          <span>{t("minMax")}</span>
+          <span>{t("balance")}: 0.00฿</span>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="flex gap-2 mb-4">
-        <button className="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-600">
-          Min
-        </button>
-        <button className="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-600">
-          25%
-        </button>
-        <button className="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-600">
-          50%
-        </button>
-        <button className="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-600">
-          Max
-        </button>
-      </div>
+      <motion.div
+        className="flex gap-2 mb-4"
+        variants={itemVariants}
+      >
+        {["Min", "25%", "50%", "Max"].map((label) => (
+          <button
+            key={label}
+            className="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-600"
+          >
+            {label}
+          </button>
+        ))}
+      </motion.div>
 
-      <div className="mt-6">
-        <h3 className="text-sm text-gray-400 mb-2">Note</h3>
+      <motion.div
+        className="mt-6"
+        variants={itemVariants}
+      >
+        <h3 className="text-sm text-gray-400 mb-2">{t("note")}</h3>
         <div className="relative bg-gray-700 p-4 rounded-lg">
           <textarea
             className="bg-gray-800 w-full h-24 p-3 text-sm text-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-yellow-500"
-            placeholder="Type Something here ..."
+            placeholder={t("notePlaceholder")}
             value={note}
             onChange={handleNoteChange}
           ></textarea>
@@ -131,15 +121,15 @@ const WithdrawTab: React.FC = () => {
             <span>{characterCount}</span> / {maxCharacters}
           </div>
         </div>
-      </div>
+      </motion.div>
       <br />
-      <button
-        ref={buttonRef}
+      <motion.button
         className="w-full py-2 bg-yellow-400 text-black font-bold rounded-lg hover:bg-yellow-500 transition text-sm"
+        variants={buttonVariants}
       >
-        Withdraw
-      </button>
-    </div>
+        {t("withdrawButton")}
+      </motion.button>
+    </motion.div>
   );
 };
 

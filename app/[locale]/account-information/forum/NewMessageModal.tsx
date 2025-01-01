@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import gsap from "gsap";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 interface NewMessageModalProps {
   isOpen: boolean; // Controls the visibility of the modal
@@ -17,6 +18,7 @@ const NewMessageModal: React.FC<NewMessageModalProps> = ({ isOpen, onClose }) =>
   const overlayRef = useRef<HTMLDivElement>(null);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [message, setMessage] = useState<string>("");
+  const t = useTranslations("accountInformation.personalMessage");
 
   useEffect(() => {
     if (isOpen) {
@@ -110,7 +112,7 @@ const NewMessageModal: React.FC<NewMessageModalProps> = ({ isOpen, onClose }) =>
   return ReactDOM.createPortal(
     <div
       ref={overlayRef}
-      className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-[200]"
+      className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-[200] backdrop-blur-sm"
     >
       <div
         ref={modalRef}
@@ -118,7 +120,7 @@ const NewMessageModal: React.FC<NewMessageModalProps> = ({ isOpen, onClose }) =>
       >
         {/* Modal Header */}
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-lg font-bold text-white">New Message</h2>
+          <h2 className="text-lg font-bold text-white">{t("newMessageModal.title")}</h2>
           <button
             onClick={() => onClose()}
             className="text-gray-400 hover:text-white"
@@ -132,7 +134,7 @@ const NewMessageModal: React.FC<NewMessageModalProps> = ({ isOpen, onClose }) =>
         <form>
           {/* Send To Field */}
           <div className="mb-4">
-            <label className="block text-gray-400 text-sm mb-1">Send To</label>
+            <label className="block text-gray-400 text-sm mb-1">{t("newMessageModal.fields.sendTo")}</label>
             <input
               type="text"
               value="Admin"
@@ -143,7 +145,7 @@ const NewMessageModal: React.FC<NewMessageModalProps> = ({ isOpen, onClose }) =>
 
           {/* Title Field */}
           <div className="mb-4">
-            <label className="block text-gray-400 text-sm mb-1">Title</label>
+            <label className="block text-gray-400 text-sm mb-1">{t("newMessageModal.fields.title")}</label>
             <input
               type="text"
               placeholder="Enter title"
@@ -153,9 +155,9 @@ const NewMessageModal: React.FC<NewMessageModalProps> = ({ isOpen, onClose }) =>
 
           {/* Message Field */}
           <div className="mb-4">
-            <label className="block text-gray-400 text-sm mb-1">Message</label>
+            <label className="block text-gray-400 text-sm mb-1">{t("newMessageModal.fields.message")}</label>
             <textarea
-              placeholder="Type Something here ..."
+              placeholder={t("newMessageModal.fields.messagePlaceholder")}
               maxLength={300}
               className="w-full bg-gray-800 text-gray-300 px-4 py-2 rounded-lg focus:outline-none resize-none h-24"
               value={message}
@@ -169,7 +171,7 @@ const NewMessageModal: React.FC<NewMessageModalProps> = ({ isOpen, onClose }) =>
           {/* Image Attachment Field */}
           <div className="mb-4">
             <label className="block text-gray-400 text-sm mb-1">
-              Attach an Image (Optional)
+              {t("newMessageModal.fields.attachImage")}
             </label>
             <div
               className={`border border-dashed border-gray-600 rounded-lg p-4 text-center ${selectedImage ? "relative" : "flex flex-col items-center"
@@ -198,7 +200,7 @@ const NewMessageModal: React.FC<NewMessageModalProps> = ({ isOpen, onClose }) =>
                     className="text-gray-500 text-2xl mb-2"
                   />
                   <p className="text-yellow-500 text-sm mb-2">
-                    Click to upload or drag and drop
+                    {t("newMessageModal.fields.uploadInstructions")}
                   </p>
                   <p className="text-gray-500 text-xs mb-4">
                     Supported: WEBP, PNG, JPG (Max 3MB)
@@ -207,7 +209,7 @@ const NewMessageModal: React.FC<NewMessageModalProps> = ({ isOpen, onClose }) =>
                     htmlFor="image-upload"
                     className="cursor-pointer bg-gray-800 text-gray-300 px-4 py-2 rounded-lg hover:bg-gray-700"
                   >
-                    Upload Image
+                    {t("newMessageModal.UploadImage")}
                   </label>
                   <input
                     id="image-upload"
@@ -226,7 +228,7 @@ const NewMessageModal: React.FC<NewMessageModalProps> = ({ isOpen, onClose }) =>
             type="submit"
             className="w-full bg-gray-700 text-gray-500 font-semibold px-4 py-2 rounded-lg hover:bg-gray-600"
           >
-            Send a Message
+            {t("newMessageModal.sendMessageButton")}
           </button>
         </form>
       </div>

@@ -7,10 +7,12 @@ import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { useTranslations } from "next-intl";
 
 const CashbackPage = () => {
 
 
+  const t = useTranslations("accountInformation.cashback");
 
   const [startDate, setStartDate] = useState<Date | undefined>(undefined);
   const [endDate, setEndDate] = useState<Date | undefined>(undefined);
@@ -42,7 +44,7 @@ const CashbackPage = () => {
 
   return (
     <div ref={containerRef} className="p-6 bg-gray-900 rounded-lg">
-      <h2 className="text-lg font-bold text-white mb-4">Cashback</h2>
+      <h2 className="text-lg font-bold text-white mb-4">{t("title")}</h2>
 
       {/* Date Filter */}
       <div className="flex justify-end mb-4 relative">
@@ -77,8 +79,8 @@ const CashbackPage = () => {
 
       {/* Table Headers */}
       <div className="grid grid-cols-2 text-gray-400 text-sm font-semibold mb-3">
-        <span>Transaction Date-Time</span>
-        <span className="text-right">Cashback Amount</span>
+        <span>{t("columns.transactionDateTime")}</span>
+        <span className="text-right">{t("columns.cashbackAmount")}</span>
       </div>
 
       {/* Empty State */}
@@ -90,7 +92,7 @@ const CashbackPage = () => {
           height={48}
           className="mb-3"
         />
-        <p>There&apos;s nothing here yet!</p>
+        <p>{t("emptyState.message")}</p>
       </div>
 
       {/* Pagination and Total */}
@@ -105,7 +107,7 @@ const CashbackPage = () => {
           </button>
         </div>
         <div className="text-sm font-bold text-yellow-500">
-          Total Cashback Amount: <span>0.00฿</span>
+          {t("totalCashback")} <span>0.00฿</span>
         </div>
       </div>
     </div>

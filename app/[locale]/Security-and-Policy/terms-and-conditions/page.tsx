@@ -1,101 +1,91 @@
+import React from 'react';
+import { useTranslations } from 'next-intl';
 const Terms_And_Conditions = () => {
+    const t = useTranslations('SecurityAndPolicy.TermsandConditions');
     return (
         <div className="bg-gray-800 text-gray-300 p-6 sm:p-8 rounded-lg max-w-6xl mx-auto shadow-lg">
             {/* Header */}
             <h1 className="text-3xl font-extrabold text-white mb-6">
-                Terms and Conditions
+                {t('title')}
             </h1>
 
             {/* Content Sections */}
             <div className="space-y-8 leading-relaxed">
                 <p>
-                    This page contains information explaining your rights in accessing and using <span className="text-yellow-300">icggmaing.com</span> website. 
-                    The terms and conditions relate to games, promotions, and bonuses available on our site, 
-                    which will be posted from time to time and incorporated herein by reference.
+                    {t('content.0')}
                 </p>
 
                 {/* Section 1 */}
                 <div>
-                    <h2 className="text-xl font-semibold text-yellow-400 mb-2">1. Definition</h2>
+                    <h2 className="text-xl font-semibold text-yellow-400 mb-2">{t('sections.0.title')}</h2>
                     <p>
-                        <span className="font-semibold">1.1</span> The following provisions define the terms and conditions that govern your access 
-                        and participation in games or services provided by PlayGame168. These provisions should be read in conjunction 
-                        with the <span className="text-yellow-300">&ldquo;Betting Rules&rdquo;</span>, <span className="text-yellow-300">&ldquo;Privacy Policy&rdquo;</span> 
-                        and in-game Terms &amp; Conditions.
+                        {t('sections.0.content.0')}
                     </p>
                     <p>
-                        <span className="font-semibold">1.2</span> 
-                        &ldquo;Games&rdquo; refer to the internet gaming system on PlayGame168, which includes betting and wagers. 
-                        &ldquo;Device&rdquo; means any platform that can access our application, including laptops, phones, and handheld devices. 
-                        &ldquo;Software&rdquo; includes programs and files needed to access the website. &ldquo;Sportsbook&rdquo; refers to the internet gaming 
-                        system offered on PlayGame168, and &ldquo;Services&rdquo; encompasses the Software and Games altogether.
+                        {t('sections.0.content.1')}
                     </p>
                 </div>
 
                 {/* Section 2 */}
                 <div>
-                    <h2 className="text-xl font-semibold text-yellow-400 mb-2">2. Use of Site</h2>
+                    <h2 className="text-xl font-semibold text-yellow-400 mb-2">2. {t('sections.1.title')}</h2>
                     <p>
-                        <span className="font-semibold">2.1</span> You are allowed to play games only if you:
+                        {t('sections.1.content.0')}
                     </p>
                     <ul className="list-disc pl-6">
-                        <li>Are 18 years old or older.</li>
-                        <li>Are legally entitled to play games in your country.</li>
+                        <li>{t('sections.1.content.1')}</li>
+                        <li>{t('sections.1.content.2')}</li>
                     </ul>
                     <p>
-                        <span className="font-semibold">2.2</span> If we find that you are not entitled to play, we reserve the right to:
+                        {t('sections.1.content.3')}
                     </p>
                     <ul className="list-disc pl-6">
-                        <li>Immediately prevent you from participating in games.</li>
-                        <li>Report you to relevant authorities.</li>
+                        {t('sections.1.content.4')} <br />
+                        {t('sections.1.content.5')}
                     </ul>
                 </div>
 
                 {/* Section 3 */}
                 <div>
-                    <h2 className="text-xl font-semibold text-yellow-400 mb-2">3. Modification</h2>
+                    <h2 className="text-xl font-semibold text-yellow-400 mb-2">3. {t('sections.2.title')}</h2>
                     <p>
-                        <span className="font-semibold">3.1</span> We reserve the right to amend, update, or modify the Terms and Conditions at our sole discretion. 
-                        Continued use of <span className="text-yellow-300">icggmaing.com</span> after amendments will constitute your acceptance of the changes.
+                        {t('sections.2.content.0')}
                     </p>
                 </div>
 
                 {/* Section 4 */}
                 <div>
-                    <h2 className="text-xl font-semibold text-yellow-400 mb-2">4. Intellectual Property</h2>
+                    <h2 className="text-xl font-semibold text-yellow-400 mb-2">4. {t('sections.3.title')}</h2>
                     <p>
-                        <span className="font-semibold">4.1</span> All information on <span className="text-yellow-300">icggmaing.com</span>, including text, graphics, and audio content, 
-                        belongs to <span className="text-yellow-300">icggmaing.com</span> and its licensors and is for personal, non-commercial use only.
+                        {t('sections.3.content.0')}
                     </p>
                 </div>
 
                 {/* Section 5 */}
                 <div>
-                    <h2 className="text-xl font-semibold text-yellow-400 mb-2">5. Conditions of Use</h2>
+                    <h2 className="text-xl font-semibold text-yellow-400 mb-2">5. {t('sections.4.title')}</h2>
                     <ul className="list-disc pl-6">
-                        <li>You are acting in your personal capacity and not on behalf of another person.</li>
-                        <li>You are of legal age to gamble.</li>
-                        <li>You are not using money from unauthorized activities.</li>
-                        <li>You will keep your account information secure.</li>
-                        <li>You will not upload harmful programs, such as viruses.</li>
+                        <li>{t('sections.4.content.0')}</li>
+                        <li>{t('sections.4.content.1')}</li>
+                        <li>{t('sections.4.content.2')}</li>
+                        <li>{t('sections.4.content.3')}</li>
+                        <li>{t('sections.4.content.4')}</li>
                     </ul>
                 </div>
 
                 {/* Section 6 */}
                 <div>
-                    <h2 className="text-xl font-semibold text-yellow-400 mb-2">6. Registration and Membership</h2>
+                    <h2 className="text-xl font-semibold text-yellow-400 mb-2">6. {t('sections.5.title')}</h2>
                     <p>
-                        You must provide accurate information during registration. <span className="text-yellow-300">icggmaing.com</span> reserves the right to reject applications 
-                        or request further identification verification.
+                        {t('sections.5.content.0')}
                     </p>
                 </div>
 
                 {/* Section 7 */}
                 <div>
-                    <h2 className="text-xl font-semibold text-yellow-400 mb-2">7. Placement of Bets</h2>
+                    <h2 className="text-xl font-semibold text-yellow-400 mb-2">7. {t('sections.6.title')}</h2>
                     <p>
-                        Bets will be accepted only through the internet and must comply with the terms and conditions. <span className="text-yellow-300">icggmaing.com</span> 
-                        reserves the right to void bets if errors occur or cheating is detected.
+                        {t('sections.6.content.0')}
                     </p>
                 </div>
             </div>

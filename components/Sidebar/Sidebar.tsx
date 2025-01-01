@@ -101,6 +101,8 @@
 
 
 
+
+
 "use client";
 
 import React, { useEffect, useState } from "react";
@@ -124,10 +126,10 @@ const Sidebar = ({ locale }: { locale: string }) => {
     }
   };
 
-  // Check for mobile view
+  // Responsive check for mobile view
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 768);
-    handleResize(); // Initialize on mount
+    handleResize(); // Check on component mount
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -146,7 +148,7 @@ const Sidebar = ({ locale }: { locale: string }) => {
       } else if (currentPath.includes("/Privileges")) {
         handleSetActiveItem("privileges");
       } else {
-        handleSetActiveItem(""); // Default to no active item if path doesn't match
+        handleSetActiveItem(""); // Default to no active item
       }
     }
   }, [locale]);
@@ -162,12 +164,12 @@ const Sidebar = ({ locale }: { locale: string }) => {
           className={`bg-gray-900 text-white 
             ${isCollapsed ? "w-20" : "w-64"} 
             ${!isMobile ? "top-[66px]" : ""} 
-            h-[calc(100vh-64px)] 
-            fixed top-0 lg:mt-0 
+            h-full lg:h-[calc(100vh-64px)] 
+            fixed top-0 
             px-4 py-6 
             flex flex-col justify-between 
-            overflow-y-scroll scrollbar-hide 
-            z-50 shadow-md transition-all`}
+            overflow-y-auto scrollbar-hide 
+            z-50 shadow-md transition-all duration-300`}
         >
           {/* Sidebar Content */}
           <div>

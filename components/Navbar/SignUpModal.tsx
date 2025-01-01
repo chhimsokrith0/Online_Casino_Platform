@@ -105,7 +105,7 @@ const SignupModal: React.FC<SignupModalProps> = ({ activeTab = "signIn", onClose
 
   return ReactDOM.createPortal(
     <div
-      className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70"
+      className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 backdrop-blur-sm"
       role="dialog"
       aria-modal="true"
       style={{ zIndex }}

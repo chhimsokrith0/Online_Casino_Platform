@@ -62,39 +62,10 @@ const Carousel: React.FC = () => {
       >
         {carouselItems.map((item, index) => (
           <SwiperSlide key={index} className="swiper-slide">
-            {/* Mobile View */}
-            <div className="block sm:hidden relative w-[90%] h-[160px] mx-auto">
-              <Image
-                src={item.image}
-                alt={item.alt}
-                fill
-                className="object-cover w-full h-full rounded-xl shadow-lg"
-              />
-            </div>
-
-            {/* Tablet View */}
-            <div className="hidden sm:block md:hidden relative w-[90%] h-[250px] mx-auto">
-              <Image
-                src={item.image}
-                alt={item.alt}
-                fill
-                className="object-fill w-full h-full rounded-xl shadow-lg"
-              />
-            </div>
-
-
-            {/* Desktop View */}
-            <div className="hidden md:block lg:hidden relative w-[80%] h-[350px] mx-auto">
-              <Image
-                src={item.image}
-                alt={item.alt}
-                fill
-                className="object-cover w-full h-full rounded-xl shadow-lg"
-              />
-            </div>
-
-            {/* Large Desktop View */}
-            <div className="hidden lg:block relative w-[100%] h-[450px] mx-auto">
+            {/* Unified Responsive Block */}
+            <div
+              className="relative mx-auto w-full h-[160px] sm:h-[250px] md:h-[350px] lg:h-[450px]"
+            >
               <Image
                 src={item.image}
                 alt={item.alt}
@@ -110,3 +81,7 @@ const Carousel: React.FC = () => {
 };
 
 export default Carousel;
+
+
+
+

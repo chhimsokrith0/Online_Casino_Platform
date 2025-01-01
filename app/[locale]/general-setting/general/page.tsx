@@ -4,11 +4,12 @@ import React, { useRef, useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import gsap from "gsap";
-import LanguageModal from "./LanguageModal"; // Import the modal component
+import LanguageModal from "./LanguageModal";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
-// Language data is defined here to make it accessible to both components
+// Language data is shared between components
 const languages = [
   { code: "en", name: "English", flag: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733640312/en_kthtlc.png" },
   { code: "zh", name: "Chinese", flag: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733640312/chinese_dxrdpn.png" },
@@ -19,30 +20,36 @@ const languages = [
   { code: "sg", name: "Singapore", flag: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733640312/singapore_hk6sy3.png" },
   { code: "vi", name: "Vietnamese", flag: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733640313/vietnamese_j0rykn.jpg" },
   { code: "ph", name: "Filipino", flag: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733640311/philippines_uifhos.png" },
+  { code: "mm", name: "Myanmar", flag: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733640311/myammar_tf4xwq.webp" },
+  { code: "lo", name: "Lao", flag: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733640312/lao_r5l6yz.png" },
+  { code: "hi", name: "Hindi", flag: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733640312/hindi_fw5lqd.webp" },
+  { code: "ur", name: "Urdu", flag: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733640313/urdu_l7ptk8.jpg" },
+  { code: "bn", name: "Bengali", flag: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733640311/bengali_bzgmaw.png" },
+  { code: "tw", name: "Taiwanese", flag: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733640312/Taiwan_iv5pjf.webp" },
+  { code: "hk", name: "Hong Kong", flag: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733640312/hongkong_kycia1.png" },
+  { code: "ko", name: "Korean", flag: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733640313/korea_s08db8.webp" },
+  { code: "pt", name: "Portuguese", flag: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733640312/portugal_lep9my.png" },
+  { code: "au", name: "Australia", flag: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733640311/australia_qh975e.webp" },
+  { code: "ca", name: "Canada", flag: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733640311/canada_rrkhgu.webp" },
 ];
 
 const SettingsGeneral = () => {
   const containerRef = useRef<HTMLDivElement>(null); // Reference to the container
+  const pathname = usePathname(); // Get the current pathname
   const [isModalOpen, setModalOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState({
-    code: "en",
-    name: "English",
-    flag: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733640312/en_kthtlc.png",
-  });
-
+  const [selectedLanguage, setSelectedLanguage] = useState(languages[0]); // Default to English
   const t = useTranslations("settings");
 
-  const toggleModal = () => {
-    setModalOpen(!isModalOpen);
-  };
-
-  const selectLanguage = (code: string) => {
-    const selected = languages.find((lang) => lang.code === code);
-    if (selected) {
-      setSelectedLanguage(selected);
+  useEffect(() => {
+    if (pathname) {
+      // Extract the current locale from the URL
+      const currentLocale = pathname.split("/")[1];
+      const currentLanguage = languages.find((lang) => lang.code === currentLocale);
+      if (currentLanguage) {
+        setSelectedLanguage(currentLanguage);
+      }
     }
-    setModalOpen(false); // Close the modal after selection
-  };
+  }, [pathname]); // Run whenever the URL changes
 
   useEffect(() => {
     if (containerRef.current) {
@@ -54,6 +61,18 @@ const SettingsGeneral = () => {
       );
     }
   }, []);
+
+  const toggleModal = () => {
+    setModalOpen(!isModalOpen);
+  };
+
+  const handleLanguageSelect = (code: string) => {
+    const selected = languages.find((lang) => lang.code === code);
+    if (selected) {
+      setSelectedLanguage(selected);
+    }
+    setModalOpen(false); // Close the modal after selection
+  };
 
   return (
     <>
@@ -75,10 +94,12 @@ const SettingsGeneral = () => {
             onClick={toggleModal}
           >
             <div className="flex items-center gap-3">
-              <img
+              <Image
                 src={selectedLanguage.flag}
                 alt={selectedLanguage.name}
-                className="w-6 h-4 rounded-sm"
+                width={24}
+                height={24}
+                className="rounded-sm"
               />
               <span className="text-white text-sm">{selectedLanguage.name}</span>
             </div>
@@ -92,8 +113,8 @@ const SettingsGeneral = () => {
         isOpen={isModalOpen}
         selectedLanguage={selectedLanguage.code}
         onClose={toggleModal}
-        onSelectLanguage={selectLanguage}
-        languages={languages} // Pass the languages array as a prop
+        onSelectLanguage={handleLanguageSelect}
+        languages={languages}
       />
     </>
   );

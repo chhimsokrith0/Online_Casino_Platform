@@ -7,21 +7,23 @@ import Image from "next/image";
 import gsap from "gsap";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-
+import { useTranslations } from "next-intl";
 const TransactionsPage = () => {
   const [activeTab, setActiveTab] = useState("Deposit");
   const [startDate, setStartDate] = useState<Date | undefined>(undefined);
   const [endDate, setEndDate] = useState<Date | undefined>(undefined);
   const [isDatePickerVisible, setIsDatePickerVisible] = useState(false);
+  const t = useTranslations("accountInformation.history");
+
 
   const tabs = [
-    "Deposit",
-    "Withdraw",
-    "Bet",
-    "Receive Promotion",
-    "Receive Rebate",
-    "Receive Cashback",
-    "Receive Referral",
+    t("tabs.deposit"),
+    t("tabs.withdraw"),
+    t("tabs.bet"),
+    t("tabs.receivePromotion"),
+    t("tabs.receiveRebate"),
+    t("tabs.receiveCashback"),
+    t("tabs.receiveReferral"),
   ];
 
   const toggleDatePicker = () => {
@@ -37,17 +39,17 @@ const TransactionsPage = () => {
   const getTableContent = () => {
     if (activeTab === "Deposit") {
       return (
-        <div className="grid grid-cols-6 text-gray-400 text-sm mb-4">
-          <span className="whitespace-nowrap">Amount</span>
-          <span className="whitespace-nowrap">Channel</span>
-          <span className="whitespace-nowrap">Bank Account</span>
-          <span className="whitespace-nowrap">Deposit Date - Time</span>
-          <span className="whitespace-nowrap">Status</span>
-          <span className="whitespace-nowrap">Success Date - Time</span>
+        <div className="grid grid-cols-2 md:grid-cols-6 text-gray-400 text-sm mb-4">
+          <span className="whitespace-nowrap">{t("columns.amount")}</span>
+          <span className="whitespace-nowrap">{t("columns.channel")}</span>
+          <span className="hidden md:block whitespace-nowrap">{t("columns.bankAccount")}</span>
+          <span className="whitespace-nowrap">{t("columns.depositDateTime")}</span>
+          <span className="hidden md:block whitespace-nowrap">{t("columns.status")}</span>
+          <span className="hidden md:block whitespace-nowrap">{t("columns.successDateTime")}</span>
         </div>
       );
     }
-    return <p className="text-gray-500">No data available for {activeTab}.</p>;
+    return <p className="text-gray-500">{t("columns.nodata")} {activeTab}.</p>;
   };
 
   const containerRef = useRef<HTMLDivElement>(null);
@@ -63,18 +65,23 @@ const TransactionsPage = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="p-6 bg-gray-900 text-gray-300 rounded-lg">
+    <div
+      ref={containerRef}
+      className="p-4 md:p-6 bg-gray-900 text-gray-300 rounded-lg"
+    >
       {/* Header */}
-      <div className="flex justify-between items-center mb-6">
-        <h1 className="text-xl font-bold text-white whitespace-nowrap">History</h1>
-        <div className="relative">
+      <div className="flex flex-col md:flex-row justify-between items-center mb-6 gap-4">
+        <h1 className="text-lg md:text-xl font-bold text-white whitespace-nowrap">
+          {t("title")}
+        </h1>
+        <div className="relative w-full md:w-auto">
           <button
             onClick={toggleDatePicker}
-            className="flex items-center gap-2 px-4 py-2 bg-gray-800 rounded-lg text-gray-400 hover:text-white"
+            className="flex items-center gap-2 w-full md:w-auto px-4 py-2 bg-gray-800 rounded-lg text-gray-400 hover:text-white"
           >
             <FontAwesomeIcon icon={faCalendarAlt} />
             <span className="whitespace-nowrap">
-              {startDate ? startDate.toLocaleDateString() : "Start Date"} -{" "}
+              {startDate ? startDate.toLocaleDateString() : "Start Date"} - {" "}
               {endDate ? endDate.toLocaleDateString() : "End Date"}
             </span>
           </button>
@@ -101,11 +108,10 @@ const TransactionsPage = () => {
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`px-6 py-2 font-semibold text-sm whitespace-nowrap relative ${
-              activeTab === tab
+            className={`px-4 md:px-6 py-2 font-semibold text-sm whitespace-nowrap relative ${activeTab === tab
                 ? "text-yellow-500"
                 : "text-gray-400 hover:text-white"
-            }`}
+              }`}
           >
             {tab}
             {activeTab === tab && (
@@ -116,9 +122,9 @@ const TransactionsPage = () => {
       </div>
 
       {/* Table */}
-      <div className="bg-gray-800 p-6 rounded-lg">
+      <div className="bg-gray-800 p-4 md:p-6 rounded-lg">
         {getTableContent()}
-        <div className="flex flex-col items-center justify-center py-16">
+        <div className="flex flex-col items-center justify-center py-8 md:py-16">
           <Image
             src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733752217/nothing_box_sn6zu5.webp"
             alt="Empty State"
@@ -126,19 +132,21 @@ const TransactionsPage = () => {
             height={64}
             className="mb-4"
           />
-          <p className="text-gray-500 whitespace-nowrap">There&apos;s nothing here yet!</p>
+          <p className="text-gray-500 whitespace-nowrap">
+            {t("emptyState.message")}
+          </p>
         </div>
       </div>
 
       {/* Footer */}
-      <div className="flex justify-between items-center mt-6 text-sm text-gray-400">
+      <div className="flex flex-col md:flex-row justify-between items-center mt-6 text-sm text-gray-400 gap-4">
         <div className="flex items-center gap-2">
           <button className="px-2 py-1 bg-gray-700 rounded-lg">&lt;</button>
           <span className="whitespace-nowrap">1</span>
           <button className="px-2 py-1 bg-gray-700 rounded-lg">&gt;</button>
         </div>
         <div className="whitespace-nowrap">
-          Total {activeTab}: <span className="text-yellow-500">0.00฿</span>
+          {t("total")} {activeTab}: <span className="text-yellow-500">0.00฿</span>
         </div>
       </div>
     </div>

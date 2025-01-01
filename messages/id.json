@@ -692,15 +692,22 @@
       "redeemHistory": "Riwayat Penukaran",
       "pointHistory": "Riwayat Poin",
       "personalMessage": "Pesan Pribadi",
-      "referral": "Referral"
+      "referral": "Referensi"
     },
     "profile": {
-      "phoneNumber": "Nomor Telepon",
+      "title": "Profil",
       "joinedOn": "Bergabung Pada",
+      "logout": "Keluar",
+      "BronzeCard": "Kartu Perunggu",
+      "ranking": "Peringkat: Cashback Perunggu 2%",
       "vipLevel": {
         "current": "Level Saat Ini",
         "upgrade": "Tingkatkan Level VIP Anda",
-        "progress": "Kemajuan Anda"
+        "progress": "Kemajuan Anda",
+        "bronze": "Perunggu",
+        "silver": "Perak",
+        "points": "Poin Saat Ini",
+        "exchangeReward": "Tukar Hadiah"
       },
       "wallet": {
         "title": "Dompet Anda",
@@ -708,29 +715,241 @@
       },
       "rebateBalance": "Saldo Rebate",
       "cashbackBalance": "Saldo Cashback",
-      "referralBalance": "Saldo Referral"
+      "referralBalance": "Saldo Referensi",
+      "totalBets": {
+        "title": "Total Taruhan",
+        "depositTurnover": "Perputaran Deposit",
+        "turnover": "Perputaran",
+        "turnWinlose": "Menang/Kalah Perputaran"
+      },
+      "myPromotions": {
+        "title": "Promosi Saya",
+        "cashback": "Cashback",
+        "rebate": "Rebate"
+      },
+      "VIPLevelModal": {
+        "title": "Detail Level Anggota",
+        "upgradeTitle": "Tingkatkan Level ",
+        "MemberLevel": "Level Anggota",
+        "levels": {
+          "bronze": "Perunggu",
+          "silver": "Perak",
+          "gold": "Emas",
+          "diamond": "Berlian",
+          "platinum": "Platinum",
+          "black": "Hitam"
+        },
+        "challenges": {
+          "title": "Tantangan",
+          "th1": "Tantangan",
+          "th2": "Kemajuan",
+          "th3": "Aksi",
+          "list": {
+            "task1": {
+              "description": "Tambahkan jumlah deposit 1,000.00 untuk naik level",
+              "progress": "50% Selesai",
+              "action": "Deposit"
+            },
+            "task2": {
+              "description": "Tambahkan jumlah perputaran 1,000.00 untuk naik level",
+              "progress": "30% Selesai",
+              "action": "Taruhan"
+            }
+          }
+        }
+      }
     },
-    "totalBets": {
+    "history": {
+      "title": "Riwayat",
+      "tabs": {
+        "deposit": "Deposit",
+        "withdraw": "Penarikan",
+        "bet": "Taruhan",
+        "receivePromotion": "Terima Promosi",
+        "receiveRebate": "Terima Rebate",
+        "receiveCashback": "Terima Cashback",
+        "receiveReferral": "Terima Referensi"
+      },
+      "columns": {
+        "amount": "Jumlah",
+        "channel": "Saluran",
+        "bankAccount": "Rekening Bank",
+        "depositDateTime": "Tanggal - Waktu Deposit",
+        "status": "Status",
+        "successDateTime": "Tanggal - Waktu Sukses",
+        "nodata": "Tidak ada data yang tersedia"
+      },
+      "emptyState": {
+        "message": "Belum ada apa-apa di sini!"
+      },
+      "total": "Total"
+    },
+    "rebate": {
+      "title": "Rebate",
+      "columns": {
+        "transactionDateTime": "Tanggal - Waktu Transaksi",
+        "rebateAmount": "Jumlah Rebate"
+      },
+      "emptyState": {
+        "message": "Belum ada apa-apa di sini!"
+      },
+      "totalRebate": "Total Rebate:"
+    },
+    "cashback": {
+      "title": "Cashback",
+      "columns": {
+        "transactionDateTime": "Tanggal - Waktu Transaksi",
+        "cashbackAmount": "Jumlah Cashback"
+      },
+      "emptyState": {
+        "message": "Belum ada apa-apa di sini!"
+      },
+      "totalCashback": "Total Cashback:"
+    },
+    "totalBet": {
       "title": "Total Taruhan",
-      "depositTurnover": "Perputaran Deposit",
-      "turnover": "Perputaran",
-      "turnWinlose": "Menang/Kalah"
+      "columns": {
+        "transactionDateTime": "Tanggal - Waktu Transaksi",
+        "totalWinLose": "Total Menang/Kalah",
+        "totalBets": "Total Taruhan"
+      },
+      "emptyState": {
+        "message": "Belum ada apa-apa di sini!"
+      },
+      "totalBetAmount": "Total Jumlah Taruhan:"
     },
-    "promotions": {
-      "title": "Promosi Saya",
-      "cashback": "Cashback",
-      "rebate": "Rebate"
+    "redeemHistory": {
+      "title": "Riwayat Penukaran",
+      "columns": {
+        "no": "No.",
+        "transactionDateTime": "Tanggal - Waktu Transaksi",
+        "typeOfReward": "Jenis Hadiah",
+        "reward": "Hadiah",
+        "status": "Status",
+        "usedPoints": "Poin yang Digunakan",
+        "freeSpins": "Putaran Gratis"
+      },
+      "emptyState": {
+        "message": "Belum ada apa-apa di sini!"
+      },
+      "totals": {
+        "allRewards": "Semua Hadiah:",
+        "totalUsedPoints": "Total Poin yang Digunakan:",
+        "totalFreeSpins": "Total Putaran Gratis:",
+        "totalAmountPerRound": "Total Jumlah Per Putaran:"
+      }
     },
-    "actions": {
-      "exchangeReward": "Tukar Hadiah",
-      "logOut": "Keluar"
+    "pointHistory": {
+      "title": "Riwayat Poin",
+      "columns": {
+        "transactionDateTime": "Tanggal - Waktu Transaksi",
+        "type": "Jenis",
+        "turnover": "Perputaran",
+        "currentPoint": "Poin Saat Ini"
+      },
+      "emptyState": {
+        "message": "Belum ada apa-apa di sini!"
+      },
+      "totalPoints": "Total Poin:"
     },
-    "points": {
-      "currentPoints": "Poin Saat Ini",
-      "progress": "Kemajuan",
-      "rank": {
-        "bronze": "Perunggu",
-        "silver": "Perak"
+    "personalMessage": {
+      "title": "Pesan Pribadi",
+      "tabs": {
+        "inbox": "Kotak Masuk",
+        "send": "Kirim"
+      },
+      "emptyState": {
+        "message": "Tidak ada hasil"
+      },
+      "actions": {
+        "newMessage": "Pesan Baru"
+      },
+      "newMessageModal": {
+        "title": "Pesan Baru",
+        "fields": {
+          "sendTo": "Kirim Ke",
+          "admin": "Admin",
+          "title": "Judul",
+          "titlePlaceholder": "Masukkan judul",
+          "message": "Pesan",
+          "messagePlaceholder": "Ketik sesuatu di sini...",
+          "attachImage": "Lampirkan Gambar (Opsional)",
+          "uploadInstructions": "Klik untuk mengunggah atau seret dan lepaskan",
+          "allowedFileTypes": "WEBP, PNG, atau JPG (3MB)."
+        },
+        "characterLimit": "0/300",
+        "UploadImage": "Unggah Gambar",
+        "sendMessageButton": "Kirim Pesan"
+      },
+      "pagination": {
+        "previous": "<",
+        "next": ">"
+      }
+    },
+    "referral": {
+      "title": "Referensi",
+      "stats": {
+        "incomeToday": "Pendapatan Hari Ini",
+        "totalReferral": "Total Referensi",
+        "referralClick": "Klik Referensi",
+        "totalMember": "Total Anggota",
+        "totalTurnover": "Total Perputaran",
+        "totalCashback": "Total Cashback"
+      },
+      "copy": {
+        "referralLink": "Tautan Referensi",
+        "referralCode": "Kode Referensi",
+        "copyText": "Salin kode atau tautan referensi Anda dan bagikan kepada teman. Ketika mereka mendaftar dan bermain, Anda akan menerima rebate."
+      },
+      "inviteFriends": "Undang Teman",
+      "socialMedia": {
+        "facebook": "Facebook",
+        "telegram": "Telegram",
+        "skype": "Skype",
+        "whatsapp": "WhatsApp"
+      },
+      "actions": {
+        "transfer": "Transfer"
+      },
+      "dataOverview": {
+        "title": "Ikhtisar Data",
+        "tabs": {
+          "totalRevenue": "Total Pendapatan",
+          "members": "Anggota",
+          "receiveReferral": "Terima Referensi"
+        },
+        "table": {
+          "columns": {
+            "date": "Tanggal",
+            "referral": "Referensi"
+          },
+          "emptyState": {
+            "message": "Belum ada apa-apa di sini!"
+          },
+          "totals": {
+            "totalRevenue": "Total Pendapatan:"
+          }
+        }
+      },
+      "analytics": {
+        "title": "Analitik - Ukur Kinerja Anda",
+        "metrics": {
+          "income": {
+            "title": "Pendapatan",
+            "today": "Pendapatan Hari Ini",
+            "yesterday": "Pendapatan Kemarin"
+          },
+          "turnover": {
+            "title": "Perputaran",
+            "today": "Perputaran Hari Ini",
+            "yesterday": "Perputaran Kemarin"
+          },
+          "cashback": {
+            "title": "Cashback",
+            "today": "Cashback Hari Ini",
+            "yesterday": "Cashback Kemarin"
+          }
+        }
       }
     }
   },
@@ -872,6 +1091,74 @@
     "signInSuccess": "Masuk berhasil!",
     "submitSignUp": "Daftar",
     "submitSignIn": "Masuk"
+  },
+  "wallet": {
+    "title": "Dompet Anda",
+    "history": "Riwayat",
+    "tabs": {
+      "deposit": "Deposit",
+      "withdraw": "Penarikan",
+      "transfer": "Transfer"
+    },
+    "deposit": {
+      "paymentMethod": "Metode Pembayaran",
+      "methods": {
+        "abaBank": "Bank ABA",
+        "acledaBank": "Bank ACLEDA",
+        "qrCodeAbaBank": "Kode QR Bank ABA"
+      },
+      "DepositAmount": {
+        "title": "Jumlah Deposit",
+        "yourWallet": "Dompet Anda",
+        "minMax": "Min 100.00฿ ~ Max 50,000.00฿",
+        "balance": "Saldo",
+        "buttons": {
+          "100": "100฿",
+          "300": "300฿",
+          "500": "500฿",
+          "1000": "1000฿"
+        },
+        "instructions": {
+          "title": "Silakan baca untuk mempercepat pemrosesan transaksi",
+          "points": {
+            "1": "Buat transaksi baru setiap kali sebelum mentransfer uang",
+            "2": "Kode QR hanya dapat digunakan sekali",
+            "3": "Jangan gunakan ulang Kode QR",
+            "4": "Selesaikan transaksi dalam waktu yang ditentukan"
+          }
+        },
+        "backButton": "Kembali",
+        "nextButton": "Langkah Berikutnya"
+      }
+    },
+    "withdraw": {
+      "withdrawalCondition": "Syarat Penarikan",
+      "conditions": {
+        "depositTurnover": "Perputaran Deposit",
+        "turnover": "Perputaran",
+        "turnWinlose": "Perputaran Menang-Kalah"
+      },
+      "withdrawAmount": "Jumlah Penarikan",
+      "yourWallet": "Dompet Anda",
+      "minMax": "Min 500.00฿ ~ Max 10,000.00฿",
+      "balance": "Saldo",
+      "buttons": {
+        "min": "Min",
+        "25Percent": "25%",
+        "50Percent": "50%",
+        "max": "Max"
+      },
+      "note": "Catatan",
+      "notePlaceholder": "Ketik sesuatu di sini ...",
+      "characterLimit": "0/300",
+      "withdrawButton": "Tarik"
+    },
+    "transfer": {
+      "transferFrom": "Transfer Dari",
+      "yourWallet": "Dompet Anda",
+      "transferButton": "Transfer ke Dompet Utama"
+    },
+    "line": "Garis"
   },
   "questsHub": {
     "title": "Pusat Misi",
@@ -1039,6 +1326,203 @@
           "favorite": true
         }
       }
+    }
+  },
+  "inviteAndBenefits": {
+    "title": "Undang dan Dapatkan Keuntungan",
+    "referralLinkTitle": "Tautan Referensi",
+    "referralLink": {
+      "label": "Tautan Referensi",
+      "placeholder": "https://ICGGaming.co?ref_code=IP7MSaJ9aH",
+      "copyButton": "Salin"
+    },
+    "referralCodeTitle": "Kode Referensi",
+    "referralCode": {
+      "label": "Kode Referensi",
+      "placeholder": "IP7MSaJ9aH",
+      "copyButton": "Salin"
+    },
+    "description": "Salin kode referensi atau tautan Anda kepada teman-teman Anda, dan ketika mereka mendaftar dan bermain game, Anda akan mendapatkan cashback.",
+    "socialMedia": {
+      "facebook": "Bagikan di Facebook",
+      "twitter": "Bagikan di Twitter",
+      "whatsapp": "Bagikan di WhatsApp",
+      "telegram": "Bagikan di Telegram"
+    }
+  },
+  "logoutConfirmation": {
+    "title": "Anda tidak ingin melewatkan jackpot hari ini!",
+    "message": "Apakah Anda yakin ingin keluar?",
+    "buttons": {
+      "no": "TIDAK",
+      "yes": "YA"
+    }
+  },
+  "SecurityAndPolicy": {
+    "sidebar": {
+      "TermsandConditions": "Ketentuan Layanan",
+      "PrivacyPolicy": "Kebijakan Privasi",
+      "CookiesPolicy": "Kebijakan Cookie",
+      "activeItemMessage": "Gunakan sidebar di atas untuk bernavigasi"
+    },
+    "header": {
+      "title": "Keamanan dan Kebijakan"
+    },
+    "TermsandConditions": {
+      "title": "Ketentuan Layanan",
+      "content": [
+        "Halaman ini menjelaskan hak Anda sehubungan dengan akses dan penggunaan situs web icggaming.com. Syarat dan ketentuan terkait game, promosi, dan bonus yang tersedia di situs kami akan diumumkan dari waktu ke waktu dan tercakup dalam dokumen referensi."
+      ],
+      "sections": [
+        {
+          "title": "Definisi",
+          "content": [
+            "1.1 Ketentuan berikut mengatur syarat dan ketentuan akses serta partisipasi Anda dalam game dan layanan yang disediakan oleh PlayGame168. Ketentuan ini harus dibaca bersama dengan 'Peraturan Perjudian', 'Kebijakan Privasi', dan syarat serta ketentuan lain yang berlaku untuk game.",
+            "1.2 ‘Game’ mengacu pada sistem permainan internet PlayGame168, yang mencakup aktivitas taruhan dan perjudian. ‘Perangkat’ adalah segala platform yang memungkinkan akses ke aplikasi kami (laptop, ponsel, dll.). ‘Perangkat Lunak (Software)’ mencakup struktur dan file yang diperlukan untuk mengakses situs web. ‘Sportsbook’ adalah sistem game online yang disediakan di icggaming.com, sedangkan ‘Layanan (Service)’ mencakup perangkat lunak dan semua game."
+          ]
+        },
+        {
+          "title": "Penggunaan Situs Web",
+          "content": [
+            "2.1 Anda diberikan izin untuk memainkan game hanya jika Anda memenuhi syarat-syarat berikut:",
+            " - Berusia minimal 18 tahun.",
+            " - Memiliki hak hukum berdasarkan peraturan di negara Anda untuk berpartisipasi dalam game.",
+            "2.2 Jika kami menemukan bahwa Anda tidak memenuhi syarat-syarat tersebut, kami berhak untuk:",
+            " - Segera menghentikan partisipasi Anda dalam game.",
+            " - Melaporkan kepada otoritas terkait."
+          ]
+        },
+        {
+          "title": "Perubahan",
+          "content": [
+            "3.1 Kami berhak untuk memodifikasi, memperbarui, atau mengubah syarat dan ketentuan ini atas kebijaksanaan kami. Dengan terus mengakses dan menggunakan icggaming.com setelah perubahan, Anda dianggap menyetujui perubahan tersebut."
+          ]
+        },
+        {
+          "title": "Kekayaan Intelektual",
+          "content": [
+            "4.1 Semua informasi di icggaming.com (teks, gambar, audio, dan sebagainya) adalah milik icggaming.com dan pemberi lisensinya, serta hanya boleh digunakan untuk keperluan pribadi dan non-komersial."
+          ]
+        },
+        {
+          "title": "Ketentuan Penggunaan",
+          "content": [
+            "• Anda bertindak atas nama pribadi Anda dan bukan sebagai perwakilan pihak lain.",
+            "• Anda berada pada usia legal yang diizinkan untuk berjudi.",
+            "• Anda tidak menggunakan dana yang diperoleh secara ilegal.",
+            "• Anda wajib menjaga keamanan informasi akun Anda.",
+            "• Anda tidak akan mengunggah program berbahaya, seperti virus."
+          ]
+        },
+        {
+          "title": "Pendaftaran dan Proses Keanggotaan",
+          "content": [
+            "• Anda harus memberikan informasi akurat saat mendaftar. icggaming.com berhak menolak pendaftaran atau meminta verifikasi identitas tambahan apabila diperlukan."
+          ]
+        },
+        {
+          "title": "Prosedur Taruhan",
+          "content": [
+            "• Taruhan hanya diterima melalui internet dan harus mengikuti syarat dan ketentuan ini. icggaming.com berhak membatalkan taruhan jika terjadi kesalahan atau apabila ditemukan tindakan penipuan."
+          ]
+        }
+      ]
+    },
+    "PrivacyPolicy": {
+      "title": "Kebijakan Privasi",
+      "sections": [
+        {
+          "content": [
+            "Kebijakan Privasi ini menjelaskan bagaimana data pribadi Anda diproses sehubungan dengan akses dan penggunaan situs web PlayGame168. Kebijakan ini juga menjabarkan langkah-langkah perlindungan data serta komitmen kami dalam menjaga kerahasiaan informasi pribadi Anda."
+          ]
+        },
+        {
+          "title": "Newsletter",
+          "content": [
+            "Dengan berlangganan newsletter kami, alamat email Anda akan digunakan untuk menerima pembaruan mengenai promosi, game, dan berita lainnya. Alamat email Anda tidak akan dibagikan kepada pihak ketiga, kecuali diharuskan oleh hukum."
+          ]
+        },
+        {
+          "title": "Pertanyaan",
+          "content": [
+            "Jika Anda menghubungi kami melalui email atau saluran lain untuk menanyakan sesuatu, data pribadi Anda (seperti nama dan detail kontak) dapat disimpan untuk tujuan pencatatan dan memastikan kualitas layanan. Kami akan berusaha sebaik mungkin untuk melindungi keamanan dan kerahasiaan data Anda."
+          ]
+        },
+        {
+          "title": "Data Pribadi Apa yang Kami Kumpulkan?",
+          "content": [
+            "Kami dapat mengumpulkan dan memproses data pribadi Anda untuk tujuan berikut:",
+            "• Nama, alamat email, serta detail kontak Anda",
+            "• Informasi pembayaran dan transaksi terkait taruhan",
+            "• Aktivitas pencarian dan preferensi game"
+          ]
+        },
+        {
+          "title": "Bagaimana Kami Menggunakan Data Pribadi Anda?",
+          "content": [
+            "Data Anda hanya akan digunakan untuk tujuan yang relevan dengan penyediaan layanan, kepatuhan hukum, dan peningkatan pengalaman pengguna. Termasuk di dalamnya:",
+            "• Memproses taruhan dan transaksi akun Anda",
+            "• Komunikasi terkait promosi dan peningkatan layanan",
+            "• Meningkatkan fungsionalitas situs web dan pengalaman pengguna"
+          ]
+        },
+        {
+          "title": "Dengan Siapa Kami Berbagi Data Anda?",
+          "content": [
+            "Kami dapat berbagi data Anda dengan pihak ketiga berwenang seperti penyedia layanan pembayaran, penyedia analitik, dan otoritas pengatur, apabila diwajibkan oleh hukum."
+          ]
+        },
+        {
+          "title": "Apa Hak Anda?",
+          "content": [
+            "Sebagai pengguna, Anda memiliki hak-hak berikut:",
+            "• Mengakses data pribadi Anda yang kami simpan",
+            "• Meminta koreksi atas data yang tidak akurat",
+            "• Meminta penghapusan data pribadi Anda dalam kondisi tertentu",
+            "• Menarik persetujuan pemrosesan data, jika memungkinkan"
+          ]
+        },
+        {
+          "title": "Pertanyaan",
+          "content": [
+            "Jika Anda memiliki pertanyaan atau kekhawatiran mengenai data pribadi Anda, silakan hubungi tim dukungan kami di:",
+            "support@icggmaing.com"
+          ]
+        }
+      ]
+    },
+    "CookiesPolicy": {
+      "title": "Kebijakan Cookie",
+      "sections": [
+        {
+          "title": "Apa Itu Cookie?",
+          "content": [
+            "Cookie adalah berkas kecil yang dikirim oleh situs web ke komputer atau ponsel Anda ketika Anda menelusuri informasi di situs web tersebut.",
+            "Cookie membantu kami meningkatkan pengalaman Anda dengan mengingat preferensi Anda dan memungkinkan Anda menggunakan situs web dengan lebih efisien. Singkatnya, cookie membantu Anda berpindah antar halaman dengan lebih cepat dan mudah."
+          ]
+        },
+        {
+          "title": "Penggunaan Cookie di icggmaing.com",
+          "content": [
+            "Di icggmaing.com, kami menggunakan cookie yang benar-benar diperlukan untuk menyediakan fungsi dasar dan mempermudah navigasi di situs web kami. Selain itu, cookie juga digunakan untuk meningkatkan fungsionalitas situs, misalnya menyimpan preferensi Anda. Terakhir, kami menggunakan cookie untuk memberikan pengalaman pengguna yang lebih baik dengan meningkatkan kinerja situs kami.",
+            "Berikut adalah tiga jenis utama cookie yang kami gunakan di situs web kami:",
+            "Strictly Necessary Cookies (Cookie yang Sangat Diperlukan)",
+            ": Cookie ini bertanggung jawab atas fungsi dasar situs web, termasuk bahasa, serta memastikan elemen situs web dimuat dengan benar.",
+            "Functionality Cookies (Cookie Fungsionalitas)",
+            ": Cookie ini mengingat pilihan Anda, melacak informasi afiliasi, mengingat apakah Anda telah mengakses halaman tertentu sebelumnya, dan menampilkan konten berdasarkan preferensi Anda. Mereka juga menyediakan penargetan lokasi untuk penyesuaian bahasa situs.",
+            "Performance Cookies (Cookie Performa)",
+            ": Digunakan untuk melacak cara pengguna mengunjungi situs, melakukan penambangan data anonim di internal, menguji ide desain yang berbeda, serta meningkatkan tata letak situs kami.",
+            "Perlu diketahui bahwa playgame168.com tidak pernah menggunakan jenis cookie iklan perilaku online, dan kami tidak mengizinkan pihak ketiga untuk melakukannya di situs kami."
+          ]
+        },
+        {
+          "title": "Mengelola Cookie",
+          "content": [
+            "Saat ini, kami tidak dapat menawarkan opsi untuk mengaktifkan atau menonaktifkan setiap jenis cookie secara individual. Ketika Anda mengunjungi situs kami, icggmaing.com akan menempatkan cookie di perangkat Anda dan mengingat preferensi Anda agar Anda dapat terus menikmati layanan kami. Jika Anda mengklik 'Terima' di bilah Cookie kami atau tetap menggunakan situs web dan layanan kami, Anda dianggap telah menyetujui penggunaan Cookie kami sebagaimana dijelaskan dalam kebijakan ini.",
+            "Meskipun demikian, Anda dapat mengatur browser Anda agar tidak menerima cookie dari situs mana pun. Anda dapat menemukan instruksi tentang cara melakukannya di bagian Bantuan pada browser yang Anda gunakan. Namun, demi alasan keamanan, Anda mungkin menemukan beberapa konten situs web tidak dapat diakses kecuali cookie diaktifkan pada perangkat Anda."
+          ]
+        }
+      ]
     }
   }
 }

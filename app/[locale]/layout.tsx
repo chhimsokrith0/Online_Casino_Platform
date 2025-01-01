@@ -10,38 +10,44 @@
 // import { SidebarProvider } from "@/components/Sidebar/SidebarContext";
 // import "./style.css";
 
+
+// if (process.env.NODE_ENV === "development") {
+//   import("../../mocks/")
+//     .then(() => console.log("[MSW] Mocking enabled."))
+//     .catch((err) => console.error("[MSW] Failed to start:", err));
+// }
+
 // export default async function RootLayout({
 //   children,
 //   params,
 // }: {
 //   children: React.ReactNode;
-//   params:  Promise<{ locale: string }>;
+//   params: Promise<{ locale: string }>;
 // }) {
 //   const { locale } = await params; // Destructure here
 //   const messages = await getMessages({ locale });
 
 //   const selectedFont =
 //     (fonts.fonts as any)[locale]?.fontFamily || "Arial, sans-serif";
-
 //   return (
 //     <html lang={locale} style={{ fontFamily: selectedFont }}>
 //       <body className="body bg-[#020617] text-white min-h-screen">
 //         <NextIntlClientProvider locale={locale} messages={messages}>
 //           <SessionProviderWrapper>
 //             <SidebarProvider>
-//               <header className="sticky top-0 z-50 shadow-md">
+//               <header className="sticky top-0 z-50">
 //                 <Navbar locale={locale} />
 //               </header>
 //               <div className="flex flex-col lg:flex-row nesthubmax:flex-row">
 //                 <aside className="hidden lg:block lg:w-64 nesthubmax:w-72 z-[100]">
 //                   <Sidebar locale={locale} />
 //                 </aside>
-//                 <main className="flex-1 pt-4 lg:px-8 nesthubmax:px-10 bg-[#020617]">
+//                 <main className="flex-1 pt-4 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 2xl:px-16 bg-[#020617]">
 //                   {children}
 //                 </main>
 //               </div>
-//               <footer className="max-w-[1200px] mx-auto lg:ml-auto lg:mr-64 p-4">
-//                 <Footer locale={locale}  />
+//               <footer className="max-w-[1200px] mx-auto footer-css">
+//                 <Footer locale={locale} />
 //               </footer>
 //               <br />
 //               <br />
@@ -56,10 +62,6 @@
 //     </html>
 //   );
 // }
-
-
-
-
 
 
 import Navbar from "@/components/Navbar/Navbar";
@@ -93,27 +95,30 @@ export default async function RootLayout({
 
   const selectedFont =
     (fonts.fonts as any)[locale]?.fontFamily || "Arial, sans-serif";
-
   return (
     <html lang={locale} style={{ fontFamily: selectedFont }}>
       <body className="body bg-[#020617] text-white min-h-screen">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <SessionProviderWrapper>
             <SidebarProvider>
-              <header className="sticky top-0 z-50 shadow-md">
+              <header className="w-full sticky top-0 z-50">
                 <Navbar locale={locale} />
               </header>
-              <div className="flex flex-col lg:flex-row nesthubmax:flex-row">
-                <aside className="hidden lg:block lg:w-64 nesthubmax:w-72 z-[100]">
+              <div className="grid grid-cols-1 lg:grid-cols-[16rem_1fr] gap-4 min-h-[calc(100vh-64px)]">
+                {/* Sidebar */}
+                <aside className="hidden lg:block z-[100] lg:col-start-1 lg:col-end-2">
                   <Sidebar locale={locale} />
                 </aside>
-                <main className="flex-1 pt-4 lg:px-8 nesthubmax:px-10 bg-[#020617]">
+
+                {/* Main Content */}
+                <main className="col-span-1 lg:col-start-2 lg:col-end-3 flex-1 pt-4 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 2xl:px-16 bg-[#020617]">
                   {children}
                 </main>
               </div>
-              <footer className="max-w-[1200px] mx-auto lg:ml-auto lg:mr-64 p-4">
+              <footer className="max-w-[1400px] mx-auto py-4 px-4 sm:px-6 md:px-8 footer-css">
                 <Footer locale={locale} />
               </footer>
+
               <br />
               <br />
               <br />
@@ -127,3 +132,5 @@ export default async function RootLayout({
     </html>
   );
 }
+
+

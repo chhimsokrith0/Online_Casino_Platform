@@ -685,8 +685,8 @@
         "title": "계정 정보",
         "menu": {
             "myProfile": "내 프로필",
-            "history": "히스토리",
-            "rebate": "리베이트",
+            "history": "기록",
+            "rebate": "환급금",
             "cashback": "캐시백",
             "totalBet": "총 베팅",
             "redeemHistory": "교환 기록",
@@ -695,42 +695,261 @@
             "referral": "추천"
         },
         "profile": {
-            "phoneNumber": "전화번호",
-            "joinedOn": "가입일",
+            "title": "프로필",
+            "joinedOn": "가입 날짜",
+            "logout": "로그아웃",
+            "BronzeCard": "브론즈 카드",
+            "ranking": "등급: 브론즈 캐시백 2%",
             "vipLevel": {
                 "current": "현재 등급",
                 "upgrade": "VIP 등급 업그레이드",
-                "progress": "진행 상태"
+                "progress": "진행 상황",
+                "bronze": "브론즈",
+                "silver": "실버",
+                "points": "현재 포인트",
+                "exchangeReward": "보상 교환"
             },
             "wallet": {
                 "title": "내 지갑",
                 "balance": "잔액"
             },
-            "rebateBalance": "리베이트 잔액",
+            "rebateBalance": "환급금 잔액",
             "cashbackBalance": "캐시백 잔액",
-            "referralBalance": "추천 잔액"
+            "referralBalance": "추천 잔액",
+            "totalBets": {
+                "title": "총 베팅",
+                "depositTurnover": "입금 회전율",
+                "turnover": "회전율",
+                "turnWinlose": "승패 회전율"
+            },
+            "myPromotions": {
+                "title": "내 프로모션",
+                "cashback": "캐시백",
+                "rebate": "환급금"
+            },
+            "VIPLevelModal": {
+                "title": "회원 등급 세부 정보",
+                "upgradeTitle": "등급 업그레이드 ",
+                "MemberLevel": "회원 등급",
+                "levels": {
+                    "bronze": "브론즈",
+                    "silver": "실버",
+                    "gold": "골드",
+                    "diamond": "다이아몬드",
+                    "platinum": "플래티넘",
+                    "black": "블랙"
+                },
+                "challenges": {
+                    "title": "도전 과제",
+                    "th1": "과제",
+                    "th2": "진행 상황",
+                    "th3": "액션",
+                    "list": {
+                        "task1": {
+                            "description": "입금 금액을 1,000.00 증가하여 등급 업",
+                            "progress": "50% 완료",
+                            "action": "입금하기"
+                        },
+                        "task2": {
+                            "description": "회전 금액을 1,000.00 증가하여 등급 업",
+                            "progress": "30% 완료",
+                            "action": "베팅하기"
+                        }
+                    }
+                }
+            }
         },
-        "totalBets": {
+        "history": {
+            "title": "기록",
+            "tabs": {
+                "deposit": "입금",
+                "withdraw": "출금",
+                "bet": "베팅",
+                "receivePromotion": "프로모션 받기",
+                "receiveRebate": "환급금 받기",
+                "receiveCashback": "캐시백 받기",
+                "receiveReferral": "추천 받기"
+            },
+            "columns": {
+                "amount": "금액",
+                "channel": "채널",
+                "bankAccount": "은행 계좌",
+                "depositDateTime": "입금 날짜 - 시간",
+                "status": "상태",
+                "successDateTime": "성공 날짜 - 시간",
+                "nodata": "사용 가능한 데이터가 없습니다."
+            },
+            "emptyState": {
+                "message": "아직 아무것도 없습니다!"
+            },
+            "total": "총계"
+        },
+        "rebate": {
+            "title": "환급금",
+            "columns": {
+                "transactionDateTime": "거래 날짜 - 시간",
+                "rebateAmount": "환급금 금액"
+            },
+            "emptyState": {
+                "message": "아직 아무것도 없습니다!"
+            },
+            "totalRebate": "총 환급금:"
+        },
+        "cashback": {
+            "title": "캐시백",
+            "columns": {
+                "transactionDateTime": "거래 날짜 - 시간",
+                "cashbackAmount": "캐시백 금액"
+            },
+            "emptyState": {
+                "message": "아직 아무것도 없습니다!"
+            },
+            "totalCashback": "총 캐시백:"
+        },
+        "totalBet": {
             "title": "총 베팅",
-            "depositTurnover": "예치금 회전율",
-            "turnover": "회전율",
-            "turnWinlose": "승/패"
+            "columns": {
+                "transactionDateTime": "거래 날짜 - 시간",
+                "totalWinLose": "총 승/패",
+                "totalBets": "총 베팅"
+            },
+            "emptyState": {
+                "message": "아직 아무것도 없습니다!"
+            },
+            "totalBetAmount": "총 베팅 금액:"
         },
-        "promotions": {
-            "title": "내 프로모션",
-            "cashback": "캐시백",
-            "rebate": "리베이트"
+        "redeemHistory": {
+            "title": "교환 기록",
+            "columns": {
+                "no": "번호",
+                "transactionDateTime": "거래 날짜 - 시간",
+                "typeOfReward": "보상 유형",
+                "reward": "보상",
+                "status": "상태",
+                "usedPoints": "사용된 포인트",
+                "freeSpins": "무료 스핀"
+            },
+            "emptyState": {
+                "message": "아직 아무것도 없습니다!"
+            },
+            "totals": {
+                "allRewards": "총 보상:",
+                "totalUsedPoints": "총 사용된 포인트:",
+                "totalFreeSpins": "총 무료 스핀:",
+                "totalAmountPerRound": "라운드당 총 금액:"
+            }
         },
-        "actions": {
-            "exchangeReward": "보상 교환",
-            "logOut": "로그아웃"
+        "pointHistory": {
+            "title": "포인트 기록",
+            "columns": {
+                "transactionDateTime": "거래 날짜 - 시간",
+                "type": "유형",
+                "turnover": "회전율",
+                "currentPoint": "현재 포인트"
+            },
+            "emptyState": {
+                "message": "아직 아무것도 없습니다!"
+            },
+            "totalPoints": "총 포인트:"
         },
-        "points": {
-            "currentPoints": "현재 포인트",
-            "progress": "진행",
-            "rank": {
-                "bronze": "브론즈",
-                "silver": "실버"
+        "personalMessage": {
+            "title": "개인 메시지",
+            "tabs": {
+                "inbox": "받은 편지함",
+                "send": "보내기"
+            },
+            "emptyState": {
+                "message": "결과가 없습니다."
+            },
+            "actions": {
+                "newMessage": "새 메시지"
+            },
+            "newMessageModal": {
+                "title": "새 메시지",
+                "fields": {
+                    "sendTo": "받는 사람",
+                    "admin": "관리자",
+                    "title": "제목",
+                    "titlePlaceholder": "제목 입력",
+                    "message": "메시지",
+                    "messagePlaceholder": "여기에 입력하세요...",
+                    "attachImage": "이미지 첨부 (선택 사항)",
+                    "uploadInstructions": "업로드하려면 클릭하거나 드래그 앤 드롭",
+                    "allowedFileTypes": "WEBP, PNG, 또는 JPG (3MB)."
+                },
+                "characterLimit": "0/300",
+                "UploadImage": "이미지 업로드",
+                "sendMessageButton": "메시지 보내기"
+            },
+            "pagination": {
+                "previous": "<",
+                "next": ">"
+            }
+        },
+        "referral": {
+            "title": "추천",
+            "stats": {
+                "incomeToday": "오늘의 수익",
+                "totalReferral": "총 추천",
+                "referralClick": "추천 클릭",
+                "totalMember": "총 회원",
+                "totalTurnover": "총 회전율",
+                "totalCashback": "총 캐시백"
+            },
+            "copy": {
+                "referralLink": "추천 링크",
+                "referralCode": "추천 코드",
+                "copyText": "추천 코드 또는 링크를 친구들과 공유하세요. 그들이 가입하고 게임을 플레이하면 리베이트를 받을 수 있습니다."
+            },
+            "inviteFriends": "친구 초대",
+            "socialMedia": {
+                "facebook": "Facebook",
+                "telegram": "Telegram",
+                "skype": "Skype",
+                "whatsapp": "WhatsApp"
+            },
+            "actions": {
+                "transfer": "전송"
+            },
+            "dataOverview": {
+                "title": "데이터 개요",
+                "tabs": {
+                    "totalRevenue": "총 수익",
+                    "members": "회원",
+                    "receiveReferral": "추천 받기"
+                },
+                "table": {
+                    "columns": {
+                        "date": "날짜",
+                        "referral": "추천"
+                    },
+                    "emptyState": {
+                        "message": "아직 아무것도 없습니다!"
+                    },
+                    "totals": {
+                        "totalRevenue": "총 수익:"
+                    }
+                }
+            },
+            "analytics": {
+                "title": "분석 - 성과 측정",
+                "metrics": {
+                    "income": {
+                        "title": "수익",
+                        "today": "오늘 수익",
+                        "yesterday": "어제 수익"
+                    },
+                    "turnover": {
+                        "title": "회전율",
+                        "today": "오늘 회전율",
+                        "yesterday": "어제 회전율"
+                    },
+                    "cashback": {
+                        "title": "캐시백",
+                        "today": "오늘 캐시백",
+                        "yesterday": "어제 캐시백"
+                    }
+                }
             }
         }
     },
@@ -872,6 +1091,74 @@
         "signInSuccess": "로그인 성공!",
         "submitSignUp": "회원가입",
         "submitSignIn": "로그인"
+    },
+    "wallet": {
+        "title": "내 지갑",
+        "history": "기록",
+        "tabs": {
+            "deposit": "입금",
+            "withdraw": "출금",
+            "transfer": "송금"
+        },
+        "deposit": {
+            "paymentMethod": "결제 방법",
+            "methods": {
+                "abaBank": "ABA 은행",
+                "acledaBank": "ACLEDA 은행",
+                "qrCodeAbaBank": "QR 코드 ABA 은행"
+            },
+            "DepositAmount": {
+                "title": "입금 금액",
+                "yourWallet": "내 지갑",
+                "minMax": "최소 100.00฿ ~ 최대 50,000.00฿",
+                "balance": "잔액",
+                "buttons": {
+                    "100": "100฿",
+                    "300": "300฿",
+                    "500": "500฿",
+                    "1000": "1000฿"
+                },
+                "instructions": {
+                    "title": "빠른 거래 처리를 위해 읽어주세요",
+                    "points": {
+                        "1": "송금하기 전에 매번 새로운 거래를 생성하세요",
+                        "2": "QR 코드는 한 번만 사용할 수 있습니다",
+                        "3": "QR 코드를 재사용하지 마세요",
+                        "4": "지정된 시간 내에 거래를 완료하세요"
+                    }
+                },
+                "backButton": "뒤로",
+                "nextButton": "다음 단계"
+            }
+        },
+        "withdraw": {
+            "withdrawalCondition": "출금 조건",
+            "conditions": {
+                "depositTurnover": "입금 매출",
+                "turnover": "매출",
+                "turnWinlose": "승패 매출"
+            },
+            "withdrawAmount": "출금 금액",
+            "yourWallet": "내 지갑",
+            "minMax": "최소 500.00฿ ~ 최대 10,000.00฿",
+            "balance": "잔액",
+            "buttons": {
+                "min": "최소",
+                "25Percent": "25%",
+                "50Percent": "50%",
+                "max": "최대"
+            },
+            "note": "메모",
+            "notePlaceholder": "여기에 입력하세요 ...",
+            "characterLimit": "0/300",
+            "withdrawButton": "출금"
+        },
+        "transfer": {
+            "transferFrom": "송금 출처",
+            "yourWallet": "내 지갑",
+            "transferButton": "메인 지갑으로 송금"
+        },
+        "line": "라인"
     },
     "questsHub": {
         "title": "퀘스트 허브",
@@ -1039,6 +1326,203 @@
                     "favorite": true
                 }
             }
+        }
+    },
+    "inviteAndBenefits": {
+        "title": "초대 및 혜택",
+        "referralLinkTitle": "추천 링크",
+        "referralLink": {
+            "label": "추천 링크",
+            "placeholder": "https://ICGGaming.co?ref_code=IP7MSaJ9aH",
+            "copyButton": "복사"
+        },
+        "referralCodeTitle": "추천 코드",
+        "referralCode": {
+            "label": "추천 코드",
+            "placeholder": "IP7MSaJ9aH",
+            "copyButton": "복사"
+        },
+        "description": "추천 코드나 링크를 친구에게 공유하세요. 친구가 등록하고 게임을 플레이하면 리베이트를 받을 수 있습니다.",
+        "socialMedia": {
+            "facebook": "Facebook에서 공유",
+            "twitter": "Twitter에서 공유",
+            "whatsapp": "WhatsApp에서 공유",
+            "telegram": "Telegram에서 공유"
+        }
+    },
+    "logoutConfirmation": {
+        "title": "오늘의 잭팟을 놓치고 싶지 않으시죠!",
+        "message": "정말 로그아웃하시겠습니까?",
+        "buttons": {
+            "no": "아니요",
+            "yes": "예"
+        }
+    },
+    "SecurityAndPolicy": {
+        "sidebar": {
+            "TermsandConditions": "이용약관",
+            "PrivacyPolicy": "개인정보 처리방침",
+            "CookiesPolicy": "쿠키 정책",
+            "activeItemMessage": "상단 사이드바를 사용해 탐색하세요."
+        },
+        "header": {
+            "title": "보안 및 정책"
+        },
+        "TermsandConditions": {
+            "title": "이용약관",
+            "content": [
+                "이 페이지에는 icggaming.com 웹사이트에 대한 접근 및 이용과 관련된 귀하의 권리에 대한 정보가 설명되어 있습니다. 당사 웹사이트에서 제공되는 게임, 프로모션, 보너스와 관련된 약관 및 조건이 포함되며, 이는 때때로 공지되고 참고 문서에 통합됩니다."
+            ],
+            "sections": [
+                {
+                    "title": "정의",
+                    "content": [
+                        "1.1 다음 조항은 PlayGame168이 제공하는 게임 및 서비스에 대한 귀하의 접근 및 참여를 규정하는 약관 및 조건을 명시합니다. 이 약관은 ‘도박 규정’, ‘개인정보 처리방침’ 및 게임에 적용되는 기타 조건과 함께 읽어야 합니다.",
+                        "1.2 ‘게임(Game)’은 PlayGame168의 인터넷 게임 시스템을 말하며, 여기에는 베팅 및 도박 활동이 포함됩니다. ‘장치(Device)’란 애플리케이션에 접근할 수 있는 모든 플랫폼(노트북, 휴대전화 등)을 의미합니다. ‘소프트웨어(Software)’란 웹사이트 접근에 필요한 구조 및 파일을 말합니다. ‘Sportsbook’은 icggaming.com에서 제공되는 온라인 게임 시스템을 의미하며, ‘서비스(Service)’는 소프트웨어와 모든 게임을 포괄합니다."
+                    ]
+                },
+                {
+                    "title": "웹사이트 이용",
+                    "content": [
+                        "2.1 귀하는 다음 조건을 충족하는 경우에 한해 게임을 이용할 수 있는 권한이 부여됩니다:",
+                        " - 만 18세 이상이어야 합니다.",
+                        " - 거주 국가의 법률에 따라 게임을 이용할 수 있는 합법적인 권한을 가져야 합니다.",
+                        "2.2 당사는 귀하가 위 자격을 갖추지 못했다고 판단되면 다음 권리를 보유합니다:",
+                        " - 즉시 귀하의 게임 참여를 중단시킬 수 있습니다.",
+                        " - 관련 당국에 이를 보고할 수 있습니다."
+                    ]
+                },
+                {
+                    "title": "개정",
+                    "content": [
+                        "3.1 당사는 필요에 따라 약관을 수정, 개선 또는 변경할 수 있는 권리를 보유합니다. icggaming.com을 지속적으로 이용하는 것은 귀하가 변경 사항에 동의하는 것으로 간주됩니다."
+                    ]
+                },
+                {
+                    "title": "지적 재산권",
+                    "content": [
+                        "4.1 icggaming.com의 모든 정보(텍스트, 이미지, 오디오 등)는 icggaming.com 및 그 라이선스 제공자의 소유이며, 개인적이고 비상업적인 용도에 한해서만 사용이 허가됩니다."
+                    ]
+                },
+                {
+                    "title": "이용 조건",
+                    "content": [
+                        "• 귀하는 본인의 자격으로 행동하고 있으며, 타인을 대신하여 행동하지 않습니다.",
+                        "• 귀하는 법적으로 허용된 연령을 만족합니다.",
+                        "• 귀하는 불법적으로 취득한 자금을 사용하지 않습니다.",
+                        "• 귀하는 계정 정보를 안전하게 보호해야 합니다.",
+                        "• 귀하는 바이러스 등 악성 프로그램을 업로드하지 않습니다."
+                    ]
+                },
+                {
+                    "title": "회원가입 및 가입 절차",
+                    "content": [
+                        "• 귀하는 회원가입 시 정확한 정보를 제공해야 합니다. icggaming.com은 등록 요청을 거부하거나 추가 신원 확인을 요구할 권리를 보유합니다."
+                    ]
+                },
+                {
+                    "title": "베팅 절차",
+                    "content": [
+                        "• 베팅은 인터넷을 통해서만 이루어지며, 약관과 조건을 준수해야 합니다. icggaming.com은 오류가 발생하거나 부정행위가 발견될 경우 베팅을 취소할 수 있는 권리를 보유합니다."
+                    ]
+                }
+            ]
+        },
+        "PrivacyPolicy": {
+            "title": "개인정보 처리방침",
+            "sections": [
+                {
+                    "content": [
+                        "이 개인정보 처리방침은 PlayGame168 웹사이트에 대한 접근 및 이용과 관련하여 귀하의 개인정보가 어떤 방식으로 처리되는지 설명합니다. 본 방침은 데이터 보호법 및 당사의 개인정보 보호 약속에 따라 귀하의 개인정보를 안전하게 보호하기 위한 방법을 명시합니다."
+                    ]
+                },
+                {
+                    "title": "뉴스레터",
+                    "content": [
+                        "당사의 뉴스레터에 가입하면, 귀하의 이메일 주소가 프로모션, 게임, 다양한 소식과 관련된 업데이트를 받기 위해 사용됩니다. 귀하의 이메일 주소는 법률에 따라 정해진 경우를 제외하고 제3자와 공유되지 않습니다."
+                    ]
+                },
+                {
+                    "title": "문의",
+                    "content": [
+                        "귀하가 이메일 또는 문의 채널을 통해 당사에 연락할 경우, 귀하의 이름과 연락처 정보 등 개인정보가 기록 보관 및 서비스 품질 보증을 위해 수집될 수 있습니다. 당사는 귀하의 정보를 안전하게 보호하기 위해 최선을 다하고 있습니다."
+                    ]
+                },
+                {
+                    "title": "어떤 개인정보를 수집하나요?",
+                    "content": [
+                        "당사는 다음과 같은 목적으로 귀하의 개인정보를 수집하고 처리할 수 있습니다:",
+                        "• 귀하의 이름, 이메일 주소 및 연락처 정보",
+                        "• 베팅 및 결제 관련 거래 정보",
+                        "• 게임 취향 및 검색 활동"
+                    ]
+                },
+                {
+                    "title": "개인정보를 어떻게 사용하나요?",
+                    "content": [
+                        "귀하의 정보는 서비스 제공, 법적 준수, 사용자 경험 개선 등 관련된 목적에 한해서만 사용됩니다. 여기에는 다음이 포함됩니다:",
+                        "• 베팅 및 계정 거래 처리",
+                        "• 프로모션 및 서비스 개선과 관련된 커뮤니케이션",
+                        "• 웹사이트 기능 및 사용자 경험의 개선"
+                    ]
+                },
+                {
+                    "title": "귀하의 정보를 누구와 공유하나요?",
+                    "content": [
+                        "당사는 결제 처리 업체, 분석 서비스 제공자, 법률에 의해 요구되는 경우 규제 당국 등 권한이 있는 제3자와만 귀하의 정보를 공유할 수 있습니다."
+                    ]
+                },
+                {
+                    "title": "사용자의 권리는 무엇인가요?",
+                    "content": [
+                        "사용자로서 귀하는 다음 권리를 가집니다:",
+                        "• 당사가 보유한 귀하의 개인정보 열람",
+                        "• 부정확한 개인정보의 수정 요청",
+                        "• 특정 조건하에서 개인정보의 삭제 요청",
+                        "• 가능하다면 개인정보 처리에 대한 동의 철회"
+                    ]
+                },
+                {
+                    "title": "문의",
+                    "content": [
+                        "개인정보와 관련된 문의나 우려 사항이 있으시면 언제든지 아래 이메일로 연락해 주세요.",
+                        "support@icggmaing.com"
+                    ]
+                }
+            ]
+        },
+        "CookiesPolicy": {
+            "title": "쿠키 정책",
+            "sections": [
+                {
+                    "title": "쿠키(Cookies)란 무엇인가요?",
+                    "content": [
+                        "쿠키는 사용자가 웹사이트에서 정보를 열람할 때, 해당 웹사이트가 사용자의 컴퓨터나 모바일 기기에 전송하는 작은 파일을 의미합니다.",
+                        "쿠키는 사용자의 선호사항을 기억함으로써 사용자 경험을 개선하고, 웹사이트를 더욱 효율적으로 이용할 수 있도록 도와줍니다. 즉, 페이지 간 이동을 빠르고 쉽게 해주는 역할을 합니다."
+                    ]
+                },
+                {
+                    "title": "icggmaing.com에서의 쿠키 사용",
+                    "content": [
+                        "icggmaing.com에서는 웹사이트의 기본 기능 및 편리한 탐색을 위해 꼭 필요한 쿠키를 사용합니다. 또한 사이트 기능을 강화하기 위해(예: 사용자 선호사항 저장) 쿠키를 활용합니다. 마지막으로, 웹사이트 성능을 개선함으로써 더 나은 사용자 경험을 제공하기 위해 쿠키를 사용합니다.",
+                        "아래는 당사 웹사이트에서 사용하는 주요 쿠키 유형 3가지입니다:",
+                        "필수 쿠키(Strictly Necessary Cookies)",
+                        ": 웹사이트의 주요 기능, 언어 설정 등을 담당하며, 사이트 요소가 올바르게 로드되도록 보장합니다.",
+                        "기능 쿠키(Functionality Cookies)",
+                        ": 사용자 선택 사항을 기억하고, 제휴 정보 추적, 특정 페이지에 이미 접속했는지 여부, 사용자 선호도에 따른 맞춤형 콘텐츠 표시 등을 수행합니다. 또한 사이트 언어 설정을 위해 지리정보를 사용하기도 합니다.",
+                        "성능 쿠키(Performance Cookies)",
+                        ": 사용자가 웹사이트를 어떻게 이용하는지 추적하고, 내부적으로 익명의 데이터 마이닝을 수행하며, 다양한 디자인 아이디어 테스트 및 웹사이트 레이아웃 개선에 활용합니다.",
+                        "또한 playgame168.com에서는 온라인 행동 기반 광고 쿠키를 사용하지 않으며, 제3자가 이를 사용하도록 허용하지도 않습니다."
+                    ]
+                },
+                {
+                    "title": "쿠키 관리",
+                    "content": [
+                        "현재로서는 개별 쿠키 유형을 활성화하거나 비활성화하는 옵션을 제공하지 않습니다. 귀하가 icggmaing.com 웹사이트에 접속하면 쿠키가 귀하의 기기에 설정되며, 귀하가 계속 웹사이트와 당사 서비스를 이용하거나 ‘수락’ 버튼을 클릭한 경우, 본 정책에 따라 쿠키 사용에 동의한 것으로 간주됩니다.",
+                        "그럼에도 불구하고, 브라우저 설정을 통해 어떤 웹사이트에서도 쿠키를 수락하지 않도록 설정할 수 있습니다. 자세한 방법은 사용 중인 브라우저의 도움말을 참고하시기 바랍니다. 다만, 보안상의 이유로, 기기에서 쿠키 사용이 허용되지 않으면 일부 웹사이트 콘텐츠에 접근하지 못할 수도 있습니다."
+                    ]
+                }
+            ]
         }
     }
 }

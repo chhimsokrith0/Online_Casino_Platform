@@ -7,13 +7,13 @@ import gsap from "gsap";
 import Image from "next/image";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-
+import { useTranslations } from "next-intl";
 const RedeemHistoryPage = () => {
     const containerRef = useRef<HTMLDivElement>(null);
     const [startDate, setStartDate] = useState<Date | undefined>(undefined);
     const [endDate, setEndDate] = useState<Date | undefined>(undefined);
     const [isDatePickerVisible, setIsDatePickerVisible] = useState(false);
-
+    const t = useTranslations("accountInformation.redeemHistory");
     useEffect(() => {
         if (containerRef.current) {
             gsap.fromTo(
@@ -35,11 +35,11 @@ const RedeemHistoryPage = () => {
     };
 
     return (
-        <div ref={containerRef} className="p-6 bg-gray-900 rounded-lg">
-            <h2 className="text-lg font-bold text-white mb-4">Redeem History</h2>
+        <div ref={containerRef} className="p-4 md:p-6 bg-gray-900 rounded-lg">
+            <h2 className="text-base md:text-lg font-bold text-white mb-4">{t("title")}</h2>
 
             {/* Filters */}
-            <div className="flex justify-end mb-4 relative">
+            <div className="flex flex-col md:flex-row justify-end mb-4 gap-2 relative">
                 <button
                     onClick={toggleDatePicker}
                     className="flex items-center gap-2 bg-gray-700 px-4 py-2 rounded-lg text-gray-300"
@@ -48,8 +48,8 @@ const RedeemHistoryPage = () => {
                     <span>
                         {startDate
                             ? startDate.toLocaleDateString()
-                            : "Start Date"}{" "}
-                        -{" "}
+                            : "Start Date"} {" "}
+                        - {" "}
                         {endDate ? endDate.toLocaleDateString() : "End Date"}
                     </span>
                 </button>
@@ -70,18 +70,18 @@ const RedeemHistoryPage = () => {
             </div>
 
             {/* Table Headers */}
-            <div className="grid grid-cols-7 text-gray-400 text-sm font-semibold mb-3">
-                <span className="whitespace-nowrap">No.</span>
-                <span className="whitespace-nowrap" >Transaction Date-Time</span>
-                <span className="whitespace-nowrap">Type of Reward</span>
-                <span className="whitespace-nowrap">Reward</span>
-                <span className="whitespace-nowrap">Status</span>
-                <span className="whitespace-nowrap">Used Points</span>
-                <span className="whitespace-nowrap">Free Spins</span>
+            <div className="grid grid-cols-2 md:grid-cols-7 text-gray-400 text-xs md:text-sm font-semibold mb-3">
+                <span className="whitespace-nowrap">{t("columns.no")}</span>
+                <span className="whitespace-nowrap ml-[-50px]">{t("columns.transactionDateTime")}</span>
+                <span className="whitespace-nowrap hidden md:block">{t("columns.typeOfReward")}</span>
+                <span className="whitespace-nowrap hidden md:block">{t("columns.reward")}</span>
+                <span className="whitespace-nowrap hidden md:block">{t("columns.status")}</span>
+                <span className="whitespace-nowrap hidden md:block">{t("columns.usedPoints")}</span>
+                <span className="whitespace-nowrap hidden md:block">{t("columns.freeSpins")}</span>
             </div>
 
             {/* Empty State */}
-            <div className="bg-gray-700 p-6 rounded-lg flex flex-col items-center justify-center text-gray-400">
+            <div className="bg-gray-700 p-4 md:p-6 rounded-lg flex flex-col items-center justify-center text-gray-400">
                 <Image
                     src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733752217/nothing_box_sn6zu5.webp"
                     alt="Empty State"
@@ -89,13 +89,13 @@ const RedeemHistoryPage = () => {
                     height={64}
                     className="mb-4"
                 />
-                <p>There&apos;s nothing here yet!</p>
+                <p className="text-sm md:text-base">{t("emptyState.message")}</p>
             </div>
 
             {/* Footer */}
             <div className="mt-6">
                 {/* Pagination */}
-                <div className="flex justify-between items-center text-sm text-gray-400">
+                <div className="flex flex-col md:flex-row justify-between items-center text-xs md:text-sm text-gray-400 gap-4">
                     <div className="flex items-center">
                         <button className="px-3 py-1 bg-gray-700 rounded-l-lg hover:bg-gray-600">
                             &lt;
@@ -109,20 +109,20 @@ const RedeemHistoryPage = () => {
 
                 {/* Summary */}
                 <div className="bg-gray-800 p-4 rounded-lg mt-4">
-                    <div className="grid grid-cols-2 text-gray-400 text-sm mb-2">
-                        <span>All Rewards:</span>
+                    <div className="grid grid-cols-2 text-gray-400 text-xs md:text-sm mb-2">
+                        <span>{t("totals.allRewards")}</span>
                         <span className="text-right text-yellow-500">0</span>
                     </div>
-                    <div className="grid grid-cols-2 text-gray-400 text-sm mb-2">
-                        <span>Total Used Points:</span>
+                    <div className="grid grid-cols-2 text-gray-400 text-xs md:text-sm mb-2">
+                        <span>{t("totals.totalUsedPoints")}</span>
                         <span className="text-right text-yellow-500">0</span>
                     </div>
-                    <div className="grid grid-cols-2 text-gray-400 text-sm mb-2">
-                        <span>Total Free Spins:</span>
+                    <div className="grid grid-cols-2 text-gray-400 text-xs md:text-sm mb-2">
+                        <span>{t("totals.totalFreeSpins")}</span>
                         <span className="text-right text-yellow-500">0</span>
                     </div>
-                    <div className="grid grid-cols-2 text-gray-400 text-sm">
-                        <span>Total Amount per Round:</span>
+                    <div className="grid grid-cols-2 text-gray-400 text-xs md:text-sm">
+                        <span>{t("totals.totalAmountPerRound")}</span>
                         <span className="text-right text-yellow-500">0.00</span>
                     </div>
                 </div>

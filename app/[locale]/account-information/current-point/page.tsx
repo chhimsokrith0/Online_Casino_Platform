@@ -6,12 +6,13 @@ import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 import gsap from "gsap";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-
+import { useTranslations } from "next-intl";
 const PointHistoryPage = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [startDate, setStartDate] = useState<Date | undefined>(undefined);
   const [endDate, setEndDate] = useState<Date | undefined>(undefined);
   const [isDatePickerVisible, setIsDatePickerVisible] = useState(false);
+  const t = useTranslations("accountInformation.pointHistory");
 
   const toggleDatePicker = () => {
     setIsDatePickerVisible((prev) => !prev);
@@ -42,7 +43,7 @@ const PointHistoryPage = () => {
 
   return (
     <div ref={containerRef} className="p-6 bg-gray-900 rounded-lg">
-      <h2 className="text-lg font-bold text-white mb-4">Point History</h2>
+      <h2 className="text-lg font-bold text-white mb-4">{t("title")}</h2>
 
       {/* Filters */}
       <div className="flex justify-end mb-4 relative">
@@ -80,10 +81,10 @@ const PointHistoryPage = () => {
         <table className="min-w-full bg-gray-800 rounded-lg">
           <thead>
             <tr className="text-gray-400 text-sm">
-              <th className="py-3 px-4 text-left whitespace-nowrap">Transaction Date-Time</th>
-              <th className="py-3 px-4 text-left whitespace-nowrap">Type</th>
-              <th className="py-3 px-4 text-left whitespace-nowrap">Turnover</th>
-              <th className="py-3 px-4 text-right whitespace-nowrap">Current Point</th>
+              <th className="py-3 px-4 text-left whitespace-nowrap">{t("columns.transactionDateTime")}</th>
+              <th className="py-3 px-4 text-left whitespace-nowrap">{t("columns.type")}</th>
+              <th className="py-3 px-4 text-left whitespace-nowrap">{t("columns.turnover")}</th>
+              <th className="py-3 px-4 text-right whitespace-nowrap">{t("columns.currentPoint")}</th>
             </tr>
           </thead>
           <tbody>
@@ -107,7 +108,7 @@ const PointHistoryPage = () => {
       {/* Footer */}
       <div className="mt-6 bg-gray-800 p-4 rounded-lg">
         <div className="flex justify-between text-sm text-gray-400">
-          <span>Total Points:</span>
+          <span>{t("totalPoints")}</span>
           <span className="text-yellow-500">800.00</span>
         </div>
       </div>
