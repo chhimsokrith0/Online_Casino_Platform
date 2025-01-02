@@ -1544,5 +1544,44 @@
       ],
       "buttonChoose": "ရွေးချယ်ရန်"
     }
+  },
+  "providersModal": {
+    "title": "အားလုံး ပံ့ပိုးပေးသူများ",
+    "closeButton": "ပိတ်ရန်",
+    "providers": {
+      "PGSoft": "PGSoft",
+      "Joker": "ဂျိုးကာ",
+      "JILI": "ဂျီလီ",
+      "PragmaticPlay": "PragmaticPlay",
+      "Habanero": "ဟာဘာနယ်ရို",
+      "Pegasus": "ပီဂါဆပ်",
+      "DreamGaming": "DreamGaming",
+      "Worldmatch": "Worldmatch",
+      "WMCASINO": "WM ကာစီနို",
+      "Amigo": "အမီဂို",
+      "Naga": "နဂါ",
+      "Nolimit": "Nolimit City",
+      "SA": "SA",
+      "AeSexy": "Ae Sexy",
+      "Evoplay": "EvoPlay",
+      "Spribe": "Spribe",
+      "Sbobet": "Sbobet",
+      "Evolution": "Evolution Gaming",
+      "Mancala": "Mancala",
+      "PlaynGo": "Play`n Go",
+      "Relax": "Relax Gaming",
+      "Smartsoft": "Smartsoft Gaming",
+      "3Oaks": "3 Oaks Gaming",
+      "Dragongaming": "DragonGaming",
+      "WeGaming": "We Gaming",
+      "Rich88": "Rich88",
+      "SpadeGaming": "SpadeGaming",
+      "FACHAI": "FA CHAI",
+      "FastSpin": "FastSpin",
+      "CQ9": "CQ9",
+      "Hacksaw": "Hacksaw",
+      "RoyalSlot": "Royal Slot Gaming",
+      "Winfinity": "Winfinity"
+    }
   }
 }

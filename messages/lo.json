@@ -1544,5 +1544,44 @@
       ],
       "buttonChoose": "ເລືອກ"
     }
+  },
+  "providersModal": {
+    "title": "ຜູ້ສະໜອງທັງໝົດ",
+    "closeButton": "ປິດ",
+    "providers": {
+      "PGSoft": "PGSoft",
+      "Joker": "ໂຈເກີ",
+      "JILI": "ຈີລີ",
+      "PragmaticPlay": "PragmaticPlay",
+      "Habanero": "Habanero",
+      "Pegasus": "ເພກາສັດ",
+      "DreamGaming": "DreamGaming",
+      "Worldmatch": "Worldmatch",
+      "WMCASINO": "WM ຄາສິໂນ",
+      "Amigo": "Amigo",
+      "Naga": "Naga",
+      "Nolimit": "Nolimit City",
+      "SA": "SA",
+      "AeSexy": "Ae Sexy",
+      "Evoplay": "Evoplay",
+      "Spribe": "Spribe",
+      "Sbobet": "Sbobet",
+      "Evolution": "Evolution Gaming",
+      "Mancala": "Mancala",
+      "PlaynGo": "Play`n Go",
+      "Relax": "Relax Gaming",
+      "Smartsoft": "Smartsoft Gaming",
+      "3Oaks": "3 Oaks Gaming",
+      "Dragongaming": "Dragongaming",
+      "WeGaming": "We Gaming",
+      "Rich88": "Rich88",
+      "SpadeGaming": "SpadeGaming",
+      "FACHAI": "FA CHAI",
+      "FastSpin": "FastSpin",
+      "CQ9": "CQ9",
+      "Hacksaw": "Hacksaw",
+      "RoyalSlot": "Royal Slot Gaming",
+      "Winfinity": "Winfinity"
+    }
   }
 }

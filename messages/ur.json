@@ -1544,5 +1544,44 @@
             ],
             "buttonChoose": "منتخب کریں"
         }
+    },
+    "providersModal": {
+        "title": "تمام فراہم کنندگان",
+        "closeButton": "بند کریں",
+        "providers": {
+            "PGSoft": "PGSoft",
+            "Joker": "جوکر",
+            "JILI": "جی آئی ایل آئی",
+            "PragmaticPlay": "پریگمیٹک پلے",
+            "Habanero": "حابانیرو",
+            "Pegasus": "پیگاسس",
+            "DreamGaming": "ڈریم گیمنگ",
+            "Worldmatch": "ورلڈ میچ",
+            "WMCASINO": "ڈبلیو ایم کیسینو",
+            "Amigo": "امِگو",
+            "Naga": "ناگا",
+            "Nolimit": "نو لیمیٹ سٹی",
+            "SA": "ایس اے",
+            "AeSexy": "اے ای سیکسی",
+            "Evoplay": "ایوو پلے",
+            "Spribe": "سپریب",
+            "Sbobet": "سبوبیٹ",
+            "Evolution": "ایوولیوشن گیمنگ",
+            "Mancala": "مینکالا",
+            "PlaynGo": "پلے `این گو",
+            "Relax": "ریلیکس گیمنگ",
+            "Smartsoft": "سمارٹ سوفٹ گیمنگ",
+            "3Oaks": "تھری اوکس گیمنگ",
+            "Dragongaming": "ڈریگن گیمنگ",
+            "WeGaming": "وی گیمنگ",
+            "Rich88": "ریچ88",
+            "SpadeGaming": "اسپیڈ گیمنگ",
+            "FACHAI": "فا چائی",
+            "FastSpin": "فاسٹ اسپن",
+            "CQ9": "سی کیو 9",
+            "Hacksaw": "ہیکساو",
+            "RoyalSlot": "رائل سلاٹ گیمنگ",
+            "Winfinity": "ون فینیٹی"
+        }
     }
 }

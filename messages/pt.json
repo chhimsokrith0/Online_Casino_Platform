@@ -1490,5 +1490,44 @@
             ],
             "buttonChoose": "Escolher"
         }
+    },
+    "providersModal": {
+        "title": "Todos os Provedores",
+        "closeButton": "Fechar",
+        "providers": {
+            "PGSoft": "PGSoft",
+            "Joker": "Joker",
+            "JILI": "JILI",
+            "PragmaticPlay": "PragmaticPlay",
+            "Habanero": "Habanero",
+            "Pegasus": "Pegasus",
+            "DreamGaming": "DreamGaming",
+            "Worldmatch": "Worldmatch",
+            "WMCASINO": "WM CASINO",
+            "Amigo": "Amigo",
+            "Naga": "Naga",
+            "Nolimit": "Nolimit City",
+            "SA": "SA",
+            "AeSexy": "Ae Sexy",
+            "Evoplay": "Evoplay",
+            "Spribe": "Spribe",
+            "Sbobet": "Sbobet",
+            "Evolution": "Evolution Gaming",
+            "Mancala": "Mancala",
+            "PlaynGo": "Play`n Go",
+            "Relax": "Relax Gaming",
+            "Smartsoft": "Smartsoft Gaming",
+            "3Oaks": "3 Oaks Gaming",
+            "Dragongaming": "Dragongaming",
+            "WeGaming": "We Gaming",
+            "Rich88": "Rich88",
+            "SpadeGaming": "SpadeGaming",
+            "FACHAI": "FA CHAI",
+            "FastSpin": "FastSpin",
+            "CQ9": "CQ9",
+            "Hacksaw": "Hacksaw",
+            "RoyalSlot": "Royal Slot Gaming",
+            "Winfinity": "Winfinity"
+        }
     }
 }

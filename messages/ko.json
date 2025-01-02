@@ -1544,5 +1544,44 @@
             ],
             "buttonChoose": "선택"
         }
+    },
+    "providersModal": {
+        "title": "모든 제공업체",
+        "closeButton": "닫기",
+        "providers": {
+            "PGSoft": "PGSoft",
+            "Joker": "조커",
+            "JILI": "지리",
+            "PragmaticPlay": "프래그매틱 플레이",
+            "Habanero": "하바네로",
+            "Pegasus": "페가수스",
+            "DreamGaming": "드림 게이밍",
+            "Worldmatch": "월드매치",
+            "WMCASINO": "WM 카지노",
+            "Amigo": "아미고",
+            "Naga": "나가",
+            "Nolimit": "노리밋 시티",
+            "SA": "SA",
+            "AeSexy": "Ae 섹시",
+            "Evoplay": "에보플레이",
+            "Spribe": "스프라이브",
+            "Sbobet": "스보벳",
+            "Evolution": "에볼루션 게이밍",
+            "Mancala": "만칼라",
+            "PlaynGo": "플레이`n 고",
+            "Relax": "릴렉스 게이밍",
+            "Smartsoft": "스마트소프트 게이밍",
+            "3Oaks": "3 오크스 게이밍",
+            "Dragongaming": "드래곤 게이밍",
+            "WeGaming": "위 게이밍",
+            "Rich88": "리치88",
+            "SpadeGaming": "스페이드 게이밍",
+            "FACHAI": "FA 차이",
+            "FastSpin": "패스트스핀",
+            "CQ9": "CQ9",
+            "Hacksaw": "핵소",
+            "RoyalSlot": "로얄 슬롯 게이밍",
+            "Winfinity": "윈피니티"
+        }
     }
 }

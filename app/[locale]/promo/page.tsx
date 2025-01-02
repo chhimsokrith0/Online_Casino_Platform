@@ -11,21 +11,35 @@ const promotions = [
     title: "REBATE",
     description:
       "Get back a percentage of your bets on casino games (0.3-0.8%) and enjoy Member Level bonuses.",
-    image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733645516/1_eexhut.webp",
+    image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1735817825/hRMs6OA_1_flukkh.jpg",
     icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734926055/download_v6ymnb.svg",
   },
   {
     title: "CASHBACK",
     description:
       "💸 Daily cashback bonus up to 7%! 💸 Maximize rewards with Member Level bonuses.",
-    image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733645516/2_jocwtl.webp",
+    image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1735817825/EYPZsVb_xgxrfm.png",
     icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734926055/download_v6ymnb.svg",
   },
   {
     title: "REFERRAL",
     description:
       "👥 Earn 3% commission daily! 💰 Withdrawable to your main wallet with rollover requirements.",
-    image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733645517/3_l7zimp.webp",
+    image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1735817825/hRMs6OA_u8375i.jpg",
+    icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734926055/download_v6ymnb.svg",
+  },
+  {
+    title: "REFERRAL",
+    description:
+      "👥 Earn 3% commission daily! 💰 Withdrawable to your main wallet with rollover requirements.",
+    image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1735817825/yb2oH9M_azudtm.jpg",
+    icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734926055/download_v6ymnb.svg",
+  },
+  {
+    title: "REFERRAL",
+    description:
+      "👥 Earn 3% commission daily! 💰 Withdrawable to your main wallet with rollover requirements.",
+    image: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1735817825/mYxNN7q_kcirme.jpg",
     icon: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734926055/download_v6ymnb.svg",
   },
 ];
@@ -110,7 +124,7 @@ const PromotionsSection: React.FC = () => {
                 <img
                   src={promo.image}
                   alt={promo.title}
-                  className="absolute inset-0 w-full h-full object-cover"
+                  className="absolute inset-0 w-full h-full object-contain"
                 />
               </div>
               <img

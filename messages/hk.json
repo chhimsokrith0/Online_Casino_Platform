@@ -1541,5 +1541,44 @@
             ],
             "buttonChoose": "選擇"
         }
+    },
+    "providersModal": {
+        "title": "所有供應商",
+        "closeButton": "關閉",
+        "providers": {
+            "PGSoft": "PGSoft",
+            "Joker": "Joker",
+            "JILI": "JILI",
+            "PragmaticPlay": "PragmaticPlay",
+            "Habanero": "Habanero",
+            "Pegasus": "Pegasus",
+            "DreamGaming": "夢幻娛樂",
+            "Worldmatch": "Worldmatch",
+            "WMCASINO": "WM CASINO",
+            "Amigo": "Amigo",
+            "Naga": "Naga",
+            "Nolimit": "Nolimit City",
+            "SA": "SA",
+            "AeSexy": "Ae 性感",
+            "Evoplay": "Evoplay",
+            "Spribe": "Spribe",
+            "Sbobet": "Sbobet",
+            "Evolution": "Evolution Gaming",
+            "Mancala": "Mancala",
+            "PlaynGo": "Play`n Go",
+            "Relax": "Relax Gaming",
+            "Smartsoft": "Smartsoft Gaming",
+            "3Oaks": "3 Oaks Gaming",
+            "Dragongaming": "龍遊戲",
+            "WeGaming": "We Gaming",
+            "Rich88": "Rich88",
+            "SpadeGaming": "SpadeGaming",
+            "FACHAI": "FA CHAI",
+            "FastSpin": "FastSpin",
+            "CQ9": "CQ9",
+            "Hacksaw": "Hacksaw",
+            "RoyalSlot": "皇家老虎機",
+            "Winfinity": "Winfinity"
+        }
     }
 }

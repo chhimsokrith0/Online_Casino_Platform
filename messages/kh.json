@@ -1544,5 +1544,44 @@
       ],
       "buttonChoose": "ជ្រើសរើស"
     }
+  },
+  "providersModal": {
+    "title": "អ្នកផ្គត់ផ្គង់ទាំងអស់",
+    "closeButton": "បិទ",
+    "providers": {
+      "PGSoft": "PGSoft",
+      "Joker": "ជូឃើរ",
+      "JILI": "ជីឡី",
+      "PragmaticPlay": "ប្រីកម៉ាទិកផ្លេ",
+      "Habanero": "ហាប៉ាណេរ៉ូ",
+      "Pegasus": "ផេហ្គាសុស",
+      "DreamGaming": "ដ្រីមហ្គេមមីង",
+      "Worldmatch": "វើលដ៍ម៉ាត",
+      "WMCASINO": "WM កាស៊ីណូ",
+      "Amigo": "អាមីហ្គោ",
+      "Naga": "នាគ",
+      "Nolimit": "នូលីមីត ស៊ីធី",
+      "SA": "SA",
+      "AeSexy": "Ae Sexy",
+      "Evoplay": "អេវ៉ូផ្លេ",
+      "Spribe": "ស្ព្រៃប",
+      "Sbobet": "ស្បូបែត",
+      "Evolution": "អ៊ីវ៉ូលូសិនហ្គេមមីង",
+      "Mancala": "ម៉ានខាលា",
+      "PlaynGo": "ផ្លេ `n Go",
+      "Relax": "រីឡាក់ហ្គេមមីង",
+      "Smartsoft": "ស្មាតស៊ូហ្គេមមីង",
+      "3Oaks": "3 អូកស៍ហ្គេមមីង",
+      "Dragongaming": "ដ្រាកុងហ្គេមមីង",
+      "WeGaming": "វីហ្គេមមីង",
+      "Rich88": "រីឆ៍ 88",
+      "SpadeGaming": "ស្ពេឌហ្គេមមីង",
+      "FACHAI": "FA CHAI",
+      "FastSpin": "ហ្វាសស្ពីន",
+      "CQ9": "CQ9",
+      "Hacksaw": "ហាក់ស",
+      "RoyalSlot": "រ៉ូយាល់ស្លុតហ្គេមមីង",
+      "Winfinity": "វិនហ្វីនីធី"
+    }
   }
 }

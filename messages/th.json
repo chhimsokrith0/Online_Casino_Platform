@@ -1544,5 +1544,44 @@
       ],
       "buttonChoose": "เลือก"
     }
+  },
+  "providersModal": {
+    "title": "ผู้ให้บริการทั้งหมด",
+    "closeButton": "ปิด",
+    "providers": {
+      "PGSoft": "PGSoft",
+      "Joker": "โจ๊กเกอร์",
+      "JILI": "จิลิ",
+      "PragmaticPlay": "PragmaticPlay",
+      "Habanero": "ฮาบาเนโร",
+      "Pegasus": "เพกาซัส",
+      "DreamGaming": "DreamGaming",
+      "Worldmatch": "Worldmatch",
+      "WMCASINO": "WM คาสิโน",
+      "Amigo": "อามิโก",
+      "Naga": "นาค",
+      "Nolimit": "Nolimit City",
+      "SA": "SA",
+      "AeSexy": "Ae เซ็กซี่",
+      "Evoplay": "Evoplay",
+      "Spribe": "Spribe",
+      "Sbobet": "Sbobet",
+      "Evolution": "Evolution Gaming",
+      "Mancala": "Mancala",
+      "PlaynGo": "Play`n Go",
+      "Relax": "Relax Gaming",
+      "Smartsoft": "Smartsoft Gaming",
+      "3Oaks": "3 Oaks Gaming",
+      "Dragongaming": "DragonGaming",
+      "WeGaming": "We Gaming",
+      "Rich88": "Rich88",
+      "SpadeGaming": "SpadeGaming",
+      "FACHAI": "FA CHAI",
+      "FastSpin": "FastSpin",
+      "CQ9": "CQ9",
+      "Hacksaw": "Hacksaw",
+      "RoyalSlot": "Royal Slot Gaming",
+      "Winfinity": "Winfinity"
+    }
   }
 }
