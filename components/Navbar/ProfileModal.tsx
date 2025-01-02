@@ -148,7 +148,7 @@ const ProfileModal: React.FC<ProfileModalProps> = ({ isOpen, onClose, locale }) 
               </div>
               {/* Settings Button */}
               <Link
-                href={`/${locale}/general-setting`}
+                href={`/${locale}/general-setting/general`}
                 className="text-gray-400 hover:text-yellow-500 flex items-center gap-2"
                 onClick={handleButtonClick}
               >
@@ -174,7 +174,7 @@ const ProfileModal: React.FC<ProfileModalProps> = ({ isOpen, onClose, locale }) 
           <div className="bg-gray-800 p-4 rounded-lg mt-4">
             <div className="grid grid-cols-2 gap-2 sm:gap-4">
               {[
-                { icon: faUser, label: t("menu.myProfile"), link: `/${locale}/account-information`, active: false },
+                { icon: faUser, label: t("menu.myProfile"), link: `/${locale}/account-information/profile`, active: false },
                 { icon: faCrown, label: t("menu.levels"), link: `/${locale}/member-level`, active: false },
                 { icon: faGift, label: t("menu.reward"), link: `/${locale}/Reward/random-card`, active: false },
                 { icon: faHistory, label: t("menu.history"), link: `/${locale}/account-information/transactions`, active: false },

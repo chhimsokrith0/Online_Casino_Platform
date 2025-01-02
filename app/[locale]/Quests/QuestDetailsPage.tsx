@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import CountdownTimer from "./CountdownTimer";
 import GameSlotGrid from "./GameSlotGrid";
 import { useTranslations } from "next-intl";
-import "./style.css"
+import "./style.css";
 
 interface QuestDetailsPageProps {
   onBack: () => void;
@@ -17,8 +17,6 @@ const QuestDetailsPage: React.FC<QuestDetailsPageProps> = ({ onBack }) => {
   return (
     <div
       className="
-        overflow-y-auto scrollbar-hide 
-        min-h-screen 
         bg-cover bg-center bg-no-repeat 
         rounded-md
       "
@@ -28,7 +26,7 @@ const QuestDetailsPage: React.FC<QuestDetailsPageProps> = ({ onBack }) => {
       }}
     >
       <motion.div
-        className="rounded-xl p-4 bg-gray-900 text-white w-full max-w-4xl mx-auto shadow-lg overflow-y-auto scrollbar-hide "
+        className="rounded-xl p-4 bg-gray-900 text-white w-full max-w-4xl mx-auto shadow-lg"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeInOut" }}

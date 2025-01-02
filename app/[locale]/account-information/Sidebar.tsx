@@ -14,9 +14,7 @@ const Sidebar = () => {
     if (!pathname) return;
 
     // Dynamically set 'activeItem' based on current pathname
-    if (pathname === "/account-information/profile") {
-      setActiveItem("profile");
-    } else if (pathname.includes("/account-information/profile")) {
+    if (pathname.includes("/account-information/profile")) {
       setActiveItem("profile");
     } else if (pathname.includes("/account-information/transactions")) {
       setActiveItem("transactions");

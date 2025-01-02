@@ -46,7 +46,7 @@ const QuestsModal: React.FC<QuestsModalProps> = ({ isOpen, onClose }) => {
   return ReactDOM.createPortal(
     <AnimatePresence>
       <motion.div
-        className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-[200] backdrop-blur-sm overflow-y-auto scrollbar-hide"
+        className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-[200] backdrop-blur-sm overflow-auto scrollbar-hide"
         onClick={onClose}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -55,7 +55,7 @@ const QuestsModal: React.FC<QuestsModalProps> = ({ isOpen, onClose }) => {
         {/* Main Modal Container */}
         <motion.div
           ref={modalRef}
-          className="relative bg-gray-900 w-[95%] max-w-7xl h-[80%] sm:h-[95%] overflow-hidden rounded-lg shadow-lg"
+          className="relative bg-gray-900 w-[95%] max-w-7xl h-[80%] sm:h-[95%] overflow-auto scrollbar-hide rounded-lg shadow-lg"
           onClick={(e) => e.stopPropagation()}
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -114,7 +114,7 @@ const QuestsModal: React.FC<QuestsModalProps> = ({ isOpen, onClose }) => {
                 sm:top-[72px]  /* Adjust if needed to avoid overlapping the header */
                 h-auto
                 sm:h-[calc(100%-72px)]
-                overflow-auto
+                overflow-auto scrollbar-hide
               "
               initial={{ x: -50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
@@ -153,7 +153,7 @@ const QuestsModal: React.FC<QuestsModalProps> = ({ isOpen, onClose }) => {
 
             {/* Tab Content (Scrollable) */}
             <motion.div
-              className="flex-grow overflow-auto p-6"
+              className="flex-grow overflow-auto scrollbar-hide p-6"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}

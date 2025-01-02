@@ -14,7 +14,7 @@ const Sidebar = () => {
   useEffect(() => {
     if (!pathname) return;
 
-    if (pathname === "/general-setting/general") {
+    if (pathname.includes("/general-setting/general")) {
       setActiveItem("general");
     } else if (pathname.includes("/general-setting/verification")) {
       setActiveItem("verification");
