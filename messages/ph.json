@@ -1524,5 +1524,25 @@
         }
       ]
     }
+  },
+  "randomcard": {
+    "title": "Gantimpala ng ICGGaming",
+    "description": "Danasin ang kilig ng eksklusibong karanasan gamit ang aming de-kalidad na seleksyon ng mga gantimpala.",
+    "points": "Kasalukuyang Puntos: ",
+    "button": [
+      "Random na Card",
+      "Libreng Pag-ikot"
+    ],
+    "FreeSpins": {
+      "1": [
+        "Libreng Pag-ikot",
+        "sa larong Double Fortune"
+      ],
+      "2": [
+        "2 Libreng Pag-ikot",
+        "sa larong Golden Empire"
+      ],
+      "buttonChoose": "Piliin"
+    }
   }
 }

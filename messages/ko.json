@@ -1524,5 +1524,25 @@
                 }
             ]
         }
+    },
+    "randomcard": {
+        "title": "ICGGaming 보상",
+        "description": "프리미엄 보상의 특별한 스릴을 경험해 보세요.",
+        "points": "현재 포인트: ",
+        "button": [
+            "랜덤 카드",
+            "무료 스핀"
+        ],
+        "FreeSpins": {
+            "1": [
+                "무료 스핀",
+                "Double Fortune 게임에서"
+            ],
+            "2": [
+                "2회 무료 스핀",
+                "Golden Empire 게임에서"
+            ],
+            "buttonChoose": "선택"
+        }
     }
 }

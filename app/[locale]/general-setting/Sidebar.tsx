@@ -7,55 +7,43 @@ import { usePathname } from "next/navigation";
 
 const Sidebar = () => {
   const t = useTranslations("settings");
-  const pathname = usePathname(); // Dynamically get the current route
-  const [activeItem, setActiveItem] = useState<string>("");
+  const pathname = usePathname(); 
+  const [activeItem, setActiveItem] = useState("");
 
-  const menuItems = [
-    { label: t("menu.general"), link: "/general-setting/general" },
-    { label: t("menu.verification"), link: "/general-setting/verification" },
-    { label: t("menu.changePassword"), link: "/general-setting/change-password" },
-    { label: t("menu.activityLog"), link: "/general-setting/active-log" },
-  ];
-
+  // Update active menu item based on current route
   useEffect(() => {
     if (!pathname) return;
 
-    // Automatically set activeItem based on the current pathname
-    const matchedItem = menuItems.find((item) => {
-      const normalizedPathname = pathname.replace(/\/$/, ""); // Remove trailing slash
-      const normalizedItemLink = item.link.replace(/\/$/, ""); // Remove trailing slash
-      return normalizedPathname === normalizedItemLink || normalizedPathname.startsWith(normalizedItemLink);
-    });
-
-    if (matchedItem) {
-      setActiveItem(matchedItem.label);
-      localStorage.setItem("activeMenuItem", matchedItem.label); // Save active item to localStorage
+    if (pathname === "/general-setting/general") {
+      setActiveItem("general");
+    } else if (pathname.includes("/general-setting/verification")) {
+      setActiveItem("verification");
+    } else if (pathname.includes("/general-setting/change-password")) {
+      setActiveItem("changePassword");
+    } else if (pathname.includes("/general-setting/active-log")) {
+      setActiveItem("activityLog");
+    } else {
+      setActiveItem("");
     }
-  }, [pathname, menuItems]);
+  }, [pathname]);
 
-  useEffect(() => {
-    // Load active item from localStorage on mount
-    const savedActiveItem = localStorage.getItem("activeMenuItem");
-    if (savedActiveItem) {
-      setActiveItem(savedActiveItem);
-    }
-  }, []);
-
-  const handleItemClick = (label: string) => {
-    setActiveItem(label); // Manually set active item when clicked
-    localStorage.setItem("activeMenuItem", label); // Save active item to localStorage
-  };
+  // Define your menu items with a "key" that matches how we set activeItem in the effect above
+  const menuItems = [
+    { key: "general", label: t("menu.general"), link: "/general-setting/general" },
+    { key: "verification", label: t("menu.verification"), link: "/general-setting/verification" },
+    { key: "changePassword", label: t("menu.changePassword"), link: "/general-setting/change-password" },
+    { key: "activityLog", label: t("menu.activityLog"), link: "/general-setting/active-log" },
+  ];
 
   return (
     <aside className="bg-gray-800 py-6 px-4 flex flex-col rounded-lg">
       <ul className="space-y-1">
-        {menuItems.map((item, index) => (
-          <li key={index} className="flex">
+        {menuItems.map((item) => (
+          <li key={item.key} className="flex">
             <Link
               href={item.link}
-              onClick={() => handleItemClick(item.label)}
               className={`flex items-center px-4 py-3 w-full rounded-full transition ${
-                activeItem === item.label
+                activeItem === item.key
                   ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-bold shadow-md"
                   : "text-gray-300 hover:bg-gray-700"
               }`}
@@ -65,6 +53,7 @@ const Sidebar = () => {
           </li>
         ))}
       </ul>
+
       {/* Mobile-specific styling */}
       <div className="block md:hidden mt-4 text-gray-300 text-center">
         Use the tabs above for navigation

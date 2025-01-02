@@ -1,34 +1,64 @@
 {
     "fonts": {
+        "au": {
+            "fontFamily": "Arial, sans-serif"
+        },
+        "bn": {
+            "fontFamily": "\"Noto Sans Bengali\", sans-serif"
+        },
+        "ca": {
+            "fontFamily": "Arial, sans-serif"
+        },
         "en": {
             "fontFamily": "Arial, sans-serif"
         },
         "hi": {
-            "fontFamily": "\"Mangal\", sans-serif"
+            "fontFamily": "\"Noto Sans Devanagari\", sans-serif"
         },
-        "kh": {
-            "fontFamily": "\"Battambang\", sans-serif"
-        },
-        "lo": {
-            "fontFamily": "\"Phetsarath OT\", sans-serif"
-        },
-        "mm": {
-            "fontFamily": "\"Myanmar Text\", sans-serif"
-        },
-        "zh": {
-            "fontFamily": "\"Noto Sans SC\", sans-serif"
-        },
-        "th": {
-            "fontFamily": "\"TH Sarabun New\", sans-serif"
+        "hk": {
+            "fontFamily": "\"Noto Sans TC\", sans-serif"
         },
         "id": {
             "fontFamily": "Arial, sans-serif"
         },
+        "kh": {
+            "fontFamily": "\"Battambang\", sans-serif"
+        },
+        "ko": {
+            "fontFamily": "\"Noto Sans KR\", sans-serif"
+        },
+        "lo": {
+            "fontFamily": "\"Phetsarath\", sans-serif"
+        },
+        "mm": {
+            "fontFamily": "\"Noto Sans Myanmar\", sans-serif"
+        },
+        "ms": {
+            "fontFamily": "Arial, sans-serif"
+        },
+        "ph": {
+            "fontFamily": "Arial, sans-serif"
+        },
+        "pt": {
+            "fontFamily": "Arial, sans-serif"
+        },
+        "sg": {
+            "fontFamily": "Arial, sans-serif"
+        },
+        "th": {
+            "fontFamily": "\"Sarabun\", sans-serif"
+        },
+        "tw": {
+            "fontFamily": "\"Noto Sans TC\", sans-serif"
+        },
+        "ur": {
+            "fontFamily": "\"Cairo\", sans-serif"
+        },
         "vi": {
             "fontFamily": "Arial, sans-serif"
         },
-        "ur": {
-            "fontFamily": "Cairo, sans-serif"
+        "zh": {
+            "fontFamily": "\"Noto Sans SC\", sans-serif"
         }
     }
 }

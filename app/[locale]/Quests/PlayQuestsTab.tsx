@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import QuestDetailsPage from "./QuestDetailsPage";
 import { useTranslations } from "next-intl";
+import "./style.css"
 const PlayQuestsTab: React.FC = () => {
   const [showDetailsPage, setShowDetailsPage] = useState(false);
   const t = useTranslations("questsHub.adventureSection");
@@ -21,7 +22,7 @@ const PlayQuestsTab: React.FC = () => {
   }
   return (
     <motion.div
-      className="flex flex-col items-center text-center p-6"
+      className="flex flex-col items-center text-center p-6 overflow-y-auto scrollbar-hide"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeInOut" }}

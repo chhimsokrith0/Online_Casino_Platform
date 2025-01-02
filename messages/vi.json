@@ -1238,5 +1238,25 @@
         }
       ]
     }
+  },
+  "randomcard": {
+    "title": "Phần thưởng ICGGaming",
+    "description": "Trải nghiệm sự phấn khích và niềm vui độc quyền thông qua những phần thưởng chất lượng mà chúng tôi tuyển chọn.",
+    "points": "Điểm hiện tại:",
+    "button": [
+      "Thẻ ngẫu nhiên",
+      "Vòng quay miễn phí"
+    ],
+    "FreeSpins": {
+      "1": [
+        "Vòng quay miễn phí",
+        "trong trò chơi Double Fortune"
+      ],
+      "2": [
+        "2 vòng quay miễn phí",
+        "trong trò chơi Golden Empire"
+      ],
+      "buttonChoose": "Chọn"
+    }
   }
 }

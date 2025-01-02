@@ -342,24 +342,32 @@ const Affiliate = () => {
               <p className="text-sm text-gray-400 mb-3">{t("inviteFriends")}</p>
               <div className="flex gap-4">
                 <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
                   href="https://www.facebook.com/"
                   className="flex items-center justify-center w-10 h-10 bg-gray-800 rounded-full hover:bg-blue-600 transition transform hover:scale-105"
                 >
                   <FontAwesomeIcon icon={faFacebookF} className="text-gray-300" />
                 </Link>
                 <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
                   href="https://t.me/"
                   className="flex items-center justify-center w-10 h-10 bg-gray-800 rounded-full hover:bg-blue-400 transition transform hover:scale-105"
                 >
                   <FontAwesomeIcon icon={faTelegram} className="text-gray-300" />
                 </Link>
                 <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
                   href="https://www.skype.com/"
                   className="flex items-center justify-center w-10 h-10 bg-gray-800 rounded-full hover:bg-blue-500 transition transform hover:scale-105"
                 >
                   <FontAwesomeIcon icon={faSkype} className="text-gray-300" />
                 </Link>
                 <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
                   href="https://web.whatsapp.com/"
                   className="flex items-center justify-center w-10 h-10 bg-gray-800 rounded-full hover:bg-green-500 transition transform hover:scale-105"
                 >

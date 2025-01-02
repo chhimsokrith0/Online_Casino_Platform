@@ -1524,5 +1524,25 @@
         }
       ]
     }
+  },
+  "randomcard": {
+    "title": "Ganjaran ICGGaming",
+    "description": "Alami keterujaan eksklusif dengan pilihan ganjaran premium kami.",
+    "points": "Mata Terkini: ",
+    "button": [
+      "Kad Rawak",
+      "Putaran Percuma"
+    ],
+    "FreeSpins": {
+      "1": [
+        "Putaran Percuma",
+        "dalam permainan Double Fortune"
+      ],
+      "2": [
+        "2 Putaran Percuma",
+        "dalam permainan Golden Empire"
+      ],
+      "buttonChoose": "Pilih"
+    }
   }
 }

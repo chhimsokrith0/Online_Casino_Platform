@@ -1509,5 +1509,25 @@
         }
       ]
     }
+  },
+  "randomcard": {
+    "title": "ICGGaming Reward",
+    "description": "Experience the thrill of exclusivity with our premium selection of rewards.",
+    "points": "Current Point: ",
+    "button": [
+      "Rendom Card",
+      "Free Spins"
+    ],
+    "FreeSpins": {
+      "1": [
+        "Free Spins",
+        "in games Double Fortune"
+      ],
+      "2": [
+        "2 Free Spins",
+        "in games Golden Empire"
+      ],
+      "buttonChoose": "Choose"
+    }
   }
 }

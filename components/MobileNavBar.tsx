@@ -40,11 +40,11 @@ const MobileNavBar = ({ locale }: { locale: string }) => {
       {/* Mobile Navigation Bar */}
       <nav className="fixed bottom-0 w-full bg-[#020617] flex justify-center items-center z-[99] shadow-md">
         <div className="w-full h-[75px] relative rounded-2xl bg-[#020617] flex justify-center items-center">
-          <div className="bottom-menu-nav w-full px-3 flex justify-around items-center">
+          <div className="bottom-menu-nav w-full px-3 flex justify-between items-center">
             {/* Menu */}
             <button
               className={clsx(
-                "flex flex-col items-center transition-colors",
+                "flex flex-col items-center flex-1 transition-colors",
                 activeButton === "menu" ? "text-yellow-500" : "text-gray-400 hover:text-white"
               )}
               onClick={() => {
@@ -53,24 +53,24 @@ const MobileNavBar = ({ locale }: { locale: string }) => {
               }}
             >
               <FontAwesomeIcon icon={faBars} className="text-2xl" />
-              <span className="text-[10px] font-semibold">{ t("menu") }</span>
+              <span className="text-[10px] font-semibold">{t("menu")}</span>
             </button>
 
             {/* Slots */}
             <Link
               href={`/${locale}/Games/slots`}
               className={clsx(
-                "flex flex-col items-center transition-colors",
+                "flex flex-col items-center flex-1 transition-colors",
                 activeButton === "slots" ? "text-yellow-500" : "text-gray-400 hover:text-white"
               )}
               onClick={() => setActiveButton("slots")}
             >
               <FontAwesomeIcon icon={faGem} className="text-2xl" />
-              <span className="text-[10px] font-semibold">{ t("slots") }</span>
+              <span className="text-[10px] font-semibold">{t("slots")}</span>
             </Link>
 
             {/* Wallet / Sign Up */}
-            <div className="relative flex flex-col items-center cursor-pointer">
+            <div className="relative flex flex-col items-center flex-1">
               <div
                 onClick={() => {
                   sess?.user ? handleWalletClick() : handleSignupClick();
@@ -102,26 +102,26 @@ const MobileNavBar = ({ locale }: { locale: string }) => {
             <Link
               href={`/${locale}/Games/LiveCasino`}
               className={clsx(
-                "flex flex-col items-center transition-colors",
+                "flex flex-col items-center flex-1 transition-colors",
                 activeButton === "liveCasino" ? "text-yellow-500" : "text-gray-400 hover:text-white"
               )}
               onClick={() => setActiveButton("liveCasino")}
             >
               <FontAwesomeIcon icon={faDice} className="text-2xl" />
-              <span className="text-[10px] font-semibold"> { t("liveCasino") } </span>
+              <span className="text-[10px] font-semibold">{t("liveCasino")}</span>
             </Link>
 
             {/* Promo */}
             <Link
               href={`/${locale}/promo`}
               className={clsx(
-                "flex flex-col items-center transition-colors",
+                "flex flex-col items-center flex-1 transition-colors",
                 activeButton === "promo" ? "text-yellow-500" : "text-gray-400 hover:text-white"
               )}
               onClick={() => setActiveButton("promo")}
             >
               <FontAwesomeIcon icon={faGift} className="text-2xl" />
-              <span className="text-[10px] font-semibold"> { t("promo") }</span>
+              <span className="text-[10px] font-semibold">{t("promo")}</span>
             </Link>
           </div>
         </div>

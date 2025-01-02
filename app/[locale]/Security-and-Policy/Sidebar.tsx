@@ -1,54 +1,60 @@
 "use client";
 
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 const Sidebar = () => {
-  const [activeItem, setActiveItem] = useState<string>("");
   const t = useTranslations("SecurityAndPolicy.sidebar");
+  const pathname = usePathname(); // Dynamically get the current route
+  const [activeItem, setActiveItem] = useState<string>("");
 
-  // Memoize menuItems to prevent unnecessary re-creation
-  const menuItems = useMemo(
-    () => [
-      { label: t('TermsandConditions'), link: "/Security-and-Policy/terms-and-conditions" },
-      { label: t('PrivacyPolicy'), link: "/Security-and-Policy/privacy-policy" },
-      { label: t('CookiesPolicy'), link: "/Security-and-Policy/cookies-policy" },
-    ],
-    []
-  );
-
+  // Dynamically set 'activeItem' based on the current pathname
   useEffect(() => {
-    // Safely access localStorage for hydration
-    if (typeof window !== "undefined") {
-      const storedActiveItem = localStorage.getItem("activeMenuItem");
-      if (storedActiveItem) {
-        setActiveItem(storedActiveItem);
-      } else {
-        // Set default active item if none is stored
-        setActiveItem(menuItems[0].label);
-      }
-    }
-  }, [menuItems]); // Include menuItems in the dependency array
+    if (!pathname) return;
 
-  const handleItemClick = (label: string) => {
-    setActiveItem(label);
-    // Safely store the active menu item in localStorage
-    if (typeof window !== "undefined") {
-      localStorage.setItem("activeMenuItem", label);
+    if (pathname.includes("/Security-and-Policy/terms-and-conditions")) {
+      setActiveItem("termsAndConditions");
+    } else if (pathname.includes("/Security-and-Policy/privacy-policy")) {
+      setActiveItem("privacyPolicy");
+    } else if (pathname.includes("/Security-and-Policy/cookies-policy")) {
+      setActiveItem("cookiesPolicy");
+    } else {
+      setActiveItem(""); // Default or fallback if route doesn't match
     }
-  };
+  }, [pathname]);
+
+  // Match each link to a "key" so we can compare to activeItem
+  const menuItems = [
+    {
+      key: "termsAndConditions",
+      label: t("TermsandConditions"),
+      link: "/Security-and-Policy/terms-and-conditions",
+    },
+    {
+      key: "privacyPolicy",
+      label: t("PrivacyPolicy"),
+      link: "/Security-and-Policy/privacy-policy",
+    },
+    {
+      key: "cookiesPolicy",
+      label: t("CookiesPolicy"),
+      link: "/Security-and-Policy/cookies-policy",
+    },
+  ];
 
   return (
     <aside className="bg-gray-800 py-6 px-4 flex flex-col rounded-lg">
       <ul className="space-y-1">
-        {menuItems.map((item, index) => (
-          <li key={index} className="flex">
+        {menuItems.map((item) => (
+          <li key={item.key} className="flex">
             <Link
               href={item.link}
-              onClick={() => handleItemClick(item.label)}
               className={`flex items-center px-4 py-3 w-full rounded-full transition ${
-                activeItem === item.label ? "bg-gray-700 text-white" : "hover:bg-gray-700 text-gray-300"
+                activeItem === item.key
+                  ? "bg-gray-700 text-white font-semibold shadow-md"
+                  : "text-gray-300 hover:bg-gray-700 hover:text-white"
               }`}
             >
               {item.label}
@@ -56,9 +62,10 @@ const Sidebar = () => {
           </li>
         ))}
       </ul>
-      {/* Mobile-specific styling */}
+
+      {/* Mobile-specific styling or additional text */}
       <div className="block md:hidden mt-4 text-gray-300 text-center">
-        {t('activeItemMessage')}
+        {t("activeItemMessage")}
       </div>
     </aside>
   );

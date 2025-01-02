@@ -1521,5 +1521,25 @@
                 }
             ]
         }
+    },
+    "randomcard": {
+        "title": "ICGGaming 獎勵",
+        "description": "透過我們精選的高級獎勵，體驗與別不同的尊享感受。",
+        "points": "當前點數：",
+        "button": [
+            "隨機卡",
+            "免費旋轉"
+        ],
+        "FreeSpins": {
+            "1": [
+                "免費旋轉",
+                "於 Double Fortune 遊戲"
+            ],
+            "2": [
+                "2 次免費旋轉",
+                "於 Golden Empire 遊戲"
+            ],
+            "buttonChoose": "選擇"
+        }
     }
 }

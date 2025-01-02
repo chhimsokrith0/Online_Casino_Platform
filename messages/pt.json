@@ -1470,5 +1470,25 @@
                 }
             ]
         }
+    },
+    "randomcard": {
+        "title": "Recompensa da ICGGaming",
+        "description": "Vivencie a emoção da exclusividade com nossa seleção premium de recompensas.",
+        "points": "Pontos atuais: ",
+        "button": [
+            "Carta aleatória",
+            "Rodadas grátis"
+        ],
+        "FreeSpins": {
+            "1": [
+                "Rodadas grátis",
+                "no jogo Double Fortune"
+            ],
+            "2": [
+                "2 rodadas grátis",
+                "no jogo Golden Empire"
+            ],
+            "buttonChoose": "Escolher"
+        }
     }
 }

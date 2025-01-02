@@ -3,7 +3,7 @@
 
 import React, { useState } from "react";
 import FreeSpinsModal from "./FreeSpinsModal";
-
+import { useTranslations } from "next-intl";
 const FreeSpins = () => {
     const [selectedBet, setSelectedBet] = useState<string | null>(null);
     const [selectedGame, setSelectedGame] = useState<{
@@ -12,31 +12,33 @@ const FreeSpins = () => {
         spins: number;
     } | null>(null);
 
+    const t = useTranslations("randomcard");
+
     const games = [
         {
             img: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734010602/1_ncyagu.png",
-            title: "Double Fortune",
+            title: t("FreeSpins.1.1"),
             spins: 1,
         },
         {
             img: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734010603/2_w9anty.png",
-            title: "Mahjong Ways",
-            spins: 3,
+            title: t("FreeSpins.1.1"),
+            spins: 2,
         },
         {
             img: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734010603/3_mi8u5o.png",
-            title: "Sweet Bonanza",
+            title: t("FreeSpins.2.1"),
             spins: 3,
         },
         {
             img: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734010603/4_sc8f14.png",
-            title: "Golden Empire",
-            spins: 3,
+            title: t("FreeSpins.2.1"),
+            spins: 4,
         },
         {
             img: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1734010604/5_yxhtti.png",
-            title: "Christmas Gift Rush",
-            spins: 3,
+            title: t("FreeSpins.2.1"),
+            spins: 5,
         },
     ];
 
@@ -60,7 +62,7 @@ const FreeSpins = () => {
                     >
                         <img src={game.img} alt={game.title} className="w-36 h-36 rounded-lg" />
                         <div>
-                            <h3 className="text-white font-bold text-lg">{game.spins} Free Spins</h3>
+                            <h3 className="text-white font-bold text-lg">{game.spins} {t("FreeSpins.1.0")}</h3>
                             <p className="text-gray-400 text-sm mt-1">
                                 in games <span className="text-yellow-500">{game.title}</span>
                             </p>
@@ -68,7 +70,7 @@ const FreeSpins = () => {
                                 onClick={() => openModal(game)}
                                 className="mt-4 px-6 py-2 bg-transparent border-2 border-yellow-500 text-yellow-500 font-bold rounded-full hover:bg-yellow-500 hover:text-black transition duration-200"
                             >
-                                Choose
+                                {t("FreeSpins.buttonChoose")}
                             </button>
                         </div>
                     </div>

@@ -44,7 +44,7 @@ const DailyCheckInTab: React.FC<DailyCheckInTabProps> = ({ onClaim }) => {
   return (
     <>
       <motion.div
-        className="p-4 text-white rounded-lg shadow-lg w-full"
+        className="p-4 text-white rounded-lg shadow-lg w-full overflow-y-auto scrollbar-hide"
         style={{
           backgroundImage: "url('https://cdn.i-gamingplatform.com/member_assets/ContainerQuestBg.png')",
           backgroundSize: "cover",

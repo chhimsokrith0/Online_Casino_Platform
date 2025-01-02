@@ -113,11 +113,10 @@ const GamesHeader: React.FC<GamesHeaderProps> = ({
               className="cursor-pointer"
             >
               <div
-                className={`flex flex-col items-center text-center ${
-                  currentCategory === category.link
-                    ? "text-yellow-500 font-semibold"
-                    : "text-gray-400 hover:text-yellow-500"
-                } transition duration-300`}
+                className={`flex flex-col items-center text-center ${currentCategory === category.link
+                  ? "text-yellow-500 font-semibold"
+                  : "text-gray-400 hover:text-yellow-500"
+                  } transition duration-300`}
               >
                 <span className="text-xl mb-1">{category.icon}</span>
                 <span className="text-sm">{category.name}</span>
@@ -149,38 +148,101 @@ const GamesHeader: React.FC<GamesHeaderProps> = ({
       {/* Modal */}
       {isModalOpen && (
         <div
-          className="fixed inset-0 z-[200] flex items-center justify-center bg-black bg-opacity-50"
+          className="
+          fixed 
+          inset-0 
+          z-[200] 
+          flex 
+          items-center 
+          justify-center 
+          bg-black 
+          bg-opacity-50 
+          backdrop-blur-sm
+          transition 
+          duration-300
+        "
           onClick={toggleModal}
         >
           <div
-            className="bg-gray-900 rounded-lg p-6 w-[300px] shadow-lg"
+            className="
+            relative
+            bg-gray-900 
+            rounded-xl 
+            p-6 
+            w-[300px] 
+            shadow-2xl 
+            transform 
+            transition-all 
+            duration-300 
+            hover:scale-105
+          "
             onClick={(e) => e.stopPropagation()}
           >
             {/* Modal Header */}
             <div className="flex justify-between items-center mb-4">
-              <h3 className="text-white font-bold text-lg">{t("filters")}</h3>
-              <button onClick={toggleModal} className="text-gray-400 hover:text-white">
+              <h3 className="text-white font-bold text-lg">Filters</h3>
+              <button
+                onClick={toggleModal}
+                className="text-gray-400 hover:text-white transition duration-200"
+              >
                 <FontAwesomeIcon icon={faTimes} />
               </button>
             </div>
 
             {/* Modal Content */}
             <div className="space-y-4">
-              <p className="text-gray-400 text-sm font-semibold">{t("sortBy")}</p>
+              <p className="text-gray-400 text-sm font-semibold">Sort By</p>
               <div className="flex gap-2">
-                <button className="px-4 py-2 rounded-full bg-gray-800 text-gray-400 hover:bg-gray-700 hover:text-white">
-                  {t("aToZ")}
+                <button
+                  className="
+                  px-4 
+                  py-2 
+                  rounded-full 
+                  bg-gray-800 
+                  text-gray-400 
+                  hover:bg-gray-700 
+                  hover:text-white 
+                  transition 
+                  duration-200
+                "
+                >
+                  A to Z
                 </button>
-                <button className="px-4 py-2 rounded-full bg-gray-800 text-gray-400 hover:bg-gray-700 hover:text-white">
-                  {t("zToA")}
+                <button
+                  className="
+                  px-4 
+                  py-2 
+                  rounded-full 
+                  bg-gray-800 
+                  text-gray-400 
+                  hover:bg-gray-700 
+                  hover:text-white 
+                  transition 
+                  duration-200
+                "
+                >
+                  Z to A
                 </button>
-                <button className="px-4 py-2 rounded-full bg-gray-800 text-gray-400 hover:bg-gray-700 hover:text-white">
-                  {t("newest")}
+                <button
+                  className="
+                  px-4 
+                  py-2 
+                  rounded-full 
+                  bg-gray-800 
+                  text-gray-400 
+                  hover:bg-gray-700 
+                  hover:text-white 
+                  transition 
+                  duration-200
+                "
+                >
+                  Newest
                 </button>
               </div>
             </div>
           </div>
         </div>
+
       )}
     </div>
   );

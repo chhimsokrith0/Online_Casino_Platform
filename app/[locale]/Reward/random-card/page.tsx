@@ -5,9 +5,9 @@ import gsap from "gsap";
 import FreeSpins from "./Tab/FreeSpins";
 import TabRandomCard from "./Tab/RandomCard";
 import { useSidebar } from "@/components/Sidebar/SidebarContext";
-
+import { useTranslations } from "next-intl";
 const RandomCard = () => {
-
+    const t = useTranslations("randomcard");
     const [activeTab, setActiveTab] = useState<"RandomCard" | "FreeSpins">("RandomCard");
     const buttonRefs = useRef<HTMLButtonElement[]>([]);
     const { isCollapsed } = useSidebar();
@@ -63,14 +63,14 @@ const RandomCard = () => {
                 <div className="max-w-[1200px] mx-auto p-6 text-center">
                     <div className="flex justify-between items-center flex-wrap">
                         <div className="text-left">
-                            <h2 className="text-2xl font-bold text-white">PlayGame168 Reward</h2>
+                            <h2 className="text-2xl font-bold text-white">{t("title")}</h2>
                             <p className="text-gray-400 mt-2">
-                                Experience the thrill of exclusivity with our premium selection of rewards.
+                                {t("description")}
                             </p>
                         </div>
                         {/* Current Points Section */}
                         <div className="bg-gray-800 px-6 py-3 rounded-full flex items-center space-x-2">
-                            <p className="text-gray-300">Current Point :</p>
+                            <p className="text-gray-300">{t("points")}</p>
                             <img
                                 src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1733034979/eec3c896-fc98-4ed7-a4b1-c0c4d6e63e42_y0p6uo.webp"
                                 alt="Diamond Icon"
@@ -92,7 +92,7 @@ const RandomCard = () => {
                                 }`}
                             onClick={() => handleTabClick("RandomCard", 0)}
                         >
-                            Random Card
+                            {t("button.0")}
                         </button>
                         <button
                             ref={(el) => {
@@ -104,7 +104,7 @@ const RandomCard = () => {
                                 }`}
                             onClick={() => handleTabClick("FreeSpins", 1)}
                         >
-                            Free Spins
+                           {t("button.1")}
                         </button>
                     </div>
 

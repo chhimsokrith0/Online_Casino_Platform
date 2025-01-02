@@ -1,3 +1,31 @@
-.z-index{
+.z-index {
     z-index: 1000;
+}
+
+
+
+/* Hides scrollbars but allows scrolling */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+/* Hides scrollbars but preserves scrolling */
+.scrollbar-hide::-webkit-scrollbar,
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.scrollbar-hide,
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE 10+ */
+  scrollbar-width: none;    /* Firefox */
 }

@@ -1524,5 +1524,25 @@
         }
       ]
     }
+  },
+  "randomcard": {
+    "title": "Hadiah ICGGaming",
+    "description": "Rasakan sensasi eksklusif dengan pilihan hadiah premium kami.",
+    "points": "Poin Saat Ini: ",
+    "button": [
+      "Kartu Acak",
+      "Putaran Gratis"
+    ],
+    "FreeSpins": {
+      "1": [
+        "Putaran Gratis",
+        "di game Double Fortune"
+      ],
+      "2": [
+        "2 Putaran Gratis",
+        "di game Golden Empire"
+      ],
+      "buttonChoose": "Pilih"
+    }
   }
 }

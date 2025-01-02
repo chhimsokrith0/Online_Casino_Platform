@@ -33,7 +33,7 @@ const CountdownTimer: React.FC<{ targetDate: string }> = ({ targetDate }) => {
     }, [targetDate]);
 
     return (
-        <div className="text-yellow-300 text-sm flex items-center gap-2 bg-gray-800 p-2 rounded-md shadow-md">
+        <div className="text-yellow-300 text-sm flex items-center gap-2 bg-gray-800 p-2 rounded-md shadow-md overflow-y-auto scrollbar-hide ">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5 text-yellow-400 animate-pulse"
