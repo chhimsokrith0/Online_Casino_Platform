@@ -110,7 +110,7 @@ const GamesHeader: React.FC<GamesHeaderProps> = ({
                 if (el) categoryRefs.current[index] = el;
               }}
               onClick={() => setCategory(category.link)}
-              className="cursor-pointer"
+              className="cursor-pointer text-sm whitespace-nowrap"
             >
               <div
                 className={`flex flex-col items-center text-center ${currentCategory === category.link
