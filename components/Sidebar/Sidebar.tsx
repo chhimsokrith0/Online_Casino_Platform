@@ -93,7 +93,7 @@ const Sidebar = ({ locale }: { locale: string }) => {
           </div>
         </aside>
       )}
-
+      
     </>
   );
 };

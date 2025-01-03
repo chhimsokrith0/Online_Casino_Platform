@@ -9,7 +9,7 @@ import Loading from "@/components/Loading";
 import { useSidebar } from "@/components/Sidebar/SidebarContext";
 import nothing_box from "../../../../public/nothing_box.webp";
 import { useRouter, useSearchParams } from "next/navigation";
-
+import { useTranslations } from "next-intl";
 interface Game {
   id: number;
   title: string;
@@ -33,7 +33,7 @@ const AllLottoGames: React.FC<AllLiveCasinoGamesProps> = ({ locale }) => {
   const [loading, setLoading] = useState<boolean>(true); // Loading state
   const { isCollapsed } = useSidebar();
   const router = useRouter();
-
+  const t = useTranslations("slidebar");
   // Fetch live casino games
   useEffect(() => {
     const fetchGames = async () => {
@@ -71,10 +71,10 @@ const AllLottoGames: React.FC<AllLiveCasinoGamesProps> = ({ locale }) => {
   };
 
   return (
-    <div ref={sectionRef} className={`max-w-[1200px] mx-auto p-4 ${isCollapsed ? "ml-[5rem]" : ""}`}>
+    <div ref={sectionRef} className={`max-w-[1200px] mx-auto p-4 ${isCollapsed ? "ml-[2rem]" : ""}`}>
       {/* Games Header */}
       <GamesHeader
-        pageName="Lotto"
+        pageName={t("Lotto")}
         locale={locale}
         setCategory={handleCategoryChange}
         currentCategory={category}

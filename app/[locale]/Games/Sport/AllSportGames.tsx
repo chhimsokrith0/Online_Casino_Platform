@@ -170,6 +170,8 @@ import GameCard from "./GameCard";
 import Loading from "@/components/Loading";
 import { useSidebar } from "@/components/Sidebar/SidebarContext";
 import nothing_box from "../../../../public/nothing_box.webp";
+import { useTranslations } from "next-intl";
+
 
 interface Game {
   id: number;
@@ -194,6 +196,7 @@ const AllSportGames: React.FC<AllLiveCasinoGamesProps> = ({ locale }) => {
   const [visibleCount, setVisibleCount] = useState<number>(24); // Number of visible games
   const [loading, setLoading] = useState<boolean>(true); // Loading state
   const { isCollapsed } = useSidebar();
+  const t = useTranslations("slidebar");
 
   // Fetch live casino games
   useEffect(() => {
@@ -233,10 +236,10 @@ const AllSportGames: React.FC<AllLiveCasinoGamesProps> = ({ locale }) => {
   };
 
   return (
-    <div ref={sectionRef} className={`max-w-[1200px] mx-auto p-4 ${isCollapsed ? "ml-[5rem]" : ""}`}>
+    <div ref={sectionRef} className={`max-w-[1200px] mx-auto p-4 ${isCollapsed ? "ml-[2rem]" : ""}`}>
       {/* Games Header */}
       <GamesHeader
-        pageName="Sport"
+        pageName={t("Sport")}
         locale={locale}
         setCategory={handleCategoryChange}
         currentCategory={category}

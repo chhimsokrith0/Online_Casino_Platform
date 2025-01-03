@@ -23,7 +23,7 @@ const countries = [
   { code: "+86", flag: "https://res.cloudinary.com/dfxqagrkk/image/upload/v1733640312/chinese_dxrdpn.png", name: "China" },
 ];
 
-const SignupModal: React.FC<SignupModalProps> = ({ activeTab = "signIn", onClose, zIndex = 150 }) => {
+const SignupModal: React.FC<SignupModalProps> = ({ activeTab = "signIn", onClose, zIndex = 500 }) => {
   const t = useTranslations("signupModal"); // Translation namespace
   const [tab, setTab] = useState(activeTab);
   const [selectedCountry, setSelectedCountry] = useState(countries[0].code);

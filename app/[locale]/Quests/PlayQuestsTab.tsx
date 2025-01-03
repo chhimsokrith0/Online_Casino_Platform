@@ -61,50 +61,45 @@ const PlayQuestsTab: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeInOut" }}
       >
-        <section className="carousel h-full">
-          <div className="carousel__viewport">
-            <ol className="carousel__track flex">
-              {carouselItems.map((item, index) => (
-                <li
-                  key={index}
-                  className="carousel__slide flex flex-col justify-between h-full bg-cover bg-center rounded-lg p-4 text-center w-full clickable"
-                  style={{
-                    backgroundImage: `url('${item.backgroundImage}')`,
-                  }}
+        <section className="carousel h-full flex flex-col gap-4">
+          {carouselItems.map((item, index) => (
+            <div
+              key={index}
+              className="carousel__slide flex flex-col justify-between bg-cover bg-center rounded-lg p-4 text-center w-full h-auto"
+              style={{
+                backgroundImage: `url('${item.backgroundImage}')`,
+              }}
+            >
+              <div>
+                <div className="text-sm font-bold text-white truncate">
+                  {item.title}
+                </div>
+                <div className="text-sm text-gray-300 line-clamp-2 mt-2 h-9">
+                  {item.description}
+                </div>
+              </div>
+              <div className="p-6">
+                <div className="max-w-[210px] max-h-[210px] w-full mx-auto">
+                  <img
+                    className="pulse infinite w-full h-full object-contain"
+                    src={item.image}
+                    alt={item.title}
+                  />
+                </div>
+              </div>
+              <div className="inline-block">
+                <motion.button
+                  onClick={() => setShowDetailsPage(true)}
+                  className="w-60 py-3 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-black font-bold rounded-full shadow-md hover:shadow-lg transform hover:scale-105 transition-transform duration-300"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, ease: "easeInOut", delay: 0.4 }}
                 >
-                  <div>
-                    <div className="text-sm font-bold text-white truncate">
-                      {item.title}
-                    </div>
-                    <div className="text-sm text-gray-300 line-clamp-2 mt-2 h-9">
-                      {item.description}
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <div className="max-w-[210px] max-h-[210px] w-full mx-auto">
-                      <img
-                        className="pulse infinite w-full h-full object-contain"
-                        src={item.image}
-                        alt={item.title}
-                      />
-                    </div>
-                  </div>
-                  <div className="inline-block">
-                    <motion.button
-                      onClick={() => setShowDetailsPage(true)}
-                      className="w-60 py-3 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-black font-bold rounded-full shadow-md hover:shadow-lg transform hover:scale-105 transition-transform duration-300"
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.6, ease: "easeInOut", delay: 0.4 }}
-                    >
-                      Join In
-                    </motion.button>
-                  </div>
-
-                </li>
-              ))}
-            </ol>
-          </div>
+                  Join In
+                </motion.button>
+              </div>
+            </div>
+          ))}
         </section>
       </motion.div>
     </motion.div>

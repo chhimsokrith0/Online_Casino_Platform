@@ -10,6 +10,8 @@ import GameCard from "./GameCard";
 import { useSidebar } from "@/components/Sidebar/SidebarContext";
 import nothing_box from "../../../../public/nothing_box.webp";
 import Loading from "@/components/Loading";
+import { useTranslations } from "next-intl";
+
 
 interface Game {
   id: number;
@@ -35,6 +37,7 @@ const AllFishingGames: React.FC<AllGamesProps> = ({ locale }) => {
   const [visibleCount, setVisibleCount] = useState<number>(24); // Number of visible games
   const [loading, setLoading] = useState<boolean>(true); // Loading state
   const { isCollapsed } = useSidebar();
+  const t = useTranslations("slidebar");
 
   // Fetch games from the API
   useEffect(() => {
@@ -68,7 +71,7 @@ const AllFishingGames: React.FC<AllGamesProps> = ({ locale }) => {
     <div ref={sectionRef} className={`max-w-[1200px] mx-auto p-4 ${isCollapsed ? "ml-[2rem]" : ""}`}>
       {/* Games Header */}
       <GamesHeader
-        pageName="Fishing"
+        pageName={t("Fishing")}
         locale={locale}
         setCategory={handleCategoryChange}
         currentCategory={category}

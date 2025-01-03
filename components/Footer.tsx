@@ -61,7 +61,7 @@ const Footer = ({ locale }: { locale: string }) => {
 
   return (
 
-    <footer className={`row-span-1 lg:ml-[12rem] col-span-full ${isCollapsed ? "ml-[-8rem]" : ""}`}>
+    <footer className={`row-span-1 col-span-full ${isCollapsed ? "ml-[-15rem]" : ""}`}>
       <div className=" mx-auto max-w-[1200px] px-4">
         {/* Mobile View */}
         <div className="sm:hidden">
@@ -119,10 +119,18 @@ const Footer = ({ locale }: { locale: string }) => {
               ref={specialsRef}
               className={`space-y-2 text-sm overflow-hidden ${isSpecialsOpen ? "block" : "hidden"}`}
             >
-              <li>{t("footer.specials.quests")}</li>
-              <li>{t("footer.specials.reward")}</li>
-              <li>{t("footer.specials.referral")}</li>
-              <li>{t("footer.specials.level")}</li>
+              <li className="cursor-pointer" onClick={handleOpenModal}>{t("footer.specials.quests")}</li>
+              <li><Link href={session ? `/${locale}/Reward/random-card` : `/${locale}/Reward`}>{t("footer.specials.reward")}</Link></li>
+              <li>
+                {session ? (
+                  <Link href={`/${locale}/account-information/affiliate`}>
+                    {t("footer.specials.referral")}
+                  </Link>) :
+                  (<span className="cursor-pointer" onClick={handleOpenModal}>
+                    {t("footer.specials.referral")}
+                  </span>)}
+              </li>
+              <li><Link href={`/${locale}/member-level`}>{t("footer.specials.level")}</Link></li>
             </ul>
           </div>
 
@@ -229,7 +237,15 @@ const Footer = ({ locale }: { locale: string }) => {
               <ul className="space-y-3 text-md">
                 <li className="cursor-pointer" onClick={handleOpenModal}>{t("footer.specials.quests")}</li>
                 <li><Link href={session ? `/${locale}/Reward/random-card` : `/${locale}/Reward`}>{t("footer.specials.reward")}</Link></li>
-                <li><Link href={`/${locale}/account-information/affiliate`}>{t("footer.specials.referral")}</Link></li>
+                <li>
+                  {session ? (
+                    <Link href={`/${locale}/account-information/affiliate`}>
+                      {t("footer.specials.referral")}
+                    </Link>) :
+                    (<span className="cursor-pointer" onClick={handleOpenModal}>
+                      {t("footer.specials.referral")}
+                    </span>)}
+                </li>
                 <li><Link href={`/${locale}/member-level`}>{t("footer.specials.level")}</Link></li>
               </ul>
             </div>

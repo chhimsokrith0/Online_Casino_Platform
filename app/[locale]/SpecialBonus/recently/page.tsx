@@ -86,7 +86,7 @@ const FavouriteGames = () => {
     };
 
     return (
-        <div className={`max-w-[1200px] mx-auto p-4 sm:p-8 ${isCollapsed ? "ml-[4rem]" : ""}`}>
+        <div className={`max-w-[1200px] mx-auto p-4 sm:p-8 ${isCollapsed ? "ml-[2rem]" : ""}`}>
             {/* Breadcrumb */}
             <nav className="text-gray-400 text-sm mb-4">
                 <Link href="/">

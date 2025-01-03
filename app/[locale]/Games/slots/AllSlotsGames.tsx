@@ -8,6 +8,7 @@ import GameCard from "./GameCard";
 import nothing_box from "../../../../public/nothing_box.webp";
 import Loading from "@/components/Loading";
 import { useSidebar } from "@/components/Sidebar/SidebarContext";
+import { useTranslations } from "next-intl";
 
 interface Game {
   id: number;
@@ -34,6 +35,8 @@ const AllGames: React.FC<AllGamesProps> = ({ locale }) => {
   const [error, setError] = useState<string | null>(null); // Error state
 
   const { isCollapsed } = useSidebar();
+  const t = useTranslations("slidebar");
+
 
   // Fetch games data from the API
   const fetchGames = async () => {
@@ -80,10 +83,10 @@ const AllGames: React.FC<AllGamesProps> = ({ locale }) => {
   };
 
   return (
-    <div ref={sectionRef} className={`max-w-[1200px] mx-auto p-4 ${isCollapsed ? "ml-[5rem]" : ""}`}>
+    <div ref={sectionRef} className={`max-w-[1200px] mx-auto p-4 ${isCollapsed ? "ml-[2rem]" : ""}`}>
       {/* Games Header */}
       <GamesHeader
-        pageName="All Games"
+        pageName={t("slots")}
         locale={locale}
         setCategory={handleCategoryChange}
         currentCategory={category}

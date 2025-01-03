@@ -7,13 +7,11 @@ import { usePathname } from "next/navigation";
 
 const Sidebar = () => {
   const t = useTranslations("settings");
-  const pathname = usePathname(); 
+  const pathname = usePathname();
   const [activeItem, setActiveItem] = useState("");
 
-  // Update active menu item based on current route
   useEffect(() => {
     if (!pathname) return;
-
     if (pathname.includes("/general-setting/general")) {
       setActiveItem("general");
     } else if (pathname.includes("/general-setting/verification")) {
@@ -27,7 +25,7 @@ const Sidebar = () => {
     }
   }, [pathname]);
 
-  // Define your menu items with a "key" that matches how we set activeItem in the effect above
+ 
   const menuItems = [
     { key: "general", label: t("menu.general"), link: "/general-setting/general" },
     { key: "verification", label: t("menu.verification"), link: "/general-setting/verification" },
@@ -42,18 +40,16 @@ const Sidebar = () => {
           <li key={item.key} className="flex">
             <Link
               href={item.link}
-              className={`flex items-center px-4 py-3 w-full rounded-full transition ${
-                activeItem === item.key
+              className={`flex items-center px-4 py-3 w-full rounded-full transition ${activeItem === item.key
                   ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-bold shadow-md"
                   : "text-gray-300 hover:bg-gray-700"
-              }`}
+                }`}
             >
               {item.label}
             </Link>
           </li>
         ))}
       </ul>
-
       {/* Mobile-specific styling */}
       <div className="block md:hidden mt-4 text-gray-300 text-center">
         Use the tabs above for navigation

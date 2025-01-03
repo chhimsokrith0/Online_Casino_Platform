@@ -76,7 +76,6 @@ import SessionProviderWrapper from "@/components/SessionProviderWrapper";
 import { SidebarProvider } from "@/components/Sidebar/SidebarContext";
 import "./style.css";
 
-
 if (process.env.NODE_ENV === "development") {
   import("../../mocks/")
     .then(() => console.log("[MSW] Mocking enabled."))
@@ -92,6 +91,7 @@ export default async function RootLayout({
 }) {
   const { locale } = await params; // Destructure here
   const messages = await getMessages({ locale });
+ 
 
   const selectedFont =
     (fonts.fonts as any)[locale]?.fontFamily || "Arial, sans-serif";
@@ -101,7 +101,7 @@ export default async function RootLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <SessionProviderWrapper>
             <SidebarProvider>
-              <header className="w-full sticky top-0 z-50">
+              <header className="w-full sticky top-0 z-50 lg:z-[200]">
                 <Navbar locale={locale} />
               </header>
               <div className="grid grid-cols-1 lg:grid-cols-[16rem_1fr] gap-4 min-h-[calc(100vh-64px)]">
@@ -115,7 +115,7 @@ export default async function RootLayout({
                   {children}
                 </main>
               </div>
-              <footer className="max-w-[1400px] mx-auto py-4 px-4 sm:px-6 md:px-8 footer-css">
+              <footer className="mx-auto lg:ml-[16rem] py-4 px-4 sm:px-6 md:px-8 footer-css">
                 <Footer locale={locale} />
               </footer>
 

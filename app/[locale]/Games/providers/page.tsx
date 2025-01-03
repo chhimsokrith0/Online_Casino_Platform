@@ -6,7 +6,8 @@ import { faSearch, faSlidersH, faGamepad, faTimes } from "@fortawesome/free-soli
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useSidebar } from "@/components/Sidebar/SidebarContext";
-
+import { useSession } from "next-auth/react";
+import SignupModal from "@/components/Navbar/SignUpModal";
 interface Provider {
   id: number;
   name: string;
@@ -18,6 +19,20 @@ interface ApiResponse {
   data: Provider[];
 }
 
+const useIsMobile = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIsMobile = () => setIsMobile(window.innerWidth <= 768);
+    checkIsMobile();
+    window.addEventListener('resize', checkIsMobile);
+
+    return () => window.removeEventListener('resize', checkIsMobile);
+  }, []);
+
+  return isMobile;
+};
+
 const Providers = () => {
   const [providers, setProviders] = useState<Provider[]>([]);
   const [filteredProviders, setFilteredProviders] = useState<Provider[]>([]);
@@ -27,6 +42,9 @@ const Providers = () => {
   const [isFilterOpen, setIsFilterOpen] = useState<boolean>(false);
   const [selectedFilter, setSelectedFilter] = useState<string>(""); // State for active filter
   const { isCollapsed } = useSidebar();
+  const { data: session } = useSession();
+  const [showSignUpModal, setShowSignUpModal] = React.useState(false);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const fetchProviders = async () => {
@@ -96,7 +114,7 @@ const Providers = () => {
 
   return (
     <div
-      className={`max-w-[1200px] mx-auto px-4 py-8 text-white ${isCollapsed ? "ml-[5rem]" : ""
+      className={`max-w-[1200px] mx-auto px-4 py-8 text-white ${isCollapsed ? "ml-[2rem]" : ""
         }`}
     >
       {/* Breadcrumb */}
@@ -154,27 +172,28 @@ const Providers = () => {
       {/* Filter Panel */}
       {isFilterOpen && (
         <motion.div
-          className="absolute top-[205px] right-4 lg:right-60 bg-gray-900 text-white p-6 rounded-lg shadow-lg w-full lg:w-64 z-50"
+          className={`fixed ${isMobile ? "inset-0" : "absolute top-[205px] right-4 sm:right-8 lg:right-60"} ${isCollapsed ? "mr-[8rem]" : ""} bg-gray-900 text-white p-4 sm:p-6 rounded-lg shadow-lg ${isMobile ? "w-screen h-screen" : "w-full sm:w-80 lg:w-64"
+            } z-50`}
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.9 }}
         >
           <div className="flex justify-between items-center mb-4">
-            <h3 className="text-lg font-semibold">Filters</h3>
+            <h3 className="text-base sm:text-lg font-semibold">Filters</h3>
             <FontAwesomeIcon
               icon={faTimes}
-              className="text-gray-400 cursor-pointer"
+              className="text-gray-400 cursor-pointer hover:text-gray-200"
               onClick={() => setIsFilterOpen(false)}
             />
           </div>
-          <h4 className="text-sm font-medium mb-2">Sort By</h4>
+          <h4 className="text-sm sm:text-base font-medium mb-2">Sort By</h4>
           <div className="flex flex-wrap gap-2">
-            {["A-Z", "Z-A", "Hot", "New"].map((type) => (
+            {['A-Z', 'Z-A', 'Hot', 'New'].map((type) => (
               <button
                 key={type}
-                className={`text-sm px-4 py-2 rounded-lg transition ${selectedFilter === type
-                  ? "bg-yellow-500 text-black"
-                  : "bg-gray-700 hover:bg-gray-600"
+                className={`text-sm sm:text-base px-3 sm:px-4 py-2 rounded-lg transition ${selectedFilter === type
+                    ? 'bg-yellow-500 text-black'
+                    : 'bg-gray-700 hover:bg-gray-600'
                   }`}
                 onClick={() => handleSort(type)}
               >
@@ -183,6 +202,7 @@ const Providers = () => {
             ))}
           </div>
         </motion.div>
+
       )}
 
       {/* Loading and Error Messages */}
@@ -243,14 +263,27 @@ const Providers = () => {
                 />
               </div>
               <div className="w-full absolute bottom-4 left-4 flex items-center justify-start">
-                <button className="flex items-center gap-2 bg-white text-black font-bold py-2 px-4 lg:px-6 rounded-full transition hover:bg-yellow-500 hover:text-black">
-                  <FontAwesomeIcon icon={faGamepad} />
-                  PLAY
-                </button>
+                {session ? (
+                  <button className="flex items-center gap-2 bg-white text-black font-bold py-2 px-4 lg:px-6 rounded-full transition hover:bg-yellow-500 hover:text-black">
+                    <FontAwesomeIcon icon={faGamepad} />
+                    PLAY
+                  </button>
+                ) : (
+                  <button
+                    className="flex items-center gap-2 bg-white text-black font-bold py-2 px-4 lg:px-6 rounded-full transition hover:bg-yellow-500 hover:text-black"
+                    onClick={() => setShowSignUpModal(true)}
+                  >
+                    <FontAwesomeIcon icon={faGamepad} />
+                    PLAY
+                  </button>
+                )}
               </div>
             </motion.div>
           ))}
         </motion.div>
+      )}
+      {showSignUpModal && (
+        <SignupModal activeTab="signIn" onClose={() => setShowSignUpModal(false)} />
       )}
     </div>
 

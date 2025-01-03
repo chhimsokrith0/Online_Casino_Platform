@@ -1,12 +1,17 @@
 import React, { useRef, useEffect } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
+import { useSession } from "next-auth/react";
+import SignupModal from "@/components/Navbar/SignUpModal";
 
 const HorizontalScroller = ({ gameProviders }: { gameProviders: any[] }) => {
     const containerRef = useRef<HTMLDivElement>(null);
     let isDown = false;
     let startX = 0;
     let scrollLeft = 0;
+
+    const { data: session } = useSession();
+    const [showSignUpModal, setShowSignUpModal] = React.useState(false);
 
     useEffect(() => {
         const container = containerRef.current;
@@ -102,13 +107,22 @@ const HorizontalScroller = ({ gameProviders }: { gameProviders: any[] }) => {
                                             transition-all duration-300 ease-in-out shadow-md">
 
                                     <img src="https://res.cloudinary.com/dfxqagrkk/image/upload/v1735448647/freepik__background__32998_prowuj.png"
-                                    width={25} height={25} alt="" />
+                                        width={25} height={25} alt="" />
 
-                                    <span
-                                        className="text-[10px] md:text-sm font-bold md:font-semibold text-white
+                                    {session ? (
+                                        <span
+                                            className="text-[10px] md:text-sm font-bold md:font-semibold text-white
                                                 group-hover:text-white transition-colors duration-300 ease-in-out">
-                                        Play
-                                    </span>
+                                            Play
+                                        </span>
+                                    ) : (
+                                        <span onClick={() => setShowSignUpModal(true)}
+                                            className="text-[10px] md:text-sm font-bold md:font-semibold text-white
+                                                group-hover:text-white transition-colors duration-300 ease-in-out">
+                                            Play
+                                        </span>
+                                    )
+                                    }
                                 </div>
                             </div>
 
@@ -116,6 +130,10 @@ const HorizontalScroller = ({ gameProviders }: { gameProviders: any[] }) => {
                     </div>
                 </div>
             ))}
+
+            {showSignUpModal && (
+                <SignupModal activeTab="signIn" onClose={() => setShowSignUpModal(false)} />
+            )}
         </div>
     );
 };

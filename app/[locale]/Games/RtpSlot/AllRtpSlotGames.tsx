@@ -151,7 +151,7 @@ import GameCard from "./GameCard";
 import nothing_box from "../../../../public/nothing_box.webp";
 import Loading from "@/components/Loading";
 import { useSidebar } from "@/components/Sidebar/SidebarContext";
-
+import { useTranslations } from "next-intl";
 interface Game {
   id: number;
   title: string;
@@ -177,6 +177,8 @@ const AllRtpSlotGames: React.FC<AllGamesProps> = ({ locale }) => {
   const [visibleCount, setVisibleCount] = useState(24); // Number of games to display initially
   const [loading, setLoading] = useState(true); // Loading state
   const [gamesData, setGamesData] = useState<Game[]>([]); // Games data state
+  const t = useTranslations("slidebar");
+
 
   // Fetch games data from the API
   useEffect(() => {
@@ -209,9 +211,9 @@ const AllRtpSlotGames: React.FC<AllGamesProps> = ({ locale }) => {
   };
 
   return (
-    <div ref={sectionRef} className={`max-w-[1200px] mx-auto p-4 ${isCollapsed ? "ml-[5rem]" : ""}`}>
+    <div ref={sectionRef} className={`max-w-[1200px] mx-auto p-4 ${isCollapsed ? "ml-[2rem]" : ""}`}>
       <GamesHeader
-        pageName="RtpSlot"
+        pageName={t("RtpSlot")}
         locale={locale}
         setCategory={handleCategoryChange}
         currentCategory={category}
