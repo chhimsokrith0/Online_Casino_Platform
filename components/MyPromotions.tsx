@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGift, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { useTranslations } from "next-intl";
+import { motion, AnimatePresence } from "framer-motion";
 import PromotionModal from "./PromotionModal"; // Import the modal
 
 const MyPromotions = () => {
@@ -28,16 +29,28 @@ const MyPromotions = () => {
         { title: t("rebate.description"), subtitle: t("rebate.title") },
     ];
 
+    // Animations
+    const cardVariants = {
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0 },
+    };
+
+    const buttonHover = {
+        scale: 1.05,
+        transition: { duration: 0.2 },
+    };
+
     return (
         <div className="max-w-[1200px] mx-auto pt-4 p-4">
             {isMobile ? (
-                <button
+                <motion.button
                     onClick={openModal}
+                    whileHover={buttonHover}
                     className="w-full bg-gray-800 text-white flex items-center justify-between px-6 py-3 rounded-full border border-yellow-400 hover:bg-gray-700 transition"
                 >
                     <span className="text-white font-semibold">{t("title")}</span>
                     <FontAwesomeIcon icon={faChevronRight} className="text-yellow-400" />
-                </button>
+                </motion.button>
             ) : (
                 <>
                     <h3 className="text-gray-400 text-lg font-bold flex items-center gap-2 mb-4">
@@ -46,13 +59,20 @@ const MyPromotions = () => {
                     </h3>
 
                     {/* Promotions Grid */}
-                    <div className="grid grid-cols-2 gap-4">
+                    <motion.div
+                        className="grid grid-cols-2 gap-4"
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ staggerChildren: 0.2 }}
+                    >
                         {promotions.map((promotion, index) => (
-                            <div
+                            <motion.div
                                 key={index}
                                 ref={(el) => {
                                     if (el) cardRefs.current[index] = el;
                                 }}
+                                variants={cardVariants}
+                                whileHover={{ scale: 1.02 }}
                                 className="flex items-center justify-between bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition"
                                 onClick={openModal}
                             >
@@ -64,13 +84,15 @@ const MyPromotions = () => {
                                     </div>
                                 </div>
                                 <FontAwesomeIcon icon={faChevronRight} className="text-gray-400 text-lg" />
-                            </div>
+                            </motion.div>
                         ))}
-                    </div>
+                    </motion.div>
                 </>
             )}
 
-            <PromotionModal isOpen={isModalOpen} onClose={closeModal} />
+            <AnimatePresence>
+                {isModalOpen && <PromotionModal isOpen={isModalOpen} onClose={closeModal} />}
+            </AnimatePresence>
         </div>
     );
 };
