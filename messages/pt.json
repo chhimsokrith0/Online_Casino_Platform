@@ -1529,5 +1529,12 @@
             "RoyalSlot": "Royal Slot Gaming",
             "Winfinity": "Winfinity"
         }
+    },
+    "Providers": {
+        "title": "Provedores",
+        "home": "Início",
+        "search": "Encontre seu provedor",
+        "Filters": "Filtros",
+        "SortBy": "Ordenar Por"
     }
 }

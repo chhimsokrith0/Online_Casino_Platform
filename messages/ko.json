@@ -1583,5 +1583,12 @@
             "RoyalSlot": "로얄 슬롯 게이밍",
             "Winfinity": "윈피니티"
         }
+    },
+    "Providers": {
+        "title": "제공자",
+        "home": "홈",
+        "search": "제공자를 찾아보세요",
+        "Filters": "필터",
+        "SortBy": "정렬 기준"
     }
 }

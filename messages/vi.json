@@ -1297,5 +1297,12 @@
       "RoyalSlot": "Royal Slot Gaming",
       "Winfinity": "Winfinity"
     }
+  },
+  "Providers": {
+    "title": "Nhà cung cấp",
+    "home": "Trang chủ",
+    "search": "Tìm nhà cung cấp của bạn",
+    "Filters": "Bộ lọc",
+    "SortBy": "Sắp xếp theo"
   }
 }

@@ -3,11 +3,13 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faSlidersH, faGamepad, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { useSidebar } from "@/components/Sidebar/SidebarContext";
 import { useSession } from "next-auth/react";
 import SignupModal from "@/components/Navbar/SignUpModal";
+import { useTranslations } from "next-intl";
+
 interface Provider {
   id: number;
   name: string;
@@ -45,6 +47,7 @@ const Providers = () => {
   const { data: session } = useSession();
   const [showSignUpModal, setShowSignUpModal] = React.useState(false);
   const isMobile = useIsMobile();
+  const t = useTranslations("Providers");
 
   useEffect(() => {
     const fetchProviders = async () => {
@@ -78,7 +81,7 @@ const Providers = () => {
   }, [searchTerm, providers]);
 
   const handleSort = (type: string) => {
-    setSelectedFilter(type); // Set the active filter
+    setSelectedFilter(type);
     let sortedProviders = [...providers];
     if (type === "A-Z") {
       sortedProviders.sort((a, b) => a.name.localeCompare(b.name));
@@ -91,6 +94,12 @@ const Providers = () => {
     }
     setFilteredProviders(sortedProviders);
     setIsFilterOpen(false);
+  };
+
+  const filterPanelVariants = {
+    hidden: { opacity: 0, x: "100%" },
+    visible: { opacity: 1, x: 0 },
+    exit: { opacity: 0, x: "100%" },
   };
 
   const containerVariants = {
@@ -120,10 +129,10 @@ const Providers = () => {
       {/* Breadcrumb */}
       <nav className="text-gray-400 text-sm mb-4">
         <span>
-          <Link href="/">Home</Link>
+          <Link href="/">{t("home")}</Link>
         </span>{" "}
         <span className="text-gray-500">/</span>{" "}
-        <span className="text-white font-semibold">Providers</span>
+        <span className="text-white font-semibold">{t("title")}</span>
       </nav>
 
       {/* Header Section */}
@@ -141,11 +150,11 @@ const Providers = () => {
                 className="w-8 h-8"
               />
             </div>
-            Providers
+            {t("title")}
           </h1>
 
           <p className="text-gray-400 text-sm mt-1">
-            {filteredProviders.length} Providers
+            {filteredProviders.length} {t("title")}
           </p>
         </div>
 
@@ -154,7 +163,7 @@ const Providers = () => {
           <div className="flex items-center bg-gray-800 rounded-full px-4 py-2 w-full max-w-[300px]">
             <input
               type="text"
-              placeholder="Find your provider"
+              placeholder={t("search")}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="flex-1 bg-transparent text-gray-300 placeholder-gray-500 outline-none"
@@ -170,67 +179,85 @@ const Providers = () => {
       </div>
 
       {/* Filter Panel */}
-      {isFilterOpen && (
-        <motion.div
-          className={`fixed ${isMobile ? "inset-0" : "absolute top-[205px] right-4 sm:right-8 lg:right-60"} ${isCollapsed ? "mr-[8rem]" : ""} bg-gray-900 text-white p-4 sm:p-6 rounded-lg shadow-lg ${isMobile ? "w-screen h-screen" : "w-full sm:w-80 lg:w-64"
-            } z-50`}
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.9 }}
-        >
-          <div className="flex justify-between items-center mb-4">
-            <h3 className="text-base sm:text-lg font-semibold">Filters</h3>
-            <FontAwesomeIcon
-              icon={faTimes}
-              className="text-gray-400 cursor-pointer hover:text-gray-200"
-              onClick={() => setIsFilterOpen(false)}
-            />
-          </div>
-          <h4 className="text-sm sm:text-base font-medium mb-2">Sort By</h4>
-          <div className="flex flex-wrap gap-2">
-            {['A-Z', 'Z-A', 'Hot', 'New'].map((type) => (
-              <button
-                key={type}
-                className={`text-sm sm:text-base px-3 sm:px-4 py-2 rounded-lg transition ${selectedFilter === type
-                    ? 'bg-yellow-500 text-black'
-                    : 'bg-gray-700 hover:bg-gray-600'
-                  }`}
-                onClick={() => handleSort(type)}
-              >
-                {type}
-              </button>
-            ))}
-          </div>
-        </motion.div>
-
-      )}
+      <AnimatePresence>
+        {isFilterOpen && (
+          <motion.div
+            className="fixed inset-0 flex justify-end z-[200] bg-black bg-opacity-50 backdrop-blur-sm"
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            variants={filterPanelVariants}
+          >
+            <div className="flex-grow bg-black bg-opacity-50" onClick={() => setIsFilterOpen(false)} />
+            <div className="bg-black p-4 md:p-6 w-full md:w-[350px] overflow-auto">
+              <div className="flex flex-col gap-4 h-full">
+                <div className="flex justify-between items-center">
+                  <span className="text-t-secondary text-base font-bold">{t("Filters")}</span>
+                  <FontAwesomeIcon
+                    icon={faTimes}
+                    className="text-gray-400 cursor-pointer hover:text-gray-200"
+                    onClick={() => setIsFilterOpen(false)}
+                  />
+                </div>
+                <div className="w-full h-px bg-horizontal-rule my-2"></div>
+                <div className="flex flex-col gap-5">
+                  <span className="text-t-secondary text-sm font-bold">{t("SortBy")}</span>
+                  <div className="grid grid-cols-2 gap-3">
+                    {["A-Z", "Z-A", "Hot", "New"].map((type) => (
+                      <button
+                        key={type}
+                        className={`rounded-full h-[36px] border text-t-secondary text-sm font-semibold px-5 py-2 ${selectedFilter === type
+                          ? "bg-yellow-500 text-black"
+                          : "bg-third hover:bg-gray-700"
+                          }`}
+                        onClick={() => handleSort(type)}
+                      >
+                        {type}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Loading and Error Messages */}
       {loading && (
-        <motion.p
-          className="text-center text-gray-400"
+        <motion.div
+          className="flex flex-col items-center justify-center text-gray-400 space-y-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 1 }}
         >
-          Loading providers...
-        </motion.p>
+          <svg
+            className="animate-spin h-8 w-8 text-gray-400"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              className="opacity-25"
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="currentColor"
+              strokeWidth="4"
+            ></circle>
+            <path
+              className="opacity-75"
+              fill="currentColor"
+              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+            ></path>
+          </svg>
+          <p className="text-center text-gray-400 text-lg font-semibold">
+            Loading providers...
+          </p>
+        </motion.div>
       )}
-      {error && (
-        <motion.p
-          className="text-center text-red-500"
-          initial={{ x: -10, opacity: 0 }}
-          animate={{ x: [0, -5, 5, -5, 0], opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{
-            x: { duration: 0.5, ease: "easeInOut" },
-            opacity: { duration: 0.5 }
-          }}
-        >
-          {error}
-        </motion.p>
-      )}
+
 
       {/* Providers Grid */}
       {!loading && !error && (

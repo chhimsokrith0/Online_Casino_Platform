@@ -1583,5 +1583,12 @@
       "RoyalSlot": "Royal Slot Gaming",
       "Winfinity": "Winfinity"
     }
+  },
+  "Providers": {
+    "title": "ผู้ให้บริการ",
+    "home": "หน้าแรก",
+    "search": "ค้นหาผู้ให้บริการของคุณ",
+    "Filters": "ตัวกรอง",
+    "SortBy": "จัดเรียงตาม"
   }
 }

@@ -67,7 +67,7 @@ const ProvidersModal = ({ setIsModalOpen }: { setIsModalOpen: Function }) => {
   };
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-[200]">
+    <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-[200] backdrop-blur-sm">
       <div
         ref={modalRef}
         className="bg-gray-800 text-gray-300 p-4 rounded-lg shadow-lg w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[50%] max-h-[90%] overflow-y-auto"

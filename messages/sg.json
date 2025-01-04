@@ -1529,5 +1529,12 @@
       ],
       "buttonChoose": "Choose"
     }
+  },
+  "Providers": {
+    "title": "Providers",
+    "home": "Home",
+    "search": "Find your provider",
+    "Filters": "Filters",
+    "SortBy": "Sort By"
   }
 }

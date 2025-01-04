@@ -1084,7 +1084,6 @@
     },
     "withdraw": {
       "withdrawalCondition": "Withdrawal Condition",
-      
       "conditions": {
         "depositTurnover": "Deposit Turnover",
         "turnover": "Turnover",
@@ -1439,7 +1438,7 @@
           "content": [
             "If you have any questions or concerns regarding your personal data, you may contact our support team at",
             "support@icggmaing.com"
-          ] 
+          ]
         }
       ]
     },
@@ -1496,5 +1495,12 @@
       ],
       "buttonChoose": "Choose"
     }
+  },
+  "Providers": {
+    "title": "Providers",
+    "home": "Home",
+    "search": "Find your provider",
+    "Filters": "Filters",
+    "SortBy": "Sort By"
   }
 }

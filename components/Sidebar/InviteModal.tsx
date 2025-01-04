@@ -71,7 +71,7 @@ const InviteModal: React.FC<InviteModalProps> = ({
   // ReactDOM Portal
   return ReactDOM.createPortal(
     <>
-      <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-[999]">
+      <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-[999] backdrop-blur-sm">
         <div
           ref={modalRef}
           className="bg-gray-900 rounded-lg w-[90%] sm:w-[500px] p-6 shadow-lg text-white relative animate-fade-in"

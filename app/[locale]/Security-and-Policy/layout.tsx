@@ -3,11 +3,14 @@
 import React from "react";
 import Sidebar from "./Sidebar";
 import Header from "./Header";
+import { useSidebar } from "@/components/Sidebar/SidebarContext";
+
 
 const SecutityAndPolicyLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const { isCollapsed } = useSidebar();
   return (
     <>
-      <div className="max-w-[1200px] hidden md:block mx-auto flex flex-col ">
+      <div className={`max-w-[1200px] hidden md:block mx-auto flex flex-col ${isCollapsed ? "ml-[2rem]" : ""}`}>
         {/* Header */}
         <Header />
 

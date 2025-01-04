@@ -1583,5 +1583,12 @@
       "RoyalSlot": "Royal Slot Gaming",
       "Winfinity": "Winfinity"
     }
+  },
+  "Providers": {
+    "title": "ຜູ້ໃຫ້ບໍລິການ",
+    "home": "ໜ້າຫຼັກ",
+    "search": "ຄົ້ນຫາຜູ້ໃຫ້ບໍລິການຂອງທ່ານ",
+    "Filters": "ການຄັດເລືອກ",
+    "SortBy": "ຈັດລຽນຕາມ"
   }
 }

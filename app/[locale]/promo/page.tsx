@@ -1,10 +1,9 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
-import { gsap, ScrollTrigger } from "gsap/all";
+import React, { useState, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { useSidebar } from "@/components/Sidebar/SidebarContext";
-
-gsap.registerPlugin(ScrollTrigger);
+import PromotionModal from "@/components/PromotionModal";
 
 const promotions = [
   {
@@ -44,81 +43,63 @@ const promotions = [
   },
 ];
 
+const sectionVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 30, scale: 0.95 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.5, ease: "easeOut" },
+  },
+};
+
 const PromotionsSection: React.FC = () => {
-  const sectionRef = useRef<HTMLDivElement | null>(null);
-  const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
   const { isCollapsed } = useSidebar();
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  useEffect(() => {
-    // Section animation
-    if (sectionRef.current) {
-      gsap.fromTo(
-        sectionRef.current,
-        { opacity: 0, y: 50 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1.5,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top 80%",
-            end: "bottom 20%",
-            toggleActions: "play none none reverse",
-          },
-        }
-      );
-    }
-
-    // Cards animation
-    if (cardsRef.current.length) {
-      gsap.fromTo(
-        cardsRef.current,
-        { opacity: 0, y: 30, scale: 0.9 },
-        {
-          opacity: 1,
-          y: 0,
-          scale: 1,
-          duration: 1,
-          ease: "power2.out",
-          stagger: 0.2,
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top 80%",
-          },
-        }
-      );
-    }
-  }, []);
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div
-      ref={sectionRef}
-      className={`bg-cover bg-center bg-no-repeat py-12 px-4 transition-all ${
-        isCollapsed ? "ml-[-17rem]" : ""
-      }`}
+    <motion.div
+      className={`bg-cover bg-center bg-no-repeat py-12 px-4 transition-all ${isCollapsed ? "ml-[-17rem]" : ""
+        }`}
       style={{
         backgroundImage:
           "url('https://res.cloudinary.com/dfxqagrkk/image/upload/v1733645518/bg_yauwy2.png')",
       }}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+      variants={sectionVariants}
     >
       <div className="max-w-[1200px] mx-auto text-center">
         <h1 className="text-4xl font-bold text-white mb-4">PROMOTIONS</h1>
         <div className="flex justify-center mb-8">
-          <button className="px-6 py-2 bg-purple-600 text-white rounded-full font-bold hover:bg-purple-700 transition">All Promos</button>
+          <button className="px-6 py-2 bg-purple-600 text-white rounded-full font-bold hover:bg-purple-700 transition">
+            All Promos
+          </button>
         </div>
         <p className="text-gray-400 text-lg mb-8">
           Discover exciting rewards and bonuses at PlayGame168. Elevate your experience with exclusive promotions designed to maximize your enjoyment and earnings.
         </p>
 
-        <div className="flex flex-wrap justify-center gap-6">
+        <motion.div
+          className="flex flex-wrap justify-center gap-6"
+          initial="hidden"
+          animate="visible"
+          variants={{ visible: { transition: { staggerChildren: 0.2 } } }}
+        >
           {promotions.map((promo, index) => (
-            <div
+            <motion.div
               key={index}
-              ref={(el) => {
-                if (el) cardsRef.current[index] = el;
-              }}
               className="bg-gray-800 bg-opacity-50 rounded-lg shadow-lg overflow-hidden w-[320px] md:w-[360px] transform transition-transform duration-500 hover:scale-105 hover:shadow-2xl relative"
+              variants={cardVariants}
             >
               <div className="relative w-full h-[200px]">
                 <img
@@ -128,9 +109,10 @@ const PromotionsSection: React.FC = () => {
                 />
               </div>
               <img
+                onClick={openModal}
                 src={promo.icon}
                 alt="icon"
-                className="absolute top-4 right-4 w-6 h-6 opacity-50 hover:opacity-100 transition-opacity"
+                className="absolute top-4 right-4 w-6 h-6 opacity-50 hover:opacity-100 transition-opacity cursor-pointer"
               />
               <div className="p-4">
                 <h2 className="text-xl font-bold text-yellow-400">
@@ -138,11 +120,16 @@ const PromotionsSection: React.FC = () => {
                 </h2>
                 <p className="text-gray-200 mt-2 text-sm">{promo.description}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </div>
+      <AnimatePresence>
+        {isModalOpen && (
+          <PromotionModal isOpen={isModalOpen} onClose={closeModal} />
+        )}
+      </AnimatePresence>
+    </motion.div>
   );
 };
 

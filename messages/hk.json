@@ -1580,5 +1580,12 @@
             "RoyalSlot": "皇家老虎機",
             "Winfinity": "Winfinity"
         }
+    },
+    "Providers": {
+        "title": "提供者",
+        "home": "主頁",
+        "search": "尋找您的提供者",
+        "Filters": "篩選",
+        "SortBy": "排序方式"
     }
 }

@@ -1583,5 +1583,12 @@
       "RoyalSlot": "Royal Slot Gaming",
       "Winfinity": "Winfinity"
     }
+  },
+  "Providers": {
+    "title": "Penyedia",
+    "home": "Beranda",
+    "search": "Cari penyedia Anda",
+    "Filters": "Filter",
+    "SortBy": "Urutkan Berdasarkan"
   }
 }
